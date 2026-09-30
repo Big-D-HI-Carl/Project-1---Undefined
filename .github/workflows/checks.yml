@@ -1,0 +1,38 @@
+# Runs tools/checks.py on every push and pull request (AGENTS.md hard rules).
+name: checks
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Range check (the commits this push or pull request adds)
+        env:
+          EVENT: ${{ github.event_name }}
+          BEFORE: ${{ github.event.before }}
+          AFTER: ${{ github.sha }}
+          PR_BASE: ${{ github.event.pull_request.base.sha }}
+          PR_HEAD: ${{ github.event.pull_request.head.sha }}
+        run: |
+          if [ "$EVENT" = "pull_request" ]; then
+            python tools/checks.py --ci --range "$PR_BASE..$PR_HEAD"
+          elif [ -z "$BEFORE" ] || [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then
+            echo "First push of this ref (before-SHA is all zeros): range check skipped; --all runs next."
+          else
+            # A before-SHA missing from history means a force-push, which AGENTS.md rule 8 forbids.
+            python tools/checks.py --ci --range "$BEFORE..$AFTER"
+          fi
+      - name: Whole-tree check
+        run: python tools/checks.py --ci --all
