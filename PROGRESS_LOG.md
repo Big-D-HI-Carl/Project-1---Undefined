@@ -480,3 +480,24 @@ Append-only. One entry per session, in the format in AGENTS.md. Never edit or de
   - Carl works OI-0001 to OI-0008: send the generator RFI, rule on the fence and the Hot Box rows, get Addenda 1–3 or the conformed bid form for Bid Item 18, approve the earthwork rows.
   - Merge closes its Issues Log #8; Setup checks the Add. 4 pp.4–8 revision blocks (OI-0006).
   - On Carl's request, add `derived/issues/` to the AGENTS.md Layout.
+
+## 2026-09-30 — Open items follow-up: PR #12 merged in, ready for review
+- Runtime: Claude Code
+- Commits: 66650c7..HEAD on `claude/jolly-rubin-dm4ese` (PR #13)
+- Done:
+  - Merged main (PR #12, c809b08) into the branch (66650c7). In ISSUES_LOG.md and PROGRESS_LOG.md, main's entries come first and this branch's follow, word for word.
+  - `testbeds/eastsound/tools/build_open_items.py`: classified the two Open ISSUES_LOG entries PR #12 added. The run had listed both as "not classified; review".
+    - "Wiki parse findings for Merge": its drawing and spec part is the new OI-0475 (floats F1 and F4 on the 2W pump station notes C4.2, E4.3 and E7.3, and fixture types L1, L2 and X1 in 26 51 19, printed with no Ledger row; Inferred). Its same-name PROPOSED rows fold into OI-0113, OI-0122 and OI-0124, which carry the same Ledger ID pairs. The rest is Ledger and Wiki upkeep.
+    - "AGENTS.md Layout doesn't list derived/wiki/": left out as repo layout.
+  - `testbeds/eastsound/derived/issues/`: rebuilt. 475 items (RFI 30, conflict 95, gap 89, duplicate 92, check 169). OI-0001 to OI-0474 keep their IDs, titles and types.
+  - DECISIONS.md: Carl's two statements this session, quoted (folder and script location; the three open-items rules approved as-is).
+- Tests:
+  - `python3 testbeds/eastsound/tools/build_open_items.py` → 475 items, 10 of 10 tie-outs pass.
+  - Determinism: runs into the repo, into a scratch folder with /tmp as the working folder, and with PYTHONHASHSEED=4242 → both files byte-identical (`cmp`).
+  - A script compared the old and new Open_Items.csv → 474 of 474 IDs, titles and types unchanged; 3 rows gained a citation; 1 row added.
+  - `python3 -m pyflakes testbeds/eastsound/tools/build_open_items.py` → clean.
+  - `python3 tools/checks.py --all` → 0 FAIL, 3 WARN (the baseline warnings).
+  - The hook's `--staged` on each commit → 0 FAIL, 1 WARN (data gate not run).
+  - `--range origin/main..HEAD` → result in the PR #13 description.
+- Failures and fixes: none
+- Next: Carl reviews and merges PR #13. The rest of "Next" in the previous entry stands.
