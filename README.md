@@ -8,3 +8,4 @@ This will be a secure online codebase to push updates and keep a general log of 
 - **Next step:** run `prompts/01_bootstrap_guardrails.md` in Claude Code. It adds the checks, the git hook and CI.
 - **Per clone, once, after that:** `git config core.hooksPath .githooks`
 - **Data:** no Big-D, client or employee data in this repo until Big-D approves the host.
+- **Eastsound test bed:** everything for it lives in `testbeds/eastsound/`; start with `testbeds/eastsound/README.md`.
