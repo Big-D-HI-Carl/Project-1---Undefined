@@ -4,18 +4,20 @@
   python tools/checks.py --staged             staged changes (the pre-commit hook)
   python tools/checks.py --range BASE..HEAD   each commit in the range (CI)
   python tools/checks.py --all                whole tree, file-level checks only
-  add --ci to skip the data gate (CI never has the local blocklist)
+  add --ci in CI: the data gate then reads only DATAGATE_TERMS (the repo secret)
 
 Rules:
   read-only-sources  no change to a source under any library/ folder except .md
                      notes; a new source needs its Library_Manifest.csv row in
                      the same commit
   append-only-logs   PROGRESS_LOG.md, DECISIONS.md, ISSUES_LOG.md: additions only
-  ledger             *Ledger*.csv: UTF-8 without BOM, the Ledger_Schema.csv
-                     header, full rows, unique non-empty Tag, a valid tag word
+  ledger             *Ledger*.csv, except Ledger_Schema.csv and *_by_CWP* views:
+                     UTF-8 without BOM, the Ledger_Schema.csv header, full rows,
+                     unique non-empty Tag, a valid tag word
   unsafe-file        over 50 MB, secret-like names, anything under _inbox/ or
                      .datagate/
-  data-gate          text files against the local .datagate/blocklist.txt
+  data-gate          text files against the |-separated terms in DATAGATE_TERMS,
+                     else the local .datagate/blocklist.txt (one term per line)
   exceptions         tools/check_exceptions.csv (Path, Rule, Issues Log Entry)
                      turns a listed path + rule into a warning; a new row needs
                      its ISSUES_LOG.md entry in the same commit
@@ -52,10 +54,12 @@ SCHEMA = "testbeds/eastsound/index/Ledger_Schema.csv"
 EXCEPTIONS = "tools/check_exceptions.csv"
 EXCEPTIONS_HEADER = ["Path", "Rule", "Issues Log Entry"]
 BLOCKLIST = ".datagate/blocklist.txt"
+TERMS_VAR = "DATAGATE_TERMS"
 MAX_BYTES = 50 * 1024 * 1024
 UNSAFE_NAMES = (".env", ".env.*", "*.pem", "*.key", "id_rsa*", "*credential*")
 UNSAFE_DIRS = ("_inbox", ".datagate")
 TEXT_EXTS = (".md", ".csv", ".txt", ".json", ".py", ".yml", ".yaml")
+LEDGER_SKIP = ("ledger_schema.csv", "*_by_cwp*.csv")  # the schema, and CWP views of a Ledger
 TAG_COLUMN = "Verified/Verified-Visual/Inferred/Unresolved"
 TAG_WORD = re.compile(r"(Verified-Visual|Verified|Inferred|Unresolved)\b")
 ISSUE_HEADING = re.compile(r"## \d{4}-\d{2}-\d{2} — (.+) — (?:Open|Closed)\s*")
@@ -294,7 +298,7 @@ def check_append_only_logs(git: Git, unit: Unit) -> list[Finding]:
 
 def is_ledger(path: str) -> bool:
     name = path.rsplit("/", 1)[-1].lower()
-    return fnmatch.fnmatchcase(name, "*ledger*.csv") and name != "ledger_schema.csv"
+    return fnmatch.fnmatchcase(name, "*ledger*.csv") and not any(fnmatch.fnmatchcase(name, p) for p in LEDGER_SKIP)
 
 
 def schema_header(data: bytes | None) -> list[str] | None:
@@ -374,20 +378,30 @@ def check_unsafe_file(path: str, size: int | None) -> list[Finding]:
 # --- data-gate ---------------------------------------------------------------
 
 
-def load_terms(ci: bool, report: Report) -> list[tuple[int, str]]:
-    """(blocklist line number, casefolded term) pairs; never printed."""
-    if ci:
-        report.line("NOTE", "data-gate", "-", "skipped in CI (--ci)")
+def load_terms(ci: bool, report: Report) -> list[tuple[str, str]]:
+    """(entry label, casefolded term) pairs; terms are never printed.
+
+    DATAGATE_TERMS wins; the local blocklist file is the fallback. In CI (--ci)
+    only the variable counts, set from the repository secret.
+    """
+    value = os.environ.get(TERMS_VAR, "")
+    if value.strip():
+        source, entries = TERMS_VAR, list(enumerate(value.split("|"), 1))
+    elif ci:
+        report.warn("data-gate", TERMS_VAR, "secret not set for this run; data gate not run")
         return []
-    try:
-        with open(BLOCKLIST, "rb") as f:
-            lines = f.read().decode("utf-8-sig", "replace").splitlines()
-    except FileNotFoundError:
-        report.warn("data-gate", BLOCKLIST, "no blocklist on this machine; data gate not run")
-        return []
-    terms = [(n, s.strip().casefold()) for n, s in enumerate(lines, 1) if s.strip() and not s.strip().startswith("#")]
+    else:
+        try:
+            with open(BLOCKLIST, "rb") as f:
+                lines = f.read().decode("utf-8-sig", "replace").splitlines()
+        except FileNotFoundError:
+            report.warn("data-gate", BLOCKLIST, f"no {TERMS_VAR} and no blocklist file; data gate not run")
+            return []
+        source = BLOCKLIST
+        entries = [(n, s) for n, s in enumerate(lines, 1) if not s.strip().startswith("#")]
+    terms = [(f"{source} entry {n}", s.strip().casefold()) for n, s in entries if s.strip()]
     if not terms:
-        report.warn("data-gate", BLOCKLIST, "blocklist has no terms; data gate not run")
+        report.warn("data-gate", source, "no terms; data gate not run")
     return terms
 
 
@@ -395,12 +409,12 @@ def is_text(path: str) -> bool:
     return path.lower().endswith(TEXT_EXTS)
 
 
-def check_data_gate(path: str, data: bytes, terms: list[tuple[int, str]]) -> list[Finding]:
+def check_data_gate(path: str, data: bytes, terms: list[tuple[str, str]]) -> list[Finding]:
     out: list[Finding] = []
     for n, line in enumerate(data.decode("utf-8", "replace").casefold().split("\n"), 1):
-        entry = next((k for k, term in terms if term in line), None)
+        entry = next((label for label, term in terms if term in line), None)
         if entry is not None:
-            out.append(("data-gate", path, f"line {n} matches blocklist entry {entry} (term not shown)"))
+            out.append(("data-gate", path, f"line {n} matches {entry} (term not shown)"))
     return capped(out)
 
 
@@ -476,7 +490,7 @@ def emit(findings: list[Finding], excepted: set[tuple[str, str]], report: Report
 # --- modes -------------------------------------------------------------------
 
 
-def check_unit(git: Git, unit: Unit, terms: list[tuple[int, str]], report: Report) -> None:
+def check_unit(git: Git, unit: Unit, terms: list[tuple[str, str]], report: Report) -> None:
     findings = check_read_only_sources(git, unit) + check_append_only_logs(git, unit)
     touched = [c for c in unit.changes if c.status not in "DU" and c.new_mode != "160000"]
     sizes = git.sizes([c.new_oid for c in touched if c.new_oid != ZERO_OID])
@@ -519,7 +533,7 @@ def range_units(git: Git, spec: str):
         yield Unit(commit[:7], parent, commit, parse_raw_diff(out))
 
 
-def check_all(git: Git, terms: list[tuple[int, str]], report: Report) -> None:
+def check_all(git: Git, terms: list[tuple[str, str]], report: Report) -> None:
     findings: list[Finding] = []
     paths = dict.fromkeys(p for p in decode_path(git.run("ls-files", "-z")).split("\0") if p)
     try:
@@ -567,7 +581,7 @@ def main(argv: list[str] | None = None) -> int:
     mode.add_argument("--staged", action="store_true", help="staged changes (pre-commit hook)")
     mode.add_argument("--range", metavar="BASE..HEAD", help="each commit in the range (CI)")
     mode.add_argument("--all", action="store_true", help="whole tree, file-level checks only")
-    parser.add_argument("--ci", action="store_true", help="skip the data gate")
+    parser.add_argument("--ci", action="store_true", help="CI: the data gate reads only DATAGATE_TERMS")
     args = parser.parse_args(argv)
     try:
         sys.stdout.reconfigure(errors="backslashreplace")  # type: ignore[union-attr]

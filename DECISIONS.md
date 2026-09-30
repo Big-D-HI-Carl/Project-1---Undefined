@@ -66,3 +66,23 @@ Append-only. Decisions made by a person, in the format in AGENTS.md. Never edit 
 - Decided by: Carl
 - Why: Stated in this session: "Don't edit Library_Fingerprint.csv; it records the Claude Project's converted copies. Write index/Library_Manifest.csv for the natives: path, bytes, SHA-256, page count, and source URL where known."
 - Replaces: none
+
+## 2026-09-30 — The repo stays public; public-source material and repo-work notes only until Big-D approves this host
+- Decided by: Carl
+- Why: Stated in `prompts/01_bootstrap_guardrails.md` §7, which Carl had this session run: "The repo stays public. Public-source material and repo-work notes only until Big-D approves this host." It restates the earlier 2026-09-30 entry "The repo stays public" and adds the data limit.
+- Replaces: none
+
+## 2026-09-30 — AGENTS.md is the canonical rulebook; CLAUDE.md imports it; Claude Code auto memory is off
+- Decided by: Carl
+- Why: Stated in `prompts/01_bootstrap_guardrails.md` §7, which Carl had this session run: "AGENTS.md is the canonical rulebook; CLAUDE.md imports it; Claude Code auto memory is off for this repo."
+- Replaces: none
+
+## 2026-09-30 — Enforcement lives in tools/checks.py (hook and CI), not in instruction files
+- Decided by: Carl
+- Why: Stated in `prompts/01_bootstrap_guardrails.md` §7, which Carl had this session run: "Enforcement lives in tools/checks.py (hook and CI), not in instruction files."
+- Replaces: none
+
+## 2026-09-30 — The graph backbone is built from the Ledger by script with no LLM; graphify's LLM pass is an optional, labeled overlay
+- Decided by: Carl
+- Why: Stated in `prompts/01_bootstrap_guardrails.md` §7, which Carl had this session run: "The graph backbone is built from the Ledger by script with no LLM; graphify's LLM pass is an optional, labeled overlay."
+- Replaces: none

@@ -114,3 +114,41 @@ Append-only. One entry per session, in the format in AGENTS.md. Never edit or de
   - Revise Graph_Transfer_Ultraplan §6 Step 4's fingerprint check for the native files.
   - Upload the 20 lane files, the Composer prompts and Prompt_Workflow_Receipt_rev1.md, and Addenda 1–3.
   - Run Prompt 1 (`prompts/01_bootstrap_guardrails.md`).
+
+## 2026-09-30 — Prompt 1: bootstrap and guardrails
+- Runtime: Claude Code
+- Commits: dd5400d..bda1bdd (PR #5, merged as 72c5342); follow-up 57433d9..6bc0d53, plus this log commit (branch `claude/zen-goldberg-4syazk`)
+- Done:
+  - **Checks:** `tools/checks.py` enforces the AGENTS.md (checked) rules. It is Python 3.10+ and stdlib only, with modes `--staged`, `--range BASE..HEAD` and `--all`. The rules:
+    - `read-only-sources`: a new library source needs its `Library_Manifest.csv` row in the same commit.
+    - `append-only-logs`.
+    - `ledger`: every `*Ledger*.csv` except `Ledger_Schema.csv` and `*_by_CWP*` views.
+    - `unsafe-file`: over 50 MB, secret-like names, `_inbox/`, and `.datagate/`, which Prompt 1 did not list.
+    - `data-gate`: reads DATAGATE_TERMS, with `.datagate/blocklist.txt` as the fallback, and never prints a term.
+    - `exceptions`.
+  - **Hook and CI:** `.githooks/pre-commit` (python3, then python, then `py -3`; stored as 100755). `.github/workflows/checks.yml` runs `--range` over the pushed or pull-request commits, then `--all`. It passes the DATAGATE_TERMS secret and uses actions/checkout@v7 and actions/setup-python@v7. `git config core.hooksPath .githooks` is set in this clone.
+  - **Baseline exceptions:** `tools/check_exceptions.csv` lists `project/02_Project_Ledger/Project_Ledger.csv` (duplicate Tags) for the ledger rule. The `Project_Ledger_by_CWP.csv` row was added in #5 and removed once the ledger rule skipped `*_by_CWP*` views. ISSUES_LOG has the matching Open and Closed entries.
+  - **README:** one line added on running the checks. DECISIONS.md has the four Prompt 1 §7 entries.
+- Tests:
+  - Acceptance tests 1–9, run in a throwaway clone under the system temp folder by a scratchpad harness (not committed) that drives real `git commit` calls through the hook. Final run: 33 OK, 0 MISMATCH. That covers all nine prompt tests plus extras:
+    - DATAGATE_TERMS with no file;
+    - the variable taking precedence over the file;
+    - CI with the secret set and with it unset;
+    - `.datagate/` forced in;
+    - an exceptions row without its ISSUES_LOG entry;
+    - a `*_by_CWP*` view;
+    - the workflow's range step run locally for push, first push and pull request.
+  - Test 6: the blocklist file holding TESTTERM plus a staged .md containing it → blocked, and the term does not appear in the output.
+  - `python tools/checks.py --all` on the session base 67e82f3 → 5 FAIL in the 2 Project Ledger files before the exceptions and the `*_by_CWP*` skip; 2 FAIL in `Project_Ledger.csv` after the skip.
+  - `python tools/checks.py --all` → pass (0 FAIL, 3 WARN). `python tools/checks.py --staged` → pass.
+  - CI on #5: push run 36767230499 → success; pull_request run 36768503887 → success (range 67e82f3..bda1bdd: 0 FAIL).
+- Failures and fixes:
+  - After the `--ci` change, the harness still expected the old "skipped in CI" note (extra test x4). Fixed the harness expectation and reran everything. Logged in ISSUES_LOG, "Acceptance harness expected the old --ci data-gate note".
+  - Test 6 waited for DATAGATE_TERMS, which was never set in this session. It ran with its own TESTTERM blocklist, as Carl directed.
+- Next:
+  - Carl:
+    - add the DATAGATE_TERMS repository secret (GitHub → Settings → Secrets and variables → Actions) and the environment variable;
+    - run `python tools/checks.py --all` with the variable set before relying on CI, in case a term already appears in a baseline file;
+    - add `git config --system core.hooksPath .githooks` to the environment setup script.
+  - Merge: fix the two duplicate Project Ledger Tags in a new revision, then drop the exceptions row.
+  - Next prompt: `prompts/02_import_testbed.md`.

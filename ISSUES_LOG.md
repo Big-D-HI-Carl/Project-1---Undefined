@@ -97,3 +97,18 @@ Append-only. Repo and program issues, in the format in AGENTS.md. The test bed's
   - It repeats the two duplicate Tags: `SD-1` at lines 107 and 304, and `PROPOSED-Influent-Sampler` at lines 432 and 439 (see "Project_Ledger.csv repeats two Tags").
   - The file was not edited. It is listed in `tools/check_exceptions.csv` for the ledger rule.
 - Fix or next action: Carl decides whether the CWP view counts as a Ledger. If not, issue its next revision under a name without "Ledger", or ask for a checks.py change that narrows the file pattern. If it does, it needs its own schema. The duplicate Tags clear with the Project Ledger fix.
+
+## 2026-09-30 — Project_Ledger_by_CWP.csv doesn't follow the Ledger schema — Closed
+- Workstream: Eastsound test bed
+- Type: schema gap
+- Finding: Closes the 2026-09-30 Open entry of the same title. Carl: "the ledger check excluding *_by_CWP files". `tools/checks.py` now leaves `*_by_CWP*` files out of the ledger rule, so the CWP view is no longer checked as a Ledger. Its row is removed from `tools/check_exceptions.csv`. The two duplicate Tags it repeats stay tracked under "Project_Ledger.csv repeats two Tags".
+- Fix or next action: Done.
+
+## 2026-09-30 — Acceptance harness expected the old --ci data-gate note — Closed
+- Workstream: Repo setup
+- Type: workflow failure
+- Finding: The acceptance-test rerun for the Prompt 1 follow-up gave 32 OK and 1 MISMATCH.
+  - Extra test x4, the CI whole-tree step (`--ci --all`), passed with exit 0. The harness was still looking for the old `NOTE | data-gate | - | skipped in CI (--ci)` line.
+  - With `--ci`, `tools/checks.py` now reads the DATAGATE_TERMS secret. When the secret is missing it prints `WARN | data-gate | DATAGATE_TERMS | secret not set for this run; data gate not run`.
+  - The harness expectation was out of date; checks.py behaved as intended.
+- Fix or next action: The harness now expects the WARN line; it is a scratchpad script and is not committed. All tests were rerun.
