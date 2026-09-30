@@ -1,7 +1,7 @@
 Input,Path,Status,Rows,SHA-256
 ledger,testbeds/eastsound/project/02_Project_Ledger/Project_Ledger.csv,used,447,0ed3af5640881f6fe2551b982d44653ddd92629cbcb5d47d68280a3ae6683e31
 id_map,testbeds/eastsound/derived/reconciliation/Ledger_ID_Map.csv,used,447,1e6f2d57dab919b981bd89b55ed7706d8305aa449ad911dae54f36661607c697
-wiki_notes,testbeds/eastsound/derived/wiki/Wiki_Notes.csv,missing,0,
-wiki_links,testbeds/eastsound/derived/wiki/Wiki_Links.csv,missing,0,
+wiki_notes,testbeds/eastsound/derived/wiki/Wiki_Notes.csv,used,202,ba6e3559428c5a4276c84deb34f2a4b491c39b8a6393f17d0508003d06ef55f8
+wiki_links,testbeds/eastsound/derived/wiki/Wiki_Links.csv,used,4102,5601d7ba85517daa369c76cb53e5cd7cf497925dc701b9fa5e3f4fbd5de8a347
 mto,testbeds/eastsound/derived/reconciliation/Starter_MTO.csv,used,22,3a61845a201623e86fe289297ada1612d218c0a57b8736e627a1aa2ede03535c
-open_items,testbeds/eastsound/derived/issues/Open_Items.csv,missing,0,
+open_items,testbeds/eastsound/derived/issues/Open_Items.csv,used,474,ff66b0c4841e2077a1c40217cf9ca5a982adb6093f68b55e092793b97250b29f

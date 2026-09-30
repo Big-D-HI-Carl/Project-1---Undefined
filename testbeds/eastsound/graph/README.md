@@ -11,10 +11,23 @@ The graph of the Project Ledger and the files derived from it, built by script w
   - A derived input that is missing, or lacks a needed column, is skipped and marked in `Build_Inputs.csv`. Nothing is guessed in its place.
 - **Script:** `tools/ledger_to_graph.py`, on graphifyy 0.9.72 (pinned in `requirements.txt`).
 - **Outputs:** `graphify-out/graph.json`, `GRAPH_REPORT.md` and `graph.html`, plus `Build_Inputs.csv` and `Build_Counts.csv` here. Don't commit `cache/` or `.graphify_*`; they are gitignored.
-- **Size:** 813 nodes and 3,155 links in the committed build (`Build_Counts.csv`).
-  - Nodes: 447 items, 86 sheets, 77 spec sections, 21 Addendum 4 items, 160 Wiki notes, 22 MTO lines.
-  - Links: 986 `shown_on`, 536 `specified_in`, 153 `changed_by`, 1,437 `described_in`, 21 `quantity_of`, 22 `measured_on`.
-  - Interim: `derived/wiki/` and `derived/issues/` are not on main yet, so this build has no Wiki note content, Wiki links or open items (`Build_Inputs.csv` marks them missing). Rebuild when they land.
+- **Size:** 1,385 nodes and 7,678 links in the committed build (`Build_Counts.csv`).
+
+  | Node type | Count | | Link | Count |
+  |---|---|---|---|---|
+  | item | 447 | | `shown_on` | 986 |
+  | sheet | 99 | | `specified_in` | 536 |
+  | spec | 117 | | `changed_by` | 153 |
+  | addendum | 23 | | `described_in` | 1,437 |
+  | note | 203 | | `describes` | 200 |
+  | mto | 22 | | `mentions` | 523 |
+  | open_item | 474 | | `references` | 1,480 |
+  | | | | `quantity_of` | 21 |
+  | | | | `measured_on` | 22 |
+  | | | | `concerns` | 790 |
+  | | | | `cites` | 1,530 |
+
+- **Merge order:** the committed build used `derived/wiki/` from commit 331c923 (branch `claude/magical-euler-lnev7r`) and `derived/issues/Open_Items.csv` from commit ddb818e (branch `claude/jolly-rubin-dm4ese`). Those files reach main with their own PRs. Merge them first. If either file changes before it merges, rebuild and check the SHA-256 values in `Build_Inputs.csv`.
 
 ## Rebuild
 
@@ -45,14 +58,14 @@ Two builds of the same inputs give byte-identical `graph.json`, `graph.html`, `G
 | addendum | `addendum:Add. 4 p.7` | Add. 4 p.7 | Ledger, Wiki |
 | note | `note:26 32 13` | Wiki note 26 32 13 | Ledger Wiki Note(s), Wiki_Notes.csv |
 | mto | `mto:13` | MTO line 13: 3 EA | Starter_MTO.csv |
-| open_item | `open:<Item ID>` | `<Item ID> <Title>` | Open_Items.csv |
+| open_item | `open:OI-0001` | Item ID and the title's lead clause, e.g. `OI-0001 Generator rating RFI` | Open_Items.csv |
 
 Every node carries `node_type`. `unlinked` on a node lists the values that made no link.
 
 - **Items** carry `ledger_id`, `tag`, `item_name`, `ledger_line`, `ledger_level` (the tag as written), `citation` (Source Citation), `lane`, `bid_items`, `bid_item` (the raw cell), area, discipline, status and the two Y/N columns.
-- **Notes** carry the Wiki_Notes.csv columns: `title`, `lane`, `note_type`, `discipline`, `revision_date`, `summary`, `where_it_lives`, `heading_line`. `wiki_note_found` is false for a Ledger note name with no Wiki note (CQA Plan).
+- **Notes** carry the Wiki_Notes.csv columns: `title`, `lane`, `note_type`, `discipline`, `revision_date`, `summary` (the first 600 characters), `where_it_lives`, `heading_line`. `wiki_note_found` is false for a Ledger note name with no Wiki note (CQA Plan).
 - **MTO lines** carry every Starter_MTO.csv column (quantity, unit, sheet, set page, box, keyed note, method, confidence, ready, citation, bid item, tie basis).
-- **Open items** carry every Open_Items.csv column; `open_type` is its Type.
+- **Open items** carry every Open_Items.csv column; `open_type` is its Type, and `title` is the full title. 56 open items name no Ledger ID, sheet or spec, so they have no links.
 - **Lane and Bid Item** are item attributes, not nodes, so they don't act as hubs that link everything in two steps (Carl, 2026-09-30).
 
 | Link | From → to | Source |
@@ -72,7 +85,7 @@ Every node carries `node_type`. `unlinked` on a node lists the values that made 
 - **Every link carries** `link_level` and `confidence`, `citation`, `source_file` and `source_location` (`L<line>` in that file), and `value` (the text it came from).
   - Ledger links also carry `ledger_level` (the row's tag as written), `ledger_line` and `note` (a location note such as "Det. 2" or "KN 3, 5").
   - Links to an item carry that item's `ledger_line`.
-  - Wiki links carry `wiki_source` (tag line, related documents or body text) and `wiki_confidence` as written.
+  - Wiki links carry `wiki_source` (tag line, related documents or body text), `wiki_confidence`, `wiki_line` (the Project Wiki line), `written_as` and `basis`, as written in Wiki_Links.csv. Their citation names the note, the source and the Project Wiki line.
 - **Tag mapping:** Verified and Verified-Visual → EXTRACTED; Inferred → INFERRED; Unresolved → AMBIGUOUS.
 
 ## Parsing rules
@@ -103,6 +116,8 @@ Rules 1–10 were approved in Prompt 3 (2026-09-30). Rule 9 changed when the Led
     - The level is the Confidence column (tag line and Related documents Verified, body text Inferred).
     - An equipment tag links to the Ledger ID in the file's Ledger ID column. If that is blank, an exact Tag match gives the ID, and the link is Inferred. If the Tag is on two rows, the link goes to the one row whose Wiki Note(s) cites this note, and is Inferred; otherwise it makes no link.
     - Sheets, specs and addenda parse by rules 3–5. "Add. N Clarification M" with no page links only when the Ledger graph has exactly one node for that clarification.
+    - These make no link and stay on the note under `unlinked`: an equipment name with no Ledger ID (858 rows, e.g. "temporary bypass pumping"); a whole-addendum cite with no page ("Add. 4", "Add. 3") and "Add. 4 p.0" (67); a 5-digit legacy spec number such as "09900" (8); and "Appendix A", which has no Wiki note (2).
+    - A note target links only to a Wiki note or a Ledger Wiki Note(s) name.
     - One link per note and target. When two sources give the same link, it keeps the stronger level and lists both sources in `wiki_source`, because each source supports it on its own.
 13. **MTO lines:** each Ledger ID in the cell gets a `quantity_of` link and the sheet a `measured_on` link, both at the line's Confidence. A blank Ledger ID (the C0.2 earthwork lines) makes no item link. Its Tie Basis stays on the node.
 14. **Open items:** Ledger IDs are read as `L-NNNN`. Sheets and Spec Sections split on `;` and `,` outside parentheses and parse by rules 3–4. The level is the item's Confidence.
@@ -124,4 +139,20 @@ graphify path "Add. 4 p.8" "PROPOSED-Blower-Pad" --undirected --graph testbeds/e
 
 ## Example trace: generator → RFI → spec 26 32 13 → sheets
 
-Pending: this trace needs `derived/issues/Open_Items.csv`, which is not on main yet. It is filled in after the rebuild with that file.
+```
+graphify explain "OI-0001" --graph testbeds/eastsound/graph/graphify-out/graph.json
+graphify path "OI-0001 Generator rating RFI" "Sheet E10.3" --undirected --graph testbeds/eastsound/graph/graphify-out/graph.json
+```
+
+| Step | Link | Level | From |
+|---|---|---|---|
+| GEN (L-0242) ← OI-0001 Generator rating RFI | `concerns` | EXTRACTED (Verified) | Open_Items.csv L2 |
+| OI-0001 → Spec 26 32 13 | `cites` | EXTRACTED (Verified) | Open_Items.csv L2 |
+| OI-0001 → Sheet E1.1, Sheet E6.1 | `cites` | EXTRACTED (Verified) | Open_Items.csv L2 |
+| Spec 26 32 13 ← Wiki note 26 32 13 | `describes` | EXTRACTED (Verified) | Wiki_Notes.csv L164 |
+| Wiki note 26 32 13 → Sheet E1.1, E6.1, E10.3 | `references` | EXTRACTED (Verified) | Wiki_Links.csv L3445–L3464 |
+| GEN → Spec 26 32 13 | `specified_in` | AMBIGUOUS (row Unresolved) | Project_Ledger.csv L243 |
+| GEN → Sheet E1.1, E6.1, E6.3, E7.3, E10.3 | `shown_on` | AMBIGUOUS (row Unresolved) | Project_Ledger.csv L243 |
+
+- The RFI is the one question on this chain: E1.1 and E6.1 show 125 kW / 156 kVA, and 26 32 13 ¶2.03 C.1 (main spec p.326) requires not less than 150.0 kW (OI-0001, from `derived/reconciliation/Summary.md`). The graph only points to those sources. Cite them, not the graph.
+- The generator carries three more open items: OI-0325 (permanent generator bid item), OI-0172 (the same item on L-0242, L-0387 and L-0423) and OI-0063 (tag not read on E7.3 and E10.3).

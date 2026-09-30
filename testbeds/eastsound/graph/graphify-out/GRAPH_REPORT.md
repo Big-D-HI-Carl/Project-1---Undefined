@@ -4,8 +4,8 @@
 - cluster-only mode — file stats not available
 
 ## Summary
-- 813 nodes · 3155 edges · 17 communities
-- Extraction: 14% EXTRACTED · 55% INFERRED · 31% AMBIGUOUS · INFERRED: 1730 edges (avg confidence: 0.55)
+- 1385 nodes · 7678 edges · 77 communities (21 shown, 56 thin omitted)
+- Extraction: 34% EXTRACTED · 45% INFERRED · 20% AMBIGUOUS · INFERRED: 3481 edges (avg confidence: 0.55)
 - Token cost: 0 input · 0 output
 
 ## Community Hubs (Navigation)
@@ -26,100 +26,120 @@
 - Community 14
 - Community 15
 - Community 16
+- Community 17
+- Community 18
+- Community 19
+- Community 20
 
 ## God Nodes (most connected - your core abstractions)
-1. `Wiki note E6.3` - 70 edges
-2. `Sheet E6.3` - 70 edges
-3. `Spec 33 30 00` - 52 edges
-4. `Wiki note 33 30 00` - 49 edges
-5. `Add. 4 p.3` - 43 edges
-6. `Wiki note E4.1` - 41 edges
-7. `Sheet E4.1` - 41 edges
-8. `PROPOSED-BLOWER-BUILDING | PROPOSED-Blower-Building` - 39 edges
-9. `Wiki note E6.1` - 39 edges
-10. `Sheet E6.1` - 39 edges
+1. `Sheet E6.3` - 162 edges
+2. `Sheet E4.1` - 97 edges
+3. `Sheet G0.5` - 94 edges
+4. `Sheet E6.1` - 94 edges
+5. `Wiki note E6.3` - 87 edges
+6. `Sheet C1.3` - 86 edges
+7. `Spec 33 30 00` - 86 edges
+8. `Spec 26 80 00` - 86 edges
+9. `Wiki note E6.1` - 86 edges
+10. `OI-0474 Ledger Drawing Sheets` - 80 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `MTO line 9: 149 LF` --quantity_of--> `PROPOSED-Existing chain link fence 149 LF`  [AMBIGUOUS]
-  testbeds/eastsound/derived/reconciliation/Starter_MTO.csv → testbeds/eastsound/project/02_Project_Ledger/Project_Ledger.csv
-- `MTO line 9: 149 LF` --measured_on--> `Sheet C0.5`  [AMBIGUOUS]
-  testbeds/eastsound/derived/reconciliation/Starter_MTO.csv → testbeds/eastsound/project/02_Project_Ledger/Project_Ledger.csv
-- `MTO line 12: 8 LF` --quantity_of--> `PROPOSED-Existing 4in storm drain 8 LF`  [AMBIGUOUS]
-  testbeds/eastsound/derived/reconciliation/Starter_MTO.csv → testbeds/eastsound/project/02_Project_Ledger/Project_Ledger.csv
-- `MTO line 12: 8 LF` --measured_on--> `Sheet C0.5`  [AMBIGUOUS]
-  testbeds/eastsound/derived/reconciliation/Starter_MTO.csv → testbeds/eastsound/project/02_Project_Ledger/Project_Ledger.csv
-- `MTO line 6: 87 LF` --quantity_of--> `PROPOSED-Existing storm drain and catch basin 87 LF`  [AMBIGUOUS]
-  testbeds/eastsound/derived/reconciliation/Starter_MTO.csv → testbeds/eastsound/project/02_Project_Ledger/Project_Ledger.csv
+- `OI-0367 Electrical & Controls Issues #1` --cites--> `Sheet E2.2`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv → testbeds/eastsound/project/02_Project_Ledger/Project_Ledger.csv
+- `OI-0371 Electrical & Controls Issues #19` --cites--> `Sheet E6.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv → testbeds/eastsound/project/02_Project_Ledger/Project_Ledger.csv
+- `PROPOSED-Hot-Box-1` --described_in--> `Wiki note E6.2`  [AMBIGUOUS]
+  testbeds/eastsound/project/02_Project_Ledger/Project_Ledger.csv → testbeds/eastsound/derived/wiki/Wiki_Notes.csv
+- `PROPOSED-Hot-Box-1` --described_in--> `Wiki note E6.3`  [AMBIGUOUS]
+  testbeds/eastsound/project/02_Project_Ledger/Project_Ledger.csv → testbeds/eastsound/derived/wiki/Wiki_Notes.csv
+- `PROPOSED-Hot-Box-2` --described_in--> `Wiki note E6.2`  [AMBIGUOUS]
+  testbeds/eastsound/project/02_Project_Ledger/Project_Ledger.csv → testbeds/eastsound/derived/wiki/Wiki_Notes.csv
 
-## Communities (17 total, 0 thin omitted)
+## Communities (77 total, 56 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.06
-Nodes (171): PROPOSED-PLANT-DRAIN-FLOW-METER | PROPOSED-Plant-Drain-Flow-Meter, ATS, MDP, TS, GEN, BL-1, BL-2, BL-3 (+163 more)
+Cohesion: 0.05
+Nodes (136): PROPOSED-Temporary construction sign, PROPOSED-Dewatering system, PROPOSED-Bollards, PROPOSED-Trench-Safety-System, PROPOSED-Erosion-and-Sediment-Control-Measures, PROPOSED-Temporary-Bypass-Pipe, PROPOSED-Temporary-8in-Effluent-Piping, PROPOSED-8in-Effluent-Piping (+128 more)
 
 ### Community 1 - "Community 1"
-Cohesion: 0.05
-Nodes (137): INF1, INF2, INF3, SE1, SE2, SE3, WAS1, WAS2 (+129 more)
+Cohesion: 0.06
+Nodes (107): PROPOSED-Water line relocation at storm drain, Pipe ID 1, Pipe ID 2, Pipe ID 3, Pipe ID 4, Pipe ID 5, Pipe ID 6, Pipe ID 7 (+99 more)
 
 ### Community 2 - "Community 2"
-Cohesion: 0.12
-Nodes (92): PROPOSED-Water line relocation at storm drain, Pipe ID 1, Pipe ID 2, Pipe ID 3, Pipe ID 4, Pipe ID 5, Pipe ID 6, Pipe ID 7 (+84 more)
+Cohesion: 0.07
+Nodes (85): SE1, SE2, WAS1, WAS2, PROPOSED-INFLUENT-FLOW-METER, PROPOSED-TRAIN-2-FLOW-METER, PROPOSED-TRAIN-3-FLOW-METER, PROPOSED-EFFLUENT-FLOW-METER (+77 more)
 
 ### Community 3 - "Community 3"
 Cohesion: 0.06
-Nodes (83): PROPOSED-BLOWER-BUILDING | PROPOSED-Blower-Building, PROPOSED-Blower-Building-Slab-and-Grade-Beams, PROPOSED-Blower-Pad, PROPOSED-Blowers-Blower-Building, PROPOSED-2W-Bladder-Tank-Assembly, PROPOSED-Louver-36x84-Motorized, PROPOSED-Louver-24x24-Manual, PROPOSED-Exhaust-Fans-Blower-Building (+75 more)
+Nodes (85): PROPOSED-BLOWER-BUILDING | PROPOSED-Blower-Building, PROPOSED-BLOWER-BLDG-WALL-FANS, PROPOSED-BLOWER-BLDG-MOTORIZED-LOUVER, PROPOSED-BLOWER-BLDG-MANUAL-LOUVER, PROPOSED-EXISTING-BLDG-WALL-FANS, PROPOSED-EXISTING-BLDG-LOUVERS, PROPOSED-Blower-Building-Slab-and-Grade-Beams, PROPOSED-Blower-Pad (+77 more)
 
 ### Community 4 - "Community 4"
 Cohesion: 0.12
-Nodes (69): PROPOSED-Bollards, PROPOSED-Trench-Safety-System, PROPOSED-Erosion-and-Sediment-Control-Measures, PROPOSED-Temporary-Bypass-Pipe, PROPOSED-Temporary-8in-Effluent-Piping, PROPOSED-8in-Effluent-Piping, PROPOSED-8in-Effluent-Flow-Meter, PROPOSED-Aerobic-Digester (+61 more)
+Nodes (59): F1–F4 [Influent Pump Station], PROPOSED-Service-Area-Grounding-Electrode-System, PROPOSED-Blower-Building-Power-Handholes, PROPOSED-Blower-Building-Control-Signal-Handholes, PROPOSED-Blower-Building-Grounding-Electrode-System, IP-1, IP-2, IP-3 (+51 more)
 
 ### Community 5 - "Community 5"
 Cohesion: 0.08
-Nodes (62): PROPOSED-Asphalt pavement sawcut and removal, SD-1 [L-0073], PROPOSED-4in roof drain at SD-1, SDCB #5, SDCB #8, SDCB #9, SDCB #7, SDCB #10 (+54 more)
+Nodes (43): INF1, INF2, INF3, PROPOSED-IPS-DISCHARGE-TO-SPLITTER, PROPOSED-EXISTING-INFLUENT-PIPING-REMOVAL, PROPOSED-FLOW-SPLITTER-BOX, PROPOSED-FLOW-SPLITTER-SUPPORT, PROPOSED-INFLUENT-FLOW-METER-VAULT (+35 more)
 
 ### Community 6 - "Community 6"
-Cohesion: 0.10
-Nodes (50): PROPOSED-Temporary bypass pumping system, PROPOSED-Temporary power generator, PROPOSED-Existing 8in effluent outfall pipe, PROPOSED-Interim 8in HDPE effluent pipe, PROPOSED-Existing 4in roof drain pipe, SSMH 1286, SSMH 1285, PROPOSED-Existing 10in effluent outfall pipe (+42 more)
+Cohesion: 0.09
+Nodes (43): PROPOSED-2W-FLOW-METER, PROPOSED-2W-PUMP-STATION-WET-WELL | PROPOSED-2W-Pump-Station-Wet-Well, PROPOSED-2W-PUMPS, F1–F4 [2W Pump Station], PROPOSED-2W-DIAPHRAGM-TANKS, PIT-620, PROPOSED-2W-DISCHARGE-LINE, PROPOSED-2W-FILL-LINE (+35 more)
 
 ### Community 7 - "Community 7"
-Cohesion: 0.10
-Nodes (42): PROPOSED-2W-FLOW-METER, PROPOSED-2W-PUMP-STATION-WET-WELL | PROPOSED-2W-Pump-Station-Wet-Well, PROPOSED-2W-PUMPS, F1–F4 [2W Pump Station], PROPOSED-2W-DIAPHRAGM-TANKS, PIT-620, PROPOSED-2W-DISCHARGE-LINE, PROPOSED-2W-FILL-LINE (+34 more)
+Cohesion: 0.18
+Nodes (38): BL-1, BL-2, BL-3, BL-4, DB, MCC, WP-1, WP-2 (+30 more)
 
 ### Community 8 - "Community 8"
-Cohesion: 0.16
-Nodes (32): PROPOSED-Utility-Transformer-480V, P-SEC, PROPOSED-CT-Enclosure-and-Meter-Base, P-TPS, PROPOSED-Service-Area-Grounding-Electrode-System, PROPOSED-Existing-Utility-Transformer-208V, GEN (E), PROPOSED-Existing-Generator-Fuel-Tank-Exhaust-Louvers (+24 more)
+Cohesion: 0.14
+Nodes (33): SE3, WAS3, DO #1 | DO-1, DO #2 | DO-2, PROPOSED-TRAIN-3-TANK, PROPOSED-TRAIN-3-TREATMENT-SYSTEM, PROPOSED-TRAIN-3-INNER-WALLS, PROPOSED-TRAIN-3-CLARIFIER-MECHANISM (+25 more)
 
 ### Community 9 - "Community 9"
-Cohesion: 0.15
-Nodes (27): PROPOSED-Plastic covering for slopes and stockpiles, PROPOSED-Catch basin inserts, PROPOSED-Filter fabric fence, PROPOSED-Stabilized construction entrance, PROPOSED-Geotextile encased check dams, PROPOSED-Off-site staging area, PROPOSED-Hydroseeded restoration areas, PROPOSED-Dewatering system (+19 more)
+Cohesion: 0.13
+Nodes (38): PROPOSED-Utility-Transformer-480V, P-SEC, PROPOSED-CT-Enclosure-and-Meter-Base, ATS, GEN, P-TPS, PROPOSED-Existing-Utility-Transformer-208V, GEN (E) (+30 more)
 
 ### Community 10 - "Community 10"
-Cohesion: 0.20
-Nodes (18): EF-1, EF-2, ML-1, PROPOSED-Blower-Building-Manual-Louver, L1 (Blower Building), L2 (Blower Building), X1 (Blower Building), PROPOSED-Blower-Building-Ventilation-Control-Panel (+10 more)
+Cohesion: 0.13
+Nodes (39): PROPOSED-Existing 8in effluent outfall pipe, PROPOSED-Existing 4in roof drain pipe, SSMH 1286, SSMH 1285, PROPOSED-Existing 10in effluent outfall pipe, PROPOSED-Existing storm drain and catch basin 87 LF, PROPOSED-Existing 6in drain pipe to sump station, PROPOSED-Existing 1.5in sump force main (+31 more)
 
 ### Community 11 - "Community 11"
-Cohesion: 0.44
-Nodes (11): PROPOSED-Drain-Pump-Station-Precast-Wet-Well, PROPOSED-2W-Pump-Station-Precast-Wet-Well, PROPOSED-Influent-Pump-Station-Precast-Wet-Well, PROPOSED-Influent-Pump-Station-Top-Slab, PROPOSED-Influent-Flow-Meter-Valve-Vault, PROPOSED-Effluent-Flow-Meter-Valve-Vault, PROPOSED-Plants-2-and-3-Flow-Meter-Vault, PROPOSED-Influent-Pump-Station-Meter-Vaults (+3 more)
+Cohesion: 0.17
+Nodes (29): MDP, LP-1, EF-1, EF-2, ML-1, PROPOSED-Blower-Building-Manual-Louver, L1 (Blower Building), L2 (Blower Building) (+21 more)
 
 ### Community 12 - "Community 12"
-Cohesion: 0.48
-Nodes (7): PROPOSED-BLOWER-BLDG-WALL-FANS, PROPOSED-BLOWER-BLDG-MOTORIZED-LOUVER, PROPOSED-BLOWER-BLDG-MANUAL-LOUVER, PROPOSED-EXISTING-BLDG-WALL-FANS, PROPOSED-EXISTING-BLDG-LOUVERS, Wiki note 23 34 00, Spec 23 34 00
+Cohesion: 0.20
+Nodes (36): SD-1 [L-0073], PROPOSED-4in roof drain at SD-1, SDCB #5, SDCB #8, SDCB #9, SDCB #7, SDCB #10, SDCB #2 (+28 more)
 
 ### Community 13 - "Community 13"
-Cohesion: 0.67
-Nodes (3): PROPOSED-Temporary construction sign, Wiki note 15 08 13, Spec 15 08 13
+Cohesion: 0.18
+Nodes (23): PROPOSED-Plastic covering for slopes and stockpiles, PROPOSED-Catch basin inserts, PROPOSED-Filter fabric fence, PROPOSED-Stabilized construction entrance, PROPOSED-Geotextile encased check dams, PROPOSED-Off-site staging area, PROPOSED-Hydroseeded restoration areas, PROPOSED-Compost berm (+15 more)
 
 ### Community 14 - "Community 14"
-Cohesion: 0.67
-Nodes (3): PROPOSED-UV-TRANSMISSIVITY-ANALYZER, Wiki note 46 66 10, Spec 46 66 10
+Cohesion: 0.19
+Nodes (27): TS, TCP-3, PROPOSED-Train-3-Clarifier-Drive-Motor, PROPOSED-Train-3-Submersible-Mixer-A, PROPOSED-Train-3-Submersible-Mixer-B, PROPOSED-Train-3-Local-Disconnects, PROPOSED-Train-3-Pole-Light, PROPOSED-Influent-Pump-Local-Disconnects (+19 more)
 
 ### Community 15 - "Community 15"
-Cohesion: 0.67
-Nodes (3): PROPOSED-Influent-Pump-Station-Interior-Coating, Wiki note 09 97 23, Spec 09 97 23
+Cohesion: 0.25
+Nodes (17): PROPOSED-PLANT-DRAIN-FLOW-METER | PROPOSED-Plant-Drain-Flow-Meter, PROPOSED-SCADA-Computer-System, PROPOSED-Influent-Flow-Meter, PROPOSED-Plant-2-Flow-Meter, PROPOSED-Plant-3-Flow-Meter, PROPOSED-WAS-Dewatering-Flow-Meter, PROPOSED-Effluent-Flow-Meter, PROPOSED-2W-Flow-Meter (+9 more)
 
 ### Community 16 - "Community 16"
-Cohesion: 0.67
-Nodes (3): PROPOSED-Funding-Recognition-Sign, Wiki note 00 53 00, Spec 00 53 00
+Cohesion: 0.22
+Nodes (18): PROPOSED-DB-Local-Disconnect, MCP, PROPOSED-Blower-Building-Smoke-Heat-Detector, PROPOSED-Blower-Building-Door-Intrusion-Switch, PROPOSED-2W-Pressure-Transducer, PROPOSED-Blower-High-Temperature-Switches, Wiki note 26 80 00, Wiki note E0.1 (+10 more)
+
+### Community 17 - "Community 17"
+Cohesion: 0.17
+Nodes (20): PROPOSED-Asphalt pavement sawcut and removal, PROPOSED-East trench drains, PROPOSED-West trench drain, PROPOSED-Tracer wire and locater boxes, PROPOSED-HMA pavement, PROPOSED-Temporary shoring and trench safety systems, PROPOSED-Temporary cold-mix patches, Add. 4 p.1 Clarification 1 (+12 more)
+
+### Community 18 - "Community 18"
+Cohesion: 0.18
+Nodes (13): PROPOSED-Hot Box #1 flow meter, PROPOSED-Hot Box #1 solenoid valve, LSH-111, F2 (2W Pump Station), F3 (2W Pump Station), LSL-111, PROPOSED-Hot-Box-1, PROPOSED-Hot-Box-2 (+5 more)
+
+### Community 19 - "Community 19"
+Cohesion: 0.26
+Nodes (13): PROPOSED-Block retaining wall, PROPOSED-Chain link fence 126 LF, PROPOSED-Retaining wall footing drain, MTO line 22: 126 LF, Wiki note 02 83 00, Wiki note 32 32 23, Wiki note C2.5, Sheet C2.5 (+5 more)
+
+### Community 20 - "Community 20"
+Cohesion: 0.28
+Nodes (9): PROPOSED-Temporary bypass pumping system, PROPOSED-Temporary power generator, PROPOSED-Interim 8in HDPE effluent pipe, Wiki note Appendix F, Wiki note C0.7, Wiki note G0.3, Sheet C0.7, Sheet G0.3 (+1 more)
 
 ## Ambiguous Edges - Review These
 - `PROPOSED-Hot-Box-1` → `Add. 4 p.3`  [AMBIGUOUS]
@@ -2086,11 +2106,1153 @@ Nodes (3): PROPOSED-Funding-Recognition-Sign, Wiki note 00 53 00, Spec 00 53 00
   testbeds/eastsound/derived/reconciliation/Starter_MTO.csv · relation: quantity_of
 - `MTO line 7: 20 LF` → `Sheet C0.5`  [AMBIGUOUS]
   testbeds/eastsound/derived/reconciliation/Starter_MTO.csv · relation: measured_on
+- `OI-0124 Same PROPOSED name, different items — PROPOSED-Dewatering sy…` → `PROPOSED-Dewatering system`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0124 Same PROPOSED name, different items — PROPOSED-Dewatering sy…` → `PROPOSED-Dewatering-System`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0124 Same PROPOSED name, different items — PROPOSED-Dewatering sy…` → `Sheet C0.2`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0124 Same PROPOSED name, different items — PROPOSED-Dewatering sy…` → `Spec 00 31 13`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0124 Same PROPOSED name, different items — PROPOSED-Dewatering sy…` → `Spec 00 41 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0124 Same PROPOSED name, different items — PROPOSED-Dewatering sy…` → `Spec 00 73 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0124 Same PROPOSED name, different items — PROPOSED-Dewatering sy…` → `Spec 01 33 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0124 Same PROPOSED name, different items — PROPOSED-Dewatering sy…` → `Spec 01 70 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0124 Same PROPOSED name, different items — PROPOSED-Dewatering sy…` → `Spec 01 91 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0124 Same PROPOSED name, different items — PROPOSED-Dewatering sy…` → `Spec 31 20 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0124 Same PROPOSED name, different items — PROPOSED-Dewatering sy…` → `Spec 31 23 19`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0142 Same item on more than one row (not combined)` → `DO #1 | DO-1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0142 Same item on more than one row (not combined)` → `DO #2 | DO-2`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0142 Same item on more than one row (not combined)` → `PROPOSED-Train-3-Dissolved-Oxygen-Sensors`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0142 Same item on more than one row (not combined)` → `PROPOSED-Train-3-pH-Sensors`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0142 Same item on more than one row (not combined)` → `Sheet C3.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0142 Same item on more than one row (not combined)` → `Sheet E3.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0142 Same item on more than one row (not combined)` → `Sheet E6.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0142 Same item on more than one row (not combined)` → `Sheet E7.6`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0142 Same item on more than one row (not combined)` → `Spec 01 33 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0142 Same item on more than one row (not combined)` → `Spec 01 70 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0142 Same item on more than one row (not combined)` → `Spec 01 91 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0142 Same item on more than one row (not combined)` → `Spec 26 80 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0142 Same item on more than one row (not combined)` → `Spec 46 53 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0144 Same item on more than one row (not combined)` → `PROPOSED-INFLUENT-PUMP-STATION-WET-WELL`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0144 Same item on more than one row (not combined)` → `PROPOSED-Influent-Pump-Station-Precast-Wet-Well`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0144 Same item on more than one row (not combined)` → `PROPOSED-Influent-Pump-Station`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0144 Same item on more than one row (not combined)` → `Sheet C4.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0144 Same item on more than one row (not combined)` → `Sheet G0.5`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0144 Same item on more than one row (not combined)` → `Sheet G0.6`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0144 Same item on more than one row (not combined)` → `Sheet S2.4`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0144 Same item on more than one row (not combined)` → `Spec 00 31 13`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0144 Same item on more than one row (not combined)` → `Spec 00 73 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0144 Same item on more than one row (not combined)` → `Spec 01 45 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0144 Same item on more than one row (not combined)` → `Spec 01 50 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0144 Same item on more than one row (not combined)` → `Spec 03 40 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0144 Same item on more than one row (not combined)` → `Spec 22 13 29`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0170 Same item on more than one row (not combined)` → `PROPOSED-ROTARY-FAN-PRESS`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0170 Same item on more than one row (not combined)` → `PROPOSED-RFP-CONTROL-PANEL`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0170 Same item on more than one row (not combined)` → `DW-1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0170 Same item on more than one row (not combined)` → `PROPOSED-Dewatering-System`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0170 Same item on more than one row (not combined)` → `Sheet C6.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0170 Same item on more than one row (not combined)` → `Sheet E4.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0170 Same item on more than one row (not combined)` → `Sheet E6.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0170 Same item on more than one row (not combined)` → `Sheet E6.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0170 Same item on more than one row (not combined)` → `Sheet E7.0`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0170 Same item on more than one row (not combined)` → `Sheet E9.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0170 Same item on more than one row (not combined)` → `Sheet G0.5`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0170 Same item on more than one row (not combined)` → `Sheet G0.6`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0170 Same item on more than one row (not combined)` → `Sheet G0.7`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0170 Same item on more than one row (not combined)` → `Spec 00 31 13`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0170 Same item on more than one row (not combined)` → `Spec 00 41 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0170 Same item on more than one row (not combined)` → `Spec 00 73 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0170 Same item on more than one row (not combined)` → `Spec 01 33 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0170 Same item on more than one row (not combined)` → `Spec 01 70 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0170 Same item on more than one row (not combined)` → `Spec 01 91 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0170 Same item on more than one row (not combined)` → `Spec 46 76 26`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0180 Same item on more than one row (not combined)` → `PROPOSED-HMA pavement`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0180 Same item on more than one row (not combined)` → `PROPOSED-Gravel surfacing`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0180 Same item on more than one row (not combined)` → `PROPOSED-Site-Final-Surfacing-and-Pavement`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0180 Same item on more than one row (not combined)` → `Sheet C2.6`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0180 Same item on more than one row (not combined)` → `Sheet C7.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0180 Same item on more than one row (not combined)` → `Sheet C7.4`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0180 Same item on more than one row (not combined)` → `Spec 00 24 13`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0180 Same item on more than one row (not combined)` → `Spec 00 31 13`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0180 Same item on more than one row (not combined)` → `Spec 00 41 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0180 Same item on more than one row (not combined)` → `Spec 00 73 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0180 Same item on more than one row (not combined)` → `Spec 01 45 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0180 Same item on more than one row (not combined)` → `Spec 32 12 16`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0388 Civil & Site CS-25` → `PROPOSED-Dewatering system`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0388 Civil & Site CS-25` → `Spec 00 31 13`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0388 Civil & Site CS-25` → `Spec 01 11 10`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0388 Civil & Site CS-25` → `Spec 31 20 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0388 Civil & Site CS-25` → `Spec 31 23 19`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0451 Structural & Building §2 #2` → `Spec 00 24 13`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0451 Structural & Building §2 #2` → `Spec 03 30 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0451 Structural & Building §2 #2` → `Spec 31 20 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0159 Same item on more than one row (not combined)` → `Pipe ID 22`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0159 Same item on more than one row (not combined)` → `PROPOSED-YARD-HYDRANTS`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0159 Same item on more than one row (not combined)` → `Sheet C1.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0159 Same item on more than one row (not combined)` → `Sheet C7.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0159 Same item on more than one row (not combined)` → `Sheet C7.5`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0159 Same item on more than one row (not combined)` → `Spec 15 40 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0159 Same item on more than one row (not combined)` → `Spec 33 05 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0159 Same item on more than one row (not combined)` → `Spec 33 30 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0159 Same item on more than one row (not combined)` → `Spec 33 31 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0159 Same item on more than one row (not combined)` → `Spec 43 22 10`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0160 Same item on more than one row (not combined)` → `PROPOSED-Post hydrant`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0160 Same item on more than one row (not combined)` → `PROPOSED-POST-HYDRANTS`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0160 Same item on more than one row (not combined)` → `Sheet C1.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0160 Same item on more than one row (not combined)` → `Sheet C7.5`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0160 Same item on more than one row (not combined)` → `Spec 15 40 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0160 Same item on more than one row (not combined)` → `Spec 33 30 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0192 Same item on more than one row (not combined)` → `Pipe ID 15`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0192 Same item on more than one row (not combined)` → `WAS3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0192 Same item on more than one row (not combined)` → `Sheet C1.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0192 Same item on more than one row (not combined)` → `Sheet C1.6A`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0192 Same item on more than one row (not combined)` → `Sheet C3.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0192 Same item on more than one row (not combined)` → `Sheet C3.4`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0192 Same item on more than one row (not combined)` → `Sheet C6.2`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0192 Same item on more than one row (not combined)` → `Sheet G0.5`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0192 Same item on more than one row (not combined)` → `Spec 00 73 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0192 Same item on more than one row (not combined)` → `Spec 33 05 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0192 Same item on more than one row (not combined)` → `Spec 33 30 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0192 Same item on more than one row (not combined)` → `Spec 33 31 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0192 Same item on more than one row (not combined)` → `Spec 46 53 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0197 Same item on more than one row (not combined)` → `Pipe ID 7`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0197 Same item on more than one row (not combined)` → `PROPOSED-DIGESTED-SLUDGE-LINE`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0197 Same item on more than one row (not combined)` → `Sheet C1.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0197 Same item on more than one row (not combined)` → `Sheet C1.6A`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0197 Same item on more than one row (not combined)` → `Sheet C5.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0197 Same item on more than one row (not combined)` → `Sheet C5.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0197 Same item on more than one row (not combined)` → `Sheet C6.2`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0197 Same item on more than one row (not combined)` → `Sheet G0.5`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0197 Same item on more than one row (not combined)` → `Spec 33 05 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0197 Same item on more than one row (not combined)` → `Spec 33 30 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0197 Same item on more than one row (not combined)` → `Spec 33 31 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0198 Same item on more than one row (not combined)` → `Pipe ID 19`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0198 Same item on more than one row (not combined)` → `PROPOSED-WAS-PUMP-DISCHARGE-TO-DIGESTER`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0198 Same item on more than one row (not combined)` → `Sheet C1.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0198 Same item on more than one row (not combined)` → `Sheet C1.6A`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0198 Same item on more than one row (not combined)` → `Sheet C5.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0198 Same item on more than one row (not combined)` → `Sheet C5.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0198 Same item on more than one row (not combined)` → `Sheet C6.2`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0198 Same item on more than one row (not combined)` → `Sheet G0.5`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0198 Same item on more than one row (not combined)` → `Spec 33 05 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0198 Same item on more than one row (not combined)` → `Spec 33 30 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0198 Same item on more than one row (not combined)` → `Spec 33 31 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0200 Same item on more than one row (not combined)` → `Pipe ID 20`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0200 Same item on more than one row (not combined)` → `PROPOSED-AIR-TO-TRAIN-3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0200 Same item on more than one row (not combined)` → `Sheet C1.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0200 Same item on more than one row (not combined)` → `Sheet C3.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0200 Same item on more than one row (not combined)` → `Sheet C3.5`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0200 Same item on more than one row (not combined)` → `Sheet C6.4`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0200 Same item on more than one row (not combined)` → `Sheet C6.5`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0200 Same item on more than one row (not combined)` → `Spec 00 73 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0200 Same item on more than one row (not combined)` → `Spec 33 05 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0200 Same item on more than one row (not combined)` → `Spec 33 30 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0200 Same item on more than one row (not combined)` → `Spec 33 31 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0200 Same item on more than one row (not combined)` → `Spec 46 53 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0201 Same item on more than one row (not combined)` → `Pipe ID 21`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0201 Same item on more than one row (not combined)` → `PROPOSED-DIGESTER-AIR-LINES`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0201 Same item on more than one row (not combined)` → `Sheet C1.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0201 Same item on more than one row (not combined)` → `Sheet C1.6A`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0201 Same item on more than one row (not combined)` → `Sheet C5.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0201 Same item on more than one row (not combined)` → `Sheet C5.2`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0201 Same item on more than one row (not combined)` → `Sheet C5.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0201 Same item on more than one row (not combined)` → `Sheet C6.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0201 Same item on more than one row (not combined)` → `Spec 00 73 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0201 Same item on more than one row (not combined)` → `Spec 33 05 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0201 Same item on more than one row (not combined)` → `Spec 33 30 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0201 Same item on more than one row (not combined)` → `Spec 33 31 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0377 Electrical & Controls Issues #27` → `Hot Box #1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0377 Electrical & Controls Issues #27` → `Sheet C1.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0377 Electrical & Controls Issues #27` → `Sheet E4.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0133 Same item on more than one row (not combined)` → `PROPOSED-EXISTING-BLDG-WALL-FANS`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0133 Same item on more than one row (not combined)` → `EF-3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0133 Same item on more than one row (not combined)` → `EF-4`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0133 Same item on more than one row (not combined)` → `EF-5`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0133 Same item on more than one row (not combined)` → `PROPOSED-WWTP-Building-Exhaust-Fan-24x24`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0133 Same item on more than one row (not combined)` → `Sheet A1.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0133 Same item on more than one row (not combined)` → `Sheet E4.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0133 Same item on more than one row (not combined)` → `Sheet E6.2`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0133 Same item on more than one row (not combined)` → `Sheet E8.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0133 Same item on more than one row (not combined)` → `Sheet E9.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0133 Same item on more than one row (not combined)` → `Spec 00 73 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0133 Same item on more than one row (not combined)` → `Spec 13 12 20`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0133 Same item on more than one row (not combined)` → `Spec 23 34 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0133 Same item on more than one row (not combined)` → `Spec 26 80 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0361 Electrical & Controls Issues #14` → `Sheet E0.4`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0361 Electrical & Controls Issues #14` → `Sheet E4.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0361 Electrical & Controls Issues #14` → `Sheet E8.4`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0361 Electrical & Controls Issues #14` → `Sheet E9.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0361 Electrical & Controls Issues #14` → `Spec 00 73 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0361 Electrical & Controls Issues #14` → `Spec 26 80 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0376 Electrical & Controls Issues #26` → `EF-3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0376 Electrical & Controls Issues #26` → `EF-5`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0376 Electrical & Controls Issues #26` → `Sheet E0.4`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0376 Electrical & Controls Issues #26` → `Sheet E4.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0376 Electrical & Controls Issues #26` → `Sheet E6.2`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0376 Electrical & Controls Issues #26` → `Sheet E9.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0376 Electrical & Controls Issues #26` → `Spec 23 34 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0376 Electrical & Controls Issues #26` → `Spec 26 80 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0178 Same item on more than one row (not combined)` → `PROPOSED-Plastic covering for slopes and stockpiles`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0178 Same item on more than one row (not combined)` → `PROPOSED-Catch basin inserts`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0178 Same item on more than one row (not combined)` → `PROPOSED-Filter fabric fence`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0178 Same item on more than one row (not combined)` → `PROPOSED-Stabilized construction entrance`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0178 Same item on more than one row (not combined)` → `PROPOSED-Geotextile encased check dams`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0178 Same item on more than one row (not combined)` → `PROPOSED-Compost berm`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0178 Same item on more than one row (not combined)` → `PROPOSED-Orange barrier fence`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0178 Same item on more than one row (not combined)` → `PROPOSED-Erosion-and-Sediment-Control-Measures`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0178 Same item on more than one row (not combined)` → `Sheet C0.2`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0178 Same item on more than one row (not combined)` → `Sheet C0.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0178 Same item on more than one row (not combined)` → `Sheet C0.4`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0178 Same item on more than one row (not combined)` → `Sheet C0.6`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0178 Same item on more than one row (not combined)` → `Spec 00 24 13`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0178 Same item on more than one row (not combined)` → `Spec 00 41 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0178 Same item on more than one row (not combined)` → `Spec 01 50 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0178 Same item on more than one row (not combined)` → `Spec 31 32 11`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0138 Same item on more than one row (not combined)` → `PROPOSED-TRAIN-3-CONTROL-PANEL`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0138 Same item on more than one row (not combined)` → `TCP-3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0138 Same item on more than one row (not combined)` → `Sheet E3.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0138 Same item on more than one row (not combined)` → `Sheet E6.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0138 Same item on more than one row (not combined)` → `Sheet E6.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0138 Same item on more than one row (not combined)` → `Sheet E7.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0138 Same item on more than one row (not combined)` → `Sheet E9.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0138 Same item on more than one row (not combined)` → `Spec 46 53 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0162 Same item on more than one row (not combined)` → `PROPOSED-UV-CONTROL-PANELS`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0162 Same item on more than one row (not combined)` → `PROPOSED-UV-Control-Panel-1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0162 Same item on more than one row (not combined)` → `PROPOSED-UV-Control-Panel-2`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0162 Same item on more than one row (not combined)` → `PROPOSED-UV-Power-Distribution-1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0162 Same item on more than one row (not combined)` → `PROPOSED-UV-Power-Distribution-2`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0162 Same item on more than one row (not combined)` → `Sheet C5.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0162 Same item on more than one row (not combined)` → `Sheet C5.2`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0162 Same item on more than one row (not combined)` → `Sheet C5.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0162 Same item on more than one row (not combined)` → `Sheet C5.4`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0162 Same item on more than one row (not combined)` → `Sheet E5.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0162 Same item on more than one row (not combined)` → `Sheet E6.2`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0162 Same item on more than one row (not combined)` → `Sheet E6.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0162 Same item on more than one row (not combined)` → `Spec 00 73 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0162 Same item on more than one row (not combined)` → `Spec 26 27 26`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0162 Same item on more than one row (not combined)` → `Spec 46 66 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0165 Same item on more than one row (not combined)` → `S1–S2 [Aerobic Digester]`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0165 Same item on more than one row (not combined)` → `PROPOSED-Digester-Level-Transducer`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0165 Same item on more than one row (not combined)` → `Sheet C5.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0165 Same item on more than one row (not combined)` → `Sheet E5.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0165 Same item on more than one row (not combined)` → `Sheet E6.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0165 Same item on more than one row (not combined)` → `Sheet E7.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0165 Same item on more than one row (not combined)` → `Sheet E7.5`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0165 Same item on more than one row (not combined)` → `Spec 26 80 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0150 Same item on more than one row (not combined)` → `PROPOSED-WAS-FLOW-METER`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0150 Same item on more than one row (not combined)` → `PROPOSED-WAS-Dewatering-Flow-Meter`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0150 Same item on more than one row (not combined)` → `Sheet C6.2`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0150 Same item on more than one row (not combined)` → `Sheet E10.2`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0150 Same item on more than one row (not combined)` → `Sheet E4.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0150 Same item on more than one row (not combined)` → `Sheet E6.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0150 Same item on more than one row (not combined)` → `Sheet E7.0`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0150 Same item on more than one row (not combined)` → `Spec 26 80 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0171 Same item on more than one row (not combined)` → `PROPOSED-POLYMER-SYSTEM`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0171 Same item on more than one row (not combined)` → `PROPOSED-Polymer-Feed-Pump`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0171 Same item on more than one row (not combined)` → `Sheet C6.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0171 Same item on more than one row (not combined)` → `Sheet E10.2`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0171 Same item on more than one row (not combined)` → `Sheet E4.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0171 Same item on more than one row (not combined)` → `Sheet E6.2`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0171 Same item on more than one row (not combined)` → `Sheet E6.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0171 Same item on more than one row (not combined)` → `Sheet E8.6`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0171 Same item on more than one row (not combined)` → `Spec 46 33 33`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0131 Same item on more than one row (not combined)` → `MCP`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0131 Same item on more than one row (not combined)` → `PROPOSED-PLC-Control-Panel`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0131 Same item on more than one row (not combined)` → `Sheet A1.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0131 Same item on more than one row (not combined)` → `Sheet E2.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0131 Same item on more than one row (not combined)` → `Sheet E2.2`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0131 Same item on more than one row (not combined)` → `Sheet E6.2`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0131 Same item on more than one row (not combined)` → `Sheet E6.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0131 Same item on more than one row (not combined)` → `Sheet E7.0`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0131 Same item on more than one row (not combined)` → `Sheet E7.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0131 Same item on more than one row (not combined)` → `Sheet E7.2`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0131 Same item on more than one row (not combined)` → `Sheet E7.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0131 Same item on more than one row (not combined)` → `Sheet E7.4`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0131 Same item on more than one row (not combined)` → `Sheet E7.5`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0131 Same item on more than one row (not combined)` → `Sheet E7.6`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0131 Same item on more than one row (not combined)` → `Sheet E7.7`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0131 Same item on more than one row (not combined)` → `Spec 00 31 13`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0131 Same item on more than one row (not combined)` → `Spec 00 73 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0131 Same item on more than one row (not combined)` → `Spec 01 33 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0131 Same item on more than one row (not combined)` → `Spec 01 70 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0131 Same item on more than one row (not combined)` → `Spec 26 80 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0177 Same item on more than one row (not combined)` → `PROPOSED-Temporary shoring and trench safety systems`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0177 Same item on more than one row (not combined)` → `PROPOSED-Trench-Safety-System`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0177 Same item on more than one row (not combined)` → `PROPOSED-Temporary-Excavation-Support`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0177 Same item on more than one row (not combined)` → `Sheet G0.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0177 Same item on more than one row (not combined)` → `Spec 00 24 13`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0177 Same item on more than one row (not combined)` → `Spec 00 41 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0177 Same item on more than one row (not combined)` → `Spec 01 11 10`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0177 Same item on more than one row (not combined)` → `Spec 31 23 33`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0177 Same item on more than one row (not combined)` → `Spec 31 40 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0386 Civil & Site CS-23` → `Sheet C7.4`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0386 Civil & Site CS-23` → `Spec 00 73 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0386 Civil & Site CS-23` → `Spec 31 23 33`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0374 Electrical & Controls Issues #20` → `Sheet E2.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0374 Electrical & Controls Issues #20` → `Sheet E2.2`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0374 Electrical & Controls Issues #20` → `Sheet E4.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0374 Electrical & Controls Issues #20` → `Sheet E7.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0374 Electrical & Controls Issues #20` → `Spec 26 80 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0161 Same item on more than one row (not combined)` → `PROPOSED-UV-SYSTEM`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0161 Same item on more than one row (not combined)` → `UV1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0161 Same item on more than one row (not combined)` → `UV2`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0161 Same item on more than one row (not combined)` → `PROPOSED-UV-Disinfection-System`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0161 Same item on more than one row (not combined)` → `Sheet C5.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0161 Same item on more than one row (not combined)` → `Sheet C5.2`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0161 Same item on more than one row (not combined)` → `Sheet C5.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0161 Same item on more than one row (not combined)` → `Sheet C5.4`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0161 Same item on more than one row (not combined)` → `Sheet E5.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0161 Same item on more than one row (not combined)` → `Sheet E6.2`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0161 Same item on more than one row (not combined)` → `Sheet E6.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0161 Same item on more than one row (not combined)` → `Sheet E7.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0161 Same item on more than one row (not combined)` → `Sheet E7.5`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0161 Same item on more than one row (not combined)` → `Sheet G0.5`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0161 Same item on more than one row (not combined)` → `Sheet G0.6`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0161 Same item on more than one row (not combined)` → `Sheet G0.7`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0161 Same item on more than one row (not combined)` → `Spec 00 31 13`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0161 Same item on more than one row (not combined)` → `Spec 00 41 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0161 Same item on more than one row (not combined)` → `Spec 00 73 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0161 Same item on more than one row (not combined)` → `Spec 01 33 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0161 Same item on more than one row (not combined)` → `Spec 01 70 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0161 Same item on more than one row (not combined)` → `Spec 01 91 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0161 Same item on more than one row (not combined)` → `Spec 46 66 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0164 Same item on more than one row (not combined)` → `PROPOSED-UV-DIGESTER-GRATING-GUARDRAIL`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0164 Same item on more than one row (not combined)` → `PROPOSED-UV-Digester-Grating`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0164 Same item on more than one row (not combined)` → `PROPOSED-UV-Digester-Guardrail-and-Ladders`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0164 Same item on more than one row (not combined)` → `Sheet C5.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0164 Same item on more than one row (not combined)` → `Sheet C5.2`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0164 Same item on more than one row (not combined)` → `Sheet C5.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0164 Same item on more than one row (not combined)` → `Sheet S2.2`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0164 Same item on more than one row (not combined)` → `Spec 00 73 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0164 Same item on more than one row (not combined)` → `Spec 05 51 10`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0164 Same item on more than one row (not combined)` → `Spec 05 52 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0164 Same item on more than one row (not combined)` → `Spec 05 53 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0168 Same item on more than one row (not combined)` → `PROPOSED-DIGESTED-SLUDGE-PUMP`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0168 Same item on more than one row (not combined)` → `SD-1 [L-0315]`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0168 Same item on more than one row (not combined)` → `Sheet C6.2`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0168 Same item on more than one row (not combined)` → `Sheet E4.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0168 Same item on more than one row (not combined)` → `Sheet E6.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0168 Same item on more than one row (not combined)` → `Sheet E6.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0168 Same item on more than one row (not combined)` → `Sheet E7.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0168 Same item on more than one row (not combined)` → `Sheet E7.4`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0168 Same item on more than one row (not combined)` → `Sheet E9.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0168 Same item on more than one row (not combined)` → `Sheet G0.5`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0168 Same item on more than one row (not combined)` → `Sheet G0.6`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0168 Same item on more than one row (not combined)` → `Sheet G0.7`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0168 Same item on more than one row (not combined)` → `Spec 22 13 36`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0168 Same item on more than one row (not combined)` → `Spec 46 76 26`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0199 Same item on more than one row (not combined)` → `Pipe ID 5`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0199 Same item on more than one row (not combined)` → `PROPOSED-FINAL-EFFLUENT-LINE`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0199 Same item on more than one row (not combined)` → `Sheet C1.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0199 Same item on more than one row (not combined)` → `Sheet C5.2`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0199 Same item on more than one row (not combined)` → `Sheet C5.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0199 Same item on more than one row (not combined)` → `Sheet G0.5`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0199 Same item on more than one row (not combined)` → `Sheet G0.6`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0199 Same item on more than one row (not combined)` → `Spec 33 05 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0199 Same item on more than one row (not combined)` → `Spec 33 30 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0199 Same item on more than one row (not combined)` → `Spec 33 31 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0123 Same PROPOSED name, different Area/Building (not combined) —…` → `PROPOSED-Temporary power generator`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0123 Same PROPOSED name, different Area/Building (not combined) —…` → `PROPOSED-Temporary-Backup-Generator`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0123 Same PROPOSED name, different Area/Building (not combined) —…` → `PROPOSED-Temporary-Back-Up-Generator`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0123 Same PROPOSED name, different Area/Building (not combined) —…` → `Sheet G0.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0123 Same PROPOSED name, different Area/Building (not combined) —…` → `Spec 00 31 13`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0123 Same PROPOSED name, different Area/Building (not combined) —…` → `Spec 26 05 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0181 Same item on more than one row (not combined)` → `PROPOSED-Interim 8in HDPE effluent pipe`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0181 Same item on more than one row (not combined)` → `PROPOSED-Temporary-8in-Effluent-Piping`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0181 Same item on more than one row (not combined)` → `Sheet C0.5`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0181 Same item on more than one row (not combined)` → `Sheet C0.7`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0181 Same item on more than one row (not combined)` → `Spec 00 31 13`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0181 Same item on more than one row (not combined)` → `Spec 33 33 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0389 Civil & Site CS-32` → `Sheet G0.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0389 Civil & Site CS-32` → `Spec 00 73 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0389 Civil & Site CS-32` → `Spec 33 32 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0389 Civil & Site CS-32` → `Spec 33 41 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0163 Same item on more than one row (not combined)` → `PROPOSED-UV-DIGESTER-STRUCTURE`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0163 Same item on more than one row (not combined)` → `PROPOSED-UV-Disinfection-Chamber-Basin`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0163 Same item on more than one row (not combined)` → `PROPOSED-Digester-Concrete-Tank`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0163 Same item on more than one row (not combined)` → `PROPOSED-Aerobic-Digester`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0163 Same item on more than one row (not combined)` → `PROPOSED-UV-Disinfection-Chamber`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0163 Same item on more than one row (not combined)` → `Sheet C5.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0163 Same item on more than one row (not combined)` → `Sheet C5.2`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0163 Same item on more than one row (not combined)` → `Sheet C5.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0163 Same item on more than one row (not combined)` → `Sheet G0.5`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0163 Same item on more than one row (not combined)` → `Sheet G0.6`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0163 Same item on more than one row (not combined)` → `Sheet S1.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0163 Same item on more than one row (not combined)` → `Sheet S2.2`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0163 Same item on more than one row (not combined)` → `Sheet S4.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0163 Same item on more than one row (not combined)` → `Spec 00 24 13`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0163 Same item on more than one row (not combined)` → `Spec 00 31 13`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0163 Same item on more than one row (not combined)` → `Spec 00 73 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0163 Same item on more than one row (not combined)` → `Spec 01 45 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0163 Same item on more than one row (not combined)` → `Spec 01 50 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0163 Same item on more than one row (not combined)` → `Spec 03 30 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0367 Electrical & Controls Issues #1` → `Sheet E2.2`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0367 Electrical & Controls Issues #1` → `Spec 13 12 20`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0146 Same item on more than one row (not combined)` → `PROPOSED-IPS-LEVEL-TRANSDUCER`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0146 Same item on more than one row (not combined)` → `LT (Influent Pump Station)`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0146 Same item on more than one row (not combined)` → `Sheet C4.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0146 Same item on more than one row (not combined)` → `Sheet E10.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0146 Same item on more than one row (not combined)` → `Sheet E4.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0146 Same item on more than one row (not combined)` → `Sheet E4.2`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0146 Same item on more than one row (not combined)` → `Sheet E6.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0146 Same item on more than one row (not combined)` → `Sheet E8.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0146 Same item on more than one row (not combined)` → `Sheet E8.5`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0146 Same item on more than one row (not combined)` → `Spec 22 13 29`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0146 Same item on more than one row (not combined)` → `Spec 26 80 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0378 Electrical & Controls Issues #32` → `Sheet E4.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0145 Same item on more than one row (not combined)` → `PROPOSED-IPS-HATCHES`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0145 Same item on more than one row (not combined)` → `PROPOSED-Drain-Pump-Station-Hatches`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0145 Same item on more than one row (not combined)` → `PROPOSED-Influent-Pump-Station-Precast-Wet-Well`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0145 Same item on more than one row (not combined)` → `PROPOSED-Influent-Pump-Station-Top-Slab`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0145 Same item on more than one row (not combined)` → `Sheet C4.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0145 Same item on more than one row (not combined)` → `Sheet S2.4`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0145 Same item on more than one row (not combined)` → `Spec 00 73 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0145 Same item on more than one row (not combined)` → `Spec 03 40 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0375 Electrical & Controls Issues #22` → `PROPOSED-Generator-Slab`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0375 Electrical & Controls Issues #22` → `Sheet E1.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0375 Electrical & Controls Issues #22` → `Sheet S2.4`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0375 Electrical & Controls Issues #22` → `Spec 03 30 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0390 Civil & Site CS-09` → `Sheet C0.5`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0390 Civil & Site CS-09` → `Sheet G0.6`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0390 Civil & Site CS-09` → `Sheet S2.4`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0390 Civil & Site CS-09` → `Spec 33 30 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0453 Structural & Building §2 #4` → `PROPOSED-Drain-Pump-Station-Lid`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0453 Structural & Building §2 #4` → `PROPOSED-Drain-Pump-Station-Precast-Wet-Well`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0453 Structural & Building §2 #4` → `PROPOSED-Influent-Pump-Station-Top-Slab`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0453 Structural & Building §2 #4` → `Sheet C4.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0453 Structural & Building §2 #4` → `Sheet C4.2`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0453 Structural & Building §2 #4` → `Sheet G0.6`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0453 Structural & Building §2 #4` → `Sheet S1.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0453 Structural & Building §2 #4` → `Sheet S2.4`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0453 Structural & Building §2 #4` → `Spec 03 40 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0454 Structural & Building §2 #5` → `PROPOSED-Generator-Slab`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0454 Structural & Building §2 #5` → `Sheet E1.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0454 Structural & Building §2 #5` → `Sheet S2.4`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0132 Same item on more than one row (not combined)` → `PROPOSED-2W-DIAPHRAGM-TANKS`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0132 Same item on more than one row (not combined)` → `PROPOSED-2W-Bladder-Tank-Assembly`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0132 Same item on more than one row (not combined)` → `Sheet A1.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0132 Same item on more than one row (not combined)` → `Sheet C4.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0132 Same item on more than one row (not combined)` → `Sheet C6.4`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0132 Same item on more than one row (not combined)` → `Spec 43 22 10`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0112 Tag collision — SD-1` → `SD-1 [L-0073]`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0112 Tag collision — SD-1` → `SD-1 [L-0315]`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0112 Tag collision — SD-1` → `Sheet C2.2`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0112 Tag collision — SD-1` → `Sheet E4.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0112 Tag collision — SD-1` → `Sheet E6.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0112 Tag collision — SD-1` → `Sheet E6.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0112 Tag collision — SD-1` → `Sheet E7.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0112 Tag collision — SD-1` → `Sheet E7.4`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0112 Tag collision — SD-1` → `Sheet E9.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0112 Tag collision — SD-1` → `Spec 33 30 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0112 Tag collision — SD-1` → `Spec 33 41 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0152 Same item on more than one row (not combined)` → `PROPOSED-2W-PUMPS`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0152 Same item on more than one row (not combined)` → `2W-P1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0152 Same item on more than one row (not combined)` → `2W-P2`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0152 Same item on more than one row (not combined)` → `Sheet C4.2`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0152 Same item on more than one row (not combined)` → `Sheet E4.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0152 Same item on more than one row (not combined)` → `Sheet E6.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0152 Same item on more than one row (not combined)` → `Sheet E6.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0152 Same item on more than one row (not combined)` → `Sheet E7.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0152 Same item on more than one row (not combined)` → `Sheet E7.4`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0152 Same item on more than one row (not combined)` → `Sheet E9.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0152 Same item on more than one row (not combined)` → `Sheet G0.7`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0152 Same item on more than one row (not combined)` → `Spec 43 22 10`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0368 Electrical & Controls Issues #3` → `Hot Box #1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0368 Electrical & Controls Issues #3` → `PROPOSED-2W-PUMPS`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0368 Electrical & Controls Issues #3` → `2W-P1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0368 Electrical & Controls Issues #3` → `2W-P2`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0368 Electrical & Controls Issues #3` → `Sheet E4.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0368 Electrical & Controls Issues #3` → `Sheet E6.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0368 Electrical & Controls Issues #3` → `Sheet E6.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0368 Electrical & Controls Issues #3` → `Spec 43 22 10`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0372 Electrical & Controls Issues #18` → `TCP-1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0372 Electrical & Controls Issues #18` → `TCP-2`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0372 Electrical & Controls Issues #18` → `Sheet E10.2`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0372 Electrical & Controls Issues #18` → `Sheet E6.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0372 Electrical & Controls Issues #18` → `Sheet E6.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0372 Electrical & Controls Issues #18` → `Sheet E7.0`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0372 Electrical & Controls Issues #18` → `Sheet E7.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0372 Electrical & Controls Issues #18` → `Sheet E7.6`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0372 Electrical & Controls Issues #18` → `Sheet E8.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0372 Electrical & Controls Issues #18` → `Sheet E9.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0110 Combined row — DO #1 | DO-1` → `DO #1 | DO-1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0110 Combined row — DO #1 | DO-1` → `Sheet C3.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0110 Combined row — DO #1 | DO-1` → `Sheet E3.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0110 Combined row — DO #1 | DO-1` → `Sheet E7.6`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0110 Combined row — DO #1 | DO-1` → `Spec 26 80 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0110 Combined row — DO #1 | DO-1` → `Spec 46 53 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0111 Combined row — DO #2 | DO-2` → `DO #2 | DO-2`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0111 Combined row — DO #2 | DO-2` → `Sheet C3.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0111 Combined row — DO #2 | DO-2` → `Sheet E3.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0111 Combined row — DO #2 | DO-2` → `Sheet E6.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0111 Combined row — DO #2 | DO-2` → `Sheet E7.6`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0111 Combined row — DO #2 | DO-2` → `Spec 26 80 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0111 Combined row — DO #2 | DO-2` → `Spec 46 53 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0136 Same item on more than one row (not combined)` → `PROPOSED-TRAIN-3-TANK`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0136 Same item on more than one row (not combined)` → `PROPOSED-Train-3-Concrete-Tank`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0136 Same item on more than one row (not combined)` → `Sheet C3.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0136 Same item on more than one row (not combined)` → `Sheet C3.4`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0136 Same item on more than one row (not combined)` → `Sheet C3.5`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0136 Same item on more than one row (not combined)` → `Sheet G0.5`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0136 Same item on more than one row (not combined)` → `Sheet G0.6`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0136 Same item on more than one row (not combined)` → `Sheet G0.7`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0136 Same item on more than one row (not combined)` → `Sheet S1.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0136 Same item on more than one row (not combined)` → `Sheet S2.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0136 Same item on more than one row (not combined)` → `Sheet S4.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0136 Same item on more than one row (not combined)` → `Spec 03 30 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0136 Same item on more than one row (not combined)` → `Spec 46 53 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0137 Same item on more than one row (not combined)` → `PROPOSED-TRAIN-3-TREATMENT-SYSTEM`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0137 Same item on more than one row (not combined)` → `PROPOSED-Train-3-Biological-Treatment-Equipment`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0137 Same item on more than one row (not combined)` → `Sheet C3.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0137 Same item on more than one row (not combined)` → `Sheet C3.4`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0137 Same item on more than one row (not combined)` → `Sheet C3.5`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0137 Same item on more than one row (not combined)` → `Sheet G0.5`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0137 Same item on more than one row (not combined)` → `Sheet G0.6`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0137 Same item on more than one row (not combined)` → `Sheet G0.7`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0137 Same item on more than one row (not combined)` → `Spec 00 24 13`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0137 Same item on more than one row (not combined)` → `Spec 00 41 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0137 Same item on more than one row (not combined)` → `Spec 01 33 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0137 Same item on more than one row (not combined)` → `Spec 01 45 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0137 Same item on more than one row (not combined)` → `Spec 01 70 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0137 Same item on more than one row (not combined)` → `Spec 01 91 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0137 Same item on more than one row (not combined)` → `Spec 46 53 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0139 Same item on more than one row (not combined)` → `PROPOSED-TRAIN-3-ANOXIC-MIXERS`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0139 Same item on more than one row (not combined)` → `PROPOSED-Train-3-Submersible-Mixer-A`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0139 Same item on more than one row (not combined)` → `PROPOSED-Train-3-Submersible-Mixer-B`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0139 Same item on more than one row (not combined)` → `Sheet C3.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0139 Same item on more than one row (not combined)` → `Sheet C3.4`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0139 Same item on more than one row (not combined)` → `Sheet E3.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0139 Same item on more than one row (not combined)` → `Sheet E6.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0139 Same item on more than one row (not combined)` → `Sheet G0.7`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0139 Same item on more than one row (not combined)` → `Spec 46 41 23`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0139 Same item on more than one row (not combined)` → `Spec 46 53 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0140 Same item on more than one row (not combined)` → `PROPOSED-TRAIN-3-CLARIFIER-MECHANISM`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0140 Same item on more than one row (not combined)` → `PROPOSED-Train-3-Clarifier-Drive-Motor`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0140 Same item on more than one row (not combined)` → `PROPOSED-Clarifier`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0140 Same item on more than one row (not combined)` → `Sheet C3.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0140 Same item on more than one row (not combined)` → `Sheet C3.4`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0140 Same item on more than one row (not combined)` → `Sheet C3.5`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0140 Same item on more than one row (not combined)` → `Sheet E3.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0140 Same item on more than one row (not combined)` → `Sheet E6.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0140 Same item on more than one row (not combined)` → `Spec 01 45 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0140 Same item on more than one row (not combined)` → `Spec 01 50 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0140 Same item on more than one row (not combined)` → `Spec 01 91 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0140 Same item on more than one row (not combined)` → `Spec 46 53 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0141 Same item on more than one row (not combined)` → `PROPOSED-TRAIN-3-WALKWAYS-AND-LADDER`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0141 Same item on more than one row (not combined)` → `PROPOSED-Train-3-Guardrail-and-Ladders`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0141 Same item on more than one row (not combined)` → `PROPOSED-Handrails`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0141 Same item on more than one row (not combined)` → `Sheet C3.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0141 Same item on more than one row (not combined)` → `Sheet C3.4`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0141 Same item on more than one row (not combined)` → `Sheet C3.5`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0141 Same item on more than one row (not combined)` → `Sheet S2.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0141 Same item on more than one row (not combined)` → `Spec 01 70 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0141 Same item on more than one row (not combined)` → `Spec 05 50 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0141 Same item on more than one row (not combined)` → `Spec 05 51 10`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0141 Same item on more than one row (not combined)` → `Spec 05 52 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0141 Same item on more than one row (not combined)` → `Spec 46 53 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0172 Same item on more than one row (not combined)` → `GEN`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0172 Same item on more than one row (not combined)` → `PROPOSED-Generator-on-S2.4`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0172 Same item on more than one row (not combined)` → `PROPOSED-Permanent-Standby-Generator`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0172 Same item on more than one row (not combined)` → `Sheet E1.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0172 Same item on more than one row (not combined)` → `Sheet E10.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0172 Same item on more than one row (not combined)` → `Sheet E6.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0172 Same item on more than one row (not combined)` → `Sheet E6.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0172 Same item on more than one row (not combined)` → `Sheet E7.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0172 Same item on more than one row (not combined)` → `Sheet S2.4`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0172 Same item on more than one row (not combined)` → `Spec 00 31 13`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0172 Same item on more than one row (not combined)` → `Spec 00 41 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0172 Same item on more than one row (not combined)` → `Spec 00 73 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0172 Same item on more than one row (not combined)` → `Spec 01 33 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0172 Same item on more than one row (not combined)` → `Spec 01 70 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0172 Same item on more than one row (not combined)` → `Spec 26 32 13`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0173 Same item on more than one row (not combined)` → `ATS`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0173 Same item on more than one row (not combined)` → `PROPOSED-Automatic-Transfer-Switch`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0173 Same item on more than one row (not combined)` → `Sheet E1.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0173 Same item on more than one row (not combined)` → `Sheet E6.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0173 Same item on more than one row (not combined)` → `Sheet E6.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0173 Same item on more than one row (not combined)` → `Sheet E7.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0173 Same item on more than one row (not combined)` → `Spec 01 33 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0173 Same item on more than one row (not combined)` → `Spec 01 70 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0173 Same item on more than one row (not combined)` → `Spec 26 36 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0174 Same item on more than one row (not combined)` → `PROPOSED-Construction-Power-Service`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0174 Same item on more than one row (not combined)` → `PROPOSED-Temporary-Construction-Power`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: concerns
+- `OI-0174 Same item on more than one row (not combined)` → `Spec 01 50 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0174 Same item on more than one row (not combined)` → `Spec 26 05 00`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0371 Electrical & Controls Issues #19` → `Sheet E10.3`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
+- `OI-0371 Electrical & Controls Issues #19` → `Sheet E6.1`  [AMBIGUOUS]
+  testbeds/eastsound/derived/issues/Open_Items.csv · relation: cites
 
 ## Knowledge Gaps
-- **63 isolated node(s):** `MTO line 1: 3382 CY`, `MTO line 2: 1598 CY`, `Wiki note 26 05 19`, `Wiki note 26 24 19`, `Wiki note 26 29 23` (+58 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 63 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
-- **High ambiguity: 31% of edges are AMBIGUOUS.** Review the Ambiguous Edges section above.
+- **13 isolated node(s):** `MTO line 1: 3382 CY`, `MTO line 2: 1598 CY`, `Spec Appendix B`, `Spec Appendix D`, `Spec Appendix E` (+8 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 111 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **56 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_

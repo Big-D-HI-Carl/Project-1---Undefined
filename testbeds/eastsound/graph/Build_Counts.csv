@@ -1,13 +1,19 @@
 Kind,Name,Count
-node type,addendum,21
+node type,addendum,23
 node type,item,447
 node type,mto,22
-node type,note,160
-node type,sheet,86
-node type,spec,77
+node type,note,203
+node type,open_item,474
+node type,sheet,99
+node type,spec,117
 link relation,changed_by,153
+link relation,cites,1530
+link relation,concerns,790
 link relation,described_in,1437
+link relation,describes,200
 link relation,measured_on,22
+link relation,mentions,523
 link relation,quantity_of,21
+link relation,references,1480
 link relation,shown_on,986
 link relation,specified_in,536
