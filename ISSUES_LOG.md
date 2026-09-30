@@ -79,3 +79,21 @@ Append-only. Repo and program issues, in the format in AGENTS.md. The test bed's
 - Type: design gap
 - Finding: `testbeds/eastsound/process/Library_Fingerprint.csv` and `_Pages.csv` fingerprint the Claude Project's converted copies (page bundles and text-only files), not the native PDFs. The native files' SHA-256 values and sizes differ (for example the main spec: 1,436,556 bytes converted, 17,502,025 bytes native), and the plan set is now three parts, not the 28 plans_N files. This is expected. `Library_Fingerprint.csv` is not edited; the natives are recorded in `testbeds/eastsound/index/Library_Manifest.csv`.
 - Fix or next action: Revise Graph_Transfer_Ultraplan §6 Step 4 (and Appendix C step 1), whose check requires text to match on all 888 fingerprinted pages, before any Transfer run. Owner: the person approving the Transfer plan.
+
+## 2026-09-30 — OCR lane Step 1: calibration failures fixed before the full run — Closed
+- Workstream: Eastsound test bed (Prompt 7 OCR lane)
+- Type: workflow failure
+- Finding: These failures came up during the Step 1 calibration runs on set pp.20, 22, 28, 29, 45, 56–61, 70 and Add. 4 pp.7–10. Each one was fixed before the next run, but these entries were written afterward, at Gate A. The rule is to log a failure before rerunning.
+  - The title block was not read on the 9 pages with no text layer, nor on Add. 4 pp.8–10. The full-page 400 dpi psm 3 passes skipped the title-block boxes; S2.1's sheet number read as "$2.1" and C3.3's "28 OF 96" as noise.
+  - The strip anchor picked lowercase "scale" (from "Verify scale") and a plan-area SCALE label. OCR fragments ("PHASE 1") also slipped past the exact-match template test.
+  - The word normalizer stripped the "$" before the $→S fix could read the sheet number.
+  - The first full run never started, because `/usr/bin/time` is not installed in the container.
+  - Keyed notes mis-numbered. The block missed markers 15 pt left of the heading, used the median line spacing, and read embedded detail bubbles as entries. Misread markers ("(1)" for 11) restarted the count.
+  - Pipe ID and Buried Valve ID legend lines were missed (7 of 39), because an ID and its description on the same baseline merged into one line.
+- Fix or next action: Done, in `tools/extract_drawing_text.py` (9c9edf1).
+  - Title blocks: a rotated title-strip pass at 200 and 300 dpi, psm 11, anchored on the nearest uppercase title-block label, with the higher-confidence read kept per field. Template lines also match on 80% of their characters.
+  - Sheet numbers: "$" is kept for the S fix.
+  - Timing: the run is timed with shell `date` instead.
+  - Keyed notes: an entry column of −30…+20 pt around the heading, 25th-percentile spacing, stray rows attached to their entry, entries starting only in the marker column, and read markers trusted only when they run on from the previous entry.
+  - Legend lines: descriptions are taken from the words in each number's row band.
+  - After the fixes: 96 of 96 title blocks match 01, and 39 of 39 legend lines are found.
