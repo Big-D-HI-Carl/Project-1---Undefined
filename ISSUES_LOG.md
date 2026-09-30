@@ -181,3 +181,18 @@ Append-only. Repo and program issues, in the format in AGENTS.md. The test bed's
 - Type: workflow failure
 - Finding: `a8694d8` ("Merge branch 'main' into claude/vibrant-davinci-7g3znj", made through GitHub) kept the branch's PROGRESS_LOG.md, ISSUES_LOG.md and DECISIONS.md and dropped main's entries, including "Project_Ledger.csv repeats two Tags". The PR #6 check failed on it, because a `tools/check_exceptions.csv` row came in without its ISSUES_LOG entry. It also failed at a0a19a1, where the ledger rule flagged `derived/ocr/Ledger_Crosswalk.csv`. The range check tests every commit, so no later commit could clear a8694d8.
 - Fix or next action: At Carl's direction, a8694d8 was replaced. The branch was pushed with `--force-with-lease` pinned to a8694d8, carrying a merge of main that keeps both sides' log entries. This is a one-off exception to AGENTS.md rule 8, approved by the owner. `tools/checks.py` keeps main's `*_by_CWP*` skip and adds the project/ and lanes/ narrowing.
+
+## 2026-09-30 — Project_Ledger_by_CWP.csv doesn't follow the Ledger schema — Closed
+- Workstream: Eastsound test bed
+- Type: schema gap
+- Finding: Closes the 2026-09-30 Open entry of the same title. Carl: "the ledger check excluding *_by_CWP files". `tools/checks.py` now leaves `*_by_CWP*` files out of the ledger rule, so the CWP view is no longer checked as a Ledger. Its row is removed from `tools/check_exceptions.csv`. The two duplicate Tags it repeats stay tracked under "Project_Ledger.csv repeats two Tags".
+- Fix or next action: Done.
+
+## 2026-09-30 — Acceptance harness expected the old --ci data-gate note — Closed
+- Workstream: Repo setup
+- Type: workflow failure
+- Finding: The acceptance-test rerun for the Prompt 1 follow-up gave 32 OK and 1 MISMATCH.
+  - Extra test x4, the CI whole-tree step (`--ci --all`), passed with exit 0. The harness was still looking for the old `NOTE | data-gate | - | skipped in CI (--ci)` line.
+  - With `--ci`, `tools/checks.py` now reads the DATAGATE_TERMS secret. When the secret is missing it prints `WARN | data-gate | DATAGATE_TERMS | secret not set for this run; data gate not run`.
+  - The harness expectation was out of date; checks.py behaved as intended.
+- Fix or next action: The harness now expects the WARN line; it is a scratchpad script and is not committed. All tests were rerun.

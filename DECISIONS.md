@@ -145,3 +145,23 @@ Append-only. Decisions made by a person, in the format in AGENTS.md. Never edit 
 - Decided by: Carl
 - Why: Stated in this session: "Let the test that's running finish, then follow the status brief and addendum to replace the bad commit on this branch and push." The commit is a8694d8, the GitHub "Update branch" merge that dropped main's log entries. It was replaced with a force-push (with lease), a one-time exception to AGENTS.md rule 8.
 - Replaces: none
+
+## 2026-09-30 — The repo stays public; public-source material and repo-work notes only until Big-D approves this host
+- Decided by: Carl
+- Why: Stated in `prompts/01_bootstrap_guardrails.md` §7, which Carl had this session run: "The repo stays public. Public-source material and repo-work notes only until Big-D approves this host." It restates the earlier 2026-09-30 entry "The repo stays public" and adds the data limit.
+- Replaces: none
+
+## 2026-09-30 — AGENTS.md is the canonical rulebook; CLAUDE.md imports it; Claude Code auto memory is off
+- Decided by: Carl
+- Why: Stated in `prompts/01_bootstrap_guardrails.md` §7, which Carl had this session run: "AGENTS.md is the canonical rulebook; CLAUDE.md imports it; Claude Code auto memory is off for this repo."
+- Replaces: none
+
+## 2026-09-30 — Enforcement lives in tools/checks.py (hook and CI), not in instruction files
+- Decided by: Carl
+- Why: Stated in `prompts/01_bootstrap_guardrails.md` §7, which Carl had this session run: "Enforcement lives in tools/checks.py (hook and CI), not in instruction files."
+- Replaces: none
+
+## 2026-09-30 — The graph backbone is built from the Ledger by script with no LLM; graphify's LLM pass is an optional, labeled overlay
+- Decided by: Carl
+- Why: Stated in `prompts/01_bootstrap_guardrails.md` §7, which Carl had this session run: "The graph backbone is built from the Ledger by script with no LLM; graphify's LLM pass is an optional, labeled overlay."
+- Replaces: none
