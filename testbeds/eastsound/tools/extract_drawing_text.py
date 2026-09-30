@@ -14,7 +14,7 @@ No LLM calls. Every list is sorted, boxes are rounded to 0.01 pt, JSON keys are 
 line endings are LF and there are no timestamps, so two clean runs give identical bytes.
 
 Run from the repo root:
-  PYTHONHASHSEED=0 OMP_THREAD_LIMIT=1 python tools/extract_drawing_text.py --stage all --jobs 4
+  PYTHONHASHSEED=0 OMP_THREAD_LIMIT=1 python testbeds/eastsound/tools/extract_drawing_text.py --stage all --jobs 4
 """
 
 import os
@@ -47,8 +47,9 @@ from PIL import Image
 
 SCHEMA_VERSION = "1.0"
 
-REPO = Path(__file__).resolve().parent.parent
+REPO = Path(__file__).resolve().parents[3]   # this file: testbeds/eastsound/tools/
 TB = REPO / "testbeds" / "eastsound"
+SCRIPT_REL = Path(__file__).resolve().relative_to(REPO).as_posix()
 LIB = TB / "library"
 PARTS_NOTE = LIB / "Plan_Set_Parts.md"
 ADD4_FILE = LIB / "addendum-no4-eswd.pdf"
@@ -810,7 +811,7 @@ def traineddata():
 def extractor_info():
     import PIL
     return {
-        "script": "tools/extract_drawing_text.py",
+        "script": SCRIPT_REL,
         "script_sha256": sha256_file(Path(__file__)),
         "schema_version": SCHEMA_VERSION,
         "python": sys.version.split()[0],
@@ -2183,7 +2184,7 @@ def findings(out, pages, res):
     base = [r for r in sm if not r["Page Key"].startswith("add4")]
     add4 = [r for r in sm if r["Page Key"].startswith("add4")]
     L = ["# OCR lane findings", "",
-         "Machine reads from `tools/extract_drawing_text.py`. Text-layer reads are Verified; every OCR and "
+         f"Machine reads from `{SCRIPT_REL}`. Text-layer reads are Verified; every OCR and "
          "Bluebeam read is Inferred until checked on the page image; every quantity is a lead, not a takeoff "
          "(README.md, confidence rule). Nothing here is in the Ledger or the MTO. Page and box cites use "
          "`Page Key` and PDF points (origin top left, rotation applied).", ""]
@@ -2335,7 +2336,7 @@ def readme(out, pages, res):
     L = ["# derived/ocr: drawing text for the Ledger and MTO cross-reference", "",
          f"Schema version {SCHEMA_VERSION}. Machine-read words, tags and quantities from the native Eastsound plan set "
          "(set pages 1–96) and the Addendum 4 reissue pages (pp.4–10), keyed so they can be cross-referenced into the "
-         "Project Ledger and a master MTO later. Built by `tools/extract_drawing_text.py` with no LLM calls. This "
+         f"Project Ledger and a master MTO later. Built by `{SCRIPT_REL}` with no LLM calls. This "
          "folder is data only: nothing here has been entered in the Ledger or an MTO.", "",
          "## Confidence rule", "",
          "- A text-layer word from a native PDF counts as Verified.",
@@ -2346,7 +2347,7 @@ def readme(out, pages, res):
          "```",
          "apt-get install -y tesseract-ocr",
          "pip install -r requirements.txt",
-         "PYTHONHASHSEED=0 OMP_THREAD_LIMIT=1 python tools/extract_drawing_text.py --stage all --jobs 4",
+         f"PYTHONHASHSEED=0 OMP_THREAD_LIMIT=1 python {SCRIPT_REL} --stage all --jobs 4",
          "```", "",
          "- The script sets both variables itself if they are missing. `--jobs` runs pages in parallel worker "
          "processes; outputs are sorted, so any job count gives the same bytes.",
