@@ -375,3 +375,26 @@ Append-only. Repo and program issues, in the format in AGENTS.md. The test bed's
 - Fix or next action: Still open, as proposed in `testbeds/eastsound/derived/reconciliation/Ledger_Schema_rev1_Proposal.md` (impact row updated in 599a869):
   - checks.py checks a unique Ledger ID instead of a unique Tag.
   - ledger_to_graph.py keys every node on Ledger ID and drops `NO_SAME_TAG`.
+
+## 2026-09-30 — Open-items build: two defects caught before the first output — Closed
+- Workstream: Eastsound test bed (open-items list)
+- Type: workflow failure
+- Finding: The first two runs of `testbeds/eastsound/tools/build_open_items.py` stopped before writing anything:
+  - The Ledger_ID_Map tie-out paired each map row with the wrong file's row (KeyError 'Ledger Row').
+  - The S2.3/S4.1 anchor quoted "Blower Building" as the Merge Issues Log shows it, but `Issues_Log.csv` stores the quotes doubled, so the text check missed it.
+- Fix or next action: Done. The tie-out pairs each map row with its Ledger row. The anchor now uses text with no quotes ("the S2.3 and S4.1 reissues show revision 3"). Both were fixed before any output was written.
+
+## 2026-09-30 — Merge Issues Log still lists the 10 native-only sheets as missing — Open
+- Workstream: Eastsound test bed
+- Type: content conflict
+- Finding: `testbeds/eastsound/project/03_Exceptions_and_Issues/Issues_Log.csv` #8 is still Open: "10 drawing sheets not in the library". The Closed entry "Six sheets exist only in the Bluebeam OCR copies" says all 10 are now in the native Part 1 and Part 3. The same stale state is in:
+  - Merge #56 (C0.3: "Native copy of C0.3") and #57 (C1.1 and C1.2 "missing");
+  - `Project_Known_Issues.md` Part B CS-01 ("C2.1/C2.3 (unavailable) may show it") and CS-19 ("C1.1 (unavailable) may show it").
+  `derived/issues/Open_Items.csv` leaves #8 out and notes the native sheets on #56 and #57.
+- Fix or next action: Merge closes #8 and updates the other four in its next revision. The C0.3, C1.1, C1.2, C2.1 and C2.3 questions can now be read on the native sheets.
+
+## 2026-09-30 — AGENTS.md Layout doesn't list derived/issues/ — Open
+- Workstream: Repo setup
+- Type: design gap
+- Finding: This session added `testbeds/eastsound/derived/issues/` (Open_Items.csv, Open_Items_Summary.md), built by `testbeds/eastsound/tools/build_open_items.py`, at Carl's request. The AGENTS.md Layout lists `derived/reconciliation/` but not `derived/issues/`. AGENTS.md was outside this session's write scope.
+- Fix or next action: On Carl's request, add one Layout line under `derived/` in its own commit, for example: `issues/  open-items list built from reconciliation/, project/03_Exceptions_and_Issues/ and ISSUES_LOG.md (list only; nothing applied)`.
