@@ -291,3 +291,14 @@ Append-only. Repo and program issues, in the format in AGENTS.md. The test bed's
   - Test 8 fails if `.graphifyignore` lists only `library/`: `graphify extract` finds 2 papers, the Bluebeam OCR PDFs in `derived/bluebeam-ocr/`.
   - Unsetting the four named keys isn't enough. graphify also picks a backend from `AWS_PROFILE`, `AWS_REGION` or `AWS_DEFAULT_REGION` (Bedrock) and from `OLLAMA_HOST` (Ollama), and this container has AWS credentials set.
 - Fix or next action: This session used the real paths, `--out testbeds/eastsound/graph`, `.graphifyignore` listing `library/` and `derived/bluebeam-ocr/`, and `env -i` for every graph command. `prompts/03_build_graph.md` is outside this session's folder and was not edited; update it before the prompt is reused.
+
+## 2026-09-30 — The same_tag link lets graph paths jump between the two SD-1 items — Closed
+- Workstream: Eastsound test bed, graph build (Prompt 3)
+- Type: design gap
+- Finding: Closes the Open entry of the same title. Carl: "Drop the 'same tag' link between the two SD-1 rows. It creates false path traces, and the Ledger ID from Prompt 9 will replace it."
+  - `testbeds/eastsound/tools/ledger_to_graph.py` now skips Tags in its `NO_SAME_TAG` list, which holds SD-1.
+  - The rows stay keyed `SD-1 [L74]` and `SD-1 [L316]`, with no link between them.
+  - The PROPOSED-Influent-Sampler rows (lines 321 and 419, one item entered by two lanes) keep their same_tag link.
+  - Rebuilt graph: 791 nodes, 3,113 links, 1 same_tag link.
+  - The trace from "Add. 4 p.2 33 41 00 ¶2.02 F" to "MCC" no longer passes through the SD-1 rows. It now runs 7 hops over sheet, note and addendum links.
+- Fix or next action: Done. When Prompt 9 adds the Ledger ID column, key items by that ID and remove `NO_SAME_TAG`. The two SD-1 rows still need their Tag fix from Merge (entry "Project_Ledger.csv repeats two Tags").

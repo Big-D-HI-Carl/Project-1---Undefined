@@ -195,3 +195,8 @@ Append-only. Decisions made by a person, in the format in AGENTS.md. Never edit 
 - Decided by: Carl
 - Why: Carl: "Running under env -i: yes. Log the 12 over-tagged rows in ISSUES_LOG; don't touch the Ledger."
 - Replaces: none
+
+## 2026-09-30 — No same_tag link between the two SD-1 rows in the Ledger graph
+- Decided by: Carl
+- Why: Carl: "Drop the 'same tag' link between the two SD-1 rows. It creates false path traces, and the Ledger ID from Prompt 9 will replace it."
+- Replaces: the same_tag part of "Repeated Ledger Tags are keyed <Tag> [L<line>] until the Ledger ID column lands" (2026-09-30), for SD-1 only

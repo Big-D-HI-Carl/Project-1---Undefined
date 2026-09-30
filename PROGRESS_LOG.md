@@ -310,3 +310,25 @@ Append-only. One entry per session, in the format in AGENTS.md. Never edit or de
   - Merge fixes SD-1, the influent-sampler duplicate and the 12 over-tagged rows in a new Ledger revision; rebuild the graph after.
   - Update `prompts/03_build_graph.md`.
   - Prompt 9 adds the Ledger ID column; switch the item key to it.
+
+## 2026-09-30 — Prompt 3 follow-up before PR #9 merge
+- Runtime: Claude Code
+- Commits: e99a8a8..HEAD on `claude/admiring-sagan-5olq78` (PR #9)
+- Done:
+  - Merged main (PR #8, b8e1313) into the branch as e99a8a8. In PROGRESS_LOG, ISSUES_LOG and DECISIONS, main's entries come first and this branch's follow, byte for byte (checked against the merge base).
+  - Dropped the same_tag link between the two SD-1 rows, per Carl: `NO_SAME_TAG` in `testbeds/eastsound/tools/ledger_to_graph.py`. The PROPOSED-Influent-Sampler link stays.
+  - Updated `testbeds/eastsound/graph/README.md` (rule 9, link count, path note).
+  - Rebuilt the graph: 791 nodes, 3,113 links (986 shown_on, 536 specified_in, 153 changed_by, 1,437 described_in, 1 same_tag), 17 communities.
+  - This supersedes the counts in the "Prompt 3: Ledger graph build" entry.
+- Tests: all graph commands under `env -i` with `GIT_DIR=no-git` and a dead proxy.
+  - T1: 447 rows → 447 item nodes, 791 nodes, 0 rows missing → pass.
+  - T2: 3,113 links; 0 without a citation; every row link carries its row's tag and Source Citation; the only same_tag link is the influent sampler's → pass.
+  - T3: 264 / 123 / 40 / 20 on item nodes, the same as the Ledger → pass.
+  - T4: `explain` on L73, L163, L268, L361 and L423 gives the same links as the rows (4, 8, 8, 11, 6). SD-1 [L316] has 13 row links and SD-1 [L74] has 6, with none between them → pass.
+  - T5: `path "Add. 4 p.8" "PROPOSED-Blower-Pad" --undirected` → 5 hops through Add. 4 p.3 and MCC, unchanged → pass.
+  - T6: the repo build and two clean builds are SHA-256 identical for graph.json, graph.html and GRAPH_REPORT.md → pass.
+  - T7: exit 0 on every build and cluster-only with no keys → pass.
+  - T8: `graphify extract` on a copy → `found 105 code, 761 docs, 0 papers, 0 images`, stops at the key check → pass.
+  - `python3 tools/checks.py --all` → 0 FAIL, 3 WARN (data gate not run; the 2 listed Ledger exceptions). `--range origin/main..HEAD` (before this log commit) → 0 FAIL, 1 WARN. `--staged` → 0 FAIL on every commit.
+- Failures and fixes: none.
+- Next: Carl merges PR #9. Merge fixes the two repeated Tags and the 12 over-tagged rows; Prompt 9 adds the Ledger ID.
