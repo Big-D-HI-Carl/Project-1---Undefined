@@ -4,7 +4,7 @@
 - cluster-only mode — file stats not available
 
 ## Summary
-- 791 nodes · 3114 edges · 15 communities
+- 791 nodes · 3113 edges · 17 communities
 - Extraction: 14% EXTRACTED · 55% INFERRED · 31% AMBIGUOUS · INFERRED: 1700 edges (avg confidence: 0.55)
 - Token cost: 0 input · 0 output
 
@@ -24,6 +24,8 @@
 - Community 12
 - Community 13
 - Community 14
+- Community 15
+- Community 16
 
 ## God Nodes (most connected - your core abstractions)
 1. `Wiki note E6.3` - 70 edges
@@ -39,37 +41,37 @@
 
 ## Surprising Connections (you probably didn't know these)
 - `PROPOSED-Hot-Box-1 Hot Box #1 (2W): houses the 1-in 2W flow meter, isolation valve solenoid, heat trace, GFEP and J-box` --changed_by--> `Add. 4 p.3`  [AMBIGUOUS]
-  testbeds/eastsound/project/02_Project_Ledger/Project_Ledger.csv → testbeds/eastsound/project/02_Project_Ledger/Project_Ledger.csv  _Bridges community 1 → community 3_
+  testbeds/eastsound/project/02_Project_Ledger/Project_Ledger.csv → testbeds/eastsound/project/02_Project_Ledger/Project_Ledger.csv  _Bridges community 0 → community 2_
 - `2W-P1 2W Water Pump No.1, 5 HP, VFD in MCC (E4.3 tags it P-2W-1)` --described_in--> `Wiki note E4.3`  [AMBIGUOUS]
-  testbeds/eastsound/project/02_Project_Ledger/Project_Ledger.csv → testbeds/eastsound/project/02_Project_Ledger/Project_Ledger.csv  _Bridges community 4 → community 1_
+  testbeds/eastsound/project/02_Project_Ledger/Project_Ledger.csv → testbeds/eastsound/project/02_Project_Ledger/Project_Ledger.csv  _Bridges community 3 → community 0_
 - `PROPOSED-BLOWER-BUILDING | PROPOSED-Blower-Building Blower Building, prefabricated metal building housing the biological treatment blowers | Blower Building — pre-engineered metal building, one room (Blower Room 101) | Blower Building` --changed_by--> `Add. 4 p.3`  [AMBIGUOUS]
-  testbeds/eastsound/project/02_Project_Ledger/Project_Ledger.csv → testbeds/eastsound/project/02_Project_Ledger/Project_Ledger.csv  _Bridges community 2 → community 3_
+  testbeds/eastsound/project/02_Project_Ledger/Project_Ledger.csv → testbeds/eastsound/project/02_Project_Ledger/Project_Ledger.csv  _Bridges community 4 → community 2_
 - `PROPOSED-BLOWER-BUILDING | PROPOSED-Blower-Building Blower Building, prefabricated metal building housing the biological treatment blowers | Blower Building — pre-engineered metal building, one room (Blower Room 101) | Blower Building` --changed_by--> `Add. 4 p.6`  [AMBIGUOUS]
-  testbeds/eastsound/project/02_Project_Ledger/Project_Ledger.csv → testbeds/eastsound/project/02_Project_Ledger/Project_Ledger.csv  _Bridges community 2 → community 7_
+  testbeds/eastsound/project/02_Project_Ledger/Project_Ledger.csv → testbeds/eastsound/project/02_Project_Ledger/Project_Ledger.csv  _Bridges community 4 → community 8_
 - `PROPOSED-BLOWER-BUILDING | PROPOSED-Blower-Building Blower Building, prefabricated metal building housing the biological treatment blowers | Blower Building — pre-engineered metal building, one room (Blower Room 101) | Blower Building` --described_in--> `Wiki note 00 31 13`  [AMBIGUOUS]
-  testbeds/eastsound/project/02_Project_Ledger/Project_Ledger.csv → testbeds/eastsound/project/02_Project_Ledger/Project_Ledger.csv  _Bridges community 2 → community 5_
+  testbeds/eastsound/project/02_Project_Ledger/Project_Ledger.csv → testbeds/eastsound/project/02_Project_Ledger/Project_Ledger.csv  _Bridges community 4 → community 5_
 
-## Communities (15 total, 0 thin omitted)
+## Communities (17 total, 0 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.06
-Nodes (136): DO #1 | DO-1 Dissolved oxygen / pH sensor, Train 3 Aeration Zone #1 | Dissolved oxygen sensor and transmitter, Zone 1 (Hach LDO probe, SC200 transmitter, 24 VDC), DO #2 | DO-2 Dissolved oxygen / pH sensor, Train 3 Aeration Zone #2 | Dissolved oxygen sensor and transmitter, second monitor (Hach LDO/SC200), F1–F4 [Influent Pump Station] Influent Pump Station backup float switches F1-F4, timer control, INF1 Train 1 influent line, flow splitter to existing Train 1, 8-inch, INF2 Train 2 influent line, flow splitter to existing Train 2, 8-inch DI, INF3 Train 3 influent line, flow splitter to Train 3, 8-inch, Inclined Conveyor Inclined conveyor, shafted, 9-in. flight at 5-in. pitch, 17 ft 4 in. at 35 degrees, 304 SS tubular trough, outlet to bin, 5 HP, PROPOSED-2W-SUPPLY-TO-PRESS 2W water supply to rotary fan press, 2-inch (+128 more)
-
-### Community 1 - "Community 1"
 Cohesion: 0.07
 Nodes (131): DW-1 Dewatering skid with skid control panel DW-1: pre-wired and factory tested, UL/ETL labeled per WA L&I, 15 HP, 480 V 3-ph; skid PLC, operator interface and network switch, EF-1 Exhaust Fan 1, Blower Building (motor marked 1/2), circuit LP1-5, EF-2 Exhaust Fan 2, Blower Building (motor marked 1/2), circuit LP1-7, EF-3 Exhaust Fan EF-3, Treatment Building, motor marked 1/2, circuit LP2-7 (1,127 VA), EF-4 Exhaust Fan EF-4, Treatment Building, motor marked 1/2, circuit LP2-9 (1,127 VA), EF-5 Exhaust Fan EF-5, Treatment Building, motor marked 1/2, circuit LP2-11 (1,127 VA), F1 (Influent Pump Station) Float switch F1, Eco-Float GP60NONC, non-mercury NO/NC — redundant large lag on at 19.00 (with timer), F2 (2W Pump Station) 2W float F2: valve close at 20.00 (factory float tree) (+123 more)
 
-### Community 2 - "Community 2"
-Cohesion: 0.05
-Nodes (94): 101A Door pair, 10 ft-0 in x 8 ft-0 in x 1-3/4 in, insulated hollow metal, painted, Type B — 2 openings tagged 101A, 101B Door, 3 ft-0 in wide, insulated hollow metal, painted, Type A, 101C Door, 5 ft-0 in x 8 ft-0 in x 1-3/4 in, insulated hollow metal, painted, Type A, PROPOSED-2W-Bladder-Tank-Assembly 2W bladder tank assembly — 2 tanks, 24 in diameter, PROPOSED-2W-Pump-Station-Precast-Wet-Well Precast wet well, 8 ft ID (Oldcastle Infrastructure 96 in diameter), with 48 in x 30 in H-20 aluminum hatch and safety grate (LW Products HD-3C) — 2W Plant Water Pump Station, PROPOSED-BLOWER-BUILDING | PROPOSED-Blower-Building Blower Building, prefabricated metal building housing the biological treatment blowers | Blower Building — pre-engineered metal building, one room (Blower Room 101) | Blower Building, PROPOSED-Blower-Building-Foundation-Drains Perimeter foundation drains, 4 in rigid ABS perforated pipe or drain tile in drain rock — Blower Building slab edge, PROPOSED-Blower-Building-Slab-and-Grade-Beams Blower Building concrete slab-on-grade and grade beams (+86 more)
+### Community 1 - "Community 1"
+Cohesion: 0.06
+Nodes (118): DO #1 | DO-1 Dissolved oxygen / pH sensor, Train 3 Aeration Zone #1 | Dissolved oxygen sensor and transmitter, Zone 1 (Hach LDO probe, SC200 transmitter, 24 VDC), DO #2 | DO-2 Dissolved oxygen / pH sensor, Train 3 Aeration Zone #2 | Dissolved oxygen sensor and transmitter, second monitor (Hach LDO/SC200), F1–F4 [Influent Pump Station] Influent Pump Station backup float switches F1-F4, timer control, INF1 Train 1 influent line, flow splitter to existing Train 1, 8-inch, INF2 Train 2 influent line, flow splitter to existing Train 2, 8-inch DI, INF3 Train 3 influent line, flow splitter to Train 3, 8-inch, PROPOSED-AIR-TO-TRAIN-3 6-inch SS aeration air line, Blower Building to Train 3 (buried, IE 15.90 at drop), PROPOSED-CARBON-FEED-PUMPS Carbon feed peristaltic metering pumps (2: 1 duty, 1 standby), Stenner Model S3V02AA302N (+110 more)
 
-### Community 3 - "Community 3"
+### Community 2 - "Community 2"
 Cohesion: 0.12
 Nodes (92): Buried Valve ID 1 6-inch gate valve — influent flow meter isolation, Buried Valve ID 10 4-inch gate valve — pump station clean-out drain, Buried Valve ID 11 4-inch gate valve — pump station clean-out drain, Buried Valve ID 12 8-inch plug valve — effluent flow meter isolation, Buried Valve ID 13 4-inch gate valve — drain flow meter isolation, Buried Valve ID 2 8-inch gate valve — Train 2 flow meter isolation, Buried Valve ID 3 8-inch gate valve — Train 3 flow meter isolation, Buried Valve ID 4 4-inch gate valve — drain flow meter isolation (+84 more)
 
-### Community 4 - "Community 4"
+### Community 3 - "Community 3"
 Cohesion: 0.08
 Nodes (91): 2W-P1 2W Water Pump No.1, 5 HP, VFD in MCC (E4.3 tags it P-2W-1), 2W-P2 2W Water Pump No.2, 5 HP, VFD in MCC (E4.3 tags it P-2W-2), ATS Automatic transfer switch, service-entrance rated, 480Y/277V, 400 A (permanent), ATS (E) Existing automatic transfer switch, 4-wire, 3-pole, BL-1 Aeration Blower No.1 — cell aeration blower, Cell 1, 20 HP, VFD in MCC, BL-2 Aeration Blower No.2 — cell aeration blower, Cell 2, 20 HP, VFD in MCC, BL-3 Aeration Blower No.3 — cell aeration blower, Cell 3, 20 HP, VFD in MCC, BL-4 Aeration Blower No.4 — backup, 20 HP, VFD in MCC (+83 more)
+
+### Community 4 - "Community 4"
+Cohesion: 0.06
+Nodes (83): 101A Door pair, 10 ft-0 in x 8 ft-0 in x 1-3/4 in, insulated hollow metal, painted, Type B — 2 openings tagged 101A, 101B Door, 3 ft-0 in wide, insulated hollow metal, painted, Type A, 101C Door, 5 ft-0 in x 8 ft-0 in x 1-3/4 in, insulated hollow metal, painted, Type A, PROPOSED-2W-Bladder-Tank-Assembly 2W bladder tank assembly — 2 tanks, 24 in diameter, PROPOSED-BLOWER-BUILDING | PROPOSED-Blower-Building Blower Building, prefabricated metal building housing the biological treatment blowers | Blower Building — pre-engineered metal building, one room (Blower Room 101) | Blower Building, PROPOSED-Blower-Building-Foundation-Drains Perimeter foundation drains, 4 in rigid ABS perforated pipe or drain tile in drain rock — Blower Building slab edge, PROPOSED-Blower-Building-Slab-and-Grade-Beams Blower Building concrete slab-on-grade and grade beams, PROPOSED-Blower-Pad Concrete blower equipment pad carrying 4 blowers (+75 more)
 
 ### Community 5 - "Community 5"
 Cohesion: 0.12
@@ -80,34 +82,42 @@ Cohesion: 0.11
 Nodes (50): PROPOSED-4in roof drain at SD-1 4-inch roof drain connection from SDCB #9 (8 LF and 17 LF at 2.00%), PROPOSED-4in roof drain connections (SD-2, SD-3) 4-in roof drain connections: SD-2 STA 0+47.16 (21 LF at 2.00%); SD-3 STA 0+26.94 and 0+70.26, PROPOSED-Asphalt wedge curb Asphalt wedge curb per 4/C7.7, PROPOSED-Block retaining wall Block (gravity) retaining wall, STA 0+05.00 to 1+31.00, PROPOSED-Chain link fence 126 LF Chain link fence along retaining wall, 126 LF, 6-ft fabric with 3-strand barbed wire (7 ft total), connected to existing fence, PROPOSED-Concrete walkway Concrete walkway / pavement, 6-inch minimum, #3 at 12 in each way, PROPOSED-East trench drains East trench drains, north and south of SDCB #10, rim 23.10, PROPOSED-HMA pavement Asphalt concrete pavement, 4-in HMA Class 1/2-in PG 58H-22 over 4-in CSBC and 12-in gravel base, thickened edge (+42 more)
 
 ### Community 7 - "Community 7"
-Cohesion: 0.10
-Nodes (42): ESWD WWTP – Aerobic Digester Blower Aerobic digester blower (1), Kaeser Com-paK BB 52 C, 5 HP 460 V, VFD, 120 scfm at 4.0 psig, on 3.25 x 2.25 ft pad, ESWD WWTP – Biological Treatment System Blowers (Trains 1 – 3) Biological treatment blowers (4), Kaeser Com-paK DB 166 C, 20 HP 460 V, VFD, 315 scfm at 8.9 psig each, F1–F4 [2W Pump Station] 2W pump station float switches F1-F4, PIT-620 2W system pressure transducer, 0-150 psi (operating 55-75 psi), PROPOSED-2W-AIR-GAP-ENCLOSURE 2W air gap system in a fiberglass enclosure ("2W (Air Gap) Water Hot Box"), PROPOSED-2W-BLADDER-TANK-SUPPLY 1-inch 2W supply piping to the bladder tanks, routed below existing concrete floor, slab penetration at tank connection, PROPOSED-2W-DIAPHRAGM-TANKS 2W air diaphragm (bladder) tanks (2), Amtrol Well-X-Trol WX-350D, 119 gal (26 x 62 in.), with manifold, gauge and relief valves, PROPOSED-2W-DISCHARGE-LINE 2W plant water discharge, 2-inch SCH 80 PVC to 3-inch HDPE (+34 more)
-
-### Community 8 - "Community 8"
 Cohesion: 0.13
 Nodes (41): PROPOSED-Asphalt pavement sawcut and removal Existing asphalt pavement — sawcut and remove (new surfacing on C2.6), PROPOSED-Existing 1.5in sump force main Existing 1-1/2-inch sump pump force main, 60 LF — abandon and remove, PROPOSED-Existing 10in effluent outfall pipe Existing 10-inch effluent (outfall) pipe, 60 LF — abandon and remove, PROPOSED-Existing 4in roof drain pipe Existing 4-inch roof drain pipe, 40 LF — abandon and remove, PROPOSED-Existing 4in storm drain 8 LF Existing 4-inch storm drain, 8 LF — remove, PROPOSED-Existing 6in drain pipe to sump station Existing 6-inch drain pipe to sump pump station, 20 LF — abandon and remove, PROPOSED-Existing 8in effluent outfall pipe Existing 8-inch effluent (outfall) pipe, 40 LF — abandon and remove, PROPOSED-Existing 8in influent pipe Existing 8-inch influent pipe — abandon and remove (+33 more)
+
+### Community 8 - "Community 8"
+Cohesion: 0.12
+Nodes (37): ESWD WWTP – Aerobic Digester Blower Aerobic digester blower (1), Kaeser Com-paK BB 52 C, 5 HP 460 V, VFD, 120 scfm at 4.0 psig, on 3.25 x 2.25 ft pad, ESWD WWTP – Biological Treatment System Blowers (Trains 1 – 3) Biological treatment blowers (4), Kaeser Com-paK DB 166 C, 20 HP 460 V, VFD, 315 scfm at 8.9 psig each, F1–F4 [2W Pump Station] 2W pump station float switches F1-F4, PIT-620 2W system pressure transducer, 0-150 psi (operating 55-75 psi), PROPOSED-2W-AIR-GAP-ENCLOSURE 2W air gap system in a fiberglass enclosure ("2W (Air Gap) Water Hot Box"), PROPOSED-2W-BLADDER-TANK-SUPPLY 1-inch 2W supply piping to the bladder tanks, routed below existing concrete floor, slab penetration at tank connection, PROPOSED-2W-DIAPHRAGM-TANKS 2W air diaphragm (bladder) tanks (2), Amtrol Well-X-Trol WX-350D, 119 gal (26 x 62 in.), with manifold, gauge and relief valves, PROPOSED-2W-DISCHARGE-LINE 2W plant water discharge, 2-inch SCH 80 PVC to 3-inch HDPE (+29 more)
 
 ### Community 9 - "Community 9"
 Cohesion: 0.17
 Nodes (25): PROPOSED-Catch basin inserts Catch basin inserts (inlet protection, TESC), PROPOSED-Compost berm Compost berm (TESC), PROPOSED-Dewatering system Contractor dewatering system: pumps, backup pumps, standby generator, wells or well points, discharge treatment, PROPOSED-Emergency access areas Emergency access areas (west side) — no parking, blocking, stockpiling or staging; vehicle turnaround allowed, PROPOSED-Filter fabric fence Filter fabric (silt) fence (TESC), PROPOSED-Geotextile encased check dams Geotextile encased check dams (BMP C208), PROPOSED-Hydroseeded restoration areas Hydroseeded grass restoration of disturbed areas (topsoil, seed, fertilizer, mulch), PROPOSED-Off-site staging area Contractor staging area off Mt Baker Road, with vehicle path to the project site (+17 more)
 
 ### Community 10 - "Community 10"
+Cohesion: 0.22
+Nodes (23): Inclined Conveyor Inclined conveyor, shafted, 9-in. flight at 5-in. pitch, 17 ft 4 in. at 35 degrees, 304 SS tubular trough, outlet to bin, 5 HP, PROPOSED-2W-SUPPLY-TO-PRESS 2W water supply to rotary fan press, 2-inch, PROPOSED-PLANT-DRAIN-LINE Filtrate, pressate and digester supernatant drain line to Influent Pump Station, 4-inch (IE 13.40 at wet well), PROPOSED-POLYMER-SYSTEM Emulsion (liquid) polymer make-up system, Fournier frame with Watson-Marlow peristaltic dosing pump; C6.1 plan labels a dry polymer mix unit, PROPOSED-RFP-AIR-COMPRESSOR Rotary fan press air compressor, material not listed, 1, PROPOSED-RFP-CAKE-CHUTE Rotary fan press cake chute, LLDPE, 1, PROPOSED-RFP-CONTROL-PANEL Rotary fan press control panel with operator interface, 1, PROPOSED-RFP-FLOCCULATOR Rotary fan press flocculator, steel, 1 (+15 more)
+
+### Community 11 - "Community 11"
+Cohesion: 0.44
+Nodes (11): PROPOSED-2W-Pump-Station-Precast-Wet-Well Precast wet well, 8 ft ID (Oldcastle Infrastructure 96 in diameter), with 48 in x 30 in H-20 aluminum hatch and safety grate (LW Products HD-3C) — 2W Plant Water Pump Station, PROPOSED-Drain-Pump-Station-Precast-Wet-Well Precast concrete wet well, 8 ft min., 96 in I.D. — per civil, PROPOSED-Effluent-Flow-Meter-Valve-Vault Precast vault, 4 ft x 4 ft (Oldcastle Infrastructure 4686-LA), with 36 in x 36 in H-20 single-leaf hatch (Halliday H1R3636) — Effluent Flow Meter Valve Vault, PROPOSED-Influent-Flow-Meter-Valve-Vault Precast vault, 4 ft x 4 ft (Oldcastle Infrastructure 4686-LA), with 36 in x 36 in H-20 single-leaf hatch (Halliday H1R3636) — Influent Flow Meter Valve Vault, PROPOSED-Influent-Pump-Station-Meter-Vaults Precast vaults, 4 ft x 4 ft (Oldcastle Infrastructure 4686-LA), with 36 in x 36 in H-20 single-leaf hatches (Halliday H1R3636) — Influent Pump Station Meter Vaults, quantity not stated, PROPOSED-Influent-Pump-Station-Precast-Wet-Well Precast wet well, 8 ft ID (Oldcastle Infrastructure 96 in diameter), with 48 in x 30 in H-20 aluminum hatch and safety grate (LW Products HD-3C) — Influent Pump Station, PROPOSED-Influent-Pump-Station-Top-Slab Influent Pump Station top slab per Contract Plan details, with new aluminum access hatch and safety grates, PROPOSED-Plants-2-and-3-Flow-Meter-Vault Precast vault, 4 ft x 4 ft (Oldcastle Infrastructure 4686-LA), with 36 in x 36 in H-20 single-leaf hatch (Halliday H1R3636) — Plants 2 & 3 Flow Meter Vault (+3 more)
+
+### Community 12 - "Community 12"
 Cohesion: 0.48
 Nodes (7): PROPOSED-BLOWER-BLDG-MANUAL-LOUVER Blower Building manual louvered vent, 24 x 24 in., Pottoroff EXD-645, PROPOSED-BLOWER-BLDG-MOTORIZED-LOUVER Blower Building motorized louvered vent, 36 x 84 in., Pottoroff EXD-645 with AF120 120 V spring-return actuator, PROPOSED-BLOWER-BLDG-WALL-FANS Blower Building wall fans (2), Acme FQ18G6, 3,300 CFM, 1/2 HP, 120 V, each on its own Schaffer TH109 thermostat, with EBE445 gravity combination louver, PROPOSED-EXISTING-BLDG-LOUVERS Existing Dewatering/Train 1&2 Building manual louvered vents (2), 36 x 84 in., Pottoroff EXD-645, PROPOSED-EXISTING-BLDG-WALL-FANS Existing Dewatering/Train 1&2 Building wall fans (3), Acme FQ18G6, 3,300 CFM, each on a manual on/off switch, with gravity combination louvers, Wiki note 23 34 00, Spec 23 34 00
 
-### Community 11 - "Community 11"
+### Community 13 - "Community 13"
 Cohesion: 0.67
 Nodes (3): PROPOSED-Funding-Recognition-Sign Funding recognition sign (Ecology financial assistance), Wiki note 00 53 00, Spec 00 53 00
 
-### Community 12 - "Community 12"
+### Community 14 - "Community 14"
 Cohesion: 0.67
 Nodes (3): PROPOSED-Influent-Pump-Station-Interior-Coating Epoxy protective lining, spray-applied 100% solids (Raven 405 or Tnemec G436), on all interior concrete surfaces — Influent Pump Station, Wiki note 09 97 23, Spec 09 97 23
 
-### Community 13 - "Community 13"
+### Community 15 - "Community 15"
 Cohesion: 0.67
 Nodes (3): PROPOSED-Temporary construction sign Temporary construction sign, 4 x 8 ft plywood, Ecology and CDBG Commerce requirements, Wiki note 15 08 13, Spec 15 08 13
 
-### Community 14 - "Community 14"
+### Community 16 - "Community 16"
 Cohesion: 0.67
 Nodes (3): PROPOSED-UV-TRANSMISSIVITY-ANALYZER UV transmissivity analyzer, Hach DR 1900 (1), Wiki note 46 66 10, Spec 46 66 10
 
@@ -1094,8 +1104,6 @@ Nodes (3): PROPOSED-UV-TRANSMISSIVITY-ANALYZER UV transmissivity analyzer, Hach 
   testbeds/eastsound/project/02_Project_Ledger/Project_Ledger.csv · relation: specified_in
 - `Buried Valve ID 3 8-inch gate valve — Train 3 flow meter isolation` → `Spec 33 30 00`  [AMBIGUOUS]
   testbeds/eastsound/project/02_Project_Ledger/Project_Ledger.csv · relation: specified_in
-- `SD-1 [L74] Storm drain alignment SD-1, 12-inch, 42 + 19 + 42 LF at 0.5%` → `SD-1 [L316] Sludge pump, 3 HP, VFD in MCC`  [AMBIGUOUS]
-  testbeds/eastsound/project/02_Project_Ledger/Project_Ledger.csv · relation: same_tag
 - `SD-1 [L74] Storm drain alignment SD-1, 12-inch, 42 + 19 + 42 LF at 0.5%` → `Wiki note 33 30 00`  [AMBIGUOUS]
   testbeds/eastsound/project/02_Project_Ledger/Project_Ledger.csv · relation: described_in
 - `SD-1 [L74] Storm drain alignment SD-1, 12-inch, 42 + 19 + 42 LF at 0.5%` → `Wiki note 33 41 00`  [AMBIGUOUS]
@@ -2060,7 +2068,7 @@ Nodes (3): PROPOSED-UV-TRANSMISSIVITY-ANALYZER UV transmissivity analyzer, Hach 
   testbeds/eastsound/project/02_Project_Ledger/Project_Ledger.csv · relation: specified_in
 
 ## Knowledge Gaps
-- **61 isolated node(s):** `Wiki note 10 73 05`, `Wiki note 40 05 71`, `Wiki note 46 51 21`, `Spec 10 73 05`, `Spec 40 05 71` (+56 more)
+- **61 isolated node(s):** `Wiki note 26 05 19`, `Wiki note 26 24 19`, `Wiki note E0.3`, `Sheet E0.3`, `Spec 26 24 19` (+56 more)
   These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 61 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **High ambiguity: 31% of edges are AMBIGUOUS.** Review the Ambiguous Edges section above.
 

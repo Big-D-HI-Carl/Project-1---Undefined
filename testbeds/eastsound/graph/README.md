@@ -5,7 +5,7 @@ The graph of the Project Ledger, built by script with no LLM calls. It is a map,
 - **Input:** `project/02_Project_Ledger/Project_Ledger.csv` (447 rows, read-only).
 - **Script:** `tools/ledger_to_graph.py`, on graphifyy 0.9.72 (pinned in `requirements.txt`).
 - **Outputs** in `graphify-out/`: `graph.json`, `GRAPH_REPORT.md`, `graph.html`. Don't commit `cache/` or `.graphify_*`; they are gitignored.
-- **Size:** 791 nodes (447 Ledger items, 86 sheets, 77 spec sections, 21 Addendum 4 items, 160 Wiki notes) and 3,114 links.
+- **Size:** 791 nodes (447 Ledger items, 86 sheets, 77 spec sections, 21 Addendum 4 items, 160 Wiki notes) and 3,113 links.
 
 ## Rebuild
 
@@ -62,7 +62,10 @@ Two builds of the same Ledger give byte-identical `graph.json`, `graph.html` and
 6. **Bid items (attribute):** remove text in parentheses, a leading "Unresolved —", and any lead-in text before a colon. What's left is `N`, `N or M`, or `Equipment Alternate X`.
 7. **Link level:** each link takes the weaker of the row's tag and any tag level written in that value.
 8. **One link per item and target:** repeats merge their values and notes and keep the weakest level.
-9. **Repeated Tags:** each row is keyed `<Tag> [L<line>]`, and one `same_tag` link (AMBIGUOUS) joins them. Today that covers SD-1 (lines 74 and 316) and PROPOSED-Influent-Sampler (lines 321 and 419). **When Prompt 9 adds the permanent Ledger ID column, the item key switches from the Tag to that ID.**
+9. **Repeated Tags:** each row is keyed `<Tag> [L<line>]`. Today that covers SD-1 (lines 74 and 316) and PROPOSED-Influent-Sampler (lines 321 and 419).
+   - PROPOSED-Influent-Sampler is one item entered by two lanes, so one `same_tag` link (AMBIGUOUS) joins its rows.
+   - The two SD-1 rows are different items (storm drain, sludge pump), so they get no link (Carl, 2026-09-30). A link made false path traces between them. The script's `NO_SAME_TAG` list holds this exception.
+   - **When Prompt 9 adds the permanent Ledger ID column, the item key switches from the Tag to that ID, and `NO_SAME_TAG` goes.**
 10. **Labels:** "Sheet …", "Spec …", "Wiki note …", "Add. 4 …". IDs keep the `sheet:`, `spec:`, `addendum:` and `note:` prefixes.
 
 ## Querying
@@ -77,4 +80,4 @@ graphify path "Add. 4 p.8" "PROPOSED-Blower-Pad" --undirected --graph testbeds/e
 - **Look up a repeated Tag by its key,** for example `SD-1 [L316]`.
 - **`explain` lists at most 20 connections.** The full set is in graph.json.
 - **Item-to-item paths need `--undirected`.**
-- **Treat hub-based paths with care.** Add. 4 p.3 (the drawing-changes page, 43 items) and the `same_tag` link between the two SD-1 items can make short paths that don't reflect how the work connects.
+- **Treat hub-based paths with care.** Add. 4 p.3 (the drawing-changes page, 43 items) can make short paths that don't reflect how the work connects.
