@@ -2,6 +2,8 @@
 
 A note beside the three native parts of the 11x17 bid plan set. It maps each file page to its set page and sheet, and to the register copy the index files cite.
 
+Machine-readable copy: `testbeds/eastsound/index/Plan_Set_Crosswalk.csv` (see the last section).
+
 Short names used here:
 - **Part 1** = `Pages from eswd-wwtp-upgrade-ph1-11x17-plans Part 1.pdf`
 - **Part 2** = `Pages from eswd-wwtp-upgrade-ph1-11x17-plans Part 2.pdf`
@@ -149,3 +151,11 @@ Short names used here:
 | 46 | 94 | E10.1 | ELECTRICAL DETAILS - SHEET 1 | Verified: title block "E10.1", "94 OF 96" | plans_12 p.6 |
 | 47 | 95 | E10.2 | ELECTRICAL DETAILS - SHEET 2 | Verified: title block "E10.2", "95 OF 96" | plans_12 p.7 |
 | 48 | 96 | E10.3 | STANDBY DIESEL GENERATOR ELEVATIONS | Verified: title block "E10.3", "96 OF 96" | plans_12 p.8 |
+
+## Crosswalk CSV
+
+- `testbeds/eastsound/index/Plan_Set_Crosswalk.csv` holds the same mapping in the other direction, built from `01_Sheet_Index_rev1.md`: plans_N file and page → set page → native part file and page. It has 99 rows: the 89 plans_N pages in the Sheet Index page log (plans_7 pp.1–3 included as duplicates of plans_6 pp.6–8) plus the 10 sheets with no plans_N extract.
+- Every row was checked against the sheet number and set page in the native page's title block on 2026-09-30, with 0 mismatches:
+  - 90 rows read in the native text layer (Verified);
+  - 9 rows for the image-only pages (set pp.28, 29, 45 and 56–61) read from the rendered title block (Verified-Visual). That upgrades those 9 rows in the tables above from Inferred.
+- The native S1.1–S4.1 title blocks read "N OF 96". Sheet Index item 10 logged "OF 98" at the stored image resolution.
