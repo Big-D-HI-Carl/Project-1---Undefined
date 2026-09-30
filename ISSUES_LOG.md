@@ -462,3 +462,39 @@ Append-only. Repo and program issues, in the format in AGENTS.md. The test bed's
   - `derived/issues/Open_Items.csv`, from commit ddb818e on `claude/jolly-rubin-dm4ese`.
   - Rebuilt from main alone, the graph drops those inputs. `Build_Inputs.csv` would mark them missing.
 - Fix or next action: Merge the Wiki and open-items PRs first. If either file changes before it merges, rebuild the graph and compare the SHA-256 values in `testbeds/eastsound/graph/Build_Inputs.csv`.
+
+## 2026-09-30 — Open items bridge the two SD-1 items in graph paths — Closed
+- Workstream: Eastsound test bed, graph build
+- Type: design gap
+- Finding: Closes the Open entry of the same title. Carl: "Open items: duplicate-type items and any open item listing more than 15 Ledger IDs keep their node but get no item links; list the IDs on the node instead. Other open items keep their links."
+  - `ledger_to_graph.py` (765b929) applies the rule. 96 open items list their IDs in `ledger_id_list` with no `concerns` links: 92 duplicate items, and 4 naming more than 15 IDs (OI-0474 with 80, OI-0002 and OI-0465 with 23, OI-0320 with 22).
+  - OI-0112 (Tag collision — SD-1) no longer joins the two SD-1 rows. The largest open item still linked is OI-0319, with 13 items.
+  - One 2-hop SD-1 path remains, through OI-0289. It is logged separately ("Open item OI-0289 names the storm drain SD-1 row").
+- Fix or next action: Done.
+
+## 2026-09-30 — Open item OI-0289 names the storm drain SD-1 row — Open
+- Workstream: Eastsound test bed, open items
+- Type: content conflict
+- Finding: `testbeds/eastsound/derived/issues/Open_Items.csv` OI-0289 is a conflict item, "Cross-lane: Electrical & Controls Issues #28: Influent, WAS, sludge and dewatering process equipment". It lists L-0073; L-0287; L-0290; L-0312; L-0313; L-0314; L-0315.
+  - Its citation (Exception_Report.md #207) names E4.1, E4.2 and E6.1 equipment, including SD-1, the sludge pump (L-0315).
+  - L-0073 is SD-1, the Civil & Site storm drain alignment on C2.2. It looks like a match on the shared Tag, not on the item (Inferred: the citation names only Electrical & Controls sheets and equipment).
+  - In the graph, `graphify path "SD-1 [L-0073]" "SD-1 [L-0315]" --undirected` runs storm drain ← OI-0289 → sludge pump in two INFERRED hops. Without open items, the shortest path is 4 hops.
+- Fix or next action: The open-items session checks how `build_open_items.py` maps Exception_Report #207 to Ledger IDs and drops L-0073 if confirmed. The graph picks it up on the next rebuild. The graph build does not edit or second-guess Open_Items.csv.
+
+## 2026-09-30 — The committed graph depends on the Wiki and open-items files from two unmerged branches — Closed
+- Workstream: Eastsound test bed, graph build
+- Type: input gap
+- Finding: Closes the Open entry of the same title. PRs #12 (c809b08) and #13 (7d7a2c4) merged, and main is merged into `claude/wizardly-ride-juv04s`. The graph is rebuilt from main's files only. `testbeds/eastsound/graph/Build_Inputs.csv` gives each input's SHA-256, and Open_Items.csv is the 475-row file from 7d7a2c4.
+- Fix or next action: Done.
+
+## 2026-09-30 — AGENTS.md Layout doesn't list derived/wiki/ — Closed
+- Workstream: Repo setup
+- Type: design gap
+- Finding: Closes the Open entry of the same title. At Carl's request under rule 8, commit 69ca8ad adds the Layout line `wiki/  Wiki note and link tables parsed from project/01_Project_Wiki (derived; not a source)` under `derived/`.
+- Fix or next action: Done.
+
+## 2026-09-30 — AGENTS.md Layout doesn't list derived/issues/ — Closed
+- Workstream: Repo setup
+- Type: design gap
+- Finding: Closes the Open entry of the same title. At Carl's request under rule 8, commit 69ca8ad adds the Layout line `issues/  open-items list built from reconciliation/, project/03_Exceptions_and_Issues/ and ISSUES_LOG.md (list only; nothing applied)` under `derived/`.
+- Fix or next action: Done.

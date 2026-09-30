@@ -533,3 +533,34 @@ Append-only. One entry per session, in the format in AGENTS.md. Never edit or de
   - Carl merges the Wiki and open-items PRs, then this one (ISSUES_LOG, "The committed graph depends on…").
   - Carl decides how open items should link duplicate rows (ISSUES_LOG, "Open items bridge the two SD-1 items in graph paths").
   - The checks.py Ledger ID rule, when a person asks.
+
+## 2026-09-30 — Graph follow-up: rebuilt from main after PRs #12 and #13; full note text; open-item link rule
+- Runtime: Claude Code
+- Commits: 5257693..HEAD on `claude/wizardly-ride-juv04s` (PR #14)
+- Done:
+  - Merged main twice: PR #12 (5257693) and PR #13 (fcdf37e). In both logs, main's entries come first and this branch's follow, byte for byte (script check).
+  - `AGENTS.md` Layout: `derived/issues/` and `derived/wiki/` lines, in their own commit (69ca8ad, Carl's rule-8 request).
+  - `testbeds/eastsound/tools/ledger_to_graph.py` (765b929):
+    - Note text is each note's body from `project/01_Project_Wiki/Project_Wiki.md`, found by Heading Line and checked against the heading. The "> Merge:" metadata line is left out. Text is cut at the last full sentence within 2,000 characters, and replaces the 600-character summary.
+    - Duplicate open items and open items naming more than 15 Ledger IDs keep their node and their sheet and spec links, get no item links, and list their IDs in `ledger_id_list`.
+  - `testbeds/eastsound/graph/`: rebuilt from main's files only; README gives the new rules, counts and trace.
+  - DECISIONS.md records Carl's three instructions. ISSUES_LOG closes four entries (open-item bridges, unmerged inputs, and the two Layout entries) and opens one (OI-0289).
+  - Counts: 1,386 nodes and 7,284 links.
+    - Nodes: 447 items, 99 sheets, 117 specs, 23 addendum items, 203 notes, 22 MTO lines, 475 open items.
+    - Links: 986 shown_on, 536 specified_in, 153 changed_by, 1,437 described_in, 200 describes, 523 mentions, 1,480 references, 21 quantity_of, 22 measured_on, 392 concerns, 1,534 cites.
+  - Note text: 114 notes whole, 88 cut at a sentence, none cut at a space. 96 open items without item links: 92 duplicates, and 4 naming more than 15 IDs.
+  - Trace (unchanged): GEN (L-0242) ← `concerns` OI-0001 Generator rating RFI → `cites` Spec 26 32 13 ← `describes` Wiki note 26 32 13 → `references` Sheets E1.1, E6.1, E10.3. Every link on the path is EXTRACTED (Verified).
+  - SD-1 [L-0073] to SD-1 [L-0315]: one 2-hop path remains, through OI-0289, a conflict item. Without open items, the shortest path is 4 hops.
+- Tests:
+  - Three builds (repo plus two scratch folders), under `env -i` with `GIT_DIR=no-git` → graph.json, graph.html, GRAPH_REPORT.md, Build_Inputs.csv and Build_Counts.csv byte-identical (`cmp`). graph.json has no `built_at_commit`.
+  - `cut_at_sentence` edge cases, including abbreviations, the 2,000-character boundary and no sentence end → as intended. The three shortest cuts, checked by hand, each stop where the next sentence runs past 2,000 characters.
+  - `graphify explain "OI-0001"` and `graphify path … --undirected` → the trace and SD-1 path above.
+  - `python -m pyflakes testbeds/eastsound/tools/ledger_to_graph.py` → clean.
+  - `python3 tools/checks.py --all` → 0 FAIL, 3 WARN. The hook's `--staged` → 0 FAIL on each commit.
+- Failures and fixes:
+  - `finditer` with an end position let `$` match at the 2,000-character mark, so a mid-sentence period there could count as an end. The search now runs over the whole text and stops past the limit. Fixed before the first build.
+  - PR #13 was not yet merged when the session started. The build waited for it rather than using the branch copy.
+- Next:
+  - Carl reviews PR #14.
+  - The open-items session checks OI-0289's L-0073 (ISSUES_LOG).
+  - The checks.py Ledger ID rule, when a person asks.

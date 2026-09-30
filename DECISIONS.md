@@ -240,3 +240,18 @@ Append-only. Decisions made by a person, in the format in AGENTS.md. Never edit 
 - Decided by: Carl
 - Why: Stated in this session: "Your three judgment calls are approved as-is (RFI typing, leaving out the 312 PROPOSED approvals, weakest-tag confidence)."
 - Replaces: none
+
+## 2026-09-30 — Graph note text is each note's full Project Wiki body, cut at the last full sentence before 2,000 characters
+- Decided by: Carl
+- Why: Stated in this session: "Note text: use each note's full body from Project_Wiki.md (via Heading Line), cut at the last full sentence before 2,000 characters, instead of the 600-character summary."
+- Replaces: none
+
+## 2026-09-30 — In the graph, duplicate open items and open items naming more than 15 Ledger IDs get no item links
+- Decided by: Carl
+- Why: Stated in this session: "Open items: duplicate-type items and any open item listing more than 15 Ledger IDs keep their node but get no item links; list the IDs on the node instead. Other open items keep their links."
+- Replaces: none
+
+## 2026-09-30 — AGENTS.md Layout lists derived/wiki/ and derived/issues/
+- Decided by: Carl
+- Why: Stated in this session: "Add AGENTS.md Layout lines for derived/wiki/ and derived/issues/ in their own commit (my request under rule 8)."
+- Replaces: none
