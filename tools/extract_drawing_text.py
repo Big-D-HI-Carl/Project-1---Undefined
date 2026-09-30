@@ -33,6 +33,7 @@ import difflib
 import hashlib
 import json
 import math
+import random
 import re
 import subprocess
 import time
@@ -934,16 +935,20 @@ def stage_pages(out, jobs, only, cache):
 TAG_LEVEL_COL = "Verified/Verified-Visual/Inferred/Unresolved"
 LEVELS = ["Verified", "Verified-Visual", "Inferred", "Unresolved"]
 CONFUSE = str.maketrans({"I": "1", "O": "0", "S": "5", "B": "8", "H": "#"})
-NEAR_TAG_PT = 48.0      # nearest-tag search distance, edge to edge (Gate A)
+# Gate A rules (owner, 2026-09-30); see README.md.
+NEAR_TAG_PT = 24.0      # nearest-tag search distance, edge to edge
+SHORT_FORM_LEN = 3      # forms this short count only on the row's cited sheets
+QUALIFIER_RE = re.compile(r"\(E\)|\bEXIST")  # an "(E)" row needs this on the hit's line
 SHEET_TOKEN_RE = re.compile(r"^([A-Z]{1,2}\d{1,2}\.\d{1,2}[A-Z]?)\s*(?:\(([^)]*)\))?\s*(.*)$")
-SHORT_GENERIC = re.compile(r"^[A-Z]{1,3}$|^[A-Z]\d$")
 LEGENDS = {  # Pipe ID and Buried Valve ID rows match a legend line that starts with the ID number
     "Pipe ID": ("PIPE IDENTIFICATION LEGEND", ("C1.3",)),
     "Buried Valve ID": ("BURIED VALVE IDENTIFICATION LEGEND", ("C1.4",)),
 }
-KEYED_HEAD_RE = re.compile(r"\bKEY(?:ED)?\s?NOTES?\b")
+DISCIPLINE_LANE = {"C": "Civil & Site", "E": "Electrical & Controls", "S": "Structural & Building",
+                   "A": "Structural & Building", "G": "Civil & Site"}
+KEYED_HEAD_RE = re.compile(r"^\W*KEY(?:ED)?\s?NOTES?\W*$")  # the heading alone, not a sentence naming it
 MARKER_RE = re.compile(r"^(?:=|\(?(\d{1,2})[.),]{0,2})$")
-STRAY_RE = re.compile(r"^[-_\u2013\u2014|.,:;=~]+$")
+STRAY_RE = re.compile(r"^[-_–—|.,:;=~]+$")
 UNMATCHED_SHAPES = [
     ("letters-dash-number", re.compile(r"(?<![A-Z0-9#-])[A-Z]{1,5}-\d{1,4}[A-Z]?(?![A-Z0-9-])")),
     ("letters-hash-number", re.compile(r"(?<![A-Z0-9#-])[A-Z]{2,5}#\d{1,4}(?![A-Z0-9])")),
@@ -955,7 +960,12 @@ PIPE_WORDS = {"DI", "DIP", "HDPE", "PVC", "C900", "SS", "CPVC", "CI", "RCP", "CM
               "AIR", "VENT", "SLUDGE", "WAS", "PIPE", "LINE", "MAIN", "CONDUIT", "C", "RGS", "EMT", "GATE",
               "PLUG", "VALVE", "BALL", "CHECK", "ROOF", "STORM", "SANITARY", "FORCE", "SEPTIC", "SCH", "SCH.",
               "DIA", "DIA.", "CULVERT", "HYDRANT", "SUPERNATANT"}
-Q_NUM = r"(?P<v>\d{1,3}(?:,\d{3})+(?:\.\d+)?|\d+(?:\.\d+)?)"
+# A foot value right before one of these is a dimension (6' CHAIN LINK), not a quantity.
+DIM_MATERIAL = {"CHAIN", "LINK", "FENCE", "CONC", "CONC.", "CONCRETE", "ASPHALT", "HMA", "GRAVEL", "ROCK",
+                "BLOCK", "CMU", "WOOD", "TIMBER", "ALUM", "ALUMINUM", "BRICK", "STEEL", "GALV", "GALV.",
+                "SS", "PVC", "DI", "DIP", "HDPE", "RCP", "CMP", "FRP", "CEDAR", "VINYL"}
+NUM_BOUND = r"(?<![A-Z0-9.,/])"
+Q_NUM = NUM_BOUND + r"(?P<v>\d{1,3}(?:,\d{3})+(?:\.\d+)?|\d+(?:\.\d+)?)"
 Q_PATTERNS = [
     ("length", "LF", re.compile(Q_NUM + r"\s?(?:L\.F\.|LF|LIN\.?\s?FT\.?)(?![A-Z])")),
     ("area", "SF", re.compile(Q_NUM + r"\s?(?:S\.F\.|SF|SQ\.?\s?FT\.?)(?![A-Z])")),
@@ -965,17 +975,47 @@ Q_PATTERNS = [
     ("lump sum", "LS", re.compile(Q_NUM + r"\s?(?:L\.S\.|LS)(?![A-Z])")),
     ("weight", "TON", re.compile(Q_NUM + r"\s?TONS?(?![A-Z])")),
     ("volume", "GAL", re.compile(Q_NUM + r"\s?(?:GAL\.?|GALLONS?)(?![A-Z])")),
-    ("length", "LF", re.compile(r"(?<![A-Z0-9])L\s?=\s?" + Q_NUM + r"\s?(?:'|FT\.?|LF)?")),
+    ("length", "LF", re.compile(r"(?<![A-Z0-9])L\s?=\s?(?P<v>\d+(?:\.\d+)?)\s?(?:'|FT\.?|LF)?")),
     ("length", "FT", re.compile(Q_NUM + r"\s?(?:-\s?)?(?:FT\.?|FEET)(?![A-Z])")),
-    ("size", "IN", re.compile(r"(?P<v>\d{1,2}(?:\.\d+)?(?:\s\d/\d)?|\d/\d)\s?(?:\"|''|-?IN\.?|-?INCH(?:ES)?)(?![A-Z0-9])"
+    ("length", "FT", re.compile(Q_NUM + r"'(?![-\d\"'])")),
+    ("size", "IN", re.compile(NUM_BOUND + r"(?P<v>\d{1,2}(?:\.\d+)?(?:\s\d/\d)?|\d/\d)\s?(?:\"|''|-?IN\.?|-?INCH(?:ES)?)(?![A-Z0-9])"
                               r"(?P<rest>(?:\s?\(?[A-Z0-9./]+\)?){0,4})")),
     ("count", "EA", re.compile(r"(?<![A-Z0-9.,/-])\(?(?P<v>\d{1,3})\)?\s(?P<noun>[A-Z]{3,}S)(?![A-Z])")),
     ("slope", "%", re.compile(Q_NUM + r"\s?%")),
     ("slope", "FT/FT", re.compile(r"(?<![A-Z0-9])S\s?=\s?(?P<v>0?\.\d+)(?!\d)")),
     ("slope", "H:V", re.compile(r"(?<![0-9.])(?P<v>\d+(?:\.\d+)?\s?H\s?:\s?\d+(?:\.\d+)?\s?V)(?![A-Z])")),
-    ("elevation", "FT", re.compile(r"(?<![A-Z0-9])(?P<k>RIM|I\.E\.|IE|INV(?:ERT)?\.?|ELEV\.?|EL\.?|FG|FF|FFE|TOC|TOW|BOW|TOG|GRATE)"
-                                   r"\s?(?:\((?:IN|OUT|[NSEW]{1,2})\)\s?|(?:IN|OUT)\s)?[=:]?\s?(?P<v>\d{1,4}\.\d{1,2})(?!\d)")),
+    ("elevation", "FT", re.compile(r"(?<![A-Z0-9])(?P<k>RIM|SUMP|I\.E\.|IE|INV(?:ERT)?\.?|ELEV\.?|EL\.?|FG|FF|FFE|TOC|TOW|BOW|TOG|GRATE)"
+                                   r"\s?(?:\((?:IN|OUT|[NSEW]{1,2})\)\s?|(?:IN|OUT)\s)?(?:(?:EL|ELEV)\.?\s?)?[=:]?\s?"
+                                   r"(?P<v>\d{1,4}\.\d{1,2})(?!\d)")),
 ]
+LF_AT_RE = re.compile(r"(?:LF|L\.F\.)\s?@\s?$")
+NAME_QTY_RE = re.compile(r"(?<![\d.])(\d+(?:\.\d+)?)\s?(LF|FT|ft|SF|SY|CY|EA|GAL|gal|gallons|TONS?)\b")
+QTY_UNIT_FORMS = {"LF": r"(?:LF|L\.F\.)", "FT": r"(?:'|FT\.?|FEET|-FT)", "SF": r"(?:SF|S\.F\.)",
+                  "SY": r"(?:SY|S\.Y\.)", "CY": r"(?:CY|C\.Y\.)", "EA": r"(?:EA\.?|EACH)",
+                  "GAL": r"(?:GAL\.?|GALLONS?)", "TON": r"TONS?"}
+NOUN_STOP = {
+    "INCH", "INCHES", "EXISTING", "WITH", "SYSTEM", "TEMPORARY", "REMOVE", "REMOVED", "REMOVAL", "LOCAL",
+    "EQUAL", "CONTRACTOR", "CONSTRUCTION", "TYPICAL", "STATED", "QUANTITY", "LOCATION", "LOCATIONS",
+    "ABOUT", "BELOW", "ABOVE", "CLEAR", "THEN", "DURING", "ABANDON", "RELOCATE", "PROVIDE", "PROVIDED",
+    "INSTALL", "INSTALLED", "UNDER", "FROM", "INTO", "ONTO", "COMPONENTS", "COMPONENT", "NORTH", "SOUTH",
+    "EAST", "WEST", "BASE", "ADDENDUM", "NOTE", "NOTES", "SHEET", "SHEETS", "DETAIL", "DETAILS", "EACH",
+    "BOTH", "THAT", "THIS", "THESE", "THOSE", "WHEN", "WHERE", "WILL", "SHALL", "ALSO", "ONLY", "PLAN",
+    "PLANS", "ITEM", "ITEMS", "WORK", "AREA", "AREAS", "SITE", "WWTP", "ESWD", "PHASE", "REQUIRED",
+    "OTHER", "SAME", "ROWS", "PROPOSED", "PLUS", "PART", "PARTS", "TYPE", "SIZE", "SIZES", "MIN.", "MINIMUM",
+    "MAXIMUM", "EQUIPMENT", "PROJECT", "OWNER", "ENGINEER", "SPECIFICATIONS", "SPEC", "SECTION",
+}
+# Nouns too common on these sheets to anchor a row on their own (owner, Gate A: "not PIPE, VALVE,
+# CONCRETE, FENCE, WALL, LINE, and the like"). Compared after plural folding.
+GENERIC_NOUNS = {
+    "PIPE", "PIPING", "VALVE", "CONCRETE", "FENCE", "WALL", "LINE", "DRAIN", "DRAINAGE", "WATER", "PUMP",
+    "TANK", "SLAB", "BASIN", "STATION", "BUILDING", "FLOW", "METER", "TRAIN", "POWER", "CONTROL", "PANEL",
+    "STEEL", "STAINLESS", "FLOOR", "INLET", "OUTLET", "STRUCTURE", "SUPPORT", "CONDUIT", "CABLE", "WIRE",
+    "WIRING", "DOOR", "ROOF", "PLATE", "FRAME", "COVER", "MOTOR", "LIGHT", "LIGHTING", "CIRCUIT", "SWITCH",
+    "STORM", "SEWER", "SANITARY", "TRENCH", "GRADE", "GRADING", "PAVEMENT", "ASPHALT", "GRAVEL", "CURB",
+    "EXCAVATION", "BACKFILL", "SURFACE", "BLOCK", "FOOTING", "FOUNDATION", "ELECTRICAL", "MECHANICAL",
+    "INFLUENT", "EFFLUENT", "SLUDGE", "TREATMENT", "PLANT", "CELL", "UNIT", "UNITS", "SERVICE", "CONNECTION",
+    "BOTTOM", "HIGH", "LEVEL", "OPENING", "PRECAST", "INSTALLATION", "EXTERIOR", "INTERIOR", "MAIN",
+}
 
 
 def weakest(levels):
@@ -1012,17 +1052,23 @@ def norm_form(t):
 
 
 def printed_forms(tag):
+    """Search forms for a printed tag: trailing (...) and [...] stripped ("(E)" kept as a
+    qualifier), "|" aliases split, ranges expanded. Returns (forms, qualified, is_range)."""
     t = tag
+    qualified = False
     while True:
-        s = re.sub(r"\s*[\(\[][^\)\]]*[\)\]]\s*$", "", t).strip()
-        if s == t:
+        m = re.search(r"\s*([\(\[][^\)\]]*[\)\]])\s*$", t)
+        if not m:
             break
-        t = s
-    forms = []
+        if m.group(1).upper() == "(E)":
+            qualified = True
+        t = t[:m.start()].strip()
+    forms, is_range = [], False
     for alt in t.split("|"):
         alt = alt.strip()
         m = re.fullmatch(r"([A-Z]+)(\d+)\s*[–-]\s*(?:\1)?(\d+)", alt)
         if m:
+            is_range = True
             forms += [f"{m.group(1)}{n}" for n in range(int(m.group(2)), int(m.group(3)) + 1)]
         else:
             forms.append(alt)
@@ -1031,7 +1077,7 @@ def printed_forms(tag):
         f = norm_form(f)
         if f and f not in out:
             out.append(f)
-    return out
+    return out, qualified, is_range
 
 
 def split_sheets(field):
@@ -1047,6 +1093,33 @@ def split_sheets(field):
     return toks
 
 
+def stem(u):
+    return u[:-1] if len(u) > 4 and u.endswith("S") and not u.endswith("SS") else u
+
+
+def key_nouns(name):
+    """Words of 4+ letters from the Ledger Name, generic words dropped, plurals folded."""
+    out = []
+    for t in re.findall(r"[A-Za-z]{4,}", name.replace("-", " ")):
+        u = t.upper()
+        if u in NOUN_STOP or u.endswith("ED"):   # -ED words are participles, not nouns
+            continue
+        s = stem(u)
+        if s not in out:
+            out.append(s)
+    return out
+
+
+def name_quantities(name):
+    out = []
+    for v, u in NAME_QTY_RE.findall(name):
+        u = u.upper()
+        u = {"GALLONS": "GAL", "TONS": "TON"}.get(u, u)
+        if (v, u) not in out:
+            out.append((v, u))
+    return out
+
+
 def load_ledger():
     with open(LEDGER, encoding="utf-8-sig", newline="") as f:
         return [(i, r) for i, r in enumerate(csv.DictReader(f), start=2)]  # line 1 is the header
@@ -1057,32 +1130,55 @@ def build_forms():
     form_rows = defaultdict(list)
     for i, r in load_ledger():
         fam = family(r["Tag"])
-        forms = printed_forms(r["Tag"]) if fam == "printed" else []
+        forms, qualified, is_range = printed_forms(r["Tag"]) if fam == "printed" else ([], False, False)
         for fm in forms:
             form_rows[fm].append(i)
+        toks = split_sheets(r["Drawing Sheets"])
+        cited = []
+        for s, _, _ in toks:
+            if s and s not in cited:
+                cited.append(s)
         rows.append({"row": i, "tag": r["Tag"], "name": r["Name"], "family": fam, "forms": forms,
-                     "sheets_field": r["Drawing Sheets"], "tokens": split_sheets(r["Drawing Sheets"]),
+                     "qualified": qualified, "range": is_range,
+                     "lanes": [x.strip() for x in r["Lane"].split(";") if x.strip()],
+                     "sheets_field": r["Drawing Sheets"], "tokens": toks, "cited": cited,
+                     "nouns": [n for n in key_nouns(r["Name"]) if n not in GENERIC_NOUNS],
+                     "qty": name_quantities(r["Name"]),
                      "level": r[TAG_LEVEL_COL]})
+    by_row = {r["row"]: r for r in rows}
     for r in rows:
         reasons = []
-        cited = [t for t in r["tokens"] if t[0]]
         if not r["tokens"]:
             reasons.append("no sheet cited")
-        elif not cited:
+        elif not r["cited"]:
             reasons.append("no sheet number cited: " + "; ".join(t[2] for t in r["tokens"]))
         if r["family"] == "printed":
             r["searchable"] = "Y"
-            r["search"] = r["forms"]
+            r["search"] = [fm + (" [with (E) or EXIST on the same line]" if r["qualified"] else "")
+                           for fm in r["forms"]]
+            reasons.insert(0, "printed tag; exact form in the text layer, OCR and Bluebeam; "
+                              "1/I 0/O 5/S 8/B #/H swaps in OCR and Bluebeam marked fuzzy")
+            if any(len(fm) <= SHORT_FORM_LEN for fm in r["forms"]):
+                reasons.append("short form (3 characters or fewer): counts only on this row's cited sheets; "
+                               "elsewhere listed as off-citation, short form")
             shared = sorted({j for fm in r["forms"] for j in form_rows[fm] if j != r["row"]})
             if shared:
                 reasons.append("form shared with row(s) " + ", ".join(map(str, shared))
-                               + "; hits count for every sharing row")
-            if any(SHORT_GENERIC.match(fm) for fm in r["forms"]):
-                reasons.append("short generic form; expect incidental hits in notes and legends")
+                               + ": a hit goes to the row whose Lane matches the sheet's lane in 01, "
+                                 "otherwise it is marked ambiguous")
+                rng = [j for j in shared if by_row[j]["range"]]
+                ind = [j for j in shared if not by_row[j]["range"]]
+                if r["range"] and ind:
+                    reasons.append("range row: individual row(s) " + ", ".join(map(str, ind))
+                                   + " take the hit first; this row gets the rollup")
+                elif not r["range"] and rng:
+                    reasons.append("individual row: takes the hit before range row(s) "
+                                   + ", ".join(map(str, rng)))
+            if r["qualified"]:
+                reasons.append("(E) qualifier: counts only with (E) or EXIST on the hit's line; "
+                               "otherwise the hit goes to the unqualified row, or is not counted")
             if any(" " in fm for fm in r["forms"]):
                 reasons.append("internal space matches 0 or 1 space")
-            reasons.insert(0, "printed tag; exact form in the text layer, OCR and Bluebeam; "
-                              "1/I 0/O 5/S 8/B #/H swaps in OCR and Bluebeam marked fuzzy")
         elif r["family"] in LEGENDS:
             head, sheets = LEGENDS[r["family"]]
             n = r["tag"].rsplit(" ", 1)[1]
@@ -1091,8 +1187,18 @@ def build_forms():
             reasons.insert(0, "ID number is not printed as a tag; matched in the legend")
         else:
             r["searchable"] = "N"
-            r["search"] = [f"{t[0]} ({a})" for t in r["tokens"] if t[0] for a in (t[1] or ["sheet only"])]
-            reasons.insert(0, "PROPOSED tag is not printed; the Drawing Sheets anchors are checked instead")
+            anchors = [f"{t[0]} ({a})" for t in r["tokens"] if t[0] for a in (t[1] or ["sheet only"])]
+            if r["qty"]:
+                match = "match: quantity " + " or ".join(f"{v} {u}" for v, u in r["qty"]) + " (value and unit)"
+            elif r["nouns"]:
+                match = "match: noun " + ", ".join(r["nouns"])
+            else:
+                match = "match: none possible (no quantity and no specific noun in the Ledger Name)"
+            r["search"] = anchors + [match]
+            reasons.insert(0, "PROPOSED tag is not printed; each Drawing Sheets anchor is checked for the row's "
+                              "quantity (value and unit) when the Ledger Name has one, otherwise for a "
+                              "specific noun from the Name (generic nouns excluded); Verified in the text "
+                              "layer, Inferred by OCR or Bluebeam, Unresolved if not found or not matching")
         r["reason"] = "; ".join(reasons)
     return rows
 
@@ -1146,6 +1252,13 @@ def min_conf(ws):
     return min((w["conf"] for w in ws if w["conf"] is not None), default=None)
 
 
+METHOD_RANK = {"text-layer": 0, "ocr": 1, "bluebeam-ocr": 2}
+
+
+def weakest_method(ws):
+    return max((w["method"] for w in ws), key=lambda m: METHOD_RANK[m])
+
+
 def page_lines(pg):
     """Search lines: PDF lines for the text layer and Bluebeam; for OCR, lines rebuilt by position,
     because the upright and rotated passes each hold part of a line."""
@@ -1186,7 +1299,7 @@ def page_ref(pg):
     return {"page_key": pg["page_key"], "set_page": pg["set_page"], "sheet": pg["sheet_01"]}
 
 
-def find_tags(pg, comp, tag_of_row):
+def find_tags(pg, comp):
     hits = []
     for ln in page_lines(pg):
         s, owner = line_string(ln["words"])
@@ -1205,8 +1318,8 @@ def find_tags(pg, comp, tag_of_row):
                 if not ws:
                     continue
                 hits.append(dict(page_ref(pg), tag_text=" ".join(w["text"] for w in ws), form=fm,
-                                 rows=rows, ledger=[tag_of_row[x] for x in rows], bbox=union_box(ws),
-                                 method=ln["method"], conf=min_conf(ws), fuzzy=fuzzy, kind="tag"))
+                                 candidates=list(rows), bbox=union_box(ws), method=ln["method"],
+                                 conf=min_conf(ws), fuzzy=fuzzy, kind="tag", line_norm=s))
     return dedupe_hits(hits)
 
 
@@ -1220,6 +1333,42 @@ def dedupe_hits(hits):
             continue
         out.append(h)
     return out
+
+
+def assign_hit(h, by_row, sheet_lane):
+    """Gate A rules, in order: (E) qualifier; short forms only on cited sheets; individual rows
+    before range rows (ranges get the rollup); Lane against the sheet's lane; else ambiguous."""
+    cands = list(h["candidates"])
+    qual = [r for r in cands if by_row[r]["qualified"]]
+    if qual:
+        if QUALIFIER_RE.search(h["line_norm"]):
+            cands = qual
+        else:
+            cands = [r for r in cands if not by_row[r]["qualified"]]
+            if not cands:
+                return "qualifier (E) not on line", [], [], qual
+    if len(h["form"]) <= SHORT_FORM_LEN:
+        cited = [r for r in cands if h["sheet"] in by_row[r]["cited"]]
+        if not cited:
+            return "off-citation, short form", [], [], cands
+        cands = cited
+    indiv = [r for r in cands if not by_row[r]["range"]]
+    ranges = [r for r in cands if by_row[r]["range"]]
+    primary, rollup = (indiv, ranges) if indiv else (ranges, [])
+
+    def by_lane(rs):
+        for lane in (sheet_lane.get(h["sheet"], ""), DISCIPLINE_LANE.get(h["sheet"][:1], "")):
+            m = [r for r in rs if lane and lane in by_row[r]["lanes"]]
+            if m:
+                return m
+        return rs
+    if len(primary) > 1:
+        primary = by_lane(primary)
+    if len(rollup) > 1:
+        rollup = by_lane(rollup)
+    if len(primary) == 1:
+        return "assigned", primary, rollup, cands
+    return "ambiguous", [], [], primary
 
 
 def geo_page_words(pg):
@@ -1272,28 +1421,22 @@ def find_legends(pg, rows):
             dl = sorted(geo_lines(desc), key=lambda ln: (center(ln["bbox"])[1], ln["bbox"][0]))
             ws = [w] + desc
             hits.append(dict(page_ref(pg), tag_text=f"{w['text']}: " + " ".join(ln["text"] for ln in dl),
-                             form=f"{fam} {w['text']}", rows=[r["row"]], ledger=[r["tag"]],
-                             bbox=union_box(ws), method=weakest_method(ws), conf=min_conf(ws),
-                             fuzzy=False, kind="legend"))
+                             form=f"{fam} {w['text']}", candidates=[r["row"]], bbox=union_box(ws),
+                             method=weakest_method(ws), conf=min_conf(ws), fuzzy=False, kind="legend",
+                             line_norm="", assignment="assigned", rows=[r["row"]], rollup=[],
+                             lines=[ln["words"] for ln in dl]))
     return dedupe_hits(hits)
-
-
-METHOD_RANK = {"text-layer": 0, "ocr": 1, "bluebeam-ocr": 2}
-
-
-def weakest_method(ws):
-    return max((w["method"] for w in ws), key=lambda m: METHOD_RANK[m])
 
 
 def keyed_notes(pg):
     """Keyed-note legend entries. Numbers sit in symbols OCR does not always read, so entries are
     split by line spacing (a gap over 1.4 x the block's 25th-percentile spacing) or a leading
     marker. An entry takes the number read in its marker when that number is 1 or 2 past the
-    previous entry's; otherwise the previous number + 1 (basis "by order"; the read number is
-    kept beside it)."""
+    previous entry's; otherwise the previous number + 1 ("by order", Inferred). If the block's
+    entry count differs from the highest marker read, its by-order numbers are Unresolved."""
     words = geo_page_words(pg)
     lines = geo_lines(words)
-    heads = [ln for ln in lines if KEYED_HEAD_RE.search(norm_line(ln["text"])) and ln["dir"] == [1.0, 0.0]]
+    heads = [ln for ln in lines if KEYED_HEAD_RE.match(norm_line(ln["text"])) and ln["dir"] == [1.0, 0.0]]
     blocks = []
     used = []
     for hd in sorted(heads, key=lambda ln: (METHOD_RANK[ln["method"]], ln["bbox"])):
@@ -1312,6 +1455,7 @@ def keyed_notes(pg):
             last = max(last, ln["bbox"][3])
         if not block:
             continue
+
         # Rows: lines at the same height (a line split by a gap or by method). A row's height is
         # the median word centre, markers left out (a symbol box can be taller than the text).
         def row_y(lns):
@@ -1331,7 +1475,7 @@ def keyed_notes(pg):
                 text_rows.append([ln])
         ys = [row_y(r) for r in text_rows]
         gaps = [b - a for a, b in zip(ys, ys[1:])]
-        med = sorted(gaps)[len(gaps) // 4] if gaps else 0
+        p25 = sorted(gaps)[len(gaps) // 4] if gaps else 0
         # Entries start in the marker column (the leftmost row start); indented sub-items and
         # wrapped lines do not start an entry however they are spaced.
         firsts = [min(r, key=lambda ln: ln["bbox"][0])["words"][0] for r in text_rows]
@@ -1341,30 +1485,47 @@ def keyed_notes(pg):
             first = firsts[k]
             in_col = first["bbox"][0] <= left + 6
             marker = MARKER_RE.match(first["text"]) if in_col else None
-            start = k == 0 or (in_col and ((gaps and gaps[k - 1] > 1.4 * med) or bool(marker)))
+            start = k == 0 or (in_col and ((gaps and gaps[k - 1] > 1.4 * p25) or bool(marker)))
             if start:
-                entries.append({"lines": [], "top": row_y(r),
-                                "read_number": marker.group(1) if marker and marker.group(1) else None})
+                rd = marker.group(1) if marker and marker.group(1) else None
+                entries.append({"lines": [], "top": row_y(r), "read_number": rd,
+                                "marker_method": first["method"] if rd else None})
             entries[-1]["lines"].extend(r)
         for ln in stray:  # a stray row joins the entry it sits in
             y = row_y([ln])
             host = [e for e in entries if e["top"] - 3 <= y]
             if host:
                 host[-1]["lines"].append(ln)
+        reads = [int(e["read_number"]) for e in entries if e["read_number"]]
+        highest = max(reads) if reads else None
+        count_ok = highest is not None and highest == len(entries)
         out = []
         n = 0
         for e in entries:
             # a read marker is trusted only when it runs on from the previous entry (misreads
             # such as "(1)" for 11 would otherwise restart the count)
             rd = int(e["read_number"]) if e["read_number"] else None
-            n = rd if rd is not None and n < rd <= n + 2 else n + 1
-            ws = [w for ln in e["lines"] for w in ln["words"]]
-            out.append({"number": n, "read_number": e["read_number"], "bbox": union_box(ws),
-                        "text": " / ".join(ln["text"] for ln in sorted(e["lines"], key=lambda ln: (ln["bbox"][1], ln["bbox"][0]))),
-                        "method": weakest_method(ws)})
+            if rd is not None and n < rd <= n + 2:
+                n, basis, level = rd, "read", method_level(e["marker_method"])
+            else:
+                n, basis = n + 1, "by order"
+                level = "Inferred" if count_ok or highest is None else "Unresolved"
+            ls = sorted(e["lines"], key=lambda ln: (ln["bbox"][1], ln["bbox"][0]))
+            ws = [w for ln in ls for w in ln["words"]]
+            out.append({"number": n, "read_number": e["read_number"], "basis": basis, "number_level": level,
+                        "bbox": union_box(ws), "text": " / ".join(ln["text"] for ln in ls),
+                        "method": weakest_method(ws), "lines": [ln["words"] for ln in ls]})
+        if highest is None:
+            check = "no marker read; by-order numbers cannot be checked against a marker"
+        elif count_ok:
+            check = f"entry count {len(entries)} matches the highest marker read"
+        else:
+            check = (f"entry count {len(entries)} does not match the highest marker read ({highest}); "
+                     "by-order numbers Unresolved")
         blocks.append({"heading": hd["text"], "heading_bbox": hb, "heading_method": hd["method"],
                        "bbox": union_box([w for ln in block for w in ln["words"]] + hd["words"]),
-                       "entries": out, "line_spacing_p25": r2(med)})
+                       "entries": out, "line_spacing_p25": r2(p25), "highest_marker_read": highest,
+                       "count_check": check})
     return blocks
 
 
@@ -1400,11 +1561,13 @@ def detail_refs(pg):
 
 
 def detail_titles(pg):
-    """Detail title numbers: a 1-2 digit word with a SCALE line just to its right."""
+    """Detail titles: a 1-2 digit word with a SCALE line just to its right. Each detail's region
+    runs up from its SCALE line to the title row above it, and across to the next detail number
+    on the same row (or the title block); its words are the anchor text for a Det. n citation."""
     words = geo_page_words(pg)
     lines = geo_lines(words)
     scale = [ln for ln in lines if "SCALE" in norm_line(ln["text"])]
-    out = []
+    found = []
     for w in words:
         if not re.fullmatch(r"\d{1,2}", w["text"]):
             continue
@@ -1415,12 +1578,38 @@ def detail_titles(pg):
         sc = min(near, key=lambda ln: (ln["bbox"][0] - w["bbox"][2], ln["bbox"]))
         above = [ln for ln in lines if ln is not sc and 0 <= sc["bbox"][1] - ln["bbox"][3] <= 14
                  and ln["bbox"][0] < sc["bbox"][2] + 150 and sc["bbox"][0] - 150 < ln["bbox"][2]]
-        title = min(above, key=lambda ln: (sc["bbox"][1] - ln["bbox"][3], ln["bbox"]))["text"] if above else ""
-        out.append({"n": w["text"], "bbox": w["bbox"], "title": title, "method": weakest_method([w] + sc["words"])})
+        tl = min(above, key=lambda ln: (sc["bbox"][1] - ln["bbox"][3], ln["bbox"])) if above else None
+        found.append((w, sc, tl))
+    tb = pg.get("title_block") or {}
+    right_edge = (tb.get("sheet_label_bbox") or [pg["page"]["width"]])[0] - 20
+    out = []
+    for w, sc, tl in found:
+        wb = w["bbox"]
+        same_row = [o for o, _, _ in found if o is not w and abs(center(o["bbox"])[1] - center(wb)[1]) <= 20]
+        right = min([o["bbox"][0] - 5 for o in same_row if o["bbox"][0] > wb[0]] + [right_edge])
+        left = max([o["bbox"][0] for o in same_row if o["bbox"][0] < wb[0]] + [wb[0] - 20])
+        above_rows = [s2["bbox"][3] for o, s2, _ in found if o is not w and center(o["bbox"])[1] < wb[1] - 20
+                      and o["bbox"][0] < right and left < s2["bbox"][2]]
+        top = max(above_rows + [0.0]) + 2
+        region = [left, top, right, sc["bbox"][3] + 2]
+        inside = [x for x in words if region[0] <= center(x["bbox"])[0] <= region[2]
+                  and region[1] <= center(x["bbox"])[1] <= region[3]]
+        out.append({"n": w["text"], "bbox": wb, "title": tl["text"] if tl else "", "region": [r2(v) for v in region],
+                    "method": weakest_method([w] + sc["words"]), "number_method": w["method"],
+                    "lines": [ln["words"] for ln in geo_lines(inside)]})
     return out
 
 
+def next_word_right(q_bbox, words):
+    """Nearest word starting just right of a box on the same row, any read method."""
+    h = max(q_bbox[3] - q_bbox[1], 1.0)
+    cands = [w for w in words if q_bbox[2] - 1 <= w["bbox"][0] <= q_bbox[2] + 3 * h
+             and min(q_bbox[3], w["bbox"][3]) - max(q_bbox[1], w["bbox"][1]) >= 0.5 * h]
+    return min(cands, key=lambda w: (w["bbox"][0], w["bbox"])) if cands else None
+
+
 def find_quantities(pg, tag_hits, blocks, callouts, drefs):
+    page_words = geo_page_words(pg)
     qs = []
     for ln in page_lines(pg):
         s, owner = line_string(ln["words"], keep_quotes=True)
@@ -1434,42 +1623,52 @@ def find_quantities(pg, tag_hits, blocks, callouts, drefs):
                     continue
                 v = m.group("v")
                 noun = ""
+                qkind = kind
                 if kind == "size":
                     rest = [t.strip("()") for t in m.group("rest").split()]
                     if not any(t in PIPE_WORDS for t in rest):
                         continue
                     b = m.start("rest") + len(m.group("rest").rstrip())
                     noun = " ".join(rest)
-                if kind == "count" and "noun" in m.groupdict() and m.group("noun"):
+                if kind == "length" and unit == "FT":
+                    nxt = s[b:].split()
+                    if nxt and nxt[0].strip("(),.") in DIM_MATERIAL:
+                        continue  # a dimension before a material word, not a quantity
+                    fw = span_words(ln["words"], owner, a, b)
+                    nw = next_word_right(union_box(fw), page_words) if fw else None
+                    if not nxt and nw and norm_word(nw["text"]).strip(".") in DIM_MATERIAL:
+                        continue  # same rule when the material word sits on another read's line
+                if kind == "count" and m.groupdict().get("noun"):
                     noun = m.group("noun")
                 if kind == "elevation":
                     noun = m.group("k")
-                if kind == "slope" and unit == "%" and "SLOPE" not in s[max(0, a - 25):a] and "S=" not in s[max(0, a - 6):a]:
-                    kind = "percent"
+                if kind == "slope" and unit == "%":
+                    before = s[max(0, a - 25):a]
+                    if not ("SLOPE" in before or "S=" in s[max(0, a - 6):a] or LF_AT_RE.search(s[:a])):
+                        qkind = "percent"
                 ws = span_words(ln["words"], owner, a, b)
                 if not ws:
                     continue
                 taken.append((a, b))
-                qs.append({"value": v.replace(",", ""), "unit": unit, "kind": kind, "item": noun,
+                qs.append({"value": v.replace(",", ""), "unit": unit, "kind": qkind, "item": noun,
                            "raw": s[a:b], "words": ws, "bbox": union_box(ws), "method": ln["method"],
                            "conf": min_conf(ws), "line_text": " ".join(w["text"] for w in ln["words"])})
+    near_pool = [h for h in tag_hits if h["assignment"] in ("assigned", "ambiguous")]
     out = []
     for q in sorted(qs, key=lambda q: (q["bbox"], q["value"], q["unit"], q["method"], q["raw"])):
         if any(o["value"] == q["value"] and o["unit"] == q["unit"] and o["method"] == q["method"]
                and overlap_ratio(o["bbox"], q["bbox"]) >= OVERLAP for o in out[-20:]):
             continue
-        near = sorted(((edge_dist(h["bbox"], q["bbox"]), h["form"], h["bbox"], h) for h in tag_hits
+        near = sorted(((edge_dist(h["bbox"], q["bbox"]), h["form"], h["bbox"], h) for h in near_pool
                        if edge_dist(h["bbox"], q["bbox"]) <= NEAR_TAG_PT), key=lambda x: x[:3])
         kn = None
+        cx, cy = center(q["bbox"])
         for blk in blocks:
             for e in blk["entries"]:
-                cx, cy = center(q["bbox"])
                 eb = e["bbox"]
                 if eb[0] - 2 <= cx <= eb[2] + 2 and eb[1] - 2 <= cy <= eb[3] + 2:
                     kn = e
-        co = []
-        if kn:
-            co = [c for c in callouts if c["n"] == str(kn["number"])]
+        co = [c for c in callouts if c["n"] == str(kn["number"])] if kn else []
         near_co = sorted(((edge_dist(c["bbox"], q["bbox"]), c["n"], c["bbox"]) for c in callouts
                           if not kn and edge_dist(c["bbox"], q["bbox"]) <= NEAR_TAG_PT))[:3]
         near_dr = sorted(((edge_dist(d["bbox"], q["bbox"]), d["ref"], d["bbox"]) for d in drefs
@@ -1482,14 +1681,18 @@ def find_quantities(pg, tag_hits, blocks, callouts, drefs):
     return out
 
 
+# ---------------------------------------------------------------- Step 2: anchors and crosswalk
+
 TAG_HITS_HEADER = ["Tag Text", "Page Key", "Set Page", "Sheet", "BBox (pt)", "Method", "Confidence",
-                   "Fuzzy (Y/N)", "Exact Ledger Match (Y/N)", "Search Form", "Ledger Rows", "Ledger Tags", "Hit Kind"]
+                   "Fuzzy (Y/N)", "Exact Ledger Match (Y/N)", "Search Form", "Assignment", "Ledger Rows",
+                   "Ledger Tags", "Rollup Rows", "Candidate Rows", "Hit Kind", "Tag Level"]
 QTY_HEADER = ["Value", "Unit", "Raw Text", "Page Key", "Set Page", "Sheet", "BBox (pt)", "Method", "Confidence",
               "Nearest Tag", "Distance (pt)", "Line Text", "Keyed Note", "Kind", "Item", "Nearest Tag Ledger Rows",
               "Keyed-Note Callouts", "Callouts Nearby", "Detail Refs Nearby", "Tag Level"]
 XWALK_HEADER = ["Ledger Row", "Tag", "Family", "Searchable (Y/N)", "Ledger Drawing Sheets", "Cited Sheets",
-                "Sheets Found On", "Sheets Cited but Not Found", "Sheets Found but Not Cited", "Anchor Check",
-                "Quantities Seen", "Sheet Evidence Level", "Row Tag Level", "Status", "Notes"]
+                "Sheets Found On", "Sheets Cited but Not Found", "Sheets Found but Not Cited",
+                "Hits Not Counted", "Anchor Check", "Quantities Seen", "Sheet Evidence Level",
+                "Row Tag Level", "Status", "Notes"]
 UNMATCHED_HEADER = ["Tag Text", "Shape", "Occurrences", "Page Keys", "Sheets", "Methods", "Max Confidence",
                     "First Page Key", "First BBox (pt)"]
 
@@ -1505,105 +1708,164 @@ def sheet_pages(pages):
     return by_sheet
 
 
-def anchor_check(sheet, anchor, pages_by_key, sheet_keys, facts):
-    """One Drawing Sheets anchor on one sheet -> (result text, evidence level)."""
+def content_match(line_groups, r):
+    """Does the anchor text hold the row's quantity (value and unit) or, for a row whose Ledger
+    Name has no quantity, a specific noun from the Name? -> ("matched: ...", level) or (None, None)."""
+    best = None
+    for words in line_groups:
+        if not words:
+            continue
+        s, owner = line_string(words, keep_quotes=True)
+        for v, u in r["qty"]:
+            for m in re.finditer(r"(?<![\d.])" + re.escape(v) + r"\s?" + QTY_UNIT_FORMS[u], s):
+                ws = span_words(words, owner, m.start(), m.end())
+                if ws:
+                    cand = (method_level(weakest_method(ws)), f"matched: quantity {v} {u}")
+                    best = min(best, cand, key=lambda c: LEVELS.index(c[0])) if best else cand
+        for m in re.finditer(r"[A-Z]{4,}", s) if not r["qty"] else ():
+            if stem(m.group(0)) in r["nouns"]:
+                ws = span_words(words, owner, m.start(), m.end())
+                if ws:
+                    cand = (method_level(weakest_method(ws)), f"matched: noun {stem(m.group(0))}")
+                    best = min(best, cand, key=lambda c: LEVELS.index(c[0])) if best else cand
+        if best and best[0] == "Verified":
+            break
+    return (best[1], best[0]) if best else (None, None)
+
+
+def page_line_groups(pg):
+    return [ln["words"] for ln in page_lines(pg)]
+
+
+def anchor_check(r, sheet, anchor, pages_by_key, sheet_keys, facts):
+    """One Drawing Sheets anchor -> (kind, result text, level). Gate A rule: Verified when the
+    anchor is found in the native text layer and its text holds the row's quantity (or, for a row
+    with no quantity, a specific noun from the Ledger Name); Inferred for the same match by OCR or
+    Bluebeam; Unresolved when the anchor is not found or its text does not match."""
     keys = sheet_keys.get(sheet, [])
     if not keys:
-        return f"{sheet}: sheet not in the set", "Unresolved"
+        return "sheet", f"{sheet}: sheet not in the set", "Unresolved"
     m = re.fullmatch(r"Add\. 4 p\.(\d+)", anchor)
     if m:
         k = f"add4_p{int(m.group(1)):02d}"
         pg = pages_by_key.get(k)
-        if pg and pg["sheet_01"] == sheet:
-            return f"{sheet} (Add. 4 p.{int(m.group(1))}): reissue page present ({k})", "Verified"
-        return f"{sheet} (Add. 4 p.{int(m.group(1))}): no Add. 4 page for this sheet", "Unresolved"
+        if not pg or pg["sheet_01"] != sheet:
+            return "Add. 4 page", f"{sheet} (Add. 4 p.{int(m.group(1))}): no Add. 4 page for this sheet", "Unresolved"
+        what, lv = content_match(page_line_groups(pg), r)
+        if not what:
+            return "Add. 4 page", f"{sheet} (Add. 4 p.{int(m.group(1))}): page present ({k}); no match for the row's quantity or specific noun", "Unresolved"
+        return "Add. 4 page", f"{sheet} (Add. 4 p.{int(m.group(1))}): {what} ({lv}, {k})", lv
     m = re.fullmatch(r"KN (\d+(?:\s*,\s*\d+)*)", anchor)
     if m:
-        res, lv = [], []
+        res, lvs = [], []
         for n in [int(x) for x in re.findall(r"\d+", m.group(1))]:
             got = [(k, e, blk) for k in keys for blk in facts[k]["keyed"] for e in blk["entries"] if e["number"] == n]
-            if got:
-                k, e, blk = got[0]
-                calls = [c for c in facts[k]["callouts"] if c["n"] == str(n)]
-                res.append(f"{sheet} KN {n}: legend entry {n} of {len(blk['entries'])} by order "
-                           f"({e['method']}, {k} {fmt_box(e['bbox'])}): \"{e['text'][:80]}\"; "
-                           f"{len(calls)} callout(s) read")
-                lv.append(method_level(e["method"]))
-            else:
+            if not got:
                 n_blk = sum(len(b["entries"]) for k in keys for b in facts[k]["keyed"])
                 res.append(f"{sheet} KN {n}: not found (keyed-note entries read: {n_blk})")
-                lv.append("Unresolved")
-        return "; ".join(res), weakest(lv)
+                lvs.append("Unresolved")
+                continue
+            k, e, blk = got[0]
+            what, lv = content_match(e["lines"], r)
+            num = f"number {e['basis']} ({e['number_level']})"
+            if not what:
+                res.append(f"{sheet} KN {n}: entry found, {num}, {k} {fmt_box(e['bbox'])}; text does not hold the "
+                           f"row's quantity or specific noun: \"{e['text'][:70]}\"")
+                lvs.append("Unresolved")
+            else:
+                lvl = weakest([lv, e["number_level"]])
+                res.append(f"{sheet} KN {n}: {what} ({lv}); {num}; {k} {fmt_box(e['bbox'])}")
+                lvs.append(lvl)
+        return "keyed note", "; ".join(res), weakest(lvs)
     m = re.fullmatch(r"Det\. (\d+)(?:\s*[–-]\s*(\d+))?(?:,.*)?", anchor)
     if m:
         lo = int(m.group(1))
         hi = int(m.group(2)) if m.group(2) else lo
         nums = list(range(lo, hi + 1))
-        extra = re.findall(r",\s*(\d+)$", anchor)
-        nums += [int(x) for x in extra if int(x) not in nums]
-        res, lv = [], []
+        nums += [int(x) for x in re.findall(r",\s*(\d+)$", anchor) if int(x) not in nums]
+        res, lvs = [], []
         for n in nums:
             got = [(k, d) for k in keys for d in facts[k]["details"] if d["n"] == str(n)]
-            if got:
-                k, d = got[0]
-                res.append(f"{sheet} Det. {n}: detail number read ({d['method']}, {k} {fmt_box(d['bbox'])})"
-                           + (f" titled \"{d['title']}\"" if d["title"] else ""))
-                lv.append(method_level(d["method"]))
-            else:
+            if not got:
                 res.append(f"{sheet} Det. {n}: not found")
-                lv.append("Unresolved")
-        return "; ".join(res), weakest(lv)
+                lvs.append("Unresolved")
+                continue
+            k, d = min(got, key=lambda g: (METHOD_RANK[g[1]["number_method"]], g[0], g[1]["bbox"]))
+            what, lv = content_match(d["lines"], r)
+            if not what:
+                res.append(f"{sheet} Det. {n}: detail found ({k} {fmt_box(d['bbox'])}) titled \"{d['title'][:60]}\"; "
+                           f"detail region {fmt_box(d['region'])} does not hold the row's quantity or specific noun")
+                lvs.append("Unresolved")
+            else:
+                lvl = weakest([lv, method_level(d["number_method"])])
+                res.append(f"{sheet} Det. {n}: {what} ({lv}) in detail \"{d['title'][:60]}\"; {k} {fmt_box(d['bbox'])}")
+                lvs.append(lvl)
+        return "detail", "; ".join(res), weakest(lvs)
     if re.fullmatch(r"[A-Z]{1,4}-\d+", anchor):
-        got = [h for k in keys for h in facts[k]["tags"] if h["form"] == norm_form(anchor)]
-        if got:
-            h = min(got, key=lambda h: (METHOD_RANK[h["method"]], h["page_key"], h["bbox"]))
-            return f"{sheet} ({anchor}): found ({h['method']}, {h['page_key']} {fmt_box(h['bbox'])})", method_level(h["method"])
-        return f"{sheet} ({anchor}): not found", "Unresolved"
-    return f"{sheet} ({anchor}): anchor type not machine-checkable", "Unresolved"
+        got = [h for k in keys for h in facts[k]["tags"] if h["form"] == norm_form(anchor)
+               and h["assignment"] in ("assigned", "ambiguous")]
+        if not got:
+            return "tag", f"{sheet} ({anchor}): not found", "Unresolved"
+        h = min(got, key=lambda h: (METHOD_RANK[h["method"]], h["page_key"], h["bbox"]))
+        what, lv = content_match([facts[h["page_key"]]["line_of"][id(h)]], r)
+        if not what:
+            return "tag", f"{sheet} ({anchor}): found ({h['method']}, {h['page_key']} {fmt_box(h['bbox'])}); line does not hold the row's quantity or specific noun", "Unresolved"
+        return "tag", f"{sheet} ({anchor}): {what} ({lv}) on the tag's line; {h['page_key']} {fmt_box(h['bbox'])}", weakest([lv, method_level(h["method"])])
+    if anchor == "sheet only":
+        best = None
+        for k in keys:
+            what, lv = content_match(page_line_groups(pages_by_key[k]), r)
+            if what and (best is None or LEVELS.index(lv) < LEVELS.index(best[1])):
+                best = (what, lv, k)
+        if not best:
+            return "sheet only", f"{sheet}: no match for the row's quantity or specific noun on the sheet", "Unresolved"
+        return "sheet only", f"{sheet}: {best[0]} ({best[1]}, {best[2]})", best[1]
+    return "other", f"{sheet} ({anchor}): anchor type not machine-checkable", "Unresolved"
 
 
 def crosswalk(rows, pages, facts, tag_hits, qty):
     pages_by_key = {pg["page_key"]: pg for pg in pages}
     sheet_keys = sheet_pages(pages)
-    hits_by_row = defaultdict(list)
+    counted = defaultdict(list)     # row -> [(hit, "assigned" | "rollup")]
+    not_counted = defaultdict(list)
     for h in tag_hits:
-        for r in h["rows"]:
-            hits_by_row[r].append(h)
+        if h["assignment"] == "assigned":
+            for r in h["rows"]:
+                counted[r].append((h, "assigned"))
+            for r in h["rollup"]:
+                counted[r].append((h, "rollup"))
+        else:
+            for r in h["candidate_rows"]:
+                not_counted[r].append(h)
     q_by_row = defaultdict(list)
     for q in qty:
-        if q["nearest_tag"]:
-            for r in q["nearest_tag"]["rows"]:
+        h = q["nearest_tag"]
+        if h and h["assignment"] == "assigned":
+            for r in h["rows"]:
                 q_by_row[r].append(q)
     kn_q = defaultdict(list)   # (sheet, keyed note number) -> quantities in that entry
     for q in qty:
         if q["keyed_note"]:
             kn_q[(q["sheet"], q["keyed_note"]["number"])].append(q)
-    out = []
+    out, anchor_stats = [], Counter()
     for r in rows:
-        cited = []
-        for s, anchors, raw in r["tokens"]:
-            if s and s not in cited:
-                cited.append(s)
         found = defaultdict(set)
-        for h in hits_by_row[r["row"]]:
-            found[h["sheet"]].add(h["method"] + (" fuzzy" if h["fuzzy"] else ""))
+        for h, how in counted[r["row"]]:
+            found[h["sheet"]].add(h["method"] + (" fuzzy" if h["fuzzy"] else "") + (" rollup" if how == "rollup" else ""))
         anchors_txt, levels, notes = [], [], []
         qs = list(q_by_row[r["row"]])
-        if r["family"] == "PROPOSED" or (r["family"] != "printed" and False):
+        if r["family"] == "PROPOSED":
             for s, anchors, raw in r["tokens"]:
                 if not s:
                     continue
-                if not anchors:
-                    ok = s in sheet_keys
-                    anchors_txt.append(f"{s}: sheet only; {'sheet in set' if ok else 'sheet not in set'}")
-                    levels.append("Verified" if ok else "Unresolved")
-                    continue
-                for a in anchors:
-                    txt, lv = anchor_check(s, a, pages_by_key, sheet_keys, facts)
+                for a in (anchors or ["sheet only"]):
+                    kind, txt, lv = anchor_check(r, s, a, pages_by_key, sheet_keys, facts)
                     anchors_txt.append(txt)
                     levels.append(lv)
-                    for n in re.findall(r"\d+", a) if a.startswith("KN") else []:
-                        qs += kn_q.get((s, int(n)), [])
+                    anchor_stats[(kind, lv)] += 1
+                    if a.startswith("KN"):
+                        for n in re.findall(r"\d+", a):
+                            qs += kn_q.get((s, int(n)), [])
             sheet_level = weakest(levels) if levels else "Unresolved"
         else:
             for s, anchors, raw in r["tokens"]:
@@ -1613,12 +1875,18 @@ def crosswalk(rows, pages, facts, tag_hits, qty):
                             qs += kn_q.get((s, int(n)), [])
             per_sheet = [("Verified" if any(m == "text-layer" for m in ms) else "Inferred") for ms in found.values()]
             sheet_level = weakest(per_sheet) if found else "Unresolved"
+        cited = r["cited"]
         cited_nf = [s for s in cited if s not in found] if r["family"] != "PROPOSED" else []
         found_nc = [s for s in sorted(found, key=sheet_sort_key) if s not in cited]
-        if r["family"] == "PROPOSED":
-            found_txt = ""
-        else:
-            found_txt = "; ".join(f"{s} [{', '.join(sorted(found[s]))}]" for s in sorted(found, key=sheet_sort_key))
+        found_txt = "" if r["family"] == "PROPOSED" else "; ".join(
+            f"{s} [{', '.join(sorted(found[s]))}]" for s in sorted(found, key=sheet_sort_key))
+        nc = defaultdict(set)
+        for h in not_counted[r["row"]]:
+            reason = h["assignment"] if h["assignment"] != "ambiguous" else \
+                "ambiguous with rows " + ", ".join(map(str, h["candidate_rows"]))
+            nc[(h["sheet"], reason)].add(h["method"])
+        nc_txt = "; ".join(f"{s} [{', '.join(sorted(ms))}; {reason}]"
+                           for (s, reason), ms in sorted(nc.items(), key=lambda kv: (sheet_sort_key(kv[0][0]), kv[0][1])))
         seen, qtxt = set(), []
         for q in sorted(qs, key=lambda q: (sheet_sort_key(q["sheet"]), q["page_key"], q["bbox"], q["value"], q["unit"], q["method"])):
             key = (q["page_key"], q["value"], q["unit"], tuple(q["bbox"]), q["method"])
@@ -1639,13 +1907,15 @@ def crosswalk(rows, pages, facts, tag_hits, qty):
             status = "found; some cited sheets not found"
         else:
             status = "found on every cited sheet"
-        if "form shared" in r["reason"]:
-            notes.append(re.search(r"form shared with row\(s\) [\d, ]+", r["reason"]).group(0))
+        m = re.search(r"form shared with row\(s\) [\d, ]+", r["reason"])
+        if m:
+            notes.append(m.group(0))
         out.append({"row": r["row"], "tag": r["tag"], "family": r["family"], "searchable": r["searchable"],
                     "sheets_field": r["sheets_field"], "cited": cited, "found": found_txt,
-                    "cited_nf": cited_nf, "found_nc": found_nc, "anchors": anchors_txt, "qty": qtxt,
-                    "sheet_level": sheet_level, "row_level": row_level, "status": status, "notes": notes})
-    return out
+                    "cited_nf": cited_nf, "found_nc": found_nc, "not_counted": nc_txt, "anchors": anchors_txt,
+                    "qty": qtxt, "sheet_level": sheet_level, "row_level": row_level, "status": status,
+                    "notes": notes})
+    return out, anchor_stats
 
 
 def sheet_sort_key(s):
@@ -1699,11 +1969,11 @@ def unmatched_tags(pages, comp):
 
 def kn_label(e):
     n, rd = e["number"], e["read_number"]
-    if rd and int(rd) == n:
-        return f"{n} (read)"
+    if e["basis"] == "read":
+        return f"{n} (read; {e['number_level']})"
     if rd:
-        return f"{n} (by order; marker read as {rd})"
-    return f"{n} (by order)"
+        return f"{n} (by order; marker read as {rd}; {e['number_level']})"
+    return f"{n} (by order; {e['number_level']})"
 
 
 def load_pages(out):
@@ -1711,7 +1981,8 @@ def load_pages(out):
 
 
 def hit_json(h):
-    return {"text": h["tag_text"], "form": h["form"], "ledger_rows": h["rows"], "bbox": h["bbox"],
+    return {"text": h["tag_text"], "form": h["form"], "assignment": h["assignment"], "ledger_rows": h["rows"],
+            "rollup_rows": h["rollup"], "candidate_rows": h["candidate_rows"], "bbox": h["bbox"],
             "method": h["method"], "conf": h["conf"], "fuzzy": h["fuzzy"], "kind": h["kind"],
             "tag_level": method_level(h["method"])}
 
@@ -1722,23 +1993,45 @@ def qty_json(q):
             "nearest_tag": q["nearest_tag"]["form"] if q["nearest_tag"] else "none",
             "nearest_tag_rows": q["nearest_tag"]["rows"] if q["nearest_tag"] else [],
             "distance": q["distance"],
-            "keyed_note": q["keyed_note"]["number"] if q["keyed_note"] else None,
+            "keyed_note": kn_label(q["keyed_note"]) if q["keyed_note"] else None,
             "keyed_callouts": [c["bbox"] for c in q["keyed_callouts"]],
             "callouts_nearby": [[c[1], c[2], r2(c[0])] for c in q["near_callouts"]],
             "detail_refs_nearby": [[d[1], d[2], r2(d[0])] for d in q["near_detail_refs"]],
             "tag_level": "Inferred"}
 
 
+def block_json(b):
+    return dict({k: v for k, v in b.items() if k != "entries"},
+                entries=[{k: v for k, v in e.items() if k != "lines"} for e in b["entries"]])
+
+
+def sheet_lanes():
+    base, _, addendum_only = load_sheet_index()
+    lanes = {}
+    for s in base.values():
+        lanes[s["sheet"]] = re.sub(r"\s*\(adj\.\)\s*$", "", s["lane"])
+    for sheet, r in addendum_only.items():
+        lanes.setdefault(sheet, re.sub(r"\s*\(adj\.\)\s*$", "", r.get("Lane", "")))
+    return lanes
+
+
 def stage_hits(out):
     rows = build_forms()
-    tag_of_row = {r["row"]: r["tag"] for r in rows}
+    by_row = {r["row"]: r for r in rows}
+    lanes = sheet_lanes()
     comp = compile_forms(rows)
     pages = load_pages(out)
+    info = extractor_info()
     facts = {}
     all_tags, all_qty = [], []
     for pg in pages:
-        tags = find_tags(pg, comp, tag_of_row) + find_legends(pg, rows)
-        tags.sort(key=lambda h: (h["bbox"], h["form"], h["method"], h["tag_text"]))
+        tags = find_tags(pg, comp)
+        for h in tags:
+            h["assignment"], h["rows"], h["rollup"], h["candidate_rows"] = assign_hit(h, by_row, lanes)
+        legends = find_legends(pg, rows)
+        for h in legends:
+            h["candidate_rows"] = list(h["rows"])
+        tags = sorted(tags + legends, key=lambda h: (h["bbox"], h["form"], h["method"], h["tag_text"]))
         blocks = keyed_notes(pg)
         tb = pg.get("title_block") or {}
         exclude = [b["bbox"] for b in blocks]
@@ -1748,49 +2041,453 @@ def stage_hits(out):
         callouts = isolated_numbers(pg, exclude)
         drefs = detail_refs(pg)
         qty = find_quantities(pg, tags, blocks, callouts, drefs)
+        line_of = {}
+        lines = page_lines(pg)
+        for h in tags:
+            if h["kind"] == "tag":
+                line_of[id(h)] = next((ln["words"] for ln in lines if ln["method"] == h["method"]
+                                       and any(overlap_ratio(w["bbox"], h["bbox"]) > 0 for w in ln["words"])), [])
         facts[pg["page_key"]] = {"tags": tags, "keyed": blocks, "callouts": callouts,
-                                 "details": detail_titles(pg), "drefs": drefs}
+                                 "details": detail_titles(pg), "drefs": drefs, "line_of": line_of}
         pg["tags"] = [hit_json(h) for h in tags]
         pg["quantities"] = [qty_json(q) for q in qty]
-        pg["keyed_notes"] = blocks
-        pg["extractor"] = extractor_info()
+        pg["keyed_notes"] = [block_json(b) for b in blocks]
+        pg["extractor"] = info
         write_json(out / "pages" / f"{pg['page_key']}_{pg['sheet_01']}.json", pg)
         all_tags += tags
         all_qty += qty
     write_csv(out / "Tag_Hits.csv", TAG_HITS_HEADER, [
         [h["tag_text"], h["page_key"], h["set_page"] or "", h["sheet"], fmt_box(h["bbox"]), h["method"],
-         fmt_conf(h["conf"]), "Y" if h["fuzzy"] else "N", "N" if h["fuzzy"] else "Y", h["form"],
-         "; ".join(map(str, h["rows"])), "; ".join(h["ledger"]), h["kind"]]
+         fmt_conf(h["conf"]), "Y" if h["fuzzy"] else "N", "N" if h["fuzzy"] else "Y", h["form"], h["assignment"],
+         "; ".join(map(str, h["rows"])), "; ".join(by_row[x]["tag"] for x in h["rows"]),
+         "; ".join(map(str, h["rollup"])), "; ".join(map(str, h["candidate_rows"])), h["kind"],
+         method_level(h["method"])]
         for h in sorted(all_tags, key=lambda h: (h["page_key"], h["bbox"], h["form"], h["method"]))])
     write_csv(out / "Quantity_Hits.csv", QTY_HEADER, [
         [q["value"], q["unit"], q["raw"], q["page_key"], q["set_page"] or "", q["sheet"], fmt_box(q["bbox"]),
          q["method"], fmt_conf(q["conf"]), q["nearest_tag"]["form"] if q["nearest_tag"] else "none",
          "" if q["distance"] is None else f"{q['distance']:.2f}", q["line_text"],
          kn_label(q["keyed_note"]) if q["keyed_note"] else "",
-         q["kind"], q["item"], "; ".join(map(str, q["nearest_tag"]["rows"])) if q["nearest_tag"] else "",
+         q["kind"], q["item"],
+         ("; ".join(map(str, q["nearest_tag"]["rows"])) or ("ambiguous: " + "; ".join(map(str, q["nearest_tag"]["candidate_rows"]))))
+         if q["nearest_tag"] else "",
          "; ".join(fmt_box(c["bbox"]) for c in q["keyed_callouts"]),
          "; ".join(f"{c[1]} ({c[0]:.1f} pt)" for c in q["near_callouts"]),
          "; ".join(f"{d[1]} ({d[0]:.1f} pt)" for d in q["near_detail_refs"]), "Inferred"]
         for q in sorted(all_qty, key=lambda q: (q["page_key"], q["bbox"], q["value"], q["unit"], q["method"]))])
-    xw = crosswalk(rows, pages, facts, all_tags, all_qty)
+    xw, anchor_stats = crosswalk(rows, pages, facts, all_tags, all_qty)
     write_csv(out / "Ledger_Crosswalk.csv", XWALK_HEADER, [
         [x["row"], x["tag"], x["family"], x["searchable"], x["sheets_field"], "; ".join(x["cited"]),
-         x["found"], "; ".join(x["cited_nf"]), "; ".join(x["found_nc"]), " | ".join(x["anchors"]),
-         "; ".join(x["qty"]), x["sheet_level"], x["row_level"], x["status"], "; ".join(x["notes"])]
+         x["found"], "; ".join(x["cited_nf"]), "; ".join(x["found_nc"]), x["not_counted"],
+         " | ".join(x["anchors"]), "; ".join(x["qty"]), x["sheet_level"], x["row_level"], x["status"],
+         "; ".join(x["notes"])]
         for x in xw])
     write_csv(out / "Unmatched_Tags.csv", UNMATCHED_HEADER, unmatched_tags(pages, comp))
-    return {"rows": rows, "pages": pages, "facts": facts, "tags": all_tags, "qty": all_qty, "xwalk": xw}
+    return {"rows": rows, "pages": pages, "facts": facts, "tags": all_tags, "qty": all_qty, "xwalk": xw,
+            "anchor_stats": anchor_stats}
+
+
+# ---------------------------------------------------------------- reports: Findings, Spot_Check, README
+
+SPOT_SEED = 20260930
+SPOT_DISCIPLINES = ["C", "E", "S", "A", "G"]
+SPOT_PER = 5
+SPOT_HEADER = ["Pick No.", "Ledger Row", "Tag", "Name", "What to Check", "Source Citation", "Confidence Tag",
+               "Read Method", "Human Result", "Checked By", "Date", "Note", "Set Page", "BBox (pt)", "Word Read",
+               "Confidence", "Crop Path"]
+PART_SHORT = {  # short names from library/Plan_Set_Parts.md and 01
+    "Pages from eswd-wwtp-upgrade-ph1-11x17-plans Part 1.pdf": "Part 1",
+    "Pages from eswd-wwtp-upgrade-ph1-11x17-plans Part 2.pdf": "Part 2",
+    "Pages from eswd-wwtp-upgrade-ph1-11x17-plans - Part 3.pdf": "Part 3",
+    "addendum-no4-eswd.pdf": "Add. 4",
+}
+
+
+def read_csv(path):
+    with open(path, encoding="utf-8", newline="") as f:
+        return list(csv.DictReader(f))
+
+
+def cite(pg):
+    return f"{pg['sheet_01']}, {PART_SHORT[Path(pg['source']['file']).name]} p.{pg['source']['page']}"
+
+
+def where(pg):
+    return f"set p.{pg['set_page']}" if pg["set_page"] else f"Add. 4 p.{pg['source']['page']}"
+
+
+def spot_check(pages, by_row, crops):
+    rng = random.Random(SPOT_SEED)
+    rows = []
+    pick = 0
+    for disc in SPOT_DISCIPLINES:
+        pop = []
+        for pg in pages:
+            if not pg["sheet_01"].startswith(disc):
+                continue
+            for w in list(pg["words"]) + list((pg.get("bluebeam") or {}).get("words", [])):
+                if len(re.findall(r"[A-Za-z0-9]", w["text"])) >= 2:
+                    pop.append((pg["page_key"], w["bbox"], w["text"], w["method"], pg, w))
+        pop.sort(key=lambda x: x[:4])
+        for key, bb, text, method, pg, w in rng.sample(pop, SPOT_PER):
+            pick += 1
+            hit = next((h for h in pg.get("tags", []) if h["assignment"] == "assigned"
+                        and overlap_ratio(h["bbox"], bb) >= OVERLAP), None)
+            rws = hit["ledger_rows"] if hit else []
+            crop = f"crops/spot_{pick:02d}_{pg['sheet_01']}_{key}.png"
+            note = []
+            if w["conf"] is not None:
+                note.append(f"Tesseract confidence {w['conf']:.2f}" + ("" if w["conf"] >= CONF_FLAG else " (below 60)"))
+            if hit:
+                note.append(f"part of tag hit {hit['form']!r}")
+            rows.append([pick, "; ".join(map(str, rws)), "; ".join(by_row[x]["tag"] for x in rws),
+                         "; ".join(by_row[x]["name"] for x in rws),
+                         f"Does the 400 dpi render show \"{text}\" at this box on {pg['sheet_01']} ({where(pg)})?",
+                         cite(pg), method_level(method), method, "", "", "", "; ".join(note),
+                         pg["set_page"] or "", fmt_box(bb), text, fmt_conf(w["conf"]), crop])
+            if crops:
+                save_crop(pg, bb, Path(crops) / crop)
+    return rows
+
+
+def save_crop(pg, bb, dest):
+    from PIL import ImageDraw
+    doc = pymupdf.open(REPO / pg["source"]["file"])
+    page = doc[pg["source"]["page"] - 1]
+    clip = pymupdf.Rect(bb[0] - 30, bb[1] - 30, bb[2] + 30, bb[3] + 30) & page.rect
+    z = DPI / 72.0
+    pix = page.get_pixmap(matrix=pymupdf.Matrix(z, z), clip=clip, alpha=False)
+    img = Image.frombytes("RGB", (pix.width, pix.height), pix.samples)
+    d = ImageDraw.Draw(img)
+    x0, y0 = (bb[0] - clip.x0) * z, (bb[1] - clip.y0) * z
+    x1, y1 = (bb[2] - clip.x0) * z, (bb[3] - clip.y0) * z
+    d.rectangle([x0 - 4, y0 - 4, x1 + 4, y1 + 4], outline=(220, 0, 0), width=4)
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    img.save(dest)
+
+
+def md_table(header, rows):
+    out = ["| " + " | ".join(header) + " |", "|" + "---|" * len(header)]
+    for r in rows:
+        out.append("| " + " | ".join(str(c).replace("|", "/") for c in r) + " |")
+    return out
+
+
+def findings(out, pages, res):
+    sm = read_csv(out / "Sheet_Map.csv")
+    th = read_csv(out / "Tag_Hits.csv")
+    qh = read_csv(out / "Quantity_Hits.csv")
+    xw = read_csv(out / "Ledger_Crosswalk.csv")
+    um = read_csv(out / "Unmatched_Tags.csv")
+    by_key = {pg["page_key"]: pg for pg in pages}
+    base = [r for r in sm if not r["Page Key"].startswith("add4")]
+    add4 = [r for r in sm if r["Page Key"].startswith("add4")]
+    L = ["# OCR lane findings", "",
+         "Machine reads from `tools/extract_drawing_text.py`. Text-layer reads are Verified; every OCR and "
+         "Bluebeam read is Inferred until checked on the page image; every quantity is a lead, not a takeoff "
+         "(README.md, confidence rule). Nothing here is in the Ledger or the MTO. Page and box cites use "
+         "`Page Key` and PDF points (origin top left, rotation applied).", ""]
+    n_words = Counter()
+    for pg in pages:
+        for w in pg["words"]:
+            n_words[w["method"]] += 1
+        n_words["bluebeam-ocr"] += len((pg.get("bluebeam") or {}).get("words", []))
+    L += ["## Summary", "",
+          f"- Pages: {len(base)} set pages and {len(add4)} Addendum 4 reissue pages (`Sheet_Map.csv`).",
+          f"- Words kept: {n_words['text-layer']} text layer, {n_words['ocr']} OCR (Tesseract, not under a "
+          f"text-layer word), {n_words['bluebeam-ocr']} Bluebeam.",
+          f"- Tag hits: {len(th)} ({', '.join(f'{v} {k}' for k, v in sorted(Counter(t['Assignment'] for t in th).items()))}).",
+          f"- Quantity leads: {len(qh)}; in a keyed note: {sum(1 for q in qh if q['Keyed Note'])}; "
+          f"with a tag within {NEAR_TAG_PT:.0f} pt: {sum(1 for q in qh if q['Nearest Tag'] != 'none')}.",
+          f"- Ledger rows in the crosswalk: {len(xw)}. Tag-shaped text with no Ledger row: {len(um)} distinct.", ""]
+    # title blocks
+    mism = [r for r in sm if r["Match (Y/N)"] != "Y"]
+    tmis = [r for r in sm if r["Title Match (Y/N)"] != "Y"]
+    L += ["## Title blocks", "",
+          f"- Sheet number read in the title block matches 01 on {sum(r['Match (Y/N)'] == 'Y' for r in base)} of "
+          f"{len(base)} set pages and {sum(r['Match (Y/N)'] == 'Y' for r in add4)} of {len(add4)} Addendum 4 pages."]
+    if mism:
+        for r in mism:
+            pg = by_key[r["Page Key"]]
+            sh = (pg["title_block"].get("sheet") or {})
+            L.append(f"  - Mismatch: {r['Page Key']} ({cite(pg)}): 01 {r['01 Sheet']}, read "
+                     f"{r['Title-Block Sheet Read'] or 'nothing'} {fmt_box(sh.get('bbox'))}.")
+    else:
+        L.append("  - Mismatches: none.")
+    L.append(f"- Title read matches 01 on {len(sm) - len(tmis)} of {len(sm)} pages (01's \"(cover index)\" marker ignored).")
+    for r in tmis:
+        pg = by_key[r["Page Key"]]
+        tt = (pg["title_block"].get("title") or {})
+        L.append(f"  - {r['Page Key']} ({cite(pg)}): 01 \"{r['01 Title']}\", read \"{r['Title Read']}\" {fmt_box(tt.get('bbox'))}.")
+    ocr_pages = [r for r in sm if r["Title-Block Source"].startswith("ocr")]
+    L.append(f"- {len(ocr_pages)} pages have no title block in the text layer and were read by the rotated title-strip "
+             "OCR pass (Inferred): " + ", ".join(f"{r['Page Key']} {r['01 Sheet']}" for r in ocr_pages) + ". "
+             "They are vector drawings without a text layer, not raster images.")
+    s_pages = [r for r in base if r["01 Sheet"].startswith("S")]
+    L.append("- S-sheet page totals: " + ", ".join(f"{r['01 Sheet']} \"{r['Page Read (N OF M)']}\"" for r in s_pages)
+             + ". 01 item 10 logged \"OF 98\" at stored image resolution; the native pages read OF 96 (OCR, Inferred): "
+             + "; ".join(f"{r['Page Key']} {fmt_box((by_key[r['Page Key']]['title_block'].get('page_of') or {}).get('bbox'))}" for r in s_pages) + ".")
+    c16 = next((r for r in add4 if r["01 Sheet"] == "C1.6A"), None)
+    if c16:
+        pg = by_key[c16["Page Key"]]
+        L.append(f"- C1.6A (Add. 4 p.{pg['source']['page']}) reads \"{c16['Page Read (N OF M)']}\" "
+                 f"{fmt_box((pg['title_block'].get('page_of') or {}).get('bbox'))}. It reissues no page of the 96-sheet set, "
+                 "so it governs nothing here (Unresolved: the base issue cites Addendum 3, not in the library).")
+    L.append("- Addendum 4 supersession is taken from 01, not from title-block dates (the reissues keep the base dates): "
+             + "; ".join(f"{r['Page Key']} {r['01 Sheet']} governs {r['Governs']}" for r in add4 if r["Governs"].startswith("set")) + ".")
+    L.append("")
+    # missing sheets
+    miss = [r for r in base if "not in library" in r["Split-Part File and Page"]]
+    L += ["## Sheets 01 lists as not in library, found", "",
+          f"01 lists {len(miss)} sheets as not in library. All {len(miss)} are in the native parts and read in their title blocks:", ""]
+    trs = []
+    for r in miss:
+        pg = by_key[r["Page Key"]]
+        sh = pg["title_block"].get("sheet") or {}
+        trs.append([r["Set Page"], r["01 Sheet"], r["Title-Block Sheet Read"], sh.get("method", ""),
+                    fmt_box(sh.get("bbox")), f"{PART_SHORT[r['Native File']]} p.{r['Native Page']}"])
+    L += md_table(["Set p.", "01 sheet", "Read", "Method", "BBox (pt)", "Native page"], trs) + [""]
+    # known values
+    L += ["## Known values (Test 5)", ""]
+    for q in qh:
+        if q["Sheet"] == "C2.1" and q["Unit"] == "LF" and q["Value"] in ("149", "134"):
+            L.append(f"- C2.1 {q['Value']} LF: {q['Method']}, {q['Page Key']} {q['BBox (pt)']}, keyed note {q['Keyed Note']}: "
+                     f"\"{q['Line Text']}\" (Inferred).")
+    for t in th:
+        if t["Sheet"] == "C2.3" and t["Search Form"] == "SD-3" and t["Method"] == "text-layer":
+            L.append(f"- SD-3 on C2.3: text layer, {t['Page Key']} {t['BBox (pt)']} (Verified).")
+    L.append("")
+    # fence rows
+    xr = {x["Ledger Row"]: x for x in xw}
+    L += ["## Chain link fence rows: stated, not reconciled", "",
+          "- C2.1 keyed notes 6 and 8 read 149 LF and 134 LF of 6' chain link fence, each connected to existing. "
+          "Both are OCR and Bluebeam reads only (Inferred; boxes above).",
+          f"- Ledger row 89 \"{xr['89']['Tag']}\" ({xr['89']['Ledger Drawing Sheets']}) carries the C2.1 values only in its "
+          f"Notes. Its anchor check: {xr['89']['Anchor Check']}.",
+          f"- Ledger row 19 \"{xr['19']['Tag']}\" is a different fence: {xr['19']['Ledger Drawing Sheets']}, existing, "
+          f"to be removed. Its anchor check: {xr['19']['Anchor Check']}.",
+          "- This lane does not reconcile them. The fence count and lengths need a person's check against C2.1, C2.5 "
+          "and C0.5.", ""]
+    # crosswalk gaps
+    pr = [x for x in xw if x["Family"] == "printed"]
+    L += ["## Biggest crosswalk gaps", "",
+          "Printed tags not found on any page:", ""]
+    L += md_table(["Ledger row", "Tag", "Cited sheets", "Hits not counted"],
+                  [[x["Ledger Row"], x["Tag"], x["Cited Sheets"] or "none", x["Hits Not Counted"] or ""]
+                   for x in pr if x["Status"] == "not found on any page"]) + [""]
+    gaps = sorted((x for x in pr if x["Sheets Cited but Not Found"]),
+                  key=lambda x: (-len(x["Sheets Cited but Not Found"].split("; ")), int(x["Ledger Row"])))
+    L += ["Printed tags with the most cited sheets where the tag was not read (top 15):", ""]
+    L += md_table(["Ledger row", "Tag", "Cited but not found", "Found on"],
+                  [[x["Ledger Row"], x["Tag"], x["Sheets Cited but Not Found"], x["Sheets Found On"]] for x in gaps[:15]]) + [""]
+    fnc = [x for x in pr if x["Sheets Found but Not Cited"]]
+    L += [f"Printed tags found on sheets the row does not cite: {len(fnc)} rows.", ""]
+    L += md_table(["Ledger row", "Tag", "Found but not cited"],
+                  [[x["Ledger Row"], x["Tag"], x["Sheets Found but Not Cited"]] for x in fnc]) + [""]
+    for pgk in sorted({t["Page Key"] for t in th}):
+        pass
+    # tag hits not counted
+    nc = Counter(t["Assignment"] for t in th if t["Assignment"] not in ("assigned",))
+    L += ["Tag hits not counted as found (Gate A rules): "
+          + ", ".join(f"{v} {k}" for k, v in sorted(nc.items())) + ". Each is listed under its candidate rows in the "
+          "crosswalk's \"Hits Not Counted\" column.", ""]
+    # PROPOSED anchors
+    st = res["anchor_stats"]
+    kinds = sorted({k for k, _ in st})
+    L += ["## PROPOSED anchors (Gate A rule)", "",
+          "Verified: the anchor was found in the native text layer and its text holds the row's quantity (value and "
+          "unit), or, for a row whose Ledger Name has no quantity, a specific noun from the Name. Inferred: the same "
+          "match read by OCR or Bluebeam. Unresolved: the anchor was not found, or its text does not match. A keyed "
+          "note numbered by order is at best Inferred, and Unresolved where its block's entry count and highest "
+          "marker read disagree.", ""]
+    L += md_table(["Anchor type", "Verified", "Inferred", "Unresolved", "Total"],
+                  [[k, st[(k, "Verified")], st[(k, "Inferred")], st[(k, "Unresolved")],
+                    sum(st[(k, lv)] for lv in LEVELS)] for k in kinds]
+                  + [["all", sum(v for (k, lv), v in st.items() if lv == "Verified"),
+                      sum(v for (k, lv), v in st.items() if lv == "Inferred"),
+                      sum(v for (k, lv), v in st.items() if lv == "Unresolved"), sum(st.values())]]) + [""]
+    pp = [x for x in xw if x["Family"] == "PROPOSED"]
+    L.append("PROPOSED rows by weakest anchor (the row's sheet evidence level): "
+             + ", ".join(f"{v} {k}" for k, v in sorted(Counter(x["Sheet Evidence Level"] for x in pp).items()))
+             + f"; {sum(1 for x in pp if x['Status'] != 'anchors checked')} rows cite no sheet number.")
+    L += [""]
+    # keyed notes
+    L += ["## Keyed-note blocks", ""]
+    krows = []
+    for pg in pages:
+        for b in pg.get("keyed_notes", []):
+            by_order = sum(1 for e in b["entries"] if e["basis"] == "by order")
+            krows.append([pg["page_key"], pg["sheet_01"], b["heading"], len(b["entries"]),
+                          sum(1 for e in b["entries"] if e["read_number"]), b["highest_marker_read"] or "",
+                          by_order, b["count_check"]])
+    L += md_table(["Page", "Sheet", "Heading read", "Entries", "Markers read", "Highest marker", "By order", "Count check"], krows) + [""]
+    # S2.1
+    s21 = next(r for r in sm if r["Page Key"] == "057")
+    L += ["## S2.1, set p.57 (Test 4)", "",
+          f"- No text layer. Tesseract words (both passes, deduplicated): {s21['OCR Words']}. Bluebeam words: {s21['Bluebeam Words']}.", ""]
+    return L
+
+
+def readme(out, pages, res):
+    sizes = sorted(((f.stat().st_size, f.relative_to(out).as_posix()) for f in out.rglob("*") if f.is_file()
+                    and f.name != "README.md"), reverse=True)
+    info = extractor_info()
+    L = ["# derived/ocr: drawing text for the Ledger and MTO cross-reference", "",
+         f"Schema version {SCHEMA_VERSION}. Machine-read words, tags and quantities from the native Eastsound plan set "
+         "(set pages 1–96) and the Addendum 4 reissue pages (pp.4–10), keyed so they can be cross-referenced into the "
+         "Project Ledger and a master MTO later. Built by `tools/extract_drawing_text.py` with no LLM calls. This "
+         "folder is data only: nothing here has been entered in the Ledger or an MTO.", "",
+         "## Confidence rule", "",
+         "- A text-layer word from a native PDF counts as Verified.",
+         "- A Tesseract or Bluebeam word is Inferred until confirmed on the page image, when it becomes Verified-Visual.",
+         "- Nothing from this folder enters the Ledger or MTO without that confirmation and the owner's approval.",
+         "- Every quantity is tagged Inferred (machine-read). It is a lead to check, not a takeoff.", "",
+         "## Rebuild", "",
+         "```",
+         "apt-get install -y tesseract-ocr",
+         "pip install -r requirements.txt",
+         "PYTHONHASHSEED=0 OMP_THREAD_LIMIT=1 python tools/extract_drawing_text.py --stage all --jobs 4",
+         "```", "",
+         "- The script sets both variables itself if they are missing. `--jobs` runs pages in parallel worker "
+         "processes; outputs are sorted, so any job count gives the same bytes.",
+         "- There are no timestamps, lists are sorted, boxes are rounded to 0.01 pt, JSON keys are sorted and line "
+         "endings are LF. Byte-identical output also needs the same Tesseract build, `eng.traineddata` and CPU SIMD "
+         "path. Each page file's `extractor` block records them.",
+         "- Stages: `pages` (Step 1: words and title blocks, the slow part), `forms` (Tag_Search_Forms.csv), `hits` "
+         "(Step 2), `report` (Findings.md, Spot_Check.csv, this README). `--crops <folder>` with `report` writes the "
+         "spot-check crops. Keep that folder outside the repo: PNG is not a repo file type (AGENTS.md rule 5).", "",
+         f"Recorded for this build: Python {info['python']}, PyMuPDF {info['pymupdf']}, pytesseract {info['pytesseract']}, "
+         f"Pillow {info['pillow']}, {'; '.join(info['tesseract'])}, eng.traineddata SHA-256 {info['eng_traineddata_sha256']}.", "",
+         "## Files", ""]
+    L += md_table(["File", "What it holds"], [
+        ["pages/NNN_<sheet>.json, pages/add4_pNN_<sheet>.json",
+         "One per page: source file, SHA-256 and page, set page, 01 sheet and title, cited_as (01 File and PDF p.), "
+         "governed_by / governs (Addendum 4), page size and rotation, counts, title block, words, bluebeam block, tags, "
+         "quantities, keyed notes, extractor versions"],
+        ["Sheet_Map.csv", "One row per page: 01 sheet vs title-block sheet read, titles, page N OF M, split-part file and "
+                          "page, native file and page, Addendum 4 links, text-layer and OCR counts, mean confidence"],
+        ["Tag_Search_Forms.csv", "One row per Ledger row: search forms, family, searchable, and the reasons and rules"],
+        ["Tag_Hits.csv", "One row per tag occurrence, with its assignment under the Gate A rules"],
+        ["Quantity_Hits.csv", "One row per quantity lead: value and unit as separate fields, nearest tag, keyed note"],
+        ["Ledger_Crosswalk.csv", "One row per Ledger row (447), keyed on Ledger Row"],
+        ["Unmatched_Tags.csv", "Tag-shaped text with no Ledger row: candidates for the PROPOSED-tag crosswalk, not Ledger items"],
+        ["Findings.md", "Title mismatches, sheets found, known values, fence rows, crosswalk gaps, anchor levels, keyed notes"],
+        ["Spot_Check.csv", "25 random words (5 each C, E, S, A, G) for a person to check on the page image"],
+    ]) + [""]
+    L += ["## Keys and coordinates", "",
+          "- Join keys for the later Ledger and MTO step: Ledger Row, then sheet number, then set page. Ledger Row is the "
+          "Project_Ledger.csv record number with the header as 1 (the same numbering as `ledger_to_graph.py`). The "
+          "crosswalk is keyed on it, not on Tag, because \"SD-1\" and \"PROPOSED-Influent-Sampler\" each name two rows.",
+          "- Quantities carry Value and Unit as separate fields, matching the Quantity and Unit columns proposed for "
+          "Ledger schema rev1.",
+          "- Boxes are PDF points on the page as displayed: origin top left, page rotation applied (set pp.62–96 are "
+          "/Rotate 270), rounded to 0.01 pt.",
+          "- Set page to native part comes from `library/Plan_Set_Parts.md`. The 01 sheet, title, cited_as and "
+          "Addendum 4 supersession come from `index/01_Sheet_Index_rev1.md`.", "",
+          "## How a page is read", "",
+          "- Text layer: PyMuPDF `get_text(\"words\")`. The render mode comes from the character flags (neither filled "
+          "nor stroked means mode 3, AutoCAD's overlay for text drawn as geometry). Mode-3 words count as text layer. "
+          f"Words under {SUB_PT:.0f} pt in both directions are dropped and counted per page.",
+          f"- OCR: every page is rendered at {DPI} dpi and read by Tesseract (`--oem {OEM} --psm {PSM}`, one thread), "
+          "upright and rotated 90° with the boxes mapped back. Where the two passes read the same spot (overlap ≥ 0.5 "
+          f"of the smaller box), the higher confidence is kept. Every word keeps its confidence; ≥ {CONF_FLAG} is a "
+          "flag, not a filter. An OCR word on a text-layer word's spot is dropped: the text layer wins.",
+          "- Bluebeam: the render-mode-3 words in the Bluebeam OCR copies, minus any word that matches a native word "
+          "at the same spot. These go into Tag_Hits and Quantity_Hits as method `bluebeam-ocr`, Inferred (owner's "
+          "decision, 2026-09-30).",
+          "- Title block: the sheet-number word nearest the SHEET label closest to the bottom-right corner, with the "
+          "page N OF M, date, title and revision read around it (no fixed coordinates, no assumed page total). Where "
+          "the text layer has no title block, a rotated title-strip OCR pass (psm 11, 200 and 300 dpi, higher "
+          "confidence per field) reads it instead, at any confidence.", "",
+          "## Tag search and assignment (Gate A, 2026-09-30)", "",
+          "- Search forms: trailing (...) and [...] are stripped, \"|\" aliases split and ranges expanded (F1–F4). "
+          "Quotes and the spaces around # and - are dropped, word boundaries are kept, and an internal space matches "
+          "0 or 1 space. Matching is case-insensitive. An OCR or Bluebeam match made through a 1/I, 0/O, 5/S, 8/B or "
+          "#/H swap is marked fuzzy.",
+          "- \"(E)\" is kept as a qualifier: a hit counts for an \"(E)\" row only when \"(E)\" or \"EXIST\" is on the "
+          "same line; otherwise it counts for the unqualified row, or is not counted.",
+          f"- Short forms ({SHORT_FORM_LEN} characters or fewer) count only on the row's cited sheets. Elsewhere they "
+          "are listed as \"off-citation, short form\" and left out of the found counts.",
+          "- A range row and its individual rows: the individual row takes the hit first, and the range row gets the "
+          "rollup.",
+          "- Shared forms: a hit goes to the row whose Lane matches the sheet's lane in 01, falling back to the "
+          "discipline letter. If that doesn't settle it, every candidate row is listed and the hit is marked ambiguous.",
+          "- PROPOSED rows are not searched by tag. Their Drawing Sheets anchors are checked instead (below). Pipe ID "
+          "and Buried Valve ID rows match the legend line that starts with the ID number on C1.3 (base and Add. 4 "
+          "p.7) and C1.4.", "",
+          "## Quantities", "",
+          "- Units: LF, SF, SY, CY, EA, LS, TON, GAL; FT is its own unit. Only L=nnn' converts to LF. Units may "
+          "follow the number with no space (21LF).",
+          "- A foot value followed by a material word is a dimension, not a quantity (6' CHAIN LINK). The material "
+          "words are: " + ", ".join(sorted(DIM_MATERIAL)) + ".",
+          "- Sizes: `8\"`, `12-in` and the like count only when a pipe, valve or conduit word follows within 4 words: "
+          + ", ".join(sorted(PIPE_WORDS)) + ".",
+          "- Counts: a number followed by a plural noun (12 BOLLARDS, (3) LOCATIONS), unit EA.",
+          "- Slopes: n% counts as a slope after SLOPE or S=, or as \"@ n%\" after an LF quantity (39 LF @ 0.5%). "
+          "Otherwise it is kind \"percent\". Also S=0.005 (FT/FT) and 2H:1V.",
+          "- Elevations: RIM, SUMP, IE, INV, EL, ELEV, FG, FF, FFE, TOC, TOW, BOW, TOG, GRATE.",
+          f"- Nearest tag: the nearest tag hit (assigned or ambiguous) within {NEAR_TAG_PT:.0f} pt, edge to edge, or "
+          "\"none\". Calibration: every SDCB label on C2.1–C2.4 sits 0–13.1 pt from its RIM value.",
+          "- Keyed notes: a quantity inside a keyed-note entry carries that entry's number, and the callouts of that "
+          "number read on the plan.", "",
+          "## Keyed notes", "",
+          "- The block sits under a KEYED NOTES / KEY NOTES heading. Entries split on line spacing (a gap over 1.4 × "
+          "the block's 25th-percentile spacing) or on a leading marker in the marker column.",
+          "- A marker read by OCR sets the number when it is 1 or 2 past the previous entry's number (tagged at the "
+          "marker's read level). Otherwise the entry takes the previous number + 1 (\"by order\", Inferred).",
+          "- If a block's entry count differs from its highest marker read, its by-order numbers are Unresolved. A "
+          "block with no marker read keeps Inferred and is flagged in Findings.", "",
+          "## PROPOSED anchors", "",
+          "- Verified: the anchor was found in the native text layer and its text holds the row's quantity, or a key "
+          "noun from the Ledger Name. Inferred: the same match read by OCR or Bluebeam. Unresolved: the anchor was "
+          "not found, or its text doesn't match. A row's level is its weakest anchor.",
+          "- Match term: when the Ledger Name has a quantity (value and unit, e.g. 149 LF, 7 ft), the anchor must "
+          "hold that quantity; a noun is not enough. Only rows with no quantity use a noun, and only a specific one. "
+          "The matched term is recorded in the crosswalk's Anchor Check column.",
+          "- Anchor text by type: KN n → that keyed-note entry. Det. n → the detail's region, from its SCALE line up "
+          "to the title row above and across to the next detail. Add. 4 p.N → that page. A sheet with no anchor → "
+          "the whole sheet. Other anchors (Demo Schedule n, Item n, …) are Unresolved as not machine-checkable.",
+          "- Key nouns: words of 4+ letters in the Ledger Name, plurals folded (a trailing S dropped), words ending "
+          "in -ED dropped, and minus the two lists below. Please review both.",
+          "", "Stopwords (never nouns): " + ", ".join(sorted(NOUN_STOP)) + ".", "",
+          "Generic nouns (too common here to anchor a row): " + ", ".join(sorted(GENERIC_NOUNS)) + ".", "",
+          "## Unmatched_Tags", "",
+          "- Tag-shaped text that matches no Ledger form, exact or fuzzy, sheet numbers excluded. Shapes: "
+          + "; ".join(f"{name} `{rx.pattern}`" for name, rx in UNMATCHED_SHAPES) + ".", "",
+          "## Spot check", "",
+          f"- Seed {SPOT_SEED}. {SPOT_PER} random words per discipline ({', '.join(SPOT_DISCIPLINES)}), drawn from each "
+          "discipline's pages. The pool is every kept word of 2+ letters or digits: text layer, OCR and Bluebeam.",
+          "- Columns follow Spot_Check_Schema (Pick No. to Note), then Set Page, BBox (pt), Word Read, Confidence and "
+          "Crop Path. Ledger Row, Tag and Name are filled only when the word is part of an assigned tag hit.",
+          "- Human Result, Checked By and Date stay blank. Only the owner marks a read Verified-Visual.",
+          "- Crop Path is relative to the `--crops` folder. The crops are 400 dpi renders with the word boxed, and "
+          "they are not committed.", "",
+          "## Size", "",
+          f"- Largest file: {sizes[0][1]} ({sizes[0][0] / 1e6:.1f} MB). No file passes 25 MB, so nothing is split.", ""]
+    return L
+
+
+def stage_report(out, res=None, crops=None):
+    if res is None:
+        res = stage_hits(out)
+    pages = res["pages"]
+    by_row = {r["row"]: r for r in res["rows"]}
+    write_csv(out / "Spot_Check.csv", SPOT_HEADER, spot_check(pages, by_row, crops))
+    for name, lines in (("Findings.md", findings(out, pages, res)), ("README.md", readme(out, pages, res))):
+        with open(out / name, "w", encoding="utf-8", newline="\n") as f:
+            f.write("\n".join(lines).rstrip("\n") + "\n")
 
 
 # ---------------------------------------------------------------- main
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--stage", choices=["pages", "forms", "hits", "all"], default="all")
+    ap.add_argument("--stage", choices=["pages", "forms", "hits", "report", "all"], default="all")
     ap.add_argument("--out", default=str(OUT_DEFAULT), help="output folder (default: derived/ocr)")
     ap.add_argument("--jobs", type=int, default=1, help="worker processes, one page each")
     ap.add_argument("--only", default="", help="comma list of page keys (e.g. 020,add4_p07); calibration only")
     ap.add_argument("--cache", default="", help="Tesseract result cache folder (development only)")
+    ap.add_argument("--crops", default="", help="with --stage report or all: write spot-check crops here (outside the repo)")
     args = ap.parse_args()
     out = Path(args.out).resolve()
     only = [k.strip() for k in args.only.split(",") if k.strip()]
@@ -1798,8 +2495,11 @@ def main():
         stage_pages(out, args.jobs, only, args.cache or None)
     if args.stage in ("forms", "all"):
         stage_forms(out)
+    res = None
     if args.stage in ("hits", "all"):
-        stage_hits(out)
+        res = stage_hits(out)
+    if args.stage in ("report", "all"):
+        stage_report(out, res, args.crops or None)
 
 
 if __name__ == "__main__":
