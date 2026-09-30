@@ -375,3 +375,38 @@ Append-only. Repo and program issues, in the format in AGENTS.md. The test bed's
 - Fix or next action: Still open, as proposed in `testbeds/eastsound/derived/reconciliation/Ledger_Schema_rev1_Proposal.md` (impact row updated in 599a869):
   - checks.py checks a unique Ledger ID instead of a unique Tag.
   - ledger_to_graph.py keys every node on Ledger ID and drops `NO_SAME_TAG`.
+
+## 2026-09-30 — graphify merges item nodes that share a label, so the Tag alone can't be every item's label — Closed
+- Workstream: Eastsound test bed, graph build
+- Type: workflow failure
+- Finding: The first Ledger ID build labeled every item with its bare Tag. graphify 0.9.72 (`build_from_json`) merges nodes that share a source file and a label. So `L-0073` and `L-0315` (SD-1) became one node, and so did `L-0320` and `L-0418` (PROPOSED-Influent-Sampler). The build gave no warning. A comparison with the committed graph caught it: 20 Ledger links were missing.
+- Fix or next action: `testbeds/eastsound/tools/ledger_to_graph.py` labels a Tag that sits on two rows as `<Tag> [<Ledger ID>]`. Every other item is labeled by its Tag. After the fix, all 3,112 Ledger links and every item attribute match the PR #9 graph, apart from the new keys and labels and the removed `same_tag` link.
+
+## 2026-09-30 — Ledger Tag uniqueness: the graph now keys on Ledger ID; the checks.py part is still open — Open
+- Workstream: Repo setup
+- Type: design gap
+- Finding: Follows the Open entry "Ledger Tag uniqueness: graph part corrected after PR #9". Its graph part is done on branch `claude/wizardly-ride-juv04s`:
+  - `ledger_to_graph.py` keys every item on its Ledger ID (`derived/reconciliation/Ledger_ID_Map.csv`) and stops if the map and the Ledger disagree.
+  - `NO_SAME_TAG` and the `same_tag` link are gone, so the PROPOSED-Influent-Sampler rows are no longer joined by a graph link. Open items OI-0122 and OI-0229 now name both rows.
+- Fix or next action: The checks.py part stands: it should check a unique Ledger ID instead of a unique Tag. That change goes in its own commit, when a person asks.
+
+## 2026-09-30 — Open items bridge the two SD-1 items in graph paths — Open
+- Workstream: Eastsound test bed, graph build
+- Type: design gap
+- Finding: Each open item links to every Ledger ID it names (`concerns`). A duplicate or collision item therefore joins the rows it compares.
+  - `graphify path "SD-1 [L-0073]" "SD-1 [L-0315]" --undirected` runs storm drain ← OI-0112 (Tag collision — SD-1) → sludge pump in two AMBIGUOUS hops. Carl dropped the SD-1 `same_tag` link to stop this kind of trace (DECISIONS.md 2026-09-30).
+  - Open items are also hubs. OI-0474 concerns 80 items, and six open items concern 10 or more.
+  - `testbeds/eastsound/graph/README.md` warns about both.
+- Fix or next action: Carl decides one of these:
+  - Leave the links as they are (AMBIGUOUS and documented).
+  - Make no `concerns` links for duplicate-type open items; they would keep their sheet and spec links.
+  - Build the open items as a separate overlay graph.
+
+## 2026-09-30 — The committed graph depends on the Wiki and open-items files from two unmerged branches — Open
+- Workstream: Eastsound test bed, graph build
+- Type: input gap
+- Finding: The build on `claude/wizardly-ride-juv04s` reads four derived files. Two of them are not on main yet:
+  - `derived/wiki/Wiki_Notes.csv` and `Wiki_Links.csv`, from commit 331c923 on `claude/magical-euler-lnev7r`.
+  - `derived/issues/Open_Items.csv`, from commit ddb818e on `claude/jolly-rubin-dm4ese`.
+  - Rebuilt from main alone, the graph drops those inputs. `Build_Inputs.csv` would mark them missing.
+- Fix or next action: Merge the Wiki and open-items PRs first. If either file changes before it merges, rebuild the graph and compare the SHA-256 values in `testbeds/eastsound/graph/Build_Inputs.csv`.

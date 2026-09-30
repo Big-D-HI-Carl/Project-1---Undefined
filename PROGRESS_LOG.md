@@ -415,3 +415,35 @@ Append-only. One entry per session, in the format in AGENTS.md. Never edit or de
   - `--range origin/main..HEAD` → result in the PR #10 description.
 - Failures and fixes: none
 - Next: Carl merges PR #10.
+
+## 2026-09-30 — Graph: Ledger ID keys, Wiki notes and links, Starter MTO lines and open items
+- Runtime: Claude Code
+- Commits: a8120a3..HEAD on `claude/wizardly-ride-juv04s` (draft PR)
+- Done:
+  - Set `git config core.hooksPath .githooks` in this clone; it was unset. Main was pulled at the start (2eeed31).
+  - `testbeds/eastsound/tools/ledger_to_graph.py`:
+    - Items are keyed on Ledger ID (`derived/reconciliation/Ledger_ID_Map.csv`) and labeled with the Tag. A Tag on two rows is labeled `<Tag> [<Ledger ID>]` (SD-1, PROPOSED-Influent-Sampler).
+    - The build stops if the map and the Ledger disagree. `NO_SAME_TAG` and the `same_tag` link are gone.
+    - New inputs: Wiki_Notes.csv as note attributes plus a `describes` link to the note's own sheet or spec; Wiki_Links.csv as `mentions` and `references` links; Starter_MTO.csv as `mto:` nodes (`quantity_of`, `measured_on`); Open_Items.csv as `open:` nodes (`concerns`, `cites`).
+    - A missing input, or one without a needed column, is skipped and recorded in `graph/Build_Inputs.csv`. Counts go to `graph/Build_Counts.csv`.
+  - `testbeds/eastsound/graph/`: graph.json, graph.html and GRAPH_REPORT.md rebuilt, plus Build_Inputs.csv, Build_Counts.csv and README.md (new inputs, rules 9 and 11–14, counts, merge order, example trace).
+  - The build used `derived/wiki/` from 331c923 and `derived/issues/Open_Items.csv` from ddb818e. Both are sibling branches, not main.
+  - Counts: 1,385 nodes and 7,678 links.
+    - Nodes: 447 items, 99 sheets, 117 specs, 23 addendum items, 203 notes, 22 MTO lines, 474 open items.
+    - Links: 986 shown_on, 536 specified_in, 153 changed_by, 1,437 described_in, 200 describes, 523 mentions, 1,480 references, 21 quantity_of, 22 measured_on, 790 concerns, 1,530 cites.
+  - Trace (README): GEN (L-0242) ← `concerns` OI-0001 Generator rating RFI → `cites` Spec 26 32 13 ← `describes` Wiki note 26 32 13 → `references` Sheets E1.1, E6.1, E10.3. The RFI also cites E1.1 and E6.1 directly. Every link on this path is EXTRACTED (Verified).
+- Tests:
+  - Build from the committed inputs → 3,112 Ledger links and every item attribute identical to the PR #9 graph, apart from keys, labels and the removed `same_tag` link (script comparison).
+  - Three builds (repo worktree plus two scratch folders), under `env -i` with `GIT_DIR=no-git` → graph.json, graph.html, GRAPH_REPORT.md, Build_Inputs.csv and Build_Counts.csv byte-identical (`cmp`). graph.json has no `built_at_commit`.
+  - `graphify explain "OI-0001"` and `graphify path … --undirected` → the trace above.
+  - `python -m pyflakes testbeds/eastsound/tools/ledger_to_graph.py` → clean.
+  - `python3 tools/checks.py --all` → 0 FAIL, 3 WARN. The hook's `--staged` → 0 FAIL on each commit.
+- Failures and fixes:
+  - Labeling every item with its bare Tag made graphify merge the two SD-1 rows and the two Influent-Sampler rows. Repeated Tags now get `[<Ledger ID>]` (ISSUES_LOG).
+  - Merged links repeated their citation text. Now only value, note and the Wiki source fields merge.
+  - A regex change for commas in open-item cells also changed the Ledger sheet and spec rules. Reverted; open-item cells split on `;` and `,` instead.
+  - Open-item labels used the full title, up to about 250 characters. Now the Item ID plus the title's lead clause.
+- Next:
+  - Carl merges the Wiki and open-items PRs, then this one (ISSUES_LOG, "The committed graph depends on…").
+  - Carl decides how open items should link duplicate rows (ISSUES_LOG, "Open items bridge the two SD-1 items in graph paths").
+  - The checks.py Ledger ID rule, when a person asks.
