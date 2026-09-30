@@ -13,7 +13,7 @@ Short names used below: **OCR Part 1** = `Pages from eswd-wwtp-upgrade-ph1-11x17
 ## Source file
 
 - **Source:** `eswd-wwtp-upgrade-ph1-11x17-plans.pdf`, the full 96-sheet 11x17 bid set (Inferred). Basis: the "Pages from" prefix is the name Bluebeam and Acrobat give to extracted pages, and the two parts' title blocks run "1 OF 96" to "96 OF 96" with no gap (see Parts).
-- **Library status:** the full set file isn't in `Library_Fingerprint.csv`. The library holds this set only as the plans_1 to plans_12 extracts (`00_Document_Register_rev1.md` rows 5–30) (Verified).
+- **Library status:** the full set file isn't in `library/`. Since 2026-09-30 the library holds the same 96 set pages as three native parts: Part 1 = set pp.1–27, Part 2 = 28–48, Part 3 = 49–96. The page crosswalk is in `testbeds/eastsound/library/Plan_Set_Parts.md` (Verified). The plans_1 to plans_12 extracts that `00_Document_Register_rev1.md` lists (rows 5–30) are not in the library.
 - **Carried metadata**, the same in both files: Creator "Autodesk Civil 3D 2022", Producer "pdfplot16.hdi 16.01.173.00000" (Verified, PDF Info dictionary). Bluebeam didn't overwrite either field.
 
 ## Bluebeam OCR settings
@@ -39,7 +39,7 @@ Page counts are from each file's page tree (Verified). Title-block values are re
 ## Pages to watch in the comparison
 
 - **OCR text only, with no plotted text:** set pp.28 (C3.3), 29 (C3.4), 45 (C7.3) and 56–61 (S1.1, S2.1–S2.4, S4.1). These are the same 9 sheets the Sheet Index marks as having no text layer (Text = N). On these pages the comparison column has nothing native to compare against. S-sheet reads therefore still top out at Verified-Visual from the page image (Merge Issues Log #60).
-- **Not in library/:** C0.7, C1.1, C1.2 (OCR Part 1 pp.14–16) and C7.7, C7.8, C7.9 (OCR Part 2 pp.1–3). These sheets exist only here, so anything read from them stays Inferred until a native copy is in `library/` (Merge README, "Still open").
+- **Native counterparts:** every page here now has a native counterpart in `library/`. That includes all 10 sheets the Sheet Index lists as "not in library": set pp.10, 14–16, 20, 22 and 25 (C0.3, C0.7, C1.1, C1.2, C2.1, C2.3, C2.6; native Part 1) and set pp.49–51 (C7.7, C7.8, C7.9; native Part 3 pp.1–3). For those pages, text-layer reads come from the native parts and these copies stay the comparison column (`library/Plan_Set_Parts.md`, Verified).
 
 ## Fingerprint
 
