@@ -11,8 +11,9 @@ Rules:
                      notes; a new source needs its Library_Manifest.csv row in
                      the same commit
   append-only-logs   PROGRESS_LOG.md, DECISIONS.md, ISSUES_LOG.md: additions only
-  ledger             *Ledger*.csv: UTF-8 without BOM, the Ledger_Schema.csv
-                     header, full rows, unique non-empty Tag, a valid tag word
+  ledger             *Ledger*.csv, except Ledger_Schema.csv and *_by_CWP* views:
+                     UTF-8 without BOM, the Ledger_Schema.csv header, full rows,
+                     unique non-empty Tag, a valid tag word
   unsafe-file        over 50 MB, secret-like names, anything under _inbox/ or
                      .datagate/
   data-gate          text files against the |-separated terms in DATAGATE_TERMS,
@@ -58,6 +59,7 @@ MAX_BYTES = 50 * 1024 * 1024
 UNSAFE_NAMES = (".env", ".env.*", "*.pem", "*.key", "id_rsa*", "*credential*")
 UNSAFE_DIRS = ("_inbox", ".datagate")
 TEXT_EXTS = (".md", ".csv", ".txt", ".json", ".py", ".yml", ".yaml")
+LEDGER_SKIP = ("ledger_schema.csv", "*_by_cwp*.csv")  # the schema, and CWP views of a Ledger
 TAG_COLUMN = "Verified/Verified-Visual/Inferred/Unresolved"
 TAG_WORD = re.compile(r"(Verified-Visual|Verified|Inferred|Unresolved)\b")
 ISSUE_HEADING = re.compile(r"## \d{4}-\d{2}-\d{2} — (.+) — (?:Open|Closed)\s*")
@@ -296,7 +298,7 @@ def check_append_only_logs(git: Git, unit: Unit) -> list[Finding]:
 
 def is_ledger(path: str) -> bool:
     name = path.rsplit("/", 1)[-1].lower()
-    return fnmatch.fnmatchcase(name, "*ledger*.csv") and name != "ledger_schema.csv"
+    return fnmatch.fnmatchcase(name, "*ledger*.csv") and not any(fnmatch.fnmatchcase(name, p) for p in LEDGER_SKIP)
 
 
 def schema_header(data: bytes | None) -> list[str] | None:
