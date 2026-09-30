@@ -1,0 +1,29 @@
+# Addendum No. 4, page 2 — Specification items
+
+- **Source:** `addendum-no4-eswd.pdf`, PDF page 2; Addendum No. 4 issued February 9, 2023 (per 00 register)
+- **Wiki note:** `Electrical_and_Controls_Wiki.md` → addendum items are cited inside the E sheet and Division 26 notes; 03 maps them to this lane
+- **Components touched by this page:** 14 (9 New, 5 Not stated); 3 Unresolved
+- Tag level: Verified = read in the text layer · Verified-Visual = read from the page image · Inferred = derived, basis in the Ledger row · Unresolved = conflict or gap, see Issues.
+
+| Tag | Component | Status | Bid Item | Tag level | Addendum item (Add. 4 governs) | Drawing sheets |
+|---|---|---|---|---|---|---|
+| [2W-P1](../Components/2W%20Pump%20Station/2W-P1.md) | 2W Water Pump No.1, 5 HP, VFD in MCC (E4.3 tags it P-2W-1) | Not stated | 1 (equipment, Inferred per 04); 6 (power and control) | Unresolved | Add. 4 p.2, 43 22 10 ¶2.01 A (VFDs in MCC, PLC control) — Add. 4 governs | E4.3; E6.1; E6.3; E7.3; E7.4; E9.1 |
+| [2W-P2](../Components/2W%20Pump%20Station/2W-P2.md) | 2W Water Pump No.2, 5 HP, VFD in MCC (E4.3 tags it P-2W-2) | Not stated | 1 (equipment, Inferred per 04); 6 (power and control) | Unresolved | Add. 4 p.2, 43 22 10 ¶2.01 A (VFDs in MCC, PLC control) — Add. 4 governs | E4.3; E6.1; E6.3; E7.3; E7.4; E9.1 |
+| [MCP](../Components/Blower%20Building/MCP.md) | Main Control Panel (PLC), Blower Building | New | 6 | Unresolved | Add. 4 p.2, 22 13 36 ¶2.01 A and 43 22 10 ¶2.01 A (PLC in the Main Control Panel controls the pump VFDs) — Add. 4 governs | E2.1; E2.2; E6.2; E6.3; E7.0; E7.1; E7.2; E7.3; E7.4; E7.5; E7.6; E7.7 |
+| [SD-1](../Components/Treatment%20Building/SD-1.md) | Sludge pump, 3 HP, VFD in MCC | Not stated | 1 (equipment, Inferred per 04); 6 (power and control) | Verified-Visual | Add. 4 p.2, 22 13 36 ¶2.01 A (VFDs in MCC, PLC control, no local speed dial) — Add. 4 governs | E4.1; E6.1; E6.3; E7.3; E7.4; E9.1 |
+| [WP-1](../Components/Treatment%20Building/WP-1.md) | WAS Pump No.1, 3 HP, VFD in MCC | Not stated | 1 (equipment, Inferred per 04); 6 (power and control) | Verified-Visual | Add. 4 p.2, 22 13 36 ¶2.01 A (VFDs in MCC, PLC control, no local speed dial) — Add. 4 governs | E4.1; E6.1; E6.3; E7.3; E7.4; E9.1 |
+| [WP-2](../Components/Treatment%20Building/WP-2.md) | WAS Pump No.2 / swing pump, 3 HP, VFD in MCC | Not stated | 1 (equipment, Inferred per 04); 6 (power and control) | Verified-Visual | Add. 4 p.2, 22 13 36 ¶2.01 A (VFDs in MCC, PLC control, no local speed dial) — Add. 4 governs | E4.1; E6.1; E6.3; E7.3; E7.4; E9.1 |
+| [PROPOSED-2W-Flow-Meter](../Components/2W%20Pump%20Station/PROPOSED-2W-Flow-Meter.md) | 2W flow meter, 1-in Promag W400, 24 VAC/DC, EtherNet/IP, local display, NEMA 4X, in Hot Box #1 | New | 6 | Inferred | Add. 4 p.2, 26 80 00 ¶2.04 D (Promag L400 replaced by W400) — Add. 4 governs | E4.3; E6.3; E7.0; E10.2 |
+| [PROPOSED-Effluent-Flow-Meter](../Components/UV%20Disinfection%20Chamber%20and%20Digester/PROPOSED-Effluent-Flow-Meter.md) | Effluent magnetic flow meter in vault, Promag W400, remote housing, IP68 Type 6 potted submersible sensor, two 316L grounding rings | New | 6 | Inferred | Add. 4 p.2, 26 80 00 ¶2.04 D (Promag L400 replaced by W400) — Add. 4 governs | E5.1; E6.3; E7.0; E10.2 |
+| [PROPOSED-Influent-Flow-Meter](../Components/Influent%20Pump%20Station/PROPOSED-Influent-Flow-Meter.md) | Influent magnetic flow meter, Endress+Hauser Promag W400, Class I Div 2, EtherNet/IP, remote transmitter at the IPS panel, two 316L grounding rings | New | 6 | Inferred | Add. 4 p.2, 26 80 00 ¶2.04 D (Promag L400 replaced by W400) — Add. 4 governs | E4.1; E6.3; E7.0; E8.1; E10.2 |
+| [PROPOSED-Plant-2-Flow-Meter](../Components/Influent%20Pump%20Station/PROPOSED-Plant-2-Flow-Meter.md) | Plant 2 magnetic flow meter ("Train #2 flow meter" on E7.0), Promag W400, remote transmitter at the IPS panel | New | 6 | Inferred | Add. 4 p.2, 26 80 00 ¶2.04 D (Promag L400 replaced by W400) — Add. 4 governs | E4.1; E6.3; E7.0; E8.1; E10.2 |
+| [PROPOSED-Plant-3-Flow-Meter](../Components/Influent%20Pump%20Station/PROPOSED-Plant-3-Flow-Meter.md) | Plant 3 magnetic flow meter ("Train #3 flow meter" on E7.0), Promag W400, remote transmitter at the IPS panel | New | 6 | Inferred | Add. 4 p.2, 26 80 00 ¶2.04 D (Promag L400 replaced by W400) — Add. 4 governs | E4.1; E6.3; E7.0; E8.1; E10.2 |
+| [PROPOSED-Plant-Drain-Flow-Meter](../Components/Influent%20Pump%20Station/PROPOSED-Plant-Drain-Flow-Meter.md) | Plant drain magnetic flow meter, Promag W400, remote transmitter at the IPS panel | New | 6 | Inferred | Add. 4 p.2, 26 80 00 ¶2.04 D (Promag L400 replaced by W400) — Add. 4 governs | E4.1; E6.3; E7.0; E8.1; E10.2 |
+| [PROPOSED-VFDs-in-MCC](../Components/Blower%20Building/PROPOSED-VFDs-in-MCC.md) | Variable frequency drives in the MCC (10), Allen-Bradley PowerFlex 753 with Ethernet module, each with a 3% line-side reactor; dV/dt filters on motor runs over 50 ft | New | 6 | Inferred | Add. 4 p.2, 22 13 36 ¶2.01 A (VFDs in MCC, PLC control, no local speed dial) — Add. 4 governs · Add. 4 p.2, 43 22 10 ¶2.01 A (VFDs in MCC, PLC control) — Add. 4 governs | E6.1; E7.0; E7.3; E7.4; E7.7; E9.1; E9.2 |
+| [PROPOSED-WAS-Dewatering-Flow-Meter](../Components/Treatment%20Building/PROPOSED-WAS-Dewatering-Flow-Meter.md) | Dewatering flow meter ("WAS flow meter" on E7.0), Promag W400 with local display, Cat 6 to the IPS panel | New | 6 | Inferred | Add. 4 p.2, 26 80 00 ¶2.04 D (Promag L400 replaced by W400) — Add. 4 governs | E4.1; E6.3; E7.0; E10.2 |
+
+## Issues that cite this page
+
+- #28 Influent, WAS, sludge and dewatering process equipment (Inferred)
+- #29 2W pumps, float tree and isolation valve solenoid (Inferred)
+- cited flag 26 80 00 running header "INSTRUMENTATION AND CONTROL"; body title "CONTROL SYSTEM" (Verified)
