@@ -127,3 +127,21 @@ Append-only. Repo and program issues, in the format in AGENTS.md. The test bed's
 - Type: input gap
 - Finding: 74 Ledger rows have a blank Drawing Sheets field: 72 PROPOSED rows plus 2 printed rows (Receiving Conveyor, Inclined Conveyor). 6 more rows name no sheet number ("—", "Not shown", "None (Add. 4 and 26 05 00 only)", "TESC plans (civil sheets, not numbered in source)"). The OCR lane can't check any of these against a sheet. `derived/ocr/Ledger_Crosswalk.csv` shows them as "no sheet cited" or "no sheet number cited".
 - Fix or next action: The Merge role or the lanes add sheet citations where the documents give them.
+
+## 2026-09-30 — Project_Ledger.csv repeats two Tags — Open
+- Workstream: Eastsound test bed
+- Type: content conflict
+- Finding: `python tools/checks.py --all` (Prompt 1, acceptance test 9) fails the ledger check on the baseline file `testbeds/eastsound/project/02_Project_Ledger/Project_Ledger.csv`:
+  - `SD-1` names two different items. Line 74 is the storm drain alignment SD-1 (Civil & Site; C2.2; Unresolved). Line 316 is the 3 HP sludge pump (Electrical & Controls; E4.1, E6.1; Verified-Visual).
+  - `PROPOSED-Influent-Sampler` is one item entered by two lanes. Line 321 is Electrical & Controls (E4.1 key note 6; Verified-Visual). Line 419 is Contract & General (main spec 00 31 13 ¶A.17; Inferred).
+  - The file was not edited. It is listed in `tools/check_exceptions.csv` for the ledger rule, so the check warns instead of failing. That exception covers every ledger finding in this file until it is removed.
+- Fix or next action: Merge issues a new Project Ledger revision that gives one of the two `SD-1` items its own Tag and folds the two influent-sampler rows into one, keeping both citations. Then remove the exceptions row.
+
+## 2026-09-30 — Project_Ledger_by_CWP.csv doesn't follow the Ledger schema — Open
+- Workstream: Eastsound test bed
+- Type: schema gap
+- Finding: The ledger check applies to every `*Ledger*.csv`, including the baseline CWP view `testbeds/eastsound/project/02_Project_Ledger/Project_Ledger_by_CWP.csv`, and fails it (Prompt 1, acceptance test 9):
+  - It has 19 columns: CWP, CWP Name and CWP Basis ahead of the 16 columns in `testbeds/eastsound/index/Ledger_Schema.csv`.
+  - It repeats the two duplicate Tags: `SD-1` at lines 107 and 304, and `PROPOSED-Influent-Sampler` at lines 432 and 439 (see "Project_Ledger.csv repeats two Tags").
+  - The file was not edited. It is listed in `tools/check_exceptions.csv` for the ledger rule.
+- Fix or next action: Carl decides whether the CWP view counts as a Ledger. If not, issue its next revision under a name without "Ledger", or ask for a checks.py change that narrows the file pattern. If it does, it needs its own schema. The duplicate Tags clear with the Project Ledger fix.
