@@ -22,7 +22,7 @@ Rules marked (checked) are enforced by `tools/checks.py` in the pre-commit hook 
 ## Output standards (all project content)
 - Cite every factual claim: sheet number, spec section and paragraph, or addendum number and item. Page cites use the file short names defined in `testbeds/eastsound/index/00_Document_Register_rev1.md`.
 - Tag every claim: Verified (read in the text layer), Verified-Visual (read from the page image), Inferred (derived; state the reasoning), Unresolved (conflict or missing; state what's needed).
-- Text from OCR copies under `testbeds/eastsound/derived/` counts as OCR and is tagged Inferred, never Verified or a text layer. Verified text-layer reads come only from the native files in `library/`. OCR copies are a comparison column only.
+- Text from OCR copies under `testbeds/eastsound/derived/` counts as OCR and is tagged Inferred, never Verified or a text layer. Verified text-layer reads come only from the native files in `library/`. OCR copies are Inferred only. They may feed tag and quantity leads (method bluebeam-ocr), never a text layer or a Verified read.
 - Addenda supersede base documents. On a conflict, cite both and state which governs.
 - The body section number governs over running headers and the TOC. A claim that defers to WSDOT is tagged "Unresolved: external reference, not staged."
 - Ledger CSVs use the exact 16-column header in `testbeds/eastsound/index/Ledger_Schema.csv`. A row's tag is the weakest tag of the facts in it.

@@ -115,6 +115,91 @@ Append-only. One entry per session, in the format in AGENTS.md. Never edit or de
   - Upload the 20 lane files, the Composer prompts and Prompt_Workflow_Receipt_rev1.md, and Addenda 1–3.
   - Run Prompt 1 (`prompts/01_bootstrap_guardrails.md`).
 
+## 2026-09-30 — OCR lane (Prompt 7 rev1): drawing text for the Ledger and MTO cross-reference
+- Runtime: Claude Code
+- Commits: c62c219..cdfa74c (Step 1 and the Gate A proposal, merged to main by Carl as PR #4), then 06af9c9..a0a19a1 plus this log commit on `claude/vibrant-davinci-7g3znj`, rebased onto 67e82f3 for a new PR.
+- Done:
+  - **Step 0:** stopped because PR #2 was open. Resumed once Carl merged it (9fec0a2). Ledger: 447 rows, 123 Unresolved. Drawings: three native parts plus Add. 4 (13 pp.). No master MTO exists, so outputs are keyed to join one later.
+  - **Tools:**
+    - `tools/extract_drawing_text.py` has four stages: `pages`, `forms`, `hits`, `report`.
+    - Text-layer words carry their render mode, with rotation applied and sub-1 pt words dropped.
+    - Tesseract reads every page at 400 dpi, upright and rotated 90°, merged by overlap with the higher confidence kept. The text layer wins over OCR.
+    - The Bluebeam block is the mode-3 words from the OCR copies minus native matches.
+    - Title blocks come from the SHEET label nearest the bottom-right corner, plus a rotated title-strip OCR pass (200 and 300 dpi, psm 11) where the text layer has none.
+    - Parallel workers and sorted output; no LLM calls.
+  - **Pins:** `requirements.txt` pins PyMuPDF 1.28.2, pytesseract 0.3.13, Pillow 12.3.0 and packaging 24.0. Tesseract 5.3.4 comes from apt.
+  - **Outputs** in `testbeds/eastsound/derived/ocr/`:
+    - 103 page files: 96 set pages and 7 Add. 4 pages.
+    - Sheet_Map (103 rows), Tag_Search_Forms (447), Tag_Hits (839: 604 assigned, 234 off-citation short form, 1 with no "(E)" on its line), Quantity_Hits (1,903 leads, 161 in keyed notes), Ledger_Crosswalk (447), Unmatched_Tags (401), Spot_Check (25).
+    - Findings.md, and a README.md that includes the stopword and generic-noun lists for review.
+    - 33 MB in all; the largest file is 2.0 MB (`pages/056_S1.1.json`), so nothing is split.
+  - **Gate A:** Carl approved with changes; each change is quoted in DECISIONS.md.
+    - PROPOSED anchors under his rule: 250 Verified, 206 Inferred, 99 Unresolved (keyed notes 0 / 13 / 9; "sheet only" anchors 232 / 184 / 74).
+    - PROPOSED rows by weakest anchor: 61 Verified, 116 Inferred, 135 Unresolved; 78 rows cite no sheet number.
+    - Printed tags found on a cited sheet: 61 of 96 in the text layer alone, 81 of 96 by any method (exact).
+  - **Findings:** C2.1's fence reads are 149 LF (keyed note 6) and 134 LF (keyed note 8), OCR only, stated and not reconciled with Ledger rows 19 and 89. The S sheets read "OF 96", agreeing (Inferred) with the Verified-Visual read in the ISSUES_LOG entry "00 Register rev2 needs rows…".
+  - **Nothing else edited:** no Ledger, MTO, Wiki, index or source file.
+- Tests:
+
+  | # | Test | Expected | Actual | Result |
+  |---|---|---|---|---|
+  | 1 | Page files / Sheet_Map rows | 103 / 103 | 103 / 103 | pass |
+  | 2 | Title-block sheet = 01 | ≥ 90 of 96 | 96 of 96; Add. 4 7 of 7; titles 103 of 103 | pass |
+  | 3 | Set pp.14–16, 49–51 | C0.7, C1.1, C1.2, C7.7, C7.8, C7.9 | all 6 read in the text layer | pass |
+  | 4 | S2.1 (set p.57) > 0 words | > 0 | Tesseract 568, Bluebeam 494 | pass |
+  | 5 | C2.1 149 LF and 134 LF; SD-3 on C2.3 | found, with boxes | 149 LF: OCR + Bluebeam, KN 6; 134 LF: OCR + Bluebeam, KN 8 (Inferred); SD-3: text layer at 2 spots (Verified) | pass |
+  | 6 | Spot check, 5 per discipline | 25 rows, crops shown | 25 rows (C/E/S/A/G × 5), seed 20260930, crops shown in chat and not committed, Human Result blank | pass (awaiting Carl's marks) |
+  | 7 | Every Ledger row in the crosswalk | 447 | 447, in Ledger order | pass |
+  | 8 | Determinism | byte-identical | two clean runs (no cache) and the committed files: 112 of 112 SHA-256 identical; the post-rebase run is also identical | pass |
+  | 9 | `git diff --stat origin/main...HEAD` | lane folders only | `derived/ocr/` (111), `tools/extract_drawing_text.py`, ISSUES_LOG.md, plus this commit's PROGRESS_LOG.md and DECISIONS.md | pass |
+
+  - Full clean run wall time at `--jobs 4` on 4 CPUs, no cache: 588 s and 594 s (547 s of it in the page stage). With the development cache: 122 s.
+  - `python tools/checks.py --all` / `--staged` → not run: `tools/checks.py` doesn't exist (Prompt 1 not run).
+- Failures and fixes:
+  - Step 1 calibration failures are logged in ISSUES_LOG ("OCR lane Step 1: calibration failures fixed before the full run"). They were written at Gate A, not before each rerun.
+  - The first timed full run never started because `/usr/bin/time` is missing. Fix: time with the shell `date`.
+  - The Gate A preview turned up four problems, each fixed before the committed run:
+    - Keyed-note headings matched sentences (C0.7, E0.1). Fix: the heading must stand alone.
+    - "6' CHAIN LINK" still yielded a FT lead, because OCR split the line. Fix: the next word is checked by position.
+    - Det. anchors matched only the title line. Fix: each detail gets a region.
+    - Nouns included -ED participles. Fix: dropped.
+  - Heredoc quoting escaped the quotes in the new DECISIONS entries. Fixed before commit; no committed line changed.
+  - PR #4 was merged at cdfa74c while Step 2 was in progress. Fix: the unpushed commits were rebased onto main (ISSUES_LOG conflict resolved by keeping main's entries and appending mine), the outputs were rerun and matched byte for byte, and a new PR follows.
+- Next:
+  - Carl marks Spot_Check.csv (Human Result, Checked By, Date) against the crops, and reviews the README noun lists.
+  - Carl decides the AGENTS.md OCR-copy line (ISSUES_LOG).
+  - Upload the four schema CSVs to `index/`.
+  - Setup corrects "image-only" in 01 and closes 01 item 10.
+  - The Ledger and MTO update step, on Carl's approval only.
+
+## 2026-09-30 — OCR lane follow-up before PR #6 merge
+- Runtime: Claude Code
+- Commits: 496b3f5..HEAD on `claude/vibrant-davinci-7g3znj` (PR #6)
+- Done:
+  - Owner items 1–6:
+    - Sheet-only anchors are Verified only for the Name's quantity read in the text layer; a noun match is Inferred ("on sheet, location not pinned").
+    - The extractor moved to `testbeds/eastsound/tools/` by git mv; the paths it records are updated.
+    - cited_as comes from `index/Plan_Set_Crosswalk.csv`; source SHA-256 values are checked against `index/Library_Manifest.csv`, stopping on a mismatch.
+    - AGENTS.md carries the approved OCR-copy sentence; the Bluebeam README matches.
+    - The schema ISSUES entry is corrected: only Audit_Ledger and Spot_Check are missing.
+  - `tools/checks.py`: the ledger rule covers only project/ and lanes/ Ledgers (the owner's choice), so `derived/ocr/Ledger_Crosswalk.csv` is no longer checked as a Ledger.
+  - A pre-merge review (5 auditors, 3 skeptics each) upheld 1 of 8 findings: row 374 was Verified on the "3'" in another louver's "2'x3'". Fix: sizes in a Name must match whole, and every quantity is required.
+  - Final counts:
+    - Sheet-only anchors: 8 Verified, 405 Inferred, 77 Unresolved.
+    - All anchors: 26 / 427 / 102.
+    - PROPOSED rows: 9 / 166 / 137.
+    - Non-PROPOSED rows unchanged.
+  - Replaced the bad branch-update merge a8694d8 (ISSUES_LOG, DECISIONS).
+- Tests:
+  - Test 8: `extract_drawing_text.py --stage all --jobs 4`, two clean runs → byte-identical to each other and to f3e8865, 112 of 112 files (697 s and 615 s wall). Pass.
+  - Test 9: `git diff --stat origin/main...HEAD` → `derived/ocr/`, the moved extractor, the three logs, plus the owner-approved AGENTS.md, Bluebeam README and `tools/checks.py`. Pass.
+  - `python tools/checks.py --ci --range origin/main..HEAD` and `--ci --all` → run before push; results in the PR #6 description.
+- Failures and fixes:
+  - `checks.py` flagged Ledger_Crosswalk.csv; fixed by narrowing the glob.
+  - Row 374 false Verified; fixed by whole-quantity matching.
+  - a8694d8 dropped main's log entries; replaced.
+- Next: Carl merges PR #6 once the check is green, marks Spot_Check.csv, and uploads the Audit_Ledger and Spot_Check schemas.
+
 ## 2026-09-30 — Prompt 1: bootstrap and guardrails
 - Runtime: Claude Code
 - Commits: dd5400d..bda1bdd (PR #5, merged as 72c5342); follow-up 57433d9..6bc0d53, plus this log commit (branch `claude/zen-goldberg-4syazk`)

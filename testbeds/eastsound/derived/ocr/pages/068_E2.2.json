@@ -6266,9 +6266,12 @@
   ]
  },
  "cited_as": {
-  "basis": "01_Sheet_Index_rev1.md File and PDF p. columns",
+  "basis": "testbeds/eastsound/index/Plan_Set_Crosswalk.csv",
+  "duplicates": [],
   "file": "Pages_from_eswd-wwtp-upgrade-ph1-11x17-plans_9.pdf",
-  "page": 4
+  "indexed_in_01": "Yes",
+  "page": 4,
+  "short_name": "plans_9"
  },
  "counts": {
   "mode3_chars_kept": 0,
@@ -6309,8 +6312,8 @@
   "pytesseract": "0.3.13",
   "python": "3.11.15",
   "schema_version": "1.0",
-  "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script": "testbeds/eastsound/tools/extract_drawing_text.py",
+  "script_sha256": "0e61e19737aa0acd351b04bb1fe1276502ad57f626b99e59df261b62d1bbebd1",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -6329,6 +6332,85 @@
  },
  "governed_by": null,
  "governs": null,
+ "keyed_notes": [
+  {
+   "bbox": [
+    804.6,
+    135.18,
+    1048.04,
+    220.73
+   ],
+   "count_check": "entry count 4 matches the highest marker read",
+   "entries": [
+    {
+     "basis": "read",
+     "bbox": [
+      804.6,
+      149.28,
+      1047.99,
+      160.25
+     ],
+     "method": "text-layer",
+     "number": 1,
+     "number_level": "Verified",
+     "read_number": "1",
+     "text": "1 PROVIDE PHOTOCELL ON EXTERIOR FIXTURE. FIXTURE SHALL BE ON DEDICATED SWITCH / AND DARY SKY COMPLAINT, SEE SCHEDULE."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      804.6,
+      167.28,
+      966.19,
+      172.49
+     ],
+     "method": "text-layer",
+     "number": 2,
+     "number_level": "Verified",
+     "read_number": "2",
+     "text": "2 WIRE EMERGENCY LIGHTS TO INTERIOR LIGHTING CIRCUIT."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      804.6,
+      179.34,
+      1048.04,
+      190.49
+     ],
+     "method": "text-layer",
+     "number": 3,
+     "number_level": "Verified",
+     "read_number": "3",
+     "text": "3 PROVIDE OCCUPANCY SENSOR FOR INTERIOR LIGHTING. COMPLY WITH WASHINGTON / STATE ENERGY CODE REQUIREMENTS."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      804.6,
+      197.34,
+      1048.02,
+      220.73
+     ],
+     "method": "text-layer",
+     "number": 4,
+     "number_level": "Verified",
+     "read_number": "4",
+     "text": "4 CONTRACTOR SHALL PROVIDE COMPLETE VENTILATION CONTROL PANEL, INCLUDING / RELAY CONTROLS AND THERMOSTATS FOR EXHAUST FAN AND LOUVER CONTROL. ONE / THERMOSTAT FOR EACH EXHAUST FAN. MOTORIZED LOUVER SHALL OPERATE WHEN / EITHER FAN IS RUNNING."
+    }
+   ],
+   "heading": "KEY NOTES:",
+   "heading_bbox": [
+    812.52,
+    135.18,
+    866.84,
+    144.23
+   ],
+   "heading_method": "text-layer",
+   "highest_marker_read": 4,
+   "line_spacing_p25": 6.12
+  }
+ ],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -6341,14 +6423,655 @@
   "width": 1224.0
  },
  "page_key": "068",
+ "quantities": [
+  {
+   "bbox": [
+    564.02,
+    733.2,
+    567.77,
+    738.23
+   ],
+   "callouts_nearby": [
+    [
+     "0",
+     [
+      549.54,
+      743.4,
+      552.24,
+      747.36
+     ],
+     12.86
+    ],
+    [
+     "2",
+     [
+      585.36,
+      743.4,
+      588.24,
+      747.36
+     ],
+     18.33
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "SCALE: 1\" = 2' AT FULL SCALE",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "2'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "2"
+  },
+  {
+   "bbox": [
+    711.7,
+    320.37,
+    715.43,
+    325.37
+   ],
+   "callouts_nearby": [
+    [
+     "7",
+     [
+      714.96,
+      320.58,
+      715.32,
+      321.84
+     ],
+     0.0
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "NARROW LED 4' FIXTURE, VAPOR",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    712.44,
+    320.58,
+    714.78,
+    324.18
+   ],
+   "callouts_nearby": [
+    [
+     "7",
+     [
+      714.96,
+      320.58,
+      715.32,
+      321.84
+     ],
+     0.18
+    ]
+   ],
+   "conf": 73.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "4’",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "4"
+  }
+ ],
  "schema_version": "1.0",
  "set_page": 68,
  "sheet_01": "E2.2",
  "source": {
   "file": "testbeds/eastsound/library/Pages from eswd-wwtp-upgrade-ph1-11x17-plans - Part 3.pdf",
   "page": 20,
-  "sha256": "ffe9e975ceb153cab60328a2459d826f96f96e0edaa77e0279a1d27e2e6de5fa"
+  "sha256": "ffe9e975ceb153cab60328a2459d826f96f96e0edaa77e0279a1d27e2e6de5fa",
+  "sha256_checked_against": "testbeds/eastsound/index/Library_Manifest.csv"
  },
+ "tags": [
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    149.05,
+    260.12,
+    158.77,
+    265.12
+   ],
+   "candidate_rows": [
+    342
+   ],
+   "conf": null,
+   "form": "UV1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "UV1"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    149.05,
+    268.02,
+    158.77,
+    273.02
+   ],
+   "candidate_rows": [
+    343
+   ],
+   "conf": null,
+   "form": "UV2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "UV2"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    149.05,
+    275.97,
+    158.77,
+    280.97
+   ],
+   "candidate_rows": [
+    342
+   ],
+   "conf": null,
+   "form": "UV1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "UV1"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    149.05,
+    283.87,
+    158.77,
+    288.87
+   ],
+   "candidate_rows": [
+    343
+   ],
+   "conf": null,
+   "form": "UV2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "UV2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    150.84,
+    483.0,
+    162.29,
+    488.03
+   ],
+   "candidate_rows": [
+    275
+   ],
+   "conf": null,
+   "form": "ML-1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    275
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "ML-1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    183.96,
+    244.62,
+    193.32,
+    248.22
+   ],
+   "candidate_rows": [
+    273
+   ],
+   "conf": 92.0,
+   "form": "EF-1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    273
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "EF-1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    183.96,
+    252.54,
+    193.86,
+    256.14
+   ],
+   "candidate_rows": [
+    274
+   ],
+   "conf": 92.0,
+   "form": "EF-2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    274
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "EF-2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    185.4,
+    244.27,
+    196.29,
+    249.27
+   ],
+   "candidate_rows": [
+    273
+   ],
+   "conf": null,
+   "form": "EF-1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    273
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "EF-1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    185.4,
+    252.22,
+    196.29,
+    257.22
+   ],
+   "candidate_rows": [
+    274
+   ],
+   "conf": null,
+   "form": "EF-2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    274
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "EF-2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    331.78,
+    377.01,
+    353.98,
+    384.55
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "(MCC)"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    353.52,
+    582.18,
+    359.67,
+    587.21
+   ],
+   "candidate_rows": [
+    279
+   ],
+   "conf": null,
+   "form": "X1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    279
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "X1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    666.5,
+    323.47,
+    672.06,
+    328.47
+   ],
+   "candidate_rows": [
+    277
+   ],
+   "conf": null,
+   "form": "L1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    277
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "L1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    666.5,
+    358.08,
+    672.61,
+    363.08
+   ],
+   "candidate_rows": [
+    279
+   ],
+   "conf": null,
+   "form": "X1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    279
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "X1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    666.7,
+    340.52,
+    672.26,
+    345.52
+   ],
+   "candidate_rows": [
+    278
+   ],
+   "conf": null,
+   "form": "L2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    278
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "L2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    666.72,
+    323.64,
+    670.86,
+    327.24
+   ],
+   "candidate_rows": [
+    277
+   ],
+   "conf": 87.0,
+   "form": "L1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    277
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "L1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    666.72,
+    340.92,
+    671.4,
+    344.52
+   ],
+   "candidate_rows": [
+    278
+   ],
+   "conf": 93.0,
+   "form": "L2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    278
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "L2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    755.82,
+    438.18,
+    767.27,
+    443.21
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    844.02,
+    438.18,
+    854.64,
+    443.21
+   ],
+   "candidate_rows": [
+    265
+   ],
+   "conf": null,
+   "form": "LP-1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    265
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "LP-1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    851.58,
+    538.08,
+    857.17,
+    543.11
+   ],
+   "candidate_rows": [
+    277
+   ],
+   "conf": null,
+   "form": "L1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    277
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "L1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    867.24,
+    582.36,
+    873.39,
+    587.39
+   ],
+   "candidate_rows": [
+    279
+   ],
+   "conf": null,
+   "form": "X1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    279
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "X1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    867.6,
+    624.48,
+    873.19,
+    629.51
+   ],
+   "candidate_rows": [
+    278
+   ],
+   "conf": null,
+   "form": "L2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    278
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "L2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    969.66,
+    472.92,
+    980.56,
+    477.95
+   ],
+   "candidate_rows": [
+    273
+   ],
+   "conf": null,
+   "form": "EF-1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    273
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "EF-1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    969.66,
+    540.78,
+    980.56,
+    545.81
+   ],
+   "candidate_rows": [
+    274
+   ],
+   "conf": null,
+   "form": "EF-2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    274
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "EF-2"
+  }
+ ],
  "title_01": "BLOWER BUILDING LIGHTING AND HVAC PLAN",
  "title_block": {
   "date": {

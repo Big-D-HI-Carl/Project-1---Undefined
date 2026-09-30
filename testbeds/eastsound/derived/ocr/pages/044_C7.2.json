@@ -14690,9 +14690,12 @@
   ]
  },
  "cited_as": {
-  "basis": "01_Sheet_Index_rev1.md File and PDF p. columns",
+  "basis": "testbeds/eastsound/index/Plan_Set_Crosswalk.csv",
+  "duplicates": [],
   "file": "Pages_from_eswd-wwtp-upgrade-ph1-11x17-plans_6.pdf",
-  "page": 4
+  "indexed_in_01": "Yes",
+  "page": 4,
+  "short_name": "plans_6"
  },
  "counts": {
   "mode3_chars_kept": 467,
@@ -14733,8 +14736,8 @@
   "pytesseract": "0.3.13",
   "python": "3.11.15",
   "schema_version": "1.0",
-  "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script": "testbeds/eastsound/tools/extract_drawing_text.py",
+  "script_sha256": "0e61e19737aa0acd351b04bb1fe1276502ad57f626b99e59df261b62d1bbebd1",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -14753,6 +14756,7 @@
  },
  "governed_by": null,
  "governs": null,
+ "keyed_notes": [],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -14765,14 +14769,413 @@
   "width": 1224.0
  },
  "page_key": "044",
+ "quantities": [
+  {
+   "bbox": [
+    184.97,
+    192.92,
+    195.03,
+    197.92
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "percent",
+   "line_text": "TO 95% OPTIMUM",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "95%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "95"
+  },
+  {
+   "bbox": [
+    186.84,
+    192.96,
+    197.1,
+    196.92
+   ],
+   "callouts_nearby": [],
+   "conf": 83.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "percent",
+   "line_text": "JO. 95% OPTIMUM",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "95%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "95"
+  },
+  {
+   "bbox": [
+    307.46,
+    79.17,
+    330.84,
+    84.17
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "MAX CONTROL JOINT SPACING 12—FEET",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "12-FEET",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "12"
+  },
+  {
+   "bbox": [
+    316.26,
+    79.2,
+    339.12,
+    83.16
+   ],
+   "callouts_nearby": [],
+   "conf": 82.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "MAX CONTROL JOINT SPACING 12—FEET",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "12-FEET",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "12"
+  },
+  {
+   "bbox": [
+    341.3,
+    542.82,
+    408.93,
+    547.82
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "DIA. RODS EXCEPT",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "2-1” DIA. RODS EXCEPT",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "1\" DIA. RODS EXCEPT",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "1"
+  },
+  {
+   "bbox": [
+    341.64,
+    542.16,
+    408.96,
+    546.84
+   ],
+   "callouts_nearby": [],
+   "conf": 92.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "DIA. RODS EXCEPT",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "2-1” DIA. RODS EXCEPT",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "1\" DIA. RODS EXCEPT",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "1"
+  },
+  {
+   "bbox": [
+    353.23,
+    549.57,
+    370.77,
+    554.57
+   ],
+   "callouts_nearby": [
+    [
+     "6",
+     [
+      367.98,
+      572.12,
+      370.76,
+      577.12
+     ],
+     17.55
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "PVC",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "FOR 2” PVC, SEE NOTE 6",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "2\" PVC",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "2"
+  },
+  {
+   "bbox": [
+    353.97,
+    134.62,
+    373.73,
+    139.62
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "MAX EXPANSION JOINT SPACING 36 FEET O.C. EACH",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "36 FEET",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "36"
+  },
+  {
+   "bbox": [
+    360.06,
+    660.42,
+    376.22,
+    665.42
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "PVC",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "6. STAINLESS STEEL BANDING SHALL BE USED AT 2” PVC",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "2\" PVC",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "2"
+  },
+  {
+   "bbox": [
+    362.88,
+    134.64,
+    385.38,
+    138.6
+   ],
+   "callouts_nearby": [],
+   "conf": 92.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "MAX EXPANSION JOINT SPACING 36 FEET O.C. EACH",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "36 FEET",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "36"
+  },
+  {
+   "bbox": [
+    629.75,
+    104.62,
+    667.01,
+    109.62
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "STAINLESS",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "316 STAINLESS STEEL",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "316 STAINLESS",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "316"
+  },
+  {
+   "bbox": [
+    630.0,
+    104.22,
+    673.38,
+    108.36
+   ],
+   "callouts_nearby": [],
+   "conf": 95.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "STAINLESS",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "316 STAINLESS STEEL",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "316 STAINLESS",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "316"
+  },
+  {
+   "bbox": [
+    867.85,
+    311.47,
+    942.44,
+    316.47
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "DIA. S.S. CONC. ANCHORS",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "1/2\" DIA. S.S. CONC. ANCHORS",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "1/2\" DIA. S.S. CONC. ANCHORS",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "1/2"
+  },
+  {
+   "bbox": [
+    868.5,
+    311.04,
+    951.48,
+    316.62
+   ],
+   "callouts_nearby": [],
+   "conf": 84.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "DIA. S.S. CONC. ANCHORS",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "1/2” DIA. S.S. CONC. ANCHORS",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "1/2\" DIA. S.S. CONC. ANCHORS",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "1/2"
+  },
+  {
+   "bbox": [
+    919.45,
+    198.22,
+    956.71,
+    203.22
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "STAINLESS",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "316 STAINLESS STEEL",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "316 STAINLESS",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "316"
+  },
+  {
+   "bbox": [
+    919.8,
+    198.0,
+    963.18,
+    202.14
+   ],
+   "callouts_nearby": [],
+   "conf": 94.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "STAINLESS",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "316 STAINLESS STEEL",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "316 STAINLESS",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "316"
+  }
+ ],
  "schema_version": "1.0",
  "set_page": 44,
  "sheet_01": "C7.2",
  "source": {
   "file": "testbeds/eastsound/library/Pages from eswd-wwtp-upgrade-ph1-11x17-plans Part 2.pdf",
   "page": 17,
-  "sha256": "1176b4b114c25cd51383cb47896d5a651e4eb0f3363d17d651269f3d2a15dd84"
+  "sha256": "1176b4b114c25cd51383cb47896d5a651e4eb0f3363d17d651269f3d2a15dd84",
+  "sha256_checked_against": "testbeds/eastsound/index/Library_Manifest.csv"
  },
+ "tags": [],
  "title_01": "CIVIL DETAILS",
  "title_block": {
   "date": {

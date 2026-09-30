@@ -4502,9 +4502,12 @@
   ]
  },
  "cited_as": {
-  "basis": "01_Sheet_Index_rev1.md File and PDF p. columns",
+  "basis": "testbeds/eastsound/index/Plan_Set_Crosswalk.csv",
+  "duplicates": [],
   "file": "Pages_from_eswd-wwtp-upgrade-ph1-11x17-plans_5.pdf",
-  "page": 1
+  "indexed_in_01": "Yes",
+  "page": 1,
+  "short_name": "plans_5"
  },
  "counts": {
   "mode3_chars_kept": 299,
@@ -4545,8 +4548,8 @@
   "pytesseract": "0.3.13",
   "python": "3.11.15",
   "schema_version": "1.0",
-  "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script": "testbeds/eastsound/tools/extract_drawing_text.py",
+  "script_sha256": "0e61e19737aa0acd351b04bb1fe1276502ad57f626b99e59df261b62d1bbebd1",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -4565,6 +4568,7 @@
  },
  "governed_by": null,
  "governs": null,
+ "keyed_notes": [],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -4577,14 +4581,257 @@
   "width": 1224.0
  },
  "page_key": "033",
+ "quantities": [
+  {
+   "bbox": [
+    188.61,
+    555.74,
+    231.25,
+    561.74
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "BALL VALVE",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "— 1” BALL VALVE",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "1\" BALL VALVE",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "1"
+  },
+  {
+   "bbox": [
+    188.64,
+    555.84,
+    229.86,
+    560.52
+   ],
+   "callouts_nearby": [],
+   "conf": 91.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "BALL VALVE",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "1” BALL VALVE",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "1\" BALL VALVE",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "1"
+  },
+  {
+   "bbox": [
+    284.9,
+    419.64,
+    342.25,
+    425.64
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "SCH 80 PVC PIPE",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "1\" SCH 80 PVC PIPE (TYP)",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "1\" SCH 80 PVC PIPE",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "1"
+  },
+  {
+   "bbox": [
+    285.3,
+    419.58,
+    346.32,
+    424.26
+   ],
+   "callouts_nearby": [],
+   "conf": 94.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "SCH 80 PVC PIPE",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "1” SCH 80 PVC PIPE (TYP)",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "1\" SCH 80 PVC PIPE",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "1"
+  },
+  {
+   "bbox": [
+    287.82,
+    491.76,
+    315.54,
+    496.44
+   ],
+   "callouts_nearby": [],
+   "conf": 44.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "FF=23.30'",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "23.30'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "23.30"
+  },
+  {
+   "bbox": [
+    288.0,
+    491.89,
+    315.16,
+    497.89
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "FF=23.30‘",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "23.30'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "23.30"
+  },
+  {
+   "bbox": [
+    577.2,
+    530.79,
+    609.69,
+    536.79
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "TOC=23.30‘",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "23.30'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "23.30"
+  },
+  {
+   "bbox": [
+    577.44,
+    530.64,
+    609.84,
+    535.32
+   ],
+   "callouts_nearby": [],
+   "conf": 71.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "TOC=23.30’ [|",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "23.30'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "23.30"
+  }
+ ],
  "schema_version": "1.0",
  "set_page": 33,
  "sheet_01": "C4.3",
  "source": {
   "file": "testbeds/eastsound/library/Pages from eswd-wwtp-upgrade-ph1-11x17-plans Part 2.pdf",
   "page": 6,
-  "sha256": "1176b4b114c25cd51383cb47896d5a651e4eb0f3363d17d651269f3d2a15dd84"
+  "sha256": "1176b4b114c25cd51383cb47896d5a651e4eb0f3363d17d651269f3d2a15dd84",
+  "sha256_checked_against": "testbeds/eastsound/index/Library_Manifest.csv"
  },
+ "tags": [
+  {
+   "assignment": "assigned",
+   "bbox": [
+    94.9,
+    408.39,
+    119.89,
+    414.39
+   ],
+   "candidate_rows": [
+    176
+   ],
+   "conf": null,
+   "form": "PIT-620",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    176
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "PIT-620)."
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    96.84,
+    408.24,
+    123.3,
+    414.18
+   ],
+   "candidate_rows": [
+    176
+   ],
+   "conf": 42.0,
+   "form": "PIT-620",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    176
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "PIT-620)."
+  }
+ ],
  "title_01": "2W EQUIPMENT LAYOUT",
  "title_block": {
   "date": {

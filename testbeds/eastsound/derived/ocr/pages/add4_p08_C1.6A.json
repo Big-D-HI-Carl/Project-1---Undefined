@@ -4,9 +4,12 @@
   "words": []
  },
  "cited_as": {
-  "basis": "01_Sheet_Index_rev1.md page-level log",
+  "basis": "testbeds/eastsound/index/01_Sheet_Index_rev1.md page-level log (Plan_Set_Crosswalk.csv covers set pages only)",
+  "duplicates": [],
   "file": "addendum-no4-eswd.pdf",
-  "page": 8
+  "indexed_in_01": "Yes (page-level log)",
+  "page": 8,
+  "short_name": "Add. 4"
  },
  "counts": {
   "mode3_chars_kept": 0,
@@ -47,8 +50,8 @@
   "pytesseract": "0.3.13",
   "python": "3.11.15",
   "schema_version": "1.0",
-  "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script": "testbeds/eastsound/tools/extract_drawing_text.py",
+  "script_sha256": "0e61e19737aa0acd351b04bb1fe1276502ad57f626b99e59df261b62d1bbebd1",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -68,6 +71,7 @@
  "governed_by": null,
  "governs": null,
  "governs_status": "Unresolved: no base page in the 96-sheet set; 01 lists C1.6A as issued by addendum only (base issue cites Addendum 3, not in library)",
+ "keyed_notes": [],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -80,24 +84,292 @@
   "width": 1224.0
  },
  "page_key": "add4_p08",
+ "quantities": [
+  {
+   "bbox": [
+    40.29,
+    343.37,
+    109.23,
+    359.86
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "WAS FROM",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "2\" WAS from",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "2\" WAS FROM",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "2"
+  },
+  {
+   "bbox": [
+    72.04,
+    28.75,
+    170.32,
+    45.24
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "2W WATER PIPE.",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "3\" 2W Water Pipe.",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "3\" 2W WATER PIPE.",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "3"
+  },
+  {
+   "bbox": [
+    123.09,
+    296.24,
+    218.05,
+    312.73
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "WAS PIPE FROM",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "2\" WAS pipe from",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "2\" WAS PIPE FROM",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "2"
+  },
+  {
+   "bbox": [
+    130.07,
+    43.15,
+    162.34,
+    59.64
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "2W",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "Reduce to 2\" 2W",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "2\" 2W",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "2"
+  },
+  {
+   "bbox": [
+    289.35,
+    206.5,
+    419.02,
+    222.99
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "DIGESTED SLUDGE PIPE",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "2\" Digested Sludge Pipe",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "2\" DIGESTED SLUDGE PIPE",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "2"
+  },
+  {
+   "bbox": [
+    300.04,
+    81.47,
+    394.99,
+    97.96
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "2W WATER PIPE",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "2\" 2W Water Pipe",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "2\" 2W WATER PIPE",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "2"
+  },
+  {
+   "bbox": [
+    371.69,
+    651.01,
+    453.98,
+    667.5
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "AIR PIPE FROM",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "4\" Air pipe from",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4\" AIR PIPE FROM",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    489.96,
+    659.47,
+    557.57,
+    675.96
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "2W WATER",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "1\" 2W Water",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "1\" 2W WATER",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "1"
+  },
+  {
+   "bbox": [
+    503.3,
+    700.87,
+    561.59,
+    717.36
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "2W PIPE",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "to 3\" 2W pipe",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "3\" 2W PIPE",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "3"
+  },
+  {
+   "bbox": [
+    564.26,
+    23.95,
+    685.24,
+    40.44
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "PRESSATE DRAIN PIPE",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "4\" Pressate Drain Pipe",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4\" PRESSATE DRAIN PIPE",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    637.35,
+    325.7,
+    739.67,
+    342.19
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "DIGESTED SLUDGE",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "2\" Digested Sludge",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "2\" DIGESTED SLUDGE",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "2"
+  }
+ ],
  "schema_version": "1.0",
  "set_page": null,
  "sheet_01": "C1.6A",
  "source": {
   "file": "testbeds/eastsound/library/addendum-no4-eswd.pdf",
   "page": 8,
-  "sha256": "cf065e9d2897727a39c452ea4b59e8acf6bb8c4d91a314ff648025e91dcdecd6"
+  "sha256": "cf065e9d2897727a39c452ea4b59e8acf6bb8c4d91a314ff648025e91dcdecd6",
+  "sha256_checked_against": "testbeds/eastsound/index/Library_Manifest.csv"
  },
+ "tags": [],
  "title_01": "BURIED PIPING IN BUILDING",
  "title_block": {
   "date": {
    "bbox": [
     1131.48,
     675.72,
-    1143.36,
-    765.36
+    1136.52,
+    711.72
    ],
-   "conf": 82.0,
+   "conf": 96.0,
    "method": "ocr",
    "strip_dpi": 200,
    "value": "NOV 2, 2022"

@@ -9812,9 +9812,18 @@
   ]
  },
  "cited_as": {
-  "basis": "01_Sheet_Index_rev1.md File and PDF p. columns",
+  "basis": "testbeds/eastsound/index/Plan_Set_Crosswalk.csv",
+  "duplicates": [
+   {
+    "file": "Pages_from_eswd-wwtp-upgrade-ph1-11x17-plans_7.pdf",
+    "indexed_in_01": "No (duplicate of plans_6, decision 2)",
+    "page": 1
+   }
+  ],
   "file": "Pages_from_eswd-wwtp-upgrade-ph1-11x17-plans_6.pdf",
-  "page": 6
+  "indexed_in_01": "Yes",
+  "page": 6,
+  "short_name": "plans_6"
  },
  "counts": {
   "mode3_chars_kept": 331,
@@ -9855,8 +9864,8 @@
   "pytesseract": "0.3.13",
   "python": "3.11.15",
   "schema_version": "1.0",
-  "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script": "testbeds/eastsound/tools/extract_drawing_text.py",
+  "script_sha256": "0e61e19737aa0acd351b04bb1fe1276502ad57f626b99e59df261b62d1bbebd1",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -9875,6 +9884,113 @@
  },
  "governed_by": null,
  "governs": null,
+ "keyed_notes": [
+  {
+   "bbox": [
+    975.6,
+    94.32,
+    1094.76,
+    298.26
+   ],
+   "count_check": "no marker read; by-order numbers cannot be checked against a marker",
+   "entries": [
+    {
+     "basis": "by order",
+     "bbox": [
+      975.6,
+      106.2,
+      1067.58,
+      110.16
+     ],
+     "method": "ocr",
+     "number": 1,
+     "number_level": "Inferred",
+     "read_number": null,
+     "text": "A. HYDROSEED EXPOSED AREAS."
+    },
+    {
+     "basis": "by order",
+     "bbox": [
+      975.6,
+      118.26,
+      1086.84,
+      162.62
+     ],
+     "method": "bluebeam-ocr",
+     "number": 2,
+     "number_level": "Inferred",
+     "read_number": null,
+     "text": "B. GRAVEL: NEW CRUSHED SURFACING / TOP COURSE (CSTC) LAYER PER PER / WSDOT 9-03.9(3). / PAVED: HMA CL CL 1/2” APPLIED IN 2 / LIFTS MIN. TO TO THICKNESS MATCHING / EX. SECTION (4” (4” MIN.) MIN.) PER WSDOT / 5-04.2, WITH WITH"
+    },
+    {
+     "basis": "by order",
+     "bbox": [
+      975.6,
+      170.28,
+      1065.6,
+      175.37
+     ],
+     "method": "bluebeam-ocr",
+     "number": 3,
+     "number_level": "Inferred",
+     "read_number": null,
+     "text": "C. NEW TOPSOIL LAYER MIN MIN 4”."
+    },
+    {
+     "basis": "by order",
+     "bbox": [
+      975.6,
+      182.34,
+      1091.16,
+      248.4
+     ],
+     "method": "bluebeam-ocr",
+     "number": 4,
+     "number_level": "Inferred",
+     "read_number": null,
+     "text": "D. 2” METALLIC DETECTOR TAPE 8” TO / 12” BELOW FINISH GRADE. / BANK RUN GRAVEL BACKFILL PER / WSDOT 9-03.19 COMPACTED TO 95% / MAX. DENSITY INSIDE RIGHT-OF-WAY. / PIPE ZONE GRAVEL BEDDING PER PER / WSDOT 9-03.12(3) COMPACTED TO / 95% MAX. DENSITY."
+    },
+    {
+     "basis": "by order",
+     "bbox": [
+      975.6,
+      256.32,
+      1075.14,
+      260.28
+     ],
+     "method": "ocr",
+     "number": 5,
+     "number_level": "Inferred",
+     "read_number": null,
+     "text": "G. UNDISTURBED NATIVE MATERIAL."
+    },
+    {
+     "basis": "by order",
+     "bbox": [
+      975.6,
+      268.38,
+      1094.76,
+      298.26
+     ],
+     "method": "ocr",
+     "number": 6,
+     "number_level": "Inferred",
+     "read_number": null,
+     "text": "H. SELECT NATIVE BACKFILL COMPACTED / TO 95% MAX. DENSITY. / #10 AWG INSULATED TRACER WIRE ON / NONMETALLIC PIPE (IN ADDITION TO 2”"
+    }
+   ],
+   "heading": "KEYED NOTES",
+   "heading_bbox": [
+    975.6,
+    94.32,
+    1012.68,
+    98.28
+   ],
+   "heading_method": "ocr",
+   "highest_marker_read": null,
+   "line_spacing_p25": 6.39
+  }
+ ],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -9887,14 +10003,535 @@
   "width": 1224.0
  },
  "page_key": "046",
+ "quantities": [
+  {
+   "bbox": [
+    116.4,
+    581.97,
+    138.33,
+    586.97
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "BARS",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "#3 BARS, LAP-",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "3 BARS",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "3"
+  },
+  {
+   "bbox": [
+    116.46,
+    582.12,
+    140.04,
+    586.98
+   ],
+   "callouts_nearby": [],
+   "conf": 93.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "BARS",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "#3 BARS, LAP",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "3 BARS",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "3"
+  },
+  {
+   "bbox": [
+    167.13,
+    312.42,
+    195.28,
+    317.42
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "ELEV",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "elevation",
+   "line_text": "WATER SURFACE ELEV=25.3±",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "ELEV=25.3",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "25.3"
+  },
+  {
+   "bbox": [
+    170.46,
+    312.3,
+    203.04,
+    316.26
+   ],
+   "callouts_nearby": [],
+   "conf": 37.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "ELEV",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "elevation",
+   "line_text": "WATER SURFACE ELEV=25.34",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "ELEV=25.34",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "25.34"
+  },
+  {
+   "bbox": [
+    483.77,
+    694.77,
+    493.83,
+    699.77
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "percent",
+   "line_text": "2/ TO 95% OPTIMUM <",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "95%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "95"
+  },
+  {
+   "bbox": [
+    513.72,
+    693.36,
+    524.16,
+    697.32
+   ],
+   "callouts_nearby": [],
+   "conf": 96.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "percent",
+   "line_text": "TO 95% OPTIMUM",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "95%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "95"
+  },
+  {
+   "bbox": [
+    586.44,
+    576.22,
+    606.42,
+    581.22
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "JOINT SPACING 12-FEET O.C. EACH WAY.",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "12-FEET",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "12"
+  },
+  {
+   "bbox": [
+    591.84,
+    576.0,
+    614.52,
+    579.96
+   ],
+   "callouts_nearby": [],
+   "conf": 73.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "JOINT SPACING 12—FEET O.C. EACH WAY.",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "12-FEET",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "12"
+  },
+  {
+   "bbox": [
+    671.23,
+    625.87,
+    690.98,
+    630.87
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "MAX EXPANSION JOINT SPACING 36 FEET O.C. EACH",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "36 FEET",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "36"
+  },
+  {
+   "bbox": [
+    680.04,
+    625.68,
+    702.54,
+    629.64
+   ],
+   "callouts_nearby": [],
+   "conf": 93.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "MAX EXPANSION JOINT SPACING 36 FEET 0.C. EACH",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "36 FEET",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "36"
+  },
+  {
+   "bbox": [
+    986.15,
+    244.52,
+    996.16,
+    249.52
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [
+    [
+     367.2,
+     62.46,
+     372.24,
+     68.22
+    ],
+    [
+     415.68,
+     742.38,
+     423.89,
+     757.15
+    ]
+   ],
+   "keyed_note": "4 (by order; Inferred)",
+   "kind": "percent",
+   "line_text": "95% MAX. DENSITY.",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "95%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "95"
+  },
+  {
+   "bbox": [
+    986.4,
+    244.44,
+    996.84,
+    248.4
+   ],
+   "callouts_nearby": [],
+   "conf": 96.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [
+    [
+     367.2,
+     62.46,
+     372.24,
+     68.22
+    ],
+    [
+     415.68,
+     742.38,
+     423.89,
+     757.15
+    ]
+   ],
+   "keyed_note": "4 (by order; Inferred)",
+   "kind": "percent",
+   "line_text": "95% MAX. DENSITY.",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "95%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "95"
+  },
+  {
+   "bbox": [
+    994.72,
+    274.52,
+    1004.73,
+    279.52
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": "6 (by order; Inferred)",
+   "kind": "percent",
+   "line_text": "TO 95% MAX. DENSITY.",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "95%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "95"
+  },
+  {
+   "bbox": [
+    996.48,
+    274.32,
+    1006.92,
+    278.28
+   ],
+   "callouts_nearby": [],
+   "conf": 96.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": "6 (by order; Inferred)",
+   "kind": "percent",
+   "line_text": "TO 95% MAX. DENSITY.",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "95%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "95"
+  },
+  {
+   "bbox": [
+    1015.08,
+    680.62,
+    1055.68,
+    685.62
+   ],
+   "callouts_nearby": [
+    [
+     "2",
+     [
+      987.35,
+      648.71,
+      996.8,
+      665.71
+     ],
+     23.59
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "CONTINUOUS",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "4~ #3 CONTINUOUS",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "3 CONTINUOUS",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "3"
+  },
+  {
+   "bbox": [
+    1019.16,
+    680.4,
+    1062.72,
+    685.62
+   ],
+   "callouts_nearby": [],
+   "conf": 96.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "CONTINUOUS",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "4~ #3 CONTINUOUS",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "3 CONTINUOUS",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "3"
+  },
+  {
+   "bbox": [
+    1066.19,
+    213.82,
+    1076.19,
+    218.82
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [
+    [
+     367.2,
+     62.46,
+     372.24,
+     68.22
+    ],
+    [
+     415.68,
+     742.38,
+     423.89,
+     757.15
+    ]
+   ],
+   "keyed_note": "4 (by order; Inferred)",
+   "kind": "percent",
+   "line_text": "WSDOT 9-03.19 COMPACTED TO 95%",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "95%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "95"
+  },
+  {
+   "bbox": [
+    1079.28,
+    213.66,
+    1089.72,
+    217.62
+   ],
+   "callouts_nearby": [],
+   "conf": 96.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [
+    [
+     367.2,
+     62.46,
+     372.24,
+     68.22
+    ],
+    [
+     415.68,
+     742.38,
+     423.89,
+     757.15
+    ]
+   ],
+   "keyed_note": "4 (by order; Inferred)",
+   "kind": "percent",
+   "line_text": "WSDOT 9-03.19 COMPACTED TO 95%",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "95%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "95"
+  }
+ ],
  "schema_version": "1.0",
  "set_page": 46,
  "sheet_01": "C7.4",
  "source": {
   "file": "testbeds/eastsound/library/Pages from eswd-wwtp-upgrade-ph1-11x17-plans Part 2.pdf",
   "page": 19,
-  "sha256": "1176b4b114c25cd51383cb47896d5a651e4eb0f3363d17d651269f3d2a15dd84"
+  "sha256": "1176b4b114c25cd51383cb47896d5a651e4eb0f3363d17d651269f3d2a15dd84",
+  "sha256_checked_against": "testbeds/eastsound/index/Library_Manifest.csv"
  },
+ "tags": [
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    682.3,
+    149.89,
+    736.99,
+    207.89
+   ],
+   "candidate_rows": [
+    191
+   ],
+   "conf": null,
+   "form": "S1",
+   "fuzzy": true,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "Si"
+  }
+ ],
  "title_01": "CIVIL DETAILS",
  "title_block": {
   "date": {

@@ -67,6 +67,85 @@ Append-only. Decisions made by a person, in the format in AGENTS.md. Never edit 
 - Why: Stated in this session: "Don't edit Library_Fingerprint.csv; it records the Claude Project's converted copies. Write index/Library_Manifest.csv for the natives: path, bytes, SHA-256, page count, and source URL where known."
 - Replaces: none
 
+## 2026-09-30 — Bluebeam OCR hits go into Tag_Hits and Quantity_Hits, still Inferred
+- Decided by: Carl
+- Why: Stated in the Prompt 7 rev1 amendments: "Bluebeam block: take the render-mode-3 text in the OCR copies, minus any word that matches a native word in the same spot. Bluebeam reads all 10 SDCB labels on C2.1, so its hits go into Tag_Hits and Quantity_Hits as method bluebeam-ocr, still Inferred. Log this as my decision; it replaces the comparison-only rule of 2026-09-30."
+- Replaces: 2026-09-30 "Bluebeam OCR copies count as OCR (Inferred) and are a comparison column only". Only the comparison-only part is replaced; Bluebeam text stays Inferred and never counts as a text layer.
+
+## 2026-09-30 — OCR lane: OCR every page; no thin-page gate
+- Decided by: Carl
+- Why: Stated in the Prompt 7 rev1 amendments: "Drop the thin-page gate. OCR every page and merge the result with the text layer by box overlap; the text layer wins where both exist." 01's 300-character threshold was measured on the Claude Project image bundles, not the natives. Mid-session: "keep both passes on every page and merge by overlap with the higher confidence."
+- Replaces: none
+
+## 2026-09-30 — Spot_Check.csv columns
+- Decided by: Carl
+- Why: Stated in this session: "Use Spot_Check_Schema's 12 columns first, in this order: Pick No., Ledger Row, Tag, Name, What to Check, Source Citation, Confidence Tag, Read Method, Human Result, Checked By, Date, Note. Then append: Set Page, BBox (pt), Word Read, Confidence, Crop Path." Also: "Human Result and Checked By stay blank."
+- Replaces: none
+
+## 2026-09-30 — OCR lane Gate A: tag search and assignment rules
+- Decided by: Carl
+- Why: Stated in this session:
+  - "Short forms (3 characters or fewer, e.g. TS, DB, LT, L1, X1, T2) count as hits only on the row's cited sheets. Anywhere else, list them in the crosswalk as "off-citation, short form" and leave them out of the found counts."
+  - "Shared forms: assign each hit to the row whose Lane matches the sheet's discipline (SD-1 on C sheets → Civil row; on E sheets → Electrical row). If that still doesn't settle it, list every candidate row and mark the hit ambiguous."
+  - "Keep "(E)" as a qualifier. A hit counts for GEN (E) only when "(E)" or "EXIST" is on the same line; otherwise it counts for GEN."
+  - "Ranges: a hit goes to the individual row first (F1…F4); the range row gets the rollup."
+  - Unmatched-tag shapes: "OK."
+- Replaces: none
+
+## 2026-09-30 — OCR lane Gate A: quantity patterns and nearest-tag distance
+- Decided by: Carl
+- Why: Stated in this session:
+  - "Keep FT as its own unit. Only L=nnn' converts to LF. A foot mark before a material word (6' CHAIN LINK) is a dimension, not a quantity."
+  - "Count "@ n%" after an LF quantity as a slope (profiles: 39 LF @ 0.5%)."
+  - "Accept units attached with no space (21LF)."
+  - "Add SUMP to the elevation keywords."
+  - "Nearest-tag distance: 24 pt edge to edge. OK."
+- Replaces: none
+
+## 2026-09-30 — OCR lane Gate A: keyed-note numbering levels
+- Decided by: Carl
+- Why: Stated in this session: "Keyed notes: OK. Every "by order" number is Inferred. If a sheet's entry count doesn't match its highest marker read, mark that sheet's by-order numbers Unresolved."
+- Replaces: none
+
+## 2026-09-30 — OCR lane Gate A: PROPOSED anchor levels and the match term
+- Decided by: Carl
+- Why: Stated in this session:
+  - "Verified: the anchor was found in the native text layer and its text contains the row's quantity, or a key noun from the Ledger Name."
+  - "Inferred: the same match, read by OCR or Bluebeam."
+  - "Unresolved: the anchor wasn't found, or it was found but its text doesn't match."
+  - Follow-up: "when the Ledger row has a quantity, the match needs the quantity (value + unit), not just a noun. Use a noun match only for rows with no quantity, and only with nouns that aren't generic (not PIPE, VALVE, CONCRETE, FENCE, WALL, LINE, and the like). Record the matched term in the crosswalk, and put the stopword and generic-noun lists in the README so I can review them."
+- Replaces: none
+
+## 2026-09-30 — OCR lane: sheet-only anchors are Verified only for a quantity in the text layer
+- Decided by: Carl
+- Why: Stated in this session: "Tighten sheet-only anchors: a row with no KN/Det/Add. anchor can be Verified only when its quantity (value + unit) is found on the cited sheet in the text layer. A noun match anywhere on the sheet is Inferred ("on sheet, location not pinned"). Report the new counts per anchor and per row."
+- Replaces: the sheet-only part of 2026-09-30 "OCR lane Gate A: PROPOSED anchor levels and the match term".
+
+## 2026-09-30 — The OCR extractor moves to testbeds/eastsound/tools/; cited_as and source checks come from index/
+- Decided by: Carl
+- Why: Stated in this session: "Move tools/extract_drawing_text.py to testbeds/eastsound/tools/ with git mv (DECISIONS.md puts test bed tools there) and update any path it records." And: "Take cited_as from index/Plan_Set_Crosswalk.csv. Check every source SHA-256 against index/Library_Manifest.csv and stop on a mismatch."
+- Replaces: none
+
+## 2026-09-30 — AGENTS.md: OCR copies are Inferred only and may feed tag and quantity leads
+- Decided by: Carl
+- Why: Stated in this session: "AGENTS.md: approved as proposed: "OCR copies are Inferred only. They may feed tag and quantity leads (method bluebeam-ocr), never a text layer or a Verified read." Update the Bluebeam README to match."
+- Replaces: the AGENTS.md sentence "OCR copies are a comparison column only" (see also 2026-09-30 "Bluebeam OCR hits go into Tag_Hits and Quantity_Hits, still Inferred").
+
+## 2026-09-30 — Only the Audit_Ledger and Spot_Check schemas are missing; Carl uploads them
+- Decided by: Carl
+- Why: Stated in this session: "Schemas: Ledger_Schema.csv and Requirements_Schema.csv are already in index/. Only Audit_Ledger and Spot_Check are missing; I'll upload them. Correct the ISSUES_LOG entry."
+- Replaces: none
+
+## 2026-09-30 — checks.py: the ledger check covers only Ledgers under project/ and lanes/
+- Decided by: Carl
+- Why: Chose "Narrow the checks.py glob" when `derived/ocr/Ledger_Crosswalk.csv` failed the ledger rule. The option read: "Change is_ledger() to cover only Ledger files under project/ and lanes/, in its own commit".
+- Replaces: none
+
+## 2026-09-30 — Replace the bad branch-update commit on the OCR lane branch
+- Decided by: Carl
+- Why: Stated in this session: "Let the test that's running finish, then follow the status brief and addendum to replace the bad commit on this branch and push." The commit is a8694d8, the GitHub "Update branch" merge that dropped main's log entries. It was replaced with a force-push (with lease), a one-time exception to AGENTS.md rule 8.
+- Replaces: none
+
 ## 2026-09-30 — The repo stays public; public-source material and repo-work notes only until Big-D approves this host
 - Decided by: Carl
 - Why: Stated in `prompts/01_bootstrap_guardrails.md` §7, which Carl had this session run: "The repo stays public. Public-source material and repo-work notes only until Big-D approves this host." It restates the earlier 2026-09-30 entry "The repo stays public" and adds the data limit.

@@ -9092,9 +9092,12 @@
   ]
  },
  "cited_as": {
-  "basis": "01_Sheet_Index_rev1.md File and PDF p. columns",
+  "basis": "testbeds/eastsound/index/Plan_Set_Crosswalk.csv",
+  "duplicates": [],
   "file": "Pages_from_eswd-wwtp-upgrade-ph1-11x17-plans_3Part-8.pdf",
-  "page": 1
+  "indexed_in_01": "Yes",
+  "page": 1,
+  "short_name": "plans_3Part-8"
  },
  "counts": {
   "mode3_chars_kept": 149,
@@ -9135,8 +9138,8 @@
   "pytesseract": "0.3.13",
   "python": "3.11.15",
   "schema_version": "1.0",
-  "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script": "testbeds/eastsound/tools/extract_drawing_text.py",
+  "script_sha256": "0e61e19737aa0acd351b04bb1fe1276502ad57f626b99e59df261b62d1bbebd1",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -9155,6 +9158,85 @@
  },
  "governed_by": null,
  "governs": null,
+ "keyed_notes": [
+  {
+   "bbox": [
+    58.5,
+    394.02,
+    185.58,
+    481.86
+   ],
+   "count_check": "entry count 4 matches the highest marker read",
+   "entries": [
+    {
+     "basis": "read",
+     "bbox": [
+      59.22,
+      400.86,
+      160.2,
+      411.12
+     ],
+     "method": "ocr",
+     "number": 1,
+     "number_level": "Inferred",
+     "read_number": "1",
+     "text": "(1) = BLOCK RETAINING WALL PER"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      58.5,
+      417.78,
+      185.58,
+      437.45
+     ],
+     "method": "bluebeam-ocr",
+     "number": 2,
+     "number_level": "Inferred",
+     "read_number": "2",
+     "text": "(2) = PROVIDE WATERPROOF EXPANSIVE EXPANSIVE / FOAM TO TO FILL GAP BETWEEN PROPOSED / AND EXISTING WALLS WALLS"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      58.5,
+      439.75,
+      169.02,
+      460.0
+     ],
+     "method": "bluebeam-ocr",
+     "number": 3,
+     "number_level": "Inferred",
+     "read_number": "3",
+     "text": "(3) = = RELOCATED POWER POWER & / CC COMMUNICATIONS AS NEEDED PER / DEMOLITION PLAN PLAN"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      58.5,
+      462.24,
+      155.34,
+      481.86
+     ],
+     "method": "bluebeam-ocr",
+     "number": 4,
+     "number_level": "Inferred",
+     "read_number": "4",
+     "text": "(4) = LF 126 6’ LF OF / — CONNECT CONNECT TO EXISTING FENCE / PER SPECIFICATIONS"
+    }
+   ],
+   "heading": "KEYED NOTES",
+   "heading_bbox": [
+    73.26,
+    394.02,
+    112.68,
+    401.4
+   ],
+   "heading_method": "ocr",
+   "highest_marker_read": 4,
+   "line_spacing_p25": 5.94
+  }
+ ],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -9167,14 +9249,225 @@
   "width": 1224.0
  },
  "page_key": "024",
+ "quantities": [
+  {
+   "bbox": [
+    63.2,
+    235.9,
+    67.2,
+    241.41
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "10’ EASEMENT",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "10'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "10"
+  },
+  {
+   "bbox": [
+    69.69,
+    466.6,
+    82.35,
+    470.6
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [
+    [
+     623.3,
+     131.05,
+     626.3,
+     137.05
+    ],
+    [
+     127.2,
+     174.75,
+     130.2,
+     180.75
+    ],
+    [
+     163.08,
+     169.02,
+     172.8,
+     180.9
+    ],
+    [
+     1009.62,
+     684.54,
+     1013.94,
+     687.78
+    ]
+   ],
+   "keyed_note": "4 (read; Inferred)",
+   "kind": "length",
+   "line_text": "(4) = 126 LF OF 6’ CHAIN LINK FENCE.",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "126 LF",
+   "tag_level": "Inferred",
+   "unit": "LF",
+   "value": "126"
+  },
+  {
+   "bbox": [
+    81.54,
+    465.66,
+    100.26,
+    469.98
+   ],
+   "callouts_nearby": [],
+   "conf": 92.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [
+    [
+     623.3,
+     131.05,
+     626.3,
+     137.05
+    ],
+    [
+     127.2,
+     174.75,
+     130.2,
+     180.75
+    ],
+    [
+     163.08,
+     169.02,
+     172.8,
+     180.9
+    ],
+    [
+     1009.62,
+     684.54,
+     1013.94,
+     687.78
+    ]
+   ],
+   "keyed_note": "4 (read; Inferred)",
+   "kind": "length",
+   "line_text": "(4) = 126 LF OF",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "126 LF",
+   "tag_level": "Inferred",
+   "unit": "LF",
+   "value": "126"
+  }
+ ],
  "schema_version": "1.0",
  "set_page": 24,
  "sheet_01": "C2.5",
  "source": {
   "file": "testbeds/eastsound/library/Pages from eswd-wwtp-upgrade-ph1-11x17-plans Part 1.pdf",
   "page": 24,
-  "sha256": "9ca45d82bf86d16d3e2ce57eb76dccf597c497a7dc7f062fc7a171c4bc2c8d57"
+  "sha256": "9ca45d82bf86d16d3e2ce57eb76dccf597c497a7dc7f062fc7a171c4bc2c8d57",
+  "sha256_checked_against": "testbeds/eastsound/index/Library_Manifest.csv"
  },
+ "tags": [
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    630.36,
+    151.74,
+    641.52,
+    170.46
+   ],
+   "candidate_rows": [
+    277
+   ],
+   "conf": 0.0,
+   "form": "L1",
+   "fuzzy": true,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "li"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    920.88,
+    355.14,
+    929.34,
+    362.34
+   ],
+   "candidate_rows": [
+    296
+   ],
+   "conf": 7.0,
+   "form": "LT",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "Lt"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    922.55,
+    343.41,
+    930.54,
+    352.41
+   ],
+   "candidate_rows": [
+    191
+   ],
+   "conf": null,
+   "form": "S1",
+   "fuzzy": true,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "Si"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    1004.65,
+    650.34,
+    1008.65,
+    655.9
+   ],
+   "candidate_rows": [
+    191
+   ],
+   "conf": null,
+   "form": "S1",
+   "fuzzy": true,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "51."
+  }
+ ],
  "title_01": "RETAINING WALL PLAN & PROFILE",
  "title_block": {
   "date": {

@@ -21656,9 +21656,12 @@
   ]
  },
  "cited_as": {
-  "basis": "01_Sheet_Index_rev1.md File and PDF p. columns",
+  "basis": "testbeds/eastsound/index/Plan_Set_Crosswalk.csv",
+  "duplicates": [],
   "file": "Pages_from_eswd-wwtp-upgrade-ph1-11x17-plans_10.pdf",
-  "page": 4
+  "indexed_in_01": "Yes",
+  "page": 4,
+  "short_name": "plans_10"
  },
  "counts": {
   "mode3_chars_kept": 0,
@@ -21699,8 +21702,8 @@
   "pytesseract": "0.3.13",
   "python": "3.11.15",
   "schema_version": "1.0",
-  "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script": "testbeds/eastsound/tools/extract_drawing_text.py",
+  "script_sha256": "0e61e19737aa0acd351b04bb1fe1276502ad57f626b99e59df261b62d1bbebd1",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -21719,6 +21722,7 @@
  },
  "governed_by": null,
  "governs": null,
+ "keyed_notes": [],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -21731,14 +21735,3356 @@
   "width": 1224.0
  },
  "page_key": "076",
+ "quantities": [
+  {
+   "bbox": [
+    735.1,
+    350.62,
+    744.88,
+    355.62
+   ],
+   "callouts_nearby": [
+    [
+     "4",
+     [
+      738.9,
+      365.94,
+      741.6,
+      369.9
+     ],
+     10.32
+    ],
+    [
+     "3",
+     [
+      738.36,
+      371.52,
+      742.14,
+      377.28
+     ],
+     15.9
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "4 ea",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4 EA",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    735.12,
+    335.88,
+    745.2,
+    339.84
+   ],
+   "callouts_nearby": [],
+   "conf": 91.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "4ea",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4EA",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    735.12,
+    343.26,
+    745.2,
+    347.22
+   ],
+   "callouts_nearby": [
+    [
+     "4",
+     [
+      738.9,
+      365.94,
+      741.6,
+      369.9
+     ],
+     18.72
+    ]
+   ],
+   "conf": 91.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "4ea",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4EA",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    735.12,
+    350.82,
+    745.2,
+    354.78
+   ],
+   "callouts_nearby": [
+    [
+     "4",
+     [
+      738.9,
+      365.94,
+      741.6,
+      369.9
+     ],
+     11.16
+    ],
+    [
+     "3",
+     [
+      738.36,
+      371.52,
+      742.14,
+      377.28
+     ],
+     16.74
+    ]
+   ],
+   "conf": 91.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "4ea",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4EA",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    735.12,
+    358.38,
+    745.2,
+    362.34
+   ],
+   "callouts_nearby": [
+    [
+     "4",
+     [
+      738.9,
+      365.94,
+      741.6,
+      369.9
+     ],
+     3.6
+    ],
+    [
+     "3",
+     [
+      738.36,
+      371.52,
+      742.14,
+      377.28
+     ],
+     9.18
+    ]
+   ],
+   "conf": 91.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "4ea",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4EA",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    735.12,
+    583.56,
+    745.2,
+    587.52
+   ],
+   "callouts_nearby": [
+    [
+     "4",
+     [
+      738.36,
+      589.32,
+      742.14,
+      595.08
+     ],
+     1.8
+    ],
+    [
+     "6",
+     [
+      738.9,
+      576.18,
+      741.6,
+      580.14
+     ],
+     3.42
+    ],
+    [
+     "4",
+     [
+      738.18,
+      566.82,
+      742.32,
+      572.58
+     ],
+     10.98
+    ]
+   ],
+   "conf": 91.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "4ea",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4EA",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    735.5,
+    583.62,
+    745.28,
+    588.62
+   ],
+   "callouts_nearby": [
+    [
+     "4",
+     [
+      738.36,
+      589.32,
+      742.14,
+      595.08
+     ],
+     0.7
+    ],
+    [
+     "6",
+     [
+      738.9,
+      576.18,
+      741.6,
+      580.14
+     ],
+     3.48
+    ],
+    [
+     "2",
+     [
+      738.9,
+      598.68,
+      741.42,
+      602.64
+     ],
+     10.06
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "4 ea",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4 EA",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    735.6,
+    335.72,
+    745.38,
+    340.72
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "4 ea",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4 EA",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    735.6,
+    343.17,
+    745.38,
+    348.17
+   ],
+   "callouts_nearby": [
+    [
+     "4",
+     [
+      738.9,
+      365.94,
+      741.6,
+      369.9
+     ],
+     17.77
+    ],
+    [
+     "3",
+     [
+      738.36,
+      371.52,
+      742.14,
+      377.28
+     ],
+     23.35
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "4 ea",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4 EA",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    735.6,
+    358.27,
+    745.38,
+    363.27
+   ],
+   "callouts_nearby": [
+    [
+     "4",
+     [
+      738.9,
+      365.94,
+      741.6,
+      369.9
+     ],
+     2.67
+    ],
+    [
+     "3",
+     [
+      738.36,
+      371.52,
+      742.14,
+      377.28
+     ],
+     8.25
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "4 ea",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4 EA",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "4"
+  }
+ ],
  "schema_version": "1.0",
  "set_page": 76,
  "sheet_01": "E6.3",
  "source": {
   "file": "testbeds/eastsound/library/Pages from eswd-wwtp-upgrade-ph1-11x17-plans - Part 3.pdf",
   "page": 28,
-  "sha256": "ffe9e975ceb153cab60328a2459d826f96f96e0edaa77e0279a1d27e2e6de5fa"
+  "sha256": "ffe9e975ceb153cab60328a2459d826f96f96e0edaa77e0279a1d27e2e6de5fa",
+  "sha256_checked_against": "testbeds/eastsound/index/Library_Manifest.csv"
  },
+ "tags": [
+  {
+   "assignment": "assigned",
+   "bbox": [
+    107.75,
+    501.32,
+    124.95,
+    506.32
+   ],
+   "candidate_rows": [
+    296
+   ],
+   "conf": null,
+   "form": "LT",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    296
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "S-LT-IP"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    107.82,
+    501.12,
+    126.18,
+    505.08
+   ],
+   "candidate_rows": [
+    296
+   ],
+   "conf": 89.0,
+   "form": "LT",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    296
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "S-LT-IP"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    108.0,
+    283.42,
+    124.1,
+    288.42
+   ],
+   "candidate_rows": [
+    243
+   ],
+   "conf": null,
+   "form": "GEN",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    243
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "C-GEN"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    108.0,
+    448.52,
+    124.1,
+    453.52
+   ],
+   "candidate_rows": [
+    296
+   ],
+   "conf": null,
+   "form": "LT",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    296
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "S-LT-D"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    108.18,
+    283.32,
+    125.28,
+    287.28
+   ],
+   "candidate_rows": [
+    243
+   ],
+   "conf": 90.0,
+   "form": "GEN",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    243
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "C-GEN"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    108.18,
+    335.88,
+    125.82,
+    339.84
+   ],
+   "candidate_rows": [
+    264
+   ],
+   "conf": 91.0,
+   "form": "MCP",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    264
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "C-MCP"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    108.18,
+    448.56,
+    125.64,
+    452.52
+   ],
+   "candidate_rows": [
+    296
+   ],
+   "conf": 48.0,
+   "form": "LT",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    296
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "S-LT-D"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    108.18,
+    463.5,
+    125.46,
+    467.46
+   ],
+   "candidate_rows": [
+    264
+   ],
+   "conf": 89.0,
+   "form": "MCP",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    264
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "S-MCP"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    108.25,
+    463.62,
+    124.35,
+    468.62
+   ],
+   "candidate_rows": [
+    264
+   ],
+   "conf": null,
+   "form": "MCP",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    264
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "S-MCP"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    108.65,
+    335.97,
+    125.03,
+    340.97
+   ],
+   "candidate_rows": [
+    264
+   ],
+   "conf": null,
+   "form": "MCP",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    264
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "C-MCP"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    108.7,
+    275.97,
+    123.68,
+    280.97
+   ],
+   "candidate_rows": [
+    240
+   ],
+   "conf": null,
+   "form": "ATS",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    240
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "C-ATS"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    108.9,
+    275.94,
+    124.92,
+    279.9
+   ],
+   "candidate_rows": [
+    240
+   ],
+   "conf": 92.0,
+   "form": "ATS",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    240
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "C-ATS"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    109.9,
+    365.97,
+    122.11,
+    370.97
+   ],
+   "candidate_rows": [
+    261
+   ],
+   "conf": null,
+   "form": "DB",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    261
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "C-DB"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    109.98,
+    365.94,
+    123.48,
+    369.9
+   ],
+   "candidate_rows": [
+    261
+   ],
+   "conf": 91.0,
+   "form": "DB",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    261
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "C-DB"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    457.2,
+    275.94,
+    467.28,
+    279.9
+   ],
+   "candidate_rows": [
+    240
+   ],
+   "conf": 96.0,
+   "form": "ATS",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    240
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "ATS"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    457.2,
+    275.97,
+    466.91,
+    280.97
+   ],
+   "candidate_rows": [
+    240
+   ],
+   "conf": null,
+   "form": "ATS",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    240
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "ATS"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    500.9,
+    463.62,
+    512.28,
+    468.62
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    500.94,
+    335.88,
+    512.64,
+    339.84
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": 93.0,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    500.94,
+    463.5,
+    512.64,
+    467.46
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": 93.0,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    626.65,
+    508.52,
+    644.41,
+    513.52
+   ],
+   "candidate_rows": [
+    313
+   ],
+   "conf": null,
+   "form": "DW-1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    313
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "P-DW-1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    626.76,
+    508.5,
+    645.3,
+    512.46
+   ],
+   "candidate_rows": [
+    313
+   ],
+   "conf": 92.0,
+   "form": "DW-1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    313
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "P-DW-1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    627.35,
+    471.07,
+    643.73,
+    476.07
+   ],
+   "candidate_rows": [
+    74,
+    316
+   ],
+   "conf": null,
+   "form": "SD-1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    316
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "P-SD-1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    627.48,
+    471.06,
+    644.22,
+    475.02
+   ],
+   "candidate_rows": [
+    74,
+    316
+   ],
+   "conf": 92.0,
+   "form": "SD-1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    316
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "P-SD-1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    627.84,
+    340.74,
+    643.86,
+    349.02
+   ],
+   "candidate_rows": [
+    240
+   ],
+   "conf": 91.0,
+   "form": "ATS",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    240
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "P-ATS"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    627.84,
+    348.3,
+    644.76,
+    356.58
+   ],
+   "candidate_rows": [
+    241
+   ],
+   "conf": 92.0,
+   "form": "MDP",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    241
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "P-MDP"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    627.84,
+    358.38,
+    644.94,
+    362.34
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": 91.0,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "P-MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    627.84,
+    588.6,
+    644.22,
+    596.88
+   ],
+   "candidate_rows": [
+    244
+   ],
+   "conf": 92.0,
+   "form": "P-TPS",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    244
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "P-TPS"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    627.84,
+    588.6,
+    644.22,
+    596.88
+   ],
+   "candidate_rows": [
+    254
+   ],
+   "conf": 92.0,
+   "form": "TPS",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "P-TPS"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    627.84,
+    641.16,
+    644.76,
+    649.44
+   ],
+   "candidate_rows": [
+    264
+   ],
+   "conf": 92.0,
+   "form": "MCP",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    264
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "P-MCP"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    627.85,
+    350.62,
+    643.95,
+    355.62
+   ],
+   "candidate_rows": [
+    241
+   ],
+   "conf": null,
+   "form": "MDP",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    241
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "P-MDP"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    627.85,
+    358.27,
+    644.23,
+    363.27
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "P-MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    627.85,
+    643.87,
+    643.95,
+    648.87
+   ],
+   "candidate_rows": [
+    264
+   ],
+   "conf": null,
+   "form": "MCP",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    264
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "P-MCP"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    628.1,
+    335.72,
+    643.36,
+    340.72
+   ],
+   "candidate_rows": [
+    238
+   ],
+   "conf": null,
+   "form": "P-SEC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    238
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "P-SEC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    628.1,
+    365.72,
+    643.92,
+    370.72
+   ],
+   "candidate_rows": [
+    243
+   ],
+   "conf": null,
+   "form": "GEN",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    243
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "P-GEN"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    628.1,
+    418.52,
+    643.65,
+    423.52
+   ],
+   "candidate_rows": [
+    257
+   ],
+   "conf": null,
+   "form": "BL-1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    257
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "P-BL-1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    628.1,
+    425.72,
+    643.65,
+    430.72
+   ],
+   "candidate_rows": [
+    258
+   ],
+   "conf": null,
+   "form": "BL-2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    258
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "P-BL-2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    628.1,
+    440.82,
+    643.65,
+    445.82
+   ],
+   "candidate_rows": [
+    260
+   ],
+   "conf": null,
+   "form": "BL-4",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    260
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "P-BL-4"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    628.2,
+    335.88,
+    644.58,
+    339.84
+   ],
+   "candidate_rows": [
+    238
+   ],
+   "conf": 93.0,
+   "form": "P-SEC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    238
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "P-SEC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    628.2,
+    365.94,
+    644.58,
+    369.9
+   ],
+   "candidate_rows": [
+    243
+   ],
+   "conf": 92.0,
+   "form": "GEN",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    243
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "P-GEN"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    628.2,
+    415.8,
+    643.86,
+    424.26
+   ],
+   "candidate_rows": [
+    257
+   ],
+   "conf": 93.0,
+   "form": "BL-1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    257
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "P-BL-1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    628.2,
+    423.36,
+    644.58,
+    431.64
+   ],
+   "candidate_rows": [
+    258
+   ],
+   "conf": 92.0,
+   "form": "BL-2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    258
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "P-BL-2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    628.2,
+    430.92,
+    644.76,
+    439.2
+   ],
+   "candidate_rows": [
+    259
+   ],
+   "conf": 92.0,
+   "form": "BL-3",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    259
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "P-BL-3"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    628.2,
+    438.48,
+    644.76,
+    446.76
+   ],
+   "candidate_rows": [
+    260
+   ],
+   "conf": 92.0,
+   "form": "BL-4",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    260
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "P-BL-4"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    628.3,
+    433.42,
+    643.85,
+    438.42
+   ],
+   "candidate_rows": [
+    259
+   ],
+   "conf": null,
+   "form": "BL-3",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    259
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "P-BL-3"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    628.55,
+    343.17,
+    643.25,
+    348.17
+   ],
+   "candidate_rows": [
+    240
+   ],
+   "conf": null,
+   "form": "ATS",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    240
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "P-ATS"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    628.55,
+    591.32,
+    643.25,
+    596.32
+   ],
+   "candidate_rows": [
+    244
+   ],
+   "conf": null,
+   "form": "P-TPS",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    244
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "P-TPS"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    628.55,
+    591.32,
+    643.25,
+    596.32
+   ],
+   "candidate_rows": [
+    254
+   ],
+   "conf": null,
+   "form": "TPS",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "P-TPS"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    628.8,
+    538.52,
+    643.51,
+    543.52
+   ],
+   "candidate_rows": [
+    342
+   ],
+   "conf": null,
+   "form": "UV1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    342
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "P-UV1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    628.8,
+    553.62,
+    643.51,
+    558.62
+   ],
+   "candidate_rows": [
+    343
+   ],
+   "conf": null,
+   "form": "UV2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    343
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "P-UV2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    628.92,
+    538.56,
+    643.14,
+    542.52
+   ],
+   "candidate_rows": [
+    342
+   ],
+   "conf": 81.0,
+   "form": "UV1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    342
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "P-UV1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    628.92,
+    553.68,
+    643.86,
+    557.64
+   ],
+   "candidate_rows": [
+    343
+   ],
+   "conf": 91.0,
+   "form": "UV2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    343
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "P-UV2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    629.46,
+    566.1,
+    642.6,
+    574.38
+   ],
+   "candidate_rows": [
+    296
+   ],
+   "conf": 92.0,
+   "form": "LT",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    296
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "P-LT"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    630.0,
+    448.27,
+    641.93,
+    453.27
+   ],
+   "candidate_rows": [
+    261
+   ],
+   "conf": null,
+   "form": "DB",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    261
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "P-DB"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    630.0,
+    448.38,
+    642.78,
+    452.34
+   ],
+   "candidate_rows": [
+    261
+   ],
+   "conf": 93.0,
+   "form": "DB",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    261
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "P-DB"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    630.7,
+    568.77,
+    641.52,
+    573.77
+   ],
+   "candidate_rows": [
+    296
+   ],
+   "conf": null,
+   "form": "LT",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    296
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "P-LT"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    859.9,
+    545.97,
+    959.03,
+    550.97
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "................................MCC________________"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    860.4,
+    380.82,
+    871.78,
+    385.82
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    860.58,
+    380.88,
+    872.1,
+    384.84
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": 95.0,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    860.58,
+    606.24,
+    872.1,
+    610.2
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": 93.0,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    860.58,
+    613.62,
+    872.1,
+    617.58
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": 92.0,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    863.45,
+    606.42,
+    874.83,
+    611.42
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    863.6,
+    613.62,
+    874.98,
+    618.62
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    880.74,
+    621.18,
+    892.44,
+    625.14
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": 95.0,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    882.25,
+    598.77,
+    893.63,
+    603.77
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    882.36,
+    598.68,
+    893.88,
+    602.64
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": 95.0,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    882.36,
+    643.68,
+    893.88,
+    647.64
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": 95.0,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    882.5,
+    643.87,
+    893.88,
+    648.87
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    883.15,
+    621.07,
+    894.53,
+    626.07
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    890.65,
+    395.72,
+    902.03,
+    400.72
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    890.82,
+    395.82,
+    902.52,
+    399.78
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": 95.0,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    890.82,
+    403.38,
+    902.52,
+    407.34
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": 95.0,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    890.9,
+    403.17,
+    902.28,
+    408.17
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    904.8,
+    388.27,
+    960.23,
+    393.27
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC________________"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    904.8,
+    410.82,
+    924.37,
+    415.82
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC......"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    904.8,
+    425.97,
+    916.19,
+    430.97
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    904.8,
+    441.07,
+    916.19,
+    446.07
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    904.8,
+    463.42,
+    916.18,
+    468.42
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    904.8,
+    478.52,
+    960.23,
+    483.52
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC________________"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    904.8,
+    553.62,
+    952.01,
+    558.62
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC_____________"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    904.86,
+    388.44,
+    916.56,
+    392.4
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": 94.0,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    904.86,
+    410.94,
+    916.56,
+    414.9
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": 96.0,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    904.86,
+    418.5,
+    916.56,
+    422.46
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": 96.0,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    904.86,
+    425.88,
+    916.56,
+    429.84
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": 90.0,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    904.86,
+    433.44,
+    916.56,
+    437.4
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": 90.0,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    904.86,
+    441.0,
+    916.56,
+    444.96
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": 94.0,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    904.86,
+    448.38,
+    916.56,
+    452.34
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": 86.0,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    904.86,
+    455.94,
+    916.56,
+    459.9
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": 86.0,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    904.86,
+    463.5,
+    916.56,
+    467.46
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": 93.0,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    904.86,
+    471.06,
+    916.56,
+    475.02
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": 96.0,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    904.86,
+    478.44,
+    916.56,
+    482.4
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": 90.0,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    904.86,
+    486.0,
+    916.56,
+    489.96
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": 90.0,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    904.86,
+    493.56,
+    916.56,
+    497.52
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": 94.0,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    904.86,
+    501.12,
+    916.56,
+    505.08
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": 94.0,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    904.86,
+    508.5,
+    916.56,
+    512.46
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": 86.0,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    904.86,
+    538.56,
+    916.56,
+    542.52
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": 90.0,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    904.86,
+    546.12,
+    916.56,
+    550.08
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": 94.0,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    904.86,
+    553.68,
+    916.56,
+    557.64
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": 94.0,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    904.86,
+    561.06,
+    916.56,
+    565.02
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": 86.0,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    904.95,
+    493.42,
+    916.33,
+    498.42
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    905.05,
+    433.17,
+    916.43,
+    438.17
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    905.05,
+    448.27,
+    916.43,
+    453.27
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    905.05,
+    455.72,
+    916.43,
+    460.72
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    905.05,
+    470.82,
+    916.43,
+    475.82
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    905.05,
+    538.52,
+    916.43,
+    543.52
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    905.1,
+    485.97,
+    916.48,
+    490.97
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    905.1,
+    508.27,
+    916.48,
+    513.27
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    905.1,
+    561.07,
+    916.48,
+    566.07
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    906.86,
+    583.62,
+    913.24,
+    588.62
+   ],
+   "candidate_rows": [
+    242
+   ],
+   "conf": null,
+   "form": "TS",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    242
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "TS"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    910.98,
+    583.56,
+    917.64,
+    587.52
+   ],
+   "candidate_rows": [
+    242
+   ],
+   "conf": 95.0,
+   "form": "TS",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    242
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "TS"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    927.8,
+    501.07,
+    983.23,
+    506.07
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC________________"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    928.29,
+    418.27,
+    962.72,
+    423.27
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC................."
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    991.26,
+    621.18,
+    1022.04,
+    625.14
+   ],
+   "candidate_rows": [
+    58
+   ],
+   "conf": 0.0,
+   "form": "HOT BOX#1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    58
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "HOT BOX #1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    994.4,
+    621.32,
+    1022.43,
+    626.32
+   ],
+   "candidate_rows": [
+    58
+   ],
+   "conf": null,
+   "form": "HOT BOX#1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    58
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "HOT BOX#1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    997.0,
+    546.22,
+    1006.72,
+    551.22
+   ],
+   "candidate_rows": [
+    342
+   ],
+   "conf": null,
+   "form": "UV1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    342
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "UV1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    997.02,
+    546.12,
+    1005.48,
+    550.08
+   ],
+   "candidate_rows": [
+    342
+   ],
+   "conf": 89.0,
+   "form": "UV1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    342
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "UV1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    997.02,
+    561.06,
+    1006.2,
+    565.02
+   ],
+   "candidate_rows": [
+    343
+   ],
+   "conf": 91.0,
+   "form": "UV2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    343
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "UV2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    998.75,
+    561.07,
+    1008.47,
+    566.07
+   ],
+   "candidate_rows": [
+    343
+   ],
+   "conf": null,
+   "form": "UV2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    343
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "UV2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    1006.3,
+    606.42,
+    1034.33,
+    611.42
+   ],
+   "candidate_rows": [
+    58
+   ],
+   "conf": null,
+   "form": "HOT BOX#1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    58
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "HOT BOX#1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    1006.3,
+    613.62,
+    1035.78,
+    618.62
+   ],
+   "candidate_rows": [
+    59
+   ],
+   "conf": null,
+   "form": "HOT BOX#2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    59
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "HOT BOX #2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    1006.38,
+    606.24,
+    1036.98,
+    610.2
+   ],
+   "candidate_rows": [
+    58
+   ],
+   "conf": 0.0,
+   "form": "HOT BOX#1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    58
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "HOT BOX #1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    1006.38,
+    613.62,
+    1037.7,
+    617.58
+   ],
+   "candidate_rows": [
+    59
+   ],
+   "conf": 93.0,
+   "form": "HOT BOX#2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    59
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "HOT BOX #2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    1008.18,
+    538.56,
+    1016.82,
+    542.52
+   ],
+   "candidate_rows": [
+    342
+   ],
+   "conf": 87.0,
+   "form": "UV1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    342
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "UV1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    1008.18,
+    553.68,
+    1017.54,
+    557.64
+   ],
+   "candidate_rows": [
+    343
+   ],
+   "conf": 90.0,
+   "form": "UV2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    343
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "UV2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    1008.25,
+    538.52,
+    1017.97,
+    543.52
+   ],
+   "candidate_rows": [
+    342
+   ],
+   "conf": null,
+   "form": "UV1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    342
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "UV1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    1009.15,
+    553.62,
+    1018.87,
+    558.62
+   ],
+   "candidate_rows": [
+    343
+   ],
+   "conf": null,
+   "form": "UV2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    343
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "UV2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    1026.96,
+    373.17,
+    1033.34,
+    378.17
+   ],
+   "candidate_rows": [
+    242
+   ],
+   "conf": null,
+   "form": "TS",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    242
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "TS"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    1027.8,
+    373.32,
+    1034.28,
+    377.28
+   ],
+   "candidate_rows": [
+    242
+   ],
+   "conf": 95.0,
+   "form": "TS",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    242
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "TS"
+  }
+ ],
  "title_01": "CONDUIT AND CONDUCTOR SCHEDULES",
  "title_block": {
   "date": {

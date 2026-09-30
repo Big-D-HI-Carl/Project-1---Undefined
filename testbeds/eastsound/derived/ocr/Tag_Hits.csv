@@ -1,0 +1,840 @@
+Tag Text,Page Key,Set Page,Sheet,BBox (pt),Method,Confidence,Fuzzy (Y/N),Exact Ledger Match (Y/N),Search Form,Assignment,Ledger Rows,Ledger Tags,Rollup Rows,Candidate Rows,Hit Kind,Tag Level
+S1.1,001,1,G0.1,"832.68,159.84,843.44,166.08",text-layer,,N,Y,S1,"off-citation, short form",,,,191,tag,Verified
+S2.1,001,1,G0.1,"832.68,166.68,843.44,172.92",text-layer,,N,Y,S2,"off-citation, short form",,,,191,tag,Verified
+S2.2,001,1,G0.1,"832.68,173.64,843.44,179.88",text-layer,,N,Y,S2,"off-citation, short form",,,,191,tag,Verified
+S2.3,001,1,G0.1,"832.68,180.48,843.44,186.72",text-layer,,N,Y,S2,"off-citation, short form",,,,191,tag,Verified
+S2.4,001,1,G0.1,"832.68,187.32,843.44,193.56",text-layer,,N,Y,S2,"off-citation, short form",,,,191,tag,Verified
+FI,002,2,G0.2,"553.86,457.74,556.56,464.40",ocr,29.00,Y,N,F1,"off-citation, short form",,,,167; 174; 292,tag,Inferred
+IPS,002,2,G0.2,"948.95,353.05,955.39,357.05",bluebeam-ocr,,N,Y,IPS,"off-citation, short form",,,,297,tag,Inferred
+LT,002,2,G0.2,"948.95,367.45,953.61,371.45",bluebeam-ocr,,N,Y,LT,"off-citation, short form",,,,296,tag,Inferred
+FI,002,2,G0.2,"986.40,246.60,989.28,251.10",ocr,7.00,Y,N,F1,"off-citation, short form",,,,167; 174; 292,tag,Inferred
+Fi,002,2,G0.2,"986.40,256.14,989.28,260.82",ocr,60.00,Y,N,F1,"off-citation, short form",,,,167; 174; 292,tag,Inferred
+FI,002,2,G0.2,"986.40,261.00,989.28,265.50",ocr,15.00,Y,N,F1,"off-citation, short form",,,,167; 174; 292,tag,Inferred
+FI,002,2,G0.2,"987.12,252.00,989.28,255.24",ocr,58.00,Y,N,F1,"off-citation, short form",,,,167; 174; 292,tag,Inferred
+S1.1,003,3,G0.3,"448.61,727.86,461.27,733.84",text-layer,,N,Y,S1,"off-citation, short form",,,,191,tag,Verified
+SE2,005,5,G0.5,"512.03,595.69,527.14,603.69",bluebeam-ocr,,N,Y,SE2,assigned,127,SE2,,127,tag,Inferred
+SE2,005,5,G0.5,"512.82,595.98,527.04,601.74",ocr,92.00,N,Y,SE2,assigned,127,SE2,,127,tag,Inferred
+INF2,005,5,G0.5,"744.30,541.62,761.04,547.56",ocr,91.00,N,Y,INF2,assigned,124,INF2,,124,tag,Inferred
+Lt,008,8,C0.1,"204.12,695.34,218.52,700.38",ocr,56.00,N,Y,LT,"off-citation, short form",,,,296,tag,Inferred
+Fi,008,8,C0.1,"262.80,666.14,267.79,672.14",bluebeam-ocr,,Y,N,F1,"off-citation, short form",,,,167; 174; 292,tag,Inferred
+GEN,008,8,C0.1,"289.70,704.54,302.69,710.54",bluebeam-ocr,,N,Y,GEN,"off-citation, short form",,,,243,tag,Inferred
+GEN,008,8,C0.1,"289.98,705.24,299.34,709.20",ocr,96.00,N,Y,GEN,"off-citation, short form",,,,243,tag,Inferred
+Fi,008,8,C0.1,"680.90,472.94,685.89,478.94",bluebeam-ocr,,Y,N,F1,"off-citation, short form",,,,167; 174; 292,tag,Inferred
+SSMH 1285,008,8,C0.1,"830.40,529.20,851.95,533.20",bluebeam-ocr,,N,Y,SSMH 1285,assigned,13,SSMH 1285,,13,tag,Inferred
+4:52,009,9,C0.2,"24.92,501.99,29.92,511.77",bluebeam-ocr,,Y,N,S2,"off-citation, short form",,,,191,tag,Inferred
+4:52,009,9,C0.2,"25.38,474.12,28.80,484.92",ocr,94.00,Y,N,S2,"off-citation, short form",,,,191,tag,Inferred
+TS,009,9,C0.2,"577.26,119.52,631.26,125.82",ocr,28.00,N,Y,TS,"off-citation, short form",,,,242,tag,Inferred
+Li},009,9,C0.2,"1124.82,425.16,1135.44,439.20",ocr,55.00,Y,N,L1,"off-citation, short form",,,,277,tag,Inferred
+LI,010,10,C0.3,"207.57,21.47,229.82,46.53",bluebeam-ocr,,Y,N,L1,"off-citation, short form",,,,277,tag,Inferred
+GEN,010,10,C0.3,"289.88,706.15,298.55,710.18",bluebeam-ocr,,N,Y,GEN,"off-citation, short form",,,,243,tag,Inferred
+SDCB#2,010,10,C0.3,"349.79,139.92,365.36,143.97",bluebeam-ocr,,N,Y,SDCB#2,assigned,81,SDCB #2,,81,tag,Inferred
+SDCB#8,010,10,C0.3,"360.54,667.45,376.10,671.50",bluebeam-ocr,,N,Y,SDCB#8,assigned,77,SDCB #8,,77,tag,Inferred
+SDCB#3,010,10,C0.3,"454.07,183.87,469.85,187.91",bluebeam-ocr,,N,Y,SDCB#3,assigned,82,SDCB #3,,82,tag,Inferred
+fi,010,10,C0.3,"457.56,343.44,458.46,345.24",ocr,60.00,Y,N,F1,"off-citation, short form",,,,167; 174; 292,tag,Inferred
+SDCB#10,010,10,C0.3,"539.34,437.56,557.13,441.61",bluebeam-ocr,,N,Y,SDCB#10,assigned,80,SDCB #10,,80,tag,Inferred
+fi,010,10,C0.3,"552.96,281.52,560.16,294.12",ocr,49.00,Y,N,F1,"off-citation, short form",,,,167; 174; 292,tag,Inferred
+SI,010,10,C0.3,"791.10,587.88,795.06,592.20",ocr,73.00,Y,N,S1,"off-citation, short form",,,,191,tag,Inferred
+SSMH 1286,010,10,C0.3,"830.51,572.79,852.07,576.86",bluebeam-ocr,,N,Y,SSMH 1286,assigned,12,SSMH 1286,,12,tag,Inferred
+SSMH 1285,010,10,C0.3,"830.63,529.34,852.20,533.41",bluebeam-ocr,,N,Y,SSMH 1285,assigned,13,SSMH 1285,,13,tag,Inferred
+SEI,010,10,C0.3,"1049.22,741.60,1081.98,756.54",ocr,72.00,Y,N,SE1,"off-citation, short form",,,,126,tag,Inferred
+lI—3.1:,011,11,C0.4,"478.62,438.12,494.28,442.08",ocr,34.00,Y,N,L1,"off-citation, short form",,,,277,tag,Inferred
+LT?,012,12,C0.5,"218.88,686.88,226.44,687.42",ocr,0.00,N,Y,LT,"off-citation, short form",,,,296,tag,Inferred
+SI,013,13,C0.6,"211.86,55.26,222.66,68.22",ocr,28.00,Y,N,S1,"off-citation, short form",,,,191,tag,Inferred
+GEN,014,14,C0.7,"289.62,705.18,300.46,710.20",bluebeam-ocr,,N,Y,GEN,"off-citation, short form",,,,243,tag,Inferred
+Ts,015,15,C1.1,"218.34,669.96,248.04,670.86",ocr,26.00,N,Y,TS,"off-citation, short form",,,,242,tag,Inferred
+GEN,015,15,C1.1,"289.57,705.33,300.41,710.35",bluebeam-ocr,,N,Y,GEN,"off-citation, short form",,,,243,tag,Inferred
+Li,015,15,C1.1,"301.68,387.54,305.46,398.16",ocr,5.00,Y,N,L1,"off-citation, short form",,,,277,tag,Inferred
+si«,015,15,C1.1,"369.17,607.02,383.07,617.04",bluebeam-ocr,,Y,N,S1,"off-citation, short form",,,,191,tag,Inferred
+si,015,15,C1.1,"371.99,611.97,386.46,631.99",bluebeam-ocr,,Y,N,S1,"off-citation, short form",,,,191,tag,Inferred
+LI,015,15,C1.1,"532.31,462.27,538.90,485.54",bluebeam-ocr,,Y,N,L1,"off-citation, short form",,,,277,tag,Inferred
+51,015,15,C1.1,"592.28,503.44,597.85,508.45",bluebeam-ocr,,Y,N,S1,"off-citation, short form",,,,191,tag,Inferred
+51,015,15,C1.1,"592.38,503.10,597.42,507.42",ocr,93.00,Y,N,S1,"off-citation, short form",,,,191,tag,Inferred
+(51),015,15,C1.1,"987.02,380.94,995.91,385.95",bluebeam-ocr,,Y,N,S1,"off-citation, short form",,,,191,tag,Inferred
+HOT BOX #2,015,15,C1.1,"1020.27,103.68,1061.57,110.75",bluebeam-ocr,,N,Y,HOT BOX#2,assigned,59,Hot Box #2,,59,tag,Inferred
+HOT BOX #2,015,15,C1.1,"1020.60,104.76,1054.80,110.34",ocr,96.00,N,Y,HOT BOX#2,assigned,59,Hot Box #2,,59,tag,Inferred
+HOT BOX #1,015,15,C1.1,"1021.24,87.13,1062.54,94.20",bluebeam-ocr,,N,Y,HOT BOX#1,assigned,58,Hot Box #1,,58,tag,Inferred
+Li,015,15,C1.1,"1125.54,425.88,1134.54,432.18",ocr,68.00,Y,N,L1,"off-citation, short form",,,,277,tag,Inferred
+GEN,016,16,C1.2,"289.70,706.10,298.36,710.10",bluebeam-ocr,,N,Y,GEN,"off-citation, short form",,,,243,tag,Inferred
+"629,620.52",016,16,C1.2,"1024.56,172.98,1054.98,177.84",ocr,93.00,Y,N,S2,"off-citation, short form",,,,191,tag,Inferred
+5DCB #1,017,17,C1.3,"139.70,580.77,160.03,585.77",bluebeam-ocr,,Y,N,SDCB#1,assigned,117,SDCB #1,,117,tag,Inferred
+"13: 8"" TRAIN 2 INFLUENT (DI GRAV.) SLOPE 0.4% MIN.",017,17,C1.3,"876.48,324.90,1020.75,330.41",text-layer,,N,Y,Pipe ID 13,assigned,43,Pipe ID 13,,43,legend,Verified
+"15: 2"" TRAIN 3 WAS (SCH. 80 PVC GRAV.) SLOPE POSITIVE DRAINAGE THROUGHOUT",017,17,C1.3,"876.48,348.78,1062.12,359.93",text-layer,,N,Y,Pipe ID 15,assigned,45,Pipe ID 15,,45,legend,Verified
+"16: 8"" TRAIN 2 EFFLUENT (DI GRAV.) SLOPE 0.4% MIN.",017,17,C1.3,"876.48,364.86,1022.15,370.37",text-layer,,N,Y,Pipe ID 16,assigned,46,Pipe ID 16,,46,legend,Verified
+"17: 8"" TRAIN 3 EFFLUENT (DI GRAV.) SLOPE 0.4% MIN.",017,17,C1.3,"876.48,377.82,1022.15,383.33",text-layer,,N,Y,Pipe ID 17,assigned,47,Pipe ID 17,,47,legend,Verified
+"18: 6"" INFLUENT TO FLOW SPLITTER (DI FM) SLOPE POSITIVE THROUGHOUT",017,17,C1.3,"876.48,388.86,1041.15,399.89",text-layer,,N,Y,Pipe ID 18,assigned,48,Pipe ID 18,,48,legend,Verified
+"19: 2"" DIGESTER WAS INFLUENT (SCH. 80 PVC GRAV.)",017,17,C1.3,"876.48,404.94,1018.37,410.45",text-layer,,N,Y,Pipe ID 19,assigned,49,Pipe ID 19,,49,legend,Verified
+"10: 2"" 2W WATER LINE (SCH. 80 PVC FM)",017,17,C1.3,"876.60,286.02,985.12,291.53",text-layer,,N,Y,Pipe ID 10,assigned,40,Pipe ID 10,,40,legend,Verified
+"12: 2"" WATER PIPE (SCH. 80 PVC FM)",017,17,C1.3,"876.60,311.94,976.46,317.45",text-layer,,N,Y,Pipe ID 12,assigned,42,Pipe ID 12,,42,legend,Verified
+"14: 8"" TRAIN 1 INFLUENT (DI GRAV.) SLOPE 0.4% MIN.",017,17,C1.3,"876.60,337.86,1020.75,343.37",text-layer,,N,Y,Pipe ID 14,assigned,44,Pipe ID 14,,44,legend,Verified
+"20: 6"" CELL 3 AIR (SS)",017,17,C1.3,"876.72,417.90,939.30,423.41",text-layer,,N,Y,Pipe ID 20,assigned,50,Pipe ID 20,,50,legend,Verified
+"11: 8"" TRAIN 3 INFLUENT (DI GRAV.) SLOPE 0.4% MIN.",017,17,C1.3,"876.84,298.98,1020.75,304.49",text-layer,,N,Y,Pipe ID 11,assigned,41,Pipe ID 11,,41,legend,Verified
+"21: 4"" DIGESTER AIR (SS)",017,17,C1.3,"877.08,430.86,948.36,436.37",text-layer,,N,Y,Pipe ID 21,assigned,51,Pipe ID 21,,51,legend,Verified
+"5: 10"" UV DISINFECTION EFFLUENT (DI GRAV.) SLOPE 0.28% MIN.",017,17,C1.3,"878.04,212.82,1051.97,218.33",text-layer,,N,Y,Pipe ID 5,assigned,35,Pipe ID 5,,35,legend,Verified
+"7: 2"" DIGESTED SLUDGE (SCH. 80 PVC FM) SLOPE POSITIVE THROUGHOUT",017,17,C1.3,"878.04,236.82,1040.32,247.85",text-layer,,N,Y,Pipe ID 7,assigned,37,Pipe ID 7,,37,legend,Verified
+"9: 1"" 2W WATER SYSTEM AIR VENT (SS) OUTLET 3' ABOVE GRADE WITH GOOSENECK POINTING DOWN SLOPE POSITIVE DRAINAGE THROUGHOUT",017,17,C1.3,"878.04,263.82,1064.79,280.97",text-layer,,N,Y,Pipe ID 9,assigned,39,Pipe ID 9,,39,legend,Verified
+"2: 4"" UV DISINFECTION DRAIN AND DIGESTER SUPERNATANT (DI GRAV.) SLOPE 2% MIN.",017,17,C1.3,"878.16,157.50,1067.09,168.65",text-layer,,N,Y,Pipe ID 2,assigned,32,Pipe ID 2,,32,legend,Verified
+"3: 8"" INFLUENT (DI GRAV.) SLOPE 0.4% MIN.",017,17,C1.3,"878.16,173.70,1000.08,179.21",text-layer,,N,Y,Pipe ID 3,assigned,33,Pipe ID 3,,33,legend,Verified
+"4: 3"" INFLUENT PUMP STATION AIR VENT (SS) OUTLET 8' ABOVE FINISH GRADE WITH GOOSENECK POINTING DOWN. ATTACH PIPE SECURELY TO EXTERIOR BUILDING WALL SLOPE POSITIVE DRAINAGE THROUGHOUT",017,17,C1.3,"878.16,184.62,1068.43,207.89",text-layer,,N,Y,Pipe ID 4,assigned,34,Pipe ID 4,,34,legend,Verified
+"6: 4"" BUILDING SEPTIC (SCH. 80 PVC GRAV.) CLOPE 2% MIN.",017,17,C1.3,"878.16,225.78,1040.71,231.29",text-layer,,N,Y,Pipe ID 6,assigned,36,Pipe ID 6,,36,legend,Verified
+"8: 4"" VAULT DRAIN (SCH. 80 PVC GRAV.) SLOPE 2.0%",017,17,C1.3,"878.16,252.90,1022.56,258.41",text-layer,,N,Y,Pipe ID 8,assigned,38,Pipe ID 8,,38,legend,Verified
+"1: 8"" EXISTING EFFLUENT (DI GRAV.)",017,17,C1.3,"878.28,146.46,978.97,152.09",text-layer,,N,Y,Pipe ID 1,assigned,31,Pipe ID 1,,31,legend,Verified
+"13: 4"" GATE VALVE FOR DRAIN FLOW METER ISOLATION",018,18,C1.4,"876.48,303.66,1024.92,308.69",text-layer,,N,Y,Buried Valve ID 13,assigned,72,Buried Valve ID 13,,72,legend,Verified
+"10: 4"" GATE VALVE FOR PUMP STATION CLEAN OUT DRAIN",018,18,C1.4,"876.60,264.78,1032.46,269.81",text-layer,,N,Y,Buried Valve ID 10,assigned,69,Buried Valve ID 10,,69,legend,Verified
+"12: 8"" PLUG VALVE FOR EFFLUENT FLOW METER ISOLATION",018,18,C1.4,"876.60,290.70,1035.14,295.73",text-layer,,N,Y,Buried Valve ID 12,assigned,71,Buried Valve ID 12,,71,legend,Verified
+"11: 4"" GATE VALVE FOR PUMP STATION CLEAN OUT DRAIN",018,18,C1.4,"876.84,277.74,1032.46,282.77",text-layer,,N,Y,Buried Valve ID 11,assigned,70,Buried Valve ID 11,,70,legend,Verified
+"5: 4"" GATE VALVE FOR DRAIN FLOW METER ISOLATION",018,18,C1.4,"878.04,199.98,1024.92,205.01",text-layer,,N,Y,Buried Valve ID 5,assigned,64,Buried Valve ID 5,,64,legend,Verified
+"7: 4"" GATE VALVE FOR TREATED EFFLUENT OUTLET BOX DRAIN",018,18,C1.4,"878.04,225.90,1047.27,230.93",text-layer,,N,Y,Buried Valve ID 7,assigned,66,Buried Valve ID 7,,66,legend,Verified
+"9: 4"" GATE VALVE FOR SAMPLE SUMP DRAIN",018,18,C1.4,"878.04,251.82,999.50,256.85",text-layer,,N,Y,Buried Valve ID 9,assigned,68,Buried Valve ID 9,,68,legend,Verified
+"2: 8"" GATE VALVE FOR TRAIN 2 FLOW METER ISOLATION",018,18,C1.4,"878.16,160.02,1028.44,165.05",text-layer,,N,Y,Buried Valve ID 2,assigned,61,Buried Valve ID 2,,61,legend,Verified
+"3: 8"" GATE VALVE FOR TRAIN 3 FLOW METER ISOLATION",018,18,C1.4,"878.16,172.86,1028.44,178.01",text-layer,,N,Y,Buried Valve ID 3,assigned,62,Buried Valve ID 3,,62,legend,Verified
+"4: 4"" GATE VALVE FOR DRAIN FLOW METER ISOLATION",018,18,C1.4,"878.16,186.42,1024.92,191.45",text-layer,,N,Y,Buried Valve ID 4,assigned,63,Buried Valve ID 4,,63,legend,Verified
+"6: 4"" GATE VALVE FOR TREATED EFFLUENT OUTLET BOX DRAIN",018,18,C1.4,"878.16,212.94,1047.27,217.97",text-layer,,N,Y,Buried Valve ID 6,assigned,65,Buried Valve ID 6,,65,legend,Verified
+"8: 4"" GATE VALVE FOR UV DISINFECTION DRAIN",018,18,C1.4,"878.16,238.86,1007.03,243.89",text-layer,,N,Y,Buried Valve ID 8,assigned,67,Buried Valve ID 8,,67,legend,Verified
+"1: 6"" GATE VALVE FOR INFLUENT FLOW METER ISOLATION",018,18,C1.4,"878.28,147.06,1033.74,152.09",text-layer,,N,Y,Buried Valve ID 1,assigned,60,Buried Valve ID 1,,60,legend,Verified
+si],019,19,C1.5,"491.04,97.92,497.52,101.88",ocr,38.00,Y,N,S1,"off-citation, short form",,,,191,tag,Inferred
+16.51,019,19,C1.5,"749.81,216.95,762.39,222.00",bluebeam-ocr,,Y,N,S1,"off-citation, short form",,,,191,tag,Inferred
+SDCB #1,020,20,C2.1,"138.50,581.55,155.15,585.55",bluebeam-ocr,,N,Y,SDCB#1,assigned,117,SDCB #1,,117,tag,Inferred
+SDCB#1,020,20,C2.1,"155.34,137.34,174.42,142.92",ocr,70.00,N,Y,SDCB#1,assigned,117,SDCB #1,,117,tag,Inferred
+SDCB#1,020,20,C2.1,"158.50,138.50,174.28,142.50",bluebeam-ocr,,N,Y,SDCB#1,assigned,117,SDCB #1,,117,tag,Inferred
+SDCB#5,020,20,C2.1,"281.52,532.98,302.04,538.56",ocr,47.00,N,Y,SDCB#5,assigned,76,SDCB #5,,76,tag,Inferred
+SDCB#5,020,20,C2.1,"286.15,534.00,301.93,538.00",bluebeam-ocr,,N,Y,SDCB#5,assigned,76,SDCB #5,,76,tag,Inferred
+GEN,020,20,C2.1,"289.70,706.10,298.36,710.10",bluebeam-ocr,,N,Y,GEN,"off-citation, short form",,,,243,tag,Inferred
+SDCB#2,020,20,C2.1,"350.65,144.75,366.20,148.75",bluebeam-ocr,,N,Y,SDCB#2,assigned,81,SDCB #2,,81,tag,Inferred
+SDCB#8,020,20,C2.1,"360.50,673.20,376.28,677.20",bluebeam-ocr,,N,Y,SDCB#8,assigned,77,SDCB #8,,77,tag,Inferred
+SDCB#6,020,20,C2.1,"371.30,479.05,386.85,483.05",bluebeam-ocr,,N,Y,SDCB#6,assigned,84,SDCB #6,,84,tag,Inferred
+FI,020,20,C2.1,"371.50,611.44,380.37,621.44",bluebeam-ocr,,Y,N,F1,"off-citation, short form",,,,167; 174; 292,tag,Inferred
+SDCB#7,020,20,C2.1,"409.30,465.67,436.91,472.67",bluebeam-ocr,,N,Y,SDCB#7,assigned,79,SDCB #7,,79,tag,Inferred
+SDCB#7,020,20,C2.1,"413.10,467.10,433.44,472.50",ocr,68.00,N,Y,SDCB#7,assigned,79,SDCB #7,,79,tag,Inferred
+SDCB#3,020,20,C2.1,"474.25,176.27,501.86,183.27",bluebeam-ocr,,N,Y,SDCB#3,assigned,82,SDCB #3,,82,tag,Inferred
+SDCB#9,020,20,C2.1,"485.46,680.94,505.80,686.52",ocr,43.00,N,Y,SDCB#9,assigned,78,SDCB #9,,78,tag,Inferred
+SDCB#9,020,20,C2.1,"497.80,683.05,513.58,687.05",bluebeam-ocr,,N,Y,SDCB#9,assigned,78,SDCB #9,,78,tag,Inferred
+SDCB#10,020,20,C2.1,"558.54,442.62,581.94,446.94",ocr,72.00,N,Y,SDCB#10,assigned,80,SDCB #10,,80,tag,Inferred
+SDCB#10,020,20,C2.1,"558.70,444.00,576.48,448.00",bluebeam-ocr,,N,Y,SDCB#10,assigned,80,SDCB #10,,80,tag,Inferred
+FI,020,20,C2.1,"583.20,596.20,586.75,600.20",bluebeam-ocr,,Y,N,F1,"off-citation, short form",,,,167; 174; 292,tag,Inferred
+SDCB#4,020,20,C2.1,"603.50,165.92,631.11,172.92",bluebeam-ocr,,N,Y,SDCB#4,assigned,83,SDCB #4,,83,tag,Inferred
+SDCB#4,020,20,C2.1,"608.04,167.22,628.74,172.80",ocr,90.00,N,Y,SDCB#4,assigned,83,SDCB #4,,83,tag,Inferred
+23.52,020,20,C2.1,"734.94,667.44,749.88,671.94",ocr,96.00,Y,N,S2,"off-citation, short form",,,,191,tag,Inferred
+25.52,020,20,C2.1,"735.84,633.06,750.96,643.32",ocr,88.00,Y,N,S2,"off-citation, short form",,,,191,tag,Inferred
+SSMH 1285,020,20,C2.1,"830.40,529.20,851.95,533.20",bluebeam-ocr,,N,Y,SSMH 1285,assigned,13,SSMH 1285,,13,tag,Inferred
+SDCB#5,021,21,C2.2,"282.15,88.27,301.87,93.27",bluebeam-ocr,,N,Y,SDCB#5,assigned,76,SDCB #5,,76,tag,Inferred
+GEN,021,21,C2.2,"289.70,260.37,300.52,265.37",bluebeam-ocr,,N,Y,GEN,"off-citation, short form",,,,243,tag,Inferred
+"SDCB#5,",021,21,C2.2,"314.12,649.59,319.12,670.70",bluebeam-ocr,,N,Y,SDCB#5,assigned,76,SDCB #5,,76,tag,Inferred
+"""SD-1""",021,21,C2.2,"345.91,737.62,368.56,744.62",bluebeam-ocr,,N,Y,SD-1,assigned,74,SD-1,,74; 316,tag,Inferred
+SDCB#8,021,21,C2.2,"360.50,227.97,379.94,232.97",bluebeam-ocr,,N,Y,SDCB#8,assigned,77,SDCB #8,,77,tag,Inferred
+"""SD-1""",021,21,C2.2,"385.87,733.32,430.58,745.89",text-layer,,N,Y,SD-1,assigned,74,SD-1,,74; 316,tag,Verified
+"SDCB#8,",021,21,C2.2,"414.90,664.38,420.48,686.34",ocr,57.00,N,Y,SDCB#8,assigned,77,SDCB #8,,77,tag,Inferred
+"SDCB#8,",021,21,C2.2,"415.17,665.29,420.17,686.40",bluebeam-ocr,,N,Y,SDCB#8,assigned,77,SDCB #8,,77,tag,Inferred
+"""SD-1""",021,21,C2.2,"426.56,332.27,449.21,339.27",bluebeam-ocr,,N,Y,SD-1,assigned,74,SD-1,,74; 316,tag,Inferred
+"""SD-1""",021,21,C2.2,"466.39,327.60,511.10,340.17",text-layer,,N,Y,SD-1,assigned,74,SD-1,,74; 316,tag,Verified
+SDCB#9,021,21,C2.2,"485.46,236.16,505.80,241.56",ocr,76.00,N,Y,SDCB#9,assigned,78,SDCB #9,,78,tag,Inferred
+”SD-1”,021,21,C2.2,"485.90,259.87,502.28,264.87",bluebeam-ocr,,N,Y,SD-1,assigned,74,SD-1,,74; 316,tag,Inferred
+SDCB#9,021,21,C2.2,"485.95,236.37,505.67,241.37",bluebeam-ocr,,N,Y,SDCB#9,assigned,78,SDCB #9,,78,tag,Inferred
+"SDCB#9,",021,21,C2.2,"540.67,648.90,545.67,670.00",bluebeam-ocr,,N,Y,SDCB#9,assigned,78,SDCB #9,,78,tag,Inferred
+"SDCB#5,",022,22,C2.3,"88.02,658.79,93.02,679.90",bluebeam-ocr,,N,Y,SDCB#5,assigned,76,SDCB #5,,76,tag,Inferred
+SDCB#5,022,22,C2.3,"109.35,223.42,129.07,228.42",bluebeam-ocr,,N,Y,SDCB#5,assigned,76,SDCB #5,,76,tag,Inferred
+"""SD—2”",022,22,C2.3,"180.18,88.38,199.80,93.24",ocr,70.00,N,Y,SD-2,assigned,118,SD-2,,118,tag,Inferred
+”SD-2”,022,22,C2.3,"183.30,89.22,199.68,94.22",bluebeam-ocr,,N,Y,SD-2,assigned,118,SD-2,,118,tag,Inferred
+"""SD-2""",022,22,C2.3,"187.44,737.12,208.34,744.12",bluebeam-ocr,,N,Y,SD-2,assigned,118,SD-2,,118,tag,Inferred
+"SDCB#6,",022,22,C2.3,"190.27,655.62,195.27,676.45",bluebeam-ocr,,N,Y,SDCB#6,assigned,84,SDCB #6,,84,tag,Inferred
+SDCB#6,022,22,C2.3,"198.95,168.42,218.67,173.42",bluebeam-ocr,,N,Y,SDCB#6,assigned,84,SDCB #6,,84,tag,Inferred
+"""SD-2""",022,22,C2.3,"228.07,732.72,272.78,745.29",text-layer,,N,Y,SD-2,assigned,118,SD-2,,118,tag,Verified
+"""SD-2""",022,22,C2.3,"231.39,322.42,252.29,329.42",bluebeam-ocr,,N,Y,SD-2,assigned,118,SD-2,,118,tag,Inferred
+SDCB#7,022,22,C2.3,"240.50,157.42,259.94,162.42",bluebeam-ocr,,N,Y,SDCB#7,assigned,79,SDCB #7,,79,tag,Inferred
+"SDCB#7,",022,22,C2.3,"263.47,659.95,268.47,681.05",bluebeam-ocr,,N,Y,SDCB#7,assigned,79,SDCB #7,,79,tag,Inferred
+"""SD-2""",022,22,C2.3,"271.87,318.00,316.58,330.57",text-layer,,N,Y,SD-2,assigned,118,SD-2,,118,tag,Verified
+"SDCB#10,",022,22,C2.3,"349.87,664.21,354.87,688.10",bluebeam-ocr,,N,Y,SDCB#10,assigned,80,SDCB #10,,80,tag,Inferred
+SDCB#10,022,22,C2.3,"386.15,132.92,408.65,137.92",bluebeam-ocr,,N,Y,SDCB#10,assigned,80,SDCB #10,,80,tag,Inferred
+SDCB#10,022,22,C2.3,"386.28,132.66,409.50,138.24",ocr,82.00,N,Y,SDCB#10,assigned,80,SDCB #10,,80,tag,Inferred
+SDCB#1,022,22,C2.3,"469.15,176.37,488.87,181.37",bluebeam-ocr,,N,Y,SDCB#1,assigned,117,SDCB #1,,117,tag,Inferred
+"SDCB#1,",022,22,C2.3,"512.64,669.96,518.22,691.20",ocr,74.00,N,Y,SDCB#1,assigned,117,SDCB #1,,117,tag,Inferred
+"SDCB#1,",022,22,C2.3,"513.07,665.59,518.07,686.70",bluebeam-ocr,,N,Y,SDCB#1,assigned,117,SDCB #1,,117,tag,Inferred
+"SDCB#2,",022,22,C2.3,"655.02,660.78,660.60,682.74",ocr,42.00,N,Y,SDCB#2,assigned,81,SDCB #2,,81,tag,Inferred
+"SDCB#2,",022,22,C2.3,"655.42,657.54,660.42,678.65",bluebeam-ocr,,N,Y,SDCB#2,assigned,81,SDCB #2,,81,tag,Inferred
+SDCB#2,022,22,C2.3,"665.05,180.82,692.27,187.82",bluebeam-ocr,,N,Y,SDCB#2,assigned,81,SDCB #2,,81,tag,Inferred
+"""SD-3”",022,22,C2.3,"675.90,254.16,695.34,259.20",ocr,49.00,N,Y,SD-3,assigned,119,SD-3,,119,tag,Inferred
+”SD-3”,022,22,C2.3,"678.90,255.07,695.28,260.07",bluebeam-ocr,,N,Y,SD-3,assigned,119,SD-3,,119,tag,Inferred
+51,022,22,C2.3,"700.38,604.26,706.14,608.58",ocr,44.00,Y,N,S1,"off-citation, short form",,,,191,tag,Inferred
+"""SD-3""",022,22,C2.3,"733.24,322.42,754.14,329.42",bluebeam-ocr,,N,Y,SD-3,assigned,119,SD-3,,119,tag,Inferred
+"""SD-3""",022,22,C2.3,"755.29,737.12,776.19,744.12",bluebeam-ocr,,N,Y,SD-3,assigned,119,SD-3,,119,tag,Inferred
+"""SD-3""",022,22,C2.3,"773.83,318.00,818.54,330.57",text-layer,,N,Y,SD-3,assigned,119,SD-3,,119,tag,Verified
+"""SD-3""",022,22,C2.3,"795.79,732.72,840.50,745.29",text-layer,,N,Y,SD-3,assigned,119,SD-3,,119,tag,Verified
+"SDCB#3,",022,22,C2.3,"816.22,653.45,821.22,674.55",bluebeam-ocr,,N,Y,SDCB#3,assigned,82,SDCB #3,,82,tag,Inferred
+"SDCB#4,",022,22,C2.3,"900.22,656.40,905.22,677.50",bluebeam-ocr,,N,Y,SDCB#4,assigned,83,SDCB #4,,83,tag,Inferred
+SDCB#4,022,22,C2.3,"922.80,206.37,942.52,211.37",bluebeam-ocr,,N,Y,SDCB#4,assigned,83,SDCB #4,,83,tag,Inferred
+SDCB#8,023,23,C2.4,"82.10,87.82,101.82,92.82",bluebeam-ocr,,N,Y,SDCB#8,assigned,77,SDCB #8,,77,tag,Inferred
+"SDCB#10,",023,23,C2.4,"174.42,679.14,180.00,703.98",ocr,61.00,N,Y,SDCB#10,assigned,80,SDCB #10,,80,tag,Inferred
+"SDCB#10,",023,23,C2.4,"174.67,676.02,179.67,699.90",bluebeam-ocr,,N,Y,SDCB#10,assigned,80,SDCB #10,,80,tag,Inferred
+SDCB#6,023,23,C2.4,"271.60,107.22,291.32,112.22",bluebeam-ocr,,N,Y,SDCB#6,assigned,84,SDCB #6,,84,tag,Inferred
+SDCB#7,023,23,C2.4,"343.20,176.82,362.92,181.82",bluebeam-ocr,,N,Y,SDCB#7,assigned,79,SDCB #7,,79,tag,Inferred
+SDCB#10,023,23,C2.4,"354.95,259.62,377.45,264.62",bluebeam-ocr,,N,Y,SDCB#10,assigned,80,SDCB #10,,80,tag,Inferred
+0+51,023,23,C2.4,"482.07,156.92,493.38,161.92",bluebeam-ocr,,Y,N,S1,"off-citation, short form",,,,191,tag,Inferred
+"SDCB#7,",023,23,C2.4,"503.47,678.49,508.47,699.60",bluebeam-ocr,,N,Y,SDCB#7,assigned,79,SDCB #7,,79,tag,Inferred
+SDCB#3,023,23,C2.4,"571.90,205.69,603.45,213.69",bluebeam-ocr,,N,Y,SDCB#3,assigned,82,SDCB #3,,82,tag,Inferred
+SDCB#4,023,23,C2.4,"571.90,270.42,591.62,275.42",bluebeam-ocr,,N,Y,SDCB#4,assigned,83,SDCB #4,,83,tag,Inferred
+lt,023,23,C2.4,"576.90,264.24,585.72,274.50",ocr,58.00,N,Y,LT,"off-citation, short form",,,,296,tag,Inferred
+SDCB#2,023,23,C2.4,"629.30,52.52,649.02,57.52",bluebeam-ocr,,N,Y,SDCB#2,assigned,81,SDCB #2,,81,tag,Inferred
+SDCB#2,023,23,C2.4,"629.46,52.38,649.98,57.78",ocr,54.00,N,Y,SDCB#2,assigned,81,SDCB #2,,81,tag,Inferred
+li,024,24,C2.5,"630.36,151.74,641.52,170.46",ocr,0.00,Y,N,L1,"off-citation, short form",,,,277,tag,Inferred
+Lt,024,24,C2.5,"920.88,355.14,929.34,362.34",ocr,7.00,N,Y,LT,"off-citation, short form",,,,296,tag,Inferred
+Si,024,24,C2.5,"922.55,343.41,930.54,352.41",bluebeam-ocr,,Y,N,S1,"off-citation, short form",,,,191,tag,Inferred
+51.,024,24,C2.5,"1004.65,650.34,1008.65,655.90",bluebeam-ocr,,Y,N,S1,"off-citation, short form",,,,191,tag,Inferred
+Si<,025,25,C2.6,"777.78,579.06,795.42,585.18",ocr,36.00,Y,N,S1,"off-citation, short form",,,,191,tag,Inferred
+SI,025,25,C2.6,"791.10,587.88,795.06,592.20",ocr,77.00,Y,N,S1,"off-citation, short form",,,,191,tag,Inferred
+ats.,025,25,C2.6,"1044.54,688.68,1053.36,728.10",ocr,28.00,N,Y,ATS,"off-citation, short form",,,,240,tag,Inferred
+SEI,025,25,C2.6,"1049.22,741.60,1081.98,756.54",ocr,72.00,Y,N,SE1,"off-citation, short form",,,,126,tag,Inferred
+S2.4,025,25,C2.6,"1085.64,192.22,1097.25,197.70",text-layer,,N,Y,S2,"off-citation, short form",,,,191,tag,Verified
+DO #2,028,28,C3.3,"346.55,512.37,360.99,517.37",bluebeam-ocr,,N,Y,DO#2,assigned,142,DO #2 | DO-2,,142,tag,Inferred
+ts,028,28,C3.3,"463.86,622.08,471.24,625.86",ocr,40.00,N,Y,TS,"off-citation, short form",,,,242,tag,Inferred
+“TS,029,29,C3.4,"197.28,334.80,213.48,348.84",ocr,13.00,N,Y,TS,"off-citation, short form",,,,242,tag,Inferred
+Li},029,29,C3.4,"1125.72,639.54,1134.72,646.02",ocr,43.00,Y,N,L1,"off-citation, short form",,,,277,tag,Inferred
+LI,030,30,C3.5,"260.90,195.07,265.06,200.07",bluebeam-ocr,,Y,N,L1,"off-citation, short form",,,,277,tag,Inferred
+(51),031,31,C4.1,"46.55,647.02,55.44,652.02",bluebeam-ocr,,Y,N,S1,"off-citation, short form",,,,191,tag,Inferred
+52),031,31,C4.1,"47.50,656.37,54.72,661.37",bluebeam-ocr,,Y,N,S2,"off-citation, short form",,,,191,tag,Inferred
+S2.4,031,31,C4.1,"104.52,247.18,116.13,252.66",text-layer,,N,Y,S2,"off-citation, short form",,,,191,tag,Verified
+S2.4,031,31,C4.1,"124.68,247.18,136.29,252.66",text-layer,,N,Y,S2,"off-citation, short form",,,,191,tag,Verified
+51,031,31,C4.1,"413.28,369.18,417.78,372.78",ocr,64.00,Y,N,S1,"off-citation, short form",,,,191,tag,Inferred
+52,031,31,C4.1,"673.28,236.89,682.17,244.89",bluebeam-ocr,,Y,N,S2,"off-citation, short form",,,,191,tag,Inferred
+52,031,31,C4.1,"677.52,633.06,682.92,636.66",ocr,94.00,Y,N,S2,"off-citation, short form",,,,191,tag,Inferred
+F1,031,31,C4.1,"678.95,468.42,684.78,473.42",bluebeam-ocr,,N,Y,F1,assigned,167,F1–F4 [Influent Pump Station],,167,tag,Inferred
+F2,031,31,C4.1,"687.85,474.80,696.01,481.80",bluebeam-ocr,,N,Y,F2,assigned,167,F1–F4 [Influent Pump Station],,167,tag,Inferred
+F3,031,31,C4.1,"704.65,487.87,710.48,492.87",bluebeam-ocr,,N,Y,F3,assigned,167,F1–F4 [Influent Pump Station],,167,tag,Inferred
+F4,031,31,C4.1,"710.90,496.77,716.73,501.77",bluebeam-ocr,,N,Y,F4,assigned,167,F1–F4 [Influent Pump Station],,167,tag,Inferred
+F4,031,31,C4.1,"711.00,496.62,716.94,500.58",ocr,90.00,N,Y,F4,assigned,167,F1–F4 [Influent Pump Station],,167,tag,Inferred
+(T2),031,31,C4.1,"1043.65,692.37,1052.81,697.37",bluebeam-ocr,,N,Y,T2,"off-citation, short form",,,,350,tag,Inferred
+(T3),031,31,C4.1,"1043.65,706.02,1052.81,711.02",bluebeam-ocr,,N,Y,T3,"off-citation, short form",,,,298,tag,Inferred
+(T5),031,31,C4.1,"1043.65,732.92,1052.81,737.92",bluebeam-ocr,,Y,N,TS,"off-citation, short form",,,,242,tag,Inferred
+(F2),031,31,C4.1,"1050.43,632.12,1059.59,637.12",bluebeam-ocr,,N,Y,F2,assigned,167,F1–F4 [Influent Pump Station],,167,tag,Inferred
+(F3),031,31,C4.1,"1050.43,645.82,1059.59,650.82",bluebeam-ocr,,N,Y,F3,assigned,167,F1–F4 [Influent Pump Station],,167,tag,Inferred
+(F4),031,31,C4.1,"1050.43,659.47,1059.59,664.47",bluebeam-ocr,,N,Y,F4,assigned,167,F1–F4 [Influent Pump Station],,167,tag,Inferred
+(F1),031,31,C4.1,"1050.93,618.42,1060.09,623.42",bluebeam-ocr,,N,Y,F1,assigned,167,F1–F4 [Influent Pump Station],,167,tag,Inferred
+(F1),031,31,C4.1,"1053.36,617.76,1063.26,623.70",ocr,92.00,N,Y,F1,assigned,167,F1–F4 [Influent Pump Station],,167,tag,Inferred
+F2),031,31,C4.1,"1055.52,631.44,1063.62,637.20",ocr,92.00,N,Y,F2,assigned,167,F1–F4 [Influent Pump Station],,167,tag,Inferred
+(F3),031,31,C4.1,"1055.52,645.12,1063.62,650.88",ocr,92.00,N,Y,F3,assigned,167,F1–F4 [Influent Pump Station],,167,tag,Inferred
+(F4),031,31,C4.1,"1055.52,658.80,1063.62,664.56",ocr,90.00,N,Y,F4,assigned,167,F1–F4 [Influent Pump Station],,167,tag,Inferred
+F1,032,32,C4.2,"234.95,428.12,240.78,433.12",bluebeam-ocr,,N,Y,F1,assigned,174,F1–F4 [2W Pump Station],,174,tag,Inferred
+F4,032,32,C4.2,"244.80,552.92,250.63,557.92",bluebeam-ocr,,N,Y,F4,assigned,174,F1–F4 [2W Pump Station],,174,tag,Inferred
+F4,032,32,C4.2,"244.98,552.96,251.10,556.92",ocr,83.00,N,Y,F4,assigned,174,F1–F4 [2W Pump Station],,174,tag,Inferred
+F2,032,32,C4.2,"264.70,453.92,272.86,460.92",bluebeam-ocr,,N,Y,F2,assigned,174,F1–F4 [2W Pump Station],,174,tag,Inferred
+F3,032,32,C4.2,"264.95,472.17,273.11,479.17",bluebeam-ocr,,N,Y,F3,assigned,174,F1–F4 [2W Pump Station],,174,tag,Inferred
+F2,032,32,C4.2,"264.96,455.40,270.72,459.36",ocr,92.00,N,Y,F2,assigned,174,F1–F4 [2W Pump Station],,174,tag,Inferred
+F3,032,32,C4.2,"265.32,473.58,271.08,477.54",ocr,91.00,N,Y,F3,assigned,174,F1–F4 [2W Pump Station],,174,tag,Inferred
+(F3),032,32,C4.2,"562.04,593.22,571.20,598.22",bluebeam-ocr,,N,Y,F3,assigned,174,F1–F4 [2W Pump Station],,174,tag,Inferred
+(F2),032,32,C4.2,"564.82,581.72,573.98,586.72",bluebeam-ocr,,N,Y,F2,assigned,174,F1–F4 [2W Pump Station],,174,tag,Inferred
+(F3),032,32,C4.2,"566.82,592.56,577.08,598.32",ocr,92.00,N,Y,F3,assigned,174,F1–F4 [2W Pump Station],,174,tag,Inferred
+(F2),032,32,C4.2,"569.52,581.04,579.60,586.80",ocr,92.00,N,Y,F2,assigned,174,F1–F4 [2W Pump Station],,174,tag,Inferred
+(F4),032,32,C4.2,"577.81,604.52,586.97,609.52",bluebeam-ocr,,N,Y,F4,assigned,174,F1–F4 [2W Pump Station],,174,tag,Inferred
+(F4),032,32,C4.2,"583.56,603.90,593.82,609.66",ocr,91.00,N,Y,F4,assigned,174,F1–F4 [2W Pump Station],,174,tag,Inferred
+(F1),032,32,C4.2,"597.57,571.42,606.73,576.42",bluebeam-ocr,,N,Y,F1,assigned,174,F1–F4 [2W Pump Station],,174,tag,Inferred
+(F1),032,32,C4.2,"603.72,570.60,613.98,576.54",ocr,92.00,N,Y,F1,assigned,174,F1–F4 [2W Pump Station],,174,tag,Inferred
+PIT-620).,033,33,C4.3,"94.90,408.39,119.89,414.39",bluebeam-ocr,,N,Y,PIT-620,assigned,176,PIT-620,,176,tag,Inferred
+PIT-620).,033,33,C4.3,"96.84,408.24,123.30,414.18",ocr,42.00,N,Y,PIT-620,assigned,176,PIT-620,,176,tag,Inferred
+LI,035,35,C5.2,"458.46,206.82,463.32,211.32",ocr,73.00,Y,N,L1,"off-citation, short form",,,,277,tag,Inferred
+(S1),036,36,C5.3,"330.65,38.12,340.10,43.12",bluebeam-ocr,,N,Y,S1,assigned,191,S1–S2 [Aerobic Digester],,191,tag,Inferred
+(S2),036,36,C5.3,"330.65,46.52,340.10,51.52",bluebeam-ocr,,N,Y,S2,assigned,191,S1–S2 [Aerobic Digester],,191,tag,Inferred
+(S1),036,36,C5.3,"337.86,37.44,348.48,43.20",ocr,91.00,N,Y,S1,assigned,191,S1–S2 [Aerobic Digester],,191,tag,Inferred
+(S2),036,36,C5.3,"337.86,45.90,348.48,51.66",ocr,92.00,N,Y,S2,assigned,191,S1–S2 [Aerobic Digester],,191,tag,Inferred
+S1,036,36,C5.3,"381.60,96.28,386.88,101.28",bluebeam-ocr,,N,Y,S1,assigned,191,S1–S2 [Aerobic Digester],,191,tag,Inferred
+"2°x1""",036,36,C5.3,"814.50,193.32,828.54,198.00",ocr,46.00,N,Y,X1,"off-citation, short form",,,,279,tag,Inferred
+SI,038,38,C6.1,"612.18,266.22,622.26,273.06",ocr,41.00,Y,N,S1,"off-citation, short form",,,,191,tag,Inferred
+Lt,039,39,C6.2,"201.60,421.92,237.60,422.28",ocr,18.00,N,Y,LT,"off-citation, short form",,,,296,tag,Inferred
+si,043,43,C7.1,"781.45,490.85,788.78,501.85",bluebeam-ocr,,Y,N,S1,"off-citation, short form",,,,191,tag,Inferred
+Si,046,46,C7.4,"682.30,149.89,736.99,207.89",bluebeam-ocr,,Y,N,S1,"off-citation, short form",,,,191,tag,Inferred
+HOT BOX #1,048,48,C7.6,"186.00,734.92,296.47,751.68",text-layer,,N,Y,HOT BOX#1,assigned,58,Hot Box #1,,58,tag,Verified
+SES,048,48,C7.6,"622.98,256.86,635.22,269.10",ocr,2.00,N,Y,SES,qualifier (E) not on line,,,,249,tag,Inferred
+HOT BOX #2,048,48,C7.6,"654.12,290.80,764.59,307.56",text-layer,,N,Y,HOT BOX#2,assigned,59,Hot Box #2,,59,tag,Verified
+HOT BOX #2,048,48,C7.6,"706.56,734.92,817.03,751.68",text-layer,,N,Y,HOT BOX#2,assigned,59,Hot Box #2,,59,tag,Verified
+TS,048,48,C7.6,"898.56,453.06,903.42,455.04",ocr,9.00,N,Y,TS,"off-citation, short form",,,,242,tag,Inferred
+HOT BOX #1,048,48,C7.6,"973.60,114.67,1008.36,119.67",bluebeam-ocr,,N,Y,HOT BOX#1,assigned,58,Hot Box #1,,58,tag,Inferred
+SI,051,51,C7.9,"208.10,543.07,212.82,548.07",bluebeam-ocr,,Y,N,S1,"off-citation, short form",,,,191,tag,Inferred
+SI,051,51,C7.9,"578.40,542.82,583.12,547.82",bluebeam-ocr,,Y,N,S1,"off-citation, short form",,,,191,tag,Inferred
+SI,052,52,C7.10,"242.40,543.07,247.12,548.07",bluebeam-ocr,,Y,N,S1,"off-citation, short form",,,,191,tag,Inferred
+LI,052,52,C7.10,"255.12,216.44,281.12,239.50",bluebeam-ocr,,Y,N,L1,"off-citation, short form",,,,277,tag,Inferred
+SI,052,52,C7.10,"739.70,542.82,744.41,547.82",bluebeam-ocr,,Y,N,S1,"off-citation, short form",,,,191,tag,Inferred
+101C,053,53,A1.1,"321.85,369.38,332.68,374.38",bluebeam-ocr,,N,Y,101C,assigned,370,101C,,370,tag,Inferred
+Lt,053,53,A1.1,"454.14,102.42,459.36,109.08",ocr,30.00,N,Y,LT,"off-citation, short form",,,,296,tag,Inferred
+101A,053,53,A1.1,"485.30,360.67,496.97,365.67",bluebeam-ocr,,N,Y,101A,assigned,368,101A,,368,tag,Inferred
+Li,053,53,A1.1,"520.55,281.20,551.67,314.20",bluebeam-ocr,,Y,N,L1,"off-citation, short form",,,,277,tag,Inferred
+101A},053,53,A1.1,"629.28,108.18,639.00,111.24",ocr,61.00,N,Y,101A,assigned,368,101A,,368,tag,Inferred
+101B,053,53,A1.1,"629.30,115.95,638.64,119.95",bluebeam-ocr,,N,Y,101B,assigned,369,101B,,369,tag,Inferred
+101C,053,53,A1.1,"629.30,123.85,638.86,127.85",bluebeam-ocr,,N,Y,101C,assigned,370,101C,,370,tag,Inferred
+101B|,053,53,A1.1,"629.46,115.92,639.00,119.16",ocr,90.00,N,Y,101B,assigned,369,101B,,369,tag,Inferred
+101C|,053,53,A1.1,"629.46,123.84,639.00,126.90",ocr,89.00,N,Y,101C,assigned,370,101C,,370,tag,Inferred
+101A,053,53,A1.1,"629.50,108.00,638.84,112.00",bluebeam-ocr,,N,Y,101A,assigned,368,101A,,368,tag,Inferred
+Li,053,53,A1.1,"646.30,281.20,677.42,314.20",bluebeam-ocr,,Y,N,L1,"off-citation, short form",,,,277,tag,Inferred
+101A,053,53,A1.1,"700.30,360.67,711.97,365.67",bluebeam-ocr,,N,Y,101A,assigned,368,101A,,368,tag,Inferred
+F3,055,55,A1.3,"93.10,489.01,110.59,504.01",bluebeam-ocr,,N,Y,F3,"off-citation, short form",,,,167; 174; 294; 335,tag,Inferred
+Li,055,55,A1.3,"527.75,514.24,535.53,524.24",bluebeam-ocr,,Y,N,L1,"off-citation, short form",,,,277,tag,Inferred
+S1,056,56,S1.1,"98.30,191.97,104.41,196.97",bluebeam-ocr,,N,Y,S1,"off-citation, short form",,,,191,tag,Inferred
+S1,056,56,S1.1,"102.96,191.70,108.36,195.84",ocr,61.00,N,Y,S1,"off-citation, short form",,,,191,tag,Inferred
+S1,056,56,S1.1,"503.05,426.22,509.16,431.22",bluebeam-ocr,,N,Y,S1,"off-citation, short form",,,,191,tag,Inferred
+S1,056,56,S1.1,"503.28,426.06,508.68,430.20",ocr,87.00,N,Y,S1,"off-citation, short form",,,,191,tag,Inferred
+1/S2.1,057,57,S2.1,"160.78,717.32,175.27,722.32",bluebeam-ocr,,N,Y,S2,"off-citation, short form",,,,191,tag,Inferred
+1/S2.1,057,57,S2.1,"161.10,717.48,174.78,721.08",ocr,58.00,N,Y,S2,"off-citation, short form",,,,191,tag,Inferred
+2/S2.1,057,57,S2.1,"367.67,376.52,382.11,381.52",bluebeam-ocr,,N,Y,S2,"off-citation, short form",,,,191,tag,Inferred
+1/S2.1,057,57,S2.1,"458.67,411.82,473.11,416.82",bluebeam-ocr,,N,Y,S2,"off-citation, short form",,,,191,tag,Inferred
+S2.1,057,57,S2.1,"541.90,536.12,552.18,541.12",bluebeam-ocr,,N,Y,S2,"off-citation, short form",,,,191,tag,Inferred
+2/S2.1,057,57,S2.1,"794.77,228.92,809.21,233.92",bluebeam-ocr,,N,Y,S2,"off-citation, short form",,,,191,tag,Inferred
+S2.1,057,57,S2.1,"795.35,705.07,805.63,710.07",bluebeam-ocr,,N,Y,S2,"off-citation, short form",,,,191,tag,Inferred
+2/S2.1,057,57,S2.1,"936.45,462.67,950.89,467.67",bluebeam-ocr,,N,Y,S2,"off-citation, short form",,,,191,tag,Inferred
+5/S2.1,057,57,S2.1,"967.77,184.77,982.21,189.77",bluebeam-ocr,,N,Y,S2,"off-citation, short form",,,,191,tag,Inferred
+S2.1,057,57,S2.1,"1132.23,730.13,1146.23,758.90",bluebeam-ocr,,N,Y,S2,"off-citation, short form",,,,191,tag,Inferred
+S2.2,058,58,S2.2,"322.30,584.37,332.57,589.37",bluebeam-ocr,,N,Y,S2,"off-citation, short form",,,,191,tag,Inferred
+S2.2,058,58,S2.2,"491.25,678.92,501.52,683.92",bluebeam-ocr,,N,Y,S2,"off-citation, short form",,,,191,tag,Inferred
+S2.2,058,58,S2.2,"697.20,303.82,707.48,308.82",bluebeam-ocr,,N,Y,S2,"off-citation, short form",,,,191,tag,Inferred
+S2.2,058,58,S2.2,"698.40,330.22,708.68,335.22",bluebeam-ocr,,N,Y,S2,"off-citation, short form",,,,191,tag,Inferred
+Si,058,58,S2.2,"710.15,421.81,723.47,436.81",bluebeam-ocr,,Y,N,S1,"off-citation, short form",,,,191,tag,Inferred
+F2),058,58,S2.2,"728.15,559.80,736.00,566.04",bluebeam-ocr,,N,Y,F2,"off-citation, short form",,,,167; 174; 293; 334,tag,Inferred
+7/S2.2,058,58,S2.2,"857.68,660.92,872.12,665.92",bluebeam-ocr,,N,Y,S2,"off-citation, short form",,,,191,tag,Inferred
+S2.2,058,58,S2.2,"1131.46,728.07,1146.46,758.90",bluebeam-ocr,,N,Y,S2,"off-citation, short form",,,,191,tag,Inferred
+S2.3,059,59,S2.3,"834.95,714.67,845.23,719.67",bluebeam-ocr,,N,Y,S2,"off-citation, short form",,,,191,tag,Inferred
+52.3,059,59,S2.3,"1130.93,727.78,1146.93,758.90",bluebeam-ocr,,Y,N,S2,"off-citation, short form",,,,191,tag,Inferred
+2/S2.4,060,60,S2.4,"597.49,513.57,611.93,518.57",bluebeam-ocr,,N,Y,S2,"off-citation, short form",,,,191,tag,Inferred
+2/S2.4,060,60,S2.4,"597.95,418.27,612.40,423.27",bluebeam-ocr,,N,Y,S2,"off-citation, short form",,,,191,tag,Inferred
+S2.4,060,60,S2.4,"776.40,554.37,786.68,559.37",bluebeam-ocr,,N,Y,S2,"off-citation, short form",,,,191,tag,Inferred
+LI,060,60,S2.4,"824.65,217.25,828.42,221.25",bluebeam-ocr,,Y,N,L1,"off-citation, short form",,,,277,tag,Inferred
+S2.4,060,60,S2.4,"1133.01,732.18,1146.01,758.90",bluebeam-ocr,,N,Y,S2,"off-citation, short form",,,,191,tag,Inferred
+F1,062,62,E0.1,"92.16,299.40,98.03,304.43",text-layer,,N,Y,F1,"off-citation, short form",,,,167; 174; 292,tag,Verified
+F1,062,62,E0.1,"92.16,330.90,98.03,335.93",text-layer,,N,Y,F1,"off-citation, short form",,,,167; 174; 292,tag,Verified
+MCP,062,62,E0.1,"300.60,588.12,311.77,593.15",text-layer,,N,Y,MCP,"off-citation, short form",,,,264,tag,Verified
+EF-1,062,62,E0.1,"312.30,85.56,323.20,90.59",text-layer,,N,Y,EF-1,assigned,273,EF-1,,273,tag,Verified
+F1,062,62,E0.1,"315.18,103.56,321.05,108.59",text-layer,,N,Y,F1,"off-citation, short form",,,,167; 174; 292,tag,Verified
+ATS,062,62,E0.1,"359.82,528.18,369.60,533.21",text-layer,,N,Y,ATS,"off-citation, short form",,,,240,tag,Verified
+PLUG-RECEPTACLE/MCC,062,62,E0.1,"385.81,651.66,447.55,656.69",text-layer,,N,Y,MCC,"off-citation, short form",,,,263,tag,Verified
+GEN,062,62,E0.1,"561.96,371.45,574.22,377.11",text-layer,,N,Y,GEN,"off-citation, short form",,,,243,tag,Verified
+TS,062,62,E0.1,"681.09,76.38,687.52,81.41",text-layer,,N,Y,TS,"off-citation, short form",,,,242,tag,Verified
+GEN,062,62,E0.1,"742.50,259.80,753.40,264.83",text-layer,,N,Y,GEN,"off-citation, short form",,,,243,tag,Verified
+LT,062,62,E0.1,"742.50,362.76,748.37,367.79",text-layer,,N,Y,LT,"off-citation, short form",,,,296,tag,Verified
+MCC,062,62,E0.1,"742.50,380.94,753.95,385.97",text-layer,,N,Y,MCC,"off-citation, short form",,,,263,tag,Verified
+MCP,062,62,E0.1,"742.50,386.88,753.67,391.91",text-layer,,N,Y,MCP,"off-citation, short form",,,,264,tag,Verified
+ATS,062,62,E0.1,"742.86,96.36,752.64,101.39",text-layer,,N,Y,ATS,"off-citation, short form",,,,240,tag,Verified
+ATS,063,63,E0.2,"232.33,247.74,242.11,252.77",text-layer,,N,Y,ATS,assigned,250,ATS (E),,250,tag,Verified
+GEN,063,63,E0.2,"370.98,629.16,381.88,634.19",text-layer,,N,Y,GEN,"off-citation, short form",,,,243,tag,Verified
+GEN,063,63,E0.2,"385.92,680.64,396.82,685.67",text-layer,,N,Y,GEN,"off-citation, short form",,,,243,tag,Verified
+ATS,063,63,E0.2,"413.46,548.34,423.24,553.37",text-layer,,N,Y,ATS,"off-citation, short form",,,,240,tag,Verified
+'TPS',063,63,E0.2,"469.62,130.02,481.32,135.05",text-layer,,N,Y,TPS,assigned,254,TPS,,254,tag,Verified
+TPS,063,63,E0.2,"517.93,639.96,527.71,644.99",text-layer,,N,Y,TPS,assigned,254,TPS,,254,tag,Verified
+52,063,63,E0.2,"1117.26,90.54,1126.08,95.76",ocr,0.00,Y,N,S2,"off-citation, short form",,,,191,tag,Inferred
+si,064,64,E0.3,"490.27,394.55,495.27,398.16",bluebeam-ocr,,Y,N,S1,"off-citation, short form",,,,191,tag,Inferred
+FI,066,66,E1.1,"152.64,648.90,160.38,655.74",ocr,24.00,Y,N,F1,"off-citation, short form",,,,167; 174; 292,tag,Inferred
+GEN,066,66,E1.1,"158.04,510.18,168.94,515.21",text-layer,,N,Y,GEN,assigned,243,GEN,,243,tag,Verified
+P-GEN,066,66,E1.1,"189.18,355.20,205.10,360.23",text-layer,,N,Y,GEN,assigned,243,GEN,,243,tag,Verified
+C-ATS,066,66,E1.1,"223.92,379.14,239.00,384.17",text-layer,,N,Y,ATS,assigned,240,ATS,,240,tag,Verified
+ATS,066,66,E1.1,"286.02,307.14,295.80,312.17",text-layer,,N,Y,ATS,assigned,240,ATS,,240,tag,Verified
+P-ATS,066,66,E1.1,"328.32,362.40,343.13,367.43",text-layer,,N,Y,ATS,assigned,240,ATS,,240,tag,Verified
+P-SEC,066,66,E1.1,"331.74,420.72,347.11,425.75",text-layer,,N,Y,P-SEC,assigned,238,P-SEC,,238,tag,Verified
+C-GEN,066,66,E1.1,"429.12,414.06,445.32,419.09",text-layer,,N,Y,GEN,assigned,243,GEN,,243,tag,Verified
+P-MDP,066,66,E1.1,"433.26,330.00,449.46,335.03",text-layer,,N,Y,MDP,assigned,241,MDP,,241,tag,Verified
+MDP,066,66,E1.1,"524.34,321.54,535.51,326.57",text-layer,,N,Y,MDP,assigned,241,MDP,,241,tag,Verified
+P-MCC,066,66,E1.1,"543.96,386.34,560.44,391.37",text-layer,,N,Y,MCC,assigned,263,MCC,,263,tag,Verified
+TS,066,66,E1.1,"623.52,313.62,629.95,318.65",text-layer,,N,Y,TS,assigned,242,TS,,242,tag,Verified
+P-TPS,066,66,E1.1,"817.92,72.42,832.73,77.45",text-layer,,N,Y,P-TPS,assigned,244,P-TPS,,244,tag,Verified
+P-TPS,066,66,E1.1,"817.92,72.42,832.73,77.45",text-layer,,N,Y,TPS,assigned,254,TPS,,254,tag,Verified
+TPS,066,66,E1.1,"899.49,406.14,909.27,411.17",text-layer,,N,Y,TPS,assigned,254,TPS,,254,tag,Verified
+ATS,066,66,E1.1,"952.74,345.66,962.52,350.69",text-layer,,N,Y,ATS,assigned,240,ATS,,240,tag,Verified
+MCC,066,66,E1.1,"1019.16,363.84,1030.61,368.87",text-layer,,N,Y,MCC,assigned,263,MCC,,263,tag,Verified
+P-DB,067,67,E2.1,"211.68,375.72,223.69,380.75",text-layer,,N,Y,DB,assigned,261,DB,,261,tag,Verified
+P-DB,067,67,E2.1,"212.04,420.18,224.05,425.21",text-layer,,N,Y,DB,assigned,261,DB,,261,tag,Verified
+C-DB,067,67,E2.1,"228.42,400.02,240.71,405.05",text-layer,,N,Y,DB,assigned,261,DB,,261,tag,Verified
+DB,067,67,E2.1,"305.28,398.22,312.26,403.25",text-layer,,N,Y,DB,assigned,261,DB,,261,tag,Verified
+BL-1,067,67,E2.1,"313.38,574.80,324.00,579.83",text-layer,,N,Y,BL-1,assigned,257,BL-1,,257,tag,Verified
+BL-2,067,67,E2.1,"431.64,575.70,442.26,580.73",text-layer,,N,Y,BL-2,assigned,258,BL-2,,258,tag,Verified
+BL-3,067,67,E2.1,"521.82,574.80,532.44,579.83",text-layer,,N,Y,BL-3,assigned,259,BL-3,,259,tag,Verified
+BL-4,067,67,E2.1,"648.54,574.80,659.16,579.83",text-layer,,N,Y,BL-4,assigned,260,BL-4,,260,tag,Verified
+MCC,067,67,E2.1,"768.60,493.26,780.05,498.29",text-layer,,N,Y,MCC,assigned,263,MCC,,263,tag,Verified
+LP-1,067,67,E2.1,"844.56,430.26,855.18,435.29",text-layer,,N,Y,LP-1,assigned,265,LP-1,,265,tag,Verified
+MCP,067,67,E2.1,"880.38,565.08,891.55,570.11",text-layer,,N,Y,MCP,assigned,264,MCP,,264,tag,Verified
+C-MCP,067,67,E2.1,"901.26,484.26,917.74,489.29",text-layer,,N,Y,MCP,assigned,264,MCP,,264,tag,Verified
+S-MCP,067,67,E2.1,"901.44,477.06,917.64,482.09",text-layer,,N,Y,MCP,assigned,264,MCP,,264,tag,Verified
+P-MCP,067,67,E2.1,"901.44,491.46,917.64,496.49",text-layer,,N,Y,MCP,assigned,264,MCP,,264,tag,Verified
+MCC,067,67,E2.1,"922.50,187.98,933.95,193.01",text-layer,,N,Y,MCC,assigned,263,MCC,,263,tag,Verified
+—LT,067,67,E2.1,"926.82,511.90,931.82,522.73",bluebeam-ocr,,N,Y,LT,"off-citation, short form",,,,296,tag,Inferred
+MCC,067,67,E2.1,"931.86,206.16,943.31,211.19",text-layer,,N,Y,MCC,assigned,263,MCC,,263,tag,Verified
+MCC,067,67,E2.1,"944.28,85.20,955.73,90.23",text-layer,,N,Y,MCC,assigned,263,MCC,,263,tag,Verified
+MCC,067,67,E2.1,"950.94,224.34,962.39,229.37",text-layer,,N,Y,MCC,assigned,263,MCC,,263,tag,Verified
+P-DW-1,067,67,E2.1,"981.54,371.58,999.42,376.61",text-layer,,N,Y,DW-1,assigned,313,DW-1,,313,tag,Verified
+UV1,068,68,E2.2,"149.05,260.12,158.77,265.12",bluebeam-ocr,,N,Y,UV1,"off-citation, short form",,,,342,tag,Inferred
+UV2,068,68,E2.2,"149.05,268.02,158.77,273.02",bluebeam-ocr,,N,Y,UV2,"off-citation, short form",,,,343,tag,Inferred
+UV1,068,68,E2.2,"149.05,275.97,158.77,280.97",bluebeam-ocr,,N,Y,UV1,"off-citation, short form",,,,342,tag,Inferred
+UV2,068,68,E2.2,"149.05,283.87,158.77,288.87",bluebeam-ocr,,N,Y,UV2,"off-citation, short form",,,,343,tag,Inferred
+ML-1,068,68,E2.2,"150.84,483.00,162.29,488.03",text-layer,,N,Y,ML-1,assigned,275,ML-1,,275,tag,Verified
+EF-1,068,68,E2.2,"183.96,244.62,193.32,248.22",ocr,92.00,N,Y,EF-1,assigned,273,EF-1,,273,tag,Inferred
+EF-2,068,68,E2.2,"183.96,252.54,193.86,256.14",ocr,92.00,N,Y,EF-2,assigned,274,EF-2,,274,tag,Inferred
+EF-1,068,68,E2.2,"185.40,244.27,196.29,249.27",bluebeam-ocr,,N,Y,EF-1,assigned,273,EF-1,,273,tag,Inferred
+EF-2,068,68,E2.2,"185.40,252.22,196.29,257.22",bluebeam-ocr,,N,Y,EF-2,assigned,274,EF-2,,274,tag,Inferred
+(MCC),068,68,E2.2,"331.78,377.01,353.98,384.55",text-layer,,N,Y,MCC,assigned,263,MCC,,263,tag,Verified
+X1,068,68,E2.2,"353.52,582.18,359.67,587.21",text-layer,,N,Y,X1,assigned,279,X1 (Blower Building),,279,tag,Verified
+L1,068,68,E2.2,"666.50,323.47,672.06,328.47",bluebeam-ocr,,N,Y,L1,assigned,277,L1 (Blower Building),,277,tag,Inferred
+X1,068,68,E2.2,"666.50,358.08,672.61,363.08",bluebeam-ocr,,N,Y,X1,assigned,279,X1 (Blower Building),,279,tag,Inferred
+L2,068,68,E2.2,"666.70,340.52,672.26,345.52",bluebeam-ocr,,N,Y,L2,assigned,278,L2 (Blower Building),,278,tag,Inferred
+L1,068,68,E2.2,"666.72,323.64,670.86,327.24",ocr,87.00,N,Y,L1,assigned,277,L1 (Blower Building),,277,tag,Inferred
+L2,068,68,E2.2,"666.72,340.92,671.40,344.52",ocr,93.00,N,Y,L2,assigned,278,L2 (Blower Building),,278,tag,Inferred
+MCC,068,68,E2.2,"755.82,438.18,767.27,443.21",text-layer,,N,Y,MCC,assigned,263,MCC,,263,tag,Verified
+LP-1,068,68,E2.2,"844.02,438.18,854.64,443.21",text-layer,,N,Y,LP-1,assigned,265,LP-1,,265,tag,Verified
+L1,068,68,E2.2,"851.58,538.08,857.17,543.11",text-layer,,N,Y,L1,assigned,277,L1 (Blower Building),,277,tag,Verified
+X1,068,68,E2.2,"867.24,582.36,873.39,587.39",text-layer,,N,Y,X1,assigned,279,X1 (Blower Building),,279,tag,Verified
+L2,068,68,E2.2,"867.60,624.48,873.19,629.51",text-layer,,N,Y,L2,assigned,278,L2 (Blower Building),,278,tag,Verified
+EF-1,068,68,E2.2,"969.66,472.92,980.56,477.95",text-layer,,N,Y,EF-1,assigned,273,EF-1,,273,tag,Verified
+EF-2,068,68,E2.2,"969.66,540.78,980.56,545.81",text-layer,,N,Y,EF-2,assigned,274,EF-2,,274,tag,Verified
+DO-2,069,69,E3.1,"232.20,319.02,244.21,324.05",text-layer,,N,Y,DO-2,assigned,142,DO #2 | DO-2,,142,tag,Verified
+LI,069,69,E3.1,"358.20,496.98,362.70,505.80",ocr,16.00,Y,N,L1,"off-citation, short form",,,,277,tag,Inferred
+DO-1,069,69,E3.1,"457.20,45.78,469.21,50.81",text-layer,,N,Y,DO-1,assigned,141,DO #1 | DO-1,,141,tag,Verified
+MCC,069,69,E3.1,"551.98,389.04,563.43,394.07",text-layer,,N,Y,MCC,"off-citation, short form",,,,263,tag,Verified
+P-TPS,070,70,E4.1,"98.28,367.62,113.09,372.65",text-layer,,N,Y,P-TPS,assigned,244,P-TPS,,244,tag,Verified
+P-TPS,070,70,E4.1,"98.28,367.62,113.09,372.65",text-layer,,N,Y,TPS,assigned,254,TPS,,254,tag,Verified
+DW-1,070,70,E4.1,"146.16,241.80,159.01,246.83",text-layer,,N,Y,DW-1,assigned,313,DW-1,,313,tag,Verified
+S-DW-1,070,70,E4.1,"166.50,267.18,184.38,272.21",text-layer,,N,Y,DW-1,assigned,313,DW-1,,313,tag,Verified
+WP-1,070,70,E4.1,"199.98,363.84,212.55,368.87",text-layer,,N,Y,WP-1,assigned,314,WP-1,,314,tag,Verified
+MCC,070,70,E4.1,"211.96,278.88,223.41,283.91",text-layer,,N,Y,MCC,"off-citation, short form",,,,263,tag,Verified
+P-DW-1,070,70,E4.1,"217.08,267.18,234.96,272.21",text-layer,,N,Y,DW-1,assigned,313,DW-1,,313,tag,Verified
+MCC,070,70,E4.1,"236.62,711.60,248.07,716.63",text-layer,,N,Y,MCC,"off-citation, short form",,,,263,tag,Verified
+WP-2,070,70,E4.1,"239.22,363.84,251.79,368.87",text-layer,,N,Y,WP-2,assigned,315,WP-2,,315,tag,Verified
+SD-1,070,70,E4.1,"280.44,363.84,291.89,368.87",text-layer,,N,Y,SD-1,assigned,316,SD-1,,74; 316,tag,Verified
+LP2-6,070,70,E4.1,"313.56,261.60,326.98,266.63",text-layer,,N,Y,LP2,assigned,299,LP2,,299,tag,Verified
+IP-1,070,70,E4.1,"358.20,62.70,367.42,67.73",text-layer,,N,Y,IP-1,assigned,288,IP-1,,288,tag,Verified
+IP-2,070,70,E4.1,"358.20,76.20,367.42,81.23",text-layer,,N,Y,IP-2,assigned,289,IP-2,,289,tag,Verified
+MCC,070,70,E4.1,"370.18,358.26,381.63,363.29",text-layer,,N,Y,MCC,"off-citation, short form",,,,263,tag,Verified
+LP2-3,070,70,E4.1,"378.90,202.20,392.32,207.23",text-layer,,N,Y,LP2,assigned,299,LP2,,299,tag,Verified
+L2,070,70,E4.1,"383.76,171.24,389.35,176.27",text-layer,,N,Y,L2,assigned,330,L2 (Treatment Building),,330,tag,Verified
+IP-3,070,70,E4.1,"436.50,62.70,445.72,67.73",text-layer,,N,Y,IP-3,assigned,290,IP-3,,290,tag,Verified
+IP-4,070,70,E4.1,"436.50,76.20,445.72,81.23",text-layer,,N,Y,IP-4,assigned,291,IP-4,,291,tag,Verified
+LP2-11,070,70,E4.1,"453.42,726.72,469.63,731.75",text-layer,,N,Y,LP2,assigned,299,LP2,,299,tag,Verified
+S-LT-IP,070,70,E4.1,"453.60,123.90,470.92,128.93",text-layer,,N,Y,LT,assigned,296,LT (Influent Pump Station),,296,tag,Verified
+LP2-9,070,70,E4.1,"454.50,473.64,467.92,478.67",text-layer,,N,Y,LP2,assigned,299,LP2,,299,tag,Verified
+EF-4,070,70,E4.1,"455.58,453.48,466.48,458.51",text-layer,,N,Y,EF-4,assigned,324,EF-4,,324,tag,Verified
+EF-5,070,70,E4.1,"455.58,706.56,466.48,711.59",text-layer,,N,Y,EF-5,assigned,325,EF-5,,325,tag,Verified
+LP2-7,070,70,E4.1,"457.20,298.50,470.62,303.53",text-layer,,N,Y,LP2,assigned,299,LP2,,299,tag,Verified
+EF-3,070,70,E4.1,"458.28,278.34,469.18,283.37",text-layer,,N,Y,EF-3,assigned,323,EF-3,,323,tag,Verified
+LP2-5,070,70,E4.1,"464.04,259.62,477.46,264.65",text-layer,,N,Y,LP2,assigned,299,LP2,,299,tag,Verified
+LP2-4,070,70,E4.1,"470.47,193.92,483.89,198.95",text-layer,,N,Y,LP2,assigned,299,LP2,,299,tag,Verified
+LP2-2,070,70,E4.1,"471.60,232.80,485.02,237.83",text-layer,,N,Y,LP2,assigned,299,LP2,,299,tag,Verified
+LP2-3,070,70,E4.1,"481.86,338.64,495.28,343.67",text-layer,,N,Y,LP2,assigned,299,LP2,,299,tag,Verified
+L2,070,70,E4.1,"517.50,358.44,523.09,363.47",text-layer,,N,Y,L2,assigned,330,L2 (Treatment Building),,330,tag,Verified
+LP2,070,70,E4.1,"563.24,205.80,572.19,210.83",text-layer,,N,Y,LP2,assigned,299,LP2,,299,tag,Verified
+LP2-8,070,70,E4.1,"565.74,49.74,579.16,54.77",text-layer,,N,Y,LP2,assigned,299,LP2,,299,tag,Verified
+MCC,070,70,E4.1,"610.87,709.08,622.32,714.11",text-layer,,N,Y,MCC,"off-citation, short form",,,,263,tag,Verified
+P-DW-1,070,70,E4.1,"623.16,635.10,641.04,640.13",text-layer,,N,Y,DW-1,assigned,313,DW-1,,313,tag,Verified
+MCC,070,70,E4.1,"797.47,440.88,808.92,445.91",text-layer,,N,Y,MCC,"off-citation, short form",,,,263,tag,Verified
+LP2,070,70,E4.1,"856.44,410.64,865.39,415.67",text-layer,,N,Y,LP2,assigned,299,LP2,,299,tag,Verified
+IP-1,071,71,E4.2,"291.24,583.26,300.46,588.29",text-layer,,N,Y,IP-1,assigned,288,IP-1,,288,tag,Verified
+IP-2,071,71,E4.2,"291.24,612.78,300.46,617.81",text-layer,,N,Y,IP-2,assigned,289,IP-2,,289,tag,Verified
+IP-1,071,71,E4.2,"295.02,84.30,304.24,89.33",text-layer,,N,Y,IP-1,assigned,288,IP-1,,288,tag,Verified
+IP-2,071,71,E4.2,"305.28,177.00,314.50,182.03",text-layer,,N,Y,IP-2,assigned,289,IP-2,,289,tag,Verified
+F1,071,71,E4.2,"376.74,109.86,382.61,114.89",text-layer,,N,Y,F1,assigned,292,F1 (Influent Pump Station),,292,tag,Verified
+LT,071,71,E4.2,"376.74,137.58,382.61,142.61",text-layer,,N,Y,LT,assigned,296,LT (Influent Pump Station),,296,tag,Verified
+F4,071,71,E4.2,"376.74,166.38,382.61,171.41",text-layer,,N,Y,F4,assigned,295,F4 (Influent Pump Station),,295,tag,Verified
+T2-,071,71,E4.2,"385.45,501.32,394.11,507.32",bluebeam-ocr,,N,Y,T2,"off-citation, short form",,,,350,tag,Inferred
+T3,071,71,E4.2,"385.70,519.12,392.36,525.12",bluebeam-ocr,,N,Y,T3,"off-citation, short form",,,,298,tag,Inferred
+T5—,071,71,E4.2,"387.85,592.27,398.68,597.27",bluebeam-ocr,,Y,N,TS,"off-citation, short form",,,,242,tag,Inferred
+-F2,071,71,E4.2,"413.05,474.67,420.54,479.67",bluebeam-ocr,,N,Y,F2,assigned,293,F2 (Influent Pump Station),,293,tag,Inferred
+—F4,071,71,E4.2,"413.30,492.67,424.13,497.67",bluebeam-ocr,,N,Y,F4,assigned,295,F4 (Influent Pump Station),,295,tag,Inferred
+—F3,071,71,E4.2,"414.50,483.57,425.33,488.57",bluebeam-ocr,,N,Y,F3,assigned,294,F3 (Influent Pump Station),,294,tag,Inferred
+F2,071,71,E4.2,"424.98,474.66,430.02,478.62",ocr,65.00,N,Y,F2,assigned,293,F2 (Influent Pump Station),,293,tag,Inferred
+F3,071,71,E4.2,"425.16,483.66,430.56,487.62",ocr,68.00,N,Y,F3,assigned,294,F3 (Influent Pump Station),,294,tag,Inferred
+F2,071,71,E4.2,"443.70,137.94,449.57,142.97",text-layer,,N,Y,F2,assigned,293,F2 (Influent Pump Station),,293,tag,Verified
+F3,071,71,E4.2,"443.70,166.56,449.57,171.59",text-layer,,N,Y,F3,assigned,294,F3 (Influent Pump Station),,294,tag,Verified
+IP-4,071,71,E4.2,"508.14,181.32,517.36,186.35",text-layer,,N,Y,IP-4,assigned,291,IP-4,,291,tag,Verified
+IP-3,071,71,E4.2,"514.98,83.76,524.20,88.79",text-layer,,N,Y,IP-3,assigned,290,IP-3,,290,tag,Verified
+IP-3,071,71,E4.2,"518.58,583.26,527.80,588.29",text-layer,,N,Y,IP-3,assigned,290,IP-3,,290,tag,Verified
+IP-4,071,71,E4.2,"518.58,612.78,527.80,617.81",text-layer,,N,Y,IP-4,assigned,291,IP-4,,291,tag,Verified
+(T3),071,71,E4.2,"722.85,622.74,739.65,629.74",bluebeam-ocr,,N,Y,T3,"off-citation, short form",,,,298,tag,Inferred
+(T5),071,71,E4.2,"722.85,649.84,739.65,656.84",bluebeam-ocr,,Y,N,TS,"off-citation, short form",,,,242,tag,Inferred
+(T2),071,71,E4.2,"726.70,610.52,735.86,615.52",bluebeam-ocr,,N,Y,T2,"off-citation, short form",,,,350,tag,Inferred
+(F2),071,71,E4.2,"733.63,550.52,742.79,555.52",bluebeam-ocr,,N,Y,F2,assigned,293,F2 (Influent Pump Station),,293,tag,Inferred
+(F3),071,71,E4.2,"733.63,564.22,742.79,569.22",bluebeam-ocr,,N,Y,F3,assigned,294,F3 (Influent Pump Station),,294,tag,Inferred
+(F4),071,71,E4.2,"733.63,577.87,742.79,582.87",bluebeam-ocr,,N,Y,F4,assigned,295,F4 (Influent Pump Station),,295,tag,Inferred
+(F1),071,71,E4.2,"733.88,536.82,743.04,541.82",bluebeam-ocr,,N,Y,F1,assigned,292,F1 (Influent Pump Station),,292,tag,Inferred
+(F2),071,71,E4.2,"736.02,549.72,746.64,555.66",ocr,92.00,N,Y,F2,assigned,293,F2 (Influent Pump Station),,293,tag,Inferred
+(F3),071,71,E4.2,"736.02,563.40,746.64,569.34",ocr,92.00,N,Y,F3,assigned,294,F3 (Influent Pump Station),,294,tag,Inferred
+(F4),071,71,E4.2,"736.02,577.08,746.64,583.02",ocr,91.00,N,Y,F4,assigned,295,F4 (Influent Pump Station),,295,tag,Inferred
+(F1),071,71,E4.2,"736.38,536.22,746.28,541.98",ocr,87.00,N,Y,F1,assigned,292,F1 (Influent Pump Station),,292,tag,Inferred
+LT,071,71,E4.2,"994.32,380.70,999.90,386.64",ocr,64.00,N,Y,LT,assigned,296,LT (Influent Pump Station),,296,tag,Inferred
+HOT BOX#1,072,72,E4.3,"174.42,313.08,202.64,318.11",text-layer,,N,Y,HOT BOX#1,assigned,58,Hot Box #1,,58,tag,Verified
+HOT BOX#2,072,72,E4.3,"174.96,68.10,203.18,73.13",text-layer,,N,Y,HOT BOX#2,assigned,59,Hot Box #2,,59,tag,Verified
+F4,072,72,E4.3,"194.04,581.28,199.91,586.31",text-layer,,N,Y,F4,"off-citation, short form",,,,167; 174; 295,tag,Verified
+LSH-111),072,72,E4.3,"197.46,442.32,218.98,447.35",text-layer,,N,Y,LSH-111,assigned,333,LSH-111,,333,tag,Verified
+F1,072,72,E4.3,"199.80,436.38,205.67,441.41",text-layer,,N,Y,F1,"off-citation, short form",,,,167; 174; 292,tag,Verified
+LSL-111),072,72,E4.3,"214.44,581.28,235.12,586.31",text-layer,,N,Y,LSL-111,assigned,336,LSL-111,,336,tag,Verified
+F3,072,72,E4.3,"250.74,490.20,256.61,495.23",text-layer,,N,Y,F3,assigned,335,F3 (2W Pump Station),,335,tag,Verified
+F2,072,72,E4.3,"250.92,472.20,256.79,477.23",text-layer,,N,Y,F2,assigned,334,F2 (2W Pump Station),,334,tag,Verified
+"MCC,",072,72,E4.3,"362.52,433.68,375.37,438.71",text-layer,,N,Y,MCC,"off-citation, short form",,,,263,tag,Verified
+(F3),072,72,E4.3,"404.37,685.87,413.53,690.87",bluebeam-ocr,,N,Y,F3,assigned,335,F3 (2W Pump Station),,335,tag,Inferred
+(F2),072,72,E4.3,"407.16,674.37,416.32,679.37",bluebeam-ocr,,N,Y,F2,assigned,334,F2 (2W Pump Station),,334,tag,Inferred
+(F3),072,72,E4.3,"408.78,685.08,419.22,690.84",ocr,92.00,N,Y,F3,assigned,335,F3 (2W Pump Station),,335,tag,Inferred
+(F2),072,72,E4.3,"411.48,673.56,421.74,679.50",ocr,91.00,N,Y,F2,assigned,334,F2 (2W Pump Station),,334,tag,Inferred
+(F4),072,72,E4.3,"420.10,697.17,429.26,702.17",bluebeam-ocr,,N,Y,F4,"off-citation, short form",,,,167; 174; 295,tag,Inferred
+(F4),072,72,E4.3,"425.52,696.42,435.78,702.36",ocr,91.00,N,Y,F4,"off-citation, short form",,,,167; 174; 295,tag,Inferred
+(F1,072,72,E4.3,"439.91,664.02,447.41,669.02",bluebeam-ocr,,N,Y,F1,"off-citation, short form",,,,167; 174; 292,tag,Inferred
+(F1),072,72,E4.3,"445.68,663.30,455.94,669.06",ocr,91.00,N,Y,F1,"off-citation, short form",,,,167; 174; 292,tag,Inferred
+"MCC,",072,72,E4.3,"471.70,293.46,484.55,298.49",text-layer,,N,Y,MCC,"off-citation, short form",,,,263,tag,Verified
+HOT BOX #2,072,72,E4.3,"618.30,517.97,677.54,528.03",text-layer,,N,Y,HOT BOX#2,assigned,59,Hot Box #2,,59,tag,Verified
+HOT BOX #1,072,72,E4.3,"865.26,517.97,924.50,528.03",text-layer,,N,Y,HOT BOX#1,assigned,58,Hot Box #1,,58,tag,Verified
+MCC,072,72,E4.3,"964.50,62.70,975.95,67.73",text-layer,,N,Y,MCC,"off-citation, short form",,,,263,tag,Verified
+[xi,072,72,E4.3,"1083.78,68.76,1102.14,79.38",ocr,0.00,Y,N,X1,"off-citation, short form",,,,279,tag,Inferred
+MCC,073,73,E5.1,"103.96,333.42,115.41,338.45",text-layer,,N,Y,MCC,"off-citation, short form",,,,263,tag,Verified
+S-LT-D,073,73,E5.1,"117.72,377.70,133.92,382.73",text-layer,,N,Y,LT,"off-citation, short form",,,,296,tag,Verified
+P-UV1,073,73,E5.1,"118.44,356.10,133.25,361.13",text-layer,,N,Y,UV1,assigned,342,UV1,,342,tag,Verified
+P-UV2,073,73,E5.1,"118.44,363.30,133.25,368.33",text-layer,,N,Y,UV2,assigned,343,UV2,,343,tag,Verified
+P-LT,073,73,E5.1,"120.42,384.90,131.32,389.93",text-layer,,N,Y,LT,"off-citation, short form",,,,296,tag,Verified
+P-UV1,073,73,E5.1,"129.06,524.94,143.87,529.97",text-layer,,N,Y,UV1,assigned,342,UV1,,342,tag,Verified
+P-UV2,073,73,E5.1,"129.06,532.14,143.87,537.17",text-layer,,N,Y,UV2,assigned,343,UV2,,343,tag,Verified
+S-LT-D,073,73,E5.1,"149.94,532.14,166.14,537.17",text-layer,,N,Y,LT,"off-citation, short form",,,,296,tag,Verified
+P-LT,073,73,E5.1,"152.64,524.94,163.54,529.97",text-layer,,N,Y,LT,"off-citation, short form",,,,296,tag,Verified
+"TS,",073,73,E5.1,"252.36,507.06,252.72,507.42",ocr,0.00,N,Y,TS,"off-citation, short form",,,,242,tag,Inferred
+UV1,073,73,E5.1,"297.72,260.34,307.50,265.37",text-layer,,N,Y,UV1,assigned,342,UV1,,342,tag,Verified
+UV2,073,73,E5.1,"298.08,286.62,307.86,291.65",text-layer,,N,Y,UV2,assigned,343,UV2,,343,tag,Verified
+UV2,073,73,E5.1,"298.08,560.22,307.86,565.25",text-layer,,N,Y,UV2,assigned,343,UV2,,343,tag,Verified
+P-UV1,073,73,E5.1,"345.96,324.96,360.77,329.99",text-layer,,N,Y,UV1,assigned,342,UV1,,342,tag,Verified
+P-UV2,073,73,E5.1,"345.96,332.16,360.77,337.19",text-layer,,N,Y,UV2,assigned,343,UV2,,343,tag,Verified
+P-UV1,073,73,E5.1,"345.96,528.00,360.77,533.03",text-layer,,N,Y,UV1,assigned,342,UV1,,342,tag,Verified
+P-UV2,073,73,E5.1,"345.96,535.20,360.77,540.23",text-layer,,N,Y,UV2,assigned,343,UV2,,343,tag,Verified
+P-UV1,073,73,E5.1,"346.86,267.54,361.67,272.57",text-layer,,N,Y,UV1,assigned,342,UV1,,342,tag,Verified
+S-LT-D,073,73,E5.1,"428.04,539.34,444.24,544.37",text-layer,,N,Y,LT,"off-citation, short form",,,,296,tag,Verified
+P-LT,073,73,E5.1,"428.40,339.18,439.30,344.21",text-layer,,N,Y,LT,"off-citation, short form",,,,296,tag,Verified
+S-LT-D,073,73,E5.1,"454.68,360.24,470.88,365.27",text-layer,,N,Y,LT,"off-citation, short form",,,,296,tag,Verified
+t3,073,73,E5.1,"506.90,335.78,512.60,346.80",bluebeam-ocr,,N,Y,T3,"off-citation, short form",,,,298,tag,Inferred
+MCC,073,73,E5.1,"799.80,578.58,811.24,583.61",text-layer,,N,Y,MCC,"off-citation, short form",,,,263,tag,Verified
+MCC,073,73,E5.1,"1028.98,478.68,1040.43,483.71",text-layer,,N,Y,MCC,"off-citation, short form",,,,263,tag,Verified
+2W-P1__|2W,074,74,E6.1,"89.46,592.92,126.36,596.88",ocr,35.00,N,Y,2W-P1,assigned,331,2W-P1,,331,tag,Inferred
+2W-P2___|2W,074,74,E6.1,"89.46,600.84,126.36,604.80",ocr,28.00,N,Y,2W-P2,assigned,332,2W-P2,,332,tag,Inferred
+2W-P1,074,74,E6.1,"89.50,593.02,104.77,598.02",bluebeam-ocr,,N,Y,2W-P1,assigned,331,2W-P1,,331,tag,Inferred
+2W-P2,074,74,E6.1,"89.50,600.67,104.77,605.67",bluebeam-ocr,,N,Y,2W-P2,assigned,332,2W-P2,,332,tag,Inferred
+TCP-1,074,74,E6.1,"89.75,568.32,105.74,574.32",bluebeam-ocr,,N,Y,TCP-1,assigned,352,TCP-1,,352,tag,Inferred
+TCP-2,074,74,E6.1,"89.75,576.92,104.18,581.92",bluebeam-ocr,,N,Y,TCP-2,assigned,353,TCP-2,,353,tag,Inferred
+TCP-3,074,74,E6.1,"89.75,584.62,104.18,589.62",bluebeam-ocr,,N,Y,TCP-3,assigned,281,TCP-3,,281,tag,Inferred
+TCP-1,074,74,E6.1,"89.82,568.98,104.76,574.92",ocr,19.00,N,Y,TCP-1,assigned,352,TCP-1,,352,tag,Inferred
+TCP-2,074,74,E6.1,"89.82,576.90,105.48,580.86",ocr,45.00,N,Y,TCP-2,assigned,353,TCP-2,,353,tag,Inferred
+TCP-3,074,74,E6.1,"89.82,584.64,105.66,590.76",ocr,15.00,N,Y,TCP-3,assigned,281,TCP-3,,281,tag,Inferred
+WP-1,074,74,E6.1,"90.70,679.87,103.19,684.87",bluebeam-ocr,,N,Y,WP-1,assigned,314,WP-1,,314,tag,Inferred
+WP-2,074,74,E6.1,"90.70,687.82,103.19,692.82",bluebeam-ocr,,N,Y,WP-2,assigned,315,WP-2,,315,tag,Inferred
+WP-1,074,74,E6.1,"90.72,677.70,103.86,685.98",ocr,86.00,N,Y,WP-1,assigned,314,WP-1,,314,tag,Inferred
+WP-2___|WAS,074,74,E6.1,"90.72,687.60,130.14,691.56",ocr,19.00,N,Y,WP-2,assigned,315,WP-2,,315,tag,Inferred
+DW-1,074,74,E6.1,"90.90,701.10,103.86,709.74",ocr,90.00,N,Y,DW-1,assigned,313,DW-1,,313,tag,Inferred
+DW-1,074,74,E6.1,"90.95,703.42,103.72,708.42",bluebeam-ocr,,N,Y,DW-1,assigned,313,DW-1,,313,tag,Inferred
+BL-2,074,74,E6.1,"91.62,646.02,103.86,654.66",ocr,93.00,N,Y,BL-2,assigned,258,BL-2,,258,tag,Inferred
+BL-3,074,74,E6.1,"91.62,654.30,104.04,662.58",ocr,91.00,N,Y,BL-3,assigned,259,BL-3,,259,tag,Inferred
+BL-4,074,74,E6.1,"91.62,661.86,103.68,670.32",ocr,92.00,N,Y,BL-4,assigned,260,BL-4,,260,tag,Inferred
+SD-1,074,74,E6.1,"91.62,695.52,103.14,699.48",ocr,91.00,N,Y,SD-1,assigned,316,SD-1,,74; 316,tag,Inferred
+LP-1,074,74,E6.1,"91.62,717.30,102.78,725.58",ocr,91.00,N,Y,LP-1,assigned,265,LP-1,,265,tag,Inferred
+SD-1,074,74,E6.1,"91.70,695.72,103.08,700.72",bluebeam-ocr,,N,Y,SD-1,assigned,316,SD-1,,74; 316,tag,Inferred
+BL-1,074,74,E6.1,"92.40,640.27,102.95,645.27",bluebeam-ocr,,N,Y,BL-1,assigned,257,BL-1,,257,tag,Inferred
+BL-2,074,74,E6.1,"92.40,647.52,105.05,653.52",bluebeam-ocr,,N,Y,BL-2,assigned,258,BL-2,,258,tag,Inferred
+BL-3,074,74,E6.1,"92.40,656.12,102.95,661.12",bluebeam-ocr,,N,Y,BL-3,assigned,259,BL-3,,259,tag,Inferred
+BL-4,074,74,E6.1,"92.40,663.82,102.95,668.82",bluebeam-ocr,,N,Y,BL-4,assigned,260,BL-4,,260,tag,Inferred
+LP-1,074,74,E6.1,"92.40,719.22,102.95,724.22",bluebeam-ocr,,N,Y,LP-1,assigned,265,LP-1,,265,tag,Inferred
+IP-1,074,74,E6.1,"93.35,608.82,102.51,613.82",bluebeam-ocr,,N,Y,IP-1,assigned,288,IP-1,,288,tag,Inferred
+IP-2,074,74,E6.1,"93.35,616.77,102.51,621.77",bluebeam-ocr,,N,Y,IP-2,assigned,289,IP-2,,289,tag,Inferred
+IP-3,074,74,E6.1,"93.35,624.42,102.51,629.42",bluebeam-ocr,,N,Y,IP-3,assigned,290,IP-3,,290,tag,Inferred
+IP-4,074,74,E6.1,"93.35,632.37,102.51,637.37",bluebeam-ocr,,N,Y,IP-4,assigned,291,IP-4,,291,tag,Inferred
+IP-1,074,74,E6.1,"93.42,608.76,101.70,612.72",ocr,76.00,N,Y,IP-1,assigned,288,IP-1,,288,tag,Inferred
+Ip-2,074,74,E6.1,"93.42,616.68,102.42,620.64",ocr,56.00,N,Y,IP-2,assigned,289,IP-2,,289,tag,Inferred
+IP-3,074,74,E6.1,"93.42,624.42,102.60,628.38",ocr,89.00,N,Y,IP-3,assigned,290,IP-3,,290,tag,Inferred
+IP-4,074,74,E6.1,"93.42,632.34,102.60,636.30",ocr,87.00,N,Y,IP-4,assigned,291,IP-4,,291,tag,Inferred
+DB,074,74,E6.1,"94.30,671.97,101.24,676.97",bluebeam-ocr,,N,Y,DB,assigned,261,DB,,261,tag,Inferred
+DB,074,74,E6.1,"94.32,671.76,101.34,675.72",ocr,96.00,N,Y,DB,assigned,261,DB,,261,tag,Inferred
+P-SEC,074,74,E6.1,"100.08,70.08,115.45,75.11",text-layer,,N,Y,P-SEC,assigned,238,P-SEC,,238,tag,Verified
+MCC,074,74,E6.1,"118.08,719.10,129.78,723.06",ocr,94.00,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,074,74,E6.1,"118.10,719.22,129.48,724.22",bluebeam-ocr,,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,074,74,E6.1,"179.46,284.46,190.91,289.49",text-layer,,N,Y,MCC,assigned,263,MCC,,263,tag,Verified
+P-ATS,074,74,E6.1,"180.36,70.08,195.17,75.11",text-layer,,N,Y,ATS,assigned,240,ATS,,240,tag,Verified
+ATS,074,74,E6.1,"209.52,62.16,219.30,67.19",text-layer,,N,Y,ATS,assigned,240,ATS,,240,tag,Verified
+GEN,074,74,E6.1,"254.52,150.00,265.42,155.03",text-layer,,N,Y,GEN,assigned,243,GEN,,243,tag,Verified
+GEN,074,74,E6.1,"269.46,201.48,280.36,206.51",text-layer,,N,Y,GEN,assigned,243,GEN,,243,tag,Verified
+P-GEN,074,74,E6.1,"288.36,146.76,304.28,151.79",text-layer,,N,Y,GEN,assigned,243,GEN,,243,tag,Verified
+TCP-1,074,74,E6.1,"300.06,501.36,314.59,506.39",text-layer,,N,Y,TCP-1,assigned,352,TCP-1,,352,tag,Verified
+P-MDP,074,74,E6.1,"323.10,79.08,339.30,84.11",text-layer,,N,Y,MDP,assigned,241,MDP,,241,tag,Verified
+TCP-2,074,74,E6.1,"344.88,501.36,359.41,506.39",text-layer,,N,Y,TCP-2,assigned,353,TCP-2,,353,tag,Verified
+MDP,074,74,E6.1,"353.52,58.92,364.69,63.95",text-layer,,N,Y,MDP,assigned,241,MDP,,241,tag,Verified
+GEN,074,74,E6.1,"380.88,743.58,392.04,747.54",ocr,93.00,N,Y,GEN,assigned,243,GEN,,243,tag,Inferred
+GEN,074,74,E6.1,"380.90,743.72,391.72,748.72",bluebeam-ocr,,N,Y,GEN,assigned,243,GEN,,243,tag,Inferred
+TCP-3,074,74,E6.1,"389.88,501.36,404.41,506.39",text-layer,,N,Y,TCP-3,assigned,281,TCP-3,,281,tag,Verified
+P-MCC,074,74,E6.1,"405.72,200.04,422.20,205.07",text-layer,,N,Y,MCC,assigned,263,MCC,,263,tag,Verified
+P-DW-1,074,74,E6.1,"412.56,453.66,430.44,458.69",text-layer,,N,Y,DW-1,assigned,313,DW-1,,313,tag,Verified
+DW-1,074,74,E6.1,"436.14,501.36,448.99,506.39",text-layer,,N,Y,DW-1,assigned,313,DW-1,,313,tag,Verified
+P-2W-P1,074,74,E6.1,"475.38,453.84,495.77,458.87",text-layer,,N,Y,2W-P1,assigned,331,2W-P1,,331,tag,Verified
+2W-P1,074,74,E6.1,"498.96,501.36,514.33,506.39",text-layer,,N,Y,2W-P1,assigned,331,2W-P1,,331,tag,Verified
+P-2W-P2,074,74,E6.1,"520.56,453.84,540.95,458.87",text-layer,,N,Y,2W-P2,assigned,332,2W-P2,,332,tag,Verified
+2W-P2,074,74,E6.1,"544.14,501.36,559.51,506.39",text-layer,,N,Y,2W-P2,assigned,332,2W-P2,,332,tag,Verified
+WP-1,074,74,E6.1,"590.76,501.54,603.33,506.57",text-layer,,N,Y,WP-1,assigned,314,WP-1,,314,tag,Verified
+TS,074,74,E6.1,"626.58,67.74,633.01,72.77",text-layer,,N,Y,TS,assigned,242,TS,,242,tag,Verified
+MCC,074,74,E6.1,"634.07,637.98,645.52,643.01",text-layer,,N,Y,MCC,assigned,263,MCC,,263,tag,Verified
+WP-2,074,74,E6.1,"635.76,501.54,648.33,506.57",text-layer,,N,Y,WP-2,assigned,315,WP-2,,315,tag,Verified
+SD-1,074,74,E6.1,"681.48,501.36,692.93,506.39",text-layer,,N,Y,SD-1,assigned,316,SD-1,,74; 316,tag,Verified
+TPS,074,74,E6.1,"686.95,160.80,696.73,165.83",text-layer,,N,Y,TPS,assigned,254,TPS,,254,tag,Verified
+P-TPS,074,74,E6.1,"696.60,147.66,711.41,152.69",text-layer,,N,Y,P-TPS,assigned,244,P-TPS,,244,tag,Verified
+P-TPS,074,74,E6.1,"696.60,147.66,711.41,152.69",text-layer,,N,Y,TPS,assigned,254,TPS,,254,tag,Verified
+BL-1,074,74,E6.1,"798.12,501.54,808.74,506.57",text-layer,,N,Y,BL-1,assigned,257,BL-1,,257,tag,Verified
+IPS,074,74,E6.1,"802.62,546.72,810.73,551.75",text-layer,,N,Y,IPS,assigned,297,IPS,,297,tag,Verified
+IP-1,074,74,E6.1,"830.34,729.24,839.56,734.27",text-layer,,N,Y,IP-1,assigned,288,IP-1,,288,tag,Verified
+BL-2,074,74,E6.1,"843.30,501.54,853.92,506.57",text-layer,,N,Y,BL-2,assigned,258,BL-2,,258,tag,Verified
+IP-2,074,74,E6.1,"875.34,729.24,884.56,734.27",text-layer,,N,Y,IP-2,assigned,289,IP-2,,289,tag,Verified
+BL-3,074,74,E6.1,"888.30,501.36,898.92,506.39",text-layer,,N,Y,BL-3,assigned,259,BL-3,,259,tag,Verified
+IP-3,074,74,E6.1,"920.16,729.06,929.38,734.09",text-layer,,N,Y,IP-3,assigned,290,IP-3,,290,tag,Verified
+BL-4,074,74,E6.1,"933.48,501.36,944.10,506.39",text-layer,,N,Y,BL-4,assigned,260,BL-4,,260,tag,Verified
+P-DB,074,74,E6.1,"956.88,453.84,968.89,458.87",text-layer,,N,Y,DB,assigned,261,DB,,261,tag,Verified
+IP-4,074,74,E6.1,"965.34,729.06,974.56,734.09",text-layer,,N,Y,IP-4,assigned,291,IP-4,,291,tag,Verified
+DB,074,74,E6.1,"980.46,501.36,987.44,506.39",text-layer,,N,Y,DB,assigned,261,DB,,261,tag,Verified
+T3,074,74,E6.1,"1045.08,612.60,1050.95,617.63",text-layer,,N,Y,T3,assigned,298,T3,,298,tag,Verified
+T2,074,74,E6.1,"1067.58,384.90,1073.45,389.93",text-layer,,N,Y,T2,assigned,350,T2,,350,tag,Verified
+UV1,075,75,E6.2,"135.85,508.77,145.57,513.77",bluebeam-ocr,,N,Y,UV1,assigned,342,UV1,,342,tag,Inferred
+UV2,075,75,E6.2,"135.85,516.67,145.57,521.67",bluebeam-ocr,,N,Y,UV2,assigned,343,UV2,,343,tag,Inferred
+UV1,075,75,E6.2,"135.85,524.37,145.57,529.37",bluebeam-ocr,,N,Y,UV1,assigned,342,UV1,,342,tag,Inferred
+UV2,075,75,E6.2,"135.85,532.27,145.57,537.27",bluebeam-ocr,,N,Y,UV2,assigned,343,UV2,,343,tag,Inferred
+UV1,075,75,E6.2,"135.90,509.04,144.18,512.64",ocr,91.00,N,Y,UV1,assigned,342,UV1,,342,tag,Inferred
+UV2,075,75,E6.2,"135.90,516.96,144.72,520.56",ocr,91.00,N,Y,UV2,assigned,343,UV2,,343,tag,Inferred
+UV1,075,75,E6.2,"135.90,524.70,144.18,528.30",ocr,90.00,N,Y,UV1,assigned,342,UV1,,342,tag,Inferred
+UV2,075,75,E6.2,"135.90,532.62,144.72,536.22",ocr,91.00,N,Y,UV2,assigned,343,UV2,,343,tag,Inferred
+EF-1,075,75,E6.2,"170.82,493.38,180.18,496.98",ocr,90.00,N,Y,EF-1,assigned,273,EF-1,,273,tag,Inferred
+EF-2,075,75,E6.2,"170.82,501.12,180.72,504.72",ocr,90.00,N,Y,EF-2,assigned,274,EF-2,,274,tag,Inferred
+EF-1,075,75,E6.2,"172.20,492.92,183.09,497.92",bluebeam-ocr,,N,Y,EF-1,assigned,273,EF-1,,273,tag,Inferred
+EF-2,075,75,E6.2,"172.20,500.82,183.09,505.82",bluebeam-ocr,,N,Y,EF-2,assigned,274,EF-2,,274,tag,Inferred
+(MCC),075,75,E6.2,"336.00,627.23,365.60,637.29",text-layer,,N,Y,MCC,assigned,263,MCC,,263,tag,Verified
+MCC,075,75,E6.2,"438.66,182.34,448.92,185.94",ocr,79.00,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,075,75,E6.2,"439.96,181.87,451.35,186.87",bluebeam-ocr,,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MDP,075,75,E6.2,"445.40,142.02,456.50,147.02",bluebeam-ocr,,N,Y,MDP,assigned,241,MDP,,241,tag,Inferred
+MDP,075,75,E6.2,"450.54,142.02,462.96,146.34",ocr,96.00,N,Y,MDP,assigned,241,MDP,,241,tag,Inferred
+MDP,075,75,E6.2,"599.89,354.71,622.24,364.77",text-layer,,N,Y,MDP,assigned,241,MDP,,241,tag,Verified
+EF-3,075,75,E6.2,"649.44,529.02,660.42,540.90",ocr,55.00,N,Y,EF-3,assigned,323,EF-3,,323,tag,Inferred
+EF-5,075,75,E6.2,"649.98,544.86,660.24,556.92",ocr,60.00,N,Y,EF-5,assigned,325,EF-5,,325,tag,Inferred
+EF-4,075,75,E6.2,"651.25,540.22,662.15,545.22",bluebeam-ocr,,N,Y,EF-4,assigned,324,EF-4,,324,tag,Inferred
+EF-5,075,75,E6.2,"651.25,548.12,662.15,553.12",bluebeam-ocr,,N,Y,EF-5,assigned,325,EF-5,,325,tag,Inferred
+EF-3,075,75,E6.2,"651.45,532.27,662.35,537.27",bluebeam-ocr,,N,Y,EF-3,assigned,323,EF-3,,323,tag,Inferred
+LP2,075,75,E6.2,"669.55,468.92,678.44,473.92",bluebeam-ocr,,N,Y,LP2,assigned,299,LP2,,299,tag,Inferred
+LP2,075,75,E6.2,"674.64,468.90,685.08,473.22",ocr,90.00,N,Y,LP2,assigned,299,LP2,,299,tag,Inferred
+LP2,075,75,E6.2,"754.33,627.23,772.22,637.29",text-layer,,N,Y,LP2,assigned,299,LP2,,299,tag,Verified
+S-LT-IP,076,76,E6.3,"107.75,501.32,124.95,506.32",bluebeam-ocr,,N,Y,LT,assigned,296,LT (Influent Pump Station),,296,tag,Inferred
+S-LT-IP,076,76,E6.3,"107.82,501.12,126.18,505.08",ocr,89.00,N,Y,LT,assigned,296,LT (Influent Pump Station),,296,tag,Inferred
+C-GEN,076,76,E6.3,"108.00,283.42,124.10,288.42",bluebeam-ocr,,N,Y,GEN,assigned,243,GEN,,243,tag,Inferred
+S-LT-D,076,76,E6.3,"108.00,448.52,124.10,453.52",bluebeam-ocr,,N,Y,LT,assigned,296,LT (Influent Pump Station),,296,tag,Inferred
+C-GEN,076,76,E6.3,"108.18,283.32,125.28,287.28",ocr,90.00,N,Y,GEN,assigned,243,GEN,,243,tag,Inferred
+C-MCP,076,76,E6.3,"108.18,335.88,125.82,339.84",ocr,91.00,N,Y,MCP,assigned,264,MCP,,264,tag,Inferred
+S-LT-D,076,76,E6.3,"108.18,448.56,125.64,452.52",ocr,48.00,N,Y,LT,assigned,296,LT (Influent Pump Station),,296,tag,Inferred
+S-MCP,076,76,E6.3,"108.18,463.50,125.46,467.46",ocr,89.00,N,Y,MCP,assigned,264,MCP,,264,tag,Inferred
+S-MCP,076,76,E6.3,"108.25,463.62,124.35,468.62",bluebeam-ocr,,N,Y,MCP,assigned,264,MCP,,264,tag,Inferred
+C-MCP,076,76,E6.3,"108.65,335.97,125.03,340.97",bluebeam-ocr,,N,Y,MCP,assigned,264,MCP,,264,tag,Inferred
+C-ATS,076,76,E6.3,"108.70,275.97,123.68,280.97",bluebeam-ocr,,N,Y,ATS,assigned,240,ATS,,240,tag,Inferred
+C-ATS,076,76,E6.3,"108.90,275.94,124.92,279.90",ocr,92.00,N,Y,ATS,assigned,240,ATS,,240,tag,Inferred
+C-DB,076,76,E6.3,"109.90,365.97,122.11,370.97",bluebeam-ocr,,N,Y,DB,assigned,261,DB,,261,tag,Inferred
+C-DB,076,76,E6.3,"109.98,365.94,123.48,369.90",ocr,91.00,N,Y,DB,assigned,261,DB,,261,tag,Inferred
+ATS,076,76,E6.3,"457.20,275.94,467.28,279.90",ocr,96.00,N,Y,ATS,assigned,240,ATS,,240,tag,Inferred
+ATS,076,76,E6.3,"457.20,275.97,466.91,280.97",bluebeam-ocr,,N,Y,ATS,assigned,240,ATS,,240,tag,Inferred
+MCC,076,76,E6.3,"500.90,463.62,512.28,468.62",bluebeam-ocr,,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"500.94,335.88,512.64,339.84",ocr,93.00,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"500.94,463.50,512.64,467.46",ocr,93.00,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+P-DW-1,076,76,E6.3,"626.65,508.52,644.41,513.52",bluebeam-ocr,,N,Y,DW-1,assigned,313,DW-1,,313,tag,Inferred
+P-DW-1,076,76,E6.3,"626.76,508.50,645.30,512.46",ocr,92.00,N,Y,DW-1,assigned,313,DW-1,,313,tag,Inferred
+P-SD-1,076,76,E6.3,"627.35,471.07,643.73,476.07",bluebeam-ocr,,N,Y,SD-1,assigned,316,SD-1,,74; 316,tag,Inferred
+P-SD-1,076,76,E6.3,"627.48,471.06,644.22,475.02",ocr,92.00,N,Y,SD-1,assigned,316,SD-1,,74; 316,tag,Inferred
+P-ATS,076,76,E6.3,"627.84,340.74,643.86,349.02",ocr,91.00,N,Y,ATS,assigned,240,ATS,,240,tag,Inferred
+P-MDP,076,76,E6.3,"627.84,348.30,644.76,356.58",ocr,92.00,N,Y,MDP,assigned,241,MDP,,241,tag,Inferred
+P-MCC,076,76,E6.3,"627.84,358.38,644.94,362.34",ocr,91.00,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+P-TPS,076,76,E6.3,"627.84,588.60,644.22,596.88",ocr,92.00,N,Y,P-TPS,assigned,244,P-TPS,,244,tag,Inferred
+P-TPS,076,76,E6.3,"627.84,588.60,644.22,596.88",ocr,92.00,N,Y,TPS,"off-citation, short form",,,,254,tag,Inferred
+P-MCP,076,76,E6.3,"627.84,641.16,644.76,649.44",ocr,92.00,N,Y,MCP,assigned,264,MCP,,264,tag,Inferred
+P-MDP,076,76,E6.3,"627.85,350.62,643.95,355.62",bluebeam-ocr,,N,Y,MDP,assigned,241,MDP,,241,tag,Inferred
+P-MCC,076,76,E6.3,"627.85,358.27,644.23,363.27",bluebeam-ocr,,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+P-MCP,076,76,E6.3,"627.85,643.87,643.95,648.87",bluebeam-ocr,,N,Y,MCP,assigned,264,MCP,,264,tag,Inferred
+P-SEC,076,76,E6.3,"628.10,335.72,643.36,340.72",bluebeam-ocr,,N,Y,P-SEC,assigned,238,P-SEC,,238,tag,Inferred
+P-GEN,076,76,E6.3,"628.10,365.72,643.92,370.72",bluebeam-ocr,,N,Y,GEN,assigned,243,GEN,,243,tag,Inferred
+P-BL-1,076,76,E6.3,"628.10,418.52,643.65,423.52",bluebeam-ocr,,N,Y,BL-1,assigned,257,BL-1,,257,tag,Inferred
+P-BL-2,076,76,E6.3,"628.10,425.72,643.65,430.72",bluebeam-ocr,,N,Y,BL-2,assigned,258,BL-2,,258,tag,Inferred
+P-BL-4,076,76,E6.3,"628.10,440.82,643.65,445.82",bluebeam-ocr,,N,Y,BL-4,assigned,260,BL-4,,260,tag,Inferred
+P-SEC,076,76,E6.3,"628.20,335.88,644.58,339.84",ocr,93.00,N,Y,P-SEC,assigned,238,P-SEC,,238,tag,Inferred
+P-GEN,076,76,E6.3,"628.20,365.94,644.58,369.90",ocr,92.00,N,Y,GEN,assigned,243,GEN,,243,tag,Inferred
+P-BL-1,076,76,E6.3,"628.20,415.80,643.86,424.26",ocr,93.00,N,Y,BL-1,assigned,257,BL-1,,257,tag,Inferred
+P-BL-2,076,76,E6.3,"628.20,423.36,644.58,431.64",ocr,92.00,N,Y,BL-2,assigned,258,BL-2,,258,tag,Inferred
+P-BL-3,076,76,E6.3,"628.20,430.92,644.76,439.20",ocr,92.00,N,Y,BL-3,assigned,259,BL-3,,259,tag,Inferred
+P-BL-4,076,76,E6.3,"628.20,438.48,644.76,446.76",ocr,92.00,N,Y,BL-4,assigned,260,BL-4,,260,tag,Inferred
+P-BL-3,076,76,E6.3,"628.30,433.42,643.85,438.42",bluebeam-ocr,,N,Y,BL-3,assigned,259,BL-3,,259,tag,Inferred
+P-ATS,076,76,E6.3,"628.55,343.17,643.25,348.17",bluebeam-ocr,,N,Y,ATS,assigned,240,ATS,,240,tag,Inferred
+P-TPS,076,76,E6.3,"628.55,591.32,643.25,596.32",bluebeam-ocr,,N,Y,P-TPS,assigned,244,P-TPS,,244,tag,Inferred
+P-TPS,076,76,E6.3,"628.55,591.32,643.25,596.32",bluebeam-ocr,,N,Y,TPS,"off-citation, short form",,,,254,tag,Inferred
+P-UV1,076,76,E6.3,"628.80,538.52,643.51,543.52",bluebeam-ocr,,N,Y,UV1,assigned,342,UV1,,342,tag,Inferred
+P-UV2,076,76,E6.3,"628.80,553.62,643.51,558.62",bluebeam-ocr,,N,Y,UV2,assigned,343,UV2,,343,tag,Inferred
+P-UV1,076,76,E6.3,"628.92,538.56,643.14,542.52",ocr,81.00,N,Y,UV1,assigned,342,UV1,,342,tag,Inferred
+P-UV2,076,76,E6.3,"628.92,553.68,643.86,557.64",ocr,91.00,N,Y,UV2,assigned,343,UV2,,343,tag,Inferred
+P-LT,076,76,E6.3,"629.46,566.10,642.60,574.38",ocr,92.00,N,Y,LT,assigned,296,LT (Influent Pump Station),,296,tag,Inferred
+P-DB,076,76,E6.3,"630.00,448.27,641.93,453.27",bluebeam-ocr,,N,Y,DB,assigned,261,DB,,261,tag,Inferred
+P-DB,076,76,E6.3,"630.00,448.38,642.78,452.34",ocr,93.00,N,Y,DB,assigned,261,DB,,261,tag,Inferred
+P-LT,076,76,E6.3,"630.70,568.77,641.52,573.77",bluebeam-ocr,,N,Y,LT,assigned,296,LT (Influent Pump Station),,296,tag,Inferred
+................................MCC________________,076,76,E6.3,"859.90,545.97,959.03,550.97",bluebeam-ocr,,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"860.40,380.82,871.78,385.82",bluebeam-ocr,,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"860.58,380.88,872.10,384.84",ocr,95.00,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"860.58,606.24,872.10,610.20",ocr,93.00,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"860.58,613.62,872.10,617.58",ocr,92.00,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"863.45,606.42,874.83,611.42",bluebeam-ocr,,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"863.60,613.62,874.98,618.62",bluebeam-ocr,,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"880.74,621.18,892.44,625.14",ocr,95.00,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"882.25,598.77,893.63,603.77",bluebeam-ocr,,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"882.36,598.68,893.88,602.64",ocr,95.00,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"882.36,643.68,893.88,647.64",ocr,95.00,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"882.50,643.87,893.88,648.87",bluebeam-ocr,,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"883.15,621.07,894.53,626.07",bluebeam-ocr,,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"890.65,395.72,902.03,400.72",bluebeam-ocr,,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"890.82,395.82,902.52,399.78",ocr,95.00,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"890.82,403.38,902.52,407.34",ocr,95.00,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"890.90,403.17,902.28,408.17",bluebeam-ocr,,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC________________,076,76,E6.3,"904.80,388.27,960.23,393.27",bluebeam-ocr,,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC......,076,76,E6.3,"904.80,410.82,924.37,415.82",bluebeam-ocr,,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"904.80,425.97,916.19,430.97",bluebeam-ocr,,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"904.80,441.07,916.19,446.07",bluebeam-ocr,,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"904.80,463.42,916.18,468.42",bluebeam-ocr,,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC________________,076,76,E6.3,"904.80,478.52,960.23,483.52",bluebeam-ocr,,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC_____________,076,76,E6.3,"904.80,553.62,952.01,558.62",bluebeam-ocr,,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"904.86,388.44,916.56,392.40",ocr,94.00,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"904.86,410.94,916.56,414.90",ocr,96.00,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"904.86,418.50,916.56,422.46",ocr,96.00,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"904.86,425.88,916.56,429.84",ocr,90.00,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"904.86,433.44,916.56,437.40",ocr,90.00,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"904.86,441.00,916.56,444.96",ocr,94.00,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"904.86,448.38,916.56,452.34",ocr,86.00,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"904.86,455.94,916.56,459.90",ocr,86.00,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"904.86,463.50,916.56,467.46",ocr,93.00,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"904.86,471.06,916.56,475.02",ocr,96.00,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"904.86,478.44,916.56,482.40",ocr,90.00,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"904.86,486.00,916.56,489.96",ocr,90.00,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"904.86,493.56,916.56,497.52",ocr,94.00,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"904.86,501.12,916.56,505.08",ocr,94.00,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"904.86,508.50,916.56,512.46",ocr,86.00,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"904.86,538.56,916.56,542.52",ocr,90.00,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"904.86,546.12,916.56,550.08",ocr,94.00,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"904.86,553.68,916.56,557.64",ocr,94.00,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"904.86,561.06,916.56,565.02",ocr,86.00,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"904.95,493.42,916.33,498.42",bluebeam-ocr,,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"905.05,433.17,916.43,438.17",bluebeam-ocr,,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"905.05,448.27,916.43,453.27",bluebeam-ocr,,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"905.05,455.72,916.43,460.72",bluebeam-ocr,,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"905.05,470.82,916.43,475.82",bluebeam-ocr,,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"905.05,538.52,916.43,543.52",bluebeam-ocr,,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"905.10,485.97,916.48,490.97",bluebeam-ocr,,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"905.10,508.27,916.48,513.27",bluebeam-ocr,,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC,076,76,E6.3,"905.10,561.07,916.48,566.07",bluebeam-ocr,,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+TS,076,76,E6.3,"906.86,583.62,913.24,588.62",bluebeam-ocr,,N,Y,TS,assigned,242,TS,,242,tag,Inferred
+TS,076,76,E6.3,"910.98,583.56,917.64,587.52",ocr,95.00,N,Y,TS,assigned,242,TS,,242,tag,Inferred
+MCC________________,076,76,E6.3,"927.80,501.07,983.23,506.07",bluebeam-ocr,,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+MCC.................,076,76,E6.3,"928.29,418.27,962.72,423.27",bluebeam-ocr,,N,Y,MCC,assigned,263,MCC,,263,tag,Inferred
+HOT BOX #1,076,76,E6.3,"991.26,621.18,1022.04,625.14",ocr,0.00,N,Y,HOT BOX#1,assigned,58,Hot Box #1,,58,tag,Inferred
+HOT BOX#1,076,76,E6.3,"994.40,621.32,1022.43,626.32",bluebeam-ocr,,N,Y,HOT BOX#1,assigned,58,Hot Box #1,,58,tag,Inferred
+UV1,076,76,E6.3,"997.00,546.22,1006.72,551.22",bluebeam-ocr,,N,Y,UV1,assigned,342,UV1,,342,tag,Inferred
+UV1,076,76,E6.3,"997.02,546.12,1005.48,550.08",ocr,89.00,N,Y,UV1,assigned,342,UV1,,342,tag,Inferred
+UV2,076,76,E6.3,"997.02,561.06,1006.20,565.02",ocr,91.00,N,Y,UV2,assigned,343,UV2,,343,tag,Inferred
+UV2,076,76,E6.3,"998.75,561.07,1008.47,566.07",bluebeam-ocr,,N,Y,UV2,assigned,343,UV2,,343,tag,Inferred
+HOT BOX#1,076,76,E6.3,"1006.30,606.42,1034.33,611.42",bluebeam-ocr,,N,Y,HOT BOX#1,assigned,58,Hot Box #1,,58,tag,Inferred
+HOT BOX #2,076,76,E6.3,"1006.30,613.62,1035.78,618.62",bluebeam-ocr,,N,Y,HOT BOX#2,assigned,59,Hot Box #2,,59,tag,Inferred
+HOT BOX #1,076,76,E6.3,"1006.38,606.24,1036.98,610.20",ocr,0.00,N,Y,HOT BOX#1,assigned,58,Hot Box #1,,58,tag,Inferred
+HOT BOX #2,076,76,E6.3,"1006.38,613.62,1037.70,617.58",ocr,93.00,N,Y,HOT BOX#2,assigned,59,Hot Box #2,,59,tag,Inferred
+UV1,076,76,E6.3,"1008.18,538.56,1016.82,542.52",ocr,87.00,N,Y,UV1,assigned,342,UV1,,342,tag,Inferred
+UV2,076,76,E6.3,"1008.18,553.68,1017.54,557.64",ocr,90.00,N,Y,UV2,assigned,343,UV2,,343,tag,Inferred
+UV1,076,76,E6.3,"1008.25,538.52,1017.97,543.52",bluebeam-ocr,,N,Y,UV1,assigned,342,UV1,,342,tag,Inferred
+UV2,076,76,E6.3,"1009.15,553.62,1018.87,558.62",bluebeam-ocr,,N,Y,UV2,assigned,343,UV2,,343,tag,Inferred
+TS,076,76,E6.3,"1026.96,373.17,1033.34,378.17",bluebeam-ocr,,N,Y,TS,assigned,242,TS,,242,tag,Inferred
+TS,076,76,E6.3,"1027.80,373.32,1034.28,377.28",ocr,95.00,N,Y,TS,assigned,242,TS,,242,tag,Inferred
+fi,077,77,E7.0,"106.74,261.54,112.68,277.74",ocr,15.00,Y,N,F1,"off-citation, short form",,,,167; 174; 292,tag,Inferred
+MCC,077,77,E7.0,"107.10,281.58,118.55,286.61",text-layer,,N,Y,MCC,assigned,263,MCC,,263,tag,Verified
+fi},077,77,E7.0,"234.54,639.72,239.76,649.62",ocr,61.00,Y,N,F1,"off-citation, short form",,,,167; 174; 292,tag,Inferred
+MCC,077,77,E7.0,"477.54,383.10,488.99,388.13",text-layer,,N,Y,MCC,assigned,263,MCC,,263,tag,Verified
+fi,077,77,E7.0,"641.16,199.26,646.38,209.16",ocr,47.00,Y,N,F1,"off-citation, short form",,,,167; 174; 292,tag,Inferred
+L1,079,79,E7.2,"117.54,667.14,123.13,672.17",text-layer,,N,Y,L1,"off-citation, short form",,,,277,tag,Verified
+L1,079,79,E7.2,"122.22,208.50,127.81,213.53",text-layer,,N,Y,L1,"off-citation, short form",,,,277,tag,Verified
+L1,079,79,E7.2,"191.70,184.74,197.29,189.77",text-layer,,N,Y,L1,"off-citation, short form",,,,277,tag,Verified
+L1,079,79,E7.2,"572.94,76.38,578.53,81.41",text-layer,,N,Y,L1,"off-citation, short form",,,,277,tag,Verified
+ts,079,79,E7.2,"573.12,416.88,598.86,427.50",ocr,22.00,N,Y,TS,"off-citation, short form",,,,242,tag,Inferred
+UV1,080,80,E7.3,"85.68,400.92,95.46,405.95",text-layer,,N,Y,UV1,assigned,342,UV1,,342,tag,Verified
+UV2,080,80,E7.3,"85.68,434.22,95.46,439.25",text-layer,,N,Y,UV2,assigned,343,UV2,,343,tag,Verified
+MCC,080,80,E7.3,"128.73,501.00,140.18,506.03",text-layer,,N,Y,MCC,"off-citation, short form",,,,263,tag,Verified
+UV1,080,80,E7.3,"200.52,416.76,210.30,421.79",text-layer,,N,Y,UV1,assigned,342,UV1,,342,tag,Verified
+UV2,080,80,E7.3,"200.52,450.06,210.30,455.09",text-layer,,N,Y,UV2,assigned,343,UV2,,343,tag,Verified
+MCC,080,80,E7.3,"347.48,243.60,358.93,248.63",text-layer,,N,Y,MCC,"off-citation, short form",,,,263,tag,Verified
+MCC,080,80,E7.3,"347.48,434.94,358.93,439.97",text-layer,,N,Y,MCC,"off-citation, short form",,,,263,tag,Verified
+XI,080,80,E7.3,"550.55,183.04,556.21,189.04",bluebeam-ocr,,Y,N,X1,"off-citation, short form",,,,279,tag,Inferred
+MCC,080,80,E7.3,"563.66,159.90,575.11,164.93",text-layer,,N,Y,MCC,"off-citation, short form",,,,263,tag,Verified
+MCC,080,80,E7.3,"563.66,351.24,575.11,356.27",text-layer,,N,Y,MCC,"off-citation, short form",,,,263,tag,Verified
+MCC,080,80,E7.3,"766.61,549.60,778.06,554.63",text-layer,,N,Y,MCC,"off-citation, short form",,,,263,tag,Verified
+F1,080,80,E7.3,"864.50,462.66,870.37,467.69",text-layer,,N,Y,F1,"off-citation, short form",,,,167; 174; 292,tag,Verified
+F2,080,80,E7.3,"864.50,484.26,870.37,489.29",text-layer,,N,Y,F2,assigned,334,F2 (2W Pump Station),,334,tag,Verified
+F3,080,80,E7.3,"864.50,505.68,870.37,510.71",text-layer,,N,Y,F3,assigned,335,F3 (2W Pump Station),,335,tag,Verified
+F4,080,80,E7.3,"864.50,527.28,870.37,532.31",text-layer,,N,Y,F4,"off-citation, short form",,,,167; 174; 295,tag,Verified
+MCC,080,80,E7.3,"980.68,415.86,992.13,420.89",text-layer,,N,Y,MCC,"off-citation, short form",,,,263,tag,Verified
+MCC,080,80,E7.3,"980.68,549.60,992.13,554.63",text-layer,,N,Y,MCC,"off-citation, short form",,,,263,tag,Verified
+MCC,080,80,E7.3,"982.79,159.90,994.24,164.93",text-layer,,N,Y,MCC,"off-citation, short form",,,,263,tag,Verified
+MCC,080,80,E7.3,"985.12,282.48,996.57,287.51",text-layer,,N,Y,MCC,"off-citation, short form",,,,263,tag,Verified
+MCC,081,81,E7.4,"444.78,139.20,456.23,144.23",text-layer,,N,Y,MCC,"off-citation, short form",,,,263,tag,Verified
+MCC,081,81,E7.4,"444.78,209.94,456.23,214.97",text-layer,,N,Y,MCC,"off-citation, short form",,,,263,tag,Verified
+MCC,081,81,E7.4,"444.78,280.68,456.23,285.71",text-layer,,N,Y,MCC,"off-citation, short form",,,,263,tag,Verified
+MCC,081,81,E7.4,"444.78,351.42,456.23,356.45",text-layer,,N,Y,MCC,"off-citation, short form",,,,263,tag,Verified
+MCC,081,81,E7.4,"444.78,492.72,456.23,497.75",text-layer,,N,Y,MCC,"off-citation, short form",,,,263,tag,Verified
+MCC,081,81,E7.4,"444.78,563.46,456.23,568.49",text-layer,,N,Y,MCC,"off-citation, short form",,,,263,tag,Verified
+MCC,081,81,E7.4,"444.78,634.20,456.23,639.23",text-layer,,N,Y,MCC,"off-citation, short form",,,,263,tag,Verified
+MCC,081,81,E7.4,"456.05,421.98,467.50,427.01",text-layer,,N,Y,MCC,"off-citation, short form",,,,263,tag,Verified
+HOT BOX #1,081,81,E7.4,"845.95,280.68,875.57,285.71",text-layer,,N,Y,HOT BOX#1,assigned,58,Hot Box #1,,58,tag,Verified
+MCC,081,81,E7.4,"846.00,139.20,857.45,144.23",text-layer,,N,Y,MCC,"off-citation, short form",,,,263,tag,Verified
+MCC,081,81,E7.4,"846.00,209.94,857.45,214.97",text-layer,,N,Y,MCC,"off-citation, short form",,,,263,tag,Verified
+UV1,082,82,E7.5,"107.82,456.18,117.60,461.21",text-layer,,N,Y,UV1,assigned,342,UV1,,342,tag,Verified
+UV2,082,82,E7.5,"107.82,575.88,117.60,580.91",text-layer,,N,Y,UV2,assigned,343,UV2,,343,tag,Verified
+UV2,082,82,E7.5,"126.54,599.28,136.32,604.31",text-layer,,N,Y,UV2,assigned,343,UV2,,343,tag,Verified
+UV1,082,82,E7.5,"127.08,479.58,136.86,484.61",text-layer,,N,Y,UV1,assigned,342,UV1,,342,tag,Verified
+LT,082,82,E7.5,"145.98,344.94,151.85,349.97",text-layer,,N,Y,LT,"off-citation, short form",,,,296,tag,Verified
+MCC,085,85,E8.1,"750.24,725.46,761.69,730.49",text-layer,,N,Y,MCC,"off-citation, short form",,,,263,tag,Verified
+LP2,085,85,E8.1,"887.17,488.40,896.12,493.43",text-layer,,N,Y,LP2,assigned,299,LP2,,299,tag,Verified
+T2,086,86,E8.2,"853.20,345.84,859.07,350.87",text-layer,,N,Y,T2,"off-citation, short form",,,,350,tag,Verified
+MCC,087,87,E8.3,"166.12,159.90,177.57,164.93",text-layer,,N,Y,MCC,"off-citation, short form",,,,263,tag,Verified
+MCC,087,87,E8.3,"166.12,326.04,177.57,331.07",text-layer,,N,Y,MCC,"off-citation, short form",,,,263,tag,Verified
+F1,087,87,E8.3,"257.72,528.36,263.59,533.39",text-layer,,N,Y,F1,assigned,292,F1 (Influent Pump Station),,292,tag,Verified
+F2,087,87,E8.3,"257.72,549.96,263.59,554.99",text-layer,,N,Y,F2,assigned,293,F2 (Influent Pump Station),,293,tag,Verified
+F3,087,87,E8.3,"257.72,571.38,263.59,576.41",text-layer,,N,Y,F3,assigned,294,F3 (Influent Pump Station),,294,tag,Verified
+F4,087,87,E8.3,"257.72,592.98,263.59,598.01",text-layer,,N,Y,F4,assigned,295,F4 (Influent Pump Station),,295,tag,Verified
+MCC,087,87,E8.3,"421.90,159.90,433.35,164.93",text-layer,,N,Y,MCC,"off-citation, short form",,,,263,tag,Verified
+MCC,087,87,E8.3,"421.90,326.04,433.35,331.07",text-layer,,N,Y,MCC,"off-citation, short form",,,,263,tag,Verified
+LT,089,89,E8.5,"181.08,225.06,186.95,230.09",text-layer,,N,Y,LT,assigned,296,LT (Influent Pump Station),,296,tag,Verified
+MCC,091,91,E9.1,"203.76,45.60,215.21,50.63",text-layer,,N,Y,MCC,assigned,263,MCC,,263,tag,Verified
+MCC,091,91,E9.1,"463.68,78.54,475.13,83.57",text-layer,,N,Y,MCC,assigned,263,MCC,,263,tag,Verified
+MCC,091,91,E9.1,"576.54,47.82,592.57,54.86",text-layer,,N,Y,MCC,assigned,263,MCC,,263,tag,Verified
+(MCC),091,91,E9.1,"594.61,720.83,624.21,730.89",text-layer,,N,Y,MCC,assigned,263,MCC,,263,tag,Verified
+[xi,091,91,E9.1,"1083.78,68.76,1102.14,79.38",ocr,0.00,Y,N,X1,"off-citation, short form",,,,279,tag,Inferred
+L1,092,92,E9.2,"159.30,105.00,164.89,110.03",text-layer,,N,Y,L1,"off-citation, short form",,,,277,tag,Verified
+L2,092,92,E9.2,"159.30,122.82,164.89,127.85",text-layer,,N,Y,L2,"off-citation, short form",,,,278; 330,tag,Verified
+L1,092,92,E9.2,"244.44,271.02,249.94,275.97",text-layer,,N,Y,L1,"off-citation, short form",,,,277,tag,Verified
+T2,092,92,E9.2,"261.90,414.30,267.68,419.25",text-layer,,N,Y,T2,"off-citation, short form",,,,350,tag,Verified
+L2,092,92,E9.2,"262.08,271.02,267.58,275.97",text-layer,,N,Y,L2,"off-citation, short form",,,,278; 330,tag,Verified
+T2,092,92,E9.2,"266.04,555.36,271.91,560.39",text-layer,,N,Y,T2,"off-citation, short form",,,,350,tag,Verified
+T3,092,92,E9.2,"279.72,414.30,285.50,419.25",text-layer,,N,Y,T3,"off-citation, short form",,,,298,tag,Verified
+T3,092,92,E9.2,"283.68,555.36,289.55,560.39",text-layer,,N,Y,T3,"off-citation, short form",,,,298,tag,Verified
+MCC,092,92,E9.2,"341.46,286.08,352.91,291.11",text-layer,,N,Y,MCC,assigned,263,MCC,,263,tag,Verified
+MCC,092,92,E9.2,"736.38,166.74,747.83,171.77",text-layer,,N,Y,MCC,assigned,263,MCC,,263,tag,Verified
+MCC,092,92,E9.2,"946.80,90.96,958.25,95.99",text-layer,,N,Y,MCC,assigned,263,MCC,,263,tag,Verified
+MCC,092,92,E9.2,"984.42,60.72,995.87,65.75",text-layer,,N,Y,MCC,assigned,263,MCC,,263,tag,Verified
+gen,095,95,E10.2,"331.56,432.36,343.98,432.72",ocr,0.00,N,Y,GEN,"off-citation, short form",,,,243,tag,Inferred
+"HOT BOX #1,",095,95,E10.2,"332.01,616.02,363.03,621.05",text-layer,,N,Y,HOT BOX#1,assigned,58,Hot Box #1,,58,tag,Verified
+MCC,add4_p04,,A1.1,"481.03,26.36,508.35,42.85",text-layer,,N,Y,MCC,assigned,263,MCC,,263,tag,Verified
+i018],add4_p04,,A1.1,"625.68,111.78,641.16,124.92",ocr,31.00,Y,N,101B,assigned,369,101B,,369,tag,Inferred
+101A|,add4_p04,,A1.1,"629.28,108.18,639.00,111.24",ocr,75.00,N,Y,101A,assigned,368,101A,,368,tag,Inferred
+MCC,add4_p04,,A1.1,"695.12,26.36,722.45,42.85",text-layer,,N,Y,MCC,assigned,263,MCC,,263,tag,Verified
+MCC,add4_p04,,A1.1,"781.70,40.16,809.03,56.65",text-layer,,N,Y,MCC,assigned,263,MCC,,263,tag,Verified
+MCP,add4_p04,,A1.1,"930.77,586.01,957.43,602.50",text-layer,,N,Y,MCP,assigned,264,MCP,,264,tag,Verified
+Hot Box #1,add4_p07,,C1.3,"391.31,713.38,430.88,724.37",text-layer,,N,Y,HOT BOX#1,assigned,58,Hot Box #1,,58,tag,Verified
+"22: 1"" YARD HYDRANTS (3 LOCATIONS)",add4_p07,,C1.3,"875.62,442.09,1034.01,453.49",text-layer,,N,Y,Pipe ID 22,assigned,52,Pipe ID 22,,52,legend,Verified
+"23: 1"" 2W WATER LINE HDPE NOTES EXISTING 8” PIPE AND CONNECT INFLUENT PIPE TO TRAIN 2",add4_p07,,C1.3,"875.62,456.21,992.29,492.12",ocr,81.00,N,Y,Pipe ID 23,assigned,53,Pipe ID 23,,53,legend,Inferred
+"24: NEW 8” PIPE TO TRAIN 1. AND PLUG EXISTING TRAIN 1 PIPE 8"" TRAIN 1 EFFLUENT (DI GRAV.) SLOPE 0.4% MIN",add4_p07,,C1.3,"875.74,503.46,1096.69,534.83",ocr,95.00,N,Y,Pipe ID 24,assigned,54,Pipe ID 24,,54,legend,Inferred
+"25: 4"" PRESSATE DRAIN (DI GRAV.) SLOPE 2% MIN",add4_p07,,C1.3,"875.74,539.65,1086.11,550.64",text-layer,,N,Y,Pipe ID 25,assigned,55,Pipe ID 25,,55,legend,Verified
+"26: 4"" BUILDING FLOOR DRAIN (DI GRAV.) SLOPE 2% MIN",add4_p07,,C1.3,"875.80,555.72,1111.54,566.83",text-layer,,N,Y,Pipe ID 26,assigned,56,Pipe ID 26,,56,legend,Verified
+"13: 8"" TRAIN 2 INFLUENT (DI GRAV.) SLOPE 0.4% MIN.",add4_p07,,C1.3,"876.48,324.90,1020.75,330.41",text-layer,,N,Y,Pipe ID 13,assigned,43,Pipe ID 13,,43,legend,Verified
+"15: 2"" TRAIN 3 WAS (SCH. 80 PVC GRAV.) SLOPE POSITIVE DRAINAGE THROUGHOUT",add4_p07,,C1.3,"876.48,348.78,1062.12,359.93",text-layer,,N,Y,Pipe ID 15,assigned,45,Pipe ID 15,,45,legend,Verified
+"16: 8"" TRAIN 2 EFFLUENT (DI GRAV.) SLOPE 0.4% MIN.",add4_p07,,C1.3,"876.48,364.86,1022.15,370.37",text-layer,,N,Y,Pipe ID 16,assigned,46,Pipe ID 16,,46,legend,Verified
+"17: 8"" TRAIN 3 EFFLUENT (DI GRAV.) SLOPE 0.4% MIN.",add4_p07,,C1.3,"876.48,377.82,1022.15,383.33",text-layer,,N,Y,Pipe ID 17,assigned,47,Pipe ID 17,,47,legend,Verified
+"18: 6"" INFLUENT TO FLOW SPLITTER (DI FM) SLOPE POSITIVE THROUGHOUT",add4_p07,,C1.3,"876.48,388.86,1041.15,399.89",text-layer,,N,Y,Pipe ID 18,assigned,48,Pipe ID 18,,48,legend,Verified
+"19: 2"" DIGESTER WAS INFLUENT (SCH. 80 PVC GRAV.)",add4_p07,,C1.3,"876.48,404.94,1018.37,410.45",text-layer,,N,Y,Pipe ID 19,assigned,49,Pipe ID 19,,49,legend,Verified
+"10: 2"" 2W WATER LINE (SCH. 80 PVC FM) HDPE",add4_p07,,C1.3,"876.60,282.30,1008.27,293.29",text-layer,,N,Y,Pipe ID 10,assigned,40,Pipe ID 10,,40,legend,Verified
+"12: 2"" WATER PIPE (SCH. 80 PVC FM)",add4_p07,,C1.3,"876.60,311.94,976.46,317.45",text-layer,,N,Y,Pipe ID 12,assigned,42,Pipe ID 12,,42,legend,Verified
+"14: 8"" TRAIN 1 INFLUENT (DI GRAV.) SLOPE 0.4% MIN.",add4_p07,,C1.3,"876.60,337.86,1020.75,343.37",text-layer,,N,Y,Pipe ID 14,assigned,44,Pipe ID 14,,44,legend,Verified
+"20: 6"" CELL 3 AIR (SS)",add4_p07,,C1.3,"876.72,417.90,939.30,423.41",text-layer,,N,Y,Pipe ID 20,assigned,50,Pipe ID 20,,50,legend,Verified
+"11: 8"" TRAIN 3 INFLUENT (DI GRAV.) SLOPE 0.4% MIN.",add4_p07,,C1.3,"876.84,298.98,1020.75,304.49",text-layer,,N,Y,Pipe ID 11,assigned,41,Pipe ID 11,,41,legend,Verified
+"21: 4"" DIGESTER AIR (SS)",add4_p07,,C1.3,"877.08,430.86,948.36,436.37",text-layer,,N,Y,Pipe ID 21,assigned,51,Pipe ID 21,,51,legend,Verified
+"5: 10"" UV DISINFECTION EFFLUENT (DI GRAV.) SLOPE 0.28% MIN.",add4_p07,,C1.3,"878.04,212.82,1051.97,218.33",text-layer,,N,Y,Pipe ID 5,assigned,35,Pipe ID 5,,35,legend,Verified
+"7: 2"" DIGESTED SLUDGE (SCH. 80 PVC FM) SLOPE POSITIVE THROUGHOUT",add4_p07,,C1.3,"878.04,236.82,1040.32,247.85",text-layer,,N,Y,Pipe ID 7,assigned,37,Pipe ID 7,,37,legend,Verified
+"9: 1"" 2W WATER SYSTEM AIR VENT (SS) OUTLET 3' ABOVE GRADE WITH GOOSENECK POINTING DOWN SLOPE POSITIVE DRAINAGE THROUGHOUT",add4_p07,,C1.3,"878.04,263.82,1064.79,280.97",text-layer,,N,Y,Pipe ID 9,assigned,39,Pipe ID 9,,39,legend,Verified
+"2: 4"" UV DISINFECTION DRAIN AND DIGESTER SUPERNATANT (DI GRAV.) SLOPE 2% MIN.",add4_p07,,C1.3,"878.16,157.50,1067.09,168.65",text-layer,,N,Y,Pipe ID 2,assigned,32,Pipe ID 2,,32,legend,Verified
+"3: 8"" INFLUENT (DI GRAV.) SLOPE 0.4% MIN.",add4_p07,,C1.3,"878.16,173.70,1000.08,179.21",text-layer,,N,Y,Pipe ID 3,assigned,33,Pipe ID 3,,33,legend,Verified
+"4: 3"" INFLUENT PUMP STATION AIR VENT (SS) OUTLET 8' ABOVE FINISH GRADE WITH GOOSENECK POINTING DOWN. ATTACH PIPE SECURELY TO EXTERIOR BUILDING WALL SLOPE POSITIVE DRAINAGE THROUGHOUT",add4_p07,,C1.3,"878.16,184.62,1068.43,207.89",text-layer,,N,Y,Pipe ID 4,assigned,34,Pipe ID 4,,34,legend,Verified
+"6: 4"" BUILDING SEPTIC (SCH. 80 PVC GRAV.) s CLOPE 2% MIN.",add4_p07,,C1.3,"878.16,225.59,1040.71,236.58",text-layer,,N,Y,Pipe ID 6,assigned,36,Pipe ID 6,,36,legend,Verified
+"8: 4"" VAULT DRAIN (SCH. 80 PVC GRAV.) SLOPE 2.0%",add4_p07,,C1.3,"878.16,252.90,1022.56,258.41",text-layer,,N,Y,Pipe ID 8,assigned,38,Pipe ID 8,,38,legend,Verified
+"1: 8"" EXISTING EFFLUENT (DI GRAV.)",add4_p07,,C1.3,"878.28,146.46,978.97,152.09",text-layer,,N,Y,Pipe ID 1,assigned,31,Pipe ID 1,,31,legend,Verified
+\s2.3/,add4_p09,,S2.3,"841.68,712.62,860.22,722.70",ocr,11.00,N,Y,S2,"off-citation, short form",,,,191,tag,Inferred

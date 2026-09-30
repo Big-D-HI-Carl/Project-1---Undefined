@@ -11648,9 +11648,18 @@
   ]
  },
  "cited_as": {
-  "basis": "01_Sheet_Index_rev1.md File and PDF p. columns",
+  "basis": "testbeds/eastsound/index/Plan_Set_Crosswalk.csv",
+  "duplicates": [
+   {
+    "file": "Pages_from_eswd-wwtp-upgrade-ph1-11x17-plans_7.pdf",
+    "indexed_in_01": "No (duplicate of plans_6, decision 2)",
+    "page": 3
+   }
+  ],
   "file": "Pages_from_eswd-wwtp-upgrade-ph1-11x17-plans_6.pdf",
-  "page": 8
+  "indexed_in_01": "Yes",
+  "page": 8,
+  "short_name": "plans_6"
  },
  "counts": {
   "mode3_chars_kept": 241,
@@ -11691,8 +11700,8 @@
   "pytesseract": "0.3.13",
   "python": "3.11.15",
   "schema_version": "1.0",
-  "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script": "testbeds/eastsound/tools/extract_drawing_text.py",
+  "script_sha256": "0e61e19737aa0acd351b04bb1fe1276502ad57f626b99e59df261b62d1bbebd1",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -11711,6 +11720,7 @@
  },
  "governed_by": null,
  "governs": null,
+ "keyed_notes": [],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -11723,14 +11733,450 @@
   "width": 1224.0
  },
  "page_key": "048",
+ "quantities": [
+  {
+   "bbox": [
+    76.1,
+    189.32,
+    149.72,
+    194.32
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "PVC MANUAL BALL VALVE",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "3/4” PVC MANUAL BALL VALVE",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "3/4\" PVC MANUAL BALL VALVE",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "3/4"
+  },
+  {
+   "bbox": [
+    76.5,
+    188.46,
+    162.18,
+    194.4
+   ],
+   "callouts_nearby": [],
+   "conf": 78.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "PVC MANUAL BALL VALVE",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "9. 3/4” PVC MANUAL BALL VALVE",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "3/4\" PVC MANUAL BALL VALVE",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "3/4"
+  },
+  {
+   "bbox": [
+    106.38,
+    690.3,
+    115.2,
+    696.42
+   ],
+   "callouts_nearby": [],
+   "conf": 67.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "percent",
+   "line_text": "1%\"",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "1%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "1"
+  },
+  {
+   "bbox": [
+    420.0,
+    690.53,
+    487.1,
+    706.53
+   ],
+   "callouts_nearby": [
+    [
+     "5",
+     [
+      420.66,
+      713.52,
+      424.62,
+      722.52
+     ],
+     6.99
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "SCH",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "sess:3/4\" SCH",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "3/4\" SCH",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "3/4"
+  },
+  {
+   "bbox": [
+    585.1,
+    572.82,
+    624.25,
+    577.82
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "SCH 80 PVC",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "3/4” SCH 80 PVC",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "3/4\" SCH 80 PVC",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "3/4"
+  },
+  {
+   "bbox": [
+    585.36,
+    572.22,
+    636.3,
+    577.8
+   ],
+   "callouts_nearby": [],
+   "conf": 88.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "SCH 80 PVC",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "3/4\" SCH 80 PVC",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "3/4\" SCH 80 PVC",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "3/4"
+  },
+  {
+   "bbox": [
+    658.08,
+    457.74,
+    671.58,
+    462.24
+   ],
+   "callouts_nearby": [
+    [
+     "44",
+     [
+      660.24,
+      469.26,
+      672.12,
+      471.78
+     ],
+     7.02
+    ],
+    [
+     "4",
+     [
+      679.32,
+      465.84,
+      680.58,
+      467.1
+     ],
+     8.54
+    ],
+    [
+     "2",
+     [
+      681.84,
+      471.06,
+      683.1,
+      472.14
+     ],
+     13.53
+    ]
+   ],
+   "conf": 55.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "percent",
+   "line_text": "40 “4%",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    858.95,
+    627.07,
+    893.99,
+    632.07
+   ],
+   "callouts_nearby": [
+    [
+     "7",
+     [
+      893.7,
+      650.7,
+      895.14,
+      651.96
+     ],
+     18.63
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "SCH 80 PVC",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "4” SCH 80 PVC",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4\" SCH 80 PVC",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    1005.04,
+    99.32,
+    1029.74,
+    104.32
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 10.35,
+   "item": "COATS",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "AND PAINTED WITH A MINIMUM OF (2) COATS OF EPOXY",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "HOT BOX#1",
+   "nearest_tag_rows": [
+    58
+   ],
+   "raw": "(2) COATS",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "2"
+  },
+  {
+   "bbox": [
+    1017.72,
+    98.64,
+    1045.44,
+    104.4
+   ],
+   "callouts_nearby": [],
+   "conf": 96.0,
+   "detail_refs_nearby": [],
+   "distance": 13.9,
+   "item": "COATS",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "MINIMUM OF (2) COATS OF EPOXY",
+   "method": "ocr",
+   "nearest_tag": "HOT BOX#1",
+   "nearest_tag_rows": [
+    58
+   ],
+   "raw": "(2) COATS",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "2"
+  }
+ ],
  "schema_version": "1.0",
  "set_page": 48,
  "sheet_01": "C7.6",
  "source": {
   "file": "testbeds/eastsound/library/Pages from eswd-wwtp-upgrade-ph1-11x17-plans Part 2.pdf",
   "page": 21,
-  "sha256": "1176b4b114c25cd51383cb47896d5a651e4eb0f3363d17d651269f3d2a15dd84"
+  "sha256": "1176b4b114c25cd51383cb47896d5a651e4eb0f3363d17d651269f3d2a15dd84",
+  "sha256_checked_against": "testbeds/eastsound/index/Library_Manifest.csv"
  },
+ "tags": [
+  {
+   "assignment": "assigned",
+   "bbox": [
+    186.0,
+    734.92,
+    296.47,
+    751.68
+   ],
+   "candidate_rows": [
+    58
+   ],
+   "conf": null,
+   "form": "HOT BOX#1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    58
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "HOT BOX #1"
+  },
+  {
+   "assignment": "qualifier (E) not on line",
+   "bbox": [
+    622.98,
+    256.86,
+    635.22,
+    269.1
+   ],
+   "candidate_rows": [
+    249
+   ],
+   "conf": 2.0,
+   "form": "SES",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "SES"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    654.12,
+    290.8,
+    764.59,
+    307.56
+   ],
+   "candidate_rows": [
+    59
+   ],
+   "conf": null,
+   "form": "HOT BOX#2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    59
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "HOT BOX #2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    706.56,
+    734.92,
+    817.03,
+    751.68
+   ],
+   "candidate_rows": [
+    59
+   ],
+   "conf": null,
+   "form": "HOT BOX#2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    59
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "HOT BOX #2"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    898.56,
+    453.06,
+    903.42,
+    455.04
+   ],
+   "candidate_rows": [
+    242
+   ],
+   "conf": 9.0,
+   "form": "TS",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "TS"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    973.6,
+    114.67,
+    1008.36,
+    119.67
+   ],
+   "candidate_rows": [
+    58
+   ],
+   "conf": null,
+   "form": "HOT BOX#1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    58
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "HOT BOX #1"
+  }
+ ],
  "title_01": "CIVIL DETAILS",
  "title_block": {
   "date": {

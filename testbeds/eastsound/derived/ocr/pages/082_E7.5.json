@@ -1298,9 +1298,12 @@
   ]
  },
  "cited_as": {
-  "basis": "01_Sheet_Index_rev1.md File and PDF p. columns",
+  "basis": "testbeds/eastsound/index/Plan_Set_Crosswalk.csv",
+  "duplicates": [],
   "file": "Pages_from_eswd-wwtp-upgrade-ph1-11x17-plans_11.pdf",
-  "page": 2
+  "indexed_in_01": "Yes",
+  "page": 2,
+  "short_name": "plans_11"
  },
  "counts": {
   "mode3_chars_kept": 0,
@@ -1341,8 +1344,8 @@
   "pytesseract": "0.3.13",
   "python": "3.11.15",
   "schema_version": "1.0",
-  "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script": "testbeds/eastsound/tools/extract_drawing_text.py",
+  "script_sha256": "0e61e19737aa0acd351b04bb1fe1276502ad57f626b99e59df261b62d1bbebd1",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -1361,6 +1364,7 @@
  },
  "governed_by": null,
  "governs": null,
+ "keyed_notes": [],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -1373,14 +1377,156 @@
   "width": 1224.0
  },
  "page_key": "082",
+ "quantities": [
+  {
+   "bbox": [
+    118.44,
+    350.88,
+    136.04,
+    355.91
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "0-15 FT",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "15 FT",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "15"
+  }
+ ],
  "schema_version": "1.0",
  "set_page": 82,
  "sheet_01": "E7.5",
  "source": {
   "file": "testbeds/eastsound/library/Pages from eswd-wwtp-upgrade-ph1-11x17-plans - Part 3.pdf",
   "page": 34,
-  "sha256": "ffe9e975ceb153cab60328a2459d826f96f96e0edaa77e0279a1d27e2e6de5fa"
+  "sha256": "ffe9e975ceb153cab60328a2459d826f96f96e0edaa77e0279a1d27e2e6de5fa",
+  "sha256_checked_against": "testbeds/eastsound/index/Library_Manifest.csv"
  },
+ "tags": [
+  {
+   "assignment": "assigned",
+   "bbox": [
+    107.82,
+    456.18,
+    117.6,
+    461.21
+   ],
+   "candidate_rows": [
+    342
+   ],
+   "conf": null,
+   "form": "UV1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    342
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "UV1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    107.82,
+    575.88,
+    117.6,
+    580.91
+   ],
+   "candidate_rows": [
+    343
+   ],
+   "conf": null,
+   "form": "UV2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    343
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "UV2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    126.54,
+    599.28,
+    136.32,
+    604.31
+   ],
+   "candidate_rows": [
+    343
+   ],
+   "conf": null,
+   "form": "UV2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    343
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "UV2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    127.08,
+    479.58,
+    136.86,
+    484.61
+   ],
+   "candidate_rows": [
+    342
+   ],
+   "conf": null,
+   "form": "UV1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    342
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "UV1"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    145.98,
+    344.94,
+    151.85,
+    349.97
+   ],
+   "candidate_rows": [
+    296
+   ],
+   "conf": null,
+   "form": "LT",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "LT"
+  }
+ ],
  "title_01": "MAIN PLC CONTROL PANEL - ANALOG INPUTS - SHEET 1",
  "title_block": {
   "date": {

@@ -7544,9 +7544,12 @@
   ]
  },
  "cited_as": {
-  "basis": "01_Sheet_Index_rev1.md File and PDF p. columns",
+  "basis": "testbeds/eastsound/index/Plan_Set_Crosswalk.csv",
+  "duplicates": [],
   "file": "Pages_from_eswd-wwtp-upgrade-ph1-11x17-plans_10.pdf",
-  "page": 2
+  "indexed_in_01": "Yes",
+  "page": 2,
+  "short_name": "plans_10"
  },
  "counts": {
   "mode3_chars_kept": 0,
@@ -7587,8 +7590,8 @@
   "pytesseract": "0.3.13",
   "python": "3.11.15",
   "schema_version": "1.0",
-  "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script": "testbeds/eastsound/tools/extract_drawing_text.py",
+  "script_sha256": "0e61e19737aa0acd351b04bb1fe1276502ad57f626b99e59df261b62d1bbebd1",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -7607,6 +7610,99 @@
  },
  "governed_by": null,
  "governs": null,
+ "keyed_notes": [
+  {
+   "bbox": [
+    478.62,
+    562.95,
+    733.0,
+    643.19
+   ],
+   "count_check": "entry count 5 matches the highest marker read",
+   "entries": [
+    {
+     "basis": "read",
+     "bbox": [
+      478.62,
+      577.68,
+      729.81,
+      588.65
+     ],
+     "method": "text-layer",
+     "number": 1,
+     "number_level": "Verified",
+     "read_number": "1",
+     "text": "1 MANUFACTURER TO PROVIDE VFD OVERCURRENT PROTECTION RATINGS FOR VFDS BASED ON / EQUIPMENT RATINGS PROVIDED FOR PROJECT."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      478.62,
+      595.68,
+      617.08,
+      600.71
+     ],
+     "method": "text-layer",
+     "number": 2,
+     "number_level": "Verified",
+     "read_number": "2",
+     "text": "2 PROVIDE 3% LINE SIDE REACTORS FOR ALL VFD'S."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      478.62,
+      607.74,
+      717.82,
+      613.49
+     ],
+     "method": "text-layer",
+     "number": 3,
+     "number_level": "Verified",
+     "read_number": "3",
+     "text": "3 PROVIDE DV/DT LOAD SIDE REACTORS FOR ALL VFD MOTOR RUNS LONGER THAN 50 FEET."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      478.62,
+      619.8,
+      733.0,
+      630.95
+     ],
+     "method": "text-layer",
+     "number": 4,
+     "number_level": "Verified",
+     "read_number": "4",
+     "text": "4 ALL OUTDOOR CONTROL PANEL AND DISCONNECT ENCLOSURES SHALL BE TYPE 316 STAINLESS / STEEL."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      478.62,
+      637.98,
+      714.8,
+      643.19
+     ],
+     "method": "text-layer",
+     "number": 5,
+     "number_level": "Verified",
+     "read_number": "5",
+     "text": "5 AERATION BLOWER MOTOR DISCONNECTS LOCATED ON MCC WITHIN SIGHT OF MOTORS."
+    }
+   ],
+   "heading": "KEY NOTES:",
+   "heading_bbox": [
+    491.04,
+    562.95,
+    536.31,
+    570.49
+   ],
+   "heading_method": "text-layer",
+   "highest_marker_read": 5,
+   "line_spacing_p25": 6.12
+  }
+ ],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -7619,14 +7715,2092 @@
   "width": 1224.0
  },
  "page_key": "074",
+ "quantities": [
+  {
+   "bbox": [
+    515.25,
+    595.68,
+    522.52,
+    600.71
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [
+    [
+     162.18,
+     616.68,
+     164.7,
+     620.64
+    ],
+    [
+     188.46,
+     648.18,
+     190.98,
+     652.14
+    ],
+    [
+     501.12,
+     413.82,
+     512.46,
+     425.88
+    ],
+    [
+     591.3,
+     413.82,
+     602.64,
+     425.88
+    ],
+    [
+     636.48,
+     413.82,
+     647.82,
+     425.88
+    ],
+    [
+     681.66,
+     413.82,
+     693.0,
+     425.88
+    ],
+    [
+     797.76,
+     413.82,
+     809.1,
+     425.88
+    ],
+    [
+     933.3,
+     413.82,
+     944.64,
+     425.88
+    ],
+    [
+     978.3,
+     413.82,
+     989.64,
+     425.88
+    ],
+    [
+     297.72,
+     98.46,
+     302.04,
+     100.8
+    ]
+   ],
+   "keyed_note": "2 (read; Verified)",
+   "kind": "percent",
+   "line_text": "PROVIDE 3% LINE SIDE REACTORS FOR ALL VFD'S.",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "3%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "3"
+  },
+  {
+   "bbox": [
+    695.55,
+    619.8,
+    733.0,
+    624.83
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "STAINLESS",
+   "keyed_callouts": [
+    [
+     188.46,
+     663.84,
+     191.16,
+     667.8
+    ],
+    [
+     214.56,
+     344.34,
+     215.28,
+     346.14
+    ]
+   ],
+   "keyed_note": "4 (read; Verified)",
+   "kind": "count",
+   "line_text": "ALL OUTDOOR CONTROL PANEL AND DISCONNECT ENCLOSURES SHALL BE TYPE 316 STAINLESS",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "316 STAINLESS",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "316"
+  },
+  {
+   "bbox": [
+    696.58,
+    607.74,
+    717.82,
+    612.77
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [
+    [
+     490.86,
+     434.94,
+     493.66,
+     439.97
+    ],
+    [
+     595.62,
+     489.48,
+     598.42,
+     494.51
+    ],
+    [
+     640.8,
+     489.48,
+     643.6,
+     494.51
+    ],
+    [
+     685.8,
+     489.48,
+     688.6,
+     494.51
+    ],
+    [
+     833.58,
+     717.18,
+     836.38,
+     722.21
+    ],
+    [
+     878.58,
+     717.36,
+     881.38,
+     722.39
+    ]
+   ],
+   "keyed_note": "3 (read; Verified)",
+   "kind": "length",
+   "line_text": "PROVIDE DV/DT LOAD SIDE REACTORS FOR ALL VFD MOTOR RUNS LONGER THAN 50 FEET.",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "50 FEET",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "50"
+  },
+  {
+   "bbox": [
+    1116.36,
+    100.98,
+    1126.8,
+    109.44
+   ],
+   "callouts_nearby": [],
+   "conf": 65.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "percent",
+   "line_text": "5%",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "5%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "5"
+  }
+ ],
  "schema_version": "1.0",
  "set_page": 74,
  "sheet_01": "E6.1",
  "source": {
   "file": "testbeds/eastsound/library/Pages from eswd-wwtp-upgrade-ph1-11x17-plans - Part 3.pdf",
   "page": 26,
-  "sha256": "ffe9e975ceb153cab60328a2459d826f96f96e0edaa77e0279a1d27e2e6de5fa"
+  "sha256": "ffe9e975ceb153cab60328a2459d826f96f96e0edaa77e0279a1d27e2e6de5fa",
+  "sha256_checked_against": "testbeds/eastsound/index/Library_Manifest.csv"
  },
+ "tags": [
+  {
+   "assignment": "assigned",
+   "bbox": [
+    89.46,
+    592.92,
+    126.36,
+    596.88
+   ],
+   "candidate_rows": [
+    331
+   ],
+   "conf": 35.0,
+   "form": "2W-P1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    331
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "2W-P1__|2W"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    89.46,
+    600.84,
+    126.36,
+    604.8
+   ],
+   "candidate_rows": [
+    332
+   ],
+   "conf": 28.0,
+   "form": "2W-P2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    332
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "2W-P2___|2W"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    89.5,
+    593.02,
+    104.77,
+    598.02
+   ],
+   "candidate_rows": [
+    331
+   ],
+   "conf": null,
+   "form": "2W-P1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    331
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "2W-P1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    89.5,
+    600.67,
+    104.77,
+    605.67
+   ],
+   "candidate_rows": [
+    332
+   ],
+   "conf": null,
+   "form": "2W-P2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    332
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "2W-P2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    89.75,
+    568.32,
+    105.74,
+    574.32
+   ],
+   "candidate_rows": [
+    352
+   ],
+   "conf": null,
+   "form": "TCP-1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    352
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "TCP-1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    89.75,
+    576.92,
+    104.18,
+    581.92
+   ],
+   "candidate_rows": [
+    353
+   ],
+   "conf": null,
+   "form": "TCP-2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    353
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "TCP-2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    89.75,
+    584.62,
+    104.18,
+    589.62
+   ],
+   "candidate_rows": [
+    281
+   ],
+   "conf": null,
+   "form": "TCP-3",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    281
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "TCP-3"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    89.82,
+    568.98,
+    104.76,
+    574.92
+   ],
+   "candidate_rows": [
+    352
+   ],
+   "conf": 19.0,
+   "form": "TCP-1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    352
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "TCP-1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    89.82,
+    576.9,
+    105.48,
+    580.86
+   ],
+   "candidate_rows": [
+    353
+   ],
+   "conf": 45.0,
+   "form": "TCP-2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    353
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "TCP-2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    89.82,
+    584.64,
+    105.66,
+    590.76
+   ],
+   "candidate_rows": [
+    281
+   ],
+   "conf": 15.0,
+   "form": "TCP-3",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    281
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "TCP-3"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    90.7,
+    679.87,
+    103.19,
+    684.87
+   ],
+   "candidate_rows": [
+    314
+   ],
+   "conf": null,
+   "form": "WP-1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    314
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "WP-1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    90.7,
+    687.82,
+    103.19,
+    692.82
+   ],
+   "candidate_rows": [
+    315
+   ],
+   "conf": null,
+   "form": "WP-2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    315
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "WP-2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    90.72,
+    677.7,
+    103.86,
+    685.98
+   ],
+   "candidate_rows": [
+    314
+   ],
+   "conf": 86.0,
+   "form": "WP-1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    314
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "WP-1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    90.72,
+    687.6,
+    130.14,
+    691.56
+   ],
+   "candidate_rows": [
+    315
+   ],
+   "conf": 19.0,
+   "form": "WP-2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    315
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "WP-2___|WAS"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    90.9,
+    701.1,
+    103.86,
+    709.74
+   ],
+   "candidate_rows": [
+    313
+   ],
+   "conf": 90.0,
+   "form": "DW-1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    313
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "DW-1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    90.95,
+    703.42,
+    103.72,
+    708.42
+   ],
+   "candidate_rows": [
+    313
+   ],
+   "conf": null,
+   "form": "DW-1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    313
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "DW-1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    91.62,
+    646.02,
+    103.86,
+    654.66
+   ],
+   "candidate_rows": [
+    258
+   ],
+   "conf": 93.0,
+   "form": "BL-2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    258
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "BL-2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    91.62,
+    654.3,
+    104.04,
+    662.58
+   ],
+   "candidate_rows": [
+    259
+   ],
+   "conf": 91.0,
+   "form": "BL-3",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    259
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "BL-3"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    91.62,
+    661.86,
+    103.68,
+    670.32
+   ],
+   "candidate_rows": [
+    260
+   ],
+   "conf": 92.0,
+   "form": "BL-4",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    260
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "BL-4"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    91.62,
+    695.52,
+    103.14,
+    699.48
+   ],
+   "candidate_rows": [
+    74,
+    316
+   ],
+   "conf": 91.0,
+   "form": "SD-1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    316
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "SD-1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    91.62,
+    717.3,
+    102.78,
+    725.58
+   ],
+   "candidate_rows": [
+    265
+   ],
+   "conf": 91.0,
+   "form": "LP-1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    265
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "LP-1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    91.7,
+    695.72,
+    103.08,
+    700.72
+   ],
+   "candidate_rows": [
+    74,
+    316
+   ],
+   "conf": null,
+   "form": "SD-1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    316
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "SD-1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    92.4,
+    640.27,
+    102.95,
+    645.27
+   ],
+   "candidate_rows": [
+    257
+   ],
+   "conf": null,
+   "form": "BL-1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    257
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "BL-1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    92.4,
+    647.52,
+    105.05,
+    653.52
+   ],
+   "candidate_rows": [
+    258
+   ],
+   "conf": null,
+   "form": "BL-2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    258
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "BL-2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    92.4,
+    656.12,
+    102.95,
+    661.12
+   ],
+   "candidate_rows": [
+    259
+   ],
+   "conf": null,
+   "form": "BL-3",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    259
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "BL-3"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    92.4,
+    663.82,
+    102.95,
+    668.82
+   ],
+   "candidate_rows": [
+    260
+   ],
+   "conf": null,
+   "form": "BL-4",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    260
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "BL-4"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    92.4,
+    719.22,
+    102.95,
+    724.22
+   ],
+   "candidate_rows": [
+    265
+   ],
+   "conf": null,
+   "form": "LP-1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    265
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "LP-1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    93.35,
+    608.82,
+    102.51,
+    613.82
+   ],
+   "candidate_rows": [
+    288
+   ],
+   "conf": null,
+   "form": "IP-1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    288
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "IP-1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    93.35,
+    616.77,
+    102.51,
+    621.77
+   ],
+   "candidate_rows": [
+    289
+   ],
+   "conf": null,
+   "form": "IP-2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    289
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "IP-2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    93.35,
+    624.42,
+    102.51,
+    629.42
+   ],
+   "candidate_rows": [
+    290
+   ],
+   "conf": null,
+   "form": "IP-3",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    290
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "IP-3"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    93.35,
+    632.37,
+    102.51,
+    637.37
+   ],
+   "candidate_rows": [
+    291
+   ],
+   "conf": null,
+   "form": "IP-4",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    291
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "IP-4"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    93.42,
+    608.76,
+    101.7,
+    612.72
+   ],
+   "candidate_rows": [
+    288
+   ],
+   "conf": 76.0,
+   "form": "IP-1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    288
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "IP-1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    93.42,
+    616.68,
+    102.42,
+    620.64
+   ],
+   "candidate_rows": [
+    289
+   ],
+   "conf": 56.0,
+   "form": "IP-2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    289
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "Ip-2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    93.42,
+    624.42,
+    102.6,
+    628.38
+   ],
+   "candidate_rows": [
+    290
+   ],
+   "conf": 89.0,
+   "form": "IP-3",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    290
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "IP-3"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    93.42,
+    632.34,
+    102.6,
+    636.3
+   ],
+   "candidate_rows": [
+    291
+   ],
+   "conf": 87.0,
+   "form": "IP-4",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    291
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "IP-4"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    94.3,
+    671.97,
+    101.24,
+    676.97
+   ],
+   "candidate_rows": [
+    261
+   ],
+   "conf": null,
+   "form": "DB",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    261
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "DB"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    94.32,
+    671.76,
+    101.34,
+    675.72
+   ],
+   "candidate_rows": [
+    261
+   ],
+   "conf": 96.0,
+   "form": "DB",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    261
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "DB"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    100.08,
+    70.08,
+    115.45,
+    75.11
+   ],
+   "candidate_rows": [
+    238
+   ],
+   "conf": null,
+   "form": "P-SEC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    238
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "P-SEC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    118.08,
+    719.1,
+    129.78,
+    723.06
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": 94.0,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    118.1,
+    719.22,
+    129.48,
+    724.22
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    179.46,
+    284.46,
+    190.91,
+    289.49
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    180.36,
+    70.08,
+    195.17,
+    75.11
+   ],
+   "candidate_rows": [
+    240
+   ],
+   "conf": null,
+   "form": "ATS",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    240
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "P-ATS"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    209.52,
+    62.16,
+    219.3,
+    67.19
+   ],
+   "candidate_rows": [
+    240
+   ],
+   "conf": null,
+   "form": "ATS",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    240
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "ATS"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    254.52,
+    150.0,
+    265.42,
+    155.03
+   ],
+   "candidate_rows": [
+    243
+   ],
+   "conf": null,
+   "form": "GEN",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    243
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "GEN"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    269.46,
+    201.48,
+    280.36,
+    206.51
+   ],
+   "candidate_rows": [
+    243
+   ],
+   "conf": null,
+   "form": "GEN",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    243
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "GEN"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    288.36,
+    146.76,
+    304.28,
+    151.79
+   ],
+   "candidate_rows": [
+    243
+   ],
+   "conf": null,
+   "form": "GEN",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    243
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "P-GEN"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    300.06,
+    501.36,
+    314.59,
+    506.39
+   ],
+   "candidate_rows": [
+    352
+   ],
+   "conf": null,
+   "form": "TCP-1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    352
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "TCP-1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    323.1,
+    79.08,
+    339.3,
+    84.11
+   ],
+   "candidate_rows": [
+    241
+   ],
+   "conf": null,
+   "form": "MDP",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    241
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "P-MDP"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    344.88,
+    501.36,
+    359.41,
+    506.39
+   ],
+   "candidate_rows": [
+    353
+   ],
+   "conf": null,
+   "form": "TCP-2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    353
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "TCP-2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    353.52,
+    58.92,
+    364.69,
+    63.95
+   ],
+   "candidate_rows": [
+    241
+   ],
+   "conf": null,
+   "form": "MDP",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    241
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "MDP"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    380.88,
+    743.58,
+    392.04,
+    747.54
+   ],
+   "candidate_rows": [
+    243
+   ],
+   "conf": 93.0,
+   "form": "GEN",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    243
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "GEN"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    380.9,
+    743.72,
+    391.72,
+    748.72
+   ],
+   "candidate_rows": [
+    243
+   ],
+   "conf": null,
+   "form": "GEN",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    243
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "GEN"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    389.88,
+    501.36,
+    404.41,
+    506.39
+   ],
+   "candidate_rows": [
+    281
+   ],
+   "conf": null,
+   "form": "TCP-3",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    281
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "TCP-3"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    405.72,
+    200.04,
+    422.2,
+    205.07
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "P-MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    412.56,
+    453.66,
+    430.44,
+    458.69
+   ],
+   "candidate_rows": [
+    313
+   ],
+   "conf": null,
+   "form": "DW-1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    313
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "P-DW-1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    436.14,
+    501.36,
+    448.99,
+    506.39
+   ],
+   "candidate_rows": [
+    313
+   ],
+   "conf": null,
+   "form": "DW-1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    313
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "DW-1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    475.38,
+    453.84,
+    495.77,
+    458.87
+   ],
+   "candidate_rows": [
+    331
+   ],
+   "conf": null,
+   "form": "2W-P1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    331
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "P-2W-P1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    498.96,
+    501.36,
+    514.33,
+    506.39
+   ],
+   "candidate_rows": [
+    331
+   ],
+   "conf": null,
+   "form": "2W-P1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    331
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "2W-P1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    520.56,
+    453.84,
+    540.95,
+    458.87
+   ],
+   "candidate_rows": [
+    332
+   ],
+   "conf": null,
+   "form": "2W-P2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    332
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "P-2W-P2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    544.14,
+    501.36,
+    559.51,
+    506.39
+   ],
+   "candidate_rows": [
+    332
+   ],
+   "conf": null,
+   "form": "2W-P2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    332
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "2W-P2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    590.76,
+    501.54,
+    603.33,
+    506.57
+   ],
+   "candidate_rows": [
+    314
+   ],
+   "conf": null,
+   "form": "WP-1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    314
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "WP-1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    626.58,
+    67.74,
+    633.01,
+    72.77
+   ],
+   "candidate_rows": [
+    242
+   ],
+   "conf": null,
+   "form": "TS",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    242
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "TS"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    634.07,
+    637.98,
+    645.52,
+    643.01
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    635.76,
+    501.54,
+    648.33,
+    506.57
+   ],
+   "candidate_rows": [
+    315
+   ],
+   "conf": null,
+   "form": "WP-2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    315
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "WP-2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    681.48,
+    501.36,
+    692.93,
+    506.39
+   ],
+   "candidate_rows": [
+    74,
+    316
+   ],
+   "conf": null,
+   "form": "SD-1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    316
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "SD-1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    686.95,
+    160.8,
+    696.73,
+    165.83
+   ],
+   "candidate_rows": [
+    254
+   ],
+   "conf": null,
+   "form": "TPS",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    254
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "TPS"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    696.6,
+    147.66,
+    711.41,
+    152.69
+   ],
+   "candidate_rows": [
+    244
+   ],
+   "conf": null,
+   "form": "P-TPS",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    244
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "P-TPS"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    696.6,
+    147.66,
+    711.41,
+    152.69
+   ],
+   "candidate_rows": [
+    254
+   ],
+   "conf": null,
+   "form": "TPS",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    254
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "P-TPS"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    798.12,
+    501.54,
+    808.74,
+    506.57
+   ],
+   "candidate_rows": [
+    257
+   ],
+   "conf": null,
+   "form": "BL-1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    257
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "BL-1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    802.62,
+    546.72,
+    810.73,
+    551.75
+   ],
+   "candidate_rows": [
+    297
+   ],
+   "conf": null,
+   "form": "IPS",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    297
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "IPS"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    830.34,
+    729.24,
+    839.56,
+    734.27
+   ],
+   "candidate_rows": [
+    288
+   ],
+   "conf": null,
+   "form": "IP-1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    288
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "IP-1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    843.3,
+    501.54,
+    853.92,
+    506.57
+   ],
+   "candidate_rows": [
+    258
+   ],
+   "conf": null,
+   "form": "BL-2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    258
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "BL-2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    875.34,
+    729.24,
+    884.56,
+    734.27
+   ],
+   "candidate_rows": [
+    289
+   ],
+   "conf": null,
+   "form": "IP-2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    289
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "IP-2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    888.3,
+    501.36,
+    898.92,
+    506.39
+   ],
+   "candidate_rows": [
+    259
+   ],
+   "conf": null,
+   "form": "BL-3",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    259
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "BL-3"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    920.16,
+    729.06,
+    929.38,
+    734.09
+   ],
+   "candidate_rows": [
+    290
+   ],
+   "conf": null,
+   "form": "IP-3",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    290
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "IP-3"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    933.48,
+    501.36,
+    944.1,
+    506.39
+   ],
+   "candidate_rows": [
+    260
+   ],
+   "conf": null,
+   "form": "BL-4",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    260
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "BL-4"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    956.88,
+    453.84,
+    968.89,
+    458.87
+   ],
+   "candidate_rows": [
+    261
+   ],
+   "conf": null,
+   "form": "DB",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    261
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "P-DB"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    965.34,
+    729.06,
+    974.56,
+    734.09
+   ],
+   "candidate_rows": [
+    291
+   ],
+   "conf": null,
+   "form": "IP-4",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    291
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "IP-4"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    980.46,
+    501.36,
+    987.44,
+    506.39
+   ],
+   "candidate_rows": [
+    261
+   ],
+   "conf": null,
+   "form": "DB",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    261
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "DB"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    1045.08,
+    612.6,
+    1050.95,
+    617.63
+   ],
+   "candidate_rows": [
+    298
+   ],
+   "conf": null,
+   "form": "T3",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    298
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "T3"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    1067.58,
+    384.9,
+    1073.45,
+    389.93
+   ],
+   "candidate_rows": [
+    350
+   ],
+   "conf": null,
+   "form": "T2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    350
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "T2"
+  }
+ ],
  "title_01": "ELECTRICAL ONE LINE DIAGRAM AND LOAD CALCULATIONS",
  "title_block": {
   "date": {

@@ -5888,9 +5888,12 @@
   ]
  },
  "cited_as": {
-  "basis": "01_Sheet_Index_rev1.md File and PDF p. columns",
+  "basis": "testbeds/eastsound/index/Plan_Set_Crosswalk.csv",
+  "duplicates": [],
   "file": "Pages_from_eswd-wwtp-upgrade-ph1-11x17-plans_5.pdf",
-  "page": 7
+  "indexed_in_01": "Yes",
+  "page": 7,
+  "short_name": "plans_5"
  },
  "counts": {
   "mode3_chars_kept": 170,
@@ -5931,8 +5934,8 @@
   "pytesseract": "0.3.13",
   "python": "3.11.15",
   "schema_version": "1.0",
-  "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script": "testbeds/eastsound/tools/extract_drawing_text.py",
+  "script_sha256": "0e61e19737aa0acd351b04bb1fe1276502ad57f626b99e59df261b62d1bbebd1",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -5951,6 +5954,155 @@
  },
  "governed_by": null,
  "governs": null,
+ "keyed_notes": [
+  {
+   "bbox": [
+    950.4,
+    98.46,
+    1121.73,
+    344.7
+   ],
+   "count_check": "entry count 9 matches the highest marker read",
+   "entries": [
+    {
+     "basis": "read",
+     "bbox": [
+      951.12,
+      105.3,
+      1112.18,
+      192.06
+     ],
+     "method": "bluebeam-ocr",
+     "number": 1,
+     "number_level": "Inferred",
+     "read_number": "1",
+     "text": "(1)) = SOLENOID VALVE, ASCO REDHAT 2 2 WAY / — SERIES 8221. NORMALLY CLOSED. / MAX WATER DIFFERENTIAL PRESSURE = 150 PSI. PSI. / SIZE = 2 INCH. / POWER= 120V COIL / ORIFICE SIZE = 1.75 INCH. / BODY = BRASS, CATALOG #8221G013. / STAINLESS STEEL CORE TUBE, TUBE, PLUGNUT, / SPRINGS, AND PISTON. / ENCLOSURE = = WATERTIGHT NEMA 4X. 4X. / CORROSION RESISTANT."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      950.4,
+      199.26,
+      1087.02,
+      213.3
+     ],
+     "method": "bluebeam-ocr",
+     "number": 2,
+     "number_level": "Inferred",
+     "read_number": "2",
+     "text": "(2) = 2” FLOW METER PER ELECTRICAL DESIGN / DE REQUIREMENTS"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      950.4,
+      216.9,
+      1096.75,
+      230.58
+     ],
+     "method": "bluebeam-ocr",
+     "number": 3,
+     "number_level": "Inferred",
+     "read_number": "3",
+     "text": "(3) 2” UNION. DEMONSTRATE REMOVAL AND AND / = / REATTACHMENT"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      951.12,
+      235.26,
+      1088.82,
+      245.52
+     ],
+     "method": "bluebeam-ocr",
+     "number": 4,
+     "number_level": "Inferred",
+     "read_number": "4",
+     "text": "(4) PIPING TO TO BE SCH 80 80 PVC, 2” DIAMETER"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      951.12,
+      252.9,
+      1079.64,
+      262.98
+     ],
+     "method": "ocr",
+     "number": 5,
+     "number_level": "Inferred",
+     "read_number": "5",
+     "text": "(5) SUPPORTS PER PIPE SUPPORT DETAIL"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      951.12,
+      270.54,
+      1121.73,
+      290.34
+     ],
+     "method": "bluebeam-ocr",
+     "number": 6,
+     "number_level": "Inferred",
+     "read_number": "6",
+     "text": "(6) = FILL ANNULAR SPACE WITH DOW DOW CORNING 732 732 / MULTI-PURPOSE SEALANT. JOINT SHALL BE WATER WATER / TIGHT"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      951.12,
+      296.82,
+      1054.8,
+      307.08
+     ],
+     "method": "ocr",
+     "number": 7,
+     "number_level": "Inferred",
+     "read_number": "7",
+     "text": "(7) 2” PVC MANUAL BALL VALVE / ="
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      951.12,
+      314.46,
+      1091.88,
+      332.46
+     ],
+     "method": "ocr",
+     "number": 8,
+     "number_level": "Inferred",
+     "read_number": "8",
+     "text": "(8) SLUDGE PUMPS PER 22.13 PACKAGED / SLUDGE PUMP EQUIPMENT"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      950.4,
+      332.82,
+      1033.92,
+      344.7
+     ],
+     "method": "ocr",
+     "number": 9,
+     "number_level": "Inferred",
+     "read_number": "9",
+     "text": "(9) / 4” / SCHEDULE 80 PVC"
+    }
+   ],
+   "heading": "KEYED NOTES",
+   "heading_bbox": [
+    964.98,
+    98.46,
+    1004.4,
+    106.74
+   ],
+   "heading_method": "ocr",
+   "highest_marker_read": 9,
+   "line_spacing_p25": 6.12
+  }
+ ],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -5963,14 +6115,359 @@
   "width": 1224.0
  },
  "page_key": "039",
+ "quantities": [
+  {
+   "bbox": [
+    201.6,
+    228.78,
+    259.74,
+    233.64
+   ],
+   "callouts_nearby": [],
+   "conf": 95.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "DIGESTED SLUDGE",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "4” DIGESTED SLUDGE",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4\" DIGESTED SLUDGE",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    210.0,
+    255.74,
+    231.83,
+    261.74
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "WAS",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "2\" WAS",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "2\" WAS",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "2"
+  },
+  {
+   "bbox": [
+    210.06,
+    255.42,
+    229.86,
+    260.46
+   ],
+   "callouts_nearby": [],
+   "conf": 93.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "WAS",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "2” WAS",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "2\" WAS",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "2"
+  },
+  {
+   "bbox": [
+    315.35,
+    433.34,
+    328.68,
+    439.34
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "3.67’",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "3.67'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "3.67"
+  },
+  {
+   "bbox": [
+    493.45,
+    310.69,
+    506.78,
+    316.69
+   ],
+   "callouts_nearby": [
+    [
+     "7",
+     [
+      487.45,
+      292.69,
+      490.79,
+      298.69
+     ],
+     12.29
+    ],
+    [
+     "5",
+     [
+      526.3,
+      294.76,
+      528.8,
+      299.76
+     ],
+     22.37
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "1.50’",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "1.50'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "1.50"
+  },
+  {
+   "bbox": [
+    951.12,
+    252.9,
+    1001.34,
+    262.98
+   ],
+   "callouts_nearby": [],
+   "conf": 91.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "SUPPORTS",
+   "keyed_callouts": [
+    [
+     324.95,
+     218.71,
+     327.45,
+     223.71
+    ],
+    [
+     293.04,
+     269.64,
+     305.82,
+     281.34
+    ],
+    [
+     428.22,
+     270.0,
+     441.0,
+     281.7
+    ],
+    [
+     526.3,
+     294.76,
+     528.8,
+     299.76
+    ]
+   ],
+   "keyed_note": "5 (read; Inferred)",
+   "kind": "count",
+   "line_text": "(5) SUPPORTS PER PIPE SUPPORT DETAIL",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "(5) SUPPORTS",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "5"
+  },
+  {
+   "bbox": [
+    973.44,
+    300.42,
+    1054.8,
+    305.46
+   ],
+   "callouts_nearby": [],
+   "conf": 95.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "PVC MANUAL BALL VALVE",
+   "keyed_callouts": [
+    [
+     543.1,
+     268.98,
+     560.21,
+     282.98
+    ],
+    [
+     602.15,
+     272.54,
+     605.49,
+     278.54
+    ],
+    [
+     487.45,
+     292.69,
+     490.79,
+     298.69
+    ],
+    [
+     644.15,
+     296.12,
+     646.93,
+     301.12
+    ]
+   ],
+   "keyed_note": "7 (read; Inferred)",
+   "kind": "size",
+   "line_text": "(7) 2” PVC MANUAL BALL VALVE",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "2\" PVC MANUAL BALL VALVE",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "2"
+  },
+  {
+   "bbox": [
+    973.45,
+    300.64,
+    1060.78,
+    306.64
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "PVC MANUAL BALL VALVE",
+   "keyed_callouts": [
+    [
+     543.1,
+     268.98,
+     560.21,
+     282.98
+    ],
+    [
+     602.15,
+     272.54,
+     605.49,
+     278.54
+    ],
+    [
+     487.45,
+     292.69,
+     490.79,
+     298.69
+    ],
+    [
+     644.15,
+     296.12,
+     646.93,
+     301.12
+    ]
+   ],
+   "keyed_note": "7 (read; Inferred)",
+   "kind": "size",
+   "line_text": "2” PVC MANUAL BALL VALVE",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "2\" PVC MANUAL BALL VALVE",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "2"
+  },
+  {
+   "bbox": [
+    973.45,
+    337.34,
+    1036.74,
+    343.34
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "SCHEDULE 80 PVC",
+   "keyed_callouts": [
+    [
+     542.9,
+     197.31,
+     545.4,
+     202.31
+    ]
+   ],
+   "keyed_note": "9 (read; Inferred)",
+   "kind": "size",
+   "line_text": "4” SCHEDULE 80 PVC",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4\" SCHEDULE 80 PVC",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "4"
+  }
+ ],
  "schema_version": "1.0",
  "set_page": 39,
  "sheet_01": "C6.2",
  "source": {
   "file": "testbeds/eastsound/library/Pages from eswd-wwtp-upgrade-ph1-11x17-plans Part 2.pdf",
   "page": 12,
-  "sha256": "1176b4b114c25cd51383cb47896d5a651e4eb0f3363d17d651269f3d2a15dd84"
+  "sha256": "1176b4b114c25cd51383cb47896d5a651e4eb0f3363d17d651269f3d2a15dd84",
+  "sha256_checked_against": "testbeds/eastsound/index/Library_Manifest.csv"
  },
+ "tags": [
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    201.6,
+    421.92,
+    237.6,
+    422.28
+   ],
+   "candidate_rows": [
+    296
+   ],
+   "conf": 18.0,
+   "form": "LT",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "Lt"
+  }
+ ],
  "title_01": "SLUDGE PUMP AND VALVING AREA",
  "title_block": {
   "date": {

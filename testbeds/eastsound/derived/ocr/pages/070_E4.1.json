@@ -1658,9 +1658,12 @@
   ]
  },
  "cited_as": {
-  "basis": "01_Sheet_Index_rev1.md File and PDF p. columns",
+  "basis": "testbeds/eastsound/index/Plan_Set_Crosswalk.csv",
+  "duplicates": [],
   "file": "Pages_from_eswd-wwtp-upgrade-ph1-11x17-plans_9.pdf",
-  "page": 6
+  "indexed_in_01": "Yes",
+  "page": 6,
+  "short_name": "plans_9"
  },
  "counts": {
   "mode3_chars_kept": 0,
@@ -1701,8 +1704,8 @@
   "pytesseract": "0.3.13",
   "python": "3.11.15",
   "schema_version": "1.0",
-  "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script": "testbeds/eastsound/tools/extract_drawing_text.py",
+  "script_sha256": "0e61e19737aa0acd351b04bb1fe1276502ad57f626b99e59df261b62d1bbebd1",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -1721,6 +1724,155 @@
  },
  "governed_by": null,
  "governs": null,
+ "keyed_notes": [
+  {
+   "bbox": [
+    726.12,
+    213.12,
+    956.05,
+    476.15
+   ],
+   "count_check": "entry count 9 matches the highest marker read",
+   "entries": [
+    {
+     "basis": "read",
+     "bbox": [
+      726.12,
+      228.12,
+      947.42,
+      251.33
+     ],
+     "method": "text-layer",
+     "number": 1,
+     "number_level": "Verified",
+     "read_number": "1",
+     "text": "PROVIDE INDIVIDUAL CONDUITS FOR EACH PUMP, FLOAT, AND TRANSDUCER CABLE. / 1 / OVERSIZE CONDUITS AS REQUIRED BETWEEN WET WELL AND HANDHOLE FOR EASY / REMOVAL AND REPLACEMENT OF FACTORY PUMP AND INSTRUMENT CABLES. SEAL / ALL CONDUIT ENTRANCES WITH DUCT SEAL AT COMPLETION OF PROJECT."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      726.12,
+      258.36,
+      956.05,
+      289.51
+     ],
+     "method": "text-layer",
+     "number": 2,
+     "number_level": "Verified",
+     "read_number": "2",
+     "text": "2 FLOW METER: SIZE PER CIVIL DRAWINGS. MAGNETIC FLOW METER, ENDRESS-HAUSER / PROMAG W400, CLASS I DIV 2, CARBON STEEL FLANGE, 120-240VAC OR 24VAC/DC, / ETHERNET/IP, POLYURETHANE LINER, 316L ELECTRODES, LOCAL DISPLAY ON FLOW / METER (WAS), REMOTE METERS WITH SUBMERSIBLE KITS (VAULT METERS), NEMA 4X, / NPT 1 PROVIDE (2) 316L GROUNDING RINGS FOR EACH FLOW TUBE. / 2."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      726.12,
+      295.8,
+      956.03,
+      324.95
+     ],
+     "method": "text-layer",
+     "number": 3,
+     "number_level": "Verified",
+     "read_number": "3",
+     "text": "3 DEWATERING BUILDING WITH DEWATERING PRESS: UNCLASSIFIED PER NFPA 820-2020 / TABLE 6.2.2, ROW 12a WITH TYPE 'C' VENTILATION, CONTINUOUSLY VENTILATED AT 6 / AIR CHANGES PER HOUR AND IN ACCORDANCE WITH NFPA 820-2020 CHAPTER 9. / PROVIDE VENTILATION FANS, GAS SENSORS, LOCAL ALARM LIGHT AND HORN, AND / ACCESSORIES TO MEET NFPA 820 VENILATION AND MONITORING REQUIREMENTS."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      726.12,
+      331.98,
+      955.92,
+      355.19
+     ],
+     "method": "text-layer",
+     "number": 4,
+     "number_level": "Verified",
+     "read_number": "4",
+     "text": "4 DEWATERING SKID SHALL BE PROVIDED PRE WIRED AND TESTED BY THE / MANUFACTURER. SKID ASSEMBLY SHALL BE UL OR ETL LABELED IN ACCORDANCE / WITH WASHINGTON STATE L&I REQUIREMENTS. PROVIDE 480V THREE PHASE POWER / FEEDER CONNECTION, AND CAT 6 SIGNAL CABLE FOR SYSTEM MONITORING."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      726.12,
+      362.22,
+      955.81,
+      373.37
+     ],
+     "method": "text-layer",
+     "number": 5,
+     "number_level": "Verified",
+     "read_number": "5",
+     "text": "5 ROUTE SOLENOID WIRING TO INFLUENT PUMP STATION PANEL FOR SOLENOID VALVE / CONTROL."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      726.12,
+      380.4,
+      950.05,
+      403.61
+     ],
+     "method": "text-layer",
+     "number": 6,
+     "number_level": "Verified",
+     "read_number": "6",
+     "text": "6 PROVIDE DEDICATED 120V GFCI RECEPTACLE AND 4-20 mA FLOW PACE SIGNAL FROM / PLC SYSTEM FOR 4 LOCATIONS: HYPO FEED PUMP, POLYMER FEED PUMP, INFLUENT / SAMPLER, AND EFFLUENT SAMPLER. SAMPLERS PROVIDED BY OWNER FOR / CONTRACTOR INSTALLATION."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      726.12,
+      410.64,
+      955.35,
+      427.91
+     ],
+     "method": "text-layer",
+     "number": 7,
+     "number_level": "Verified",
+     "read_number": "7",
+     "text": "7 PROVIDE 120VAC POWER CIRCUIT FROM PANEL LP2 AND CONTROL SIGNALS AS SHOWN / ON PLC I/O DRAWINGS. WIRE EACH VENTILATON FAN TO CONTROL PANEL - TYP 3 IN / TREATMENT BUILDING."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      726.12,
+      434.94,
+      948.07,
+      458.15
+     ],
+     "method": "text-layer",
+     "number": 8,
+     "number_level": "Verified",
+     "read_number": "8",
+     "text": "8 ROUTE RACEWAY FROM TREATMENT BUILDING EQUIPMENT TO HANDHOLES, AND TO / ASSOCIATES CONTROL, MCC OR POWER PANEL. QUANTITY AND SIZE AS REQUIRED; / PROVIDE MINIMUM TWO 1\" SPARE CONDUITS FROM EACH POWER AND CONTROL / HANDHOLE TO SIDE OF BUILDING AND STUB UP AND CAP FOR FUTURE USE."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      726.12,
+      465.0,
+      950.03,
+      476.15
+     ],
+     "method": "text-layer",
+     "number": 9,
+     "number_level": "Verified",
+     "read_number": "9",
+     "text": "9 INSTALL INFLUENT PUMP MOTOR DISCONNECTS ON BUILDING WALL WITHIN SIGHT OF / WET WELL. COORDINATE FINAL LOCATION DURING CONSTRUCTION."
+    }
+   ],
+   "heading": "KEY NOTES:",
+   "heading_bbox": [
+    735.3,
+    213.12,
+    789.62,
+    222.17
+   ],
+   "heading_method": "text-layer",
+   "highest_marker_read": 9,
+   "line_spacing_p25": 6.12
+  }
+ ],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -1733,14 +1885,899 @@
   "width": 1224.0
  },
  "page_key": "070",
+ "quantities": [
+  {
+   "bbox": [
+    380.42,
+    767.22,
+    384.17,
+    772.25
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "SCALE: 1\" = 4' AT FULL SCALE",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    781.28,
+    386.52,
+    815.93,
+    391.55
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "LOCATIONS",
+   "keyed_callouts": [
+    [
+     372.6,
+     234.6,
+     375.4,
+     239.63
+    ],
+    [
+     191.7,
+     674.52,
+     194.5,
+     679.55
+    ]
+   ],
+   "keyed_note": "6 (read; Verified)",
+   "kind": "count",
+   "line_text": "PLC SYSTEM FOR 4 LOCATIONS: HYPO FEED PUMP, POLYMER FEED PUMP, INFLUENT",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4 LOCATIONS",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "4"
+  }
+ ],
  "schema_version": "1.0",
  "set_page": 70,
  "sheet_01": "E4.1",
  "source": {
   "file": "testbeds/eastsound/library/Pages from eswd-wwtp-upgrade-ph1-11x17-plans - Part 3.pdf",
   "page": 22,
-  "sha256": "ffe9e975ceb153cab60328a2459d826f96f96e0edaa77e0279a1d27e2e6de5fa"
+  "sha256": "ffe9e975ceb153cab60328a2459d826f96f96e0edaa77e0279a1d27e2e6de5fa",
+  "sha256_checked_against": "testbeds/eastsound/index/Library_Manifest.csv"
  },
+ "tags": [
+  {
+   "assignment": "assigned",
+   "bbox": [
+    98.28,
+    367.62,
+    113.09,
+    372.65
+   ],
+   "candidate_rows": [
+    244
+   ],
+   "conf": null,
+   "form": "P-TPS",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    244
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "P-TPS"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    98.28,
+    367.62,
+    113.09,
+    372.65
+   ],
+   "candidate_rows": [
+    254
+   ],
+   "conf": null,
+   "form": "TPS",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    254
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "P-TPS"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    146.16,
+    241.8,
+    159.01,
+    246.83
+   ],
+   "candidate_rows": [
+    313
+   ],
+   "conf": null,
+   "form": "DW-1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    313
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "DW-1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    166.5,
+    267.18,
+    184.38,
+    272.21
+   ],
+   "candidate_rows": [
+    313
+   ],
+   "conf": null,
+   "form": "DW-1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    313
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "S-DW-1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    199.98,
+    363.84,
+    212.55,
+    368.87
+   ],
+   "candidate_rows": [
+    314
+   ],
+   "conf": null,
+   "form": "WP-1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    314
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "WP-1"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    211.96,
+    278.88,
+    223.41,
+    283.91
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    217.08,
+    267.18,
+    234.96,
+    272.21
+   ],
+   "candidate_rows": [
+    313
+   ],
+   "conf": null,
+   "form": "DW-1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    313
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "P-DW-1"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    236.62,
+    711.6,
+    248.07,
+    716.63
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    239.22,
+    363.84,
+    251.79,
+    368.87
+   ],
+   "candidate_rows": [
+    315
+   ],
+   "conf": null,
+   "form": "WP-2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    315
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "WP-2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    280.44,
+    363.84,
+    291.89,
+    368.87
+   ],
+   "candidate_rows": [
+    74,
+    316
+   ],
+   "conf": null,
+   "form": "SD-1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    316
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "SD-1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    313.56,
+    261.6,
+    326.98,
+    266.63
+   ],
+   "candidate_rows": [
+    299
+   ],
+   "conf": null,
+   "form": "LP2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    299
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "LP2-6"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    358.2,
+    62.7,
+    367.42,
+    67.73
+   ],
+   "candidate_rows": [
+    288
+   ],
+   "conf": null,
+   "form": "IP-1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    288
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "IP-1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    358.2,
+    76.2,
+    367.42,
+    81.23
+   ],
+   "candidate_rows": [
+    289
+   ],
+   "conf": null,
+   "form": "IP-2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    289
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "IP-2"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    370.18,
+    358.26,
+    381.63,
+    363.29
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    378.9,
+    202.2,
+    392.32,
+    207.23
+   ],
+   "candidate_rows": [
+    299
+   ],
+   "conf": null,
+   "form": "LP2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    299
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "LP2-3"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    383.76,
+    171.24,
+    389.35,
+    176.27
+   ],
+   "candidate_rows": [
+    330
+   ],
+   "conf": null,
+   "form": "L2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    330
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "L2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    436.5,
+    62.7,
+    445.72,
+    67.73
+   ],
+   "candidate_rows": [
+    290
+   ],
+   "conf": null,
+   "form": "IP-3",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    290
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "IP-3"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    436.5,
+    76.2,
+    445.72,
+    81.23
+   ],
+   "candidate_rows": [
+    291
+   ],
+   "conf": null,
+   "form": "IP-4",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    291
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "IP-4"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    453.42,
+    726.72,
+    469.63,
+    731.75
+   ],
+   "candidate_rows": [
+    299
+   ],
+   "conf": null,
+   "form": "LP2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    299
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "LP2-11"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    453.6,
+    123.9,
+    470.92,
+    128.93
+   ],
+   "candidate_rows": [
+    296
+   ],
+   "conf": null,
+   "form": "LT",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    296
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "S-LT-IP"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    454.5,
+    473.64,
+    467.92,
+    478.67
+   ],
+   "candidate_rows": [
+    299
+   ],
+   "conf": null,
+   "form": "LP2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    299
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "LP2-9"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    455.58,
+    453.48,
+    466.48,
+    458.51
+   ],
+   "candidate_rows": [
+    324
+   ],
+   "conf": null,
+   "form": "EF-4",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    324
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "EF-4"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    455.58,
+    706.56,
+    466.48,
+    711.59
+   ],
+   "candidate_rows": [
+    325
+   ],
+   "conf": null,
+   "form": "EF-5",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    325
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "EF-5"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    457.2,
+    298.5,
+    470.62,
+    303.53
+   ],
+   "candidate_rows": [
+    299
+   ],
+   "conf": null,
+   "form": "LP2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    299
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "LP2-7"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    458.28,
+    278.34,
+    469.18,
+    283.37
+   ],
+   "candidate_rows": [
+    323
+   ],
+   "conf": null,
+   "form": "EF-3",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    323
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "EF-3"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    464.04,
+    259.62,
+    477.46,
+    264.65
+   ],
+   "candidate_rows": [
+    299
+   ],
+   "conf": null,
+   "form": "LP2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    299
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "LP2-5"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    470.47,
+    193.92,
+    483.89,
+    198.95
+   ],
+   "candidate_rows": [
+    299
+   ],
+   "conf": null,
+   "form": "LP2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    299
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "LP2-4"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    471.6,
+    232.8,
+    485.02,
+    237.83
+   ],
+   "candidate_rows": [
+    299
+   ],
+   "conf": null,
+   "form": "LP2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    299
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "LP2-2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    481.86,
+    338.64,
+    495.28,
+    343.67
+   ],
+   "candidate_rows": [
+    299
+   ],
+   "conf": null,
+   "form": "LP2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    299
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "LP2-3"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    517.5,
+    358.44,
+    523.09,
+    363.47
+   ],
+   "candidate_rows": [
+    330
+   ],
+   "conf": null,
+   "form": "L2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    330
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "L2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    563.24,
+    205.8,
+    572.19,
+    210.83
+   ],
+   "candidate_rows": [
+    299
+   ],
+   "conf": null,
+   "form": "LP2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    299
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "LP2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    565.74,
+    49.74,
+    579.16,
+    54.77
+   ],
+   "candidate_rows": [
+    299
+   ],
+   "conf": null,
+   "form": "LP2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    299
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "LP2-8"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    610.87,
+    709.08,
+    622.32,
+    714.11
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    623.16,
+    635.1,
+    641.04,
+    640.13
+   ],
+   "candidate_rows": [
+    313
+   ],
+   "conf": null,
+   "form": "DW-1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    313
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "P-DW-1"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    797.47,
+    440.88,
+    808.92,
+    445.91
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    856.44,
+    410.64,
+    865.39,
+    415.67
+   ],
+   "candidate_rows": [
+    299
+   ],
+   "conf": null,
+   "form": "LP2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    299
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "LP2"
+  }
+ ],
  "title_01": "INFLUENT PUMP STATION, WAS, DEWATERING ELECTRICAL PLAN",
  "title_block": {
   "date": {

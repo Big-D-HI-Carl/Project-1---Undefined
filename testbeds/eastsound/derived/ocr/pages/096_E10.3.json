@@ -848,9 +848,12 @@
   ]
  },
  "cited_as": {
-  "basis": "01_Sheet_Index_rev1.md File and PDF p. columns",
+  "basis": "testbeds/eastsound/index/Plan_Set_Crosswalk.csv",
+  "duplicates": [],
   "file": "Pages_from_eswd-wwtp-upgrade-ph1-11x17-plans_12.pdf",
-  "page": 8
+  "indexed_in_01": "Yes",
+  "page": 8,
+  "short_name": "plans_12"
  },
  "counts": {
   "mode3_chars_kept": 0,
@@ -891,8 +894,8 @@
   "pytesseract": "0.3.13",
   "python": "3.11.15",
   "schema_version": "1.0",
-  "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script": "testbeds/eastsound/tools/extract_drawing_text.py",
+  "script_sha256": "0e61e19737aa0acd351b04bb1fe1276502ad57f626b99e59df261b62d1bbebd1",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -911,6 +914,7 @@
  },
  "governed_by": null,
  "governs": null,
+ "keyed_notes": [],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -923,14 +927,114 @@
   "width": 1224.0
  },
  "page_key": "096",
+ "quantities": [
+  {
+   "bbox": [
+    842.58,
+    109.32,
+    872.64,
+    114.35
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "volume",
+   "line_text": "WITH 10.1 GAL.HR PROVIDES 35 HOURS RUNTIME AT FULL LOAD, UP TO 48 HOURS UNDER",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "10.1 GAL",
+   "tag_level": "Inferred",
+   "unit": "GAL",
+   "value": "10.1"
+  },
+  {
+   "bbox": [
+    901.98,
+    109.32,
+    927.34,
+    114.35
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "HOURS",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "WITH 10.1 GAL.HR PROVIDES 35 HOURS RUNTIME AT FULL LOAD, UP TO 48 HOURS UNDER",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "35 HOURS",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "35"
+  },
+  {
+   "bbox": [
+    963.9,
+    103.2,
+    994.56,
+    108.23
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "volume",
+   "line_text": "LOW FUEL SWITCH, LEAK DETECTION, FUEL GAUGE. 351 GALLON USABLE TANK VOLUME",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "351 GALLON",
+   "tag_level": "Inferred",
+   "unit": "GAL",
+   "value": "351"
+  },
+  {
+   "bbox": [
+    1009.44,
+    109.32,
+    1034.8,
+    114.35
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "HOURS",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "WITH 10.1 GAL.HR PROVIDES 35 HOURS RUNTIME AT FULL LOAD, UP TO 48 HOURS UNDER",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "48 HOURS",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "48"
+  }
+ ],
  "schema_version": "1.0",
  "set_page": 96,
  "sheet_01": "E10.3",
  "source": {
   "file": "testbeds/eastsound/library/Pages from eswd-wwtp-upgrade-ph1-11x17-plans - Part 3.pdf",
   "page": 48,
-  "sha256": "ffe9e975ceb153cab60328a2459d826f96f96e0edaa77e0279a1d27e2e6de5fa"
+  "sha256": "ffe9e975ceb153cab60328a2459d826f96f96e0edaa77e0279a1d27e2e6de5fa",
+  "sha256_checked_against": "testbeds/eastsound/index/Library_Manifest.csv"
  },
+ "tags": [],
  "title_01": "STANDBY DIESEL GENERATOR ELEVATIONS",
  "title_block": {
   "date": {

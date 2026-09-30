@@ -12944,9 +12944,12 @@
   ]
  },
  "cited_as": {
-  "basis": "01_Sheet_Index_rev1.md File and PDF p. columns",
+  "basis": "testbeds/eastsound/index/Plan_Set_Crosswalk.csv",
+  "duplicates": [],
   "file": "Pages_from_eswd-wwtp-upgrade-ph1-11x17-plans_8.pdf",
-  "page": 4
+  "indexed_in_01": "Yes",
+  "page": 4,
+  "short_name": "plans_8"
  },
  "counts": {
   "mode3_chars_kept": 0,
@@ -12987,8 +12990,8 @@
   "pytesseract": "0.3.13",
   "python": "3.11.15",
   "schema_version": "1.0",
-  "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script": "testbeds/eastsound/tools/extract_drawing_text.py",
+  "script_sha256": "0e61e19737aa0acd351b04bb1fe1276502ad57f626b99e59df261b62d1bbebd1",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -13007,6 +13010,7 @@
  },
  "governed_by": null,
  "governs": null,
+ "keyed_notes": [],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -13019,26 +13023,135 @@
   "width": 1224.0
  },
  "page_key": "060",
+ "quantities": [],
  "schema_version": "1.0",
  "set_page": 60,
  "sheet_01": "S2.4",
  "source": {
   "file": "testbeds/eastsound/library/Pages from eswd-wwtp-upgrade-ph1-11x17-plans - Part 3.pdf",
   "page": 12,
-  "sha256": "ffe9e975ceb153cab60328a2459d826f96f96e0edaa77e0279a1d27e2e6de5fa"
+  "sha256": "ffe9e975ceb153cab60328a2459d826f96f96e0edaa77e0279a1d27e2e6de5fa",
+  "sha256_checked_against": "testbeds/eastsound/index/Library_Manifest.csv"
  },
+ "tags": [
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    597.49,
+    513.57,
+    611.93,
+    518.57
+   ],
+   "candidate_rows": [
+    191
+   ],
+   "conf": null,
+   "form": "S2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "2/S2.4"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    597.95,
+    418.27,
+    612.4,
+    423.27
+   ],
+   "candidate_rows": [
+    191
+   ],
+   "conf": null,
+   "form": "S2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "2/S2.4"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    776.4,
+    554.37,
+    786.68,
+    559.37
+   ],
+   "candidate_rows": [
+    191
+   ],
+   "conf": null,
+   "form": "S2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "S2.4"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    824.65,
+    217.25,
+    828.42,
+    221.25
+   ],
+   "candidate_rows": [
+    277
+   ],
+   "conf": null,
+   "form": "L1",
+   "fuzzy": true,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "LI"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    1133.01,
+    732.18,
+    1146.01,
+    758.9
+   ],
+   "candidate_rows": [
+    191
+   ],
+   "conf": null,
+   "form": "S2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "S2.4"
+  }
+ ],
  "title_01": "PUMP STATION LID, GENERATOR PAD, & FLOW SPLITTER PAD",
  "title_block": {
   "date": {
    "bbox": [
-    1132.2,
+    1132.08,
     680.4,
-    1143.36,
-    758.88
+    1135.92,
+    708.0
    ],
-   "conf": 83.0,
+   "conf": 96.0,
    "method": "ocr",
-   "strip_dpi": 200,
+   "strip_dpi": 300,
    "value": "10-15-2021"
   },
   "page_of": {

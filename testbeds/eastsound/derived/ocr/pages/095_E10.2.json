@@ -812,9 +812,12 @@
   ]
  },
  "cited_as": {
-  "basis": "01_Sheet_Index_rev1.md File and PDF p. columns",
+  "basis": "testbeds/eastsound/index/Plan_Set_Crosswalk.csv",
+  "duplicates": [],
   "file": "Pages_from_eswd-wwtp-upgrade-ph1-11x17-plans_12.pdf",
-  "page": 7
+  "indexed_in_01": "Yes",
+  "page": 7,
+  "short_name": "plans_12"
  },
  "counts": {
   "mode3_chars_kept": 0,
@@ -855,8 +858,8 @@
   "pytesseract": "0.3.13",
   "python": "3.11.15",
   "schema_version": "1.0",
-  "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script": "testbeds/eastsound/tools/extract_drawing_text.py",
+  "script_sha256": "0e61e19737aa0acd351b04bb1fe1276502ad57f626b99e59df261b62d1bbebd1",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -875,6 +878,71 @@
  },
  "governed_by": null,
  "governs": null,
+ "keyed_notes": [
+  {
+   "bbox": [
+    751.14,
+    33.39,
+    980.92,
+    114.89
+   ],
+   "count_check": "entry count 3 matches the highest marker read",
+   "entries": [
+    {
+     "basis": "read",
+     "bbox": [
+      751.14,
+      48.3,
+      980.92,
+      78.53
+     ],
+     "method": "ocr",
+     "number": 1,
+     "number_level": "Verified",
+     "read_number": "1",
+     "text": "1 FLOW METERS: SIZE PER CIVIL DRAWINGS. MAGNETIC FLOW METER, / ENDRESS-HAUSER PROMAG W400, CLASS | I DIV 2, CARBON STEEL FLANGE, 120-240VAC / OR 24VAC/DC, ETHERNET/IP, POLYURETHANE LINER, 316L ELECTRODES, REMOTE / HOUSING, NPT 1 SENSOR IP68 TYPE 6, POTTED CORROSION PROTECTION AND / SUBMERSIBLE. PROVIDE (2) 316L GROUNDING RINGS FOR EACH FLOW TUBE."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      751.14,
+      85.2,
+      980.92,
+      96.71
+     ],
+     "method": "text-layer",
+     "number": 2,
+     "number_level": "Verified",
+     "read_number": "2",
+     "text": "2 PROVIDE DEDICATED GFCI RECEPTACLE FOR METERING PUMP POWER CONNECTION. / WIRE TO LIGHTING PANEL, SEE SCHEDULES."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      751.14,
+      103.56,
+      980.61,
+      114.89
+     ],
+     "method": "text-layer",
+     "number": 3,
+     "number_level": "Verified",
+     "read_number": "3",
+     "text": "3 PROVIDE 4-20 mA OUTPUT FROM PLC TO METERING PUMP. SCALE OUTPUT / PROPORTIONAL TO FLOW METER SIGNAL."
+    }
+   ],
+   "heading": "KEY NOTES:",
+   "heading_bbox": [
+    760.32,
+    33.39,
+    805.59,
+    40.93
+   ],
+   "heading_method": "text-layer",
+   "highest_marker_read": 3,
+   "line_spacing_p25": 6.12
+  }
+ ],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -887,14 +955,135 @@
   "width": 1224.0
  },
  "page_key": "095",
+ "quantities": [
+  {
+   "bbox": [
+    409.5,
+    409.74,
+    502.1,
+    414.77
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "LIQUID TIGHT FLEXIBLE CONDUIT",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "1/2\" LIQUID TIGHT FLEXIBLE CONDUIT",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "1/2\" LIQUID TIGHT FLEXIBLE CONDUIT",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "1/2"
+  },
+  {
+   "bbox": [
+    409.5,
+    422.88,
+    502.1,
+    427.91
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "LIQUID TIGHT FLEXIBLE CONDUIT",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "1/2\" LIQUID TIGHT FLEXIBLE CONDUIT",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "1/2\" LIQUID TIGHT FLEXIBLE CONDUIT",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "1/2"
+  },
+  {
+   "bbox": [
+    410.08,
+    313.44,
+    445.84,
+    318.47
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "HAZARDOUS",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "CLASS I DIV 2 HAZARDOUS AREA",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "2 HAZARDOUS",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "2"
+  }
+ ],
  "schema_version": "1.0",
  "set_page": 95,
  "sheet_01": "E10.2",
  "source": {
   "file": "testbeds/eastsound/library/Pages from eswd-wwtp-upgrade-ph1-11x17-plans - Part 3.pdf",
   "page": 47,
-  "sha256": "ffe9e975ceb153cab60328a2459d826f96f96e0edaa77e0279a1d27e2e6de5fa"
+  "sha256": "ffe9e975ceb153cab60328a2459d826f96f96e0edaa77e0279a1d27e2e6de5fa",
+  "sha256_checked_against": "testbeds/eastsound/index/Library_Manifest.csv"
  },
+ "tags": [
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    331.56,
+    432.36,
+    343.98,
+    432.72
+   ],
+   "candidate_rows": [
+    243
+   ],
+   "conf": 0.0,
+   "form": "GEN",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "gen"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    332.01,
+    616.02,
+    363.03,
+    621.05
+   ],
+   "candidate_rows": [
+    58
+   ],
+   "conf": null,
+   "form": "HOT BOX#1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    58
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "HOT BOX #1,"
+  }
+ ],
  "title_01": "ELECTRICAL DETAILS - SHEET 2",
  "title_block": {
   "date": {

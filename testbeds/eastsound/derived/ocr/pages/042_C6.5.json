@@ -3584,9 +3584,12 @@
   ]
  },
  "cited_as": {
-  "basis": "01_Sheet_Index_rev1.md File and PDF p. columns",
+  "basis": "testbeds/eastsound/index/Plan_Set_Crosswalk.csv",
+  "duplicates": [],
   "file": "Pages_from_eswd-wwtp-upgrade-ph1-11x17-plans_6.pdf",
-  "page": 2
+  "indexed_in_01": "Yes",
+  "page": 2,
+  "short_name": "plans_6"
  },
  "counts": {
   "mode3_chars_kept": 192,
@@ -3627,8 +3630,8 @@
   "pytesseract": "0.3.13",
   "python": "3.11.15",
   "schema_version": "1.0",
-  "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script": "testbeds/eastsound/tools/extract_drawing_text.py",
+  "script_sha256": "0e61e19737aa0acd351b04bb1fe1276502ad57f626b99e59df261b62d1bbebd1",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -3647,6 +3650,99 @@
  },
  "governed_by": null,
  "governs": null,
+ "keyed_notes": [
+  {
+   "bbox": [
+    988.1,
+    218.62,
+    1059.0,
+    320.32
+   ],
+   "count_check": "entry count 5 matches the highest marker read",
+   "entries": [
+    {
+     "basis": "read",
+     "bbox": [
+      988.1,
+      227.7,
+      1036.26,
+      232.97
+     ],
+     "method": "bluebeam-ocr",
+     "number": 1,
+     "number_level": "Inferred",
+     "read_number": "1",
+     "text": "(1) = 3” 1 5 BP"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      988.55,
+      244.27,
+      1006.56,
+      249.27
+     ],
+     "method": "bluebeam-ocr",
+     "number": 2,
+     "number_level": "Inferred",
+     "read_number": "2",
+     "text": "(2) = ]"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      988.55,
+      262.02,
+      1059.0,
+      280.22
+     ],
+     "method": "bluebeam-ocr",
+     "number": 3,
+     "number_level": "Inferred",
+     "read_number": "3",
+     "text": "(3) = 6” PIPING TO TRAIN / — (TERMINATE / EXISTING"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      988.55,
+      289.17,
+      1059.0,
+      307.62
+     ],
+     "method": "bluebeam-ocr",
+     "number": 4,
+     "number_level": "Inferred",
+     "read_number": "4",
+     "text": "(4) = 6” PIPING TO TRAIN / (TERMINATE WITH / EXISTING"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      988.1,
+      315.0,
+      1013.76,
+      320.32
+     ],
+     "method": "bluebeam-ocr",
+     "number": 5,
+     "number_level": "Inferred",
+     "read_number": "5",
+     "text": "(5) = 1"
+    }
+   ],
+   "heading": "KEYED NOTES",
+   "heading_bbox": [
+    1002.7,
+    218.62,
+    1038.55,
+    223.62
+   ],
+   "heading_method": "bluebeam-ocr",
+   "highest_marker_read": 5,
+   "line_spacing_p25": 6.7
+  }
+ ],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -3659,14 +3755,343 @@
   "width": 1224.0
  },
  "page_key": "042",
+ "quantities": [
+  {
+   "bbox": [
+    297.85,
+    476.82,
+    319.37,
+    481.82
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "FF",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "elevation",
+   "line_text": "FF=23.30",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "FF=23.30",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "23.30"
+  },
+  {
+   "bbox": [
+    350.9,
+    427.67,
+    373.44,
+    433.67
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "IE",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "elevation",
+   "line_text": "IE=25.92",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "IE=25.92",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "25.92"
+  },
+  {
+   "bbox": [
+    487.9,
+    427.67,
+    510.44,
+    433.67
+   ],
+   "callouts_nearby": [
+    [
+     "7",
+     [
+      516.0,
+      407.73,
+      526.01,
+      425.73
+     ],
+     5.89
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "IE",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "elevation",
+   "line_text": "IE=25.92",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "IE=25.92",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "25.92"
+  },
+  {
+   "bbox": [
+    588.5,
+    437.22,
+    592.46,
+    442.22
+   ],
+   "callouts_nearby": [
+    [
+     "8",
+     [
+      556.1,
+      421.59,
+      571.11,
+      448.59
+     ],
+     17.39
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "3' AIR PIPING\"",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "3'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "3"
+  },
+  {
+   "bbox": [
+    659.3,
+    477.07,
+    679.44,
+    482.07
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "IE",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "elevation",
+   "line_text": "IE=24.26",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "IE=24.26",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "24.26"
+  },
+  {
+   "bbox": [
+    808.8,
+    388.27,
+    828.94,
+    393.27
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "IE",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "elevation",
+   "line_text": "IE=25.92",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "IE=25.92",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "25.92"
+  },
+  {
+   "bbox": [
+    840.25,
+    571.42,
+    860.38,
+    576.42
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "IE",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "elevation",
+   "line_text": "IE=15.90",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "IE=15.90",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "15.90"
+  },
+  {
+   "bbox": [
+    999.9,
+    227.97,
+    1054.35,
+    232.97
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "BUTTERFLY VALVE",
+   "keyed_callouts": [
+    [
+     464.15,
+     402.72,
+     467.15,
+     408.72
+    ],
+    [
+     736.8,
+     403.42,
+     739.58,
+     408.42
+    ],
+    [
+     721.9,
+     442.6,
+     730.4,
+     459.6
+    ],
+    [
+     787.2,
+     454.79,
+     790.7,
+     461.79
+    ]
+   ],
+   "keyed_note": "1 (read; Inferred)",
+   "kind": "size",
+   "line_text": "(1) = 3” BUTTERFLY VALVE",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "3\" BUTTERFLY VALVE",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "3"
+  },
+  {
+   "bbox": [
+    1000.35,
+    244.27,
+    1054.81,
+    249.27
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "BUTTERFLY VALVE",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "(2) = 6” BUTTERFLY VALVE",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "6\" BUTTERFLY VALVE",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "6"
+  },
+  {
+   "bbox": [
+    1000.35,
+    262.02,
+    1059.0,
+    267.02
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "AIR PIPING TO TRAIN",
+   "keyed_callouts": [
+    [
+     850.5,
+     612.18,
+     856.98,
+     616.5
+    ]
+   ],
+   "keyed_note": "3 (read; Inferred)",
+   "kind": "size",
+   "line_text": "(3) = 6” AIR PIPING TO TRAIN #1",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "6\" AIR PIPING TO TRAIN",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "6"
+  },
+  {
+   "bbox": [
+    1000.35,
+    289.17,
+    1059.0,
+    294.17
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "AIR PIPING TO TRAIN",
+   "keyed_callouts": [
+    [
+     464.9,
+     379.67,
+     467.9,
+     385.67
+    ]
+   ],
+   "keyed_note": "4 (read; Inferred)",
+   "kind": "size",
+   "line_text": "(4) = 6” AIR PIPING TO TRAIN #2",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "6\" AIR PIPING TO TRAIN",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "6"
+  }
+ ],
  "schema_version": "1.0",
  "set_page": 42,
  "sheet_01": "C6.5",
  "source": {
   "file": "testbeds/eastsound/library/Pages from eswd-wwtp-upgrade-ph1-11x17-plans Part 2.pdf",
   "page": 15,
-  "sha256": "1176b4b114c25cd51383cb47896d5a651e4eb0f3363d17d651269f3d2a15dd84"
+  "sha256": "1176b4b114c25cd51383cb47896d5a651e4eb0f3363d17d651269f3d2a15dd84",
+  "sha256_checked_against": "testbeds/eastsound/index/Library_Manifest.csv"
  },
+ "tags": [],
  "title_01": "BIOLOGICAL TREATMENT BLOWER ELEVATION",
  "title_block": {
   "date": {

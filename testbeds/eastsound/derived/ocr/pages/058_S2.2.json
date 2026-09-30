@@ -16202,9 +16202,12 @@
   ]
  },
  "cited_as": {
-  "basis": "01_Sheet_Index_rev1.md File and PDF p. columns",
+  "basis": "testbeds/eastsound/index/Plan_Set_Crosswalk.csv",
+  "duplicates": [],
   "file": "Pages_from_eswd-wwtp-upgrade-ph1-11x17-plans_8.pdf",
-  "page": 2
+  "indexed_in_01": "Yes",
+  "page": 2,
+  "short_name": "plans_8"
  },
  "counts": {
   "mode3_chars_kept": 0,
@@ -16245,8 +16248,8 @@
   "pytesseract": "0.3.13",
   "python": "3.11.15",
   "schema_version": "1.0",
-  "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script": "testbeds/eastsound/tools/extract_drawing_text.py",
+  "script_sha256": "0e61e19737aa0acd351b04bb1fe1276502ad57f626b99e59df261b62d1bbebd1",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -16265,6 +16268,7 @@
  },
  "governed_by": null,
  "governs": null,
+ "keyed_notes": [],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -16277,26 +16281,442 @@
   "width": 1224.0
  },
  "page_key": "058",
+ "quantities": [
+  {
+   "bbox": [
+    357.3,
+    57.42,
+    406.26,
+    61.02
+   ],
+   "callouts_nearby": [],
+   "conf": 96.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "DIA. ANCHORS IN",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "(2) HDG 5/8\" DIA. ANCHORS IN",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "5/8\" DIA. ANCHORS IN",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "5/8"
+  },
+  {
+   "bbox": [
+    357.88,
+    57.07,
+    410.55,
+    62.07
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "DIA. ANCHORS IN",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "(2) HDG 5/8\" DIA. ANCHORS IN",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "5/8\" DIA. ANCHORS IN",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "5/8"
+  },
+  {
+   "bbox": [
+    388.8,
+    161.82,
+    436.14,
+    165.42
+   ],
+   "callouts_nearby": [],
+   "conf": 91.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "DIA. A307 BOLTS",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "(2) HDG 3/4\" DIA. A307 BOLTS",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "3/4\" DIA. A307 BOLTS",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "3/4"
+  },
+  {
+   "bbox": [
+    389.58,
+    161.22,
+    440.32,
+    166.22
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "DIA. A307 BOLTS",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "(2) HDG 3/4\" DIA. A307 BOLTS",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "3/4\" DIA. A307 BOLTS",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "3/4"
+  },
+  {
+   "bbox": [
+    491.76,
+    120.06,
+    535.14,
+    123.66
+   ],
+   "callouts_nearby": [],
+   "conf": 90.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "DIA. ANCHORS",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "HDG 5/8\" DIA. ANCHORS @ 24\"",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "5/8\" DIA. ANCHORS",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "5/8"
+  },
+  {
+   "bbox": [
+    492.24,
+    119.72,
+    538.38,
+    124.72
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "DIA. ANCHORS",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "HDG 5/8“ DIA. ANCHORS @ 24\"",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "5/8\" DIA. ANCHORS",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "5/8"
+  },
+  {
+   "bbox": [
+    913.86,
+    74.7,
+    952.38,
+    78.3
+   ],
+   "callouts_nearby": [],
+   "conf": 95.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "STEEL EDGE",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "CONT. HDG 1/4\" STEEL EDGE",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "1/4\" STEEL EDGE",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "1/4"
+  },
+  {
+   "bbox": [
+    914.76,
+    74.37,
+    956.33,
+    79.37
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "STEEL EDGE",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "CONT. HDG 1/4\" STEEL EDGE",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "1/4\" STEEL EDGE",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "1/4"
+  },
+  {
+   "bbox": [
+    930.78,
+    415.08,
+    957.24,
+    419.58
+   ],
+   "callouts_nearby": [],
+   "conf": 96.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "PLACES",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "OF EQUIPMENT, (4) PLACES,",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "(4) PLACES",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    932.43,
+    414.42,
+    961.09,
+    419.42
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "PLACES",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "OF EQUIPMENT, (4) PLACES,",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "(4) PLACES",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "4"
+  }
+ ],
  "schema_version": "1.0",
  "set_page": 58,
  "sheet_01": "S2.2",
  "source": {
   "file": "testbeds/eastsound/library/Pages from eswd-wwtp-upgrade-ph1-11x17-plans - Part 3.pdf",
   "page": 10,
-  "sha256": "ffe9e975ceb153cab60328a2459d826f96f96e0edaa77e0279a1d27e2e6de5fa"
+  "sha256": "ffe9e975ceb153cab60328a2459d826f96f96e0edaa77e0279a1d27e2e6de5fa",
+  "sha256_checked_against": "testbeds/eastsound/index/Library_Manifest.csv"
  },
+ "tags": [
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    322.3,
+    584.37,
+    332.57,
+    589.37
+   ],
+   "candidate_rows": [
+    191
+   ],
+   "conf": null,
+   "form": "S2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "S2.2"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    491.25,
+    678.92,
+    501.52,
+    683.92
+   ],
+   "candidate_rows": [
+    191
+   ],
+   "conf": null,
+   "form": "S2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "S2.2"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    697.2,
+    303.82,
+    707.48,
+    308.82
+   ],
+   "candidate_rows": [
+    191
+   ],
+   "conf": null,
+   "form": "S2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "S2.2"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    698.4,
+    330.22,
+    708.68,
+    335.22
+   ],
+   "candidate_rows": [
+    191
+   ],
+   "conf": null,
+   "form": "S2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "S2.2"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    710.15,
+    421.81,
+    723.47,
+    436.81
+   ],
+   "candidate_rows": [
+    191
+   ],
+   "conf": null,
+   "form": "S1",
+   "fuzzy": true,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "Si"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    728.15,
+    559.8,
+    736.0,
+    566.04
+   ],
+   "candidate_rows": [
+    167,
+    174,
+    293,
+    334
+   ],
+   "conf": null,
+   "form": "F2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "F2)"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    857.68,
+    660.92,
+    872.12,
+    665.92
+   ],
+   "candidate_rows": [
+    191
+   ],
+   "conf": null,
+   "form": "S2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "7/S2.2"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    1131.46,
+    728.07,
+    1146.46,
+    758.9
+   ],
+   "candidate_rows": [
+    191
+   ],
+   "conf": null,
+   "form": "S2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "S2.2"
+  }
+ ],
  "title_01": "UV DISINFECTION CHAMBER & DIGESTER PLAN & SECTIONS",
  "title_block": {
   "date": {
    "bbox": [
-    1132.2,
+    1132.08,
     680.4,
-    1143.36,
-    758.88
+    1135.92,
+    708.0
    ],
-   "conf": 92.0,
+   "conf": 96.0,
    "method": "ocr",
-   "strip_dpi": 200,
+   "strip_dpi": 300,
    "value": "10-15-2021"
   },
   "page_of": {

@@ -4898,9 +4898,12 @@
   ]
  },
  "cited_as": {
-  "basis": "01_Sheet_Index_rev1.md File and PDF p. columns",
+  "basis": "testbeds/eastsound/index/Plan_Set_Crosswalk.csv",
+  "duplicates": [],
   "file": "Pages_from_eswd-wwtp-upgrade-ph1-11x17-plans_9.pdf",
-  "page": 7
+  "indexed_in_01": "Yes",
+  "page": 7,
+  "short_name": "plans_9"
  },
  "counts": {
   "mode3_chars_kept": 0,
@@ -4941,8 +4944,8 @@
   "pytesseract": "0.3.13",
   "python": "3.11.15",
   "schema_version": "1.0",
-  "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script": "testbeds/eastsound/tools/extract_drawing_text.py",
+  "script_sha256": "0e61e19737aa0acd351b04bb1fe1276502ad57f626b99e59df261b62d1bbebd1",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -4961,6 +4964,85 @@
  },
  "governed_by": null,
  "governs": null,
+ "keyed_notes": [
+  {
+   "bbox": [
+    824.58,
+    158.58,
+    1089.5,
+    269.33
+   ],
+   "count_check": "entry count 4 matches the highest marker read",
+   "entries": [
+    {
+     "basis": "read",
+     "bbox": [
+      824.58,
+      173.58,
+      1089.47,
+      196.79
+     ],
+     "method": "text-layer",
+     "number": 1,
+     "number_level": "Verified",
+     "read_number": "1",
+     "text": "LEVEL TRANSDUCER: WIKA SUBMERSIBLE PRESSURE TRANSMITTER, 316SS BODY, 0-15 PSI RANGE / 1 / WITH LEVELGUARD, POLYURETHANE CABLE, 4-20 mA LOOP POWERED, TERMINATION ENCLOSURE, / FOR USE WITH VENTED PRESSURE TRANSMITTER, NEMA 4X, INTEGRALLY MOUNTED MOISTURE / PROTECTION."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      824.58,
+      203.82,
+      1089.5,
+      214.97
+     ],
+     "method": "text-layer",
+     "number": 2,
+     "number_level": "Verified",
+     "read_number": "2",
+     "text": "2 HIGH LEVEL FLOATS: ECO-FLOAT MODEL GP60NONC, NON-MERCURY, NO/NC CONTACT, / POLYPROPELENE HOUSING AND CLAMP, PIPE MOUNT."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      824.58,
+      221.64,
+      1089.39,
+      245.21
+     ],
+     "method": "text-layer",
+     "number": 3,
+     "number_level": "Verified",
+     "read_number": "3",
+     "text": "3 PROVIDE SERVICE LOOPS FOR EXTRA PUMP AND INSTRUMENT CABLES INSIDE WET WELL. ROUTE / TO HANDHOLES FOR CONNECTION POINT FOR CABLES TO PERMANENT WIRING. MAKE / CONNECTIONS WITH APPROVED CONNECTORS. SEAL CONDUITS LEAVING HANDHOLES TO INFLUENT / PUMP STATION PER NEC ART 500."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      824.58,
+      252.06,
+      1073.92,
+      269.33
+     ],
+     "method": "text-layer",
+     "number": 4,
+     "number_level": "Verified",
+     "read_number": "4",
+     "text": "4 PROVIDE INDIVIDUAL CONDUITS FOR EACH PUMP, FLOAT, AND TRANSDUCER CABLE. OVERSIZE / CONDUITS AS REQUIRED BETWEEN WET WELL AND HANDHOLE FOR EASY REMOVAL AND / REPLACEMENT OF FACTORY PUMP AND INSTRUMENT CABLES."
+    }
+   ],
+   "heading": "KEY NOTES:",
+   "heading_bbox": [
+    833.58,
+    158.58,
+    887.9,
+    167.63
+   ],
+   "heading_method": "text-layer",
+   "highest_marker_read": 4,
+   "line_spacing_p25": 6.12
+  }
+ ],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -4973,14 +5055,811 @@
   "width": 1224.0
  },
  "page_key": "071",
+ "quantities": [
+  {
+   "bbox": [
+    414.98,
+    733.2,
+    418.73,
+    738.23
+   ],
+   "callouts_nearby": [
+    [
+     "0",
+     [
+      400.5,
+      743.4,
+      403.2,
+      750.24
+     ],
+     12.86
+    ],
+    [
+     "2",
+     [
+      436.5,
+      743.4,
+      439.2,
+      750.24
+     ],
+     18.51
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "SCALE: 1\" = 2' AT FULL SCALE",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "2'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "2"
+  }
+ ],
  "schema_version": "1.0",
  "set_page": 71,
  "sheet_01": "E4.2",
  "source": {
   "file": "testbeds/eastsound/library/Pages from eswd-wwtp-upgrade-ph1-11x17-plans - Part 3.pdf",
   "page": 23,
-  "sha256": "ffe9e975ceb153cab60328a2459d826f96f96e0edaa77e0279a1d27e2e6de5fa"
+  "sha256": "ffe9e975ceb153cab60328a2459d826f96f96e0edaa77e0279a1d27e2e6de5fa",
+  "sha256_checked_against": "testbeds/eastsound/index/Library_Manifest.csv"
  },
+ "tags": [
+  {
+   "assignment": "assigned",
+   "bbox": [
+    291.24,
+    583.26,
+    300.46,
+    588.29
+   ],
+   "candidate_rows": [
+    288
+   ],
+   "conf": null,
+   "form": "IP-1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    288
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "IP-1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    291.24,
+    612.78,
+    300.46,
+    617.81
+   ],
+   "candidate_rows": [
+    289
+   ],
+   "conf": null,
+   "form": "IP-2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    289
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "IP-2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    295.02,
+    84.3,
+    304.24,
+    89.33
+   ],
+   "candidate_rows": [
+    288
+   ],
+   "conf": null,
+   "form": "IP-1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    288
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "IP-1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    305.28,
+    177.0,
+    314.5,
+    182.03
+   ],
+   "candidate_rows": [
+    289
+   ],
+   "conf": null,
+   "form": "IP-2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    289
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "IP-2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    376.74,
+    109.86,
+    382.61,
+    114.89
+   ],
+   "candidate_rows": [
+    292
+   ],
+   "conf": null,
+   "form": "F1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    292
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "F1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    376.74,
+    137.58,
+    382.61,
+    142.61
+   ],
+   "candidate_rows": [
+    296
+   ],
+   "conf": null,
+   "form": "LT",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    296
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "LT"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    376.74,
+    166.38,
+    382.61,
+    171.41
+   ],
+   "candidate_rows": [
+    295
+   ],
+   "conf": null,
+   "form": "F4",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    295
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "F4"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    385.45,
+    501.32,
+    394.11,
+    507.32
+   ],
+   "candidate_rows": [
+    350
+   ],
+   "conf": null,
+   "form": "T2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "T2-"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    385.7,
+    519.12,
+    392.36,
+    525.12
+   ],
+   "candidate_rows": [
+    298
+   ],
+   "conf": null,
+   "form": "T3",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "T3"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    387.85,
+    592.27,
+    398.68,
+    597.27
+   ],
+   "candidate_rows": [
+    242
+   ],
+   "conf": null,
+   "form": "TS",
+   "fuzzy": true,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "T5—"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    413.05,
+    474.67,
+    420.54,
+    479.67
+   ],
+   "candidate_rows": [
+    293
+   ],
+   "conf": null,
+   "form": "F2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    293
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "-F2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    413.3,
+    492.67,
+    424.13,
+    497.67
+   ],
+   "candidate_rows": [
+    295
+   ],
+   "conf": null,
+   "form": "F4",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    295
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "—F4"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    414.5,
+    483.57,
+    425.33,
+    488.57
+   ],
+   "candidate_rows": [
+    294
+   ],
+   "conf": null,
+   "form": "F3",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    294
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "—F3"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    424.98,
+    474.66,
+    430.02,
+    478.62
+   ],
+   "candidate_rows": [
+    293
+   ],
+   "conf": 65.0,
+   "form": "F2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    293
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "F2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    425.16,
+    483.66,
+    430.56,
+    487.62
+   ],
+   "candidate_rows": [
+    294
+   ],
+   "conf": 68.0,
+   "form": "F3",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    294
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "F3"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    443.7,
+    137.94,
+    449.57,
+    142.97
+   ],
+   "candidate_rows": [
+    293
+   ],
+   "conf": null,
+   "form": "F2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    293
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "F2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    443.7,
+    166.56,
+    449.57,
+    171.59
+   ],
+   "candidate_rows": [
+    294
+   ],
+   "conf": null,
+   "form": "F3",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    294
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "F3"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    508.14,
+    181.32,
+    517.36,
+    186.35
+   ],
+   "candidate_rows": [
+    291
+   ],
+   "conf": null,
+   "form": "IP-4",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    291
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "IP-4"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    514.98,
+    83.76,
+    524.2,
+    88.79
+   ],
+   "candidate_rows": [
+    290
+   ],
+   "conf": null,
+   "form": "IP-3",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    290
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "IP-3"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    518.58,
+    583.26,
+    527.8,
+    588.29
+   ],
+   "candidate_rows": [
+    290
+   ],
+   "conf": null,
+   "form": "IP-3",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    290
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "IP-3"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    518.58,
+    612.78,
+    527.8,
+    617.81
+   ],
+   "candidate_rows": [
+    291
+   ],
+   "conf": null,
+   "form": "IP-4",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    291
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "IP-4"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    722.85,
+    622.74,
+    739.65,
+    629.74
+   ],
+   "candidate_rows": [
+    298
+   ],
+   "conf": null,
+   "form": "T3",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "(T3)"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    722.85,
+    649.84,
+    739.65,
+    656.84
+   ],
+   "candidate_rows": [
+    242
+   ],
+   "conf": null,
+   "form": "TS",
+   "fuzzy": true,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "(T5)"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    726.7,
+    610.52,
+    735.86,
+    615.52
+   ],
+   "candidate_rows": [
+    350
+   ],
+   "conf": null,
+   "form": "T2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "(T2)"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    733.63,
+    550.52,
+    742.79,
+    555.52
+   ],
+   "candidate_rows": [
+    293
+   ],
+   "conf": null,
+   "form": "F2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    293
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "(F2)"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    733.63,
+    564.22,
+    742.79,
+    569.22
+   ],
+   "candidate_rows": [
+    294
+   ],
+   "conf": null,
+   "form": "F3",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    294
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "(F3)"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    733.63,
+    577.87,
+    742.79,
+    582.87
+   ],
+   "candidate_rows": [
+    295
+   ],
+   "conf": null,
+   "form": "F4",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    295
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "(F4)"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    733.88,
+    536.82,
+    743.04,
+    541.82
+   ],
+   "candidate_rows": [
+    292
+   ],
+   "conf": null,
+   "form": "F1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    292
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "(F1)"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    736.02,
+    549.72,
+    746.64,
+    555.66
+   ],
+   "candidate_rows": [
+    293
+   ],
+   "conf": 92.0,
+   "form": "F2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    293
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "(F2)"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    736.02,
+    563.4,
+    746.64,
+    569.34
+   ],
+   "candidate_rows": [
+    294
+   ],
+   "conf": 92.0,
+   "form": "F3",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    294
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "(F3)"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    736.02,
+    577.08,
+    746.64,
+    583.02
+   ],
+   "candidate_rows": [
+    295
+   ],
+   "conf": 91.0,
+   "form": "F4",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    295
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "(F4)"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    736.38,
+    536.22,
+    746.28,
+    541.98
+   ],
+   "candidate_rows": [
+    292
+   ],
+   "conf": 87.0,
+   "form": "F1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    292
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "(F1)"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    994.32,
+    380.7,
+    999.9,
+    386.64
+   ],
+   "candidate_rows": [
+    296
+   ],
+   "conf": 64.0,
+   "form": "LT",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    296
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "LT"
+  }
+ ],
  "title_01": "INFLUENT PUMP STATION ELECTRICAL PLAN AND ELEVATION",
  "title_block": {
   "date": {

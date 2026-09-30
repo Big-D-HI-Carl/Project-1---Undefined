@@ -80,6 +80,54 @@ Append-only. Repo and program issues, in the format in AGENTS.md. The test bed's
 - Finding: `testbeds/eastsound/process/Library_Fingerprint.csv` and `_Pages.csv` fingerprint the Claude Project's converted copies (page bundles and text-only files), not the native PDFs. The native files' SHA-256 values and sizes differ (for example the main spec: 1,436,556 bytes converted, 17,502,025 bytes native), and the plan set is now three parts, not the 28 plans_N files. This is expected. `Library_Fingerprint.csv` is not edited; the natives are recorded in `testbeds/eastsound/index/Library_Manifest.csv`.
 - Fix or next action: Revise Graph_Transfer_Ultraplan §6 Step 4 (and Appendix C step 1), whose check requires text to match on all 888 fingerprinted pages, before any Transfer run. Owner: the person approving the Transfer plan.
 
+## 2026-09-30 — OCR lane Step 1: calibration failures fixed before the full run — Closed
+- Workstream: Eastsound test bed (Prompt 7 OCR lane)
+- Type: workflow failure
+- Finding: These failures came up during the Step 1 calibration runs on set pp.20, 22, 28, 29, 45, 56–61, 70 and Add. 4 pp.7–10. Each one was fixed before the next run, but these entries were written afterward, at Gate A. The rule is to log a failure before rerunning.
+  - The title block was not read on the 9 pages with no text layer, nor on Add. 4 pp.8–10. The full-page 400 dpi psm 3 passes skipped the title-block boxes; S2.1's sheet number read as "$2.1" and C3.3's "28 OF 96" as noise.
+  - The strip anchor picked lowercase "scale" (from "Verify scale") and a plan-area SCALE label. OCR fragments ("PHASE 1") also slipped past the exact-match template test.
+  - The word normalizer stripped the "$" before the $→S fix could read the sheet number.
+  - The first full run never started, because `/usr/bin/time` is not installed in the container.
+  - Keyed notes mis-numbered. The block missed markers 15 pt left of the heading, used the median line spacing, and read embedded detail bubbles as entries. Misread markers ("(1)" for 11) restarted the count.
+  - Pipe ID and Buried Valve ID legend lines were missed (7 of 39), because an ID and its description on the same baseline merged into one line.
+- Fix or next action: Done, in `tools/extract_drawing_text.py` (9c9edf1).
+  - Title blocks: a rotated title-strip pass at 200 and 300 dpi, psm 11, anchored on the nearest uppercase title-block label, with the higher-confidence read kept per field. Template lines also match on 80% of their characters.
+  - Sheet numbers: "$" is kept for the S fix.
+  - Timing: the run is timed with shell `date` instead.
+  - Keyed notes: an entry column of −30…+20 pt around the heading, 25th-percentile spacing, stray rows attached to their entry, entries starting only in the marker column, and read markers trusted only when they run on from the previous entry.
+  - Legend lines: descriptions are taken from the words in each number's row band.
+  - After the fixes: 96 of 96 title blocks match 01, and 39 of 39 legend lines are found.
+
+## 2026-09-30 — PR #2 (sort pass) was not merged when the OCR lane started — Closed
+- Workstream: Eastsound test bed (Prompt 7 OCR lane)
+- Type: workflow failure
+- Finding: Step 0 found PR #2 open and main still at the flat upload (1fc06ef), so none of the paths in the Prompt 7 amendments existed on main. The lane stopped at Step 0.
+- Fix or next action: Done. The owner merged PR #2 (9fec0a2), and this branch was fast-forwarded to it. Step 0 was re-checked on the merged main: part SHA-256 values match `Plan_Set_Parts.md`, and the Ledger has 447 rows, 123 of them Unresolved.
+
+## 2026-09-30 — Four schema CSVs need uploading to index/ — Open
+- Workstream: Eastsound test bed
+- Type: input gap
+- Finding: Prompt 7 names Spot_Check_Schema columns, but no Spot_Check_Schema file is in the repo. The owner keeps the schema files in the Claude Project. `testbeds/eastsound/index/` holds Ledger_Schema.csv and Requirements_Schema.csv (both the 16-column rev0 headers, with no Quantity or Unit column). It holds no Audit_Ledger or Spot_Check schema. `derived/ocr/Spot_Check.csv` uses the column order the owner gave in session.
+- Fix or next action: A person uploads the four schema CSVs (Requirements, Ledger, Audit_Ledger, Spot_Check) to `testbeds/eastsound/index/`, through the Setup role that owns index/. Agents don't create them.
+
+## 2026-09-30 — AGENTS.md and the Bluebeam README still say OCR copies are a comparison column only — Open
+- Workstream: Repo setup
+- Type: content conflict
+- Finding: The owner's 2026-09-30 decision (DECISIONS.md, "Bluebeam OCR hits go into Tag_Hits and Quantity_Hits, still Inferred") replaces the comparison-only rule. Two files still state the old rule: AGENTS.md Output standards ("OCR copies are a comparison column only") and `testbeds/eastsound/derived/bluebeam-ocr/README.md` (Rule, third bullet). Both are outside the OCR lane's write scope.
+- Fix or next action: On the owner's OK, change the AGENTS.md line to: "OCR copies are Inferred only. They may feed tag and quantity leads (method bluebeam-ocr), never a text layer or a Verified read." Then update the Bluebeam README's Rule to match. Each goes in its own commit.
+
+## 2026-09-30 — Index and library notes call the 9 no-text-layer sheets "image-only" — Open
+- Workstream: Eastsound test bed
+- Type: content conflict
+- Finding: `library/Plan_Set_Parts.md` and `index/01_Sheet_Index_rev1.md` call C3.3, C3.4, C7.3, S1.1, S2.1–S2.4 and S4.1 "image-only". They are vector drawings with no text layer, not raster images (Prompt 7 amendments). `derived/ocr/Sheet_Map.csv` reads all 9 title blocks by OCR (Inferred).
+- Fix or next action: The Setup role corrects the wording in 01; the build session corrects it in the Plan_Set_Parts.md note.
+
+## 2026-09-30 — Ledger Drawing Sheets: 80 rows cite no sheet number (78 PROPOSED, 2 printed) — Open
+- Workstream: Eastsound test bed
+- Type: input gap
+- Finding: 74 Ledger rows have a blank Drawing Sheets field: 72 PROPOSED rows plus 2 printed rows (Receiving Conveyor, Inclined Conveyor). 6 more rows name no sheet number ("—", "Not shown", "None (Add. 4 and 26 05 00 only)", "TESC plans (civil sheets, not numbered in source)"). The OCR lane can't check any of these against a sheet. `derived/ocr/Ledger_Crosswalk.csv` shows them as "no sheet cited" or "no sheet number cited".
+- Fix or next action: The Merge role or the lanes add sheet citations where the documents give them.
+
 ## 2026-09-30 — Project_Ledger.csv repeats two Tags — Open
 - Workstream: Eastsound test bed
 - Type: content conflict
@@ -97,6 +145,42 @@ Append-only. Repo and program issues, in the format in AGENTS.md. The test bed's
   - It repeats the two duplicate Tags: `SD-1` at lines 107 and 304, and `PROPOSED-Influent-Sampler` at lines 432 and 439 (see "Project_Ledger.csv repeats two Tags").
   - The file was not edited. It is listed in `tools/check_exceptions.csv` for the ledger rule.
 - Fix or next action: Carl decides whether the CWP view counts as a Ledger. If not, issue its next revision under a name without "Ledger", or ask for a checks.py change that narrows the file pattern. If it does, it needs its own schema. The duplicate Tags clear with the Project Ledger fix.
+
+## 2026-09-30 — checks.py read the OCR lane's Ledger_Crosswalk.csv as a Project Ledger — Closed
+- Workstream: Repo setup
+- Type: workflow failure
+- Finding: After main (PR #5) was merged into the OCR lane branch, `python tools/checks.py --all` gave 3 FAIL for `testbeds/eastsound/derived/ocr/Ledger_Crosswalk.csv`: the header differs from Ledger_Schema.csv, and two Tags repeat (lines 316 and 419). `is_ledger()` matched any file named `*ledger*.csv`. The crosswalk is not a Ledger; it is keyed on Ledger Row, and "SD-1" and "PROPOSED-Influent-Sampler" each name two rows. The pre-commit hook would block any commit of the regenerated file, and CI would fail on PR #6.
+- Fix or next action: Carl chose "Narrow the checks.py glob". `is_ledger()` now covers only `*ledger*.csv` under a test bed's `project/` or `lanes/` folder, in its own commit. `prompts/01_bootstrap_guardrails.md` still describes the rule as every `*Ledger*.csv`; update that text when Prompt 1 is next revised.
+
+## 2026-09-30 — Four schema CSVs need uploading to index/ — Closed
+- Workstream: Eastsound test bed
+- Type: input gap
+- Finding: Corrects the 2026-09-30 Open entry "Four schema CSVs need uploading to index/". Ledger_Schema.csv and Requirements_Schema.csv are already in `testbeds/eastsound/index/` (Carl). Only the Audit_Ledger and Spot_Check schemas are missing.
+- Fix or next action: Replaced by the next entry.
+
+## 2026-09-30 — Audit_Ledger and Spot_Check schema CSVs need uploading to index/ — Open
+- Workstream: Eastsound test bed
+- Type: input gap
+- Finding: No Audit_Ledger or Spot_Check schema file is in the repo. `testbeds/eastsound/derived/ocr/Spot_Check.csv` uses the column order Carl gave in session (DECISIONS.md, "Spot_Check.csv columns").
+- Fix or next action: Carl uploads both to `testbeds/eastsound/index/`. Agents don't create them.
+
+## 2026-09-30 — AGENTS.md and the Bluebeam README still say OCR copies are a comparison column only — Closed
+- Workstream: Repo setup
+- Type: content conflict
+- Finding: Closes the 2026-09-30 Open entry of the same title. Carl approved the proposed wording.
+- Fix or next action: Done. AGENTS.md Output standards now read "OCR copies are Inferred only. They may feed tag and quantity leads (method bluebeam-ocr), never a text layer or a Verified read." (269ccdc). `testbeds/eastsound/derived/bluebeam-ocr/README.md` matches (0927ea8).
+
+## 2026-09-30 — OCR lane: a sheet-only quantity match was taken from another item's size — Closed
+- Workstream: Eastsound test bed (Prompt 7 OCR lane)
+- Type: workflow failure
+- Finding: The pre-merge review of PR #6 (5 auditors, 3 skeptics per finding; 1 of 8 findings upheld) found Ledger row 374 (PROPOSED-WWTP-Building-Louver-3x7, "3 ft x 7 ft") marked Verified. The match was "A1.3: matched: quantity 3 FT", but the "3'" came from the text-layer callout "2'x3'" for row 372's louver; the 3'x7' size exists only in the OCR and Bluebeam reads of A1.3. The cause: the quantity match accepted any one value from the Ledger Name, and the foot form had no boundaries. The reported counts were one too high (sheet-only 9 Verified; PROPOSED rows 10 Verified).
+- Fix or next action: Fixed in `testbeds/eastsound/tools/extract_drawing_text.py` before the rerun of Tests 8 and 9. A size in the Name ("A ft x B ft", with inches) must match as one string on one line. Every other quantity-unit value in the Name is required. A bare foot value counts as the quantity only when the Name has no other quantity or size, and it can't be taken from inside a size or feet-inch string. Also from the review: a tie now cites the governing Add. 4 page before the base page, and the script's docstring lists the two index inputs.
+
+## 2026-09-30 — The branch update merge a8694d8 dropped main's log entries and failed CI — Closed
+- Workstream: Repo setup
+- Type: workflow failure
+- Finding: `a8694d8` ("Merge branch 'main' into claude/vibrant-davinci-7g3znj", made through GitHub) kept the branch's PROGRESS_LOG.md, ISSUES_LOG.md and DECISIONS.md and dropped main's entries, including "Project_Ledger.csv repeats two Tags". The PR #6 check failed on it, because a `tools/check_exceptions.csv` row came in without its ISSUES_LOG entry. It also failed at a0a19a1, where the ledger rule flagged `derived/ocr/Ledger_Crosswalk.csv`. The range check tests every commit, so no later commit could clear a8694d8.
+- Fix or next action: At Carl's direction, a8694d8 was replaced. The branch was pushed with `--force-with-lease` pinned to a8694d8, carrying a merge of main that keeps both sides' log entries. This is a one-off exception to AGENTS.md rule 8, approved by the owner. `tools/checks.py` keeps main's `*_by_CWP*` skip and adds the project/ and lanes/ narrowing.
 
 ## 2026-09-30 — Project_Ledger_by_CWP.csv doesn't follow the Ledger schema — Closed
 - Workstream: Eastsound test bed

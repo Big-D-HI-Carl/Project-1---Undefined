@@ -1622,9 +1622,12 @@
   ]
  },
  "cited_as": {
-  "basis": "01_Sheet_Index_rev1.md File and PDF p. columns",
+  "basis": "testbeds/eastsound/index/Plan_Set_Crosswalk.csv",
+  "duplicates": [],
   "file": "Pages_from_eswd-wwtp-upgrade-ph1-11x17-plans_10.pdf",
-  "page": 7
+  "indexed_in_01": "Yes",
+  "page": 7,
+  "short_name": "plans_10"
  },
  "counts": {
   "mode3_chars_kept": 0,
@@ -1665,8 +1668,8 @@
   "pytesseract": "0.3.13",
   "python": "3.11.15",
   "schema_version": "1.0",
-  "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script": "testbeds/eastsound/tools/extract_drawing_text.py",
+  "script_sha256": "0e61e19737aa0acd351b04bb1fe1276502ad57f626b99e59df261b62d1bbebd1",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -1685,6 +1688,43 @@
  },
  "governed_by": null,
  "governs": null,
+ "keyed_notes": [
+  {
+   "bbox": [
+    892.98,
+    133.83,
+    1088.18,
+    176.45
+   ],
+   "count_check": "entry count 1 matches the highest marker read",
+   "entries": [
+    {
+     "basis": "read",
+     "bbox": [
+      892.98,
+      147.12,
+      1088.18,
+      176.45
+     ],
+     "method": "text-layer",
+     "number": 1,
+     "number_level": "Verified",
+     "read_number": "1",
+     "text": "1 BLOWER SUPPLIER SHALL PROVIDE PTC RELAY MODULE FOR / INSTALLATION IN MAIN PLC CONTROL PANEL. SYSTEM INTEGRATOR TO / INSTALL RELAY MODULE IN CONTROL PANEL, PROVIDE 120V POWER / CIRCUIT TO EACH, AND WIRE OVERTEMP SIGNAL TO PLC TO SHUT DOWN / BLOWER MOTOR ON HIGH TEMPERATURE."
+    }
+   ],
+   "heading": "KEY NOTES:",
+   "heading_bbox": [
+    900.9,
+    133.83,
+    946.17,
+    141.37
+   ],
+   "heading_method": "text-layer",
+   "highest_marker_read": 1,
+   "line_spacing_p25": 6.12
+  }
+ ],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -1697,14 +1737,123 @@
   "width": 1224.0
  },
  "page_key": "079",
+ "quantities": [],
  "schema_version": "1.0",
  "set_page": 79,
  "sheet_01": "E7.2",
  "source": {
   "file": "testbeds/eastsound/library/Pages from eswd-wwtp-upgrade-ph1-11x17-plans - Part 3.pdf",
   "page": 31,
-  "sha256": "ffe9e975ceb153cab60328a2459d826f96f96e0edaa77e0279a1d27e2e6de5fa"
+  "sha256": "ffe9e975ceb153cab60328a2459d826f96f96e0edaa77e0279a1d27e2e6de5fa",
+  "sha256_checked_against": "testbeds/eastsound/index/Library_Manifest.csv"
  },
+ "tags": [
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    117.54,
+    667.14,
+    123.13,
+    672.17
+   ],
+   "candidate_rows": [
+    277
+   ],
+   "conf": null,
+   "form": "L1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "L1"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    122.22,
+    208.5,
+    127.81,
+    213.53
+   ],
+   "candidate_rows": [
+    277
+   ],
+   "conf": null,
+   "form": "L1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "L1"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    191.7,
+    184.74,
+    197.29,
+    189.77
+   ],
+   "candidate_rows": [
+    277
+   ],
+   "conf": null,
+   "form": "L1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "L1"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    572.94,
+    76.38,
+    578.53,
+    81.41
+   ],
+   "candidate_rows": [
+    277
+   ],
+   "conf": null,
+   "form": "L1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "L1"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    573.12,
+    416.88,
+    598.86,
+    427.5
+   ],
+   "candidate_rows": [
+    242
+   ],
+   "conf": 22.0,
+   "form": "TS",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "ts"
+  }
+ ],
  "title_01": "MAIN PLC CONTROL PANEL - POWER WIRING DIAGRAM",
  "title_block": {
   "date": {

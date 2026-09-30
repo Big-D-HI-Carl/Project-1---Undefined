@@ -1262,9 +1262,12 @@
   ]
  },
  "cited_as": {
-  "basis": "01_Sheet_Index_rev1.md File and PDF p. columns",
+  "basis": "testbeds/eastsound/index/Plan_Set_Crosswalk.csv",
+  "duplicates": [],
   "file": "Pages_from_eswd-wwtp-upgrade-ph1-11x17-plans_1.pdf",
-  "page": 3
+  "indexed_in_01": "Yes",
+  "page": 3,
+  "short_name": "plans_1"
  },
  "counts": {
   "mode3_chars_kept": 144,
@@ -1305,8 +1308,8 @@
   "pytesseract": "0.3.13",
   "python": "3.11.15",
   "schema_version": "1.0",
-  "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script": "testbeds/eastsound/tools/extract_drawing_text.py",
+  "script_sha256": "0e61e19737aa0acd351b04bb1fe1276502ad57f626b99e59df261b62d1bbebd1",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -1325,6 +1328,7 @@
  },
  "governed_by": null,
  "governs": null,
+ "keyed_notes": [],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -1337,14 +1341,88 @@
   "width": 1224.0
  },
  "page_key": "003",
+ "quantities": [
+  {
+   "bbox": [
+    275.47,
+    246.54,
+    305.09,
+    252.52
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "HOURS",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "HIM, HIS SUBCONTRACTORS, OR HIS MATERIAL SUPPLIERS WITHIN 48 HOURS OF THE DAMAGE OCCURRENCE AND/OR AS REQUIRED BY THE",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "48 HOURS",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "48"
+  },
+  {
+   "bbox": [
+    418.84,
+    384.9,
+    451.63,
+    390.88
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "SURVEYS",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "THE ENGINEER WILL PROVIDE CONSTRUCTION STACKING FOR THE PROJECT. SEE SUPPLEMENTAL CONDITIONS, NO. 7 SURVEYS, PERMITS,",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "7 SURVEYS",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "7"
+  }
+ ],
  "schema_version": "1.0",
  "set_page": 3,
  "sheet_01": "G0.3",
  "source": {
   "file": "testbeds/eastsound/library/Pages from eswd-wwtp-upgrade-ph1-11x17-plans Part 1.pdf",
   "page": 3,
-  "sha256": "9ca45d82bf86d16d3e2ce57eb76dccf597c497a7dc7f062fc7a171c4bc2c8d57"
+  "sha256": "9ca45d82bf86d16d3e2ce57eb76dccf597c497a7dc7f062fc7a171c4bc2c8d57",
+  "sha256_checked_against": "testbeds/eastsound/index/Library_Manifest.csv"
  },
+ "tags": [
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    448.61,
+    727.86,
+    461.27,
+    733.84
+   ],
+   "candidate_rows": [
+    191
+   ],
+   "conf": null,
+   "form": "S1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "S1.1"
+  }
+ ],
  "title_01": "NOTES & SPECIFICATIONS",
  "title_block": {
   "date": {

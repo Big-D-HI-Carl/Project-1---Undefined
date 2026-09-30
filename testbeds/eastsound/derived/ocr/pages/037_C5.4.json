@@ -8390,9 +8390,12 @@
   ]
  },
  "cited_as": {
-  "basis": "01_Sheet_Index_rev1.md File and PDF p. columns",
+  "basis": "testbeds/eastsound/index/Plan_Set_Crosswalk.csv",
+  "duplicates": [],
   "file": "Pages_from_eswd-wwtp-upgrade-ph1-11x17-plans_5.pdf",
-  "page": 5
+  "indexed_in_01": "Yes",
+  "page": 5,
+  "short_name": "plans_5"
  },
  "counts": {
   "mode3_chars_kept": 346,
@@ -8433,8 +8436,8 @@
   "pytesseract": "0.3.13",
   "python": "3.11.15",
   "schema_version": "1.0",
-  "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script": "testbeds/eastsound/tools/extract_drawing_text.py",
+  "script_sha256": "0e61e19737aa0acd351b04bb1fe1276502ad57f626b99e59df261b62d1bbebd1",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -8453,6 +8456,7 @@
  },
  "governed_by": null,
  "governs": null,
+ "keyed_notes": [],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -8465,14 +8469,387 @@
   "width": 1224.0
  },
  "page_key": "037",
+ "quantities": [
+  {
+   "bbox": [
+    274.32,
+    496.62,
+    305.46,
+    503.28
+   ],
+   "callouts_nearby": [
+    [
+     "0",
+     [
+      322.8,
+      499.0,
+      325.02,
+      503.0
+     ],
+     17.34
+    ]
+   ],
+   "conf": 80.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "HWL=21.09’",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "21.09'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "21.09"
+  },
+  {
+   "bbox": [
+    288.9,
+    408.78,
+    305.1,
+    412.56
+   ],
+   "callouts_nearby": [],
+   "conf": 95.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "LOCATED WITHIN 10 FT.",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "10 FT.",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "10"
+  },
+  {
+   "bbox": [
+    293.49,
+    409.45,
+    305.04,
+    413.45
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "LOCATED WITHIN 10 FT.",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "10 FT.",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "10"
+  },
+  {
+   "bbox": [
+    297.9,
+    428.76,
+    305.1,
+    433.44
+   ],
+   "callouts_nearby": [
+    [
+     "1",
+     [
+      310.55,
+      455.17,
+      315.05,
+      464.17
+     ],
+     22.4
+    ]
+   ],
+   "conf": 95.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "POWER CORD WITH GROUND 10’",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "10'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "10"
+  },
+  {
+   "bbox": [
+    299.57,
+    430.35,
+    305.08,
+    434.35
+   ],
+   "callouts_nearby": [
+    [
+     "1",
+     [
+      310.55,
+      455.17,
+      315.05,
+      464.17
+     ],
+     21.53
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "POWER CORD WITH GROUND 10’",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "10'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "10"
+  },
+  {
+   "bbox": [
+    454.1,
+    536.12,
+    469.6,
+    542.12
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "EL.= 19.08’",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "19.08'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "19.08"
+  },
+  {
+   "bbox": [
+    456.48,
+    536.4,
+    472.14,
+    540.72
+   ],
+   "callouts_nearby": [],
+   "conf": 92.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "19.08’",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "19.08'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "19.08"
+  },
+  {
+   "bbox": [
+    462.25,
+    402.5,
+    473.79,
+    406.5
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "15 FT. OF CHANNEL",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "15 FT.",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "15"
+  },
+  {
+   "bbox": [
+    462.6,
+    401.76,
+    478.8,
+    405.72
+   ],
+   "callouts_nearby": [],
+   "conf": 94.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "15 FT. OF CHANNEL",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "15 FT.",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "15"
+  },
+  {
+   "bbox": [
+    604.98,
+    487.44,
+    638.28,
+    492.12
+   ],
+   "callouts_nearby": [],
+   "conf": 86.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "HWL=21.49’",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "21.49'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "21.49"
+  },
+  {
+   "bbox": [
+    725.3,
+    224.2,
+    740.13,
+    228.2
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "AMPS",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "120V, 1 PHASE, 2 WIRE, 5 AMPS",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "5 AMPS",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "5"
+  },
+  {
+   "bbox": [
+    735.3,
+    322.38,
+    761.04,
+    326.34
+   ],
+   "callouts_nearby": [],
+   "conf": 93.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "HOLES",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "13 HOLES",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "13 HOLES",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "13"
+  },
+  {
+   "bbox": [
+    737.35,
+    321.85,
+    765.5,
+    327.85
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "HOLES",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "13 HOLES “\\",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "13 HOLES",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "13"
+  },
+  {
+   "bbox": [
+    750.78,
+    223.2,
+    771.3,
+    227.16
+   ],
+   "callouts_nearby": [],
+   "conf": 82.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "AMPS",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "20V, 1 PHASE, 2 WIRE, 5 AMPS",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "5 AMPS",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "5"
+  }
+ ],
  "schema_version": "1.0",
  "set_page": 37,
  "sheet_01": "C5.4",
  "source": {
   "file": "testbeds/eastsound/library/Pages from eswd-wwtp-upgrade-ph1-11x17-plans Part 2.pdf",
   "page": 10,
-  "sha256": "1176b4b114c25cd51383cb47896d5a651e4eb0f3363d17d651269f3d2a15dd84"
+  "sha256": "1176b4b114c25cd51383cb47896d5a651e4eb0f3363d17d651269f3d2a15dd84",
+  "sha256_checked_against": "testbeds/eastsound/index/Library_Manifest.csv"
  },
+ "tags": [],
  "title_01": "UV DISINFECTION EQUIPMENT",
  "title_block": {
   "date": {
