@@ -332,3 +332,34 @@ Append-only. One entry per session, in the format in AGENTS.md. Never edit or de
   - `python3 tools/checks.py --all` → 0 FAIL, 3 WARN (data gate not run; the 2 listed Ledger exceptions). `--range origin/main..HEAD` (before this log commit) → 0 FAIL, 1 WARN. `--staged` → 0 FAIL on every commit.
 - Failures and fixes: none.
 - Next: Carl merges PR #9. Merge fixes the two repeated Tags and the 12 over-tagged rows; Prompt 9 adds the Ledger ID.
+
+## 2026-09-30 — Setup: 01 rev2, 00 rev3, manifest Register rows, Add. 4 S-sheet check
+- Runtime: Claude Code
+- Commits: ffad91b..HEAD on `claude/trusting-dijkstra-y0jpw8`, restarted from main ce488d5 after PR #8 merged (new draft PR)
+- Done:
+  - `testbeds/eastsound/index/01_Sheet_Index_rev2.md` from rev1 (rev1 unchanged):
+    - S-sheet totals "OF 96".
+    - The 10 sheets indexed from native Parts 1 and 3 (Plan_Set_Crosswalk.csv), with a Native-only pages table. Their Read Method is set to provisional Visual (my choice, logged Open).
+    - "no text layer (vector drawing)" replaces "image-only".
+    - Summary counts and items 9 and 10 updated.
+  - `00_Document_Register_rev3.md` from rev2 (rev2 unchanged):
+    - The four stale rev1 lines are fixed.
+    - The Add. 4 pp.9–10 result is recorded.
+    - Rows 5–30 point to 01 rev2. This goes beyond the list and was approved in the plan.
+  - `Library_Manifest.csv`: "00 Register Row" = 31–36; the parts' "no 00 Register row yet" note is dropped. Path, bytes and SHA-256 are unchanged.
+  - Native Add. 4 pp.9–10, rendered: S2.3 "59 OF 96", S4.1 "61 OF 96". Both also show revision 3 "Blower Building" 2/8/23, logged Open against 01 item 12.
+  - ISSUES_LOG: "Index follow-ups after 00 Register rev2" closed; two new Open entries.
+- Tests:
+  - `pdftoppm` renders of native Add. 4 pp.9–10: title block and revision block read.
+  - `pdftotext` on the 10 native-only pages → each reads its own "N OF 96" and sheet number.
+  - `pdftotext` and `pdfimages -list` on the 11 no-text-layer pages → 0 characters, or only the 10-character seal date; only rasters of about 1 in. or less.
+  - Build scripts assert every replacement count. A diff of rev1→rev2 and rev2→rev3 shows only the planned lines. A csv comparison of the manifest shows only the Register Row and Notes cells changed.
+  - `python3 tools/checks.py --staged` via the hook → 0 FAIL, 1 WARN (data gate not run).
+  - `python3 tools/checks.py --all` → 0 FAIL, 3 WARN.
+  - `python3 tools/checks.py --range origin/main..HEAD` → 0 FAIL, 1 WARN.
+- Failures and fixes:
+  - The 01 rev2 script's stale-term check first failed on the new Changes line, which names the old terms on purpose. The check now skips that line.
+- Next:
+  - Carl merges the draft PR.
+  - Setup measures body chars for the 10 native-only sheets.
+  - On Carl's OK, Setup checks the Add. 4 pp.4–8 revision blocks.

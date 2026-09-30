@@ -302,3 +302,35 @@ Append-only. Repo and program issues, in the format in AGENTS.md. The test bed's
   - Rebuilt graph: 791 nodes, 3,113 links, 1 same_tag link.
   - The trace from "Add. 4 p.2 33 41 00 ¶2.02 F" to "MCC" no longer passes through the SD-1 rows. It now runs 7 hops over sheet, note and addendum links.
 - Fix or next action: Done. When Prompt 9 adds the Ledger ID column, key items by that ID and remove `NO_SAME_TAG`. The two SD-1 rows still need their Tag fix from Merge (entry "Project_Ledger.csv repeats two Tags").
+
+## 2026-09-30 — Index follow-ups after 00 Register rev2 — Closed
+- Workstream: Eastsound test bed
+- Type: content conflict
+- Finding: Closes the 2026-09-30 Open entry of the same title.
+  - `testbeds/eastsound/index/01_Sheet_Index_rev2.md`:
+    - S1.1–S4.1 read "OF 96". The native Part 3 title blocks and the Add. 4 pp.9–10 reissues both read it.
+    - The 10 sheets are indexed from native Part 1 pp.10, 14–16, 20, 22, 25 and Part 3 pp.1–3, citing `Plan_Set_Crosswalk.csv`. Each title block's "N OF 96" was read in the native text layer (Verified).
+    - C3.3, C3.4, C7.3 and the S sheets are "no text layer (vector drawing)". `pdftotext` and `pdfimages` on the native files find no text layer and no page-size raster.
+  - `00_Document_Register_rev3.md` fixes the four stale rev1 lines: the 10-sheets row, the metadata note, "image-only" in rows 18, 19 and 24, and the Totals line.
+  - `Library_Manifest.csv` "00 Register Row" now reads 31–36.
+  - Add. 4 pp.9–10 on the native file: S2.3 "59 OF 96" and S4.1 "61 OF 96" (Verified-Visual).
+  - The 01 and 00 parts of "Index and library notes call the 9 no-text-layer sheets 'image-only'" are done. That entry stays Open for `library/Plan_Set_Parts.md`, which the build session owns.
+- Fix or next action: Done. Two new items follow: the Read Method for the 10 sheets, and the Add. 4 revision entries.
+
+## 2026-09-30 — Read Method for the 10 native-only sheets is provisional — Open
+- Workstream: Eastsound test bed
+- Type: design gap
+- Finding: `01_Sheet_Index_rev2.md` sets C0.3, C0.7, C1.1, C1.2, C2.1, C2.3, C2.6, C7.7, C7.8 and C7.9 to "Visual (rev2, provisional)".
+  - Their body chars (text layer minus title block, decision C) were not measured on the native file.
+  - The rev1 counts came from the Claude Project copies, so the method isn't reproducible here as written.
+  - Total native text-layer characters are 268–695, title block included (01 rev2, "Native-only pages").
+- Fix or next action: Setup measures body chars on the native text layer with a stated title-block rule, then sets Text or Visual in a 01 rev3. Until then lanes run a visual pass on these 10.
+
+## 2026-09-30 — Add. 4 S-sheet reissues carry a revision entry; 01 item 12 says they don't — Open
+- Workstream: Eastsound test bed
+- Type: content conflict
+- Finding: On the native Add. 4, pp.9 (S2.3) and 10 (S4.1) each show revision 3, "Blower Building", TH, 2/8/23, in the revision block (Verified-Visual; read 2026-09-30). The title-block date stays 10-15-2021. Two index lines disagree:
+  - `01_Sheet_Index_rev2.md` item 12 (unchanged from rev1): the reissued pages have "no Add. 4 revision entry".
+  - `00_Document_Register_rev3.md` "Per-sheet revision blocks": "the title block can't show supersession".
+  Add. 4 pp.4–8 (A1.1, A1.2, C6.4, C1.3, C1.6A) were not checked.
+- Fix or next action: On Carl's OK, Setup checks the revision blocks on native Add. 4 pp.4–8. Then it corrects 01 item 12 and the 00 line in the next revisions.
