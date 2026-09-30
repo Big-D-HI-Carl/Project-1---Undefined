@@ -165,3 +165,8 @@ Append-only. Decisions made by a person, in the format in AGENTS.md. Never edit 
 - Decided by: Carl
 - Why: Stated in `prompts/01_bootstrap_guardrails.md` §7, which Carl had this session run: "The graph backbone is built from the Ledger by script with no LLM; graphify's LLM pass is an optional, labeled overlay."
 - Replaces: none
+
+## 2026-09-30 — The Setup role creates the Audit_Ledger and Spot_Check schema CSVs
+- Decided by: Carl
+- Why: Stated in this session: "Create Audit_Ledger_Schema.csv and Spot_Check_Schema.csv in index/ as header-only files, matching Ledger_Schema.csv's encoding and line endings." Carl gave both column lists in the same message.
+- Replaces: the upload step of "Only the Audit_Ledger and Spot_Check schemas are missing; Carl uploads them" (2026-09-30)
