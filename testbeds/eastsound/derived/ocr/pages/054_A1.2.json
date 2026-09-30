@@ -4340,9 +4340,12 @@
   ]
  },
  "cited_as": {
-  "basis": "01_Sheet_Index_rev1.md File and PDF p. columns",
+  "basis": "testbeds/eastsound/index/Plan_Set_Crosswalk.csv",
+  "duplicates": [],
   "file": "Pages_from_eswd-wwtp-upgrade-ph1-11x17-plans_7.pdf",
-  "page": 6
+  "indexed_in_01": "Yes",
+  "page": 6,
+  "short_name": "plans_7"
  },
  "counts": {
   "mode3_chars_kept": 238,
@@ -4383,8 +4386,8 @@
   "pytesseract": "0.3.13",
   "python": "3.11.15",
   "schema_version": "1.0",
-  "script": "tools/extract_drawing_text.py",
-  "script_sha256": "86e4d3e4396f5344d37512fd384afbe1368ca6ea0612d3dbd59f331e0d2061ad",
+  "script": "testbeds/eastsound/tools/extract_drawing_text.py",
+  "script_sha256": "5db8dee979c0b6167ea8e598eae48304ca65f2cacac95efc099f9195f110262a",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -5032,7 +5035,8 @@
  "source": {
   "file": "testbeds/eastsound/library/Pages from eswd-wwtp-upgrade-ph1-11x17-plans - Part 3.pdf",
   "page": 6,
-  "sha256": "ffe9e975ceb153cab60328a2459d826f96f96e0edaa77e0279a1d27e2e6de5fa"
+  "sha256": "ffe9e975ceb153cab60328a2459d826f96f96e0edaa77e0279a1d27e2e6de5fa",
+  "sha256_checked_against": "testbeds/eastsound/index/Library_Manifest.csv"
  },
  "tags": [],
  "title_01": "BLOWER BUILDING EXTERIOR ELEVATIONS 1",

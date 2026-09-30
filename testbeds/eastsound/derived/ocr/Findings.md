@@ -1,6 +1,6 @@
 # OCR lane findings
 
-Machine reads from `tools/extract_drawing_text.py`. Text-layer reads are Verified; every OCR and Bluebeam read is Inferred until checked on the page image; every quantity is a lead, not a takeoff (README.md, confidence rule). Nothing here is in the Ledger or the MTO. Page and box cites use `Page Key` and PDF points (origin top left, rotation applied).
+Machine reads from `testbeds/eastsound/tools/extract_drawing_text.py`. Text-layer reads are Verified; every OCR and Bluebeam read is Inferred until checked on the page image; every quantity is a lead, not a takeoff (README.md, confidence rule). Nothing here is in the Ledger or the MTO. Page and box cites use `Page Key` and PDF points (origin top left, rotation applied).
 
 ## Summary
 
@@ -112,7 +112,7 @@ Tag hits not counted as found (Gate A rules): 234 off-citation, short form, 1 qu
 
 ## PROPOSED anchors (Gate A rule)
 
-Verified: the anchor was found in the native text layer and its text holds the row's quantity (value and unit), or, for a row whose Ledger Name has no quantity, a specific noun from the Name. Inferred: the same match read by OCR or Bluebeam. Unresolved: the anchor was not found, or its text does not match. A keyed note numbered by order is at best Inferred, and Unresolved where its block's entry count and highest marker read disagree.
+Verified: the anchor was found in the native text layer and its text holds the row's quantity (value and unit), or, for a row whose Ledger Name has no quantity, a specific noun from the Name. Inferred: the same match read by OCR or Bluebeam. Unresolved: the anchor was not found, or its text does not match. A keyed note numbered by order is at best Inferred, and Unresolved where its block's entry count and highest marker read disagree. A sheet-only anchor (a cited sheet with no KN, Det. or Add. anchor) is Verified only when the row's quantity (value and unit) is read on that sheet in the text layer; a noun match anywhere on the sheet is Inferred ("on sheet, location not pinned").
 
 | Anchor type | Verified | Inferred | Unresolved | Total |
 |---|---|---|---|---|
@@ -120,10 +120,26 @@ Verified: the anchor was found in the native text layer and its text holds the r
 | detail | 18 | 8 | 5 | 31 |
 | keyed note | 0 | 13 | 9 | 22 |
 | other | 0 | 0 | 10 | 10 |
-| sheet only | 232 | 184 | 74 | 490 |
-| all | 250 | 206 | 99 | 555 |
+| sheet only | 9 | 407 | 74 | 490 |
+| all | 27 | 429 | 99 | 555 |
 
-PROPOSED rows by weakest anchor (the row's sheet evidence level): 116 Inferred, 135 Unresolved, 61 Verified; 78 rows cite no sheet number.
+Anchors by match term:
+
+| Anchor type | Match term | Verified | Inferred | Unresolved |
+|---|---|---|---|---|
+| Add. 4 page | no match | 0 | 0 | 1 |
+| Add. 4 page | noun | 0 | 1 | 0 |
+| detail | no match | 0 | 0 | 4 |
+| detail | noun | 18 | 8 | 1 |
+| keyed note | no match | 0 | 0 | 4 |
+| keyed note | noun | 0 | 7 | 1 |
+| keyed note | quantity | 0 | 6 | 4 |
+| other | no match | 0 | 0 | 10 |
+| sheet only | no match | 0 | 0 | 74 |
+| sheet only | noun | 0 | 396 | 0 |
+| sheet only | quantity | 9 | 11 | 0 |
+
+PROPOSED rows by weakest anchor (the row's sheet evidence level): 167 Inferred, 135 Unresolved, 10 Verified; 78 rows cite no sheet number.
 
 ## Keyed-note blocks
 

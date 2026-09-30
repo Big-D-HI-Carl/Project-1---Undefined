@@ -1,6 +1,6 @@
 # derived/ocr: drawing text for the Ledger and MTO cross-reference
 
-Schema version 1.0. Machine-read words, tags and quantities from the native Eastsound plan set (set pages 1–96) and the Addendum 4 reissue pages (pp.4–10), keyed so they can be cross-referenced into the Project Ledger and a master MTO later. Built by `tools/extract_drawing_text.py` with no LLM calls. This folder is data only: nothing here has been entered in the Ledger or an MTO.
+Schema version 1.0. Machine-read words, tags and quantities from the native Eastsound plan set (set pages 1–96) and the Addendum 4 reissue pages (pp.4–10), keyed so they can be cross-referenced into the Project Ledger and a master MTO later. Built by `testbeds/eastsound/tools/extract_drawing_text.py` with no LLM calls. This folder is data only: nothing here has been entered in the Ledger or an MTO.
 
 ## Confidence rule
 
@@ -14,7 +14,7 @@ Schema version 1.0. Machine-read words, tags and quantities from the native East
 ```
 apt-get install -y tesseract-ocr
 pip install -r requirements.txt
-PYTHONHASHSEED=0 OMP_THREAD_LIMIT=1 python tools/extract_drawing_text.py --stage all --jobs 4
+PYTHONHASHSEED=0 OMP_THREAD_LIMIT=1 python testbeds/eastsound/tools/extract_drawing_text.py --stage all --jobs 4
 ```
 
 - The script sets both variables itself if they are missing. `--jobs` runs pages in parallel worker processes; outputs are sorted, so any job count gives the same bytes.
@@ -27,7 +27,7 @@ Recorded for this build: Python 3.11.15, PyMuPDF 1.28.2, pytesseract 0.3.13, Pil
 
 | File | What it holds |
 |---|---|
-| pages/NNN_<sheet>.json, pages/add4_pNN_<sheet>.json | One per page: source file, SHA-256 and page, set page, 01 sheet and title, cited_as (01 File and PDF p.), governed_by / governs (Addendum 4), page size and rotation, counts, title block, words, bluebeam block, tags, quantities, keyed notes, extractor versions |
+| pages/NNN_<sheet>.json, pages/add4_pNN_<sheet>.json | One per page: source file, SHA-256 and page, set page, 01 sheet and title, cited_as (plans_N copy from index/Plan_Set_Crosswalk.csv), governed_by / governs (Addendum 4), page size and rotation, counts, title block, words, bluebeam block, tags, quantities, keyed notes, extractor versions |
 | Sheet_Map.csv | One row per page: 01 sheet vs title-block sheet read, titles, page N OF M, split-part file and page, native file and page, Addendum 4 links, text-layer and OCR counts, mean confidence |
 | Tag_Search_Forms.csv | One row per Ledger row: search forms, family, searchable, and the reasons and rules |
 | Tag_Hits.csv | One row per tag occurrence, with its assignment under the Gate A rules |
@@ -42,7 +42,8 @@ Recorded for this build: Python 3.11.15, PyMuPDF 1.28.2, pytesseract 0.3.13, Pil
 - Join keys for the later Ledger and MTO step: Ledger Row, then sheet number, then set page. Ledger Row is the Project_Ledger.csv record number with the header as 1 (the same numbering as `ledger_to_graph.py`). The crosswalk is keyed on it, not on Tag, because "SD-1" and "PROPOSED-Influent-Sampler" each name two rows.
 - Quantities carry Value and Unit as separate fields, matching the Quantity and Unit columns proposed for Ledger schema rev1.
 - Boxes are PDF points on the page as displayed: origin top left, page rotation applied (set pp.62–96 are /Rotate 270), rounded to 0.01 pt.
-- Set page to native part comes from `library/Plan_Set_Parts.md`. The 01 sheet, title, cited_as and Addendum 4 supersession come from `index/01_Sheet_Index_rev1.md`.
+- Set page to native part comes from `library/Plan_Set_Parts.md`. cited_as (the plans_N copy the index files cite, with duplicate extracts listed) comes from `index/Plan_Set_Crosswalk.csv`; the run stops if the crosswalk's native part, page or sheet disagrees. The 01 sheet, title and Addendum 4 supersession come from `index/01_Sheet_Index_rev1.md`; Add. 4 pages cite the 01 page-level log.
+- Every native source's SHA-256 is checked against `index/Library_Manifest.csv` before any stage runs, and the run stops on a mismatch or a missing row.
 
 ## How a page is read
 
@@ -80,6 +81,7 @@ Recorded for this build: Python 3.11.15, PyMuPDF 1.28.2, pytesseract 0.3.13, Pil
 ## PROPOSED anchors
 
 - Verified: the anchor was found in the native text layer and its text holds the row's quantity, or a key noun from the Ledger Name. Inferred: the same match read by OCR or Bluebeam. Unresolved: the anchor was not found, or its text doesn't match. A row's level is its weakest anchor.
+- Sheet-only anchors (owner, 2026-09-30): a cited sheet with no KN, Det. or Add. anchor is Verified only when the row's quantity (value and unit) is read on that sheet in the text layer. A noun match anywhere on the sheet is Inferred, marked "on sheet, location not pinned".
 - Match term: when the Ledger Name has a quantity (value and unit, e.g. 149 LF, 7 ft), the anchor must hold that quantity; a noun is not enough. Only rows with no quantity use a noun, and only a specific one. The matched term is recorded in the crosswalk's Anchor Check column.
 - Anchor text by type: KN n → that keyed-note entry. Det. n → the detail's region, from its SCALE line up to the title row above and across to the next detail. Add. 4 p.N → that page. A sheet with no anchor → the whole sheet. Other anchors (Demo Schedule n, Item n, …) are Unresolved as not machine-checkable.
 - Key nouns: words of 4+ letters in the Ledger Name, plurals folded (a trailing S dropped), words ending in -ED dropped, and minus the two lists below. Please review both.

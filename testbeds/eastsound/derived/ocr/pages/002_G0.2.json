@@ -32294,9 +32294,12 @@
   ]
  },
  "cited_as": {
-  "basis": "01_Sheet_Index_rev1.md File and PDF p. columns",
+  "basis": "testbeds/eastsound/index/Plan_Set_Crosswalk.csv",
+  "duplicates": [],
   "file": "Pages_from_eswd-wwtp-upgrade-ph1-11x17-plans_1.pdf",
-  "page": 2
+  "indexed_in_01": "Yes",
+  "page": 2,
+  "short_name": "plans_1"
  },
  "counts": {
   "mode3_chars_kept": 869,
@@ -32337,8 +32340,8 @@
   "pytesseract": "0.3.13",
   "python": "3.11.15",
   "schema_version": "1.0",
-  "script": "tools/extract_drawing_text.py",
-  "script_sha256": "86e4d3e4396f5344d37512fd384afbe1368ca6ea0612d3dbd59f331e0d2061ad",
+  "script": "testbeds/eastsound/tools/extract_drawing_text.py",
+  "script_sha256": "5db8dee979c0b6167ea8e598eae48304ca65f2cacac95efc099f9195f110262a",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -32522,7 +32525,8 @@
  "source": {
   "file": "testbeds/eastsound/library/Pages from eswd-wwtp-upgrade-ph1-11x17-plans Part 1.pdf",
   "page": 2,
-  "sha256": "9ca45d82bf86d16d3e2ce57eb76dccf597c497a7dc7f062fc7a171c4bc2c8d57"
+  "sha256": "9ca45d82bf86d16d3e2ce57eb76dccf597c497a7dc7f062fc7a171c4bc2c8d57",
+  "sha256_checked_against": "testbeds/eastsound/index/Library_Manifest.csv"
  },
  "tags": [
   {
