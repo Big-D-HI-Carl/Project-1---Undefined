@@ -1,0 +1,8 @@
+# Eastsound test bed: never change bytes or line endings.
+* -text
+*.pdf binary
+*.png binary
+*.xlsx binary
+*.docx binary
+# Git hooks keep LF line endings so they run on Windows.
+.githooks/* text eol=lf
