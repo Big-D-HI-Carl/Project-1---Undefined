@@ -1,0 +1,8888 @@
+{
+ "bluebeam": {
+  "counts": {
+   "kept": 61,
+   "matched_native": 0,
+   "mode3_words": 61,
+   "sub1pt_dropped": 0
+  },
+  "rule": "render-mode-3 words in the OCR copy, minus words matching a native word (same normalised text, overlap >= 0.5 of the smaller box); Inferred",
+  "source": {
+   "file": "testbeds/eastsound/derived/bluebeam-ocr/Pages from eswd-wwtp-upgrade-ph1-11x17-plans - OCR - Part 2.pdf",
+   "page": 17,
+   "sha256": "128d830cfeb2069728a5857e8d6caa190a290dcdf8016c1a19b0a7a38017ceb6"
+  },
+  "transform_scale": [
+   1.0,
+   1.0
+  ],
+  "words": [
+   {
+    "bbox": [
+     1023.21,
+     21.85,
+     1034.21,
+     28.26
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     1.0
+    ],
+    "line": "b147.2",
+    "method": "bluebeam-ocr",
+    "size": 11.0,
+    "text": ">",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     1035.82,
+     21.85,
+     1040.82,
+     24.63
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     1.0
+    ],
+    "line": "b147.1",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "o",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     1043.36,
+     21.85,
+     1046.36,
+     24.18
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     1.0
+    ],
+    "line": "b147.0",
+    "method": "bluebeam-ocr",
+    "size": 3.0,
+    "text": "Q",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     1033.52,
+     22.1,
+     1036.52,
+     23.77
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     1.0
+    ],
+    "line": "b147.2",
+    "method": "bluebeam-ocr",
+    "size": 3.0,
+    "text": "0",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     1081.17,
+     22.1,
+     1086.17,
+     26.26
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     1.0
+    ],
+    "line": "b146.0",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "m",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     1139.86,
+     22.86,
+     1171.86,
+     150.7
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b150.2",
+    "method": "bluebeam-ocr",
+    "size": 32.0,
+    "text": "WILSON",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     1096.76,
+     55.46,
+     1103.76,
+     67.9
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b145.0",
+    "method": "bluebeam-ocr",
+    "size": 7.0,
+    "text": "ING",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     1170.11,
+     67.77,
+     1181.11,
+     144.7
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b151.0",
+    "method": "bluebeam-ocr",
+    "size": 11.0,
+    "text": "ENGINEERING",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     1190.72,
+     73.6,
+     1197.72,
+     168.5
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b148.0",
+    "method": "bluebeam-ocr",
+    "size": 7.0,
+    "text": "WILSONENGINEERING.COM",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     248.65,
+     98.37,
+     285.75,
+     103.37
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b126.0",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "(53338229%===",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     600.7,
+     98.62,
+     608.76,
+     103.62
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b130.0",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "6**,",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     262.3,
+     206.82,
+     313.73,
+     211.82
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b124.0",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "//7/7///7////7/7////////7/77/",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     1138.98,
+     208.97,
+     1152.98,
+     255.6
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b150.1",
+    "method": "bluebeam-ocr",
+    "size": 14.0,
+    "text": "ALZlea",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     653.5,
+     211.76,
+     656.27,
+     221.76
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b131.0",
+    "method": "bluebeam-ocr",
+    "size": 10.0,
+    "text": "/",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     1187.87,
+     215.79,
+     1194.87,
+     225.11
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b148.1",
+    "method": "bluebeam-ocr",
+    "size": 7.0,
+    "text": "SS",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     1176.92,
+     216.03,
+     1181.92,
+     220.75
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b149.0",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "/A",
+    "word_no": 4
+   },
+   {
+    "bbox": [
+     1178.94,
+     216.3,
+     1190.94,
+     268.25
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b149.1",
+    "method": "bluebeam-ocr",
+    "size": 12.0,
+    "text": "fisieOFfd",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     1184.89,
+     216.44,
+     1192.89,
+     247.1
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b149.2",
+    "method": "bluebeam-ocr",
+    "size": 8.0,
+    "text": "‘00,aG‘e",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     1176.92,
+     222.18,
+     1181.92,
+     224.96
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b149.0",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "_",
+    "word_no": 3
+   },
+   {
+    "bbox": [
+     1176.92,
+     226.35,
+     1181.92,
+     240.25
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b149.0",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "37463",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     417.21,
+     226.92,
+     428.21,
+     234.25
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b140.2",
+    "method": "bluebeam-ocr",
+    "size": 11.0,
+    "text": "()",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     1187.87,
+     227.05,
+     1194.87,
+     249.6
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b148.1",
+    "method": "bluebeam-ocr",
+    "size": 7.0,
+    "text": "JONAL",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     400.77,
+     227.39,
+     405.77,
+     233.5
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b140.4",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "0))",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     605.34,
+     229.03,
+     617.34,
+     235.7
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b135.0",
+    "method": "bluebeam-ocr",
+    "size": 12.0,
+    "text": "8",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     1155.39,
+     230.49,
+     1163.39,
+     241.59
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b150.0",
+    "method": "bluebeam-ocr",
+    "size": 8.0,
+    "text": "CP",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     557.36,
+     235.9,
+     568.36,
+     245.68
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     1.0
+    ],
+    "line": "b136.0",
+    "method": "bluebeam-ocr",
+    "size": 11.0,
+    "text": "fa",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     1176.92,
+     241.63,
+     1181.92,
+     243.02
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b149.0",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": ",",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     1155.39,
+     243.81,
+     1163.39,
+     253.14
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b150.0",
+    "method": "bluebeam-ocr",
+    "size": 8.0,
+    "text": "/7)",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     1176.92,
+     244.4,
+     1181.92,
+     248.85
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b149.0",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "%",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     1155.39,
+     255.35,
+     1163.39,
+     264.25
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b150.0",
+    "method": "bluebeam-ocr",
+    "size": 8.0,
+    "text": "95",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     262.27,
+     297.66,
+     267.27,
+     395.05
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b142.0",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "R0009055925?25-52525?<---------o-o555oT",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     495.21,
+     315.85,
+     506.21,
+     321.35
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b138.2",
+    "method": "bluebeam-ocr",
+    "size": 11.0,
+    "text": "z",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     365.29,
+     324.37,
+     373.29,
+     338.15
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b141.0",
+    "method": "bluebeam-ocr",
+    "size": 8.0,
+    "text": "p00",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     434.19,
+     325.04,
+     442.19,
+     332.15
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b140.0",
+    "method": "bluebeam-ocr",
+    "size": 8.0,
+    "text": "m",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     506.57,
+     337.3,
+     507.57,
+     337.9
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b138.0",
+    "method": "bluebeam-ocr",
+    "size": 1.0,
+    "text": "■",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     456.68,
+     356.9,
+     469.68,
+     363.4
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     1.0
+    ],
+    "line": "b139.0",
+    "method": "bluebeam-ocr",
+    "size": 13.0,
+    "text": "1",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     503.47,
+     375.2,
+     508.47,
+     378.25
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b138.1",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "T",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     374.07,
+     383.66,
+     423.07,
+     410.9
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b140.3",
+    "method": "bluebeam-ocr",
+    "size": 49.0,
+    "text": "5",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     485.79,
+     414.78,
+     497.79,
+     418.1
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b138.5",
+    "method": "bluebeam-ocr",
+    "size": 12.0,
+    "text": "l",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     432.17,
+     415.36,
+     446.17,
+     426.25
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b144.0",
+    "method": "bluebeam-ocr",
+    "size": 14.0,
+    "text": "II",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     442.76,
+     419.3,
+     449.76,
+     425.5
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b144.1",
+    "method": "bluebeam-ocr",
+    "size": 7.0,
+    "text": "ce",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     448.26,
+     419.51,
+     455.26,
+     426.5
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b144.2",
+    "method": "bluebeam-ocr",
+    "size": 7.0,
+    "text": "Ai",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     495.21,
+     434.2,
+     506.21,
+     441.1
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b138.3",
+    "method": "bluebeam-ocr",
+    "size": 11.0,
+    "text": "•l",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     238.8,
+     453.97,
+     263.82,
+     498.97
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b125.0",
+    "method": "bluebeam-ocr",
+    "size": 45.0,
+    "text": "s",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     495.82,
+     461.6,
+     500.82,
+     464.65
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b138.4",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "T",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     363.71,
+     468.7,
+     395.71,
+     486.49
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     1.0
+    ],
+    "line": "b143.0",
+    "method": "bluebeam-ocr",
+    "size": 32.0,
+    "text": "8",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     425.4,
+     469.92,
+     444.4,
+     485.75
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b140.1",
+    "method": "bluebeam-ocr",
+    "size": 19.0,
+    "text": "7/",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     493.95,
+     558.33,
+     518.95,
+     580.55
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b137.0",
+    "method": "bluebeam-ocr",
+    "size": 25.0,
+    "text": "-k",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     571.2,
+     583.42,
+     573.98,
+     588.42
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b127.0",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "5",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     568.55,
+     609.21,
+     576.49,
+     620.21
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b128.0",
+    "method": "bluebeam-ocr",
+    "size": 11.0,
+    "text": "A",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     566.65,
+     681.89,
+     576.65,
+     693.89
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b129.0",
+    "method": "bluebeam-ocr",
+    "size": 12.0,
+    "text": "1/",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     628.8,
+     685.07,
+     635.99,
+     692.07
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b129.1",
+    "method": "bluebeam-ocr",
+    "size": 7.0,
+    "text": "△I",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     1026.95,
+     704.13,
+     1063.65,
+     726.13
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b134.0",
+    "method": "bluebeam-ocr",
+    "size": 22.0,
+    "text": "811",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     365.75,
+     742.8,
+     371.75,
+     748.8
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b132.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "10",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     437.75,
+     742.8,
+     443.75,
+     748.8
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b132.2",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "10",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     403.45,
+     743.22,
+     406.23,
+     748.22
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b132.1",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "0",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     473.5,
+     743.47,
+     479.06,
+     748.47
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b132.3",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "20",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     368.9,
+     760.02,
+     385.28,
+     765.02
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b133.0",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "SCALE",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     464.65,
+     760.02,
+     477.41,
+     765.02
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b133.1",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "FEET",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     396.7,
+     764.12,
+     428.89,
+     769.12
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b133.2",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "HORIZONTAL",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     430.28,
+     764.12,
+     446.66,
+     769.12
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b133.2",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "SCALE",
+    "word_no": 1
+   }
+  ]
+ },
+ "cited_as": {
+  "basis": "01_Sheet_Index_rev1.md File and PDF p. columns",
+  "file": "Pages_from_eswd-wwtp-upgrade-ph1-11x17-plans_9.pdf",
+  "page": 1
+ },
+ "counts": {
+  "mode3_chars_kept": 0,
+  "ocr_mean_conf": 87.2,
+  "ocr_pass_duplicates_dropped": 395,
+  "ocr_rot90_words": 428,
+  "ocr_suppressed_by_text_layer": 334,
+  "ocr_upright_words": 354,
+  "ocr_words": 387,
+  "ocr_words_ge_60": 351,
+  "ocr_words_merged": 53,
+  "sub1pt_dropped_chars": 252,
+  "sub1pt_dropped_words": 72,
+  "text_layer_chars": 2101,
+  "text_layer_words": 417,
+  "text_layer_words_kept": 345,
+  "text_words_without_chars": 0
+ },
+ "discipline_01": "Electrical",
+ "extractor": {
+  "conf_flag": 60,
+  "dpi": 400,
+  "eng_traineddata_sha256": "7d4322bd2a7749724879683fc3912cb542f19906c83bcc1a52132556427170b2",
+  "env": {
+   "OMP_THREAD_LIMIT": "1",
+   "PYTHONHASHSEED": "0"
+  },
+  "mupdf": "1.28.2",
+  "oem": 1,
+  "overlap_rule": 0.5,
+  "passes": [
+   "upright",
+   "rot90"
+  ],
+  "pillow": "12.3.0",
+  "psm": 3,
+  "pymupdf": "1.28.2",
+  "pytesseract": "0.3.13",
+  "python": "3.11.15",
+  "schema_version": "1.0",
+  "script": "tools/extract_drawing_text.py",
+  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "sub_pt_drop": 1.0,
+  "tesseract": [
+   "tesseract 5.3.4",
+   "leptonica-1.82.0",
+   "Found AVX512BW",
+   "Found AVX512F",
+   "Found AVX512VNNI",
+   "Found AVX2",
+   "Found AVX",
+   "Found FMA",
+   "Found SSE4.1",
+   "Found OpenMP 201511",
+   "Found libarchive 3.7.2 zlib/1.3 liblzma/5.4.5 bz2lib/1.0.8 liblz4/1.9.4 libzstd/1.5.5",
+   "Found libcurl/8.5.0 OpenSSL/3.0.13 zlib/1.3 brotli/1.1.0 zstd/1.5.5 libidn2/2.3.7 libpsl/0.21.2 (+libidn2/2.3.7) libssh/0.10.6/openssl/zlib nghttp2/1.59.0 librtmp/2.3 OpenLDAP/2.6.10"
+  ]
+ },
+ "governed_by": null,
+ "governs": null,
+ "page": {
+  "height": 792.0,
+  "mediabox": [
+   0.0,
+   0.0,
+   792.0,
+   1224.0
+  ],
+  "rotation": 270,
+  "width": 1224.0
+ },
+ "page_key": "065",
+ "schema_version": "1.0",
+ "set_page": 65,
+ "sheet_01": "E0.4",
+ "source": {
+  "file": "testbeds/eastsound/library/Pages from eswd-wwtp-upgrade-ph1-11x17-plans - Part 3.pdf",
+  "page": 17,
+  "sha256": "ffe9e975ceb153cab60328a2459d826f96f96e0edaa77e0279a1d27e2e6de5fa"
+ },
+ "title_01": "AREA CLASSIFICATION SITE PLAN",
+ "title_block": {
+  "date": {
+   "bbox": [
+    1143.84,
+    675.3,
+    1149.82,
+    712.44
+   ],
+   "conf": null,
+   "method": "text-layer",
+   "value": "09-12-2022"
+  },
+  "page_of": {
+   "bbox": [
+    1184.07,
+    723.97,
+    1194.03,
+    766.26
+   ],
+   "conf": null,
+   "method": "text-layer",
+   "of": "96",
+   "page": "65"
+  },
+  "revision": {
+   "entries": [],
+   "label_bbox": [
+    1026.72,
+    21.96,
+    1048.14,
+    25.2
+   ],
+   "label_method": "ocr"
+  },
+  "sheet": {
+   "bbox": [
+    1143.94,
+    728.43,
+    1158.88,
+    760.14
+   ],
+   "conf": null,
+   "dist_to_label": 6.57,
+   "method": "text-layer",
+   "raw": "E0.4",
+   "value": "E0.4"
+  },
+  "sheet_label_bbox": [
+   1132.39,
+   736.79,
+   1137.37,
+   751.68
+  ],
+  "source": "text-layer",
+  "title": {
+   "bbox": [
+    1187.19,
+    431.1,
+    1196.16,
+    574.02
+   ],
+   "conf": null,
+   "method": "text-layer",
+   "value": "AREA CLASSIFICATION SITE PLAN"
+  }
+ },
+ "words": [
+  {
+   "bbox": [
+    989.64,
+    21.96,
+    996.3,
+    25.2
+   ],
+   "conf": 95.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up129.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.24,
+   "text": "NO.",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1026.72,
+    21.96,
+    1048.14,
+    25.2
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up129.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.24,
+   "text": "REVISIONS",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    1109.34,
+    21.96,
+    1119.78,
+    25.2
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up130.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.24,
+   "text": "DATE",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1170.36,
+    25.56,
+    1178.46,
+    33.12
+   ],
+   "conf": 45.0,
+   "conf_ge_60": false,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r90192.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 7.56,
+   "text": "Oo",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1170.54,
+    37.44,
+    1178.28,
+    44.46
+   ],
+   "conf": 88.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r90192.1.2",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 7.02,
+   "text": "z",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    801.54,
+    53.1,
+    826.19,
+    62.15
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t96.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 9.05,
+   "text": "AREA",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    828.7,
+    53.1,
+    903.14,
+    62.15
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t96.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 9.05,
+   "text": "CLASSIFICATION",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    905.66,
+    53.1,
+    945.39,
+    62.15
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t96.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 9.05,
+   "text": "LEGEND:",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    1191.24,
+    55.44,
+    1196.28,
+    60.66
+   ],
+   "conf": 94.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up178.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 5.04,
+   "text": "=",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1170.54,
+    57.06,
+    1178.28,
+    63.72
+   ],
+   "conf": 18.0,
+   "conf_ge_60": false,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r90192.1.3",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 6.66,
+   "text": "1a",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1116.04,
+    58.79,
+    1121.32,
+    65.54
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t81.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.28,
+   "text": "C1",
+   "word_no": 5
+  },
+  {
+   "bbox": [
+    1083.78,
+    58.86,
+    1102.14,
+    97.2
+   ],
+   "conf": 81.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r90184.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 18.36,
+   "text": "ZIEK",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    1191.24,
+    63.0,
+    1196.28,
+    67.32
+   ],
+   "conf": 76.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up178.1.2",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.32,
+   "text": "O",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1116.04,
+    67.01,
+    1121.32,
+    79.04
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t81.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.28,
+   "text": "Suite",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    1170.54,
+    68.76,
+    1178.28,
+    74.88
+   ],
+   "conf": 78.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r90192.1.4",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 6.12,
+   "text": "Wu",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1191.24,
+    69.3,
+    1196.28,
+    72.9
+   ],
+   "conf": 47.0,
+   "conf_ge_60": false,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up178.1.3",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.6,
+   "text": "Oo",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1191.24,
+    78.3,
+    1196.28,
+    82.26
+   ],
+   "conf": 0.0,
+   "conf_ge_60": false,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up178.1.4",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.96,
+   "text": "G)",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1121.98,
+    79.09,
+    1127.26,
+    93.77
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t81.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.28,
+   "text": "98801",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    1170.54,
+    80.28,
+    1178.28,
+    86.22
+   ],
+   "conf": 61.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r90192.1.5",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 5.94,
+   "text": "ui",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1116.04,
+    80.51,
+    1121.32,
+    88.73
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t81.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.28,
+   "text": "Rd,",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    1191.24,
+    84.6,
+    1196.28,
+    88.2
+   ],
+   "conf": 70.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up178.1.5",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.6,
+   "text": "2",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1116.04,
+    90.19,
+    1121.32,
+    107.8
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t81.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.28,
+   "text": "Garden",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    1170.54,
+    91.98,
+    1178.28,
+    98.82
+   ],
+   "conf": 71.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r90192.1.6",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 6.84,
+   "text": "z",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    896.4,
+    93.4,
+    917.01,
+    99.69
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t97.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 6.29,
+   "text": "CLASS",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    918.76,
+    93.4,
+    922.25,
+    99.69
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t97.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 6.29,
+   "text": "I,",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    924.0,
+    93.4,
+    951.59,
+    99.69
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t97.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 6.29,
+   "text": "DIVISION",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    953.34,
+    93.4,
+    956.83,
+    99.69
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t97.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 6.29,
+   "text": "1",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    1191.24,
+    93.78,
+    1196.28,
+    96.84
+   ],
+   "conf": 84.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up178.1.6",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.06,
+   "text": "ac",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1121.98,
+    95.23,
+    1127.26,
+    103.74
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t81.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.28,
+   "text": "WA",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1191.24,
+    99.36,
+    1196.28,
+    102.06
+   ],
+   "conf": 80.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up178.1.7",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 2.7,
+   "text": "Lu",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1079.64,
+    100.62,
+    1103.4,
+    135.72
+   ],
+   "conf": 83.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r90184.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 23.76,
+   "text": "(ZK)",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1191.24,
+    104.4,
+    1196.28,
+    107.1
+   ],
+   "conf": 92.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up178.1.8",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 2.7,
+   "text": "Lu",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1121.98,
+    105.21,
+    1127.26,
+    133.38
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t81.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.28,
+   "text": "Wenatchee,",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    1116.04,
+    109.27,
+    1121.32,
+    123.65
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t81.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.28,
+   "text": "Ohme",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1191.24,
+    109.8,
+    1196.28,
+    113.4
+   ],
+   "conf": 62.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up178.1.9",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.6,
+   "text": "Zz",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1170.36,
+    112.68,
+    1178.46,
+    120.24
+   ],
+   "conf": 47.0,
+   "conf_ge_60": false,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r90192.1.7",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 7.56,
+   "text": "Oo",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1191.24,
+    119.16,
+    1196.28,
+    123.12
+   ],
+   "conf": 0.0,
+   "conf_ge_60": false,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up178.1.10",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.96,
+   "text": "oc)",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1116.04,
+    125.11,
+    1121.32,
+    133.92
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t81.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.28,
+   "text": "123",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    1170.54,
+    125.28,
+    1178.28,
+    132.3
+   ],
+   "conf": 74.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r90192.1.8",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 7.02,
+   "text": "z",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1191.24,
+    125.46,
+    1196.28,
+    129.06
+   ],
+   "conf": 71.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up178.1.11",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.6,
+   "text": "2",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1191.24,
+    131.58,
+    1196.28,
+    134.28
+   ],
+   "conf": 77.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up178.1.12",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 2.7,
+   "text": "Lu",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1191.24,
+    136.98,
+    1196.28,
+    140.58
+   ],
+   "conf": 60.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up178.1.13",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.6,
+   "text": "Zz",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1170.54,
+    138.6,
+    1178.28,
+    144.54
+   ],
+   "conf": 61.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r90192.1.9",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 5.94,
+   "text": "ui",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    896.4,
+    140.56,
+    917.01,
+    146.85
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t98.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 6.29,
+   "text": "CLASS",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    918.76,
+    140.56,
+    922.25,
+    146.85
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t98.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 6.29,
+   "text": "I,",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    924.0,
+    140.56,
+    951.59,
+    146.85
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t98.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 6.29,
+   "text": "DIVISION",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    953.34,
+    140.56,
+    956.83,
+    146.85
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t98.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 6.29,
+   "text": "2",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    1191.24,
+    142.92,
+    1196.28,
+    147.24
+   ],
+   "conf": 49.0,
+   "conf_ge_60": false,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up178.1.14",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.32,
+   "text": "oO",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1191.24,
+    149.22,
+    1196.28,
+    152.28
+   ],
+   "conf": 61.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up178.1.15",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.06,
+   "text": "ia)",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    432.9,
+    152.7,
+    439.33,
+    157.73
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t104.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "C2",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    561.42,
+    152.88,
+    567.85,
+    157.91
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t104.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "C1",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    1191.24,
+    153.9,
+    1196.28,
+    156.42
+   ],
+   "conf": 81.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up178.1.16",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 2.52,
+   "text": "4",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1191.24,
+    161.82,
+    1196.28,
+    168.3
+   ],
+   "conf": 77.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r90193.1.17",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 5.04,
+   "text": "=",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    896.22,
+    187.72,
+    941.97,
+    194.01
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t99.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 6.29,
+   "text": "UNCLASSIFIED",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    398.34,
+    192.48,
+    404.77,
+    197.51
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t99.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "C9",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    488.7,
+    207.24,
+    495.13,
+    212.27
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t105.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "C8",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    1203.85,
+    225.37,
+    1208.83,
+    256.32
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t123.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 4.98,
+   "text": "09-12-2022",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    802.26,
+    231.48,
+    845.52,
+    240.53
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t61.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 9.05,
+   "text": "GENERAL",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    848.03,
+    231.48,
+    881.73,
+    240.53
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t61.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 9.05,
+   "text": "NOTES:",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    695.7,
+    232.98,
+    702.13,
+    238.01
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t109.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "C2",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    792.18,
+    247.56,
+    796.37,
+    252.59
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t58.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "1.",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    803.52,
+    247.56,
+    817.21,
+    252.59
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t58.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "AREA",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    818.61,
+    247.56,
+    863.32,
+    252.59
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t58.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "CLASSIFICATIONS",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    864.71,
+    247.56,
+    881.76,
+    252.59
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t58.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "BASED",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    883.16,
+    247.56,
+    890.7,
+    252.59
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t58.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "ON",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    892.1,
+    247.56,
+    905.51,
+    252.59
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t58.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "NFPA",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    906.91,
+    247.56,
+    916.69,
+    252.59
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t58.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "820,",
+   "word_no": 5
+  },
+  {
+   "bbox": [
+    918.09,
+    247.56,
+    945.75,
+    252.59
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t58.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "STANDARD",
+   "word_no": 6
+  },
+  {
+   "bbox": [
+    947.14,
+    247.56,
+    957.76,
+    252.59
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t58.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "FOR",
+   "word_no": 7
+  },
+  {
+   "bbox": [
+    959.16,
+    247.56,
+    970.61,
+    252.59
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t58.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "FIRE",
+   "word_no": 8
+  },
+  {
+   "bbox": [
+    972.01,
+    247.56,
+    1004.97,
+    252.59
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t58.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "PROTECTION",
+   "word_no": 9
+  },
+  {
+   "bbox": [
+    1006.37,
+    247.56,
+    1011.4,
+    252.59
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t58.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "IN",
+   "word_no": 10
+  },
+  {
+   "bbox": [
+    1012.8,
+    247.56,
+    1048.84,
+    252.59
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t58.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "WASTEWATER",
+   "word_no": 11
+  },
+  {
+   "bbox": [
+    803.34,
+    253.68,
+    834.07,
+    258.71
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t58.2",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "TREATMENT",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    835.47,
+    253.68,
+    846.08,
+    258.71
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t58.2",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "AND",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    847.48,
+    253.68,
+    879.61,
+    258.71
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t58.2",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "COLLECTION",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    881.01,
+    253.68,
+    909.23,
+    258.71
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t58.2",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "FACILITIES,",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    910.63,
+    253.68,
+    921.81,
+    258.71
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t58.2",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "2020",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    923.21,
+    253.68,
+    945.0,
+    258.71
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t58.2",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "EDITION.",
+   "word_no": 5
+  },
+  {
+   "bbox": [
+    416.88,
+    258.18,
+    423.31,
+    263.21
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t100.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "C7",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    792.54,
+    265.74,
+    796.73,
+    270.77
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t59.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "2.",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    803.16,
+    265.74,
+    827.75,
+    270.77
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t59.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "PROCESS",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    829.15,
+    265.74,
+    846.19,
+    270.77
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t59.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "BASED",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    847.59,
+    265.74,
+    855.13,
+    270.77
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t59.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "ON",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    856.53,
+    265.74,
+    887.26,
+    270.77
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t59.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "TREATMENT",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    888.66,
+    265.74,
+    895.64,
+    270.77
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t59.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "OF",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    897.04,
+    265.74,
+    933.08,
+    270.77
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t59.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "WASTEWATER",
+   "word_no": 5
+  },
+  {
+   "bbox": [
+    934.47,
+    265.74,
+    949.28,
+    270.77
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t59.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "FROM",
+   "word_no": 6
+  },
+  {
+   "bbox": [
+    950.68,
+    265.74,
+    983.65,
+    270.77
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t59.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "RESIDENTIAL",
+   "word_no": 7
+  },
+  {
+   "bbox": [
+    985.04,
+    265.74,
+    998.18,
+    270.77
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t59.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "STEP",
+   "word_no": 8
+  },
+  {
+   "bbox": [
+    999.58,
+    265.74,
+    1024.72,
+    270.77
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t59.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "STATIONS",
+   "word_no": 9
+  },
+  {
+   "bbox": [
+    1026.12,
+    265.74,
+    1036.46,
+    270.77
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t59.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "PER",
+   "word_no": 10
+  },
+  {
+   "bbox": [
+    1037.86,
+    265.74,
+    1051.27,
+    270.77
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t59.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "NFPA",
+   "word_no": 11
+  },
+  {
+   "bbox": [
+    803.34,
+    271.86,
+    825.98,
+    276.89
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t59.2",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "820-2020,",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    827.38,
+    271.86,
+    843.31,
+    276.89
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t59.2",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "TABLE",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    844.71,
+    271.86,
+    857.29,
+    276.89
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t59.2",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "4.2.2,",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    858.69,
+    271.86,
+    870.98,
+    276.89
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t59.2",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "ROW",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    872.37,
+    271.86,
+    876.57,
+    276.89
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t59.2",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "9.",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    1132.39,
+    282.84,
+    1137.37,
+    288.8
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t70.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 4.98,
+   "text": "BY",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1180.27,
+    283.44,
+    1185.25,
+    289.41
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t83.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 4.98,
+   "text": "BY",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    792.54,
+    283.92,
+    796.73,
+    288.95
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t60.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "3.",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    803.16,
+    283.92,
+    834.17,
+    288.95
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t60.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "ELECTRICAL",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    835.57,
+    283.92,
+    871.34,
+    288.95
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t60.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "INSTALLATION",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    872.74,
+    283.92,
+    877.76,
+    288.95
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t60.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "IN",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    879.16,
+    283.92,
+    908.5,
+    288.95
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t60.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "CLASSIFIED",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    909.9,
+    283.92,
+    926.95,
+    288.95
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t60.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "AREAS",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    928.34,
+    283.92,
+    944.27,
+    288.95
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t60.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "SHALL",
+   "word_no": 5
+  },
+  {
+   "bbox": [
+    945.67,
+    283.92,
+    966.91,
+    288.95
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t60.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "COMPLY",
+   "word_no": 6
+  },
+  {
+   "bbox": [
+    968.3,
+    283.92,
+    981.15,
+    288.95
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t60.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "WITH",
+   "word_no": 7
+  },
+  {
+   "bbox": [
+    982.55,
+    283.92,
+    992.61,
+    288.95
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t60.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "THE",
+   "word_no": 8
+  },
+  {
+   "bbox": [
+    994.0,
+    283.92,
+    1034.51,
+    288.95
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t60.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "REQUIREMENTS",
+   "word_no": 9
+  },
+  {
+   "bbox": [
+    1035.91,
+    283.92,
+    1042.89,
+    288.95
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t60.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "OF",
+   "word_no": 10
+  },
+  {
+   "bbox": [
+    1044.29,
+    283.92,
+    1057.7,
+    288.95
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t60.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "NFPA",
+   "word_no": 11
+  },
+  {
+   "bbox": [
+    1156.33,
+    285.78,
+    1161.31,
+    291.75
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t69.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 4.98,
+   "text": "BY",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    803.34,
+    290.04,
+    810.33,
+    295.07
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t60.2",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "70,",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    811.73,
+    290.04,
+    836.87,
+    295.07
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t60.2",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "NATIONAL",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    838.27,
+    290.04,
+    869.29,
+    295.07
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t60.2",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "ELECTRICAL",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    870.68,
+    290.04,
+    886.61,
+    295.07
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t60.2",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "CODE,",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    888.01,
+    290.04,
+    898.62,
+    295.07
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t60.2",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "AND",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    900.02,
+    290.04,
+    917.62,
+    295.07
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t60.2",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "OTHER",
+   "word_no": 5
+  },
+  {
+   "bbox": [
+    919.02,
+    290.04,
+    935.22,
+    295.07
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t60.2",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "STATE",
+   "word_no": 6
+  },
+  {
+   "bbox": [
+    936.62,
+    290.04,
+    947.24,
+    295.07
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t60.2",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "AND",
+   "word_no": 7
+  },
+  {
+   "bbox": [
+    948.63,
+    290.04,
+    969.87,
+    295.07
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t60.2",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "AGENCY",
+   "word_no": 8
+  },
+  {
+   "bbox": [
+    971.27,
+    290.04,
+    1011.77,
+    295.07
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t60.2",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "REQUIREMENTS",
+   "word_no": 9
+  },
+  {
+   "bbox": [
+    1013.17,
+    290.04,
+    1019.88,
+    295.07
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t60.2",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "AS",
+   "word_no": 10
+  },
+  {
+   "bbox": [
+    1021.28,
+    290.04,
+    1047.82,
+    295.07
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t60.2",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "REQUIRED",
+   "word_no": 11
+  },
+  {
+   "bbox": [
+    1049.21,
+    290.04,
+    1055.92,
+    295.07
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t60.2",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "BY",
+   "word_no": 12
+  },
+  {
+   "bbox": [
+    1132.39,
+    290.38,
+    1137.37,
+    314.64
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t70.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 4.98,
+   "text": "DESIGNED",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    1180.27,
+    290.98,
+    1185.25,
+    313.92
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t83.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 4.98,
+   "text": "CHECKED",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    705.42,
+    291.12,
+    711.85,
+    296.15
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t110.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "C2",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    1156.33,
+    293.33,
+    1161.31,
+    311.58
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t69.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 4.98,
+   "text": "DRAWN",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    1144.27,
+    295.81,
+    1149.25,
+    301.68
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t72.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 4.98,
+   "text": "BZ",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    1168.39,
+    295.81,
+    1173.37,
+    301.68
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t71.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 4.98,
+   "text": "BZ",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    1192.33,
+    295.81,
+    1197.31,
+    301.68
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t84.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 4.98,
+   "text": "BZ",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    803.34,
+    295.98,
+    813.4,
+    301.01
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t60.3",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "THE",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    814.79,
+    295.98,
+    843.85,
+    301.01
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t60.3",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "AUTHORITY",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    845.25,
+    295.98,
+    864.52,
+    301.01
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t60.3",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "HAVING",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    865.92,
+    295.98,
+    902.52,
+    301.01
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t60.3",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "JURISDICTION.",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    802.98,
+    316.89,
+    846.99,
+    324.43
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t86.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 7.54,
+   "text": "CLASSIFIED",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    849.09,
+    316.89,
+    869.63,
+    324.43
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t86.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 7.54,
+   "text": "AREA",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    871.72,
+    316.89,
+    899.8,
+    324.43
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t86.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 7.54,
+   "text": "NOTES:",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    1157.4,
+    324.2,
+    1162.85,
+    364.32
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t63.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.45,
+   "text": "WASHINGTON",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    691.92,
+    324.24,
+    698.35,
+    329.27
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t111.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "C2",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    802.8,
+    331.44,
+    827.38,
+    336.47
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t87.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "INFLUENT",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    828.78,
+    331.44,
+    843.31,
+    336.47
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t87.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "PUMP",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    844.71,
+    331.44,
+    867.9,
+    336.47
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t87.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "STATION:",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    870.69,
+    331.44,
+    897.79,
+    336.47
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t87.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "PRIMARILY",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    899.19,
+    331.44,
+    932.16,
+    336.47
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t87.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "RESIDENTIAL",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    933.56,
+    331.44,
+    952.0,
+    336.47
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t87.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "SEWER",
+   "word_no": 5
+  },
+  {
+   "bbox": [
+    953.4,
+    331.44,
+    955.07,
+    336.47
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t87.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "-",
+   "word_no": 6
+  },
+  {
+   "bbox": [
+    956.47,
+    331.44,
+    972.96,
+    336.47
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t87.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "CLASS",
+   "word_no": 7
+  },
+  {
+   "bbox": [
+    974.36,
+    331.44,
+    977.15,
+    336.47
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t87.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "I,",
+   "word_no": 8
+  },
+  {
+   "bbox": [
+    978.55,
+    331.44,
+    986.93,
+    336.47
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t87.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "DIV",
+   "word_no": 9
+  },
+  {
+   "bbox": [
+    988.33,
+    331.44,
+    991.13,
+    336.47
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t87.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "2",
+   "word_no": 10
+  },
+  {
+   "bbox": [
+    992.52,
+    331.44,
+    1002.86,
+    336.47
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t87.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "PER",
+   "word_no": 11
+  },
+  {
+   "bbox": [
+    1004.26,
+    331.44,
+    1017.67,
+    336.47
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t87.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "NFPA",
+   "word_no": 12
+  },
+  {
+   "bbox": [
+    1019.07,
+    331.44,
+    1040.31,
+    336.47
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t87.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "820-2020",
+   "word_no": 13
+  },
+  {
+   "bbox": [
+    791.1,
+    331.62,
+    797.53,
+    336.65
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t85.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "C1",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    803.16,
+    337.56,
+    819.09,
+    342.59
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t87.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "TABLE",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    820.49,
+    337.56,
+    833.07,
+    342.59
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t87.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "4.2.2,",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    834.47,
+    337.56,
+    846.76,
+    342.59
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t87.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "ROW",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    848.15,
+    337.56,
+    857.94,
+    342.59
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t87.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "10a.",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    860.73,
+    337.56,
+    880.57,
+    342.59
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t87.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "EXTENT",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    881.97,
+    337.56,
+    888.95,
+    342.59
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t87.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "OF",
+   "word_no": 5
+  },
+  {
+   "bbox": [
+    890.35,
+    337.56,
+    919.69,
+    342.59
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t87.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "CLASSIFIED",
+   "word_no": 6
+  },
+  {
+   "bbox": [
+    921.09,
+    337.56,
+    948.19,
+    342.59
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t87.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "LOCATION:",
+   "word_no": 7
+  },
+  {
+   "bbox": [
+    950.99,
+    337.56,
+    968.86,
+    342.59
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t87.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "WITHIN",
+   "word_no": 8
+  },
+  {
+   "bbox": [
+    970.26,
+    337.56,
+    997.92,
+    342.59
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t87.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "ENCLOSED",
+   "word_no": 9
+  },
+  {
+   "bbox": [
+    999.32,
+    337.56,
+    1017.76,
+    342.59
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t87.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "SPACE.",
+   "word_no": 10
+  },
+  {
+   "bbox": [
+    1136.51,
+    345.17,
+    1150.15,
+    411.65
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t76.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 13.64,
+   "text": "DISTRICT",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    802.98,
+    349.62,
+    821.14,
+    354.65
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t88.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "BELOW",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    822.6,
+    349.62,
+    840.48,
+    354.65
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t88.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "GRADE",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    842.04,
+    349.62,
+    868.58,
+    354.65
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t88.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "METERING",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    869.94,
+    349.62,
+    886.15,
+    354.65
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t88.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "VAULT",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    887.76,
+    349.62,
+    900.61,
+    354.65
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t88.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "WITH",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    901.98,
+    349.62,
+    922.66,
+    354.65
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t88.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "CLOSED",
+   "word_no": 5
+  },
+  {
+   "bbox": [
+    924.3,
+    349.62,
+    941.35,
+    354.65
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t88.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "PIPING",
+   "word_no": 6
+  },
+  {
+   "bbox": [
+    942.84,
+    349.62,
+    964.91,
+    354.65
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t88.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "SYSTEM:",
+   "word_no": 7
+  },
+  {
+   "bbox": [
+    967.86,
+    349.62,
+    984.35,
+    354.65
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t88.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "CLASS",
+   "word_no": 8
+  },
+  {
+   "bbox": [
+    985.86,
+    349.62,
+    988.66,
+    354.65
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t88.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "I,",
+   "word_no": 9
+  },
+  {
+   "bbox": [
+    990.18,
+    349.62,
+    998.56,
+    354.65
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t88.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "DIV",
+   "word_no": 10
+  },
+  {
+   "bbox": [
+    999.9,
+    349.62,
+    1002.7,
+    354.65
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t88.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "2",
+   "word_no": 11
+  },
+  {
+   "bbox": [
+    1004.22,
+    349.62,
+    1014.56,
+    354.65
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t88.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "PER",
+   "word_no": 12
+  },
+  {
+   "bbox": [
+    1016.1,
+    349.62,
+    1029.51,
+    354.65
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t88.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "NFPA",
+   "word_no": 13
+  },
+  {
+   "bbox": [
+    1031.04,
+    349.62,
+    1052.28,
+    354.65
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t88.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "820-2020",
+   "word_no": 14
+  },
+  {
+   "bbox": [
+    791.1,
+    350.16,
+    797.53,
+    355.19
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t113.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "C2",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    803.16,
+    355.74,
+    819.09,
+    360.77
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t88.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "TABLE",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    820.49,
+    355.74,
+    833.07,
+    360.77
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t88.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "4.2.2,",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    834.47,
+    355.74,
+    846.76,
+    360.77
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t88.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "ROW",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    848.15,
+    355.74,
+    856.54,
+    360.77
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t88.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "10a",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    857.94,
+    355.74,
+    868.55,
+    360.77
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t88.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "AND",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    869.95,
+    355.74,
+    879.74,
+    360.77
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t88.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "34a.",
+   "word_no": 5
+  },
+  {
+   "bbox": [
+    882.53,
+    355.74,
+    902.37,
+    360.77
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t88.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "EXTENT",
+   "word_no": 6
+  },
+  {
+   "bbox": [
+    903.77,
+    355.74,
+    910.75,
+    360.77
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t88.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "OF",
+   "word_no": 7
+  },
+  {
+   "bbox": [
+    912.15,
+    355.74,
+    941.49,
+    360.77
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t88.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "CLASSIFIED",
+   "word_no": 8
+  },
+  {
+   "bbox": [
+    942.89,
+    355.74,
+    969.99,
+    360.77
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t88.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "LOCATION:",
+   "word_no": 9
+  },
+  {
+   "bbox": [
+    972.78,
+    355.74,
+    990.66,
+    360.77
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t88.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "WITHIN",
+   "word_no": 10
+  },
+  {
+   "bbox": [
+    992.06,
+    355.74,
+    1019.72,
+    360.77
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t88.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "ENCLOSED",
+   "word_no": 11
+  },
+  {
+   "bbox": [
+    1021.12,
+    355.74,
+    1039.56,
+    360.77
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t88.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "SPACE.",
+   "word_no": 12
+  },
+  {
+   "bbox": [
+    1165.64,
+    356.27,
+    1175.46,
+    359.37
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t77.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 9.82,
+   "text": "I",
+   "word_no": 6
+  },
+  {
+   "bbox": [
+    1165.64,
+    362.77,
+    1175.46,
+    395.66
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t77.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 9.82,
+   "text": "PHASE",
+   "word_no": 5
+  },
+  {
+   "bbox": [
+    710.28,
+    363.12,
+    716.71,
+    368.15
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t112.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "C2",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    803.34,
+    367.8,
+    825.97,
+    372.83
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t89.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "AEROBIC",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    827.64,
+    367.8,
+    858.37,
+    372.83
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t89.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "TREATMENT",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    860.22,
+    367.8,
+    867.2,
+    372.83
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t89.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "OF",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    868.86,
+    367.8,
+    904.9,
+    372.83
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t89.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "WASTEWATER",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    906.66,
+    367.8,
+    934.6,
+    372.83
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t89.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "PRECEDED",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    936.36,
+    367.8,
+    943.07,
+    372.83
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t89.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "BY",
+   "word_no": 5
+  },
+  {
+   "bbox": [
+    944.82,
+    367.8,
+    967.73,
+    372.83
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t89.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "PRIMARY",
+   "word_no": 6
+  },
+  {
+   "bbox": [
+    969.48,
+    367.8,
+    1001.61,
+    372.83
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t89.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "TREATMENT:",
+   "word_no": 7
+  },
+  {
+   "bbox": [
+    1003.32,
+    367.8,
+    1039.92,
+    372.83
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t89.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "UNCLASSIFIED",
+   "word_no": 8
+  },
+  {
+   "bbox": [
+    1041.66,
+    367.8,
+    1052.0,
+    372.83
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t89.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "PER",
+   "word_no": 9
+  },
+  {
+   "bbox": [
+    791.1,
+    368.7,
+    797.53,
+    373.73
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t114.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "C3",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    802.98,
+    373.74,
+    816.39,
+    378.77
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t89.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "NFPA",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    817.79,
+    373.74,
+    839.03,
+    378.77
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t89.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "820-2020",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    840.43,
+    373.74,
+    856.36,
+    378.77
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t89.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "TABLE",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    857.76,
+    373.74,
+    877.33,
+    378.77
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t89.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "5.2.2.11.",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    429.51,
+    374.85,
+    429.95,
+    376.74
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t26.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 0.44,
+   "text": "OUTLET",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    439.95,
+    374.85,
+    440.39,
+    376.74
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t55.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 0.44,
+   "text": "OUTLET",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    516.06,
+    383.94,
+    519.84,
+    392.76
+   ],
+   "conf": 89.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up109.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.78,
+   "text": "\\",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    802.98,
+    385.8,
+    809.96,
+    390.83
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t90.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "UV",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    811.36,
+    385.8,
+    846.84,
+    390.83
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t90.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "DISINFECTION",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    848.24,
+    385.8,
+    864.72,
+    390.83
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t90.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "UNITS:",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    866.12,
+    385.8,
+    902.72,
+    390.83
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t90.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "UNCLASSIFIED",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    904.12,
+    385.8,
+    914.46,
+    390.83
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t90.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "PER",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    915.86,
+    385.8,
+    929.27,
+    390.83
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t90.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "NFPA",
+   "word_no": 5
+  },
+  {
+   "bbox": [
+    930.66,
+    385.8,
+    951.91,
+    390.83
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t90.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "820-2020",
+   "word_no": 6
+  },
+  {
+   "bbox": [
+    953.31,
+    385.8,
+    969.24,
+    390.83
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t90.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "TABLE",
+   "word_no": 7
+  },
+  {
+   "bbox": [
+    970.63,
+    385.8,
+    990.2,
+    390.83
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t90.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "5.2.2.26.",
+   "word_no": 8
+  },
+  {
+   "bbox": [
+    791.1,
+    386.34,
+    797.53,
+    391.37
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t115.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "C4",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    550.8,
+    387.6,
+    557.23,
+    392.63
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t106.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "C3",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    379.8,
+    397.32,
+    386.23,
+    402.35
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t101.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "C4",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    1165.64,
+    399.05,
+    1175.46,
+    405.28
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t77.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 9.82,
+   "text": "-",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    791.1,
+    403.44,
+    797.53,
+    408.47
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t117.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "C5",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    803.16,
+    403.98,
+    810.7,
+    409.01
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t91.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "2W",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    812.1,
+    403.98,
+    826.63,
+    409.01
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t91.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "PUMP",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    828.02,
+    403.98,
+    851.22,
+    409.01
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t91.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "STATION:",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    852.61,
+    403.98,
+    889.21,
+    409.01
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t91.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "UNCLASSIFIED",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    890.61,
+    403.98,
+    900.95,
+    409.01
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t91.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "PER",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    902.35,
+    403.98,
+    915.76,
+    409.01
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t91.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "NFPA",
+   "word_no": 5
+  },
+  {
+   "bbox": [
+    917.16,
+    403.98,
+    938.4,
+    409.01
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t91.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "820-2020",
+   "word_no": 6
+  },
+  {
+   "bbox": [
+    939.8,
+    403.98,
+    955.73,
+    409.01
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t91.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "TABLE",
+   "word_no": 7
+  },
+  {
+   "bbox": [
+    957.13,
+    403.98,
+    976.7,
+    409.01
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t91.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "5.2.2.21.",
+   "word_no": 8
+  },
+  {
+   "bbox": [
+    435.45,
+    405.04,
+    435.89,
+    406.44
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t25.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 0.44,
+   "text": "INLET",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    446.07,
+    405.04,
+    446.51,
+    406.44
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t54.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 0.44,
+   "text": "INLET",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    1165.64,
+    408.68,
+    1175.46,
+    457.94
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t77.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 9.82,
+   "text": "UPGRADE",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    1136.51,
+    416.37,
+    1150.15,
+    466.41
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t76.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 13.64,
+   "text": "WATER",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    802.98,
+    421.98,
+    828.96,
+    427.01
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t92.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "EFFLUENT",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    830.36,
+    421.98,
+    844.89,
+    427.01
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t92.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "FLOW",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    846.28,
+    421.98,
+    863.88,
+    427.01
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t92.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "METER",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    865.28,
+    421.98,
+    882.88,
+    427.01
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t92.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "VAULT:",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    885.68,
+    421.98,
+    922.28,
+    427.01
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t92.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "UNCLASSIFIED",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    923.68,
+    421.98,
+    934.02,
+    427.01
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t92.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "PER",
+   "word_no": 5
+  },
+  {
+   "bbox": [
+    935.42,
+    421.98,
+    948.83,
+    427.01
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t92.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "NFPA",
+   "word_no": 6
+  },
+  {
+   "bbox": [
+    950.22,
+    421.98,
+    971.47,
+    427.01
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t92.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "820-2020",
+   "word_no": 7
+  },
+  {
+   "bbox": [
+    972.87,
+    421.98,
+    988.8,
+    427.01
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t92.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "TABLE",
+   "word_no": 8
+  },
+  {
+   "bbox": [
+    990.19,
+    421.98,
+    1009.76,
+    427.01
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t92.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "5.2.2.27.",
+   "word_no": 9
+  },
+  {
+   "bbox": [
+    791.1,
+    422.16,
+    797.53,
+    427.19
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t118.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "C6",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    1187.19,
+    431.1,
+    1196.16,
+    453.65
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t82.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 8.97,
+   "text": "PLAN",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    791.1,
+    439.8,
+    797.53,
+    444.83
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t119.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "C7",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    803.34,
+    439.98,
+    827.09,
+    445.01
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t93.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "AERATED",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    828.9,
+    439.98,
+    854.6,
+    445.01
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t93.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "DIGESTER",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    856.62,
+    439.98,
+    870.87,
+    445.01
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t93.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "OPEN",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    872.82,
+    439.98,
+    879.8,
+    445.01
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t93.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "TO",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    881.64,
+    439.98,
+    918.24,
+    445.01
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t93.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "ATMOSPHERE:",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    920.16,
+    439.98,
+    942.79,
+    445.01
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t93.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "AEROBIC",
+   "word_no": 5
+  },
+  {
+   "bbox": [
+    944.82,
+    439.98,
+    975.55,
+    445.01
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t93.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "TREATMENT",
+   "word_no": 6
+  },
+  {
+   "bbox": [
+    977.4,
+    439.98,
+    984.38,
+    445.01
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t93.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "OF",
+   "word_no": 7
+  },
+  {
+   "bbox": [
+    986.4,
+    439.98,
+    1022.44,
+    445.01
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t93.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "WASTEWATER",
+   "word_no": 8
+  },
+  {
+   "bbox": [
+    1024.38,
+    439.98,
+    1052.32,
+    445.01
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t93.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "PRECEDED",
+   "word_no": 9
+  },
+  {
+   "bbox": [
+    397.62,
+    443.94,
+    404.05,
+    448.97
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t116.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "C6",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    802.98,
+    446.1,
+    809.69,
+    451.13
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t93.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "BY",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    811.09,
+    446.1,
+    833.99,
+    451.13
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t93.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "PRIMARY",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    835.39,
+    446.1,
+    866.12,
+    451.13
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t93.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "TREATMENT",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    867.52,
+    446.1,
+    880.37,
+    451.13
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t93.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "WITH",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    881.76,
+    446.1,
+    908.58,
+    451.13
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t93.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "SKIMMING:",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    909.98,
+    446.1,
+    946.58,
+    451.13
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t93.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "UNCLASSIFIED",
+   "word_no": 5
+  },
+  {
+   "bbox": [
+    947.98,
+    446.1,
+    958.32,
+    451.13
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t93.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "PER",
+   "word_no": 6
+  },
+  {
+   "bbox": [
+    959.72,
+    446.1,
+    973.13,
+    451.13
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t93.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "NFPA",
+   "word_no": 7
+  },
+  {
+   "bbox": [
+    974.53,
+    446.1,
+    995.77,
+    451.13
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t93.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "820-2020",
+   "word_no": 8
+  },
+  {
+   "bbox": [
+    997.17,
+    446.1,
+    1013.1,
+    451.13
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t93.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "TABLE",
+   "word_no": 9
+  },
+  {
+   "bbox": [
+    1014.5,
+    446.1,
+    1034.07,
+    451.13
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t93.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "5.2.2.11.",
+   "word_no": 10
+  },
+  {
+   "bbox": [
+    674.46,
+    454.2,
+    680.89,
+    459.23
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t108.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "C8",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    1187.19,
+    456.48,
+    1196.16,
+    474.42
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t82.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 8.97,
+   "text": "SITE",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    791.1,
+    457.8,
+    797.53,
+    462.83
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t120.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "C8",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    802.98,
+    458.16,
+    837.06,
+    463.19
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t94.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "DEWATERING",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    838.44,
+    458.16,
+    862.19,
+    463.19
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t94.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "BUILDING",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    863.64,
+    458.16,
+    876.49,
+    463.19
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t94.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "WITH",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    878.04,
+    458.16,
+    912.12,
+    463.19
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t94.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "DEWATERING",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    913.5,
+    458.16,
+    931.94,
+    463.19
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t94.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "PRESS:",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    934.92,
+    458.16,
+    971.52,
+    463.19
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t94.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "UNCLASSIFIED",
+   "word_no": 5
+  },
+  {
+   "bbox": [
+    973.08,
+    458.16,
+    983.42,
+    463.19
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t94.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "PER",
+   "word_no": 6
+  },
+  {
+   "bbox": [
+    984.78,
+    458.16,
+    998.19,
+    463.19
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t94.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "NFPA",
+   "word_no": 7
+  },
+  {
+   "bbox": [
+    999.72,
+    458.16,
+    1020.96,
+    463.19
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t94.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "820-2020",
+   "word_no": 8
+  },
+  {
+   "bbox": [
+    1022.4,
+    458.16,
+    1038.33,
+    463.19
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t94.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "TABLE",
+   "word_no": 9
+  },
+  {
+   "bbox": [
+    1039.86,
+    458.16,
+    1052.44,
+    463.19
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t94.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "6.2.2,",
+   "word_no": 10
+  },
+  {
+   "bbox": [
+    1165.64,
+    461.34,
+    1175.46,
+    495.17
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t77.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 9.82,
+   "text": "PLANT",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    802.98,
+    464.28,
+    815.27,
+    469.31
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t94.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "ROW",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    817.02,
+    464.28,
+    825.41,
+    469.31
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t94.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "12a",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    827.28,
+    464.28,
+    840.13,
+    469.31
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t94.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "WITH",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    842.04,
+    464.28,
+    855.17,
+    469.31
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t94.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "TYPE",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    856.98,
+    464.28,
+    862.53,
+    469.31
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t94.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "'C'",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    864.36,
+    464.28,
+    898.73,
+    469.31
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t94.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "VENTILATION,",
+   "word_no": 5
+  },
+  {
+   "bbox": [
+    900.54,
+    464.28,
+    940.49,
+    469.31
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t94.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "CONTINUOUSLY",
+   "word_no": 6
+  },
+  {
+   "bbox": [
+    942.3,
+    464.28,
+    973.31,
+    469.31
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t94.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "VENTILATED",
+   "word_no": 7
+  },
+  {
+   "bbox": [
+    975.24,
+    464.28,
+    981.67,
+    469.31
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t94.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "AT",
+   "word_no": 8
+  },
+  {
+   "bbox": [
+    983.52,
+    464.28,
+    986.32,
+    469.31
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t94.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "6",
+   "word_no": 9
+  },
+  {
+   "bbox": [
+    988.2,
+    464.28,
+    996.58,
+    469.31
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t94.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "AIR",
+   "word_no": 10
+  },
+  {
+   "bbox": [
+    998.46,
+    464.28,
+    1023.32,
+    469.31
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t94.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "CHANGES",
+   "word_no": 11
+  },
+  {
+   "bbox": [
+    1025.1,
+    464.28,
+    1035.44,
+    469.31
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t94.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "PER",
+   "word_no": 12
+  },
+  {
+   "bbox": [
+    1037.34,
+    464.28,
+    1052.14,
+    469.31
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t94.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "HOUR",
+   "word_no": 13
+  },
+  {
+   "bbox": [
+    803.34,
+    470.22,
+    813.95,
+    475.25
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t94.2",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "AND",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    815.35,
+    470.22,
+    820.38,
+    475.25
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t94.2",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "IN",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    821.78,
+    470.22,
+    857.54,
+    475.25
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t94.2",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "ACCORDANCE",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    858.93,
+    470.22,
+    871.78,
+    475.25
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t94.2",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "WITH",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    873.18,
+    470.22,
+    886.59,
+    475.25
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t94.2",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "NFPA",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    887.99,
+    470.22,
+    909.23,
+    475.25
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t94.2",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "820-2020",
+   "word_no": 5
+  },
+  {
+   "bbox": [
+    910.63,
+    470.22,
+    934.65,
+    475.25
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t94.2",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "CHAPTER",
+   "word_no": 6
+  },
+  {
+   "bbox": [
+    936.05,
+    470.22,
+    940.25,
+    475.25
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t94.2",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "9.",
+   "word_no": 7
+  },
+  {
+   "bbox": [
+    1136.51,
+    471.13,
+    1150.15,
+    503.66
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t76.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 13.64,
+   "text": "AND",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    1187.19,
+    477.26,
+    1196.16,
+    548.29
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t82.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 8.97,
+   "text": "CLASSIFICATION",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    791.1,
+    482.28,
+    797.53,
+    487.31
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t121.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "C9",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    802.98,
+    482.28,
+    821.42,
+    487.31
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t95.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "OFFICE",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    822.82,
+    482.28,
+    846.57,
+    487.31
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t95.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "BUILDING",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    847.96,
+    482.28,
+    858.58,
+    487.31
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t95.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "AND",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    859.98,
+    482.28,
+    881.77,
+    487.31
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t95.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "BLOWER",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    883.17,
+    482.28,
+    906.92,
+    487.31
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t95.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "BUILDING",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    908.31,
+    482.28,
+    918.93,
+    487.31
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t95.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "NOT",
+   "word_no": 5
+  },
+  {
+   "bbox": [
+    920.33,
+    482.28,
+    951.06,
+    487.31
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t95.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "CLASSIFIED.",
+   "word_no": 6
+  },
+  {
+   "bbox": [
+    320.22,
+    483.0,
+    326.65,
+    488.03
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t102.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "C3",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    1165.64,
+    498.57,
+    1175.46,
+    562.03
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t77.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 9.82,
+   "text": "TREATMENT",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1136.51,
+    508.38,
+    1150.15,
+    554.82
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t76.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 13.64,
+   "text": "SEWER",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    558.72,
+    549.24,
+    565.15,
+    554.27
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t107.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "C3",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    1187.19,
+    551.12,
+    1196.16,
+    574.02
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t82.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 8.97,
+   "text": "AREA",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    1136.51,
+    559.54,
+    1150.15,
+    647.64
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t76.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 13.64,
+   "text": "EASTSOUND",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    1165.64,
+    565.42,
+    1175.46,
+    636.48
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t77.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 9.82,
+   "text": "WASTEWATER",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    463.5,
+    585.06,
+    469.93,
+    590.09
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t103.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "C9",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    292.32,
+    587.22,
+    298.75,
+    592.25
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t103.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "C5",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    1157.4,
+    613.09,
+    1162.85,
+    637.92
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t62.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.45,
+   "text": "COUNTY",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    1157.4,
+    639.81,
+    1162.85,
+    654.34
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t62.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.45,
+   "text": "JUAN",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1157.4,
+    656.23,
+    1162.85,
+    667.98
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t62.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.45,
+   "text": "SAN",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    1143.84,
+    675.3,
+    1149.82,
+    712.44
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t78.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.98,
+   "text": "09-12-2022",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    1167.96,
+    678.36,
+    1173.94,
+    700.15
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t66.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.98,
+   "text": "SHOWN",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1180.27,
+    678.67,
+    1185.25,
+    698.8
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t67.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 4.98,
+   "text": "NUMBER",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1191.9,
+    678.94,
+    1197.88,
+    708.84
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t74.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.98,
+   "text": "2020-070",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    1144.08,
+    680.22,
+    1160.28,
+    689.22
+   ],
+   "conf": 58.0,
+   "conf_ge_60": false,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r90202.1.16",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 9.0,
+   "text": "o}],",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1169.46,
+    680.22,
+    1184.22,
+    689.22
+   ],
+   "conf": 0.0,
+   "conf_ge_60": false,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r90202.1.16",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 9.0,
+   "text": "2/#",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    1144.44,
+    686.16,
+    1160.28,
+    693.0
+   ],
+   "conf": 51.0,
+   "conf_ge_60": false,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r90202.1.17",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 6.84,
+   "text": "N15",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    1156.33,
+    686.36,
+    1161.31,
+    701.28
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t69.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 4.98,
+   "text": "SCALE",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    1132.39,
+    687.37,
+    1137.37,
+    700.38
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t68.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 4.98,
+   "text": "DATE",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    1168.38,
+    687.78,
+    1184.22,
+    692.28
+   ],
+   "conf": 0.0,
+   "conf_ge_60": false,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r90202.1.17",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 4.5,
+   "text": "OF",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    1169.46,
+    689.4,
+    1184.22,
+    698.4
+   ],
+   "conf": 14.0,
+   "conf_ge_60": false,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r90202.1.18",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 9.0,
+   "text": "Zila",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    1132.74,
+    694.62,
+    1140.12,
+    703.44
+   ],
+   "conf": 57.0,
+   "conf_ge_60": false,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r90202.1.19",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 7.38,
+   "text": "ago",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1144.44,
+    694.62,
+    1160.46,
+    703.44
+   ],
+   "conf": 48.0,
+   "conf_ge_60": false,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r90202.1.19",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 8.82,
+   "text": "-|%",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    1176.84,
+    694.62,
+    1184.22,
+    703.44
+   ],
+   "conf": 0.0,
+   "conf_ge_60": false,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r90202.1.19",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 7.38,
+   "text": "|Z",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    1180.27,
+    700.38,
+    1185.25,
+    708.66
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t67.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 4.98,
+   "text": "JOB",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    1167.96,
+    702.03,
+    1173.94,
+    709.38
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t66.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.98,
+   "text": "AS",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    1048.86,
+    706.9,
+    1068.34,
+    718.21
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t80.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 11.31,
+   "text": "Call",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1071.49,
+    706.9,
+    1090.36,
+    718.21
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t80.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 11.31,
+   "text": "811",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    1049.4,
+    717.45,
+    1056.72,
+    723.29
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t80.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.84,
+   "text": "two",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    1058.02,
+    717.45,
+    1076.58,
+    723.29
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t80.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.84,
+   "text": "business",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1077.89,
+    717.45,
+    1087.82,
+    723.29
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t80.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.84,
+   "text": "days",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    1046.34,
+    719.21,
+    1047.07,
+    720.23
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t80.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 1.02,
+   "text": "R",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    341.46,
+    720.83,
+    368.84,
+    730.89
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t56.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 10.06,
+   "text": "AREA",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    371.64,
+    720.83,
+    454.35,
+    730.89
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t56.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 10.06,
+   "text": "CLASSIFICATION",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    457.14,
+    720.83,
+    479.5,
+    730.89
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t56.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 10.06,
+   "text": "SITE",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    482.3,
+    720.83,
+    508.56,
+    730.89
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t56.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 10.06,
+   "text": "PLAN",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    1184.07,
+    723.97,
+    1194.03,
+    736.56
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t122.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 9.96,
+   "text": "96",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    1049.4,
+    724.29,
+    1062.73,
+    730.13
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t80.2",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.84,
+   "text": "before",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    1064.04,
+    724.29,
+    1071.62,
+    730.13
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t80.2",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.84,
+   "text": "you",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1072.93,
+    724.29,
+    1079.2,
+    730.13
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t80.2",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.84,
+   "text": "dig",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    1143.94,
+    728.43,
+    1158.88,
+    760.14
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t62.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 14.94,
+   "text": "E0.4",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    1132.74,
+    729.36,
+    1152.72,
+    739.98
+   ],
+   "conf": 38.0,
+   "conf_ge_60": false,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r90202.1.23",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 10.62,
+   "text": "_N",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    386.82,
+    733.2,
+    404.71,
+    738.23
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t57.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "SCALE:",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    406.1,
+    733.2,
+    410.68,
+    738.23
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t57.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "1\"",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    412.08,
+    733.2,
+    415.02,
+    738.23
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t57.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "=",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    416.42,
+    733.2,
+    422.97,
+    738.23
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t57.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "10'",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    424.37,
+    733.2,
+    430.79,
+    738.23
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t57.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "AT",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    432.19,
+    733.2,
+    444.48,
+    738.23
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t57.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "FULL",
+   "word_no": 5
+  },
+  {
+   "bbox": [
+    445.88,
+    733.2,
+    462.37,
+    738.23
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t57.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.03,
+   "text": "SCALE",
+   "word_no": 6
+  },
+  {
+   "bbox": [
+    1132.39,
+    736.79,
+    1137.37,
+    751.68
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t65.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 4.98,
+   "text": "SHEET",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    1165.14,
+    737.28,
+    1172.34,
+    743.4
+   ],
+   "conf": 28.0,
+   "conf_ge_60": false,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r90202.1.24",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 6.12,
+   "text": "jw",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    1168.39,
+    737.93,
+    1173.37,
+    750.42
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t64.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 4.98,
+   "text": "PAGE",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    1186.21,
+    741.0,
+    1191.19,
+    747.54
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t73.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 4.98,
+   "text": "OF",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    1030.68,
+    743.03,
+    1054.75,
+    756.67
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t75.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 13.64,
+   "text": "BID",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    1059.47,
+    743.03,
+    1085.05,
+    756.67
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t75.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 13.64,
+   "text": "SET",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    365.94,
+    743.4,
+    371.52,
+    747.36
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up201.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.96,
+   "text": "10",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    403.38,
+    743.4,
+    406.08,
+    750.24
+   ],
+   "conf": 19.0,
+   "conf_ge_60": false,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up201.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 2.7,
+   "text": "y",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    437.94,
+    743.4,
+    443.52,
+    750.24
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up201.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 5.58,
+   "text": "10",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    473.58,
+    743.4,
+    479.7,
+    747.36
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up201.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.96,
+   "text": "20",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    382.86,
+    750.6,
+    404.82,
+    754.56
+   ],
+   "conf": 54.0,
+   "conf_ge_60": false,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up201.1.2",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.96,
+   "text": "|_|",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1184.07,
+    753.67,
+    1194.03,
+    766.26
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t73.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 9.96,
+   "text": "65",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    374.94,
+    754.2,
+    383.94,
+    760.86
+   ],
+   "conf": 69.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up201.1.3",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 6.66,
+   "text": "|__|",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    404.46,
+    754.92,
+    440.82,
+    758.88
+   ],
+   "conf": 35.0,
+   "conf_ge_60": false,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up201.1.3",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.96,
+   "text": "PF",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    369.0,
+    759.96,
+    384.84,
+    763.92
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up201.1.4",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.96,
+   "text": "SCALE",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    464.94,
+    759.96,
+    476.82,
+    763.92
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up201.1.4",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.96,
+   "text": "FEET",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    396.9,
+    763.92,
+    428.76,
+    767.88
+   ],
+   "conf": 91.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r90147.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 3.96,
+   "text": "HORIZONTAL",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    432.72,
+    763.92,
+    448.38,
+    767.88
+   ],
+   "conf": 91.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r90147.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 3.96,
+   "text": "SCALE",
+   "word_no": 3
+  }
+ ]
+}

@@ -1,1 +1,5 @@
 graphifyy==0.9.72
+PyMuPDF==1.28.2
+pytesseract==0.3.13
+Pillow==12.3.0
+packaging==24.0
