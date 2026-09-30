@@ -51,11 +51,13 @@ testbeds/eastsound/
   derived/                 person-made derived copies of library files (bluebeam-ocr/); not sources
   index/                   00–04 rev1, Ledger_Schema.csv, Requirements_Schema.csv (Setup)
   lanes/<lane>/            Wiki, Ledger, Issues, Known Issues per lane
+    as-delivered/          lane packages as delivered (component wikis, page notes, build-script zips)
   project/                 Merge outputs, including the test bed's Issues Log
   process/                 Ultraplans, build prompts, library fingerprints
   transfer/                Transfer step reports
   tools/                   test bed build scripts
   graph/                   graph build outputs
+  _unsorted/               files a sort couldn't place; README.md gives each one's reason
 _inbox/                    drop zone for a person's files; never committed
 ```
 Lane folders: `civil-and-site`, `process-and-mechanical`, `electrical-and-controls`, `structural-and-building`, `contract-and-general`.
