@@ -57,6 +57,7 @@ LEDGER_ID = re.compile(r"\bL-\d{4}\b")
 
 HERE = Path(__file__).resolve().parent
 DERIVED = HERE.parent / "derived"
+PROJECT_WIKI = HERE.parent / "project" / "01_Project_Wiki" / "Project_Wiki.md"
 DEFAULT_INPUTS = {
     "id_map": DERIVED / "reconciliation" / "Ledger_ID_Map.csv",
     "wiki_notes": DERIVED / "wiki" / "Wiki_Notes.csv",
@@ -214,6 +215,17 @@ ITEM_FIELDS = {"Area/Building": "area", "Discipline": "discipline", "Status": "s
                "Submittal Req (Y/N)": "submittal_req",
                "Testing/Startup Req (Y/N)": "testing_startup_req"}
 DOC_TYPES = {"sheet": "sheet", "spec": "spec", "addendum": "addendum", "note": "note"}
+NOTE_TEXT_MAX = 2000  # note text: the body up to the last full sentence within this
+HEADING = re.compile(r"^#{1,3} ")  # a note body ends at the next level 1-3 heading
+MERGE_LINE = re.compile(r"^> Merge: ")  # Merge metadata under each heading, not note content
+# A sentence ends at . ! or ? (plus closing brackets or quotes) before a line break, or
+# before a space and a capital, bracket, quote, list or table mark. Abbreviations that
+# can come before a capital are not ends.
+SENTENCE_END = re.compile(r"[.!?][)\]\"'’”]*(?=\n|$|[ \t]+[A-Z(\[\"“'‘|*\-])")
+ABBREVIATIONS = {"add", "det", "no", "nos", "fig", "sht", "sec", "div", "ref", "vs", "mr",
+                 "ms", "dr", "st", "co", "inc", "approx", "e.g", "i.e", "dept", "typ",
+                 "min", "max", "inf", "mfr", "ea", "sch", "ft", "in", "p", "pp", "cf", "al"}
+OPEN_ITEM_MAX_IDS = 15  # an open item naming more Ledger IDs gets no item links
 # Fields a repeated link adds to (rule 8); the rest keep the first link's value.
 MERGE_FIELDS = ("value", "note", "wiki_source", "wiki_confidence", "source_location",
                 "wiki_line", "written_as", "basis")
@@ -416,8 +428,59 @@ def ledger_ids(cell: str) -> tuple[list[str], str]:
     return ids, rest
 
 
-def add_wiki_notes(g: Graph, notes: Input, wiki_ids: set[str]) -> None:
-    """Note content as attributes on note nodes, plus a `describes` link to its own unit."""
+def cut_at_sentence(text: str, limit: int = NOTE_TEXT_MAX) -> tuple[str, bool]:
+    """(text up to the last full sentence within `limit` characters, whether it was cut).
+    With no sentence end in range, cut at the last space and add "…"."""
+    if len(text) <= limit:
+        return text, False
+    end = 0
+    for m in SENTENCE_END.finditer(text):
+        if m.end() > limit:
+            break
+        word = re.search(r"([A-Za-z.]+)[.!?]$", text[:m.start() + 1])
+        if word and word.group(1).lower().strip(".") in ABBREVIATIONS:
+            continue
+        end = m.end()
+    if end:
+        return text[:end], True
+    return text[:text.rfind(" ", 0, limit)].rstrip() + " …", True
+
+
+class WikiText:
+    """Note bodies from Project_Wiki.md, found by heading line."""
+
+    def __init__(self, path: Path):
+        self.path, self.rel = path, Path(os.path.relpath(path)).as_posix()
+        self.lines, self.sha, self.status = [], "", "missing"
+        if path.is_file():
+            data = path.read_bytes()
+            self.sha = hashlib.sha256(data).hexdigest()
+            self.lines = data.decode("utf-8-sig").split("\n")
+            self.status = "used"
+
+    def body(self, note_id: str, heading_line: str) -> tuple[str | None, str]:
+        """(the note body, or None, and why not). The body runs from the line after
+        the heading to the next level 1-3 heading, less the Merge metadata line."""
+        if not heading_line.isdigit() or not 0 < int(heading_line) <= len(self.lines):
+            return None, f"heading line {heading_line!r} is not in {self.rel}"
+        start = int(heading_line) - 1
+        if not self.lines[start].rstrip("\r").startswith(f"### {note_id} — "):
+            return None, f"{self.rel} line {heading_line} is not the heading of {note_id!r}"
+        out = []
+        for raw in self.lines[start + 1:]:
+            text = raw.rstrip("\r")
+            if HEADING.match(text):
+                break
+            if not MERGE_LINE.match(text):
+                out.append(text.rstrip())
+        body = re.sub(r"\n{3,}", "\n\n", "\n".join(out)).strip()
+        return body, ""
+
+
+def add_wiki_notes(g: Graph, notes: Input, wiki_ids: set[str], wiki: WikiText) -> dict:
+    """Note content as attributes on note nodes, plus a `describes` link to its own unit.
+    Returns counts: notes with text, text cut at a sentence, cut without one, no text."""
+    counts = {"full": 0, "cut at a sentence": 0, "cut at a space": 0, "no text": 0}
     for line, rec in notes.rows:
         nid = notes.get(rec, "id")
         if not nid:
@@ -433,11 +496,25 @@ def add_wiki_notes(g: Graph, notes: Input, wiki_ids: set[str]) -> None:
             attrs.pop(key, None)
         if "type" in attrs:
             attrs["note_type"] = attrs.pop("type")
-        for key in [k for k in attrs if k.startswith("summary_")]:  # "Summary (first 600 …)"
-            attrs.setdefault("summary", attrs.pop(key))
+        for key in [k for k in attrs if k.startswith("summary")]:  # replaced by note_text
+            attrs.pop(key)
         node.update({k: v for k, v in attrs.items() if k not in node})
         node.update({"source_file": notes.rel, "source_location": f"L{line}",
                      "wiki_note_found": True})
+        body, why = (wiki.body(nid, attrs.get("heading_line", "")) if wiki.status == "used"
+                     else (None, f"{wiki.rel} missing"))
+        if body is None:
+            g.warnings.append(f"{notes.rel} line {line}: no note text for {nid!r}: {why}")
+            counts["no text"] += 1
+            node.update({"note_text": "", "note_text_chars": 0, "note_text_cut": "",
+                         "note_text_source": ""})
+        else:
+            text, cut = cut_at_sentence(body)
+            counts["full" if not cut else "cut at a space" if text.endswith(" …")
+                   else "cut at a sentence"] += 1
+            node.update({"note_text": text, "note_text_chars": len(body),
+                         "note_text_cut": "Y" if cut else "N",
+                         "note_text_source": f"{wiki.rel} line {attrs.get('heading_line')}"})
         found, _ = parse_unit(nid)
         for unit, label, _ in found:
             g.doc(unit, label, notes.rel)
@@ -446,6 +523,7 @@ def add_wiki_notes(g: Graph, notes: Input, wiki_ids: set[str]) -> None:
                    citation=f"Project Wiki note heading {nid!r}"
                             + (f" (line {heading})" if heading else ""),
                    source_file=notes.rel, source_location=f"L{line}", value=nid, note="")
+    return counts
 
 
 def add_wiki_links(g: Graph, links: Input, items: dict, ids_by_tag: dict,
@@ -615,9 +693,19 @@ def add_open_items(g: Graph, oi: Input, items: dict) -> list[str]:
         ids, rest = ledger_ids(oi.get(rec, "ledger_ids"))
         if rest and not NULL_VALUE.match(rest):
             unlinked.append(f"Ledger IDs: {rest}")
+        # Duplicate items and items naming many rows would join the rows they list
+        # (Carl, 2026-09-30): they keep the node and their sheet and spec links, and
+        # list the IDs instead of linking them.
+        withheld = ("duplicate item" if oi.get(rec, "type").lower() == "duplicate" else
+                    f"{len(ids)} Ledger IDs (over {OPEN_ITEM_MAX_IDS})"
+                    if len(ids) > OPEN_ITEM_MAX_IDS else "")
+        node["ledger_id_list"] = ids
+        node["item_links"] = f"none: {withheld}" if withheld else "linked"
         for lid in ids:
             if lid not in items:
                 unlinked.append(f"Ledger IDs: {lid} not in the Ledger")
+                continue
+            if withheld:
                 continue
             g.link(nid, lid, "concerns", level, "weakest", **common,
                    ledger_line=items[lid]["ledger_line"], value=lid, note="")
@@ -650,7 +738,7 @@ NEEDED = {
             "quantity": ("Quantity",), "unit": ("Unit",), "sheet": ("Sheet", "Sheets"),
             "confidence": ("Confidence",), "citation": ("Source Citation",),
             "keyed_note": ("Keyed Note",), "tie": ("Tie Basis",)},
-    "open_items": {"id": ("Item ID",), "title": ("Title",),
+    "open_items": {"id": ("Item ID",), "title": ("Title",), "type": ("Type",),
                    "ledger_ids": ("Ledger IDs", "Ledger ID"), "sheets": ("Sheets", "Sheet"),
                    "specs": ("Spec Sections", "Spec Section"),
                    "citation": ("Source Citation",), "confidence": ("Confidence",)},
@@ -664,6 +752,8 @@ def main() -> int:
     ap = argparse.ArgumentParser(description="Ledger CSV + derived files -> graphify graph.json (no LLM)")
     ap.add_argument("ledger", help="path to a Ledger CSV")
     ap.add_argument("--out", required=True, help="folder; graph.json goes to <out>/graphify-out/")
+    ap.add_argument("--wiki", default=str(PROJECT_WIKI),
+                    help=f"default {Path(os.path.relpath(PROJECT_WIKI)).as_posix()}")
     for key, path in DEFAULT_INPUTS.items():
         ap.add_argument(f"--{key.replace('_', '-')}", default=str(path),
                         help=f"default {Path(os.path.relpath(path)).as_posix()}")
@@ -692,8 +782,10 @@ def main() -> int:
     extra_unlinked: dict[str, list[str]] = {}
     wiki_skipped: dict[str, int] = {}
     problems = []
+    wiki = WikiText(Path(args.wiki))
+    text_counts = {}
     if inputs["wiki_notes"].status == "used":
-        add_wiki_notes(g, inputs["wiki_notes"], wiki_ids)
+        text_counts = add_wiki_notes(g, inputs["wiki_notes"], wiki_ids, wiki)
     for nid, node in g.nodes.items():
         if node["node_type"] == "note":
             node.setdefault("wiki_note_found", False)
@@ -738,6 +830,9 @@ def main() -> int:
                     hashlib.sha256(ledger.read_bytes()).hexdigest()])
         for key, inp in inputs.items():
             w.writerow([key, inp.rel, inp.status, len(inp.rows), inp.sha])
+            if key == "wiki_notes":
+                w.writerow(["wiki_text", wiki.rel, wiki.status if inp.status == "used"
+                            else "not read", len(wiki.lines), wiki.sha])
     with open(Path(args.out) / "Build_Counts.csv", "w", encoding="utf-8", newline="") as f:
         w = csv.writer(f, lineterminator="\n")
         w.writerow(["Kind", "Name", "Count"])
@@ -757,6 +852,14 @@ def main() -> int:
                   f"'<Tag> [<Ledger ID>]', no link between them")
     n_unlinked = sum(len(n.get("unlinked", [])) for n in nodes)
     print(f"NOTE {n_unlinked} values made no link; kept on their node under 'unlinked'")
+    if text_counts:
+        print("note text: " + ", ".join(f"{n} {k}" for k, n in text_counts.items()))
+    withheld = [n for n in nodes if n.get("item_links", "").startswith("none")]
+    if withheld:
+        print(f"NOTE {len(withheld)} open items list their Ledger IDs without item links "
+              f"({sum(1 for n in withheld if 'duplicate' in n['item_links'])} duplicate items, "
+              f"{sum(1 for n in withheld if 'over' in n['item_links'])} over "
+              f"{OPEN_ITEM_MAX_IDS} IDs)")
     for why, n in sorted(wiki_skipped.items()):
         print(f"NOTE Wiki_Links rows not linked: {n} x {why}")
     for msg in g.warnings:
