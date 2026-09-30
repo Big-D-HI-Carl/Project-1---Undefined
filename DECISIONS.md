@@ -165,3 +165,28 @@ Append-only. Decisions made by a person, in the format in AGENTS.md. Never edit 
 - Decided by: Carl
 - Why: Stated in `prompts/01_bootstrap_guardrails.md` §7, which Carl had this session run: "The graph backbone is built from the Ledger by script with no LLM; graphify's LLM pass is an optional, labeled overlay."
 - Replaces: none
+
+## 2026-09-30 — Ledger graph: Prompt 3 parsing rules approved; Lane and Bid Item are item attributes, not linked nodes
+- Decided by: Carl
+- Why: Carl, answering the Prompt 3 step 2 proposal: "Lane and Bid Item: keep them as item attributes, not linked nodes." and "Go ahead." The rules are listed in `testbeds/eastsound/graph/README.md`.
+- Replaces: none
+
+## 2026-09-30 — Graph build writes: outputs in graph/graphify-out/, the script edited in place, and testbeds/eastsound/.graphifyignore
+- Decided by: Carl
+- Why: Carl: "Writes approved (my request): outputs to testbeds/eastsound/graph/graphify-out/, edit testbeds/eastsound/tools/ledger_to_graph.py in place, and add testbeds/eastsound/.graphifyignore."
+- Replaces: none
+
+## 2026-09-30 — .graphifyignore lists library/ and derived/bluebeam-ocr/
+- Decided by: Carl
+- Why: Carl: ".graphifyignore: library/ and derived/bluebeam-ocr/."
+- Replaces: none
+
+## 2026-09-30 — Repeated Ledger Tags are keyed <Tag> [L<line>] until the Ledger ID column lands
+- Decided by: Carl
+- Why: Carl: "Repeated tags: key them as <Tag> [L<line>] for now. A permanent Ledger ID column is coming from Prompt 9; note in the README that the key switches to the ID when it lands."
+- Replaces: none
+
+## 2026-09-30 — Graph commands run under env -i; the twelve over-tagged Ledger rows are logged, not edited
+- Decided by: Carl
+- Why: Carl: "Running under env -i: yes. Log the 12 over-tagged rows in ISSUES_LOG; don't touch the Ledger."
+- Replaces: none

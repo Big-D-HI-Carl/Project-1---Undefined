@@ -237,3 +237,47 @@ Append-only. One entry per session, in the format in AGENTS.md. Never edit or de
     - add `git config --system core.hooksPath .githooks` to the environment setup script.
   - Merge: fix the two duplicate Project Ledger Tags in a new revision, then drop the exceptions row.
   - Next prompt: `prompts/02_import_testbed.md`.
+
+## 2026-09-30 — Prompt 3: Ledger graph build
+- Runtime: Claude Code
+- Commits: 9b798da..HEAD on `claude/admiring-sagan-5olq78` (draft PR)
+- Done:
+  - **Step 1:** `.venv` with `requirements.txt` (graphifyy 0.9.72). `core.hooksPath` set to `.githooks`.
+  - **Step 2:** reported each link column's separators, samples and odd formats from `project/02_Project_Ledger/Project_Ledger.csv` (read-only). Carl approved the rules with his answers; they are quoted in DECISIONS.md.
+  - **Step 3:** extended `testbeds/eastsound/tools/ledger_to_graph.py` in place:
+    - paren-aware splitting;
+    - sheet, spec, Addendum 4 item and Wiki note IDs;
+    - Lane and Bid Item as item attributes;
+    - repeated Tags keyed `<Tag> [L<line>]`, with a `same_tag` link;
+    - link level = the weaker of the row's tag and any level written in the value;
+    - values that make no link are kept on the item under `unlinked`;
+    - PYTHONHASHSEED pinned.
+  - **Build:** outputs in `testbeds/eastsound/graph/graphify-out/`: graph.json, GRAPH_REPORT.md and graph.html.
+    - 791 nodes: 447 items, 86 sheets, 77 specs, 21 Add. 4 items, 160 Wiki notes.
+    - 3,114 links: 986 shown_on, 536 specified_in, 153 changed_by, 1,437 described_in, 2 same_tag.
+    - 15 communities.
+  - Also added `testbeds/eastsound/.graphifyignore` (`library/`, `derived/bluebeam-ocr/`) and `testbeds/eastsound/graph/README.md` (rebuild, rules, queries, and the Prompt 9 ID note).
+  - **Findings logged in ISSUES_LOG:** 12 over-tagged rows; the "CQA Plan" Wiki note has no heading; the same_tag path shortcut; Prompt 3 doesn't match the repo after the reorg.
+- Tests: all graph commands ran under `env -i` (PATH, HOME, LANG, `GIT_DIR=no-git`; the proxy pointed at 127.0.0.1:9 for tests 6–8). Acceptance tests from a scratchpad harness, not committed:
+
+  | # | Test | Expected | Actual | Result |
+  |---|---|---|---|---|
+  | 1 | Every Ledger Tag is a node; nodes ≥ rows | 447 rows each a node | 447 item nodes (SD-1 and PROPOSED-Influent-Sampler keyed by line), 791 nodes, 0 rows missing | pass |
+  | 2 | Every link has a citation and the original tag level | 0 missing | 3,114 links: 0 without citation; 3,112 row links carry their row's tag and Source Citation exactly; 2 same_tag links cite both lines and are Unresolved | pass |
+  | 3 | Tag-level counts match the Ledger | 264 Inferred, 123 Unresolved, 40 Verified-Visual, 20 Verified | identical on item nodes; links: 1,700 INFERRED, 973 AMBIGUOUS, 441 EXTRACTED | pass |
+  | 4 | Five spot checks, five lanes, `explain` vs the row | links match exactly | L73 C&S (4 links), L163 P&M (8), L268 E&C Verified (8), L361 S&B (11), L423 C&G (6): all match; extra SD-1 [L316]: 13 row links plus same_tag, none of the storm drain's | pass |
+  | 5 | Cross-lane trace from an Add. 4 item | hops and tags shown | `path "Add. 4 p.8" "PROPOSED-Blower-Pad" --undirected`, 5 hops, every link INFERRED: Add. 4 p.8 ← slab coring (C&S, L73) → Add. 4 p.3 ← MCC (E&C/S&B, L263) → Add. 4 p.4 ← Blower Pad (S&B, L361) | pass |
+  | 6 | Two clean builds byte-identical | graph.json and graph.html identical | two clean builds and the committed files: graph.json, graph.html and GRAPH_REPORT.md all SHA-256 identical | pass (after the fix below) |
+  | 7 | No LLM calls | builds succeed with keys unset | exit 0 and 0 for both builds; environment held only PATH, HOME, LANG, GIT_DIR and a dead proxy | pass |
+  | 8 | Library excluded | 0 papers, 0 images, stops at key check | `found 105 code, 760 docs, 0 papers, 0 images`, then "no LLM API key found", exit 1 | pass |
+
+  - `python3 tools/checks.py --all` → 0 FAIL, 3 WARN (data gate not run; the 2 listed Ledger exceptions). `--staged` on each commit → 0 FAIL.
+- Failures and fixes:
+  - The in-repo build differed from the clean builds by graphify's git commit stamp. Logged before the rerun (ISSUES_LOG, "Graph build inside the repo stamps the git commit…", Open, then Closed). Fix: `GIT_DIR=no-git`.
+  - The Step 2 dry run showed test 8 would fail with only `library/` ignored. Fixed by Carl's `.graphifyignore` choice.
+  - The README first said Add. 4 p.3 had 53 items (a count of cell values). Corrected to 43 before commit.
+- Next:
+  - Carl reviews and merges the draft PR.
+  - Merge fixes SD-1, the influent-sampler duplicate and the 12 over-tagged rows in a new Ledger revision; rebuild the graph after.
+  - Update `prompts/03_build_graph.md`.
+  - Prompt 9 adds the Ledger ID column; switch the item key to it.

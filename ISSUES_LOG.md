@@ -196,3 +196,54 @@ Append-only. Repo and program issues, in the format in AGENTS.md. The test bed's
   - With `--ci`, `tools/checks.py` now reads the DATAGATE_TERMS secret. When the secret is missing it prints `WARN | data-gate | DATAGATE_TERMS | secret not set for this run; data gate not run`.
   - The harness expectation was out of date; checks.py behaved as intended.
 - Fix or next action: The harness now expects the WARN line; it is a scratchpad script and is not committed. All tests were rerun.
+
+## 2026-09-30 — Graph build inside the repo stamps the git commit, so rebuilds differ by commit — Open
+- Workstream: Eastsound test bed, graph build (Prompt 3)
+- Type: workflow failure
+- Finding: Two clean builds outside the repo gave byte-identical graph.json, graph.html and GRAPH_REPORT.md. The build in `testbeds/eastsound/graph/` did not match them.
+  - graphify 0.9.72 adds `built_at_commit` (the output of `git rev-parse HEAD`) to graph.json when the output folder is inside a git checkout. `graphify cluster-only` stamps it again, and it adds a "Graph Freshness" section to GRAPH_REPORT.md.
+  - graph.html was identical. Nothing else differed.
+  - Effect: the same Ledger and script give a different graph.json at every commit, and a copy without `.git` gives no stamp at all. That breaks "rebuilds identically in any runtime".
+- Fix or next action: Run both build commands with `GIT_DIR` set to a path that doesn't exist (for example `GIT_DIR=no-git`). git then reports no repository and graphify leaves the stamp out. graphify has no option for this. Document it in `testbeds/eastsound/graph/README.md`, rebuild, and rerun acceptance test 6 against the committed build.
+
+## 2026-09-30 — Graph build inside the repo stamps the git commit, so rebuilds differ by commit — Closed
+- Workstream: Eastsound test bed, graph build (Prompt 3)
+- Type: workflow failure
+- Finding: Closes the Open entry of the same title. Both build commands now run with `GIT_DIR=no-git`, and `testbeds/eastsound/graph/README.md` gives the full commands.
+  - The build in the repo and two clean builds outside it match byte for byte: graph.json, graph.html and GRAPH_REPORT.md.
+  - graph.json has no `built_at_commit` key.
+- Fix or next action: Done.
+
+## 2026-09-30 — Twelve Project Ledger rows are tagged stronger than their Bid Item fact — Open
+- Workstream: Eastsound test bed
+- Type: content conflict
+- Finding: Twelve Electrical & Controls rows are tagged Verified-Visual, but their Bid Item cell reads "1 (equipment, Inferred per 04); 6 (power and control)".
+  - The rows: lines 288–291 (IP-1 to IP-4), 313 (DW-1), 314–315 (WP-1, WP-2), 316 (SD-1), 318 (PROPOSED-WAS-Solenoid-Valves), 319 (PROPOSED-Polymer-Feed-Pump), 320 (PROPOSED-Hypochlorite-Feed-Pump) and 341 (PROPOSED-2W-Isolation-Valve-Solenoid).
+  - AGENTS.md says a row's tag is the weakest tag of the facts in it, so these rows should read Inferred.
+  - Found in Prompt 3 step 2. The Ledger was not edited, per Carl.
+  - In the graph, Bid Item is an item attribute, so no link carries the overstated level. Each item node carries the row's tag as written.
+- Fix or next action: Merge corrects the tag in a new Ledger revision. The graph picks it up on the next rebuild.
+
+## 2026-09-30 — Ledger Wiki Note "CQA Plan" has no Project Wiki note — Open
+- Workstream: Eastsound test bed
+- Type: content conflict
+- Finding: 159 of the 160 names in the Project Ledger's Wiki Note(s) column match a `### <name> — ` heading in `project/01_Project_Wiki/Project_Wiki.md`. "CQA Plan" (12 rows) matches none. The graph keeps it as the node "Wiki note CQA Plan", which points at no note.
+- Fix or next action: Merge either adds a CQA Plan note to the Project Wiki or points those 12 rows at an existing note.
+
+## 2026-09-30 — The same_tag link lets graph paths jump between the two SD-1 items — Open
+- Workstream: Eastsound test bed, graph build (Prompt 3)
+- Type: design gap
+- Finding: Rule 9 keys the two SD-1 rows as `SD-1 [L74]` (storm drain) and `SD-1 [L316]` (sludge pump), joined by one AMBIGUOUS `same_tag` link.
+  - `graphify path --undirected` treats that link like any other. The trace from "Add. 4 p.2 33 41 00 ¶2.02 F" to "MCC" ran storm drain → same_tag → sludge pump. That hop doesn't reflect how the work connects.
+  - The link is labeled AMBIGUOUS, and `testbeds/eastsound/graph/README.md` warns about it.
+- Fix or next action: It clears when Merge gives one SD-1 item its own Tag (entry "Project_Ledger.csv repeats two Tags"). Carl may instead drop the same_tag link from the script.
+
+## 2026-09-30 — Prompt 3 as written doesn't match the repo after the reorg — Open
+- Workstream: Eastsound test bed, graph build (Prompt 3)
+- Type: workflow failure
+- Finding: Found in Prompt 3 step 2 and run as Carl directed this session:
+  - `prompts/03_build_graph.md` names `tools/ledger_to_graph.py` and `testbeds/eastsound/project/Project_Ledger.csv`. The files are at `testbeds/eastsound/tools/ledger_to_graph.py` and `testbeds/eastsound/project/02_Project_Ledger/Project_Ledger.csv`.
+  - Its `--out testbeds/eastsound` puts the outputs outside `graph/`, which AGENTS.md names as the graph folder.
+  - Test 8 fails if `.graphifyignore` lists only `library/`: `graphify extract` finds 2 papers, the Bluebeam OCR PDFs in `derived/bluebeam-ocr/`.
+  - Unsetting the four named keys isn't enough. graphify also picks a backend from `AWS_PROFILE`, `AWS_REGION` or `AWS_DEFAULT_REGION` (Bedrock) and from `OLLAMA_HOST` (Ollama), and this container has AWS credentials set.
+- Fix or next action: This session used the real paths, `--out testbeds/eastsound/graph`, `.graphifyignore` listing `library/` and `derived/bluebeam-ocr/`, and `env -i` for every graph command. `prompts/03_build_graph.md` is outside this session's folder and was not edited; update it before the prompt is reused.
