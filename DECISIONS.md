@@ -170,3 +170,33 @@ Append-only. Decisions made by a person, in the format in AGENTS.md. Never edit 
 - Decided by: Carl
 - Why: Stated in this session: "Create Audit_Ledger_Schema.csv and Spot_Check_Schema.csv in index/ as header-only files, matching Ledger_Schema.csv's encoding and line endings." Carl gave both column lists in the same message.
 - Replaces: the upload step of "Only the Audit_Ledger and Spot_Check schemas are missing; Carl uploads them" (2026-09-30)
+
+## 2026-09-30 — Every Ledger row gets a permanent Ledger ID; everything links by ID
+- Decided by: Carl
+- Why: Stated in this session (Prompt 9, decision A): "Every Ledger row gets a permanent Ledger ID (L-0001 onward, in current row order). Tags stay exactly as printed. Everything links by ID. SD-1 stays two rows with two IDs."
+- Replaces: none
+
+## 2026-09-30 — The starter MTO is a civil pilot: sheets C0–C2 and C7
+- Decided by: Carl
+- Why: Stated in this session (Prompt 9, decision B): "Starter MTO, civil pilot only: sheets C0–C2 and C7."
+- Replaces: none
+
+## 2026-09-30 — AGENTS.md Layout lists derived/reconciliation/
+- Decided by: Carl
+- Why: Stated in this session: "If AGENTS.md's Layout doesn't list that folder, add one line for it in its own commit; this is my request under rule 8."
+- Replaces: none
+
+## 2026-09-30 — One total Quantity per Ledger row; segments live in the MTO
+- Decided by: Carl
+- Why: Stated in this session: "Quantity per row: one total Quantity per Ledger row; segments live in the MTO as separate lines (SD-1: three MTO lines, Ledger total 103 LF). Put this answer in the schema proposal."
+- Replaces: none
+
+## 2026-09-30 — The C0.2 earthwork totals go in the starter MTO and are proposed as new Ledger rows
+- Decided by: Carl
+- Why: Stated in this session: "Earthwork: don't hold out C0.2 cut 3,382 CY / fill 1,598 CY. Add them to Starter_MTO.csv with Ledger ID blank, the bid item, and "new row needed" in Tie Basis, Ready = N. Also add them to New_Row_Candidates.csv as proposed Ledger rows."
+- Replaces: none
+
+## 2026-09-30 — The reconciliation script lives in testbeds/eastsound/tools/
+- Decided by: Carl
+- Why: Stated in this session: "Put the script at testbeds/eastsound/tools/build_reconciliation.py (DECISIONS: test bed tools live there). This is my request; outputs stay in derived/reconciliation/."
+- Replaces: none

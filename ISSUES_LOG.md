@@ -240,3 +240,34 @@ Append-only. Repo and program issues, in the format in AGENTS.md. The test bed's
     - "image-only" in rows 18, 19 and 24 (see "Index and library notes call the 9 no-text-layer sheets 'image-only'").
   - `Library_Manifest.csv` "00 Register Row" still reads "none" for the three parts. They are now rows 31–33; the other natives are rows 34–36.
 - Fix or next action: Setup issues 01 rev2 and, on Carl's OK, 00 rev3 and a manifest update. Before that, a person or the Setup role checks the native Add. 4 pp.9–10 title blocks.
+
+## 2026-09-30 — Prompt 9: two Summary.md defects caught in review before commit — Closed
+- Workstream: Eastsound test bed (Prompt 9 reconciliation)
+- Type: workflow failure
+- Finding: Reviewing the first full run of `testbeds/eastsound/tools/build_reconciliation.py` turned up two defects in Summary.md:
+  - The generator RFI line took the first update row for L-0242. That was a cited-not-found row (E7.3), not the Division 26 Notes proposal.
+  - The segment-sum check allowed three callouts. It listed 21 + 23 + 39 = 83 LF for SD-3, although 21 and 23 LF are tied to other rows.
+- Fix or next action: Done before commit. The RFI line selects the Division 26 Notes proposal and quotes its native text-layer reads and boxes. Segment sums use pairs only. The outputs were regenerated, and the determinism check was run afterwards.
+
+## 2026-09-30 — Ledger Tag uniqueness (checks.py, ledger_to_graph.py) conflicts with decision A — Open
+- Workstream: Repo setup
+- Type: design gap
+- Finding: Decision A makes the Ledger ID the key and keeps tags as printed, so two rows may share a Tag (SD-1, L-0073 and L-0315). Two tools still assume a unique Tag:
+  - `tools/checks.py` requires unique Tags in every project/ and lanes/ Ledger. Project_Ledger.csv passes only through its `tools/check_exceptions.csv` row.
+  - `testbeds/eastsound/tools/ledger_to_graph.py` uses the Tag as the node ID, so the two SD-1 rows become one graph node.
+  - Prompt 9's proposal to give L-0337 and L-0338 the printed tags "Hot Box #1" and "Hot Box #2" would add two more shared Tags.
+- Fix or next action: Proposed in `testbeds/eastsound/derived/reconciliation/Ledger_Schema_rev1_Proposal.md`, not made:
+  - checks.py checks a unique Ledger ID instead of a unique Tag. This goes in its own commit, when a person asks.
+  - ledger_to_graph.py keys nodes on Ledger ID.
+  - Setup issues Ledger_Schema.csv rev1.
+
+## 2026-09-30 — Prompt 9 test-bed findings for the Merge Issues Log — Open
+- Workstream: Eastsound test bed
+- Type: content conflict
+- Finding: Prompt 9 (`testbeds/eastsound/derived/reconciliation/Summary.md`) found five test-bed items. Under the lane's write scope they can't go in the Merge Issues Log under `project/`:
+  - **Generator rating.** E1.1 and E6.1 read 125 kW in the native text layer. 26 32 13 ¶2.03 C.1 (main spec p.326) requires not less than 150.0 kW standby. RFI drafted.
+  - **Chain link fence.** C2.1 keyed notes 6 (149 LF) and 8 (134 LF) have no Ledger row. L-0088 (126 LF) cites C2.1 and C2.5. L-0018 (149 LF, remove) cites C0.5 keyed note 16.
+  - **Hot Box duplicates.** L-0337 and L-0338 (Electrical & Controls) carry the printed tags of L-0057 and L-0058 (Civil & Site).
+  - **Earthwork.** C0.2 states cut 3382 CY and fill 1598 CY; the Ledger has no earthwork row.
+  - **Panel schedules.** The E6.2 and E2.2 schedules are embedded images, so any Ledger fact from them is at best Verified-Visual.
+- Fix or next action: Carl decides the fence and the RFI. Merge carries all five into the test bed's Issues Log and resolves them in the next Ledger revision.
