@@ -6043,7 +6043,7 @@
   "python": "3.11.15",
   "schema_version": "1.0",
   "script": "testbeds/eastsound/tools/extract_drawing_text.py",
-  "script_sha256": "5db8dee979c0b6167ea8e598eae48304ca65f2cacac95efc099f9195f110262a",
+  "script_sha256": "0e61e19737aa0acd351b04bb1fe1276502ad57f626b99e59df261b62d1bbebd1",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",

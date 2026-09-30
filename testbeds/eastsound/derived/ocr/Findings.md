@@ -120,8 +120,8 @@ Verified: the anchor was found in the native text layer and its text holds the r
 | detail | 18 | 8 | 5 | 31 |
 | keyed note | 0 | 13 | 9 | 22 |
 | other | 0 | 0 | 10 | 10 |
-| sheet only | 9 | 407 | 74 | 490 |
-| all | 27 | 429 | 99 | 555 |
+| sheet only | 8 | 405 | 77 | 490 |
+| all | 26 | 427 | 102 | 555 |
 
 Anchors by match term:
 
@@ -135,11 +135,11 @@ Anchors by match term:
 | keyed note | noun | 0 | 7 | 1 |
 | keyed note | quantity | 0 | 6 | 4 |
 | other | no match | 0 | 0 | 10 |
-| sheet only | no match | 0 | 0 | 74 |
+| sheet only | no match | 0 | 0 | 77 |
 | sheet only | noun | 0 | 396 | 0 |
-| sheet only | quantity | 9 | 11 | 0 |
+| sheet only | quantity | 8 | 9 | 0 |
 
-PROPOSED rows by weakest anchor (the row's sheet evidence level): 167 Inferred, 135 Unresolved, 10 Verified; 78 rows cite no sheet number.
+PROPOSED rows by weakest anchor (the row's sheet evidence level): 166 Inferred, 137 Unresolved, 9 Verified; 78 rows cite no sheet number.
 
 ## Keyed-note blocks
 
