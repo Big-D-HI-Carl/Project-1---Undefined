@@ -171,3 +171,31 @@ Append-only. One entry per session, in the format in AGENTS.md. Never edit or de
   - Upload the four schema CSVs to `index/`.
   - Setup corrects "image-only" in 01 and closes 01 item 10.
   - The Ledger and MTO update step, on Carl's approval only.
+
+## 2026-09-30 — OCR lane follow-up before PR #6 merge
+- Runtime: Claude Code
+- Commits: 496b3f5..HEAD on `claude/vibrant-davinci-7g3znj` (PR #6)
+- Done:
+  - Owner items 1–6:
+    - Sheet-only anchors are Verified only for the Name's quantity read in the text layer; a noun match is Inferred ("on sheet, location not pinned").
+    - The extractor moved to `testbeds/eastsound/tools/` by git mv; the paths it records are updated.
+    - cited_as comes from `index/Plan_Set_Crosswalk.csv`; source SHA-256 values are checked against `index/Library_Manifest.csv`, stopping on a mismatch.
+    - AGENTS.md carries the approved OCR-copy sentence; the Bluebeam README matches.
+    - The schema ISSUES entry is corrected: only Audit_Ledger and Spot_Check are missing.
+  - `tools/checks.py`: the ledger rule covers only project/ and lanes/ Ledgers (the owner's choice), so `derived/ocr/Ledger_Crosswalk.csv` is no longer checked as a Ledger.
+  - A pre-merge review (5 auditors, 3 skeptics each) upheld 1 of 8 findings: row 374 was Verified on the "3'" in another louver's "2'x3'". Fix: sizes in a Name must match whole, and every quantity is required.
+  - Final counts:
+    - Sheet-only anchors: 8 Verified, 405 Inferred, 77 Unresolved.
+    - All anchors: 26 / 427 / 102.
+    - PROPOSED rows: 9 / 166 / 137.
+    - Non-PROPOSED rows unchanged.
+  - Replaced the bad branch-update merge a8694d8 (ISSUES_LOG, DECISIONS).
+- Tests:
+  - Test 8: `extract_drawing_text.py --stage all --jobs 4`, two clean runs → byte-identical to each other and to f3e8865, 112 of 112 files (697 s and 615 s wall). Pass.
+  - Test 9: `git diff --stat origin/main...HEAD` → `derived/ocr/`, the moved extractor, the three logs, plus the owner-approved AGENTS.md, Bluebeam README and `tools/checks.py`. Pass.
+  - `python tools/checks.py --ci --range origin/main..HEAD` and `--ci --all` → run before push; results in the PR #6 description.
+- Failures and fixes:
+  - `checks.py` flagged Ledger_Crosswalk.csv; fixed by narrowing the glob.
+  - Row 374 false Verified; fixed by whole-quantity matching.
+  - a8694d8 dropped main's log entries; replaced.
+- Next: Carl merges PR #6 once the check is green, marks Spot_Check.csv, and uploads the Audit_Ledger and Spot_Check schemas.

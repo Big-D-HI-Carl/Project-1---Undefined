@@ -115,3 +115,33 @@ Append-only. Decisions made by a person, in the format in AGENTS.md. Never edit 
   - "Unresolved: the anchor wasn't found, or it was found but its text doesn't match."
   - Follow-up: "when the Ledger row has a quantity, the match needs the quantity (value + unit), not just a noun. Use a noun match only for rows with no quantity, and only with nouns that aren't generic (not PIPE, VALVE, CONCRETE, FENCE, WALL, LINE, and the like). Record the matched term in the crosswalk, and put the stopword and generic-noun lists in the README so I can review them."
 - Replaces: none
+
+## 2026-09-30 — OCR lane: sheet-only anchors are Verified only for a quantity in the text layer
+- Decided by: Carl
+- Why: Stated in this session: "Tighten sheet-only anchors: a row with no KN/Det/Add. anchor can be Verified only when its quantity (value + unit) is found on the cited sheet in the text layer. A noun match anywhere on the sheet is Inferred ("on sheet, location not pinned"). Report the new counts per anchor and per row."
+- Replaces: the sheet-only part of 2026-09-30 "OCR lane Gate A: PROPOSED anchor levels and the match term".
+
+## 2026-09-30 — The OCR extractor moves to testbeds/eastsound/tools/; cited_as and source checks come from index/
+- Decided by: Carl
+- Why: Stated in this session: "Move tools/extract_drawing_text.py to testbeds/eastsound/tools/ with git mv (DECISIONS.md puts test bed tools there) and update any path it records." And: "Take cited_as from index/Plan_Set_Crosswalk.csv. Check every source SHA-256 against index/Library_Manifest.csv and stop on a mismatch."
+- Replaces: none
+
+## 2026-09-30 — AGENTS.md: OCR copies are Inferred only and may feed tag and quantity leads
+- Decided by: Carl
+- Why: Stated in this session: "AGENTS.md: approved as proposed: "OCR copies are Inferred only. They may feed tag and quantity leads (method bluebeam-ocr), never a text layer or a Verified read." Update the Bluebeam README to match."
+- Replaces: the AGENTS.md sentence "OCR copies are a comparison column only" (see also 2026-09-30 "Bluebeam OCR hits go into Tag_Hits and Quantity_Hits, still Inferred").
+
+## 2026-09-30 — Only the Audit_Ledger and Spot_Check schemas are missing; Carl uploads them
+- Decided by: Carl
+- Why: Stated in this session: "Schemas: Ledger_Schema.csv and Requirements_Schema.csv are already in index/. Only Audit_Ledger and Spot_Check are missing; I'll upload them. Correct the ISSUES_LOG entry."
+- Replaces: none
+
+## 2026-09-30 — checks.py: the ledger check covers only Ledgers under project/ and lanes/
+- Decided by: Carl
+- Why: Chose "Narrow the checks.py glob" when `derived/ocr/Ledger_Crosswalk.csv` failed the ledger rule. The option read: "Change is_ledger() to cover only Ledger files under project/ and lanes/, in its own commit".
+- Replaces: none
+
+## 2026-09-30 — Replace the bad branch-update commit on the OCR lane branch
+- Decided by: Carl
+- Why: Stated in this session: "Let the test that's running finish, then follow the status brief and addendum to replace the bad commit on this branch and push." The commit is a8694d8, the GitHub "Update branch" merge that dropped main's log entries. It was replaced with a force-push (with lease), a one-time exception to AGENTS.md rule 8.
+- Replaces: none
