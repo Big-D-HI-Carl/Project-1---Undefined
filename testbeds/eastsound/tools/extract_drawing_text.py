@@ -7,6 +7,8 @@ Inputs (read-only):
   testbeds/eastsound/index/01_Sheet_Index_rev1.md         sheet, title, cited file, Add. 4 status
   testbeds/eastsound/derived/bluebeam-ocr/                Bluebeam OCR copies (bluebeam-ocr block)
   testbeds/eastsound/project/02_Project_Ledger/Project_Ledger.csv
+  testbeds/eastsound/index/Plan_Set_Crosswalk.csv         cited_as (plans_N copy) per set page
+  testbeds/eastsound/index/Library_Manifest.csv           SHA-256 of every native source (checked first)
 
 Outputs: testbeds/eastsound/derived/ocr/ only (see README.md there).
 
@@ -1172,14 +1174,59 @@ def key_nouns(name):
     return out
 
 
+DIM_PART = r"(\d+(?:\.\d+)?)\s?ft(?:[\s-]?(\d+(?:\.\d+)?)\s?in)?"
+DIM_RE = re.compile(DIM_PART + r"(?:\s?x\s?" + DIM_PART + r"){1,2}", re.I)
+FT_IN_RE = re.compile(r"(\d+(?:\.\d+)?)\s?ft[\s-](\d+(?:\.\d+)?)\s?in", re.I)   # one feet-inch value
+
+
 def name_quantities(name):
-    out = []
-    for v, u in NAME_QTY_RE.findall(name):
-        u = u.upper()
+    """The row's quantity as the Ledger Name states it. A size ("3 ft x 7 ft", inches allowed) is
+    one item that must match whole. Every LF, SF, SY, CY, EA, GAL or TON value is required. A bare
+    foot value is the quantity only when the Name has neither (e.g. "7 ft — remove"); beside a
+    length it is a dimension ("126 LF … (7 ft total)")."""
+    items, spans = [], []
+    for m in DIM_RE.finditer(name):
+        parts = [(a, b or "") for a, b in re.findall(DIM_PART, m.group(0), re.I)]
+        label = " x ".join(f"{a} ft" + (f" {b} in" if b else "") for a, b in parts)
+        if all(i.get("label") != label for i in items):
+            items.append({"kind": "size", "parts": parts, "label": label})
+        spans.append(m.span())
+    for m in FT_IN_RE.finditer(name):
+        if any(a <= m.start() < b for a, b in spans):
+            continue
+        label = f"{m.group(1)} ft {m.group(2)} in"
+        if all(i.get("label") != label for i in items):
+            items.append({"kind": "size", "parts": [(m.group(1), m.group(2))], "label": label})
+        spans.append(m.span())
+    singles = []
+    for m in NAME_QTY_RE.finditer(name):
+        if any(a <= m.start() < b for a, b in spans):
+            continue
+        v, u = m.group(1), m.group(2).upper()
         u = {"GALLONS": "GAL", "TONS": "TON"}.get(u, u)
-        if (v, u) not in out:
-            out.append((v, u))
-    return out
+        if all((i.get("v"), i.get("u")) != (v, u) for i in singles):
+            singles.append({"kind": "quantity", "v": v, "u": u, "label": f"{v} {u}"})
+    true_units = [i for i in singles if i["u"] != "FT"]
+    items += true_units if (items or true_units) else singles
+    return items
+
+
+def qty_regex(item):
+    """Drawing-text form of one Name quantity (upper case, quotes normalised)."""
+    if item["kind"] == "size":
+        parts = []
+        for ft, inch in item["parts"]:
+            p = re.escape(ft) + r"(?:\s?'|\s?FT\.?|\s?FEET)?"
+            if inch and float(inch) != 0:
+                p += r"\s?-?\s?" + re.escape(inch) + r"\s?(?:\"|IN\.?)"
+            else:
+                p += r"(?:\s?-?\s?0\s?(?:\"|IN\.?))?"
+            parts.append(p + r"(?:\s?[WLHD](?![A-WYZ]))?")   # 2'-6"W x 4'-0"L
+        return re.compile(r"(?<![\d.'\"])" + r"\s?[X\u00d7]\s?".join(parts) + r"(?![\d.])")
+    v, u = re.escape(item["v"]), item["u"]
+    if u == "FT":   # not the middle of a size (2'X3') or a feet-inch string (3'-0")
+        return re.compile(r"(?<![\d.X\u00d7'\"/-])" + v + r"\s?(?:'(?![-\dX\u00d7'\"])|FT\.?(?![A-Z])|FEET|-FT)")
+    return re.compile(r"(?<![\d.])" + v + r"\s?" + QTY_UNIT_FORMS[u] + r"(?![A-Z])")
 
 
 def load_ledger():
@@ -1251,7 +1298,7 @@ def build_forms():
             r["searchable"] = "N"
             anchors = [f"{t[0]} ({a})" for t in r["tokens"] if t[0] for a in (t[1] or ["sheet only"])]
             if r["qty"]:
-                match = "match: quantity " + " or ".join(f"{v} {u}" for v, u in r["qty"]) + " (value and unit)"
+                match = "match: quantity " + " and ".join(i["label"] for i in r["qty"]) + " (every item, value and unit)"
             elif r["nouns"]:
                 match = "match: noun " + ", ".join(r["nouns"])
             else:
@@ -1773,20 +1820,35 @@ def sheet_pages(pages):
 
 
 def content_match(line_groups, r):
-    """Does the anchor text hold the row's quantity (value and unit) or, for a row whose Ledger
-    Name has no quantity, a specific noun from the Name? -> ("matched: ...", level) or (None, None)."""
+    """Does the anchor text hold the row's quantity (every item, value and unit; a size whole) or,
+    for a row whose Ledger Name has no quantity, a specific noun from the Name?
+    -> ("matched: ...", level of the weakest item) or (None, None)."""
+    if r["qty"]:
+        rxs = r.setdefault("qty_rx", [qty_regex(i) for i in r["qty"]])
+        found = {}
+        for words in line_groups:
+            if not words:
+                continue
+            s, owner = line_string(words, keep_quotes=True)
+            for k, rx in enumerate(rxs):
+                for m in rx.finditer(s):
+                    if r["qty"][k]["kind"] == "size" and not re.search(r"'|FT", m.group(0)) or \
+                            r["qty"][k]["kind"] == "size" and len(r["qty"][k]["parts"]) == 1 and not re.search(r"\"|IN", m.group(0)):
+                        continue
+                    ws = span_words(words, owner, m.start(), m.end())
+                    if ws:
+                        lv = method_level(weakest_method(ws))
+                        if k not in found or LEVELS.index(lv) < LEVELS.index(found[k]):
+                            found[k] = lv
+        if len(found) < len(r["qty"]):
+            return None, None
+        return "matched: quantity " + " + ".join(i["label"] for i in r["qty"]), weakest(found.values())
     best = None
     for words in line_groups:
         if not words:
             continue
         s, owner = line_string(words, keep_quotes=True)
-        for v, u in r["qty"]:
-            for m in re.finditer(r"(?<![\d.])" + re.escape(v) + r"\s?" + QTY_UNIT_FORMS[u], s):
-                ws = span_words(words, owner, m.start(), m.end())
-                if ws:
-                    cand = (method_level(weakest_method(ws)), f"matched: quantity {v} {u}")
-                    best = min(best, cand, key=lambda c: LEVELS.index(c[0])) if best else cand
-        for m in re.finditer(r"[A-Z]{4,}", s) if not r["qty"] else ():
+        for m in re.finditer(r"[A-Z]{4,}", s):
             if stem(m.group(0)) in r["nouns"]:
                 ws = span_words(words, owner, m.start(), m.end())
                 if ws:
@@ -1806,7 +1868,8 @@ def anchor_check(r, sheet, anchor, pages_by_key, sheet_keys, facts):
     anchor is found in the native text layer and its text holds the row's quantity (or, for a row
     with no quantity, a specific noun from the Ledger Name); Inferred for the same match by OCR or
     Bluebeam; Unresolved when the anchor is not found or its text does not match."""
-    keys = sheet_keys.get(sheet, [])
+    # the Add. 4 reissue governs over its base page, so on a tie it is cited first
+    keys = sorted(sheet_keys.get(sheet, []), key=lambda k: (not k.startswith("add4"), k))
     if not keys:
         return "sheet", f"{sheet}: sheet not in the set", "Unresolved"
     m = re.fullmatch(r"Add\. 4 p\.(\d+)", anchor)
@@ -1854,7 +1917,7 @@ def anchor_check(r, sheet, anchor, pages_by_key, sheet_keys, facts):
                 res.append(f"{sheet} Det. {n}: not found")
                 lvs.append("Unresolved")
                 continue
-            k, d = min(got, key=lambda g: (METHOD_RANK[g[1]["number_method"]], g[0], g[1]["bbox"]))
+            k, d = min(got, key=lambda g: (METHOD_RANK[g[1]["number_method"]], keys.index(g[0]), g[1]["bbox"]))
             what, lv = content_match(d["lines"], r)
             if not what:
                 res.append(f"{sheet} Det. {n}: detail found ({k} {fmt_box(d['bbox'])}) titled \"{d['title'][:60]}\"; "
