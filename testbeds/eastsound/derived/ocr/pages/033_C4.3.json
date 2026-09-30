@@ -1,0 +1,10901 @@
+{
+ "bluebeam": {
+  "counts": {
+   "kept": 249,
+   "matched_native": 22,
+   "mode3_words": 271,
+   "sub1pt_dropped": 0
+  },
+  "rule": "render-mode-3 words in the OCR copy, minus words matching a native word (same normalised text, overlap >= 0.5 of the smaller box); Inferred",
+  "source": {
+   "file": "testbeds/eastsound/derived/bluebeam-ocr/Pages from eswd-wwtp-upgrade-ph1-11x17-plans - OCR - Part 1.pdf",
+   "page": 33,
+   "sha256": "33569b9e5a301092f9d834e5c96a01ad0ab1475fa5a6d0ecc683808d4cef34d3"
+  },
+  "transform_scale": [
+   1.0,
+   1.0
+  ],
+  "words": [
+   {
+    "bbox": [
+     1121.48,
+     19.43,
+     1160.48,
+     151.45
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b62.7",
+    "method": "bluebeam-ocr",
+    "size": 39.0,
+    "text": "WILSON",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     1072.3,
+     20.82,
+     1078.96,
+     25.82
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b21.2",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "BY",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     976.55,
+     21.07,
+     985.43,
+     26.07
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b21.0",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "NO.",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     1013.5,
+     21.07,
+     1040.69,
+     26.07
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b21.1",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "REVISIONS",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     1096.3,
+     21.07,
+     1109.62,
+     26.07
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b21.3",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "DATE",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     1178.02,
+     73.35,
+     1185.02,
+     168.25
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b60.1",
+    "method": "bluebeam-ocr",
+    "size": 7.0,
+    "text": "WILSONENGINEERING.COM",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     1157.94,
+     74.76,
+     1167.94,
+     144.7
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b63.0",
+    "method": "bluebeam-ocr",
+    "size": 10.0,
+    "text": "ENGINEERING",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     161.3,
+     94.67,
+     165.96,
+     101.67
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b22.0",
+    "method": "bluebeam-ocr",
+    "size": 7.0,
+    "text": "X",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     120.5,
+     113.62,
+     125.16,
+     120.62
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b23.0",
+    "method": "bluebeam-ocr",
+    "size": 7.0,
+    "text": "S",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     226.8,
+     120.47,
+     229.8,
+     126.47
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b24.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "8",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     161.3,
+     129.99,
+     166.86,
+     139.99
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b24.1",
+    "method": "bluebeam-ocr",
+    "size": 10.0,
+    "text": "x",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     484.1,
+     145.34,
+     506.41,
+     151.34
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b25.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "NOTES:",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     204.25,
+     149.37,
+     221.58,
+     173.37
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b25.1",
+    "method": "bluebeam-ocr",
+    "size": 24.0,
+    "text": "A",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     499.2,
+     154.69,
+     511.19,
+     160.69
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b47.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "FILL",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     512.86,
+     154.69,
+     523.52,
+     160.69
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b47.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "ALL",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     525.19,
+     154.69,
+     545.56,
+     160.69
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b47.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "PIPING",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     547.22,
+     154.69,
+     562.54,
+     160.69
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b47.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "WITH",
+    "word_no": 3
+   },
+   {
+    "bbox": [
+     564.2,
+     154.69,
+     584.19,
+     160.69
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b47.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "CLEAN",
+    "word_no": 4
+   },
+   {
+    "bbox": [
+     585.85,
+     154.69,
+     607.49,
+     160.69
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b47.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "WATER",
+    "word_no": 5
+   },
+   {
+    "bbox": [
+     484.1,
+     154.77,
+     488.6,
+     160.77
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b26.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "1.",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     499.2,
+     161.44,
+     532.84,
+     167.44
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b47.1",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "(DOMESTIC",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     534.5,
+     161.44,
+     562.14,
+     167.44
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b47.1",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "POTABLE",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     563.86,
+     161.44,
+     587.5,
+     167.44
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b47.1",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "WATER)",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     589.16,
+     161.44,
+     608.15,
+     167.44
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b47.1",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "PRIOR",
+    "word_no": 3
+   },
+   {
+    "bbox": [
+     609.81,
+     161.44,
+     618.21,
+     167.44
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b47.1",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "TO",
+    "word_no": 4
+   },
+   {
+    "bbox": [
+     499.2,
+     167.64,
+     529.5,
+     173.64
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b47.2",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "STARTING",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     531.16,
+     167.64,
+     543.88,
+     173.64
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b47.2",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "AND",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     545.54,
+     167.64,
+     571.51,
+     173.64
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b47.2",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "TESTING",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     573.17,
+     167.64,
+     582.17,
+     173.64
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b47.2",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "2W",
+    "word_no": 3
+   },
+   {
+    "bbox": [
+     583.83,
+     167.64,
+     605.53,
+     173.64
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b47.2",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "WATER",
+    "word_no": 4
+   },
+   {
+    "bbox": [
+     607.2,
+     167.64,
+     631.9,
+     173.64
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b47.2",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "SYSTEM",
+    "word_no": 5
+   },
+   {
+    "bbox": [
+     499.2,
+     173.89,
+     536.5,
+     179.89
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b47.3",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "EQUIPMENT.",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     484.3,
+     180.14,
+     489.3,
+     186.14
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b27.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "2.",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     499.2,
+     180.14,
+     541.5,
+     186.14
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b47.4",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "CONTRACTOR",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     543.16,
+     180.14,
+     585.52,
+     186.14
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b47.4",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "RESPONSIBLE",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     587.18,
+     180.14,
+     599.84,
+     186.14
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b47.4",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "FOR",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     499.2,
+     186.39,
+     545.83,
+     192.39
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b47.5",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "COORDINATING",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     547.55,
+     186.39,
+     567.86,
+     192.39
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b47.5",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "PIPING",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     569.52,
+     186.39,
+     609.82,
+     192.39
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b47.5",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "CONNECTION",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     611.55,
+     186.39,
+     630.53,
+     192.39
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b47.5",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "STYLE",
+    "word_no": 3
+   },
+   {
+    "bbox": [
+     499.2,
+     193.34,
+     533.5,
+     199.34
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b47.6",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "(GROOVED,",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     535.16,
+     193.34,
+     565.2,
+     199.34
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b47.6",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "FLANGED,",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     566.86,
+     193.34,
+     601.56,
+     199.34
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b47.6",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "THREADED,",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     603.22,
+     193.34,
+     618.87,
+     199.34
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b47.6",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "ETC.)",
+    "word_no": 3
+   },
+   {
+    "bbox": [
+     1169.66,
+     199.22,
+     1184.66,
+     255.85
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b64.1",
+    "method": "bluebeam-ocr",
+    "size": 15.0,
+    "text": "“oMAl’s",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     499.2,
+     199.59,
+     511.86,
+     205.59
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b47.7",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "AND",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     513.52,
+     199.59,
+     554.15,
+     205.59
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b47.7",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "PERFORMING",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     555.82,
+     199.59,
+     588.86,
+     205.59
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b47.7",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "PRESSURE",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     590.52,
+     199.59,
+     616.56,
+     205.59
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b47.7",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "TESTING",
+    "word_no": 3
+   },
+   {
+    "bbox": [
+     618.22,
+     199.59,
+     626.54,
+     205.59
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b47.7",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "TO",
+    "word_no": 4
+   },
+   {
+    "bbox": [
+     1125.71,
+     201.94,
+     1140.71,
+     243.6
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b62.3",
+    "method": "bluebeam-ocr",
+    "size": 15.0,
+    "text": "-Ches",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     499.2,
+     205.84,
+     545.16,
+     211.84
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b47.8",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "DEMONSTRATE",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     546.82,
+     205.84,
+     568.53,
+     211.84
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b47.8",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "WATER",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     570.2,
+     205.84,
+     588.17,
+     211.84
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b47.8",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "TIGHT",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     499.2,
+     212.04,
+     549.16,
+     218.04
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b47.9",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "CONSTRUCTION.",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     1134.39,
+     214.67,
+     1140.39,
+     240.98
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b62.4",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "WASE,Yc",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     1133.37,
+     218.08,
+     1140.37,
+     241.08
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b62.2",
+    "method": "bluebeam-ocr",
+    "size": 7.0,
+    "text": "WASH,",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     1168.17,
+     218.79,
+     1175.17,
+     246.0
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b64.0",
+    "method": "bluebeam-ocr",
+    "size": 7.0,
+    "text": "cistekPS",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     1162.52,
+     223.26,
+     1167.52,
+     224.65
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b63.2",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "/",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     1162.52,
+     237.25,
+     1167.52,
+     251.15
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b63.1",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "36886",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     1134.39,
+     242.64,
+     1140.39,
+     244.3
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b62.4",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": ":",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     1133.37,
+     243.01,
+     1140.37,
+     249.24
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b62.2",
+    "method": "bluebeam-ocr",
+    "size": 7.0,
+    "text": "or",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     1127.72,
+     244.07,
+     1133.72,
+     248.4
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b62.6",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "G",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     227.99,
+     250.06,
+     257.96,
+     259.06
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b28.0",
+    "method": "bluebeam-ocr",
+    "size": 9.0,
+    "text": "TANKS",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     260.54,
+     250.06,
+     263.54,
+     259.06
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b28.0",
+    "method": "bluebeam-ocr",
+    "size": 9.0,
+    "text": "-",
+    "word_no": 3
+   },
+   {
+    "bbox": [
+     266.03,
+     250.06,
+     289.52,
+     259.06
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b28.0",
+    "method": "bluebeam-ocr",
+    "size": 9.0,
+    "text": "PLAN",
+    "word_no": 4
+   },
+   {
+    "bbox": [
+     1133.37,
+     251.18,
+     1140.37,
+     260.9
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b62.2",
+    "method": "bluebeam-ocr",
+    "size": 7.0,
+    "text": "27.",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     1162.51,
+     252.57,
+     1167.51,
+     255.35
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b63.1",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "0",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     212.2,
+     265.52,
+     226.96,
+     272.52
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b29.0",
+    "method": "bluebeam-ocr",
+    "size": 7.0,
+    "text": "NOT",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     228.9,
+     265.52,
+     255.71,
+     272.52
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b29.0",
+    "method": "bluebeam-ocr",
+    "size": 7.0,
+    "text": "SHOWN",
+    "word_no": 3
+   },
+   {
+    "bbox": [
+     257.65,
+     265.52,
+     272.42,
+     272.52
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b29.0",
+    "method": "bluebeam-ocr",
+    "size": 7.0,
+    "text": "FOR",
+    "word_no": 4
+   },
+   {
+    "bbox": [
+     274.35,
+     265.52,
+     303.98,
+     272.52
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b29.0",
+    "method": "bluebeam-ocr",
+    "size": 7.0,
+    "text": "CLARITY",
+    "word_no": 5
+   },
+   {
+    "bbox": [
+     222.7,
+     279.92,
+     226.59,
+     286.92
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b30.0",
+    "method": "bluebeam-ocr",
+    "size": 7.0,
+    "text": "o",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     294.5,
+     280.52,
+     297.5,
+     286.52
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b30.1",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "4",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     284.4,
+     297.82,
+     297.16,
+     302.82
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b31.1",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "FEET",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     188.15,
+     298.02,
+     204.53,
+     303.02
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b31.0",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "SCALE",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     216.0,
+     301.87,
+     248.19,
+     306.87
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b31.2",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "HORIZONTAL",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     249.58,
+     301.87,
+     265.96,
+     306.87
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b31.2",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "SCALE",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     265.45,
+     363.24,
+     275.44,
+     369.24
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b42.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "AIR",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     277.1,
+     363.24,
+     313.41,
+     369.24
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b42.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "DIAPHRAGM",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     315.07,
+     363.24,
+     331.12,
+     369.24
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b42.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "TANK",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     332.79,
+     363.24,
+     338.12,
+     369.24
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b42.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "(2",
+    "word_no": 3
+   },
+   {
+    "bbox": [
+     339.78,
+     363.24,
+     362.76,
+     369.24
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b42.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "TOTAL).",
+    "word_no": 4
+   },
+   {
+    "bbox": [
+     364.42,
+     363.24,
+     381.07,
+     369.24
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b42.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "EACH",
+    "word_no": 5
+   },
+   {
+    "bbox": [
+     382.74,
+     363.24,
+     392.74,
+     369.24
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b42.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "119",
+    "word_no": 6
+   },
+   {
+    "bbox": [
+     1124.41,
+     368.97,
+     1137.41,
+     428.99
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b62.5",
+    "method": "bluebeam-ocr",
+    "size": 13.0,
+    "text": "DISTRICT",
+    "word_no": 4
+   },
+   {
+    "bbox": [
+     265.45,
+     369.24,
+     291.44,
+     375.24
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b42.1",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "GALLON,",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     293.1,
+     369.24,
+     314.49,
+     375.24
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b42.1",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "MODEL",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     316.15,
+     369.24,
+     324.47,
+     375.24
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b42.1",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "TO",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     326.13,
+     369.24,
+     334.12,
+     375.24
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b42.1",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "BE",
+    "word_no": 3
+   },
+   {
+    "bbox": [
+     335.79,
+     369.24,
+     343.78,
+     375.24
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b42.1",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "AS",
+    "word_no": 4
+   },
+   {
+    "bbox": [
+     345.44,
+     369.24,
+     380.47,
+     375.24
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b42.1",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "DESCRIBED",
+    "word_no": 5
+   },
+   {
+    "bbox": [
+     382.14,
+     369.24,
+     388.13,
+     375.24
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b42.1",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "IN",
+    "word_no": 6
+   },
+   {
+    "bbox": [
+     265.45,
+     376.24,
+     317.06,
+     382.24
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b42.2",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "SPECIFICATIONS.",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     318.8,
+     376.24,
+     354.77,
+     382.24
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b42.2",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "CONFIGURE",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     356.43,
+     376.24,
+     369.09,
+     382.24
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b42.2",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "FOR",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     370.75,
+     376.24,
+     399.13,
+     382.24
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b42.2",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "OWNER’S",
+    "word_no": 3
+   },
+   {
+    "bbox": [
+     265.45,
+     382.44,
+     292.1,
+     388.44
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b42.3",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "DESIRED",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     293.76,
+     382.44,
+     329.12,
+     388.44
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b42.3",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "OPERATION",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     330.78,
+     382.44,
+     363.75,
+     388.44
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b42.3",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "PRESSURE",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     365.42,
+     382.44,
+     388.47,
+     388.44
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b42.3",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "RANGE.",
+    "word_no": 3
+   },
+   {
+    "bbox": [
+     24.92,
+     383.9,
+     29.92,
+     396.67
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b65.2",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "Smith",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     1153.41,
+     392.57,
+     1162.41,
+     395.07
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b61.0",
+    "method": "bluebeam-ocr",
+    "size": 9.0,
+    "text": "I",
+    "word_no": 6
+   },
+   {
+    "bbox": [
+     66.85,
+     392.79,
+     99.83,
+     398.79
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b43.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "PRESSURE",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     101.55,
+     392.79,
+     143.19,
+     398.79
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b43.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "TRANSDUCER",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     144.85,
+     392.79,
+     157.18,
+     398.79
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b43.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "PER",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     1153.41,
+     397.56,
+     1162.41,
+     428.03
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b61.0",
+    "method": "bluebeam-ocr",
+    "size": 9.0,
+    "text": "PHASE",
+    "word_no": 5
+   },
+   {
+    "bbox": [
+     24.92,
+     398.05,
+     29.92,
+     406.1
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b65.2",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "Jeff",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     66.85,
+     400.44,
+     116.79,
+     406.44
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b43.1",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "SPECIFICATIONS",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     118.46,
+     400.44,
+     123.79,
+     406.44
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b43.1",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "(0",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     125.45,
+     400.44,
+     133.77,
+     406.44
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b43.1",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "TO",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     135.51,
+     400.44,
+     157.17,
+     406.44
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b43.1",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "150PSI)",
+    "word_no": 3
+   },
+   {
+    "bbox": [
+     79.25,
+     408.39,
+     93.24,
+     414.39
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b44.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "(EQ#",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     94.9,
+     408.39,
+     119.89,
+     414.39
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b44.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "PIT-620).",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     121.61,
+     408.39,
+     156.91,
+     414.39
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b44.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "OPERATION",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     74.4,
+     415.09,
+     107.38,
+     421.09
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b32.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "PRESSURE",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     114.95,
+     415.34,
+     121.62,
+     421.34
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b32.1",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "55",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     123.28,
+     415.34,
+     131.61,
+     421.34
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b32.1",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "TO",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     133.27,
+     415.34,
+     139.94,
+     421.34
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b32.1",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "75",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     141.6,
+     415.34,
+     152.92,
+     421.34
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b32.1",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "PSI.",
+    "word_no": 3
+   },
+   {
+    "bbox": [
+     284.9,
+     419.64,
+     290.36,
+     425.64
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b32.2",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "1\"",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     292.02,
+     419.64,
+     304.68,
+     425.64
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b32.2",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "SCH",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     306.34,
+     419.64,
+     313.02,
+     425.64
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b32.2",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "80",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     314.61,
+     419.64,
+     326.94,
+     425.64
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b32.2",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "PVC",
+    "word_no": 3
+   },
+   {
+    "bbox": [
+     328.6,
+     419.64,
+     342.25,
+     425.64
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b32.2",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "PIPE",
+    "word_no": 4
+   },
+   {
+    "bbox": [
+     343.91,
+     419.64,
+     359.56,
+     425.64
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b32.2",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "(TYP)",
+    "word_no": 5
+   },
+   {
+    "bbox": [
+     24.92,
+     425.53,
+     29.92,
+     433.02
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b65.0",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "PM",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     71.5,
+     428.29,
+     104.48,
+     434.29
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b57.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "PRESSURE",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     106.2,
+     428.29,
+     125.18,
+     434.29
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b57.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "GAGE,",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     126.84,
+     428.29,
+     130.18,
+     434.29
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b57.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "0",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     131.84,
+     428.29,
+     140.16,
+     434.29
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b57.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "TO",
+    "word_no": 3
+   },
+   {
+    "bbox": [
+     1153.41,
+     430.53,
+     1162.41,
+     433.52
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b61.0",
+    "method": "bluebeam-ocr",
+    "size": 9.0,
+    "text": "-",
+    "word_no": 4
+   },
+   {
+    "bbox": [
+     1124.41,
+     432.59,
+     1137.41,
+     479.48
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b62.5",
+    "method": "bluebeam-ocr",
+    "size": 13.0,
+    "text": "WATER",
+    "word_no": 3
+   },
+   {
+    "bbox": [
+     71.5,
+     433.84,
+     81.51,
+     439.84
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b57.1",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "150",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     83.17,
+     433.84,
+     94.49,
+     439.84
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b57.1",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "PSI.",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     96.15,
+     433.84,
+     123.12,
+     439.84
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b57.1",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "PROVIDE",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     124.85,
+     433.84,
+     140.16,
+     439.84
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b57.1",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "WITH",
+    "word_no": 3
+   },
+   {
+    "bbox": [
+     24.92,
+     434.41,
+     29.92,
+     444.14
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b65.0",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "3:25",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     1153.41,
+     436.02,
+     1162.41,
+     480.58
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b61.0",
+    "method": "bluebeam-ocr",
+    "size": 9.0,
+    "text": "UPGRADE",
+    "word_no": 3
+   },
+   {
+    "bbox": [
+     86.2,
+     439.59,
+     119.17,
+     445.59
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b57.2",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "STAINLESS",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     120.9,
+     439.59,
+     139.88,
+     445.59
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b57.2",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "STEEL",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     94.9,
+     445.09,
+     139.86,
+     451.09
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b58.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "ACCESSORIES.",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     24.92,
+     445.52,
+     29.92,
+     467.75
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b65.0",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "11/2/2022",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     211.7,
+     455.19,
+     217.16,
+     461.19
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b34.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "3\"",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     96.7,
+     462.84,
+     113.03,
+     468.84
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b51.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "PLUG",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     114.69,
+     462.84,
+     137.99,
+     468.84
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b51.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "FITTING",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     1178.72,
+     464.14,
+     1185.72,
+     492.21
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b60.0",
+    "method": "bluebeam-ocr",
+    "size": 7.0,
+    "text": "LAYOUT",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     265.45,
+     467.44,
+     268.22,
+     477.44
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b33.0",
+    "method": "bluebeam-ocr",
+    "size": 10.0,
+    "text": "/",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     95.65,
+     468.84,
+     108.3,
+     474.84
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b51.1",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "FOR",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     109.97,
+     468.84,
+     123.62,
+     474.84
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b51.1",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "PIPE",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     125.28,
+     468.84,
+     137.94,
+     474.84
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b51.1",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "END",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     295.9,
+     475.59,
+     316.55,
+     481.59
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b35.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "FLOOR",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     318.21,
+     475.59,
+     331.86,
+     481.59
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b35.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "PIPE",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     333.6,
+     475.59,
+     362.57,
+     481.59
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b35.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "SUPPORT",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     103.0,
+     475.84,
+     137.97,
+     481.84
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b52.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "(PRESSURE",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     115.65,
+     482.79,
+     137.96,
+     488.79
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b53.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "RATED)",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     1153.41,
+     483.07,
+     1162.41,
+     512.05
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b61.0",
+    "method": "bluebeam-ocr",
+    "size": 9.0,
+    "text": "PLANT",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     1124.41,
+     483.08,
+     1137.41,
+     510.51
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b62.5",
+    "method": "bluebeam-ocr",
+    "size": 13.0,
+    "text": "AND",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     17.02,
+     484.54,
+     22.02,
+     545.12
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b66.0",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "APWA_UNSCREENED.ctb",
+    "word_no": 5
+   },
+   {
+    "bbox": [
+     288.0,
+     491.89,
+     315.16,
+     497.89
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b36.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "FF=23.30‘",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     24.92,
+     497.4,
+     29.92,
+     532.64
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b65.1",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "STATION.DWG",
+    "word_no": 8
+   },
+   {
+    "bbox": [
+     266.15,
+     502.24,
+     280.81,
+     508.24
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b37.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "BALL",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     282.48,
+     502.24,
+     301.8,
+     508.24
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b37.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "VALVE",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     61.35,
+     505.34,
+     94.33,
+     511.34
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b54.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "PRESSURE",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     96.05,
+     505.34,
+     117.03,
+     511.34
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b54.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "RELIEF",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     118.69,
+     505.34,
+     139.68,
+     511.34
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b54.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "VALVE,",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     82.35,
+     511.59,
+     102.67,
+     517.59
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b55.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "RATED",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     104.33,
+     511.59,
+     112.65,
+     517.59
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b55.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "TO",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     114.31,
+     511.59,
+     139.69,
+     517.59
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b55.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "RELIEVE",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     1124.41,
+     514.11,
+     1137.41,
+     561.88
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b62.5",
+    "method": "bluebeam-ocr",
+    "size": 13.0,
+    "text": "SEWER",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     253.9,
+     514.44,
+     267.55,
+     520.44
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b38.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "PIPE",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     269.21,
+     514.44,
+     298.25,
+     520.44
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b38.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "SUPPORT",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     299.91,
+     514.44,
+     317.22,
+     520.44
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b38.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "(TYP.)",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     1153.41,
+     514.54,
+     1162.41,
+     569.58
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b61.0",
+    "method": "bluebeam-ocr",
+    "size": 9.0,
+    "text": "TREATMENT",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     199.2,
+     517.34,
+     206.53,
+     523.34
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b45.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "%”",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     208.19,
+     517.34,
+     232.17,
+     523.34
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b45.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "FAUCET",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     59.05,
+     517.84,
+     96.02,
+     523.84
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b55.1",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "PRESSURES",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     97.75,
+     517.84,
+     106.07,
+     523.84
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b55.1",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "OF",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     107.73,
+     517.84,
+     117.74,
+     523.84
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b55.1",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "120",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     119.4,
+     517.84,
+     129.06,
+     523.84
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b55.1",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "PSI",
+    "word_no": 3
+   },
+   {
+    "bbox": [
+     130.72,
+     517.84,
+     139.71,
+     523.84
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b55.1",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "OR",
+    "word_no": 4
+   },
+   {
+    "bbox": [
+     58.35,
+     523.84,
+     88.99,
+     529.84
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b55.2",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "GREATER,",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     90.65,
+     523.84,
+     119.04,
+     529.84
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b55.2",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "CLAYTON",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     120.71,
+     523.84,
+     139.69,
+     529.84
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b55.2",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "MARK,",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     197.5,
+     524.29,
+     210.15,
+     530.29
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b45.1",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "FOR",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     211.82,
+     524.29,
+     221.81,
+     530.29
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b45.1",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "AIR",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     223.47,
+     524.29,
+     244.45,
+     530.29
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b45.1",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "RELIEF",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     198.25,
+     530.28,
+     202.25,
+     536.28
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b46.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "&",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     107.05,
+     530.29,
+     116.04,
+     536.29
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b56.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "OR",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     117.71,
+     530.29,
+     139.69,
+     536.29
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b56.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "EQUAL.",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     203.9,
+     530.29,
+     234.88,
+     536.29
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b46.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "SAMPLING",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     646.8,
+     530.62,
+     663.48,
+     560.62
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b39.1",
+    "method": "bluebeam-ocr",
+    "size": 30.0,
+    "text": "3",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     577.2,
+     530.79,
+     609.69,
+     536.79
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b39.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "TOC=23.30‘",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     24.92,
+     534.02,
+     29.92,
+     548.46
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b65.1",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "PUMP",
+    "word_no": 7
+   },
+   {
+    "bbox": [
+     188.55,
+     539.64,
+     210.53,
+     545.64
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b48.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "—TANK",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     212.2,
+     539.64,
+     225.51,
+     545.64
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b48.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "TEE,",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     227.17,
+     539.64,
+     255.89,
+     545.64
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b48.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "SIMMONS",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     196.5,
+     545.89,
+     213.83,
+     551.89
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b49.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "SI704,",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     215.49,
+     545.89,
+     224.48,
+     551.89
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b49.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "OR",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     226.15,
+     545.89,
+     246.53,
+     551.89
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b49.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "EQUAL",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     17.02,
+     546.51,
+     22.02,
+     554.55
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b66.0",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "WE",
+    "word_no": 4
+   },
+   {
+    "bbox": [
+     24.92,
+     549.84,
+     29.92,
+     565.45
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b65.1",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "DRAIN",
+    "word_no": 6
+   },
+   {
+    "bbox": [
+     180.95,
+     555.74,
+     186.95,
+     561.74
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b50.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "—",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     188.61,
+     555.74,
+     193.95,
+     561.74
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b50.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "1”",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     195.61,
+     555.74,
+     210.27,
+     561.74
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b50.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "BALL",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     211.93,
+     555.74,
+     231.25,
+     561.74
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b50.0",
+    "method": "bluebeam-ocr",
+    "size": 6.0,
+    "text": "VALVE",
+    "word_no": 3
+   },
+   {
+    "bbox": [
+     17.02,
+     556.0,
+     22.02,
+     564.33
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b66.0",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "1:2.",
+    "word_no": 3
+   },
+   {
+    "bbox": [
+     17.02,
+     565.72,
+     22.02,
+     583.25
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b66.0",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "Portrait,",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     561.04,
+     566.79,
+     587.79,
+     576.79
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b40.0",
+    "method": "bluebeam-ocr",
+    "size": 10.0,
+    "text": "TANK",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     590.56,
+     566.79,
+     593.89,
+     576.79
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b40.0",
+    "method": "bluebeam-ocr",
+    "size": 10.0,
+    "text": "-",
+    "word_no": 3
+   },
+   {
+    "bbox": [
+     596.66,
+     566.79,
+     641.18,
+     576.79
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b40.0",
+    "method": "bluebeam-ocr",
+    "size": 10.0,
+    "text": "SECTION",
+    "word_no": 4
+   },
+   {
+    "bbox": [
+     643.95,
+     566.79,
+     654.41,
+     576.79
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b40.0",
+    "method": "bluebeam-ocr",
+    "size": 10.0,
+    "text": "'B'",
+    "word_no": 5
+   },
+   {
+    "bbox": [
+     24.92,
+     566.83,
+     29.92,
+     582.93
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b65.1",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "PLANT",
+    "word_no": 5
+   },
+   {
+    "bbox": [
+     193.97,
+     575.19,
+     227.27,
+     585.19
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b40.1",
+    "method": "bluebeam-ocr",
+    "size": 10.0,
+    "text": "TANKS",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     230.17,
+     575.19,
+     233.5,
+     585.19
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b40.1",
+    "method": "bluebeam-ocr",
+    "size": 10.0,
+    "text": "-",
+    "word_no": 3
+   },
+   {
+    "bbox": [
+     236.27,
+     575.19,
+     280.78,
+     585.19
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b40.1",
+    "method": "bluebeam-ocr",
+    "size": 10.0,
+    "text": "SECTION",
+    "word_no": 4
+   },
+   {
+    "bbox": [
+     283.55,
+     575.19,
+     294.01,
+     585.19
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b40.1",
+    "method": "bluebeam-ocr",
+    "size": 10.0,
+    "text": "'A'",
+    "word_no": 5
+   },
+   {
+    "bbox": [
+     469.18,
+     583.07,
+     502.22,
+     590.07
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b40.2",
+    "method": "bluebeam-ocr",
+    "size": 7.0,
+    "text": "HANDLES",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     504.24,
+     583.07,
+     519.01,
+     590.07
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b40.2",
+    "method": "bluebeam-ocr",
+    "size": 7.0,
+    "text": "AND",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     520.95,
+     583.07,
+     542.31,
+     590.07
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b40.2",
+    "method": "bluebeam-ocr",
+    "size": 7.0,
+    "text": "HOIST",
+    "word_no": 3
+   },
+   {
+    "bbox": [
+     544.25,
+     583.07,
+     570.68,
+     590.07
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b40.2",
+    "method": "bluebeam-ocr",
+    "size": 7.0,
+    "text": "CHAINS",
+    "word_no": 4
+   },
+   {
+    "bbox": [
+     572.69,
+     583.07,
+     587.45,
+     590.07
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b40.2",
+    "method": "bluebeam-ocr",
+    "size": 7.0,
+    "text": "NOT",
+    "word_no": 5
+   },
+   {
+    "bbox": [
+     589.39,
+     583.07,
+     616.2,
+     590.07
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b40.2",
+    "method": "bluebeam-ocr",
+    "size": 7.0,
+    "text": "SHOWN",
+    "word_no": 6
+   },
+   {
+    "bbox": [
+     618.14,
+     583.07,
+     632.9,
+     590.07
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b40.2",
+    "method": "bluebeam-ocr",
+    "size": 7.0,
+    "text": "FOR",
+    "word_no": 7
+   },
+   {
+    "bbox": [
+     634.84,
+     583.07,
+     666.4,
+     590.07
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b40.2",
+    "method": "bluebeam-ocr",
+    "size": 7.0,
+    "text": "CLARITY.",
+    "word_no": 8
+   },
+   {
+    "bbox": [
+     24.92,
+     584.32,
+     29.92,
+     607.09
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b65.1",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "C4.1-C4.3",
+    "word_no": 4
+   },
+   {
+    "bbox": [
+     17.02,
+     584.64,
+     22.02,
+     602.41
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b66.0",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "Inches),",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     208.45,
+     590.72,
+     218.16,
+     597.72
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b40.3",
+    "method": "bluebeam-ocr",
+    "size": 7.0,
+    "text": "TO",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     220.1,
+     590.72,
+     243.1,
+     597.72
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b40.3",
+    "method": "bluebeam-ocr",
+    "size": 7.0,
+    "text": "SCALE",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     17.02,
+     603.79,
+     22.02,
+     616.3
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b66.0",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "11.00",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     24.92,
+     608.48,
+     29.92,
+     681.02
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b65.1",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "DESIGN\\DWG\\V2020_2020-070",
+    "word_no": 3
+   },
+   {
+    "bbox": [
+     1144.77,
+     619.88,
+     1149.77,
+     640.97
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b62.0",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "COUNTY",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     17.02,
+     636.83,
+     22.02,
+     651.0
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b66.1",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "(17.00",
+    "word_no": 8
+   },
+   {
+    "bbox": [
+     1144.77,
+     642.36,
+     1149.77,
+     655.97
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b62.0",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "JUAN",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     17.02,
+     652.45,
+     22.02,
+     655.78
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b66.1",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "B",
+    "word_no": 7
+   },
+   {
+    "bbox": [
+     17.02,
+     657.16,
+     22.02,
+     669.39
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b66.1",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "bleed",
+    "word_no": 6
+   },
+   {
+    "bbox": [
+     17.02,
+     670.78,
+     22.02,
+     677.16
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b66.1",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "full",
+    "word_no": 5
+   },
+   {
+    "bbox": [
+     17.02,
+     678.54,
+     22.02,
+     690.2
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b66.1",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "ANSI",
+    "word_no": 4
+   },
+   {
+    "bbox": [
+     24.92,
+     682.47,
+     29.92,
+     698.28
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b65.1",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "WWTP",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     17.02,
+     691.59,
+     22.02,
+     715.24
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b66.1",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "PDF1.pc3,",
+    "word_no": 3
+   },
+   {
+    "bbox": [
+     24.92,
+     699.67,
+     29.92,
+     730.75
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b65.1",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "EASTSOUND",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     124.1,
+     703.2,
+     159.13,
+     724.2
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b41.2",
+    "method": "bluebeam-ocr",
+    "size": 21.0,
+    "text": "811",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     189.03,
+     714.57,
+     203.82,
+     721.57
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b41.0",
+    "method": "bluebeam-ocr",
+    "size": 7.0,
+    "text": "days",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     17.02,
+     716.62,
+     22.02,
+     731.07
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b66.1",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "Adobe",
+    "word_no": 2
+   },
+   {
+    "bbox": [
+     123.1,
+     721.27,
+     132.42,
+     728.27
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b41.1",
+    "method": "bluebeam-ocr",
+    "size": 7.0,
+    "text": "PP",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     24.92,
+     732.18,
+     29.92,
+     773.3
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b65.1",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "W:\\2020\\2020-070",
+    "word_no": 0
+   },
+   {
+    "bbox": [
+     17.02,
+     732.46,
+     22.02,
+     758.87
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b66.1",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "SETTINGS:",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     155.73,
+     740.2,
+     196.51,
+     761.2
+    ],
+    "conf": null,
+    "dir": [
+     1.0,
+     0.0
+    ],
+    "line": "b59.0",
+    "method": "bluebeam-ocr",
+    "size": 21.0,
+    "text": "SET",
+    "word_no": 1
+   },
+   {
+    "bbox": [
+     17.02,
+     760.26,
+     22.02,
+     773.3
+    ],
+    "conf": null,
+    "dir": [
+     0.0,
+     -1.0
+    ],
+    "line": "b66.1",
+    "method": "bluebeam-ocr",
+    "size": 5.0,
+    "text": "PLOT",
+    "word_no": 0
+   }
+  ]
+ },
+ "cited_as": {
+  "basis": "01_Sheet_Index_rev1.md File and PDF p. columns",
+  "file": "Pages_from_eswd-wwtp-upgrade-ph1-11x17-plans_5.pdf",
+  "page": 1
+ },
+ "counts": {
+  "mode3_chars_kept": 299,
+  "ocr_mean_conf": 88.16,
+  "ocr_pass_duplicates_dropped": 358,
+  "ocr_rot90_words": 315,
+  "ocr_suppressed_by_text_layer": 95,
+  "ocr_upright_words": 359,
+  "ocr_words": 316,
+  "ocr_words_ge_60": 290,
+  "ocr_words_merged": 221,
+  "sub1pt_dropped_chars": 0,
+  "sub1pt_dropped_words": 0,
+  "text_layer_chars": 418,
+  "text_layer_words": 96,
+  "text_layer_words_kept": 96,
+  "text_words_without_chars": 0
+ },
+ "discipline_01": "Civil",
+ "extractor": {
+  "conf_flag": 60,
+  "dpi": 400,
+  "eng_traineddata_sha256": "7d4322bd2a7749724879683fc3912cb542f19906c83bcc1a52132556427170b2",
+  "env": {
+   "OMP_THREAD_LIMIT": "1",
+   "PYTHONHASHSEED": "0"
+  },
+  "mupdf": "1.28.2",
+  "oem": 1,
+  "overlap_rule": 0.5,
+  "passes": [
+   "upright",
+   "rot90"
+  ],
+  "pillow": "12.3.0",
+  "psm": 3,
+  "pymupdf": "1.28.2",
+  "pytesseract": "0.3.13",
+  "python": "3.11.15",
+  "schema_version": "1.0",
+  "script": "tools/extract_drawing_text.py",
+  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "sub_pt_drop": 1.0,
+  "tesseract": [
+   "tesseract 5.3.4",
+   "leptonica-1.82.0",
+   "Found AVX512BW",
+   "Found AVX512F",
+   "Found AVX512VNNI",
+   "Found AVX2",
+   "Found AVX",
+   "Found FMA",
+   "Found SSE4.1",
+   "Found OpenMP 201511",
+   "Found libarchive 3.7.2 zlib/1.3 liblzma/5.4.5 bz2lib/1.0.8 liblz4/1.9.4 libzstd/1.5.5",
+   "Found libcurl/8.5.0 OpenSSL/3.0.13 zlib/1.3 brotli/1.1.0 zstd/1.5.5 libidn2/2.3.7 libpsl/0.21.2 (+libidn2/2.3.7) libssh/0.10.6/openssl/zlib nghttp2/1.59.0 librtmp/2.3 OpenLDAP/2.6.10"
+  ]
+ },
+ "governed_by": null,
+ "governs": null,
+ "page": {
+  "height": 792.0,
+  "mediabox": [
+   0.0,
+   0.0,
+   1224.0,
+   792.0
+  ],
+  "rotation": 0,
+  "width": 1224.0
+ },
+ "page_key": "033",
+ "schema_version": "1.0",
+ "set_page": 33,
+ "sheet_01": "C4.3",
+ "source": {
+  "file": "testbeds/eastsound/library/Pages from eswd-wwtp-upgrade-ph1-11x17-plans Part 2.pdf",
+  "page": 6,
+  "sha256": "1176b4b114c25cd51383cb47896d5a651e4eb0f3363d17d651269f3d2a15dd84"
+ },
+ "title_01": "2W EQUIPMENT LAYOUT",
+ "title_block": {
+  "date": {
+   "bbox": [
+    1131.06,
+    675.04,
+    1137.04,
+    712.56
+   ],
+   "conf": null,
+   "method": "text-layer",
+   "value": "NOV 2, 2022"
+  },
+  "page_of": {
+   "bbox": [
+    1171.23,
+    722.41,
+    1181.19,
+    766.2
+   ],
+   "conf": null,
+   "method": "text-layer",
+   "of": "96",
+   "page": "33"
+  },
+  "revision": {
+   "entries": [],
+   "label_bbox": [
+    1013.94,
+    21.78,
+    1035.18,
+    25.02
+   ],
+   "label_method": "ocr"
+  },
+  "sheet": {
+   "bbox": [
+    1131.16,
+    727.21,
+    1146.1,
+    761.16
+   ],
+   "conf": null,
+   "dist_to_label": 6.69,
+   "method": "text-layer",
+   "raw": "C4.3",
+   "value": "C4.3"
+  },
+  "sheet_label_bbox": [
+   1119.49,
+   736.79,
+   1124.47,
+   751.68
+  ],
+  "source": "text-layer",
+  "title": {
+   "bbox": [
+    1174.32,
+    387.63,
+    1186.89,
+    548.64
+   ],
+   "conf": null,
+   "method": "text-layer",
+   "value": "2W EQUIPMENT LAYOUT"
+  }
+ },
+ "words": [
+  {
+   "bbox": [
+    976.86,
+    21.78,
+    983.34,
+    25.02
+   ],
+   "conf": 95.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up44.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.24,
+   "text": "NO.",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1013.94,
+    21.78,
+    1035.18,
+    25.02
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up45.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.24,
+   "text": "REVISIONS",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1072.44,
+    21.78,
+    1077.84,
+    25.02
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up46.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.24,
+   "text": "BY",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1096.56,
+    21.78,
+    1106.82,
+    25.02
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up47.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.24,
+   "text": "DATE",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1178.28,
+    55.26,
+    1183.5,
+    168.12
+   ],
+   "conf": 89.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up58.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 5.22,
+   "text": "WILSONENGINEERING.COM",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    126.54,
+    69.12,
+    136.8,
+    145.62
+   ],
+   "conf": 18.0,
+   "conf_ge_60": false,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r9018.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 10.26,
+   "text": "LLLVLLLEZ",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    146.88,
+    80.1,
+    190.26,
+    114.48
+   ],
+   "conf": 53.0,
+   "conf_ge_60": false,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r9019.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 34.38,
+   "text": "CG:",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    120.78,
+    113.4,
+    121.5,
+    115.38
+   ],
+   "conf": 89.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up8.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 0.72,
+   "text": "¢",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    120.96,
+    117.0,
+    122.04,
+    118.98
+   ],
+   "conf": 33.0,
+   "conf_ge_60": false,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r9015.1.2",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 1.08,
+   "text": "J",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    146.88,
+    117.72,
+    190.26,
+    152.1
+   ],
+   "conf": 43.0,
+   "conf_ge_60": false,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r9019.1.3",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 34.38,
+   "text": "CF",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    126.54,
+    135.9,
+    135.9,
+    164.7
+   ],
+   "conf": 56.0,
+   "conf_ge_60": false,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r9020.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 9.36,
+   "text": "\\",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    261.54,
+    137.34,
+    348.48,
+    151.74
+   ],
+   "conf": 34.0,
+   "conf_ge_60": false,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up11.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 14.4,
+   "text": "—26)-—",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    483.48,
+    145.62,
+    503.64,
+    151.02
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up40.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 5.4,
+   "text": "NOTES:",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    175.14,
+    148.5,
+    211.32,
+    168.12
+   ],
+   "conf": 33.0,
+   "conf_ge_60": false,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up5.1.2",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 19.62,
+   "text": "_",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    484.2,
+    154.98,
+    488.52,
+    159.48
+   ],
+   "conf": 63.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up40.2.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.32,
+   "text": "1.",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    499.14,
+    154.98,
+    509.58,
+    159.48
+   ],
+   "conf": 74.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up40.2.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.5,
+   "text": "FILL",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    526.5,
+    154.98,
+    543.96,
+    159.48
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up40.2.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.5,
+   "text": "PIPING",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    547.92,
+    154.98,
+    559.98,
+    159.48
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up40.2.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.5,
+   "text": "WITH",
+   "word_no": 5
+  },
+  {
+   "bbox": [
+    564.3,
+    154.98,
+    580.86,
+    159.3
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up40.2.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.32,
+   "text": "CLEAN",
+   "word_no": 6
+  },
+  {
+   "bbox": [
+    585.0,
+    154.98,
+    602.28,
+    159.3
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up40.2.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.32,
+   "text": "WATER",
+   "word_no": 7
+  },
+  {
+   "bbox": [
+    513.0,
+    155.16,
+    522.54,
+    159.48
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r9020.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 4.32,
+   "text": "ALL",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    499.14,
+    161.28,
+    527.94,
+    167.58
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up40.2.2",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 6.3,
+   "text": "(DOMESTIC",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    559.44,
+    161.28,
+    579.06,
+    167.4
+   ],
+   "conf": 95.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up40.2.2",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 6.12,
+   "text": "WATER)",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    79.8,
+    161.76,
+    87.81,
+    175.69
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t25.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 13.93,
+   "text": "B",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    532.26,
+    161.82,
+    555.66,
+    166.32
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up40.2.2",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.5,
+   "text": "POTABLE",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    583.38,
+    161.82,
+    599.4,
+    166.32
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up40.2.2",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.5,
+   "text": "PRIOR",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    603.18,
+    161.82,
+    610.02,
+    166.32
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up40.2.2",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.5,
+   "text": "TO",
+   "word_no": 5
+  },
+  {
+   "bbox": [
+    126.54,
+    164.52,
+    136.8,
+    193.32
+   ],
+   "conf": 71.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r9024.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 10.26,
+   "text": "LLL",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    600.84,
+    167.94,
+    621.18,
+    172.62
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up40.2.3",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.68,
+   "text": "SYSTEM",
+   "word_no": 6
+  },
+  {
+   "bbox": [
+    499.14,
+    168.12,
+    523.98,
+    172.62
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up40.2.3",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.5,
+   "text": "STARTING",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    527.76,
+    168.12,
+    538.74,
+    172.62
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up40.2.3",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.5,
+   "text": "AND",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    542.52,
+    168.12,
+    564.12,
+    172.62
+   ],
+   "conf": 93.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r9022.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 4.5,
+   "text": "TESTING",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    568.26,
+    168.12,
+    575.82,
+    172.62
+   ],
+   "conf": 92.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r9022.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 4.5,
+   "text": "2W",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    579.42,
+    168.12,
+    596.7,
+    172.62
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up40.2.3",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.5,
+   "text": "WATER",
+   "word_no": 5
+  },
+  {
+   "bbox": [
+    499.14,
+    174.42,
+    531.0,
+    179.1
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up40.2.4",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.68,
+   "text": "EQUIPMENT.",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    484.38,
+    180.54,
+    489.06,
+    185.04
+   ],
+   "conf": 93.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up40.3.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.5,
+   "text": "2.",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    499.14,
+    180.54,
+    534.42,
+    185.04
+   ],
+   "conf": 95.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r9022.2.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 4.5,
+   "text": "CONTRACTOR",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    538.74,
+    180.54,
+    575.64,
+    185.04
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up40.3.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.5,
+   "text": "RESPONSIBLE",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    579.78,
+    180.54,
+    590.04,
+    185.04
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up40.3.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.5,
+   "text": "FOR",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    1117.87,
+    182.72,
+    1138.83,
+    284.88
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t16.0",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 20.95,
+   "text": "DISTRICT",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    542.52,
+    186.66,
+    559.98,
+    191.34
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up40.3.2",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.68,
+   "text": "PIPING",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    564.12,
+    186.66,
+    598.14,
+    191.16
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up40.3.2",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.5,
+   "text": "CONNECTION",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    602.46,
+    186.66,
+    618.3,
+    191.16
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up40.3.2",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.5,
+   "text": "STYLE",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    499.14,
+    186.84,
+    538.38,
+    191.34
+   ],
+   "conf": 95.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up40.3.2",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.5,
+   "text": "COORDINATING",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    595.98,
+    192.96,
+    609.48,
+    199.26
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up40.3.3",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 6.3,
+   "text": "ETC.)",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    499.14,
+    193.14,
+    528.3,
+    199.44
+   ],
+   "conf": 92.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up40.3.3",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 6.3,
+   "text": "(GROOVED,",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    532.8,
+    193.68,
+    558.18,
+    198.72
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up40.3.3",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 5.04,
+   "text": "FLANGED,",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    561.96,
+    193.68,
+    591.48,
+    198.72
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up40.3.3",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 5.04,
+   "text": "THREADED,",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    499.14,
+    199.98,
+    510.12,
+    204.48
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up40.3.4",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.5,
+   "text": "AND",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    514.26,
+    199.98,
+    548.82,
+    204.48
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up40.3.4",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.5,
+   "text": "PERFORMING",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    553.14,
+    199.98,
+    581.76,
+    204.3
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up40.3.4",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.32,
+   "text": "PRESSURE",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    585.36,
+    199.98,
+    606.96,
+    204.3
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up40.3.4",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.32,
+   "text": "TESTING",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    610.74,
+    199.98,
+    617.4,
+    204.3
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up40.3.4",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.32,
+   "text": "TO",
+   "word_no": 5
+  },
+  {
+   "bbox": [
+    1148.68,
+    205.76,
+    1163.77,
+    210.52
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t17.0",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 15.09,
+   "text": "I",
+   "word_no": 6
+  },
+  {
+   "bbox": [
+    499.14,
+    206.1,
+    537.48,
+    210.78
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up40.3.5",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.68,
+   "text": "DEMONSTRATE",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    541.26,
+    206.1,
+    558.54,
+    210.6
+   ],
+   "conf": 95.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up40.3.5",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.5,
+   "text": "WATER",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    562.32,
+    206.1,
+    577.44,
+    210.6
+   ],
+   "conf": 95.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up40.3.5",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.5,
+   "text": "TIGHT",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    223.32,
+    207.84,
+    232.93,
+    221.77
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t24.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 13.93,
+   "text": "A",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    499.14,
+    212.4,
+    541.8,
+    216.9
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up40.3.6",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.5,
+   "text": "CONSTRUCTION.",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1148.68,
+    215.74,
+    1163.77,
+    266.28
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t17.0",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 15.09,
+   "text": "PHASE",
+   "word_no": 5
+  },
+  {
+   "bbox": [
+    1105.1,
+    220.08,
+    1116.09,
+    261.0
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t26.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 8.0,
+   "text": "11-02-2022",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    154.08,
+    244.0,
+    181.38,
+    260.76
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t21.0",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 16.76,
+   "text": "2W",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    187.18,
+    244.0,
+    295.87,
+    260.76
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t21.0",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 16.76,
+   "text": "DIAPHRAGM",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    301.67,
+    244.0,
+    361.38,
+    260.76
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t21.0",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 16.76,
+   "text": "TANKS",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    367.18,
+    244.0,
+    377.81,
+    260.76
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t21.0",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 16.76,
+   "text": "-",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    383.61,
+    244.0,
+    429.78,
+    260.76
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t21.0",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 16.76,
+   "text": "PLAN",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    293.76,
+    253.98,
+    298.98,
+    254.7
+   ],
+   "conf": 80.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r9026.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 0.72,
+   "text": "—",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    75.6,
+    256.38,
+    83.81,
+    271.15
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t23.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 14.77,
+   "text": "1",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    153.12,
+    261.12,
+    179.77,
+    273.69
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t21.1",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 12.57,
+   "text": "PIPE",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    184.12,
+    261.12,
+    251.83,
+    273.69
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t21.1",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 12.57,
+   "text": "SUPPORTS",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    256.18,
+    261.12,
+    285.76,
+    273.69
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t21.1",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 12.57,
+   "text": "NOT",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    290.11,
+    261.12,
+    340.29,
+    273.69
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t21.1",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 12.57,
+   "text": "SHOWN",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    344.64,
+    261.12,
+    371.42,
+    273.69
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t21.1",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 12.57,
+   "text": "FOR",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    375.77,
+    261.12,
+    432.08,
+    273.69
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t21.1",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 12.57,
+   "text": "CLARITY",
+   "word_no": 5
+  },
+  {
+   "bbox": [
+    278.64,
+    265.5,
+    295.2,
+    271.26
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up14.1.2",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 5.76,
+   "text": "FOR",
+   "word_no": 6
+  },
+  {
+   "bbox": [
+    1148.68,
+    271.5,
+    1163.77,
+    281.07
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t17.0",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 15.09,
+   "text": "-",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    222.66,
+    280.62,
+    226.08,
+    287.46
+   ],
+   "conf": 27.0,
+   "conf_ge_60": false,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up14.1.3",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.42,
+   "text": "6)",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    186.84,
+    281.34,
+    189.18,
+    285.3
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up14.1.3",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 2.34,
+   "text": "2",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    258.84,
+    281.34,
+    261.18,
+    285.3
+   ],
+   "conf": 95.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up14.1.3",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 2.34,
+   "text": "2",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    294.66,
+    281.52,
+    297.36,
+    285.12
+   ],
+   "conf": 97.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up14.1.3",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 2.7,
+   "text": "4",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    1119.49,
+    282.72,
+    1124.47,
+    288.68
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t11.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 4.98,
+   "text": "BY",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1167.49,
+    283.32,
+    1172.47,
+    289.29
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t9.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 4.98,
+   "text": "BY",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1143.49,
+    285.72,
+    1148.47,
+    291.69
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t10.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 4.98,
+   "text": "BY",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1148.68,
+    286.29,
+    1163.77,
+    362.0
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t17.0",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 15.09,
+   "text": "UPGRADE",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    1119.49,
+    290.26,
+    1124.47,
+    314.52
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t11.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 4.98,
+   "text": "DESIGNED",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    1167.49,
+    290.86,
+    1172.47,
+    313.8
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t9.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 4.98,
+   "text": "CHECKED",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    1117.87,
+    292.14,
+    1138.83,
+    369.03
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t16.0",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 20.95,
+   "text": "WATER",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    1143.49,
+    293.27,
+    1148.47,
+    311.52
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t10.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 4.98,
+   "text": "DRAWN",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    1179.49,
+    293.49,
+    1184.47,
+    303.84
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t19.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 4.98,
+   "text": "AWL",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    1155.49,
+    293.85,
+    1160.47,
+    303.36
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t12.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 4.98,
+   "text": "SNR",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    1131.49,
+    294.04,
+    1136.47,
+    302.64
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t13.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 4.98,
+   "text": "JGC",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    188.46,
+    297.9,
+    203.94,
+    301.86
+   ],
+   "conf": 94.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up16.1.2",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.96,
+   "text": "SCALE",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    284.58,
+    297.9,
+    296.1,
+    301.68
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up16.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.78,
+   "text": "FEET",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    287.46,
+    297.9,
+    293.22,
+    301.86
+   ],
+   "conf": 51.0,
+   "conf_ge_60": false,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up16.1.2",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.96,
+   "text": "a",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    195.12,
+    298.08,
+    198.18,
+    301.68
+   ],
+   "conf": 62.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up16.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.06,
+   "text": "A",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    216.36,
+    301.86,
+    247.86,
+    305.82
+   ],
+   "conf": 81.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up16.1.2",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.96,
+   "text": "HORIZONTAL",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    252.18,
+    301.86,
+    267.66,
+    305.82
+   ],
+   "conf": 88.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up16.1.2",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.96,
+   "text": "SCALE",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    1142.12,
+    302.67,
+    1150.5,
+    364.32
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t2.2",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 8.38,
+   "text": "WASHINGTON",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    330.3,
+    363.06,
+    335.52,
+    369.0
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up20.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 5.22,
+   "text": "(2",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    339.66,
+    363.06,
+    359.1,
+    369.0
+   ],
+   "conf": 95.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r9040.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 5.94,
+   "text": "TOTAL).",
+   "word_no": 5
+  },
+  {
+   "bbox": [
+    363.78,
+    363.6,
+    377.1,
+    367.92
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up20.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.32,
+   "text": "EACH",
+   "word_no": 6
+  },
+  {
+   "bbox": [
+    382.32,
+    363.6,
+    391.5,
+    367.74
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up20.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.14,
+   "text": "119",
+   "word_no": 7
+  },
+  {
+   "bbox": [
+    265.68,
+    363.78,
+    273.6,
+    367.92
+   ],
+   "conf": 95.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up20.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.14,
+   "text": "AIR",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    278.28,
+    363.78,
+    308.16,
+    367.92
+   ],
+   "conf": 95.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r9040.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 4.14,
+   "text": "DIAPHRAGM",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    312.48,
+    363.78,
+    325.8,
+    367.92
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r9040.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 4.14,
+   "text": "TANK",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    1148.68,
+    367.22,
+    1163.77,
+    419.21
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t17.0",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 15.09,
+   "text": "PLANT",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    345.96,
+    369.9,
+    375.48,
+    374.04
+   ],
+   "conf": 95.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up20.1.2",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.14,
+   "text": "DESCRIBED",
+   "word_no": 6
+  },
+  {
+   "bbox": [
+    380.16,
+    369.9,
+    384.48,
+    373.86
+   ],
+   "conf": 93.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up20.1.2",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.96,
+   "text": "IN",
+   "word_no": 7
+  },
+  {
+   "bbox": [
+    265.68,
+    370.08,
+    287.28,
+    374.76
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up20.1.2",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.68,
+   "text": "GALLON,",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    292.14,
+    370.08,
+    309.78,
+    374.04
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r9040.1.2",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 3.96,
+   "text": "MODEL",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    313.56,
+    370.08,
+    320.04,
+    374.04
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up20.1.2",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.96,
+   "text": "TO",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    324.72,
+    370.08,
+    331.02,
+    374.04
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up20.1.2",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.96,
+   "text": "BE",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    334.98,
+    370.08,
+    341.28,
+    374.04
+   ],
+   "conf": 95.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up20.1.2",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.96,
+   "text": "AS",
+   "word_no": 5
+  },
+  {
+   "bbox": [
+    363.42,
+    376.2,
+    387.36,
+    380.88
+   ],
+   "conf": 90.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up20.1.3",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.68,
+   "text": "OWNER’S",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    1117.87,
+    376.28,
+    1138.83,
+    426.26
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t16.0",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 20.95,
+   "text": "AND",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    265.68,
+    376.92,
+    309.42,
+    381.06
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up20.1.3",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.14,
+   "text": "SPECIFICATIONS.",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    314.28,
+    376.92,
+    344.52,
+    381.06
+   ],
+   "conf": 95.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up20.1.3",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.14,
+   "text": "CONFIGURE",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    349.02,
+    376.92,
+    358.92,
+    380.88
+   ],
+   "conf": 92.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up20.1.3",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.96,
+   "text": "FOR",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    25.38,
+    381.42,
+    28.8,
+    394.38
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r903.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 3.42,
+   "text": "Smith",
+   "word_no": 17
+  },
+  {
+   "bbox": [
+    292.14,
+    383.04,
+    321.3,
+    387.36
+   ],
+   "conf": 95.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up20.1.4",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.32,
+   "text": "OPERATION",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    326.16,
+    383.04,
+    354.42,
+    387.18
+   ],
+   "conf": 95.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up20.1.4",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.14,
+   "text": "PRESSURE",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    358.92,
+    383.04,
+    377.46,
+    387.18
+   ],
+   "conf": 95.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up20.1.4",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.14,
+   "text": "RANGE.",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    265.68,
+    383.22,
+    287.64,
+    387.36
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up20.1.4",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.14,
+   "text": "DESIRED",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1174.32,
+    387.63,
+    1186.89,
+    441.99
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t14.2",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 12.57,
+   "text": "LAYOUT",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    74.88,
+    393.3,
+    103.32,
+    397.44
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up22.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.14,
+   "text": "PRESSURE",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    107.1,
+    393.3,
+    142.56,
+    397.44
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up22.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.14,
+   "text": "TRANSDUCER",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    147.24,
+    393.48,
+    157.14,
+    397.44
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up22.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.96,
+   "text": "PER",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    25.38,
+    397.8,
+    28.8,
+    406.26
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up4.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.42,
+   "text": "Jeff",
+   "word_no": 16
+  },
+  {
+   "bbox": [
+    115.92,
+    400.32,
+    121.14,
+    406.44
+   ],
+   "conf": 76.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r9042.1.2",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 5.22,
+   "text": "(0",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    136.62,
+    400.32,
+    157.14,
+    406.44
+   ],
+   "conf": 67.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r9042.1.2",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 6.12,
+   "text": "150PSI)",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    69.12,
+    401.04,
+    111.42,
+    405.18
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up22.1.2",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.14,
+   "text": "SPECIFICATIONS",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    125.28,
+    401.04,
+    131.76,
+    405.18
+   ],
+   "conf": 91.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up22.1.2",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.14,
+   "text": "TO",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    79.56,
+    408.06,
+    92.16,
+    414.18
+   ],
+   "conf": 89.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up22.1.3",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 6.12,
+   "text": "(EQ#",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    96.84,
+    408.24,
+    123.3,
+    414.18
+   ],
+   "conf": 42.0,
+   "conf_ge_60": false,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r9042.1.3",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 5.94,
+   "text": "PIT-620).",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    127.98,
+    408.96,
+    156.96,
+    412.92
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up22.1.3",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.96,
+   "text": "OPERATION",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    27.18,
+    410.22,
+    27.36,
+    413.1
+   ],
+   "conf": 82.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up4.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 0.18,
+   "text": "—",
+   "word_no": 15
+  },
+  {
+   "bbox": [
+    74.52,
+    415.8,
+    102.6,
+    419.94
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up23.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.14,
+   "text": "PRESSURE",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    115.2,
+    415.8,
+    121.68,
+    419.94
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up23.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.14,
+   "text": "55",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    125.82,
+    415.8,
+    132.12,
+    420.12
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up23.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.32,
+   "text": "TO",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    136.62,
+    415.98,
+    142.92,
+    420.12
+   ],
+   "conf": 95.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r9043.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 4.14,
+   "text": "75",
+   "word_no": 5
+  },
+  {
+   "bbox": [
+    147.6,
+    415.98,
+    156.96,
+    420.12
+   ],
+   "conf": 74.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up23.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.14,
+   "text": "PSI.",
+   "word_no": 6
+  },
+  {
+   "bbox": [
+    25.38,
+    417.06,
+    28.8,
+    423.0
+   ],
+   "conf": 93.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r903.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 3.42,
+   "text": "PM",
+   "word_no": 14
+  },
+  {
+   "bbox": [
+    107.1,
+    417.6,
+    110.7,
+    418.86
+   ],
+   "conf": 95.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up23.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 1.26,
+   "text": "=",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    350.82,
+    419.4,
+    364.5,
+    425.52
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up23.1.2",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 6.12,
+   "text": "(TYP)",
+   "word_no": 6
+  },
+  {
+   "bbox": [
+    285.3,
+    419.58,
+    290.16,
+    424.26
+   ],
+   "conf": 94.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r9043.1.2",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 4.68,
+   "text": "1”",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    294.48,
+    420.12,
+    304.74,
+    424.26
+   ],
+   "conf": 94.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r9043.1.2",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 4.14,
+   "text": "SCH",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    309.42,
+    420.12,
+    315.72,
+    424.26
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up23.1.2",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.14,
+   "text": "80",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    320.4,
+    420.12,
+    330.12,
+    424.26
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r9043.1.2",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 4.14,
+   "text": "PVC",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    334.8,
+    420.12,
+    346.32,
+    424.26
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up23.1.2",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.14,
+   "text": "PIPE",
+   "word_no": 5
+  },
+  {
+   "bbox": [
+    1148.68,
+    424.43,
+    1163.77,
+    521.95
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t17.0",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 15.09,
+   "text": "TREATMENT",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    25.38,
+    426.6,
+    28.8,
+    437.58
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r903.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 3.42,
+   "text": "3:25",
+   "word_no": 13
+  },
+  {
+   "bbox": [
+    74.7,
+    428.76,
+    102.78,
+    432.9
+   ],
+   "conf": 91.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r9044.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 4.14,
+   "text": "PRESSURE",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    107.28,
+    428.76,
+    122.04,
+    433.62
+   ],
+   "conf": 91.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r9044.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 4.86,
+   "text": "GAGE,",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    126.72,
+    428.76,
+    129.6,
+    432.9
+   ],
+   "conf": 89.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r9044.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 2.88,
+   "text": "O",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    133.74,
+    428.76,
+    140.04,
+    432.9
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up24.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.14,
+   "text": "TO",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    1117.87,
+    433.51,
+    1138.83,
+    504.88
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t16.0",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 20.95,
+   "text": "SEWER",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    73.62,
+    434.52,
+    82.98,
+    438.48
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r9044.1.2",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 3.96,
+   "text": "150",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    87.66,
+    434.52,
+    97.02,
+    438.48
+   ],
+   "conf": 94.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up24.1.2",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.96,
+   "text": "PSI.",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    101.88,
+    434.52,
+    124.2,
+    438.48
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up24.1.2",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.96,
+   "text": "PROVIDE",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    128.34,
+    434.52,
+    140.04,
+    438.48
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up24.1.2",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.96,
+   "text": "WITH",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    92.16,
+    440.1,
+    119.88,
+    444.24
+   ],
+   "conf": 90.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up24.1.3",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.14,
+   "text": "STAINLESS",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    124.2,
+    440.1,
+    140.04,
+    444.24
+   ],
+   "conf": 90.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up24.1.3",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.14,
+   "text": "STEEL",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    24.84,
+    441.18,
+    29.88,
+    467.64
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r903.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 5.04,
+   "text": "11/2/2022",
+   "word_no": 12
+  },
+  {
+   "bbox": [
+    101.7,
+    445.68,
+    140.04,
+    449.82
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up24.1.4",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.14,
+   "text": "ACCESSORIES.",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1174.32,
+    446.34,
+    1186.89,
+    523.82
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t14.2",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 12.57,
+   "text": "EQUIPMENT",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    142.56,
+    447.48,
+    165.78,
+    465.48
+   ],
+   "conf": 0.0,
+   "conf_ge_60": false,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r9055.1.2",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 18.0,
+   "text": "~N",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    101.52,
+    463.32,
+    114.84,
+    467.28
+   ],
+   "conf": 94.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r9055.2.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 3.96,
+   "text": "PLUG",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    119.52,
+    463.32,
+    138.06,
+    467.46
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up25.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.14,
+   "text": "FITTING",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    97.38,
+    469.44,
+    107.28,
+    473.58
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up25.1.2",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.14,
+   "text": "FOR",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    111.96,
+    469.44,
+    123.48,
+    473.58
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up25.1.2",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.14,
+   "text": "PIPE",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    127.8,
+    469.44,
+    138.06,
+    473.58
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up25.1.2",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.14,
+   "text": "END",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    27.18,
+    471.6,
+    27.36,
+    474.48
+   ],
+   "conf": 80.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r903.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 0.18,
+   "text": "—",
+   "word_no": 11
+  },
+  {
+   "bbox": [
+    248.94,
+    473.4,
+    252.54,
+    473.58
+   ],
+   "conf": 77.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r9055.2.2",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 0.18,
+   "text": "_",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    17.46,
+    475.74,
+    21.06,
+    519.84
+   ],
+   "conf": 80.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r901.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 3.6,
+   "text": "—UNSCREENED.ctb",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    107.28,
+    475.74,
+    138.06,
+    481.68
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up25.1.3",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 5.94,
+   "text": "(PRESSURE",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    296.1,
+    476.1,
+    313.02,
+    480.24
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up25.1.3",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.14,
+   "text": "FLOOR",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    317.52,
+    476.1,
+    329.22,
+    480.24
+   ],
+   "conf": 95.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up25.1.3",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.14,
+   "text": "PIPE",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    333.36,
+    476.1,
+    358.38,
+    480.24
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r9055.2.3",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 4.14,
+   "text": "SUPPORT",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    25.38,
+    478.26,
+    28.8,
+    509.22
+   ],
+   "conf": 90.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up4.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.42,
+   "text": "STATION.DWG",
+   "word_no": 10
+  },
+  {
+   "bbox": [
+    296.1,
+    481.68,
+    313.38,
+    487.8
+   ],
+   "conf": 90.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up25.1.4",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 6.12,
+   "text": "(TYP.),",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    324.9,
+    482.4,
+    340.74,
+    486.54
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up25.1.4",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.14,
+   "text": "TOTAL",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    317.88,
+    482.58,
+    321.12,
+    486.54
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up25.1.4",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.24,
+   "text": "4",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    119.7,
+    482.76,
+    138.06,
+    488.7
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up25.1.4",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 5.94,
+   "text": "RATED)",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    287.82,
+    491.76,
+    315.54,
+    496.44
+   ],
+   "conf": 44.0,
+   "conf_ge_60": false,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up26.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.68,
+   "text": "FF=23.30'",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    257.22,
+    502.02,
+    262.08,
+    506.88
+   ],
+   "conf": 87.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up26.1.2",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.86,
+   "text": "1”",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    266.4,
+    502.74,
+    278.82,
+    506.88
+   ],
+   "conf": 93.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r9055.3.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 4.14,
+   "text": "BALL",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    282.6,
+    502.74,
+    298.44,
+    506.88
+   ],
+   "conf": 95.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up26.1.2",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.14,
+   "text": "VALVE",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    68.4,
+    505.8,
+    96.66,
+    509.94
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up28.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.14,
+   "text": "PRESSURE",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    101.16,
+    505.8,
+    118.8,
+    509.94
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up28.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.14,
+   "text": "RELIEF",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    122.4,
+    505.8,
+    139.68,
+    510.66
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up28.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.86,
+   "text": "VALVE,",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    87.84,
+    512.1,
+    103.68,
+    516.24
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up28.1.2",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.14,
+   "text": "RATED",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    107.82,
+    512.1,
+    114.3,
+    516.24
+   ],
+   "conf": 95.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up28.1.2",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.14,
+   "text": "TO",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    118.8,
+    512.1,
+    139.68,
+    516.24
+   ],
+   "conf": 95.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up28.1.2",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.14,
+   "text": "RELIEVE",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    1117.87,
+    512.13,
+    1138.83,
+    647.52
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t16.0",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 20.95,
+   "text": "EASTSOUND",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    25.38,
+    513.0,
+    28.8,
+    525.78
+   ],
+   "conf": 91.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r903.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 3.42,
+   "text": "PUMP",
+   "word_no": 9
+  },
+  {
+   "bbox": [
+    299.34,
+    514.26,
+    314.82,
+    520.38
+   ],
+   "conf": 93.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r9048.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 6.12,
+   "text": "(TYP.)",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    270.0,
+    514.98,
+    295.02,
+    519.12
+   ],
+   "conf": 93.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r9048.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 4.14,
+   "text": "SUPPORT",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    254.16,
+    515.16,
+    265.68,
+    519.12
+   ],
+   "conf": 95.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r9048.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 3.96,
+   "text": "PIPE",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    197.82,
+    516.06,
+    207.0,
+    523.8
+   ],
+   "conf": 60.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r9051.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 7.74,
+   "text": "56”",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    211.5,
+    517.86,
+    231.3,
+    522.0
+   ],
+   "conf": 95.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up31.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.14,
+   "text": "FAUCET",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    59.04,
+    518.22,
+    90.54,
+    522.36
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up28.1.3",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.14,
+   "text": "PRESSURES",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    95.04,
+    518.22,
+    101.88,
+    522.36
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up28.1.3",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.14,
+   "text": "OF",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    106.38,
+    518.4,
+    115.92,
+    522.36
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up28.1.3",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.96,
+   "text": "120",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    120.42,
+    518.4,
+    128.16,
+    522.36
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up28.1.3",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.96,
+   "text": "PSI",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    132.66,
+    518.4,
+    139.68,
+    522.36
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up28.1.3",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.96,
+   "text": "OR",
+   "word_no": 5
+  },
+  {
+   "bbox": [
+    17.46,
+    520.56,
+    20.88,
+    533.52
+   ],
+   "conf": 92.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r902.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 3.42,
+   "text": "APWA",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    66.78,
+    524.52,
+    91.62,
+    529.2
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r9047.1.4",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 4.68,
+   "text": "GREATER,",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    96.3,
+    524.52,
+    119.16,
+    528.66
+   ],
+   "conf": 95.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up28.1.4",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.14,
+   "text": "CLAYTON",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    124.02,
+    524.52,
+    139.68,
+    529.38
+   ],
+   "conf": 95.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r9047.1.4",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 4.86,
+   "text": "MARK,",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    224.46,
+    524.7,
+    242.1,
+    528.84
+   ],
+   "conf": 85.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r9051.1.2",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 4.14,
+   "text": "RELIEF",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    197.82,
+    524.88,
+    207.72,
+    528.84
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up31.1.2",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.96,
+   "text": "FOR",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    211.86,
+    524.88,
+    219.96,
+    528.84
+   ],
+   "conf": 85.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r9051.1.2",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 3.96,
+   "text": "AIR",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    1148.68,
+    527.17,
+    1163.77,
+    636.36
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t17.0",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 15.09,
+   "text": "WASTEWATER",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    1174.32,
+    528.17,
+    1186.89,
+    548.64
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t14.2",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 12.57,
+   "text": "2W",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    25.38,
+    529.74,
+    28.8,
+    543.24
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up4.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.42,
+   "text": "DRAIN",
+   "word_no": 8
+  },
+  {
+   "bbox": [
+    612.9,
+    530.46,
+    631.26,
+    537.12
+   ],
+   "conf": 33.0,
+   "conf_ge_60": false,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r9054.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 6.66,
+   "text": "[|",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    109.98,
+    530.64,
+    117.0,
+    534.78
+   ],
+   "conf": 93.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up28.1.5",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.14,
+   "text": "OR",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    121.5,
+    530.64,
+    139.68,
+    535.32
+   ],
+   "conf": 93.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up28.1.5",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.68,
+   "text": "EQUAL.",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    577.44,
+    530.64,
+    609.84,
+    535.32
+   ],
+   "conf": 71.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up41.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.68,
+   "text": "TOC=23.30’",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    197.82,
+    531.0,
+    201.78,
+    535.14
+   ],
+   "conf": 93.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up31.1.3",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.96,
+   "text": "&",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    206.28,
+    531.0,
+    232.38,
+    535.14
+   ],
+   "conf": 95.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up31.1.3",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.14,
+   "text": "SAMPLING",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    17.46,
+    537.3,
+    20.88,
+    543.24
+   ],
+   "conf": 92.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up2.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.42,
+   "text": "WE",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    196.92,
+    540.18,
+    210.24,
+    544.32
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r9052.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 4.14,
+   "text": "TANK",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    214.38,
+    540.18,
+    225.18,
+    544.86
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r9052.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 4.68,
+   "text": "TEE,",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    229.68,
+    540.18,
+    253.98,
+    544.32
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up32.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.14,
+   "text": "SIMMONS",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    25.38,
+    546.48,
+    28.8,
+    561.6
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up4.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.42,
+   "text": "PLANT",
+   "word_no": 7
+  },
+  {
+   "bbox": [
+    196.92,
+    546.48,
+    213.48,
+    551.16
+   ],
+   "conf": 54.0,
+   "conf_ge_60": false,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r9052.1.2",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 4.68,
+   "text": "SI704,",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    218.16,
+    546.48,
+    225.0,
+    550.44
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up32.1.2",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.96,
+   "text": "OR",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    229.68,
+    546.48,
+    246.42,
+    550.8
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r9052.1.2",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 4.32,
+   "text": "EQUAL",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    17.46,
+    547.02,
+    21.42,
+    555.48
+   ],
+   "conf": 95.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r902.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 3.96,
+   "text": "1:2,",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    188.64,
+    555.84,
+    193.5,
+    560.52
+   ],
+   "conf": 91.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up33.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.68,
+   "text": "1”",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    198.0,
+    556.38,
+    210.42,
+    560.52
+   ],
+   "conf": 94.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r9053.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 4.14,
+   "text": "BALL",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    214.2,
+    556.38,
+    229.86,
+    560.52
+   ],
+   "conf": 95.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r9053.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 4.14,
+   "text": "VALVE",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    181.62,
+    558.0,
+    185.76,
+    558.36
+   ],
+   "conf": 83.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r9053.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 0.36,
+   "text": "—",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    17.46,
+    559.44,
+    21.42,
+    578.7
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up2.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.96,
+   "text": "Portrait,",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    479.04,
+    561.28,
+    506.34,
+    578.04
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t20.1",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 16.76,
+   "text": "2W",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    512.14,
+    561.28,
+    620.83,
+    578.04
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t20.1",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 16.76,
+   "text": "DIAPHRAGM",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    626.63,
+    561.28,
+    676.45,
+    578.04
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t20.1",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 16.76,
+   "text": "TANK",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    682.25,
+    561.28,
+    692.88,
+    578.04
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t20.1",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 16.76,
+   "text": "-",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    698.68,
+    561.28,
+    775.94,
+    578.04
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t20.1",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 16.76,
+   "text": "SECTION",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    781.74,
+    561.28,
+    800.71,
+    578.04
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t20.1",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 16.76,
+   "text": "'B'",
+   "word_no": 5
+  },
+  {
+   "bbox": [
+    25.38,
+    565.2,
+    28.8,
+    589.86
+   ],
+   "conf": 61.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up4.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.42,
+   "text": "C4.1-C4.3",
+   "word_no": 6
+  },
+  {
+   "bbox": [
+    119.88,
+    569.56,
+    147.18,
+    586.32
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t20.0",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 16.76,
+   "text": "2W",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    152.98,
+    569.56,
+    248.4,
+    586.32
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t20.0",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 16.76,
+   "text": "DIAPHRAM",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    254.2,
+    569.56,
+    313.91,
+    586.32
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t20.0",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 16.76,
+   "text": "TANKS",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    319.71,
+    569.56,
+    330.34,
+    586.32
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t20.0",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 16.76,
+   "text": "-",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    336.14,
+    569.56,
+    413.41,
+    586.32
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t20.0",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 16.76,
+   "text": "SECTION",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    419.21,
+    569.56,
+    440.28,
+    586.32
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t20.0",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 16.76,
+   "text": "'A'",
+   "word_no": 5
+  },
+  {
+   "bbox": [
+    414.72,
+    573.66,
+    424.57,
+    588.43
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t22.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 14.77,
+   "text": "B",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    444.36,
+    578.4,
+    486.67,
+    590.97
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t20.2",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 12.57,
+   "text": "VALVE",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    491.02,
+    578.4,
+    553.34,
+    590.97
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t20.2",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 12.57,
+   "text": "HANDLES",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    557.7,
+    578.4,
+    587.68,
+    590.97
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t20.2",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 12.57,
+   "text": "AND",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    592.03,
+    578.4,
+    632.94,
+    590.97
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t20.2",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 12.57,
+   "text": "HOIST",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    637.29,
+    578.4,
+    687.99,
+    590.97
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t20.2",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 12.57,
+   "text": "CHAINS",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    692.34,
+    578.4,
+    721.92,
+    590.97
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t20.2",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 12.57,
+   "text": "NOT",
+   "word_no": 5
+  },
+  {
+   "bbox": [
+    726.27,
+    578.4,
+    776.45,
+    590.97
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t20.2",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 12.57,
+   "text": "SHOWN",
+   "word_no": 6
+  },
+  {
+   "bbox": [
+    780.8,
+    578.4,
+    807.58,
+    590.97
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t20.2",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 12.57,
+   "text": "FOR",
+   "word_no": 7
+  },
+  {
+   "bbox": [
+    811.93,
+    578.4,
+    872.59,
+    590.97
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t20.2",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 12.57,
+   "text": "CLARITY.",
+   "word_no": 8
+  },
+  {
+   "bbox": [
+    250.92,
+    579.6,
+    256.14,
+    580.14
+   ],
+   "conf": 77.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up34.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 0.54,
+   "text": "—",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    70.08,
+    581.34,
+    79.93,
+    596.11
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t22.2",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 14.77,
+   "text": "A",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    16.74,
+    582.66,
+    21.96,
+    600.66
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up3.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 5.22,
+   "text": "Inches),",
+   "word_no": 12
+  },
+  {
+   "bbox": [
+    541.44,
+    582.84,
+    567.18,
+    588.42
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up56.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 5.58,
+   "text": "HOIST",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    1142.12,
+    583.57,
+    1150.5,
+    621.72
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t2.0",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 8.38,
+   "text": "COUNTY",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    191.04,
+    586.08,
+    220.61,
+    598.65
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t22.0",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 12.57,
+   "text": "NOT",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    224.96,
+    586.08,
+    244.36,
+    598.65
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t22.0",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 12.57,
+   "text": "TO",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    248.71,
+    586.08,
+    289.96,
+    598.65
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t22.0",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 12.57,
+   "text": "SCALE",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    24.84,
+    593.46,
+    29.88,
+    671.58
+   ],
+   "conf": 68.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r903.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 5.04,
+   "text": "DESIGN\\DWG\\V2020_2020—070",
+   "word_no": 5
+  },
+  {
+   "bbox": [
+    17.46,
+    604.26,
+    20.88,
+    616.14
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up3.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.42,
+   "text": "11.00",
+   "word_no": 11
+  },
+  {
+   "bbox": [
+    18.54,
+    619.92,
+    20.88,
+    621.72
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r904.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 1.8,
+   "text": "x",
+   "word_no": 10
+  },
+  {
+   "bbox": [
+    1142.12,
+    624.62,
+    1150.5,
+    646.96
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t2.0",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 8.38,
+   "text": "JUAN",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    16.74,
+    625.32,
+    21.96,
+    640.08
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r904.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 5.22,
+   "text": "(17.00",
+   "word_no": 9
+  },
+  {
+   "bbox": [
+    1145.16,
+    640.26,
+    1149.48,
+    654.84
+   ],
+   "conf": 95.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up67.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.32,
+   "text": "JUAN",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    17.46,
+    643.86,
+    20.88,
+    646.2
+   ],
+   "conf": 93.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up3.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 2.34,
+   "text": "B",
+   "word_no": 8
+  },
+  {
+   "bbox": [
+    1142.12,
+    649.86,
+    1150.5,
+    667.92
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t2.0",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 8.38,
+   "text": "SAN",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    17.46,
+    649.98,
+    20.88,
+    661.86
+   ],
+   "conf": 92.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up3.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.42,
+   "text": "bleed",
+   "word_no": 7
+  },
+  {
+   "bbox": [
+    17.46,
+    665.82,
+    20.88,
+    671.94
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r904.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 3.42,
+   "text": "full",
+   "word_no": 6
+  },
+  {
+   "bbox": [
+    1131.06,
+    675.04,
+    1137.04,
+    690.15
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t18.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.98,
+   "text": "2022",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    25.38,
+    675.36,
+    28.8,
+    687.96
+   ],
+   "conf": 89.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r903.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 3.42,
+   "text": "WWTP",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    17.46,
+    675.9,
+    20.88,
+    685.98
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r904.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 3.42,
+   "text": "ANSI",
+   "word_no": 5
+  },
+  {
+   "bbox": [
+    1155.06,
+    678.3,
+    1161.04,
+    700.09
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t5.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.98,
+   "text": "SHOWN",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1167.49,
+    678.61,
+    1172.47,
+    698.74
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t6.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 4.98,
+   "text": "NUMBER",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1155.42,
+    678.78,
+    1171.44,
+    684.0
+   ],
+   "conf": 59.0,
+   "conf_ge_60": false,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up68.1.2",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 5.22,
+   "text": "2/15",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    1179.06,
+    678.82,
+    1185.04,
+    708.72
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t14.3",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.98,
+   "text": "2020-070",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    1155.42,
+    682.74,
+    1171.44,
+    687.78
+   ],
+   "conf": 49.0,
+   "conf_ge_60": false,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up68.1.3",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 5.04,
+   "text": "Sik",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    1143.49,
+    686.36,
+    1148.47,
+    701.28
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t8.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 4.98,
+   "text": "SCALE",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    1119.49,
+    687.31,
+    1124.47,
+    700.32
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t7.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 4.98,
+   "text": "DATE",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    17.46,
+    689.94,
+    21.96,
+    712.62
+   ],
+   "conf": 88.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up3.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.5,
+   "text": "PDF1.pc3,",
+   "word_no": 4
+  },
+  {
+   "bbox": [
+    25.38,
+    691.74,
+    28.8,
+    719.46
+   ],
+   "conf": 92.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up4.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.42,
+   "text": "EASTSOUND",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    1131.06,
+    692.04,
+    1137.04,
+    697.7
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t18.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.98,
+   "text": "2,",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    1155.42,
+    692.1,
+    1171.62,
+    696.24
+   ],
+   "conf": 0.0,
+   "conf_ge_60": false,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up68.1.5",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.14,
+   "text": "zs",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    1167.84,
+    694.08,
+    1184.04,
+    698.22
+   ],
+   "conf": 69.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up68.1.6",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 4.14,
+   "text": "50",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    1131.06,
+    699.59,
+    1137.04,
+    712.56
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t18.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.98,
+   "text": "NOV",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    1167.49,
+    700.32,
+    1172.47,
+    708.6
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t6.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 4.98,
+   "text": "JOB",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    1155.06,
+    701.97,
+    1161.04,
+    709.32
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t5.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 5.98,
+   "text": "AS",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    146.16,
+    704.62,
+    165.64,
+    715.93
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t0.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 11.31,
+   "text": "Call",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    168.79,
+    704.62,
+    187.66,
+    715.93
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t0.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 11.31,
+   "text": "811",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    146.64,
+    714.7,
+    154.81,
+    721.22
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t1.0",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 6.52,
+   "text": "two",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    156.27,
+    714.7,
+    177.0,
+    721.22
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t1.0",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 6.52,
+   "text": "business",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    178.47,
+    714.7,
+    189.56,
+    721.22
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t1.0",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 6.52,
+   "text": "days",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    17.46,
+    716.22,
+    20.88,
+    730.44
+   ],
+   "conf": 93.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up3.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.42,
+   "text": "Adobe",
+   "word_no": 3
+  },
+  {
+   "bbox": [
+    143.64,
+    717.05,
+    144.37,
+    718.07
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t0.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 1.02,
+   "text": "R",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    146.64,
+    721.54,
+    161.53,
+    728.06
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t1.1",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 6.52,
+   "text": "before",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    162.99,
+    721.54,
+    171.46,
+    728.06
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t1.1",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 6.52,
+   "text": "you",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    172.92,
+    721.54,
+    179.93,
+    728.06
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t1.1",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 6.52,
+   "text": "dig",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    1171.23,
+    722.41,
+    1181.19,
+    735.0
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t19.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 9.96,
+   "text": "96",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    24.84,
+    723.06,
+    29.88,
+    767.16
+   ],
+   "conf": 38.0,
+   "conf_ge_60": false,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r903.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 5.04,
+   "text": "\\2020\\2020-—070",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    1131.16,
+    727.21,
+    1146.1,
+    761.16
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t2.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 14.94,
+   "text": "C4.3",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    112.8,
+    730.01,
+    170.97,
+    762.96
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t15.0",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 32.95,
+   "text": "BID",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    182.37,
+    730.01,
+    244.18,
+    762.96
+   ],
+   "conf": null,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "t15.0",
+   "method": "text-layer",
+   "render_mode": 3,
+   "size": 32.95,
+   "text": "SET",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    17.46,
+    735.12,
+    20.88,
+    758.34
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r904.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 3.42,
+   "text": "SETTINGS:",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    1119.49,
+    736.79,
+    1124.47,
+    751.68
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t4.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 4.98,
+   "text": "SHEET",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    1155.49,
+    737.99,
+    1160.47,
+    750.48
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t3.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 4.98,
+   "text": "PAGE",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    1173.37,
+    740.94,
+    1178.35,
+    747.48
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t14.1",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 4.98,
+   "text": "OF",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    159.3,
+    741.6,
+    198.18,
+    756.54
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up38.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 14.94,
+   "text": "SET",
+   "word_no": 2
+  },
+  {
+   "bbox": [
+    1171.23,
+    753.61,
+    1181.19,
+    766.2
+   ],
+   "conf": null,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "t14.0",
+   "method": "text-layer",
+   "render_mode": 0,
+   "size": 9.96,
+   "text": "33",
+   "word_no": 0
+  },
+  {
+   "bbox": [
+    17.46,
+    761.58,
+    20.88,
+    773.1
+   ],
+   "conf": 96.0,
+   "conf_ge_60": true,
+   "dir": [
+    1.0,
+    0.0
+   ],
+   "line": "up3.1.1",
+   "method": "ocr",
+   "pass": "upright",
+   "size": 3.42,
+   "text": "PLOT",
+   "word_no": 1
+  },
+  {
+   "bbox": [
+    25.38,
+    768.96,
+    28.8,
+    773.1
+   ],
+   "conf": 89.0,
+   "conf_ge_60": true,
+   "dir": [
+    0.0,
+    -1.0
+   ],
+   "line": "r903.1.1",
+   "method": "ocr",
+   "pass": "rot90",
+   "size": 3.42,
+   "text": "W:",
+   "word_no": 1
+  }
+ ]
+}
