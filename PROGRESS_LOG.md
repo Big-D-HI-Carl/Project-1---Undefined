@@ -416,6 +416,37 @@ Append-only. One entry per session, in the format in AGENTS.md. Never edit or de
 - Failures and fixes: none
 - Next: Carl merges PR #10.
 
+## 2026-09-30 — Wiki parse: note and link tables from the Project Wiki
+- Runtime: Claude Code
+- Commits: 934bf52..HEAD on `claude/magical-euler-lnev7r` (draft PR)
+- Done:
+  - Set `git config core.hooksPath .githooks` in this clone; it was unset. Main was pulled at the start and before the PR.
+  - `testbeds/eastsound/tools/parse_wiki.py` (location per Carl): reads `project/01_Project_Wiki/Project_Wiki.md`, `derived/reconciliation/Ledger_ID_Map.csv` and the Wiki Note(s) column of `project/02_Project_Ledger/Project_Ledger.csv`. Standard library only; no library files read.
+  - `testbeds/eastsound/derived/wiki/Wiki_Notes.csv`: 202 notes (Civil & Site 56, Process & Mechanical 37, Electrical & Controls 50, Structural & Building 25, Contract & General 34). Each of the five lane formats parsed with all seven fields and a location line.
+  - `testbeds/eastsound/derived/wiki/Wiki_Links.csv`: 4102 links. By type: equipment tag 1593, sheet 1348, spec section 887, addendum item 227, note 47. By source: tag line 2177, related documents 1233, body text 692 (all Inferred). Columns added after the requested ones: Ledger ID, Target In Wiki, Written As, Basis, Wiki Line.
+  - Ledger IDs: 735 equipment links carry one. That covers 217 distinct IDs: 134 of 135 printed-tag rows and 83 PROPOSED rows.
+  - `testbeds/eastsound/derived/wiki/Parse_Report.md`: tie-outs, counts per lane and type, and targets not in the Wiki. It lists 106 unparsed tag-line and Related-documents pieces: 43 with no target, 37 Issue references, 23 index-file references and 3 external references.
+  - My own choices, listed under "Rules applied" in Parse_Report.md:
+    - The weakest tag word the lane wrote on a tag-line or Related-documents piece governs that piece's links (e.g. "[by title, Inferred]"). Otherwise those links are Verified as written.
+    - Sheet ranges expand in Wiki index order. Series such as C2.x expand and are tagged Inferred.
+    - A qualified Ledger tag, such as "F1 (Influent Pump Station)", resolves only when the Ledger row names the note or the qualifier is in the text.
+    - PROPOSED tags match only a whole tag-line item with the same name.
+    - Summary column header is "Summary (first 600 characters)".
+- Tests:
+  - `python3 tools/checks.py --all` at the start → 0 FAIL, 3 WARN.
+  - `python3 testbeds/eastsound/tools/parse_wiki.py` → 6 of 6 tie-outs pass (202 headings = 202 Index rows, same order, lane counts, lane per note, all fields present, Ledger_ID_Map = Project_Ledger tags for 447 rows).
+  - Determinism: runs from the repo root and from /tmp into the scratchpad → 3 of 3 files byte-identical to the committed ones (`cmp`). No BOM, no CR.
+  - `python3 -m pyflakes testbeds/eastsound/tools/parse_wiki.py` → clean.
+  - Hook `tools/checks.py --staged` on each commit → 0 FAIL, 1 WARN (data gate not run: no terms set).
+  - Close-session checks are in the PR description.
+- Failures and fixes:
+  - List splitting, the "SD1 0.51g" variant match and the bare F1/F4 match were caught in scratchpad runs and fixed before commit. Logged in ISSUES_LOG.
+- Next:
+  - Carl reviews the draft PR.
+  - On Carl's OK, add derived/wiki/ to the AGENTS.md Layout.
+  - Merge takes the Wiki parse findings (ISSUES_LOG).
+  - The graph build can take Wiki_Links.csv as note-to-note and note-to-item links.
+
 ## 2026-09-30 — Open items list (derived/issues)
 - Runtime: Claude Code
 - Commits: 778901a..HEAD on `claude/jolly-rubin-dm4ese` (draft PR)

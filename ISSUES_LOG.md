@@ -376,6 +376,35 @@ Append-only. Repo and program issues, in the format in AGENTS.md. The test bed's
   - checks.py checks a unique Ledger ID instead of a unique Tag.
   - ledger_to_graph.py keys every node on Ledger ID and drops `NO_SAME_TAG`.
 
+## 2026-09-30 — Wiki parse: three matching defects caught in review before commit — Closed
+- Workstream: Eastsound test bed, Wiki parse (`testbeds/eastsound/tools/parse_wiki.py`)
+- Type: workflow failure
+- Finding: Test runs into the scratchpad showed three defects:
+  - Splitting tag lines at every ", " broke lists apart: "Hot Box #1, #2", "Pipe IDs 1–26", "Appendices B, C" and "Add. 4 p.1, Clarification 5". 39 printed-tag Ledger rows (the Pipe IDs and Buried Valve IDs) matched no note.
+  - The hyphen-variant rule matched the seismic value "SD1 0.51g" (S1.1, 13 12 20) to SD-1.
+  - A bare "F1" or "F4" on the 2W pump station notes (C4.2, E4.3, E7.3) resolved to "F1 (Influent Pump Station)", the only Ledger row with that printed form.
+- Fix or next action: Fixed before commit.
+  - A comma followed by a number, "#n", an appendix letter or "Clarification" no longer splits an item. Lists expand only when every member is a Ledger tag.
+  - A variant is skipped when a number follows it.
+  - A form that exists only with a qualifier needs the Ledger row to name the note, or the qualifier in the text. Otherwise Ledger ID is blank and Basis says why (12 links).
+
+## 2026-09-30 — Wiki parse findings for Merge — Open
+- Workstream: Eastsound test bed
+- Type: content conflict
+- Finding: From `testbeds/eastsound/derived/wiki/Parse_Report.md`:
+  - **Ledger pointers.** 114 equipment-tag links match a Ledger row whose Wiki Note(s) does not name that note. Each has the Basis "the Ledger row does not cite this note" in Wiki_Links.csv.
+  - **Tag not in any note.** L-0190 "S1–S2 [Aerobic Digester]" is the one printed-tag row whose tag no note writes.
+  - **Same-name PROPOSED rows across lanes.** L-0101 and L-0148 (influent sample sump), L-0320 and L-0418 (influent sampler). Also L-0110 (contractor dewatering) and L-0427 (sludge dewatering), both "dewatering system". Links to these carry both IDs.
+  - **Qualified tags with no row.** The 2W pump station notes print floats F1 and F4, and the Ledger has F1 and F4 only for the Influent Pump Station. 26 51 19 prints fixture types L1, L2 and X1 with no building named.
+  - **Note ID.** The QA plan note's Document ID reads "CQA Plan" and its heading reads "QA plan". This is the same gap as the Open entry "Ledger Wiki Note 'CQA Plan' has no Project Wiki note".
+- Fix or next action: Merge reviews these in the next Ledger revision. Nothing in the Ledger or Wiki was changed.
+
+## 2026-09-30 — AGENTS.md Layout doesn't list derived/wiki/ — Open
+- Workstream: Repo setup
+- Type: design gap
+- Finding: This session added `testbeds/eastsound/derived/wiki/` (Wiki parse outputs, written by `testbeds/eastsound/tools/parse_wiki.py`). The AGENTS.md Layout lists `derived/reconciliation/` but not this folder. This session's write scope doesn't include AGENTS.md.
+- Fix or next action: On Carl's OK, add one Layout line under `derived/`: `wiki/  Wiki note and link tables parsed from project/01_Project_Wiki (derived; not a source)`.
+
 ## 2026-09-30 — Open-items build: two defects caught before the first output — Closed
 - Workstream: Eastsound test bed (open-items list)
 - Type: workflow failure
