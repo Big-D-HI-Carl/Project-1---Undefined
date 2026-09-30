@@ -97,3 +97,33 @@ Append-only. Repo and program issues, in the format in AGENTS.md. The test bed's
   - Keyed notes: an entry column of −30…+20 pt around the heading, 25th-percentile spacing, stray rows attached to their entry, entries starting only in the marker column, and read markers trusted only when they run on from the previous entry.
   - Legend lines: descriptions are taken from the words in each number's row band.
   - After the fixes: 96 of 96 title blocks match 01, and 39 of 39 legend lines are found.
+
+## 2026-09-30 — PR #2 (sort pass) was not merged when the OCR lane started — Closed
+- Workstream: Eastsound test bed (Prompt 7 OCR lane)
+- Type: workflow failure
+- Finding: Step 0 found PR #2 open and main still at the flat upload (1fc06ef), so none of the paths in the Prompt 7 amendments existed on main. The lane stopped at Step 0.
+- Fix or next action: Done. The owner merged PR #2 (9fec0a2), and this branch was fast-forwarded to it. Step 0 was re-checked on the merged main: part SHA-256 values match `Plan_Set_Parts.md`, and the Ledger has 447 rows, 123 of them Unresolved.
+
+## 2026-09-30 — Four schema CSVs need uploading to index/ — Open
+- Workstream: Eastsound test bed
+- Type: input gap
+- Finding: Prompt 7 names Spot_Check_Schema columns, but no Spot_Check_Schema file is in the repo. The owner keeps the schema files in the Claude Project. `testbeds/eastsound/index/` holds Ledger_Schema.csv and Requirements_Schema.csv (both the 16-column rev0 headers, with no Quantity or Unit column). It holds no Audit_Ledger or Spot_Check schema. `derived/ocr/Spot_Check.csv` uses the column order the owner gave in session.
+- Fix or next action: A person uploads the four schema CSVs (Requirements, Ledger, Audit_Ledger, Spot_Check) to `testbeds/eastsound/index/`, through the Setup role that owns index/. Agents don't create them.
+
+## 2026-09-30 — AGENTS.md and the Bluebeam README still say OCR copies are a comparison column only — Open
+- Workstream: Repo setup
+- Type: content conflict
+- Finding: The owner's 2026-09-30 decision (DECISIONS.md, "Bluebeam OCR hits go into Tag_Hits and Quantity_Hits, still Inferred") replaces the comparison-only rule. Two files still state the old rule: AGENTS.md Output standards ("OCR copies are a comparison column only") and `testbeds/eastsound/derived/bluebeam-ocr/README.md` (Rule, third bullet). Both are outside the OCR lane's write scope.
+- Fix or next action: On the owner's OK, change the AGENTS.md line to: "OCR copies are Inferred only. They may feed tag and quantity leads (method bluebeam-ocr), never a text layer or a Verified read." Then update the Bluebeam README's Rule to match. Each goes in its own commit.
+
+## 2026-09-30 — Index and library notes call the 9 no-text-layer sheets "image-only" — Open
+- Workstream: Eastsound test bed
+- Type: content conflict
+- Finding: `library/Plan_Set_Parts.md` and `index/01_Sheet_Index_rev1.md` call C3.3, C3.4, C7.3, S1.1, S2.1–S2.4 and S4.1 "image-only". They are vector drawings with no text layer, not raster images (Prompt 7 amendments). `derived/ocr/Sheet_Map.csv` reads all 9 title blocks by OCR (Inferred).
+- Fix or next action: The Setup role corrects the wording in 01; the build session corrects it in the Plan_Set_Parts.md note.
+
+## 2026-09-30 — Ledger Drawing Sheets: 80 rows cite no sheet number (78 PROPOSED, 2 printed) — Open
+- Workstream: Eastsound test bed
+- Type: input gap
+- Finding: 74 Ledger rows have a blank Drawing Sheets field: 72 PROPOSED rows plus 2 printed rows (Receiving Conveyor, Inclined Conveyor). 6 more rows name no sheet number ("—", "Not shown", "None (Add. 4 and 26 05 00 only)", "TESC plans (civil sheets, not numbered in source)"). The OCR lane can't check any of these against a sheet. `derived/ocr/Ledger_Crosswalk.csv` shows them as "no sheet cited" or "no sheet number cited".
+- Fix or next action: The Merge role or the lanes add sheet citations where the documents give them.
