@@ -183,6 +183,10 @@ ADDENDA = ("Addenda", "changed_by")
 ITEM_FIELDS = {"Area/Building": "area", "Discipline": "discipline", "Status": "status",
                "Submittal Req (Y/N)": "submittal_req",
                "Testing/Startup Req (Y/N)": "testing_startup_req"}
+# Repeated Tags that get no "same_tag" link. The two SD-1 rows are different items
+# (storm drain, sludge pump), so the link made false path traces (Carl, 2026-09-30).
+# The Prompt 9 Ledger ID replaces this list.
+NO_SAME_TAG = {"SD-1"}
 
 
 def pin_hash_seed() -> None:
@@ -283,8 +287,11 @@ def main() -> int:
         node["unlinked"] = unlinked
         items.append(node)
 
-    # Rule 9: rows sharing a Tag get one Unresolved "same_tag" link each to the first.
+    # Rule 9: rows sharing a Tag get one Unresolved "same_tag" link each to the first,
+    # except Tags in NO_SAME_TAG.
     for tag, lines in repeated.items():
+        if tag in NO_SAME_TAG:
+            continue
         first = f"{tag} [L{lines[0]}]"
         for other in lines[1:]:
             edges.append({
@@ -322,7 +329,8 @@ def main() -> int:
     print(f"{graph.number_of_nodes()} nodes, {graph.number_of_edges()} edges, "
           f"{len(communities)} communities -> {out / 'graph.json'}")
     for tag, lines in repeated.items():
-        print(f"NOTE Tag {tag!r} repeats on lines {lines}; keyed '<Tag> [L<line>]'")
+        link_note = "no same_tag link" if tag in NO_SAME_TAG else "joined by a same_tag link"
+        print(f"NOTE Tag {tag!r} repeats on lines {lines}; keyed '<Tag> [L<line>]', {link_note}")
     print(f"NOTE {sum(len(n['unlinked']) for n in items)} values made no link; "
           f"kept on their item node under 'unlinked'")
     for msg in unknown:
