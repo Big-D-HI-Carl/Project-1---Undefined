@@ -5950,7 +5950,7 @@
   "python": "3.11.15",
   "schema_version": "1.0",
   "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script_sha256": "86e4d3e4396f5344d37512fd384afbe1368ca6ea0612d3dbd59f331e0d2061ad",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -5969,6 +5969,7 @@
  },
  "governed_by": null,
  "governs": null,
+ "keyed_notes": [],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -5981,6 +5982,427 @@
   "width": 1224.0
  },
  "page_key": "055",
+ "quantities": [
+  {
+   "bbox": [
+    209.75,
+    679.87,
+    242.17,
+    684.87
+   ],
+   "callouts_nearby": [
+    [
+     "1",
+     [
+      210.06,
+      679.14,
+      214.2,
+      685.08
+     ],
+     0.0
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "PROCESS",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "1) PROCESS AIR PIPING AND 2W PIPING NOT SHOWN FOR CLARITY.",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "1) PROCESS",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "1"
+  },
+  {
+   "bbox": [
+    685.6,
+    560.02,
+    699.99,
+    567.02
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "@ 2‘x3‘ LOUVER",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "2'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "2"
+  },
+  {
+   "bbox": [
+    687.27,
+    282.07,
+    701.66,
+    289.07
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "ELEVATION @ 4‘x4‘ LOUVER",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    733.95,
+    530.82,
+    744.23,
+    535.82
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "EXISTING 2‘x3‘",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "2'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "2"
+  },
+  {
+   "bbox": [
+    736.02,
+    530.1,
+    748.26,
+    534.78
+   ],
+   "callouts_nearby": [],
+   "conf": 70.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "EXISTING 2’x3’",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "2'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "2"
+  },
+  {
+   "bbox": [
+    746.77,
+    555.6,
+    778.92,
+    568.17
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "EAST ELEVATION @ 2'x3' LOUVER",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "2'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "2"
+  },
+  {
+   "bbox": [
+    755.73,
+    277.8,
+    787.88,
+    290.37
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "SOUTH ELEVATION @ 4'x4' LOUVER",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    763.42,
+    473.54,
+    769.42,
+    487.7
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "9.50’:",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "9.50'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "9.50"
+  },
+  {
+   "bbox": [
+    953.3,
+    261.07,
+    963.98,
+    266.07
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "1.00'",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "1.00'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "1.00"
+  },
+  {
+   "bbox": [
+    957.06,
+    134.28,
+    969.48,
+    138.96
+   ],
+   "callouts_nearby": [],
+   "conf": 83.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "FRAME FOR AND INSTALL NEW 3’x7’",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "3'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "3"
+  },
+  {
+   "bbox": [
+    960.23,
+    135.07,
+    970.56,
+    140.07
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "FRAME FOR AND INSTALL NEW 3‘x7‘",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "3'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "3"
+  },
+  {
+   "bbox": [
+    986.15,
+    250.02,
+    989.88,
+    255.02
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "3'",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "3'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "3"
+  },
+  {
+   "bbox": [
+    1004.15,
+    215.22,
+    1008.04,
+    220.22
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "7’",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "7'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "7"
+  },
+  {
+   "bbox": [
+    1020.34,
+    259.17,
+    1030.62,
+    264.17
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "NEW 3‘x7‘",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "3'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "3"
+  },
+  {
+   "bbox": [
+    1021.18,
+    388.77,
+    1031.51,
+    393.77
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "FRAME FOR AND INSTALL NEW 2’x2’",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "2'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "2"
+  },
+  {
+   "bbox": [
+    1022.04,
+    258.48,
+    1034.28,
+    263.16
+   ],
+   "callouts_nearby": [],
+   "conf": 39.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "NEW 3’x7’",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "3'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "3"
+  },
+  {
+   "bbox": [
+    1031.04,
+    388.08,
+    1043.46,
+    392.76
+   ],
+   "callouts_nearby": [],
+   "conf": 81.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "FRAME FOR AND INSTALL NEW 2’x2’",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "2'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "2"
+  }
+ ],
  "schema_version": "1.0",
  "set_page": 55,
  "sheet_01": "A1.3",
@@ -5989,6 +6411,53 @@
   "page": 7,
   "sha256": "ffe9e975ceb153cab60328a2459d826f96f96e0edaa77e0279a1d27e2e6de5fa"
  },
+ "tags": [
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    93.1,
+    489.01,
+    110.59,
+    504.01
+   ],
+   "candidate_rows": [
+    167,
+    174,
+    294,
+    335
+   ],
+   "conf": null,
+   "form": "F3",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "F3"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    527.75,
+    514.24,
+    535.53,
+    524.24
+   ],
+   "candidate_rows": [
+    277
+   ],
+   "conf": null,
+   "form": "L1",
+   "fuzzy": true,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "Li"
+  }
+ ],
  "title_01": "BUILDING DETAILS",
  "title_block": {
   "date": {

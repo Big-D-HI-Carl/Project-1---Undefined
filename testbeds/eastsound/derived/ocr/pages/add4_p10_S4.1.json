@@ -48,7 +48,7 @@
   "python": "3.11.15",
   "schema_version": "1.0",
   "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script_sha256": "86e4d3e4396f5344d37512fd384afbe1368ca6ea0612d3dbd59f331e0d2061ad",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -72,6 +72,7 @@
   "set_page": 61
  },
  "governs_status": null,
+ "keyed_notes": [],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -84,6 +85,7 @@
   "width": 1224.0
  },
  "page_key": "add4_p10",
+ "quantities": [],
  "schema_version": "1.0",
  "set_page": null,
  "sheet_01": "S4.1",
@@ -92,18 +94,19 @@
   "page": 10,
   "sha256": "cf065e9d2897727a39c452ea4b59e8acf6bb8c4d91a314ff648025e91dcdecd6"
  },
+ "tags": [],
  "title_01": "TYP STRUCTURAL DETAILS",
  "title_block": {
   "date": {
    "bbox": [
-    1132.2,
+    1132.08,
     680.4,
-    1135.8,
-    707.76
+    1135.92,
+    708.0
    ],
-   "conf": 95.0,
+   "conf": 96.0,
    "method": "ocr",
-   "strip_dpi": 200,
+   "strip_dpi": 300,
    "value": "10-15-2021"
   },
   "page_of": {

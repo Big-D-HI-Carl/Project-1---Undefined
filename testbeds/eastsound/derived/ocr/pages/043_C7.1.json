@@ -12970,7 +12970,7 @@
   "python": "3.11.15",
   "schema_version": "1.0",
   "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script_sha256": "86e4d3e4396f5344d37512fd384afbe1368ca6ea0612d3dbd59f331e0d2061ad",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -12989,6 +12989,7 @@
  },
  "governed_by": null,
  "governs": null,
+ "keyed_notes": [],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -13001,6 +13002,650 @@
   "width": 1224.0
  },
  "page_key": "043",
+ "quantities": [
+  {
+   "bbox": [
+    86.15,
+    632.82,
+    94.2,
+    637.82
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "9.0’ MIN",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "9.0'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "9.0"
+  },
+  {
+   "bbox": [
+    86.4,
+    632.7,
+    94.32,
+    636.66
+   ],
+   "callouts_nearby": [],
+   "conf": 70.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "9.0’ MIN",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "9.0'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "9.0"
+  },
+  {
+   "bbox": [
+    168.25,
+    658.52,
+    174.92,
+    663.52
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "11’ MIN",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "11'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "11"
+  },
+  {
+   "bbox": [
+    199.7,
+    658.52,
+    203.59,
+    663.52
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "5’ MIN",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "5'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "5"
+  },
+  {
+   "bbox": [
+    428.4,
+    151.02,
+    435.06,
+    162.36
+   ],
+   "callouts_nearby": [],
+   "conf": 88.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "percent",
+   "line_text": "1%",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "1%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "1"
+  },
+  {
+   "bbox": [
+    429.85,
+    153.32,
+    437.08,
+    158.32
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "percent",
+   "line_text": "1% SLOPE (MIN),",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "1%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "1"
+  },
+  {
+   "bbox": [
+    439.56,
+    578.88,
+    449.64,
+    589.14
+   ],
+   "callouts_nearby": [],
+   "conf": 44.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "percent",
+   "line_text": "5%\"",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "5%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "5"
+  },
+  {
+   "bbox": [
+    461.3,
+    144.22,
+    472.14,
+    149.22
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "0.05’ SUMP",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "0.05'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "0.05"
+  },
+  {
+   "bbox": [
+    461.52,
+    143.46,
+    473.94,
+    147.96
+   ],
+   "callouts_nearby": [],
+   "conf": 78.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "0.05’ SUMP",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "0.05'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "0.05"
+  },
+  {
+   "bbox": [
+    520.8,
+    132.42,
+    574.54,
+    137.42
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "SS FLOOR DRAIN",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "4” SS FLOOR DRAIN",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4\" SS FLOOR DRAIN",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    534.0,
+    462.67,
+    537.89,
+    467.67
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "2’ SQUARE CONCRETE BLOCK TO ENCASE",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "2'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "2"
+  },
+  {
+   "bbox": [
+    534.24,
+    461.88,
+    538.56,
+    466.56
+   ],
+   "callouts_nearby": [],
+   "conf": 95.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "2’",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "2'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "2"
+  },
+  {
+   "bbox": [
+    534.78,
+    502.74,
+    538.56,
+    507.42
+   ],
+   "callouts_nearby": [],
+   "conf": 84.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "1’",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "1'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "1"
+  },
+  {
+   "bbox": [
+    535.86,
+    154.98,
+    542.16,
+    159.12
+   ],
+   "callouts_nearby": [],
+   "conf": 82.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "percent",
+   "line_text": "4%",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    535.9,
+    155.28,
+    542.57,
+    160.28
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "percent",
+   "line_text": "1%",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "1%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "1"
+  },
+  {
+   "bbox": [
+    559.45,
+    226.27,
+    588.38,
+    231.27
+   ],
+   "callouts_nearby": [
+    [
+     "9",
+     [
+      576.18,
+      204.3,
+      579.78,
+      214.02
+     ],
+     12.25
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "PVC PIPE",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "2” PVC PIPE",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "2\" PVC PIPE",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "2"
+  },
+  {
+   "bbox": [
+    559.62,
+    225.72,
+    593.28,
+    230.04
+   ],
+   "callouts_nearby": [
+    [
+     "9",
+     [
+      576.18,
+      204.3,
+      579.78,
+      214.02
+     ],
+     11.7
+    ]
+   ],
+   "conf": 95.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "PVC PIPE",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "2” PVC PIPE",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "2\" PVC PIPE",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "2"
+  },
+  {
+   "bbox": [
+    601.57,
+    589.49,
+    623.96,
+    597.49
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "percent",
+   "line_text": "— —4%\"",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    816.9,
+    471.57,
+    827.73,
+    476.57
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "0.10’ IN LANDSCAPE AREAS",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "0.10'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "0.10"
+  },
+  {
+   "bbox": [
+    823.75,
+    478.27,
+    834.58,
+    483.27
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "0.02’ IN PAVED AREAS",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "0.02'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "0.02"
+  },
+  {
+   "bbox": [
+    938.7,
+    471.24,
+    949.32,
+    475.2
+   ],
+   "callouts_nearby": [
+    [
+     "2",
+     [
+      954.0,
+      490.92,
+      969.57,
+      518.92
+     ],
+     16.4
+    ]
+   ],
+   "conf": 58.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "0.10’",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "0.10'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "0.10"
+  },
+  {
+   "bbox": [
+    943.25,
+    471.32,
+    954.08,
+    476.32
+   ],
+   "callouts_nearby": [
+    [
+     "2",
+     [
+      954.0,
+      490.92,
+      969.57,
+      518.92
+     ],
+     14.6
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "0.10’ IN LANDSCAPE AREAS",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "0.10'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "0.10"
+  },
+  {
+   "bbox": [
+    945.36,
+    477.72,
+    956.7,
+    481.68
+   ],
+   "callouts_nearby": [
+    [
+     "2",
+     [
+      954.0,
+      490.92,
+      969.57,
+      518.92
+     ],
+     9.24
+    ]
+   ],
+   "conf": 48.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "0.02’ IN PAVED AREAS",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "0.02'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "0.02"
+  },
+  {
+   "bbox": [
+    949.95,
+    477.82,
+    960.78,
+    482.82
+   ],
+   "callouts_nearby": [
+    [
+     "2",
+     [
+      954.0,
+      490.92,
+      969.57,
+      518.92
+     ],
+     8.1
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "0.02’ IN PAVED AREAS",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "0.02'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "0.02"
+  }
+ ],
  "schema_version": "1.0",
  "set_page": 43,
  "sheet_01": "C7.1",
@@ -13009,6 +13654,29 @@
   "page": 16,
   "sha256": "1176b4b114c25cd51383cb47896d5a651e4eb0f3363d17d651269f3d2a15dd84"
  },
+ "tags": [
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    781.45,
+    490.85,
+    788.78,
+    501.85
+   ],
+   "candidate_rows": [
+    191
+   ],
+   "conf": null,
+   "form": "S1",
+   "fuzzy": true,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "si"
+  }
+ ],
  "title_01": "CIVIL DETAILS",
  "title_block": {
   "date": {

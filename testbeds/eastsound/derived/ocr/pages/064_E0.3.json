@@ -2386,7 +2386,7 @@
   "python": "3.11.15",
   "schema_version": "1.0",
   "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script_sha256": "86e4d3e4396f5344d37512fd384afbe1368ca6ea0612d3dbd59f331e0d2061ad",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -2405,6 +2405,43 @@
  },
  "governed_by": null,
  "governs": null,
+ "keyed_notes": [
+  {
+   "bbox": [
+    816.48,
+    173.97,
+    1059.33,
+    217.85
+   ],
+   "count_check": "entry count 1 matches the highest marker read",
+   "entries": [
+    {
+     "basis": "read",
+     "bbox": [
+      816.48,
+      188.7,
+      1059.33,
+      217.85
+     ],
+     "method": "text-layer",
+     "number": 1,
+     "number_level": "Verified",
+     "read_number": "1",
+     "text": "1 PROVIDE NEW SCADA COMPUTER SYSTEM PER SPECIFICATIONS. COORDINATE WITH / OWNER FOR FINAL LOCATION IN LAB. INSTALL NEW CAT 6 NETWORK JUNCTION BOX WITH / COMBO NETWORK/TELEPHONE OUTLET. EXTEND CAT6 CABLING TO NETWORK SWITCH / LOCATED IN INFLUENT PUMP STATION CONTROL PANEL. WIRE EXISTING TELEPHONE / CIRCUIT TO JBOX FOR SCADA ALARM DIALER."
+    }
+   ],
+   "heading": "KEY NOTES:",
+   "heading_bbox": [
+    826.38,
+    173.97,
+    871.65,
+    181.51
+   ],
+   "heading_method": "text-layer",
+   "highest_marker_read": 1,
+   "line_spacing_p25": 5.94
+  }
+ ],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -2417,6 +2454,53 @@
   "width": 1224.0
  },
  "page_key": "064",
+ "quantities": [
+  {
+   "bbox": [
+    416.42,
+    733.2,
+    422.97,
+    738.23
+   ],
+   "callouts_nearby": [
+    [
+     "0",
+     [
+      403.38,
+      743.4,
+      406.08,
+      747.36
+     ],
+     11.56
+    ],
+    [
+     "10",
+     [
+      437.94,
+      743.4,
+      443.52,
+      747.36
+     ],
+     15.84
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "SCALE: 1\" = 10' AT FULL SCALE",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "10'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "10"
+  }
+ ],
  "schema_version": "1.0",
  "set_page": 64,
  "sheet_01": "E0.3",
@@ -2425,6 +2509,29 @@
   "page": 16,
   "sha256": "ffe9e975ceb153cab60328a2459d826f96f96e0edaa77e0279a1d27e2e6de5fa"
  },
+ "tags": [
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    490.27,
+    394.55,
+    495.27,
+    398.16
+   ],
+   "candidate_rows": [
+    191
+   ],
+   "conf": null,
+   "form": "S1",
+   "fuzzy": true,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "si"
+  }
+ ],
  "title_01": "OVERALL ELECTRICAL SITE PLAN",
  "title_block": {
   "date": {

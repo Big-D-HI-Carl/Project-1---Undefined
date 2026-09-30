@@ -6058,7 +6058,7 @@
   "python": "3.11.15",
   "schema_version": "1.0",
   "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script_sha256": "86e4d3e4396f5344d37512fd384afbe1368ca6ea0612d3dbd59f331e0d2061ad",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -6077,6 +6077,7 @@
  },
  "governed_by": null,
  "governs": null,
+ "keyed_notes": [],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -6089,6 +6090,91 @@
   "width": 1224.0
  },
  "page_key": "001",
+ "quantities": [
+  {
+   "bbox": [
+    195.6,
+    247.49,
+    206.27,
+    261.64
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "percent",
+   "line_text": "8 %",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "8 %",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "8"
+  },
+  {
+   "bbox": [
+    197.28,
+    737.1,
+    200.34,
+    739.08
+   ],
+   "callouts_nearby": [
+    [
+     "5",
+     [
+      212.76,
+      716.04,
+      214.38,
+      721.26
+     ],
+     20.13
+    ]
+   ],
+   "conf": 14.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "percent",
+   "line_text": "Mique 2! 20%",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "20%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "20"
+  },
+  {
+   "bbox": [
+    867.25,
+    166.68,
+    888.17,
+    172.92
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "PLANS",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "TRAIN 3 PLANS & SECTION",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "3 PLANS",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "3"
+  }
+ ],
  "schema_version": "1.0",
  "set_page": 1,
  "sheet_01": "G0.1",
@@ -6097,6 +6183,113 @@
   "page": 1,
   "sha256": "9ca45d82bf86d16d3e2ce57eb76dccf597c497a7dc7f062fc7a171c4bc2c8d57"
  },
+ "tags": [
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    832.68,
+    159.84,
+    843.44,
+    166.08
+   ],
+   "candidate_rows": [
+    191
+   ],
+   "conf": null,
+   "form": "S1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "S1.1"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    832.68,
+    166.68,
+    843.44,
+    172.92
+   ],
+   "candidate_rows": [
+    191
+   ],
+   "conf": null,
+   "form": "S2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "S2.1"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    832.68,
+    173.64,
+    843.44,
+    179.88
+   ],
+   "candidate_rows": [
+    191
+   ],
+   "conf": null,
+   "form": "S2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "S2.2"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    832.68,
+    180.48,
+    843.44,
+    186.72
+   ],
+   "candidate_rows": [
+    191
+   ],
+   "conf": null,
+   "form": "S2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "S2.3"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    832.68,
+    187.32,
+    843.44,
+    193.56
+   ],
+   "candidate_rows": [
+    191
+   ],
+   "conf": null,
+   "form": "S2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "S2.4"
+  }
+ ],
  "title_01": "COVER SHEET",
  "title_block": {
   "date": {

@@ -1234,7 +1234,7 @@
   "python": "3.11.15",
   "schema_version": "1.0",
   "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script_sha256": "86e4d3e4396f5344d37512fd384afbe1368ca6ea0612d3dbd59f331e0d2061ad",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -1253,6 +1253,141 @@
  },
  "governed_by": null,
  "governs": null,
+ "keyed_notes": [
+  {
+   "bbox": [
+    759.42,
+    34.02,
+    989.39,
+    235.31
+   ],
+   "count_check": "entry count 8 matches the highest marker read",
+   "entries": [
+    {
+     "basis": "read",
+     "bbox": [
+      759.42,
+      49.02,
+      989.23,
+      66.11
+     ],
+     "method": "text-layer",
+     "number": 1,
+     "number_level": "Verified",
+     "read_number": "1",
+     "text": "1 PROVIDE GROUNDING IN ACCORDANCE WITH NEC ART.250. GROUNDING ELECTRODE / SYSTEM TO INCLUDE GROUND RODS, CONCRETE ENCASED ELECTRODE, STRUCTURAL / STEEL, METAL WATER PIPES AND OTHERS WHERE AVAILABLE."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      759.42,
+      73.14,
+      989.35,
+      96.35
+     ],
+     "method": "text-layer",
+     "number": 2,
+     "number_level": "Verified",
+     "read_number": "2",
+     "text": "2 CONDUIT ROUTING IS SCHEMATIC. COORINDATE STUBUP LOCATIONS WITH / EQUIPMENT MANUFACTURER SO POWER AND CONTROL CONDUITS ENTER EQUIPMENT / ENCLOSURES AT DESIGNATED AREAS AND ROUTE TO APPROPRIATE MCC SECTION OR / CONTROL PANEL."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      759.42,
+      103.38,
+      989.3,
+      114.53
+     ],
+     "method": "text-layer",
+     "number": 3,
+     "number_level": "Verified",
+     "read_number": "3",
+     "text": "3 PROVIDE ALL CONNECTIONS TO BLOWERS AS REQUIRED BY MANUFACTURER. / INCLUDES MOTOR CONNECTIONS AND SENSORS. GROUND SKIDS PER NEC."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      759.42,
+      121.56,
+      989.35,
+      138.65
+     ],
+     "method": "text-layer",
+     "number": 4,
+     "number_level": "Verified",
+     "read_number": "4",
+     "text": "4 PROVIDE CEILING MOUNTED SMOKE/HEAT DETECTOR, COORDINATE FINAL LOCATION / WITH BUILDING CONSTRUCTION. SYSTEM SENSOR MODEL 4WTAR-B FORM C RELAY, / SOUNDER, 4-WIRE. WIRE TO PLC CONTROL PANEL."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      759.42,
+      145.5,
+      989.33,
+      156.83
+     ],
+     "method": "text-layer",
+     "number": 5,
+     "number_level": "Verified",
+     "read_number": "5",
+     "text": "5 PROVIDE DOOR SWITCH FOR INTRUSION MONITORING. MAGNETIC REED STYLE, SPDT, / INTERLOGIX SENTROL MODEL 2807T OR EQUAL. WIRE TO PLC CONTROL PANEL."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      759.42,
+      163.86,
+      915.92,
+      169.25
+     ],
+     "method": "text-layer",
+     "number": 6,
+     "number_level": "Verified",
+     "read_number": "6",
+     "text": "6 PROVIDE NEMA 4X STAINLESS STEEL LOCAL DISCONNECT."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      759.42,
+      175.56,
+      989.39,
+      199.13
+     ],
+     "method": "text-layer",
+     "number": 7,
+     "number_level": "Verified",
+     "read_number": "7",
+     "text": "7 ROUTE ALL FIELD CONDUITS FROM BLOWER BUILDING THROUGH HANDHOLES. / MAINTAIN SEPARATION OF POWER AND SIGNAL/CONTROL RACEWAYS. PROVIDE A / MINIMUM OF 2 SPARES FROM EACH POWER HANDHOLE TO MCC AND EACH CONTROL / HANDHOLE TO PLC PANEL. SEE PLANS AND SCHEDULES FOR DETAILS."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      759.42,
+      206.16,
+      989.19,
+      235.31
+     ],
+     "method": "text-layer",
+     "number": 8,
+     "number_level": "Verified",
+     "read_number": "8",
+     "text": "8 PROVIDE SEPARATE RACEWAY FROM PLC CONTROL PANEL TO MCC AS REQUIRED TO / MAINTAIN SEPARATION OF POWER, SIGNAL, AND DATA CABLING. COORDINATE STUB / UP LOCATIONS WITH EQUIPMENT REQUIREMENTS. WIRE SIZE AND QUANTITY PER / SCHEDULES AND AS REQUIRED FOR ALL CONNECTIONS BETWEEN MCC AND PLC / CONTROL PANEL."
+    }
+   ],
+   "heading": "KEY NOTES:",
+   "heading_bbox": [
+    768.6,
+    34.02,
+    822.92,
+    43.07
+   ],
+   "heading_method": "text-layer",
+   "highest_marker_read": 8,
+   "line_spacing_p25": 5.94
+  }
+ ],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -1265,6 +1400,102 @@
   "width": 1224.0
  },
  "page_key": "067",
+ "quantities": [
+  {
+   "bbox": [
+    564.02,
+    733.2,
+    567.77,
+    738.23
+   ],
+   "callouts_nearby": [
+    [
+     "0",
+     [
+      549.54,
+      743.4,
+      552.24,
+      750.24
+     ],
+     12.86
+    ],
+    [
+     "2",
+     [
+      585.36,
+      743.4,
+      588.24,
+      747.36
+     ],
+     18.33
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "SCALE: 1\" = 2' AT FULL SCALE",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "2'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "2"
+  },
+  {
+   "bbox": [
+    802.98,
+    187.98,
+    828.06,
+    193.01
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "SPARES",
+   "keyed_callouts": [
+    [
+     954.0,
+     455.64,
+     956.8,
+     460.67
+    ],
+    [
+     176.4,
+     500.82,
+     179.2,
+     505.85
+    ],
+    [
+     964.62,
+     510.0,
+     967.42,
+     515.03
+    ],
+    [
+     160.02,
+     585.6,
+     162.82,
+     590.63
+    ]
+   ],
+   "keyed_note": "7 (read; Verified)",
+   "kind": "count",
+   "line_text": "MINIMUM OF 2 SPARES FROM EACH POWER HANDHOLE TO MCC AND EACH CONTROL",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "2 SPARES",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "2"
+  }
+ ],
  "schema_version": "1.0",
  "set_page": 67,
  "sheet_01": "E2.1",
@@ -1273,6 +1504,466 @@
   "page": 19,
   "sha256": "ffe9e975ceb153cab60328a2459d826f96f96e0edaa77e0279a1d27e2e6de5fa"
  },
+ "tags": [
+  {
+   "assignment": "assigned",
+   "bbox": [
+    211.68,
+    375.72,
+    223.69,
+    380.75
+   ],
+   "candidate_rows": [
+    261
+   ],
+   "conf": null,
+   "form": "DB",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    261
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "P-DB"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    212.04,
+    420.18,
+    224.05,
+    425.21
+   ],
+   "candidate_rows": [
+    261
+   ],
+   "conf": null,
+   "form": "DB",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    261
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "P-DB"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    228.42,
+    400.02,
+    240.71,
+    405.05
+   ],
+   "candidate_rows": [
+    261
+   ],
+   "conf": null,
+   "form": "DB",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    261
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "C-DB"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    305.28,
+    398.22,
+    312.26,
+    403.25
+   ],
+   "candidate_rows": [
+    261
+   ],
+   "conf": null,
+   "form": "DB",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    261
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "DB"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    313.38,
+    574.8,
+    324.0,
+    579.83
+   ],
+   "candidate_rows": [
+    257
+   ],
+   "conf": null,
+   "form": "BL-1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    257
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "BL-1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    431.64,
+    575.7,
+    442.26,
+    580.73
+   ],
+   "candidate_rows": [
+    258
+   ],
+   "conf": null,
+   "form": "BL-2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    258
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "BL-2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    521.82,
+    574.8,
+    532.44,
+    579.83
+   ],
+   "candidate_rows": [
+    259
+   ],
+   "conf": null,
+   "form": "BL-3",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    259
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "BL-3"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    648.54,
+    574.8,
+    659.16,
+    579.83
+   ],
+   "candidate_rows": [
+    260
+   ],
+   "conf": null,
+   "form": "BL-4",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    260
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "BL-4"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    768.6,
+    493.26,
+    780.05,
+    498.29
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    844.56,
+    430.26,
+    855.18,
+    435.29
+   ],
+   "candidate_rows": [
+    265
+   ],
+   "conf": null,
+   "form": "LP-1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    265
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "LP-1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    880.38,
+    565.08,
+    891.55,
+    570.11
+   ],
+   "candidate_rows": [
+    264
+   ],
+   "conf": null,
+   "form": "MCP",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    264
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "MCP"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    901.26,
+    484.26,
+    917.74,
+    489.29
+   ],
+   "candidate_rows": [
+    264
+   ],
+   "conf": null,
+   "form": "MCP",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    264
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "C-MCP"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    901.44,
+    477.06,
+    917.64,
+    482.09
+   ],
+   "candidate_rows": [
+    264
+   ],
+   "conf": null,
+   "form": "MCP",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    264
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "S-MCP"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    901.44,
+    491.46,
+    917.64,
+    496.49
+   ],
+   "candidate_rows": [
+    264
+   ],
+   "conf": null,
+   "form": "MCP",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    264
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "P-MCP"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    922.5,
+    187.98,
+    933.95,
+    193.01
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "MCC"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    926.82,
+    511.9,
+    931.82,
+    522.73
+   ],
+   "candidate_rows": [
+    296
+   ],
+   "conf": null,
+   "form": "LT",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "—LT"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    931.86,
+    206.16,
+    943.31,
+    211.19
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    944.28,
+    85.2,
+    955.73,
+    90.23
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    950.94,
+    224.34,
+    962.39,
+    229.37
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    981.54,
+    371.58,
+    999.42,
+    376.61
+   ],
+   "candidate_rows": [
+    313
+   ],
+   "conf": null,
+   "form": "DW-1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    313
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "P-DW-1"
+  }
+ ],
  "title_01": "BLOWER BUILDING POWER, CONTROL AND GROUNDING PLAN",
  "title_block": {
   "date": {

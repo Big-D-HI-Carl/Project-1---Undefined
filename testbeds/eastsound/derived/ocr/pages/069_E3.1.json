@@ -1756,7 +1756,7 @@
   "python": "3.11.15",
   "schema_version": "1.0",
   "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script_sha256": "86e4d3e4396f5344d37512fd384afbe1368ca6ea0612d3dbd59f331e0d2061ad",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -1775,6 +1775,155 @@
  },
  "governed_by": null,
  "governs": null,
+ "keyed_notes": [
+  {
+   "bbox": [
+    803.52,
+    168.03,
+    1046.38,
+    502.43
+   ],
+   "count_check": "entry count 9 matches the highest marker read",
+   "entries": [
+    {
+     "basis": "read",
+     "bbox": [
+      803.52,
+      182.58,
+      1046.38,
+      308.93
+     ],
+     "method": "text-layer",
+     "number": 1,
+     "number_level": "Verified",
+     "read_number": "1",
+     "text": "1 TREATMENT SYSTEM PROVIDER SHALL PROVIDE COMPLETE TREATMENT SYSTEM PER / SPECIFICATIONS. CONTROL PANEL SHALL ACCEPT 480V 3 PHASE INPUT AND INCLUDE ALL / WIRING AND CONTROLS FOR THE COMPLETE TREATMENT SYSTEM. FEATURES SHALL / INCLUDE BUT NOT BE LIMITED TO: / 1. NEMA 4X TYPE 316 STAINLESS STEEL ENCLOSURE SIZED FOR THE APPLICATION. / INCLUDE DRIP SHIELD FOR OUTDOOR PANELS. / 2. NEMA FULL VOLTAGE MOTOR STARTERS FOR BOTH CLARIFIER DRIVE MOTOR AND TWO / SUBMERSIBLE MIXERS. / 3. SEAL FAIL AND OVERTEMP SENSOR FOR SUBMERSIBLE MOTOR PROTECTION. / 4. 480-120V STEP DOWN TRANSFORMER FOR CONTROL CIRCUITS. / 5. HARD WIRED RELAY LOGIC CONTROL CIRCUITS FOR SYSTEM CONTROL AND / PROTECTION. / 6. ALARM LIGHT AND HORN WITH SILENCE PUSH BUTTON. / 7. INDICATOR LIGHTS, PUSH BUTTONS, HAND-OFF-AUTO SWITCHES FOR MOTOR CONTROL. / 8. WIRING TERMINALS FOR FIELD MOUNTED DEVICES INCLUDING TORQUE SWITCHES, / LIMIT SWITCHES, SOLENOIDS AND ANY OTHER REQUIRED DEVICES. / 9. DRY RELAY CONTACTS FOR CUSTOMER CONNECTION INCLUDING: RUN AND FAIL FOR / EACH MOTOR, SEAL FAIL AND OVERTEMP FOR MIXER, ALARM AND SHUTDOWN FOR / CLARIFIER. / 10. PANEL HEATER WITH FAN TO PREVENT BUILDUP OF CONDENSATION IN PANEL. / 11. 120V CIRCUIT FOR POLE LIGHT AND RECEPTACLE."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      803.52,
+      315.96,
+      1046.05,
+      327.11
+     ],
+     "method": "text-layer",
+     "number": 2,
+     "number_level": "Verified",
+     "read_number": "2",
+     "text": "2 ELECTRICAL CONTRACTOR SHALL PROVIDE LOCAL MOTOR DISCONNECTS FOR DRIVE / MOTOR AND MIXER. NEMA 4X TYPE 316 STAINLESS STEEL."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      803.52,
+      334.14,
+      1046.29,
+      345.11
+     ],
+     "method": "text-layer",
+     "number": 3,
+     "number_level": "Verified",
+     "read_number": "3",
+     "text": "3 ROUTE SEAL FAIL AND OVERTEMP MOTOR WIRING BACK TO CONTROL PANEL SENSOR. / COMBINE WIRING IN CONTROL RACEWAY AS REQUIRED."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      803.52,
+      352.14,
+      1046.19,
+      381.47
+     ],
+     "method": "text-layer",
+     "number": 4,
+     "number_level": "Verified",
+     "read_number": "4",
+     "text": "4 CONTRACTOR SHALL INSTALL ALL TREATMENT SYSTEM COMPONENTS PROVIDED BY / MANUFACTURER AND PROVIDE WIRING AND RACEWAY BACK TO TREATMENT CONTROL / PANEL. RATINGS, RACEWAY AND CONDUCTORS SHOWN ARE ESTIMATED; ADJUST DURING / SUBMITTAL PERIOD BASED ON TREATMENT SYSTEM EQUIPMENT SUBMITTAL / REQUIREMENTS."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      803.52,
+      388.5,
+      1046.23,
+      411.71
+     ],
+     "method": "text-layer",
+     "number": 5,
+     "number_level": "Verified",
+     "read_number": "5",
+     "text": "5 CONTRACTOR SHALL PROVIDE POLE LIGHT ON PLATFORM. SECURE TO HANDRAIL WITH / STAINLESS STEEL HARDWARE. PROVIDE 4\" SQUARE ALUMINUM POLE 12' TALL WITH / RECEPTACLE, PHOTOCELL AND LOCAL ON/OFF SWITCH. / #DXS0-LED-P3-30K-T3M-MVOLT-SPA-DNAXD WITH PHOTOCELL, OR APPROVED EQUAL."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      803.52,
+      418.56,
+      1046.36,
+      441.95
+     ],
+     "method": "text-layer",
+     "number": 6,
+     "number_level": "Verified",
+     "read_number": "6",
+     "text": "6 PROVIDE (2) COMPLETE DISSOLVED OXYGEN MONITORS FOR EACH CELL. MOUNT TO TOP / OF WALL WITH FACTORY HARDWARE TO ALLOW FOR TRANSMITTER ACCESS AND CLEANING. / HACH MODEL LDO PROBE WITH SC200 TRANSMITTER AND ACCESSORIES. 24VDC POWERED. / SEE SPECIFICATIONS."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      803.52,
+      448.98,
+      1046.12,
+      460.13
+     ],
+     "method": "text-layer",
+     "number": 7,
+     "number_level": "Verified",
+     "read_number": "7",
+     "text": "7 PROVIDE JUNCTION BOXES AS REQUIRED TO ROUTE ALL POWER AND SIGNAL CIRCUITS TO / TRAIN NO.3 CONTROL PANEL AND PLC CONTROL PANEL."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      803.52,
+      467.16,
+      1046.2,
+      478.31
+     ],
+     "method": "text-layer",
+     "number": 8,
+     "number_level": "Verified",
+     "read_number": "8",
+     "text": "8 STUB SPARE CONDUITS ABOVE GROUND NEAR TREATMENT CELL WALLS. ONE FROM / TREAMENT PANEL AND ONE TO PLC PANEL. CAP FOR FUTURE USE."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      803.52,
+      484.98,
+      1046.35,
+      502.43
+     ],
+     "method": "text-layer",
+     "number": 9,
+     "number_level": "Verified",
+     "read_number": "9",
+     "text": "9 / NOTE: POWER AND SIGNAL CONDUITS TO UV AND DIGESTER AREA AND 2W PUMP STATION / ROUTE THRU THIS AREA AND HANDHOLES BUT ARE NOT SPECIFICALLY INDICATED. FIELD / COORDINATE ROUTING, SEE SHEETS E5.1 AND E4.3."
+    }
+   ],
+   "heading": "KEY NOTES:",
+   "heading_bbox": [
+    813.24,
+    168.03,
+    858.51,
+    175.57
+   ],
+   "heading_method": "text-layer",
+   "highest_marker_read": 9,
+   "line_spacing_p25": 6.12
+  }
+ ],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -1787,6 +1936,233 @@
   "width": 1224.0
  },
  "page_key": "069",
+ "quantities": [
+  {
+   "bbox": [
+    314.46,
+    479.04,
+    321.01,
+    484.07
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "12'",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "12'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "12"
+  },
+  {
+   "bbox": [
+    359.9,
+    733.2,
+    363.65,
+    738.23
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "SCALE: 1\" = 4' AT FULL SCALE",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    798.64,
+    664.26,
+    826.98,
+    669.29
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "ELEV",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "elevation",
+   "line_text": "WATER SURFACE ELEV=25.3±",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "ELEV=25.3",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "25.3"
+  },
+  {
+   "bbox": [
+    868.5,
+    206.88,
+    908.05,
+    211.91
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "STAINLESS",
+   "keyed_callouts": [
+    [
+     642.24,
+     315.24,
+     645.04,
+     320.27
+    ],
+    [
+     250.74,
+     466.26,
+     253.54,
+     471.29
+    ],
+    [
+     763.92,
+     727.44,
+     766.72,
+     732.47
+    ]
+   ],
+   "keyed_note": "1 (read; Verified)",
+   "kind": "count",
+   "line_text": "NEMA 4X TYPE 316 STAINLESS STEEL ENCLOSURE SIZED FOR THE APPLICATION.",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "316 STAINLESS",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "316"
+  },
+  {
+   "bbox": [
+    903.67,
+    322.08,
+    941.12,
+    327.11
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "STAINLESS",
+   "keyed_callouts": [
+    [
+     495.0,
+     455.64,
+     497.8,
+     460.67
+    ],
+    [
+     406.26,
+     458.34,
+     409.06,
+     463.37
+    ]
+   ],
+   "keyed_note": "2 (read; Verified)",
+   "kind": "count",
+   "line_text": "MOTOR AND MIXER. NEMA 4X TYPE 316 STAINLESS STEEL.",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "316 STAINLESS",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "316"
+  },
+  {
+   "bbox": [
+    1007.82,
+    394.62,
+    1014.37,
+    399.65
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [
+    [
+     271.8,
+     218.58,
+     274.6,
+     223.61
+    ],
+    [
+     429.12,
+     283.02,
+     431.92,
+     288.05
+    ],
+    [
+     304.02,
+     420.72,
+     306.82,
+     425.75
+    ],
+    [
+     453.96,
+     593.16,
+     456.76,
+     598.19
+    ]
+   ],
+   "keyed_note": "5 (read; Verified)",
+   "kind": "length",
+   "line_text": "STAINLESS STEEL HARDWARE. PROVIDE 4\" SQUARE ALUMINUM POLE 12' TALL WITH",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "12'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "12"
+  },
+  {
+   "bbox": [
+    1168.38,
+    678.78,
+    1184.22,
+    684.0
+   ],
+   "callouts_nearby": [],
+   "conf": 0.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "percent",
+   "line_text": "21%",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "21%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "21"
+  }
+ ],
  "schema_version": "1.0",
  "set_page": 69,
  "sheet_01": "E3.1",
@@ -1795,6 +2171,96 @@
   "page": 21,
   "sha256": "ffe9e975ceb153cab60328a2459d826f96f96e0edaa77e0279a1d27e2e6de5fa"
  },
+ "tags": [
+  {
+   "assignment": "assigned",
+   "bbox": [
+    232.2,
+    319.02,
+    244.21,
+    324.05
+   ],
+   "candidate_rows": [
+    142
+   ],
+   "conf": null,
+   "form": "DO-2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    142
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "DO-2"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    358.2,
+    496.98,
+    362.7,
+    505.8
+   ],
+   "candidate_rows": [
+    277
+   ],
+   "conf": 16.0,
+   "form": "L1",
+   "fuzzy": true,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "LI"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    457.2,
+    45.78,
+    469.21,
+    50.81
+   ],
+   "candidate_rows": [
+    141
+   ],
+   "conf": null,
+   "form": "DO-1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    141
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "DO-1"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    551.98,
+    389.04,
+    563.43,
+    394.07
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "MCC"
+  }
+ ],
  "title_01": "TRAIN NO.3 ELECTRICAL PLAN AND ELEVATION",
  "title_block": {
   "date": {

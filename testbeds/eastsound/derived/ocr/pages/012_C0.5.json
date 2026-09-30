@@ -20674,7 +20674,7 @@
   "python": "3.11.15",
   "schema_version": "1.0",
   "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script_sha256": "86e4d3e4396f5344d37512fd384afbe1368ca6ea0612d3dbd59f331e0d2061ad",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -20693,6 +20693,379 @@
  },
  "governed_by": null,
  "governs": null,
+ "keyed_notes": [
+  {
+   "bbox": [
+    818.64,
+    43.74,
+    1096.74,
+    489.06
+   ],
+   "count_check": "entry count 25 does not match the highest marker read (28); by-order numbers Unresolved",
+   "entries": [
+    {
+     "basis": "read",
+     "bbox": [
+      818.64,
+      53.1,
+      1085.04,
+      68.57
+     ],
+     "method": "bluebeam-ocr",
+     "number": 1,
+     "number_level": "Inferred",
+     "read_number": "1",
+     "text": "(1) ABANDON AND REMOVE 40 8” LF OF 8” EFFLUENT (OUTFALL) PIPE AFTER HDPE INTERIM 8” HDPE / PIPE IS IS INSTALLED AND AND TESTED. SEE SHEET CO.7 INTERIM OF PLAN OF OPERATION"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      818.64,
+      72.18,
+      1096.74,
+      83.7
+     ],
+     "method": "bluebeam-ocr",
+     "number": 2,
+     "number_level": "Inferred",
+     "read_number": "2",
+     "text": "(2) ABANDON AND AND REMOVE 40 40 LF LF OF OF 4” 4” ROOF DRAIN PIPE AFTER NEW 4” ROOF DRAIN GRAVITY"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      819.85,
+      93.96,
+      1093.86,
+      105.84
+     ],
+     "method": "bluebeam-ocr",
+     "number": 3,
+     "number_level": "Inferred",
+     "read_number": "3",
+     "text": "(3) REMOVE EXISTING SUMP SUMP PUMP STATION AFTER NEW PLANT PUMP DRAIN PUMP IS STATION IS / — INSTALLED AND TESTED (OR PROVIDE TEMPORARY PUMPS, AND PIPING, AND BASINS AS NEEDED)"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      820.55,
+      112.68,
+      1096.74,
+      125.28
+     ],
+     "method": "bluebeam-ocr",
+     "number": 4,
+     "number_level": "Inferred",
+     "read_number": "4",
+     "text": "REMOVE EXISTING SEPTIC TANK AFTER NEW SEPTIC TANK AND AND INFLUENT P.S. ARE INSTALLED / (4) / V—/ AND TESTED. PpAne PROVIDE TEMPORARY PUMPS AND BASINS AS NEEDED"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      819.85,
+      130.68,
+      1089.54,
+      143.28
+     ],
+     "method": "bluebeam-ocr",
+     "number": 5,
+     "number_level": "Inferred",
+     "read_number": "5",
+     "text": "(5) MAINTAIN POWER TO TO EXISTING SUMP P.S. UNTIL NEW PLANT DRAIN P.S. IS INSTALLED AND / — TESTED"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      819.36,
+      145.98,
+      1074.24,
+      160.72
+     ],
+     "method": "bluebeam-ocr",
+     "number": 6,
+     "number_level": "Inferred",
+     "read_number": "6",
+     "text": "6) MAINTAIN EXISTING 2” 2” WATER SERVICE UNTIL NEW WATER SERVICE IS INSTALLED AND / — TESTED. SEE SEE C1 SITE PIPING SHEETS"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      818.64,
+      163.98,
+      1008.72,
+      175.68
+     ],
+     "method": "ocr",
+     "number": 7,
+     "number_level": "Inferred",
+     "read_number": "7",
+     "text": "(7) RE-ROUTE ELECTRICAL AS NEEDED. SEE ELECTRICAL SHEETS"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      818.64,
+      176.58,
+      1090.98,
+      197.67
+     ],
+     "method": "bluebeam-ocr",
+     "number": 8,
+     "number_level": "Inferred",
+     "read_number": "8",
+     "text": "(8) ABANDON AND REMOVE 60 60 LF LF OF 10” EFFLUENT (OUTFALL) PIPE AFTER INTERIM 8” HDPE / — PIPE PIPE IS INSTALLED AND TESTED. PROVIDE TEMPORARY RESTRAINED PLUG AT PIPE OPENING / UNTIL NEW 10” 10” EFFLUENT IS CONNECTED."
+    },
+    {
+     "basis": "by order",
+     "bbox": [
+      818.64,
+      201.06,
+      990.18,
+      212.76
+     ],
+     "method": "bluebeam-ocr",
+     "number": 9,
+     "number_level": "Unresolved",
+     "read_number": null,
+     "text": "€)) REMOVE EXISTING 87 87 LF LF STORM DRAIN DRAIN & CATCH BASIN"
+    },
+    {
+     "basis": "by order",
+     "bbox": [
+      819.36,
+      218.7,
+      1066.5,
+      230.4
+     ],
+     "method": "bluebeam-ocr",
+     "number": 10,
+     "number_level": "Unresolved",
+     "read_number": null,
+     "text": "©) PROTECT EXISTING STORM STORM DRAIN DRAIN PUMP STATION MANHOLE AND DISCHARGE PIPING"
+    },
+    {
+     "basis": "by order",
+     "bbox": [
+      818.64,
+      230.94,
+      1079.82,
+      246.62
+     ],
+     "method": "bluebeam-ocr",
+     "number": 11,
+     "number_level": "Unresolved",
+     "read_number": "1",
+     "text": "(1) ABANDON AND AND REMOVE LF 20 LF OF 6” PIPE DRAIN PIPE TO SUMP PUMP AFTER STATION AFTER NEW / PLANT DRAIN P.S. P.S. IS INSTALLED AND TESTED"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      818.64,
+      250.56,
+      1090.98,
+      272.88
+     ],
+     "method": "bluebeam-ocr",
+     "number": 12,
+     "number_level": "Inferred",
+     "read_number": "12",
+     "text": "(12) ABANDON AND AND REMOVE LF 60 LF OF 13” SUMP PUMP MAIN FORCE MAIN PIPE, AFTER NEW PLANT / DRAIN P.S. IS IS INSTALLED AND AND TESTED. PLUG CONNECTION AT 8” INFLUENT GRAVITY SEWER / PIPE (EAST SIDE). SEE C1 SITE PIPING SHEETS"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      818.64,
+      275.94,
+      1087.2,
+      308.88
+     ],
+     "method": "bluebeam-ocr",
+     "number": 13,
+     "number_level": "Inferred",
+     "read_number": "13",
+     "text": "13) POTHOLE POWER & TELECOMMUNICATIONS PRIOR TO INSTALLING STORM SEWER OR / RETAINING WALL OR OR FENCE. / PROPOSED FACILITIES. BED / FACILITIES TO BE BE INSTALLED W/ OF COVER MIN. ADDITIONAL MAY COVER MAY BE REQUIRED / TO AVOID CONFLICT WITH OTHER FACILITIES"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      819.54,
+      313.38,
+      1076.22,
+      327.77
+     ],
+     "method": "bluebeam-ocr",
+     "number": 14,
+     "number_level": "Inferred",
+     "read_number": "14",
+     "text": "(14) / POTHOLE EXISTING STORM SEWER AND REPORT PIPE LOCATION & ELEVATION TO THE / — ENGINEER PRIOR PRIOR TO GRADING THE OR SITE OR INSTALLING ANY STORM SEWER FACILITIES."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      818.64,
+      330.66,
+      1087.2,
+      344.88
+     ],
+     "method": "bluebeam-ocr",
+     "number": 15,
+     "number_level": "Inferred",
+     "read_number": "15",
+     "text": "(15) EXISTING HOLDING TANKS TANKS TO BE REMOVED DURING CONSTRUCTION & RELOCATED ON SITE / PER OWNER"
+    },
+    {
+     "basis": "by order",
+     "bbox": [
+      819.36,
+      348.84,
+      942.84,
+      360.54
+     ],
+     "method": "bluebeam-ocr",
+     "number": 16,
+     "number_level": "Unresolved",
+     "read_number": null,
+     "text": "©) REMOVE 149 LF LF OF CHAIN LINK FENCE"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      819.36,
+      362.34,
+      996.48,
+      372.6
+     ],
+     "method": "bluebeam-ocr",
+     "number": 17,
+     "number_level": "Inferred",
+     "read_number": "17",
+     "text": "(17) REMOVE 7’ OF OF STORM DRAIN DRAIN CONNECTED TO ROOF DRAIN"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      819.54,
+      374.22,
+      1096.02,
+      388.47
+     ],
+     "method": "bluebeam-ocr",
+     "number": 18,
+     "number_level": "Inferred",
+     "read_number": "18",
+     "text": "(18) REMOVE 61 LF OF EXISTING RETAINING WALL. MAKE CLEAN CUT AT EAST END SUITABLE FOR / MATCHING TO PROPOSED BLOCK WALL WALL"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      819.54,
+      392.4,
+      1087.92,
+      405.54
+     ],
+     "method": "ocr",
+     "number": 19,
+     "number_level": "Inferred",
+     "read_number": "19",
+     "text": "(19) EXISTING GENERATOR FUEL TANK AND CONCRETE FUEL SPILL BASIN TO BE REMOVED AND / RESTORED AS ASPHALT PAVEMENT."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      819.36,
+      410.04,
+      942.12,
+      420.3
+     ],
+     "method": "bluebeam-ocr",
+     "number": 20,
+     "number_level": "Inferred",
+     "read_number": "20",
+     "text": "(20) / REMOVE 119 LF LF OF OF CHAIN LINK LINK FENCE"
+    },
+    {
+     "basis": "by order",
+     "bbox": [
+      818.64,
+      422.1,
+      931.5,
+      433.98
+     ],
+     "method": "bluebeam-ocr",
+     "number": 21,
+     "number_level": "Unresolved",
+     "read_number": "2",
+     "text": "(2) REMOVE 8 8 LF LF OF OF 4” STORM DRAIN DRAIN"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      819.36,
+      435.6,
+      903.06,
+      445.86
+     ],
+     "method": "bluebeam-ocr",
+     "number": 22,
+     "number_level": "Inferred",
+     "read_number": "22",
+     "text": "(22) RELOCATE WATER TO TO BE BE"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      818.64,
+      446.76,
+      1065.96,
+      458.46
+     ],
+     "method": "bluebeam-ocr",
+     "number": 23,
+     "number_level": "Inferred",
+     "read_number": "23",
+     "text": "(23) DISCONNECT ROOF DRAINS AND AND PREPARE FOR CONNECTION TO PROPOSED DRAINS"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      818.64,
+      458.64,
+      1081.62,
+      475.38
+     ],
+     "method": "ocr",
+     "number": 24,
+     "number_level": "Inferred",
+     "read_number": "24",
+     "text": "(24) ABANDON & REMOVE EXISTING 8” INFLUENT PIPE PER CONSTRUCTION SEQUENCE NOTES / (SHEET C3.1)"
+    },
+    {
+     "basis": "by order",
+     "bbox": [
+      819.36,
+      478.62,
+      915.84,
+      489.06
+     ],
+     "method": "ocr",
+     "number": 25,
+     "number_level": "Unresolved",
+     "read_number": "28",
+     "text": "(28) / SAWCUT ASPHALT PAVEMENT"
+    }
+   ],
+   "heading": "KEYED NOTES:",
+   "heading_bbox": [
+    834.12,
+    43.74,
+    876.42,
+    55.8
+   ],
+   "heading_method": "ocr",
+   "highest_marker_read": 28,
+   "line_spacing_p25": 6.3
+  }
+ ],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -20705,6 +21078,2123 @@
   "width": 1224.0
  },
  "page_key": "012",
+ "quantities": [
+  {
+   "bbox": [
+    157.42,
+    412.05,
+    163.42,
+    430.55
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "144.00’",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "144.00'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "144.00"
+  },
+  {
+   "bbox": [
+    157.5,
+    411.66,
+    162.0,
+    430.56
+   ],
+   "callouts_nearby": [],
+   "conf": 92.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "144.00’",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "144.00'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "144.00"
+  },
+  {
+   "bbox": [
+    405.6,
+    112.52,
+    424.1,
+    118.52
+   ],
+   "callouts_nearby": [
+    [
+     "16",
+     [
+      377.28,
+      91.62,
+      389.16,
+      104.58
+     ],
+     18.26
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "148.00’",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "148.00'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "148.00"
+  },
+  {
+   "bbox": [
+    405.72,
+    112.68,
+    424.44,
+    117.18
+   ],
+   "callouts_nearby": [
+    [
+     "16",
+     [
+      377.28,
+      91.62,
+      389.16,
+      104.58
+     ],
+     18.43
+    ]
+   ],
+   "conf": 70.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "148.00’",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "148.00'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "148.00"
+  },
+  {
+   "bbox": [
+    405.85,
+    126.46,
+    412.56,
+    135.46
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "5' EASEMEN+*t PORT 1***++++4--++**+++++++++/++",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "5'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "5"
+  },
+  {
+   "bbox": [
+    405.9,
+    128.34,
+    410.04,
+    132.84
+   ],
+   "callouts_nearby": [],
+   "conf": 54.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "5’",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "5'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "5"
+  },
+  {
+   "bbox": [
+    443.89,
+    110.61,
+    491.45,
+    119.61
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "W",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "N 88′24′34\" W",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "34\" W",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "34"
+  },
+  {
+   "bbox": [
+    700.92,
+    381.6,
+    705.6,
+    400.32
+   ],
+   "callouts_nearby": [],
+   "conf": 93.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "144.00’ N 1°38'48”",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "144.00'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "144.00"
+  },
+  {
+   "bbox": [
+    713.5,
+    163.87,
+    720.17,
+    168.87
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "20’ EASEMENT",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "20'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "20"
+  },
+  {
+   "bbox": [
+    857.73,
+    352.77,
+    873.35,
+    357.77
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [
+    [
+     377.28,
+     91.62,
+     389.16,
+     104.58
+    ]
+   ],
+   "keyed_note": "16 (by order; Unresolved)",
+   "kind": "length",
+   "line_text": "REMOVE 149 LF OF CHAIN LINK FENCE",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "149 LF",
+   "tag_level": "Inferred",
+   "unit": "LF",
+   "value": "149"
+  },
+  {
+   "bbox": [
+    857.73,
+    365.47,
+    861.62,
+    370.47
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": "17 (read; Inferred)",
+   "kind": "length",
+   "line_text": "REMOVE 7’ OF STORM DRAIN CONNECTED TO ROOF DRAIN",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "7'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "7"
+  },
+  {
+   "bbox": [
+    857.73,
+    413.47,
+    873.35,
+    418.47
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [
+    [
+     546.3,
+     54.54,
+     552.42,
+     58.32
+    ]
+   ],
+   "keyed_note": "20 (read; Inferred)",
+   "kind": "length",
+   "line_text": "REMOVE 119 LF OF CHAIN LINK FENCE",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "119 LF",
+   "tag_level": "Inferred",
+   "unit": "LF",
+   "value": "119"
+  },
+  {
+   "bbox": [
+    857.73,
+    426.22,
+    867.78,
+    431.22
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [
+    [
+     444.5,
+     646.25,
+     451.15,
+     652.9
+    ]
+   ],
+   "keyed_note": "21 (by order; marker read as 2; Unresolved)",
+   "kind": "length",
+   "line_text": "REMOVE 8 LF OF 4” STORM DRAIN",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "8 LF",
+   "tag_level": "Inferred",
+   "unit": "LF",
+   "value": "8"
+  },
+  {
+   "bbox": [
+    859.5,
+    352.62,
+    878.22,
+    356.94
+   ],
+   "callouts_nearby": [],
+   "conf": 96.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [
+    [
+     377.28,
+     91.62,
+     389.16,
+     104.58
+    ]
+   ],
+   "keyed_note": "16 (by order; Unresolved)",
+   "kind": "length",
+   "line_text": "©) REMOVE 149 LF OF CHAIN LINK FENCE",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "149 LF",
+   "tag_level": "Inferred",
+   "unit": "LF",
+   "value": "149"
+  },
+  {
+   "bbox": [
+    859.5,
+    377.28,
+    874.8,
+    381.42
+   ],
+   "callouts_nearby": [],
+   "conf": 95.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [
+    [
+     659.34,
+     619.74,
+     669.96,
+     628.92
+    ]
+   ],
+   "keyed_note": "18 (read; Inferred)",
+   "kind": "length",
+   "line_text": "(18) REMOVE 61 LF OF EXISTING RETAINING WALL. MAKE CLEAN CUT AT EAST END SUITABLE FOR",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "61 LF",
+   "tag_level": "Inferred",
+   "unit": "LF",
+   "value": "61"
+  },
+  {
+   "bbox": [
+    859.5,
+    425.88,
+    871.92,
+    430.2
+   ],
+   "callouts_nearby": [],
+   "conf": 96.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [
+    [
+     444.5,
+     646.25,
+     451.15,
+     652.9
+    ]
+   ],
+   "keyed_note": "21 (by order; marker read as 2; Unresolved)",
+   "kind": "length",
+   "line_text": "(2) REMOVE 8 LF OF 4” STORM DRAIN",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "8 LF",
+   "tag_level": "Inferred",
+   "unit": "LF",
+   "value": "8"
+  },
+  {
+   "bbox": [
+    859.68,
+    364.5,
+    864.0,
+    369.54
+   ],
+   "callouts_nearby": [],
+   "conf": 93.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": "17 (read; Inferred)",
+   "kind": "length",
+   "line_text": "7’",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "7'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "7"
+  },
+  {
+   "bbox": [
+    859.68,
+    413.1,
+    877.5,
+    417.42
+   ],
+   "callouts_nearby": [],
+   "conf": 96.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [
+    [
+     546.3,
+     54.54,
+     552.42,
+     58.32
+    ]
+   ],
+   "keyed_note": "20 (read; Inferred)",
+   "kind": "length",
+   "line_text": "(20) REMOVE 119 LF OF CHAIN LINK FENCE",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "119 LF",
+   "tag_level": "Inferred",
+   "unit": "LF",
+   "value": "119"
+  },
+  {
+   "bbox": [
+    859.95,
+    377.47,
+    874.93,
+    382.47
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [
+    [
+     659.34,
+     619.74,
+     669.96,
+     628.92
+    ]
+   ],
+   "keyed_note": "18 (read; Inferred)",
+   "kind": "length",
+   "line_text": "REMOVE 61 LF OF EXISTING RETAINING WALL. MAKE CLEAN CUT AT EAST END SUITABLE FOR",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "61 LF",
+   "tag_level": "Inferred",
+   "unit": "LF",
+   "value": "61"
+  },
+  {
+   "bbox": [
+    863.56,
+    192.67,
+    938.61,
+    197.67
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "EFFLUENT IS CONNECTED.",
+   "keyed_callouts": [
+    [
+     742.94,
+     717.54,
+     752.94,
+     723.1
+    ]
+   ],
+   "keyed_note": "8 (read; Inferred)",
+   "kind": "size",
+   "line_text": "UNTIL NEW 10” EFFLUENT IS CONNECTED.",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "10\" EFFLUENT IS CONNECTED.",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "10"
+  },
+  {
+   "bbox": [
+    867.42,
+    191.7,
+    949.68,
+    196.74
+   ],
+   "callouts_nearby": [],
+   "conf": 96.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "EFFLUENT IS CONNECTED.",
+   "keyed_callouts": [
+    [
+     742.94,
+     717.54,
+     752.94,
+     723.1
+    ]
+   ],
+   "keyed_note": "8 (read; Inferred)",
+   "kind": "size",
+   "line_text": "UNTIL NEW 10” EFFLUENT IS CONNECTED.",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "10\" EFFLUENT IS CONNECTED.",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "10"
+  },
+  {
+   "bbox": [
+    877.49,
+    426.22,
+    918.34,
+    431.22
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "STORM DRAIN",
+   "keyed_callouts": [
+    [
+     444.5,
+     646.25,
+     451.15,
+     652.9
+    ]
+   ],
+   "keyed_note": "21 (by order; marker read as 2; Unresolved)",
+   "kind": "size",
+   "line_text": "REMOVE 8 LF OF 4” STORM DRAIN",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4\" STORM DRAIN",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    882.48,
+    204.92,
+    895.26,
+    209.92
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": "9 (by order; Unresolved)",
+   "kind": "length",
+   "line_text": "REMOVE EXISTING 87 LF STORM DRAIN & CATCH BASIN",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "87 LF",
+   "tag_level": "Inferred",
+   "unit": "LF",
+   "value": "87"
+  },
+  {
+   "bbox": [
+    885.45,
+    149.22,
+    971.76,
+    154.22
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "WATER SERVICE UNTIL NEW",
+   "keyed_callouts": [
+    [
+     384.95,
+     328.52,
+     387.73,
+     333.52
+    ]
+   ],
+   "keyed_note": "6 (read; Inferred)",
+   "kind": "size",
+   "line_text": "(6) MAINTAIN EXISTING 2” WATER SERVICE UNTIL NEW WATER SERVICE IS INSTALLED AND",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "2\" WATER SERVICE UNTIL NEW",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "2"
+  },
+  {
+   "bbox": [
+    885.6,
+    425.16,
+    931.5,
+    430.2
+   ],
+   "callouts_nearby": [],
+   "conf": 95.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "STORM DRAIN",
+   "keyed_callouts": [
+    [
+     444.5,
+     646.25,
+     451.15,
+     652.9
+    ]
+   ],
+   "keyed_note": "21 (by order; marker read as 2; Unresolved)",
+   "kind": "size",
+   "line_text": "(2) REMOVE 8 LF OF 4” STORM DRAIN",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4\" STORM DRAIN",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    886.14,
+    204.66,
+    901.98,
+    208.98
+   ],
+   "callouts_nearby": [],
+   "conf": 96.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": "9 (by order; Unresolved)",
+   "kind": "length",
+   "line_text": "€)) REMOVE EXISTING 87 LF STORM DRAIN & CATCH BASIN",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "87 LF",
+   "tag_level": "Inferred",
+   "unit": "LF",
+   "value": "87"
+  },
+  {
+   "bbox": [
+    887.96,
+    57.32,
+    900.8,
+    62.32
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [
+    [
+     170.12,
+     541.05,
+     175.12,
+     545.5
+    ],
+    [
+     678.06,
+     318.42,
+     678.96,
+     321.48
+    ],
+    [
+     652.8,
+     159.68,
+     661.7,
+     175.68
+    ],
+    [
+     436.1,
+     185.72,
+     439.1,
+     191.72
+    ],
+    [
+     443.5,
+     259.87,
+     446.28,
+     264.87
+    ],
+    [
+     652.1,
+     359.8,
+     666.0,
+     384.8
+    ],
+    [
+     880.2,
+     517.14,
+     881.46,
+     518.04
+    ],
+    [
+     856.44,
+     547.74,
+     857.7,
+     548.64
+    ],
+    [
+     498.7,
+     554.09,
+     504.26,
+     564.09
+    ]
+   ],
+   "keyed_note": "1 (read; Inferred)",
+   "kind": "length",
+   "line_text": "(7) ABANDON AND REMOVE 40 LF OF 8” EFFLUENT (OUTFALL) PIPE AFTER INTERIM 8” HDPE",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "40 LF",
+   "tag_level": "Inferred",
+   "unit": "LF",
+   "value": "40"
+  },
+  {
+   "bbox": [
+    889.74,
+    148.32,
+    974.7,
+    153.36
+   ],
+   "callouts_nearby": [],
+   "conf": 95.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "WATER SERVICE UNTIL NEW",
+   "keyed_callouts": [
+    [
+     384.95,
+     328.52,
+     387.73,
+     333.52
+    ]
+   ],
+   "keyed_note": "6 (read; Inferred)",
+   "kind": "size",
+   "line_text": "6) MAINTAIN EXISTING 2” WATER SERVICE UNTIL NEW WATER SERVICE IS INSTALLED AND",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "2\" WATER SERVICE UNTIL NEW",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "2"
+  },
+  {
+   "bbox": [
+    891.3,
+    235.42,
+    904.08,
+    240.42
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [
+    [
+     653.05,
+     460.24,
+     664.17,
+     470.24
+    ],
+    [
+     658.8,
+     478.1,
+     682.15,
+     499.1
+    ]
+   ],
+   "keyed_note": "11 (by order; marker read as 1; Unresolved)",
+   "kind": "length",
+   "line_text": "(11) ABANDON AND REMOVE 20 LF OF 6” DRAIN PIPE TO SUMP PUMP STATION AFTER NEW",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "20 LF",
+   "tag_level": "Inferred",
+   "unit": "LF",
+   "value": "20"
+  },
+  {
+   "bbox": [
+    891.3,
+    254.82,
+    904.08,
+    259.82
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": "12 (read; Inferred)",
+   "kind": "length",
+   "line_text": "(12) ABANDON AND REMOVE 60 LF OF 12” SUMP PUMP FORCE MAIN PIPE, AFTER NEW PLANT",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "60 LF",
+   "tag_level": "Inferred",
+   "unit": "LF",
+   "value": "60"
+  },
+  {
+   "bbox": [
+    898.86,
+    438.92,
+    902.81,
+    443.92
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [
+    [
+     140.94,
+     111.42,
+     147.06,
+     115.38
+    ],
+    [
+     300.7,
+     189.31,
+     310.71,
+     198.31
+    ]
+   ],
+   "keyed_note": "22 (read; Inferred)",
+   "kind": "length",
+   "line_text": "RELOCATE WATER TO BE 1’ CLEAR BELOW BOTTOM OF STORM DRAIN",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "1'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "1"
+  },
+  {
+   "bbox": [
+    899.3,
+    76.02,
+    914.78,
+    81.02
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [
+    [
+     404.4,
+     250.77,
+     407.18,
+     255.77
+    ]
+   ],
+   "keyed_note": "2 (read; Inferred)",
+   "kind": "length",
+   "line_text": "(2) ABANDON AND REMOVE 40 LF OF 4” ROOF DRAIN PIPE AFTER NEW 4” ROOF DRAIN GRAVITY",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "40 LF",
+   "tag_level": "Inferred",
+   "unit": "LF",
+   "value": "40"
+  },
+  {
+   "bbox": [
+    900.3,
+    179.97,
+    916.03,
+    184.97
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [
+    [
+     742.94,
+     717.54,
+     752.94,
+     723.1
+    ]
+   ],
+   "keyed_note": "8 (read; Inferred)",
+   "kind": "length",
+   "line_text": "(8) ABANDON AND REMOVE 60 LF OF 10” EFFLUENT (OUTFALL) PIPE AFTER INTERIM 8” HDPE",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "60 LF",
+   "tag_level": "Inferred",
+   "unit": "LF",
+   "value": "60"
+  },
+  {
+   "bbox": [
+    903.24,
+    57.06,
+    919.08,
+    61.38
+   ],
+   "callouts_nearby": [],
+   "conf": 96.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [
+    [
+     170.12,
+     541.05,
+     175.12,
+     545.5
+    ],
+    [
+     678.06,
+     318.42,
+     678.96,
+     321.48
+    ],
+    [
+     652.8,
+     159.68,
+     661.7,
+     175.68
+    ],
+    [
+     436.1,
+     185.72,
+     439.1,
+     191.72
+    ],
+    [
+     443.5,
+     259.87,
+     446.28,
+     264.87
+    ],
+    [
+     652.1,
+     359.8,
+     666.0,
+     384.8
+    ],
+    [
+     880.2,
+     517.14,
+     881.46,
+     518.04
+    ],
+    [
+     856.44,
+     547.74,
+     857.7,
+     548.64
+    ],
+    [
+     498.7,
+     554.09,
+     504.26,
+     564.09
+    ]
+   ],
+   "keyed_note": "1 (read; Inferred)",
+   "kind": "length",
+   "line_text": "(1) ABANDON AND REMOVE 40 LF OF 8” EFFLUENT (OUTFALL) PIPE AFTER INTERIM 8” HDPE",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "40 LF",
+   "tag_level": "Inferred",
+   "unit": "LF",
+   "value": "40"
+  },
+  {
+   "bbox": [
+    903.24,
+    75.78,
+    919.08,
+    80.1
+   ],
+   "callouts_nearby": [],
+   "conf": 95.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [
+    [
+     404.4,
+     250.77,
+     407.18,
+     255.77
+    ]
+   ],
+   "keyed_note": "2 (read; Inferred)",
+   "kind": "length",
+   "line_text": "(2) ABANDON AND REMOVE 40 LF OF 4” ROOF DRAIN PIPE AFTER NEW 4” ROOF DRAIN GRAVITY",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "40 LF",
+   "tag_level": "Inferred",
+   "unit": "LF",
+   "value": "40"
+  },
+  {
+   "bbox": [
+    903.24,
+    179.82,
+    919.08,
+    184.14
+   ],
+   "callouts_nearby": [],
+   "conf": 96.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [
+    [
+     742.94,
+     717.54,
+     752.94,
+     723.1
+    ]
+   ],
+   "keyed_note": "8 (read; Inferred)",
+   "kind": "length",
+   "line_text": "(8) ABANDON AND REMOVE 60 LF OF 10” EFFLUENT (OUTFALL) PIPE AFTER INTERIM 8” HDPE",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "60 LF",
+   "tag_level": "Inferred",
+   "unit": "LF",
+   "value": "60"
+  },
+  {
+   "bbox": [
+    903.24,
+    235.08,
+    919.08,
+    239.4
+   ],
+   "callouts_nearby": [],
+   "conf": 96.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [
+    [
+     653.05,
+     460.24,
+     664.17,
+     470.24
+    ],
+    [
+     658.8,
+     478.1,
+     682.15,
+     499.1
+    ]
+   ],
+   "keyed_note": "11 (by order; marker read as 1; Unresolved)",
+   "kind": "length",
+   "line_text": "(1) ABANDON AND REMOVE 20 LF OF 6” DRAIN PIPE TO SUMP PUMP STATION AFTER NEW",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "20 LF",
+   "tag_level": "Inferred",
+   "unit": "LF",
+   "value": "20"
+  },
+  {
+   "bbox": [
+    903.24,
+    254.52,
+    919.08,
+    258.84
+   ],
+   "callouts_nearby": [],
+   "conf": 95.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": "12 (read; Inferred)",
+   "kind": "length",
+   "line_text": "(12) ABANDON AND REMOVE 60 LF OF 13” SUMP PUMP FORCE MAIN PIPE, AFTER NEW PLANT",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "60 LF",
+   "tag_level": "Inferred",
+   "unit": "LF",
+   "value": "60"
+  },
+  {
+   "bbox": [
+    906.66,
+    437.94,
+    910.44,
+    442.8
+   ],
+   "callouts_nearby": [],
+   "conf": 94.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "1’",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "1'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "1"
+  },
+  {
+   "bbox": [
+    910.5,
+    57.32,
+    999.96,
+    62.32
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "EFFLUENT OUTFALL PIPE AFTER",
+   "keyed_callouts": [
+    [
+     170.12,
+     541.05,
+     175.12,
+     545.5
+    ],
+    [
+     678.06,
+     318.42,
+     678.96,
+     321.48
+    ],
+    [
+     652.8,
+     159.68,
+     661.7,
+     175.68
+    ],
+    [
+     436.1,
+     185.72,
+     439.1,
+     191.72
+    ],
+    [
+     443.5,
+     259.87,
+     446.28,
+     264.87
+    ],
+    [
+     652.1,
+     359.8,
+     666.0,
+     384.8
+    ],
+    [
+     880.2,
+     517.14,
+     881.46,
+     518.04
+    ],
+    [
+     856.44,
+     547.74,
+     857.7,
+     548.64
+    ],
+    [
+     498.7,
+     554.09,
+     504.26,
+     564.09
+    ]
+   ],
+   "keyed_note": "1 (read; Inferred)",
+   "kind": "size",
+   "line_text": "(7) ABANDON AND REMOVE 40 LF OF 8” EFFLUENT (OUTFALL) PIPE AFTER INTERIM 8” HDPE",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "8\" EFFLUENT (OUTFALL) PIPE AFTER",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "8"
+  },
+  {
+   "bbox": [
+    913.78,
+    235.42,
+    972.11,
+    240.42
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "DRAIN PIPE TO SUMP",
+   "keyed_callouts": [
+    [
+     653.05,
+     460.24,
+     664.17,
+     470.24
+    ],
+    [
+     658.8,
+     478.1,
+     682.15,
+     499.1
+    ]
+   ],
+   "keyed_note": "11 (by order; marker read as 1; Unresolved)",
+   "kind": "size",
+   "line_text": "(11) ABANDON AND REMOVE 20 LF OF 6” DRAIN PIPE TO SUMP PUMP STATION AFTER NEW",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "6\" DRAIN PIPE TO SUMP",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "6"
+  },
+  {
+   "bbox": [
+    913.78,
+    254.82,
+    985.51,
+    259.82
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "SUMP PUMP FORCE MAIN",
+   "keyed_callouts": [],
+   "keyed_note": "12 (read; Inferred)",
+   "kind": "size",
+   "line_text": "(12) ABANDON AND REMOVE 60 LF OF 12” SUMP PUMP FORCE MAIN PIPE, AFTER NEW PLANT",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "12\" SUMP PUMP FORCE MAIN",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "12"
+  },
+  {
+   "bbox": [
+    915.27,
+    298.52,
+    919.21,
+    303.52
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [
+    [
+     301.2,
+     576.74,
+     308.59,
+     583.39
+    ],
+    [
+     319.9,
+     687.81,
+     329.91,
+     696.81
+    ]
+   ],
+   "keyed_note": "13 (read; Inferred)",
+   "kind": "length",
+   "line_text": "FACILITIES TO BE INSTALLED W/ 2’ OF COVER MIN. ADDITIONAL COVER MAY BE REQUIRED",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "2'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "2"
+  },
+  {
+   "bbox": [
+    922.85,
+    463.62,
+    1028.65,
+    468.62
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "INFLUENT PIPE PER CONSTRUCTION",
+   "keyed_callouts": [
+    [
+     653.22,
+     176.4,
+     657.18,
+     182.52
+    ],
+    [
+     718.92,
+     284.22,
+     730.62,
+     295.02
+    ]
+   ],
+   "keyed_note": "24 (read; Inferred)",
+   "kind": "size",
+   "line_text": "ABANDON & REMOVE EXISTING 8” INFLUENT PIPE PER CONSTRUCTION SEQUENCE NOTES",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "8\" INFLUENT PIPE PER CONSTRUCTION",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "8"
+  },
+  {
+   "bbox": [
+    923.22,
+    462.6,
+    1029.42,
+    467.64
+   ],
+   "callouts_nearby": [],
+   "conf": 96.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "INFLUENT PIPE PER CONSTRUCTION",
+   "keyed_callouts": [
+    [
+     653.22,
+     176.4,
+     657.18,
+     182.52
+    ],
+    [
+     718.92,
+     284.22,
+     730.62,
+     295.02
+    ]
+   ],
+   "keyed_note": "24 (read; Inferred)",
+   "kind": "size",
+   "line_text": "ABANDON & REMOVE EXISTING 8” INFLUENT PIPE PER CONSTRUCTION SEQUENCE NOTES",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "8\" INFLUENT PIPE PER CONSTRUCTION",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "8"
+  },
+  {
+   "bbox": [
+    928.08,
+    297.54,
+    932.58,
+    302.58
+   ],
+   "callouts_nearby": [],
+   "conf": 96.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [
+    [
+     301.2,
+     576.74,
+     308.59,
+     583.39
+    ],
+    [
+     319.9,
+     687.81,
+     329.91,
+     696.81
+    ]
+   ],
+   "keyed_note": "13 (read; Inferred)",
+   "kind": "length",
+   "line_text": "2’",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "2'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "2"
+  },
+  {
+   "bbox": [
+    929.85,
+    76.02,
+    1008.22,
+    81.02
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "ROOF DRAIN PIPE AFTER",
+   "keyed_callouts": [
+    [
+     404.4,
+     250.77,
+     407.18,
+     255.77
+    ]
+   ],
+   "keyed_note": "2 (read; Inferred)",
+   "kind": "size",
+   "line_text": "(2) ABANDON AND REMOVE 40 LF OF 4” ROOF DRAIN PIPE AFTER NEW 4” ROOF DRAIN GRAVITY",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4\" ROOF DRAIN PIPE AFTER",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    931.65,
+    179.97,
+    1035.67,
+    184.97
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "EFFLUENT OUTFALL PIPE AFTER",
+   "keyed_callouts": [
+    [
+     742.94,
+     717.54,
+     752.94,
+     723.1
+    ]
+   ],
+   "keyed_note": "8 (read; Inferred)",
+   "kind": "size",
+   "line_text": "(8) ABANDON AND REMOVE 60 LF OF 10” EFFLUENT (OUTFALL) PIPE AFTER INTERIM 8” HDPE",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "10\" EFFLUENT (OUTFALL) PIPE AFTER",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "10"
+  },
+  {
+   "bbox": [
+    932.76,
+    56.34,
+    1034.28,
+    62.46
+   ],
+   "callouts_nearby": [],
+   "conf": 91.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "EFFLUENT OUTFALL PIPE AFTER",
+   "keyed_callouts": [
+    [
+     170.12,
+     541.05,
+     175.12,
+     545.5
+    ],
+    [
+     678.06,
+     318.42,
+     678.96,
+     321.48
+    ],
+    [
+     652.8,
+     159.68,
+     661.7,
+     175.68
+    ],
+    [
+     436.1,
+     185.72,
+     439.1,
+     191.72
+    ],
+    [
+     443.5,
+     259.87,
+     446.28,
+     264.87
+    ],
+    [
+     652.1,
+     359.8,
+     666.0,
+     384.8
+    ],
+    [
+     880.2,
+     517.14,
+     881.46,
+     518.04
+    ],
+    [
+     856.44,
+     547.74,
+     857.7,
+     548.64
+    ],
+    [
+     498.7,
+     554.09,
+     504.26,
+     564.09
+    ]
+   ],
+   "keyed_note": "1 (read; Inferred)",
+   "kind": "size",
+   "line_text": "(1) ABANDON AND REMOVE 40 LF OF 8” EFFLUENT (OUTFALL) PIPE AFTER INTERIM 8” HDPE",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "8\" EFFLUENT (OUTFALL) PIPE AFTER",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "8"
+  },
+  {
+   "bbox": [
+    932.76,
+    75.06,
+    1010.34,
+    80.1
+   ],
+   "callouts_nearby": [],
+   "conf": 96.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "ROOF DRAIN PIPE AFTER",
+   "keyed_callouts": [
+    [
+     404.4,
+     250.77,
+     407.18,
+     255.77
+    ]
+   ],
+   "keyed_note": "2 (read; Inferred)",
+   "kind": "size",
+   "line_text": "(2) ABANDON AND REMOVE 40 LF OF 4” ROOF DRAIN PIPE AFTER NEW 4” ROOF DRAIN GRAVITY",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4\" ROOF DRAIN PIPE AFTER",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    932.76,
+    179.1,
+    1036.98,
+    185.22
+   ],
+   "callouts_nearby": [],
+   "conf": 92.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "EFFLUENT OUTFALL PIPE AFTER",
+   "keyed_callouts": [
+    [
+     742.94,
+     717.54,
+     752.94,
+     723.1
+    ]
+   ],
+   "keyed_note": "8 (read; Inferred)",
+   "kind": "size",
+   "line_text": "(8) ABANDON AND REMOVE 60 LF OF 10” EFFLUENT (OUTFALL) PIPE AFTER INTERIM 8” HDPE",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "10\" EFFLUENT (OUTFALL) PIPE AFTER",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "10"
+  },
+  {
+   "bbox": [
+    932.76,
+    234.36,
+    1000.98,
+    239.4
+   ],
+   "callouts_nearby": [],
+   "conf": 95.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "DRAIN PIPE TO SUMP",
+   "keyed_callouts": [
+    [
+     653.05,
+     460.24,
+     664.17,
+     470.24
+    ],
+    [
+     658.8,
+     478.1,
+     682.15,
+     499.1
+    ]
+   ],
+   "keyed_note": "11 (by order; marker read as 1; Unresolved)",
+   "kind": "size",
+   "line_text": "(1) ABANDON AND REMOVE 20 LF OF 6” DRAIN PIPE TO SUMP PUMP STATION AFTER NEW",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "6\" DRAIN PIPE TO SUMP",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "6"
+  },
+  {
+   "bbox": [
+    932.76,
+    253.44,
+    1013.22,
+    260.1
+   ],
+   "callouts_nearby": [],
+   "conf": 91.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "SUMP PUMP FORCE MAIN",
+   "keyed_callouts": [],
+   "keyed_note": "12 (read; Inferred)",
+   "kind": "size",
+   "line_text": "(12) ABANDON AND REMOVE 60 LF OF 13” SUMP PUMP FORCE MAIN PIPE, AFTER NEW PLANT",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "13\" SUMP PUMP FORCE MAIN",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "13"
+  },
+  {
+   "bbox": [
+    989.43,
+    261.07,
+    1062.8,
+    266.07
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "INFLUENT GRAVITY SEWER",
+   "keyed_callouts": [],
+   "keyed_note": "12 (read; Inferred)",
+   "kind": "size",
+   "line_text": "DRAIN P.S. IS INSTALLED AND TESTED. PLUG CONNECTION AT 8” INFLUENT GRAVITY SEWER",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "8\" INFLUENT GRAVITY SEWER",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "8"
+  },
+  {
+   "bbox": [
+    1010.7,
+    260.1,
+    1090.98,
+    265.14
+   ],
+   "callouts_nearby": [],
+   "conf": 95.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "INFLUENT GRAVITY SEWER",
+   "keyed_callouts": [],
+   "keyed_note": "12 (read; Inferred)",
+   "kind": "size",
+   "line_text": "DRAIN P.S. IS INSTALLED AND TESTED. PLUG CONNECTION AT 8” INFLUENT GRAVITY SEWER",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "8\" INFLUENT GRAVITY SEWER",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "8"
+  },
+  {
+   "bbox": [
+    1023.26,
+    57.32,
+    1043.03,
+    62.32
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "HDPE",
+   "keyed_callouts": [
+    [
+     170.12,
+     541.05,
+     175.12,
+     545.5
+    ],
+    [
+     678.06,
+     318.42,
+     678.96,
+     321.48
+    ],
+    [
+     652.8,
+     159.68,
+     661.7,
+     175.68
+    ],
+    [
+     436.1,
+     185.72,
+     439.1,
+     191.72
+    ],
+    [
+     443.5,
+     259.87,
+     446.28,
+     264.87
+    ],
+    [
+     652.1,
+     359.8,
+     666.0,
+     384.8
+    ],
+    [
+     880.2,
+     517.14,
+     881.46,
+     518.04
+    ],
+    [
+     856.44,
+     547.74,
+     857.7,
+     548.64
+    ],
+    [
+     498.7,
+     554.09,
+     504.26,
+     564.09
+    ]
+   ],
+   "keyed_note": "1 (read; Inferred)",
+   "kind": "size",
+   "line_text": "(7) ABANDON AND REMOVE 40 LF OF 8” EFFLUENT (OUTFALL) PIPE AFTER INTERIM 8” HDPE",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "8\" HDPE",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "8"
+  },
+  {
+   "bbox": [
+    1028.0,
+    76.02,
+    1096.52,
+    81.02
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "ROOF DRAIN GRAVITY",
+   "keyed_callouts": [
+    [
+     404.4,
+     250.77,
+     407.18,
+     255.77
+    ]
+   ],
+   "keyed_note": "2 (read; Inferred)",
+   "kind": "size",
+   "line_text": "(2) ABANDON AND REMOVE 40 LF OF 4” ROOF DRAIN PIPE AFTER NEW 4” ROOF DRAIN GRAVITY",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4\" ROOF DRAIN GRAVITY",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    1028.52,
+    75.06,
+    1096.74,
+    80.1
+   ],
+   "callouts_nearby": [],
+   "conf": 96.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "ROOF DRAIN GRAVITY",
+   "keyed_callouts": [
+    [
+     404.4,
+     250.77,
+     407.18,
+     255.77
+    ]
+   ],
+   "keyed_note": "2 (read; Inferred)",
+   "kind": "size",
+   "line_text": "(2) ABANDON AND REMOVE 40 LF OF 4” ROOF DRAIN PIPE AFTER NEW 4” ROOF DRAIN GRAVITY",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4\" ROOF DRAIN GRAVITY",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    1061.82,
+    56.34,
+    1085.04,
+    61.38
+   ],
+   "callouts_nearby": [],
+   "conf": 95.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "HDPE",
+   "keyed_callouts": [
+    [
+     170.12,
+     541.05,
+     175.12,
+     545.5
+    ],
+    [
+     678.06,
+     318.42,
+     678.96,
+     321.48
+    ],
+    [
+     652.8,
+     159.68,
+     661.7,
+     175.68
+    ],
+    [
+     436.1,
+     185.72,
+     439.1,
+     191.72
+    ],
+    [
+     443.5,
+     259.87,
+     446.28,
+     264.87
+    ],
+    [
+     652.1,
+     359.8,
+     666.0,
+     384.8
+    ],
+    [
+     880.2,
+     517.14,
+     881.46,
+     518.04
+    ],
+    [
+     856.44,
+     547.74,
+     857.7,
+     548.64
+    ],
+    [
+     498.7,
+     554.09,
+     504.26,
+     564.09
+    ]
+   ],
+   "keyed_note": "1 (read; Inferred)",
+   "kind": "size",
+   "line_text": "(1) ABANDON AND REMOVE 40 LF OF 8” EFFLUENT (OUTFALL) PIPE AFTER INTERIM 8” HDPE",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "8\" HDPE",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "8"
+  },
+  {
+   "bbox": [
+    1064.52,
+    179.1,
+    1087.56,
+    184.14
+   ],
+   "callouts_nearby": [],
+   "conf": 89.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "HDPE",
+   "keyed_callouts": [
+    [
+     742.94,
+     717.54,
+     752.94,
+     723.1
+    ]
+   ],
+   "keyed_note": "8 (read; Inferred)",
+   "kind": "size",
+   "line_text": "(8) ABANDON AND REMOVE 60 LF OF 10” EFFLUENT (OUTFALL) PIPE AFTER INTERIM 8” HDPE",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "8\" HDPE",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "8"
+  },
+  {
+   "bbox": [
+    1064.8,
+    179.97,
+    1087.43,
+    184.97
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "HDPE",
+   "keyed_callouts": [
+    [
+     742.94,
+     717.54,
+     752.94,
+     723.1
+    ]
+   ],
+   "keyed_note": "8 (read; Inferred)",
+   "kind": "size",
+   "line_text": "(8) ABANDON AND REMOVE 60 LF OF 10” EFFLUENT (OUTFALL) PIPE AFTER INTERIM 8” HDPE",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "8\" HDPE",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "8"
+  }
+ ],
  "schema_version": "1.0",
  "set_page": 12,
  "sheet_01": "C0.5",
@@ -20713,6 +23203,29 @@
   "page": 12,
   "sha256": "9ca45d82bf86d16d3e2ce57eb76dccf597c497a7dc7f062fc7a171c4bc2c8d57"
  },
+ "tags": [
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    218.88,
+    686.88,
+    226.44,
+    687.42
+   ],
+   "candidate_rows": [
+    296
+   ],
+   "conf": 0.0,
+   "form": "LT",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "LT?"
+  }
+ ],
  "title_01": "DEMOLITION PLAN",
  "title_block": {
   "date": {

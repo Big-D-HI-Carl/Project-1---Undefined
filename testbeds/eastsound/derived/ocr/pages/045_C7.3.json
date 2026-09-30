@@ -16030,7 +16030,7 @@
   "python": "3.11.15",
   "schema_version": "1.0",
   "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script_sha256": "86e4d3e4396f5344d37512fd384afbe1368ca6ea0612d3dbd59f331e0d2061ad",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -16049,6 +16049,7 @@
  },
  "governed_by": null,
  "governs": null,
+ "keyed_notes": [],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -16061,6 +16062,1460 @@
   "width": 1224.0
  },
  "page_key": "045",
+ "quantities": [
+  {
+   "bbox": [
+    106.38,
+    682.38,
+    116.64,
+    686.34
+   ],
+   "callouts_nearby": [],
+   "conf": 96.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "percent",
+   "line_text": "BORROW MIN 95% OPTIMUM DENSITY",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "95%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "95"
+  },
+  {
+   "bbox": [
+    110.56,
+    682.27,
+    120.62,
+    687.27
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "percent",
+   "line_text": "BORROW MIN 95% OPTIMUM DENSITY",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "95%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "95"
+  },
+  {
+   "bbox": [
+    176.04,
+    556.74,
+    185.58,
+    560.7
+   ],
+   "callouts_nearby": [],
+   "conf": 96.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "percent",
+   "line_text": "HMA PER WSDOT 5-04, 91% MIN.",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "91%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "91"
+  },
+  {
+   "bbox": [
+    176.96,
+    556.77,
+    186.96,
+    561.77
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "percent",
+   "line_text": "HMA PER WSDOT 5-04, 91% MIN.",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "91%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "91"
+  },
+  {
+   "bbox": [
+    320.9,
+    381.88,
+    325.07,
+    386.88
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "3’",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "3'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "3"
+  },
+  {
+   "bbox": [
+    474.7,
+    475.93,
+    484.35,
+    480.93
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "2.50'",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "2.50'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "2.50"
+  },
+  {
+   "bbox": [
+    560.4,
+    395.64,
+    573.4,
+    401.64
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "2.50‘",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "2.50'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "2.50"
+  },
+  {
+   "bbox": [
+    560.7,
+    395.46,
+    573.84,
+    400.32
+   ],
+   "callouts_nearby": [],
+   "conf": 91.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "2.50’",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "2.50'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "2.50"
+  },
+  {
+   "bbox": [
+    628.8,
+    540.67,
+    656.07,
+    545.67
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "(2.5’x2.5’x4” THICK)",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "2.5'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "2.5"
+  },
+  {
+   "bbox": [
+    653.5,
+    71.72,
+    728.36,
+    76.72
+   ],
+   "callouts_nearby": [
+    [
+     "3",
+     [
+      720.9,
+      97.92,
+      723.24,
+      101.52
+     ],
+     21.2
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "GATE VALVE FOR INFLUENT",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "6\" GATE VALVE FOR INFLUENT FLOW METER ISOLATION",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "6\" GATE VALVE FOR INFLUENT",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "6"
+  },
+  {
+   "bbox": [
+    653.5,
+    84.67,
+    718.86,
+    89.67
+   ],
+   "callouts_nearby": [
+    [
+     "3",
+     [
+      720.9,
+      97.92,
+      723.24,
+      101.52
+     ],
+     8.5
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "GATE VALVE FOR TRAIN",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "8\" GATE VALVE FOR TRAIN 2 FLOW METER ISOLATION",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "8\" GATE VALVE FOR TRAIN",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "8"
+  },
+  {
+   "bbox": [
+    653.5,
+    97.62,
+    718.86,
+    102.62
+   ],
+   "callouts_nearby": [
+    [
+     "3",
+     [
+      720.9,
+      97.92,
+      723.24,
+      101.52
+     ],
+     2.04
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "GATE VALVE FOR TRAIN",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "8\" GATE VALVE FOR TRAIN 3 FLOW METER ISOLATION",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "8\" GATE VALVE FOR TRAIN",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "8"
+  },
+  {
+   "bbox": [
+    653.5,
+    111.07,
+    719.47,
+    116.07
+   ],
+   "callouts_nearby": [
+    [
+     "3",
+     [
+      720.9,
+      97.92,
+      723.24,
+      101.52
+     ],
+     9.66
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "GATE VALVE FOR DRAIN",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "4\" GATE VALVE FOR DRAIN FLOW METER ISOLATION",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4\" GATE VALVE FOR DRAIN",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    653.5,
+    124.52,
+    719.47,
+    129.52
+   ],
+   "callouts_nearby": [
+    [
+     "3",
+     [
+      720.9,
+      97.92,
+      723.24,
+      101.52
+     ],
+     23.04
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "GATE VALVE FOR DRAIN",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "4\" GATE VALVE FOR DRAIN FLOW METER ISOLATION",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4\" GATE VALVE FOR DRAIN",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    653.5,
+    137.47,
+    714.48,
+    142.47
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "GATE VALVE FOR CCB",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "4\" GATE VALVE FOR CCB OUTLET BOX DRAIN",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4\" GATE VALVE FOR CCB",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    653.5,
+    150.42,
+    717.26,
+    155.42
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "GATE VALVE FOR CCB1",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "4\" GATE VALVE FOR CCB1 DRAIN",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4\" GATE VALVE FOR CCB1",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    653.5,
+    163.42,
+    714.48,
+    168.42
+   ],
+   "callouts_nearby": [
+    [
+     "1",
+     [
+      717.12,
+      189.72,
+      718.38,
+      193.32
+     ],
+     21.46
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "GATE VALVE FOR CCB",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "4\" GATE VALVE FOR CCB 1 DRAIN",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4\" GATE VALVE FOR CCB",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    653.5,
+    176.37,
+    714.48,
+    181.37
+   ],
+   "callouts_nearby": [
+    [
+     "1",
+     [
+      717.12,
+      189.72,
+      718.38,
+      193.32
+     ],
+     8.76
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "GATE VALVE FOR CCB",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "4\" GATE VALVE FOR CCB 1 DRAIN",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4\" GATE VALVE FOR CCB",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    653.5,
+    189.32,
+    714.48,
+    194.32
+   ],
+   "callouts_nearby": [
+    [
+     "1",
+     [
+      717.12,
+      189.72,
+      718.38,
+      193.32
+     ],
+     2.64
+    ],
+    [
+     "2",
+     [
+      716.76,
+      215.64,
+      719.1,
+      219.24
+     ],
+     21.44
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "GATE VALVE FOR CCB",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "4\" GATE VALVE FOR CCB 1 DRAIN",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4\" GATE VALVE FOR CCB",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    653.5,
+    202.27,
+    714.48,
+    207.27
+   ],
+   "callouts_nearby": [
+    [
+     "2",
+     [
+      716.76,
+      215.64,
+      719.1,
+      219.24
+     ],
+     8.67
+    ],
+    [
+     "1",
+     [
+      717.12,
+      189.72,
+      718.38,
+      193.32
+     ],
+     9.33
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "GATE VALVE FOR CCB",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "4\" GATE VALVE FOR CCB 1 DRAIN",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4\" GATE VALVE FOR CCB",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    653.5,
+    215.22,
+    714.48,
+    220.22
+   ],
+   "callouts_nearby": [
+    [
+     "2",
+     [
+      716.76,
+      215.64,
+      719.1,
+      219.24
+     ],
+     2.28
+    ],
+    [
+     "1",
+     [
+      717.12,
+      189.72,
+      718.38,
+      193.32
+     ],
+     22.06
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "GATE VALVE FOR CCB",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "4\" GATE VALVE FOR CCB 2 DRAIN",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4\" GATE VALVE FOR CCB",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    653.5,
+    228.22,
+    714.48,
+    233.22
+   ],
+   "callouts_nearby": [
+    [
+     "2",
+     [
+      716.76,
+      215.64,
+      719.1,
+      219.24
+     ],
+     9.26
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "GATE VALVE FOR CCB",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "4\" GATE VALVE FOR CCB 2 DRAIN",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4\" GATE VALVE FOR CCB",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    653.5,
+    241.17,
+    714.48,
+    246.17
+   ],
+   "callouts_nearby": [
+    [
+     "2",
+     [
+      716.76,
+      215.64,
+      719.1,
+      219.24
+     ],
+     22.05
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "GATE VALVE FOR CCB",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "4\" GATE VALVE FOR CCB 2 DRAIN",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4\" GATE VALVE FOR CCB",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    653.5,
+    254.12,
+    714.48,
+    259.12
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "GATE VALVE FOR CCB",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "4\" GATE VALVE FOR CCB 2 DRAIN",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4\" GATE VALVE FOR CCB",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    653.5,
+    267.07,
+    714.48,
+    272.07
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "GATE VALVE FOR CCB",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "4\" GATE VALVE FOR CCB 2 DRAIN",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4\" GATE VALVE FOR CCB",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    653.5,
+    280.02,
+    729.75,
+    285.02
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "GATE VALVE FOR EFFLUENT",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "8\" GATE VALVE FOR EFFLUENT FLOW METER ISOLATION",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "8\" GATE VALVE FOR EFFLUENT",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "8"
+  },
+  {
+   "bbox": [
+    653.58,
+    84.78,
+    718.74,
+    88.56
+   ],
+   "callouts_nearby": [
+    [
+     "3",
+     [
+      720.9,
+      97.92,
+      723.24,
+      101.52
+     ],
+     9.61
+    ]
+   ],
+   "conf": 96.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "GATE VALVE FOR TRAIN",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "8\" GATE VALVE FOR TRAIN 2 FLOW METER ISOLATION",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "8\" GATE VALVE FOR TRAIN",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "8"
+  },
+  {
+   "bbox": [
+    653.58,
+    97.74,
+    718.74,
+    101.52
+   ],
+   "callouts_nearby": [
+    [
+     "3",
+     [
+      720.9,
+      97.92,
+      723.24,
+      101.52
+     ],
+     2.16
+    ]
+   ],
+   "conf": 96.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "GATE VALVE FOR TRAIN",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "8\" GATE VALVE FOR TRAIN FLOW METER ISOLATION",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "8\" GATE VALVE FOR TRAIN",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "8"
+  },
+  {
+   "bbox": [
+    653.58,
+    280.44,
+    730.08,
+    284.04
+   ],
+   "callouts_nearby": [],
+   "conf": 96.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "GATE VALVE FOR EFFLUENT",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "8\" GATE VALVE FOR EFFLUENT FLOW METER ISOLATION",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "8\" GATE VALVE FOR EFFLUENT",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "8"
+  },
+  {
+   "bbox": [
+    653.76,
+    71.82,
+    728.64,
+    75.6
+   ],
+   "callouts_nearby": [
+    [
+     "3",
+     [
+      720.9,
+      97.92,
+      723.24,
+      101.52
+     ],
+     22.32
+    ]
+   ],
+   "conf": 96.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "GATE VALVE FOR INFLUENT",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "6\" GATE VALVE FOR INFLUENT FLOW METER ISOLATION",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "6\" GATE VALVE FOR INFLUENT",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "6"
+  },
+  {
+   "bbox": [
+    653.76,
+    111.42,
+    720.18,
+    115.02
+   ],
+   "callouts_nearby": [
+    [
+     "3",
+     [
+      720.9,
+      97.92,
+      723.24,
+      101.52
+     ],
+     9.93
+    ]
+   ],
+   "conf": 96.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "GATE VALVE FOR DRAIN",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "4\" GATE VALVE FOR DRAIN FLOW METER ISOLATION",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4\" GATE VALVE FOR DRAIN",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    653.76,
+    124.92,
+    720.18,
+    128.52
+   ],
+   "callouts_nearby": [
+    [
+     "3",
+     [
+      720.9,
+      97.92,
+      723.24,
+      101.52
+     ],
+     23.41
+    ]
+   ],
+   "conf": 96.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "GATE VALVE FOR DRAIN",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "4\" GATE VALVE FOR DRAIN FLOW METER ISOLATION",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4\" GATE VALVE FOR DRAIN",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    653.76,
+    137.88,
+    715.14,
+    141.48
+   ],
+   "callouts_nearby": [],
+   "conf": 96.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "GATE VALVE FOR CCB",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "4\" GATE VALVE FOR CCB OUTLET BOX DRAIN",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4\" GATE VALVE FOR CCB",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    653.76,
+    150.84,
+    716.94,
+    154.44
+   ],
+   "callouts_nearby": [],
+   "conf": 90.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "GATE VALVE FOR CCB1",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "4\" GATE VALVE FOR CCB1 DRAIN",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4\" GATE VALVE FOR CCB1",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    653.76,
+    163.8,
+    714.96,
+    167.4
+   ],
+   "callouts_nearby": [
+    [
+     "1",
+     [
+      717.12,
+      189.72,
+      718.38,
+      193.32
+     ],
+     22.42
+    ]
+   ],
+   "conf": 95.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "GATE VALVE FOR CCB",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "4\" GATE VALVE FOR CCB 1 DRAIN",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4\" GATE VALVE FOR CCB",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    653.76,
+    176.76,
+    714.96,
+    180.36
+   ],
+   "callouts_nearby": [
+    [
+     "1",
+     [
+      717.12,
+      189.72,
+      718.38,
+      193.32
+     ],
+     9.61
+    ]
+   ],
+   "conf": 95.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "GATE VALVE FOR CCB",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "4\" GATE VALVE FOR CCB",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4\" GATE VALVE FOR CCB",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    653.76,
+    189.72,
+    714.96,
+    193.32
+   ],
+   "callouts_nearby": [
+    [
+     "1",
+     [
+      717.12,
+      189.72,
+      718.38,
+      193.32
+     ],
+     2.16
+    ],
+    [
+     "2",
+     [
+      716.76,
+      215.64,
+      719.1,
+      219.24
+     ],
+     22.39
+    ]
+   ],
+   "conf": 95.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "GATE VALVE FOR CCB",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "4\" GATE VALVE FOR CCB DRAIN",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4\" GATE VALVE FOR CCB",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    653.76,
+    202.68,
+    714.96,
+    206.28
+   ],
+   "callouts_nearby": [
+    [
+     "2",
+     [
+      716.76,
+      215.64,
+      719.1,
+      219.24
+     ],
+     9.53
+    ],
+    [
+     "1",
+     [
+      717.12,
+      189.72,
+      718.38,
+      193.32
+     ],
+     9.61
+    ]
+   ],
+   "conf": 95.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "GATE VALVE FOR CCB",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "4\" GATE VALVE FOR CCB 1 DRAIN",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4\" GATE VALVE FOR CCB",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    653.76,
+    215.64,
+    714.96,
+    219.24
+   ],
+   "callouts_nearby": [
+    [
+     "2",
+     [
+      716.76,
+      215.64,
+      719.1,
+      219.24
+     ],
+     1.8
+    ],
+    [
+     "1",
+     [
+      717.12,
+      189.72,
+      718.38,
+      193.32
+     ],
+     22.42
+    ]
+   ],
+   "conf": 95.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "GATE VALVE FOR CCB",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "4\" GATE VALVE FOR CCB DRAIN",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4\" GATE VALVE FOR CCB",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    653.76,
+    228.6,
+    714.96,
+    232.2
+   ],
+   "callouts_nearby": [
+    [
+     "2",
+     [
+      716.76,
+      215.64,
+      719.1,
+      219.24
+     ],
+     9.53
+    ]
+   ],
+   "conf": 94.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "GATE VALVE FOR CCB",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "4\" GATE VALVE FOR CCB 2 DRAIN",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4\" GATE VALVE FOR CCB",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    653.76,
+    241.56,
+    714.96,
+    245.16
+   ],
+   "callouts_nearby": [
+    [
+     "2",
+     [
+      716.76,
+      215.64,
+      719.1,
+      219.24
+     ],
+     22.39
+    ]
+   ],
+   "conf": 95.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "GATE VALVE FOR CCB",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "4\" GATE VALVE FOR CCB 2 DRAIN",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4\" GATE VALVE FOR CCB",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    653.76,
+    254.52,
+    714.96,
+    258.12
+   ],
+   "callouts_nearby": [],
+   "conf": 95.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "GATE VALVE FOR CCB",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "4\" GATE VALVE FOR CCB 2 DRAIN",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4\" GATE VALVE FOR CCB",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    653.76,
+    267.48,
+    714.96,
+    271.08
+   ],
+   "callouts_nearby": [],
+   "conf": 95.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "GATE VALVE FOR CCB",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "4\" GATE VALVE FOR CCB 2 DRAIN",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4\" GATE VALVE FOR CCB",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    934.74,
+    463.86,
+    1043.46,
+    471.6
+   ],
+   "callouts_nearby": [],
+   "conf": 94.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "PVC BALL VALVE",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "1\" PVC BALL VALVE",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "1\" PVC BALL VALVE",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "1"
+  },
+  {
+   "bbox": [
+    934.8,
+    464.61,
+    1022.54,
+    473.61
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "PVC BALL VALVE",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "1 \" PVC BALL VALVE",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "1 \" PVC BALL VALVE",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "1"
+  },
+  {
+   "bbox": [
+    935.5,
+    175.87,
+    945.51,
+    180.87
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "percent",
+   "line_text": "95% OPTIMUM DENSITY (ASTM",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "95%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "95"
+  },
+  {
+   "bbox": [
+    935.82,
+    175.68,
+    946.08,
+    179.82
+   ],
+   "callouts_nearby": [],
+   "conf": 96.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "percent",
+   "line_text": "95% OPTIMUM DENSITY (ASTM",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "95%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "95"
+  }
+ ],
  "schema_version": "1.0",
  "set_page": 45,
  "sheet_01": "C7.3",
@@ -16069,18 +17524,19 @@
   "page": 18,
   "sha256": "1176b4b114c25cd51383cb47896d5a651e4eb0f3363d17d651269f3d2a15dd84"
  },
+ "tags": [],
  "title_01": "CIVIL DETAILS",
  "title_block": {
   "date": {
    "bbox": [
-    1131.36,
-    675.6,
-    1143.36,
-    760.32
+    1131.48,
+    675.72,
+    1136.52,
+    711.72
    ],
-   "conf": 84.0,
+   "conf": 96.0,
    "method": "ocr",
-   "strip_dpi": 300,
+   "strip_dpi": 200,
    "value": "NOV 2, 2022"
   },
   "page_of": {

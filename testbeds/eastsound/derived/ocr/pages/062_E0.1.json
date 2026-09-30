@@ -1108,7 +1108,7 @@
   "python": "3.11.15",
   "schema_version": "1.0",
   "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script_sha256": "86e4d3e4396f5344d37512fd384afbe1368ca6ea0612d3dbd59f331e0d2061ad",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -1127,6 +1127,7 @@
  },
  "governed_by": null,
  "governs": null,
+ "keyed_notes": [],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -1139,6 +1140,104 @@
   "width": 1224.0
  },
  "page_key": "062",
+ "quantities": [
+  {
+   "bbox": [
+    962.46,
+    389.76,
+    998.53,
+    394.79
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "AMPERES",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "OPERATION ABOVE 100 AMPERES; 60 DEG C FOR 100 AMPERES",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "100 AMPERES",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "100"
+  },
+  {
+   "bbox": [
+    968.04,
+    407.94,
+    1003.79,
+    412.97
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "AMPERES",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "FOR AMPACITIES OF 100 AMPERES AND BELOW, AND RATED",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "100 AMPERES",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "100"
+  },
+  {
+   "bbox": [
+    1020.6,
+    414.06,
+    1057.75,
+    419.09
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "AMPERES",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "FOR 75 DEG C FOR AMPACITIES ABOVE 100 AMPERES. ALL",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "100 AMPERES",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "100"
+  },
+  {
+   "bbox": [
+    1037.7,
+    389.76,
+    1072.37,
+    394.79
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "AMPERES",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "OPERATION ABOVE 100 AMPERES; 60 DEG C FOR 100 AMPERES",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "100 AMPERES",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "100"
+  }
+ ],
  "schema_version": "1.0",
  "set_page": 62,
  "sheet_01": "E0.1",
@@ -1147,6 +1246,310 @@
   "page": 14,
   "sha256": "ffe9e975ceb153cab60328a2459d826f96f96e0edaa77e0279a1d27e2e6de5fa"
  },
+ "tags": [
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    92.16,
+    299.4,
+    98.03,
+    304.43
+   ],
+   "candidate_rows": [
+    167,
+    174,
+    292
+   ],
+   "conf": null,
+   "form": "F1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "F1"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    92.16,
+    330.9,
+    98.03,
+    335.93
+   ],
+   "candidate_rows": [
+    167,
+    174,
+    292
+   ],
+   "conf": null,
+   "form": "F1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "F1"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    300.6,
+    588.12,
+    311.77,
+    593.15
+   ],
+   "candidate_rows": [
+    264
+   ],
+   "conf": null,
+   "form": "MCP",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "MCP"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    312.3,
+    85.56,
+    323.2,
+    90.59
+   ],
+   "candidate_rows": [
+    273
+   ],
+   "conf": null,
+   "form": "EF-1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    273
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "EF-1"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    315.18,
+    103.56,
+    321.05,
+    108.59
+   ],
+   "candidate_rows": [
+    167,
+    174,
+    292
+   ],
+   "conf": null,
+   "form": "F1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "F1"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    359.82,
+    528.18,
+    369.6,
+    533.21
+   ],
+   "candidate_rows": [
+    240
+   ],
+   "conf": null,
+   "form": "ATS",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "ATS"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    385.81,
+    651.66,
+    447.55,
+    656.69
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "PLUG-RECEPTACLE/MCC"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    561.96,
+    371.45,
+    574.22,
+    377.11
+   ],
+   "candidate_rows": [
+    243
+   ],
+   "conf": null,
+   "form": "GEN",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "GEN"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    681.09,
+    76.38,
+    687.52,
+    81.41
+   ],
+   "candidate_rows": [
+    242
+   ],
+   "conf": null,
+   "form": "TS",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "TS"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    742.5,
+    259.8,
+    753.4,
+    264.83
+   ],
+   "candidate_rows": [
+    243
+   ],
+   "conf": null,
+   "form": "GEN",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "GEN"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    742.5,
+    362.76,
+    748.37,
+    367.79
+   ],
+   "candidate_rows": [
+    296
+   ],
+   "conf": null,
+   "form": "LT",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "LT"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    742.5,
+    380.94,
+    753.95,
+    385.97
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "MCC"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    742.5,
+    386.88,
+    753.67,
+    391.91
+   ],
+   "candidate_rows": [
+    264
+   ],
+   "conf": null,
+   "form": "MCP",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "MCP"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    742.86,
+    96.36,
+    752.64,
+    101.39
+   ],
+   "candidate_rows": [
+    240
+   ],
+   "conf": null,
+   "form": "ATS",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "ATS"
+  }
+ ],
  "title_01": "ELECTRICAL SYMBOLS AND ABBREVIATIONS",
  "title_block": {
   "date": {

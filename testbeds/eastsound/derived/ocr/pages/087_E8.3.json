@@ -2908,7 +2908,7 @@
   "python": "3.11.15",
   "schema_version": "1.0",
   "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script_sha256": "86e4d3e4396f5344d37512fd384afbe1368ca6ea0612d3dbd59f331e0d2061ad",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -2927,6 +2927,43 @@
  },
  "governed_by": null,
  "governs": null,
+ "keyed_notes": [
+  {
+   "bbox": [
+    676.98,
+    45.81,
+    988.71,
+    114.84
+   ],
+   "count_check": "entry count 1 matches the highest marker read",
+   "entries": [
+    {
+     "basis": "read",
+     "bbox": [
+      676.98,
+      64.5,
+      988.71,
+      114.84
+     ],
+     "method": "ocr",
+     "number": 1,
+     "number_level": "Verified",
+     "read_number": "1",
+     "text": "TIME OFF DELAY RELAYS SET FOR TRUE-OFF DELAY. WHEN INPUT POWER IS TURNED ON, THE OUTPUT CONTACT / 1 / CHANGES STATE. WHEN POWER IS REMOVED, THE TIME DELAY BEGINS. THE OUTPUT CONTACT RETURNS TO NORMAL / STATE AT THE END OF THE TIME DELAY. FIELD-ADJUST TIME OFF DELAY BASED ON WET WELL PUMP DOWN RATES. / +24VDC / faa"
+    }
+   ],
+   "heading": "KEY NOTES:",
+   "heading_bbox": [
+    689.04,
+    45.81,
+    734.31,
+    53.35
+   ],
+   "heading_method": "text-layer",
+   "highest_marker_read": 1,
+   "line_spacing_p25": 6.12
+  }
+ ],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -2939,6 +2976,32 @@
   "width": 1224.0
  },
  "page_key": "087",
+ "quantities": [
+  {
+   "bbox": [
+    261.32,
+    67.74,
+    271.38,
+    72.77
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "percent",
+   "line_text": "PROVIDE ADDITIONAL I/O CARDS AS NECESSARY FOR MINIMUM 20% SPARE INPUTS, NOT SHOWN.",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "20%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "20"
+  }
+ ],
  "schema_version": "1.0",
  "set_page": 87,
  "sheet_01": "E8.3",
@@ -2947,6 +3010,184 @@
   "page": 39,
   "sha256": "ffe9e975ceb153cab60328a2459d826f96f96e0edaa77e0279a1d27e2e6de5fa"
  },
+ "tags": [
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    166.12,
+    159.9,
+    177.57,
+    164.93
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "MCC"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    166.12,
+    326.04,
+    177.57,
+    331.07
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    257.72,
+    528.36,
+    263.59,
+    533.39
+   ],
+   "candidate_rows": [
+    292
+   ],
+   "conf": null,
+   "form": "F1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    292
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "F1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    257.72,
+    549.96,
+    263.59,
+    554.99
+   ],
+   "candidate_rows": [
+    293
+   ],
+   "conf": null,
+   "form": "F2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    293
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "F2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    257.72,
+    571.38,
+    263.59,
+    576.41
+   ],
+   "candidate_rows": [
+    294
+   ],
+   "conf": null,
+   "form": "F3",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    294
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "F3"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    257.72,
+    592.98,
+    263.59,
+    598.01
+   ],
+   "candidate_rows": [
+    295
+   ],
+   "conf": null,
+   "form": "F4",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    295
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "F4"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    421.9,
+    159.9,
+    433.35,
+    164.93
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "MCC"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    421.9,
+    326.04,
+    433.35,
+    331.07
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "MCC"
+  }
+ ],
  "title_01": "INFLUENT PUMP STATION CONTROL PANEL - DIGITAL INPUTS",
  "title_block": {
   "date": {

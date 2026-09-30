@@ -6040,7 +6040,7 @@
   "python": "3.11.15",
   "schema_version": "1.0",
   "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script_sha256": "86e4d3e4396f5344d37512fd384afbe1368ca6ea0612d3dbd59f331e0d2061ad",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -6059,6 +6059,7 @@
  },
  "governed_by": null,
  "governs": null,
+ "keyed_notes": [],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -6071,6 +6072,680 @@
   "width": 1224.0
  },
  "page_key": "023",
+ "quantities": [
+  {
+   "bbox": [
+    73.9,
+    81.18,
+    106.3,
+    87.18
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 0.64,
+   "item": "RIM",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "elevation",
+   "line_text": "RIM=22.78",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "SDCB#8",
+   "nearest_tag_rows": [
+    77
+   ],
+   "raw": "RIM=22.78",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "22.78"
+  },
+  {
+   "bbox": [
+    121.45,
+    624.92,
+    146.03,
+    629.92
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "RIM",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "elevation",
+   "line_text": "RIM=23.10",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "RIM=23.10",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "23.10"
+  },
+  {
+   "bbox": [
+    180.67,
+    657.37,
+    185.67,
+    681.95
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 0.67,
+   "item": "RIM",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "elevation",
+   "line_text": "RIM=23.10",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "SDCB#10",
+   "nearest_tag_rows": [
+    80
+   ],
+   "raw": "RIM=23.10",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "23.10"
+  },
+  {
+   "bbox": [
+    186.48,
+    657.18,
+    192.6,
+    706.68
+   ],
+   "callouts_nearby": [],
+   "conf": 59.0,
+   "detail_refs_nearby": [],
+   "distance": 6.48,
+   "item": "W INV",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "6” (W) INV=20.88",
+   "method": "ocr",
+   "nearest_tag": "SDCB#10",
+   "nearest_tag_rows": [
+    80
+   ],
+   "raw": "6\" (W) INV",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "6"
+  },
+  {
+   "bbox": [
+    187.42,
+    657.35,
+    192.42,
+    681.1
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 7.42,
+   "item": "INV",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "elevation",
+   "line_text": "INV=20.88",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "SDCB#10",
+   "nearest_tag_rows": [
+    80
+   ],
+   "raw": "INV=20.88",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "20.88"
+  },
+  {
+   "bbox": [
+    250.0,
+    627.07,
+    274.58,
+    632.07
+   ],
+   "callouts_nearby": [
+    [
+     "2",
+     [
+      285.3,
+      620.82,
+      288.36,
+      625.14
+     ],
+     10.89
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "RIM",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "elevation",
+   "line_text": "RIM=23.10",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "RIM=23.10",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "23.10"
+  },
+  {
+   "bbox": [
+    263.3,
+    101.22,
+    287.88,
+    106.22
+   ],
+   "callouts_nearby": [
+    [
+     "9",
+     [
+      285.48,
+      100.98,
+      288.54,
+      105.3
+     ],
+     0.0
+    ],
+    [
+     "72",
+     [
+      269.64,
+      106.92,
+      277.02,
+      111.78
+     ],
+     0.7
+    ],
+    [
+     "6",
+     [
+      255.85,
+      92.94,
+      262.52,
+      104.94
+     ],
+     0.78
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 1.0,
+   "item": "RIM",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "elevation",
+   "line_text": "RIM=23.00",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "SDCB#6",
+   "nearest_tag_rows": [
+    84
+   ],
+   "raw": "RIM=23.00",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "23.00"
+  },
+  {
+   "bbox": [
+    343.7,
+    170.82,
+    368.28,
+    175.82
+   ],
+   "callouts_nearby": [
+    [
+     "3",
+     [
+      363.78,
+      170.46,
+      371.88,
+      174.78
+     ],
+     0.0
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 1.0,
+   "item": "RIM",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "elevation",
+   "line_text": "RIM=23.00",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "SDCB#7",
+   "nearest_tag_rows": [
+    79
+   ],
+   "raw": "RIM=23.00",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "23.00"
+  },
+  {
+   "bbox": [
+    358.2,
+    253.62,
+    382.78,
+    258.62
+   ],
+   "callouts_nearby": [
+    [
+     "2",
+     [
+      365.76,
+      259.38,
+      372.6,
+      264.78
+     ],
+     0.76
+    ],
+    [
+     "3",
+     [
+      355.14,
+      259.38,
+      365.4,
+      263.7
+     ],
+     0.76
+    ],
+    [
+     "4",
+     [
+      382.5,
+      274.32,
+      390.24,
+      278.28
+     ],
+     15.7
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 1.0,
+   "item": "RIM",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "elevation",
+   "line_text": "_ RIM=23.10",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "SDCB#10",
+   "nearest_tag_rows": [
+    80
+   ],
+   "raw": "RIM=23.10",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "23.10"
+  },
+  {
+   "bbox": [
+    497.34,
+    669.96,
+    502.2,
+    694.44
+   ],
+   "callouts_nearby": [],
+   "conf": 8.0,
+   "detail_refs_nearby": [],
+   "distance": 1.27,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "WIS “00'SOFO 0/c",
+   "method": "ocr",
+   "nearest_tag": "SDCB#7",
+   "nearest_tag_rows": [
+    79
+   ],
+   "raw": "00'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "00"
+  },
+  {
+   "bbox": [
+    509.22,
+    655.38,
+    513.54,
+    684.0
+   ],
+   "callouts_nearby": [],
+   "conf": 88.0,
+   "detail_refs_nearby": [],
+   "distance": 0.75,
+   "item": "RIM",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "elevation",
+   "line_text": "RIM=23.00",
+   "method": "ocr",
+   "nearest_tag": "SDCB#7",
+   "nearest_tag_rows": [
+    79
+   ],
+   "raw": "RIM=23.00",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "23.00"
+  },
+  {
+   "bbox": [
+    509.47,
+    655.47,
+    514.47,
+    680.05
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 1.0,
+   "item": "RIM",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "elevation",
+   "line_text": "RIM=23.00",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "SDCB#7",
+   "nearest_tag_rows": [
+    79
+   ],
+   "raw": "RIM=23.00",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "23.00"
+  },
+  {
+   "bbox": [
+    516.22,
+    669.41,
+    521.22,
+    699.45
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 7.75,
+   "item": "W INV",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "12\" (W) INV= 20.77",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "SDCB#7",
+   "nearest_tag_rows": [
+    79
+   ],
+   "raw": "12\" (W) INV",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "12"
+  },
+  {
+   "bbox": [
+    522.54,
+    655.38,
+    526.86,
+    683.46
+   ],
+   "callouts_nearby": [],
+   "conf": 92.0,
+   "detail_refs_nearby": [],
+   "distance": 14.07,
+   "item": "INV",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "elevation",
+   "line_text": "6” (3) INV=20.77",
+   "method": "ocr",
+   "nearest_tag": "SDCB#7",
+   "nearest_tag_rows": [
+    79
+   ],
+   "raw": "INV=20.77",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "20.77"
+  },
+  {
+   "bbox": [
+    522.92,
+    655.49,
+    527.92,
+    679.29
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 14.45,
+   "item": "INV",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "elevation",
+   "line_text": "6” (E) INV=20.77",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "SDCB#7",
+   "nearest_tag_rows": [
+    79
+   ],
+   "raw": "INV=20.77",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "20.77"
+  },
+  {
+   "bbox": [
+    571.86,
+    201.78,
+    600.66,
+    206.1
+   ],
+   "callouts_nearby": [],
+   "conf": 96.0,
+   "detail_refs_nearby": [],
+   "distance": 0.0,
+   "item": "RIM",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "elevation",
+   "line_text": "RIM 22.70",
+   "method": "ocr",
+   "nearest_tag": "SDCB#3",
+   "nearest_tag_rows": [
+    82
+   ],
+   "raw": "RIM 22.70",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "22.70"
+  },
+  {
+   "bbox": [
+    571.9,
+    202.02,
+    596.48,
+    207.02
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 0.0,
+   "item": "RIM",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "elevation",
+   "line_text": "RIM=22.70",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "SDCB#3",
+   "nearest_tag_rows": [
+    82
+   ],
+   "raw": "RIM=22.70",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "22.70"
+  },
+  {
+   "bbox": [
+    571.9,
+    264.42,
+    596.48,
+    269.42
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 1.0,
+   "item": "RIM",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "elevation",
+   "line_text": "RIM=23.15",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "SDCB#4",
+   "nearest_tag_rows": [
+    83
+   ],
+   "raw": "RIM=23.15",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "23.15"
+  },
+  {
+   "bbox": [
+    572.04,
+    264.24,
+    599.94,
+    268.56
+   ],
+   "callouts_nearby": [],
+   "conf": 90.0,
+   "detail_refs_nearby": [],
+   "distance": 1.86,
+   "item": "RIM",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "elevation",
+   "line_text": "RIM=23.15",
+   "method": "ocr",
+   "nearest_tag": "SDCB#4",
+   "nearest_tag_rows": [
+    83
+   ],
+   "raw": "RIM=23.15",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "23.15"
+  },
+  {
+   "bbox": [
+    629.3,
+    46.27,
+    653.88,
+    51.27
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 1.11,
+   "item": "RIM",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "elevation",
+   "line_text": "RIM=22.65",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "SDCB#2",
+   "nearest_tag_rows": [
+    81
+   ],
+   "raw": "RIM=22.65",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "22.65"
+  },
+  {
+   "bbox": [
+    652.07,
+    162.5,
+    660.07,
+    169.16
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "5’ EASEMENT TO POR-—",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "5'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "5"
+  },
+  {
+   "bbox": [
+    668.43,
+    161.75,
+    674.43,
+    180.25
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "148.00’",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "148.00'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "148.00"
+  },
+  {
+   "bbox": [
+    670.32,
+    162.0,
+    674.82,
+    180.9
+   ],
+   "callouts_nearby": [],
+   "conf": 52.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "M 54 BO24 148.00’ 8.00",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "148.00'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "148.00"
+  }
+ ],
  "schema_version": "1.0",
  "set_page": 23,
  "sheet_01": "C2.4",
@@ -6079,6 +6754,303 @@
   "page": 23,
   "sha256": "9ca45d82bf86d16d3e2ce57eb76dccf597c497a7dc7f062fc7a171c4bc2c8d57"
  },
+ "tags": [
+  {
+   "assignment": "assigned",
+   "bbox": [
+    82.1,
+    87.82,
+    101.82,
+    92.82
+   ],
+   "candidate_rows": [
+    77
+   ],
+   "conf": null,
+   "form": "SDCB#8",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    77
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "SDCB#8"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    174.42,
+    679.14,
+    180.0,
+    703.98
+   ],
+   "candidate_rows": [
+    80
+   ],
+   "conf": 61.0,
+   "form": "SDCB#10",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    80
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "SDCB#10,"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    174.67,
+    676.02,
+    179.67,
+    699.9
+   ],
+   "candidate_rows": [
+    80
+   ],
+   "conf": null,
+   "form": "SDCB#10",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    80
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "SDCB#10,"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    271.6,
+    107.22,
+    291.32,
+    112.22
+   ],
+   "candidate_rows": [
+    84
+   ],
+   "conf": null,
+   "form": "SDCB#6",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    84
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "SDCB#6"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    343.2,
+    176.82,
+    362.92,
+    181.82
+   ],
+   "candidate_rows": [
+    79
+   ],
+   "conf": null,
+   "form": "SDCB#7",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    79
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "SDCB#7"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    354.95,
+    259.62,
+    377.45,
+    264.62
+   ],
+   "candidate_rows": [
+    80
+   ],
+   "conf": null,
+   "form": "SDCB#10",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    80
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "SDCB#10"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    482.07,
+    156.92,
+    493.38,
+    161.92
+   ],
+   "candidate_rows": [
+    191
+   ],
+   "conf": null,
+   "form": "S1",
+   "fuzzy": true,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "0+51"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    503.47,
+    678.49,
+    508.47,
+    699.6
+   ],
+   "candidate_rows": [
+    79
+   ],
+   "conf": null,
+   "form": "SDCB#7",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    79
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "SDCB#7,"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    571.9,
+    205.69,
+    603.45,
+    213.69
+   ],
+   "candidate_rows": [
+    82
+   ],
+   "conf": null,
+   "form": "SDCB#3",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    82
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "SDCB#3"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    571.9,
+    270.42,
+    591.62,
+    275.42
+   ],
+   "candidate_rows": [
+    83
+   ],
+   "conf": null,
+   "form": "SDCB#4",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    83
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "SDCB#4"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    576.9,
+    264.24,
+    585.72,
+    274.5
+   ],
+   "candidate_rows": [
+    296
+   ],
+   "conf": 58.0,
+   "form": "LT",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "lt"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    629.3,
+    52.52,
+    649.02,
+    57.52
+   ],
+   "candidate_rows": [
+    81
+   ],
+   "conf": null,
+   "form": "SDCB#2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    81
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "SDCB#2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    629.46,
+    52.38,
+    649.98,
+    57.78
+   ],
+   "candidate_rows": [
+    81
+   ],
+   "conf": 54.0,
+   "form": "SDCB#2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    81
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "SDCB#2"
+  }
+ ],
  "title_01": "STORM DRAINAGE PLAN & PROFILES",
  "title_block": {
   "date": {

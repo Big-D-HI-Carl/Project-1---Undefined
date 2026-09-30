@@ -23788,7 +23788,7 @@
   "python": "3.11.15",
   "schema_version": "1.0",
   "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script_sha256": "86e4d3e4396f5344d37512fd384afbe1368ca6ea0612d3dbd59f331e0d2061ad",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -23812,6 +23812,7 @@
   "page_key": "add4_p09"
  },
  "governs": null,
+ "keyed_notes": [],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -23824,6 +23825,344 @@
   "width": 1224.0
  },
  "page_key": "059",
+ "quantities": [
+  {
+   "bbox": [
+    101.35,
+    127.62,
+    160.05,
+    132.62
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "RIGID ABS PERF PIPE",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "4\" RIGID ABS PERF PIPE",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4\" RIGID ABS PERF PIPE",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    105.12,
+    127.98,
+    160.2,
+    131.58
+   ],
+   "callouts_nearby": [],
+   "conf": 96.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "RIGID ABS PERF PIPE",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "4\" RIGID ABS PERF PIPE",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4\" RIGID ABS PERF PIPE",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    165.96,
+    198.0,
+    178.56,
+    201.6
+   ],
+   "callouts_nearby": [],
+   "conf": 96.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "percent",
+   "line_text": "2. MINIMUM SLOPE FOR DRAIN PIPE RUNS IS 0.25%",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "0.25%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "0.25"
+  },
+  {
+   "bbox": [
+    169.63,
+    197.47,
+    183.8,
+    202.47
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "percent",
+   "line_text": "2. MINIMUM SLOPE FOR DRAIN PIPE RUNS IS 0.25%",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "0.25%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "0.25"
+  },
+  {
+   "bbox": [
+    246.24,
+    463.68,
+    258.84,
+    467.1
+   ],
+   "callouts_nearby": [],
+   "conf": 96.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "OR CONDUIT) LARGER THAN 0'-10\" ANY DIRECTION, PROVIDE ADD'L #3 EA SIDE EXTENDING 18\" MIN BEYOND THE PENETRATION EXTENTS.",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "3 EA",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "3"
+  },
+  {
+   "bbox": [
+    253.95,
+    463.17,
+    267.62,
+    468.17
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "OR CONDUIT) LARGER THAN 0'-10\" ANY DIRECTION, PROVIDE ADD'L #3 EA SIDE EXTENDING 18\" MIN BEYOND THE",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "3 EA",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "3"
+  },
+  {
+   "bbox": [
+    271.8,
+    230.58,
+    280.26,
+    234.18
+   ],
+   "callouts_nearby": [],
+   "conf": 96.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "percent",
+   "line_text": "DRAIN ROCK/BASE MATERIAL SHALL CONSIST OF GRAVEL OR STONE WITH LESS THAN 10% OF MATERIAL PASSING",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "10%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "10"
+  },
+  {
+   "bbox": [
+    281.32,
+    230.12,
+    291.37,
+    235.12
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "percent",
+   "line_text": "DRAIN ROCK/BASE MATERIAL SHALL CONSIST OF GRAVEL OR STONE WITH LESS THAN 10% OF MATERIAL PASSING",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "10%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "10"
+  },
+  {
+   "bbox": [
+    352.62,
+    420.12,
+    375.48,
+    423.72
+   ],
+   "callouts_nearby": [],
+   "conf": 95.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "HOURS",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "2. CUT CJ's AFTER CONC HAS SUFFICIENTLY HARDENED TO PREVENT SPALLING OR TEARING BUT NO MORE THAN 12 HOURS",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "12 HOURS",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "12"
+  },
+  {
+   "bbox": [
+    363.37,
+    419.72,
+    388.36,
+    424.72
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "HOURS",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "2. CUT CJ's AFTER CONC HAS SUFFICIENTLY HARDENED TO PREVENT SPALLING OR TEARING BUT NO MORE THAN 12 HOURS",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "12 HOURS",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "12"
+  },
+  {
+   "bbox": [
+    413.64,
+    374.04,
+    422.1,
+    377.64
+   ],
+   "callouts_nearby": [],
+   "conf": 96.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "percent",
+   "line_text": "CONTINUE 50% OF",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "50%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "50"
+  },
+  {
+   "bbox": [
+    414.57,
+    373.42,
+    424.58,
+    378.42
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "percent",
+   "line_text": "CONTINUE 50% OF",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "50%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "50"
+  },
+  {
+   "bbox": [
+    583.02,
+    61.74,
+    647.82,
+    65.34
+   ],
+   "callouts_nearby": [],
+   "conf": 96.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "LARGER THAN PIPE OD.",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "PROVIDE SLEEVES w/ ID 2.5\" LARGER THAN PIPE OD. CENTER PIPE AND WRAP w/ COMPRESSIBLE MATERIAL.",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "2.5\" LARGER THAN PIPE OD.",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "2.5"
+  },
+  {
+   "bbox": [
+    585.03,
+    61.42,
+    653.81,
+    66.42
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "LARGER THAN PIPE OD.",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "1. PROVIDE SLEEVES w/ ID 2.5\" LARGER THAN PIPE OD. CENTER PIPE AND WRAP w/ COMPRESSIBLE MATERIAL.",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "2.5\" LARGER THAN PIPE OD.",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "2.5"
+  }
+ ],
  "schema_version": "1.0",
  "set_page": 59,
  "sheet_01": "S2.3",
@@ -23832,18 +24171,62 @@
   "page": 11,
   "sha256": "ffe9e975ceb153cab60328a2459d826f96f96e0edaa77e0279a1d27e2e6de5fa"
  },
+ "tags": [
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    834.95,
+    714.67,
+    845.23,
+    719.67
+   ],
+   "candidate_rows": [
+    191
+   ],
+   "conf": null,
+   "form": "S2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "S2.3"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    1130.93,
+    727.78,
+    1146.93,
+    758.9
+   ],
+   "candidate_rows": [
+    191
+   ],
+   "conf": null,
+   "form": "S2",
+   "fuzzy": true,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "52.3"
+  }
+ ],
  "title_01": "BLOWER BUILDING FOUNDATION PLAN & DETAILS",
  "title_block": {
   "date": {
    "bbox": [
-    1132.2,
+    1132.08,
     680.4,
-    1143.36,
-    758.88
+    1135.92,
+    708.0
    ],
-   "conf": 95.0,
+   "conf": 96.0,
    "method": "ocr",
-   "strip_dpi": 200,
+   "strip_dpi": 300,
    "value": "10-15-2021"
   },
   "page_of": {

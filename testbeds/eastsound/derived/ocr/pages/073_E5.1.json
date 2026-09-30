@@ -2098,7 +2098,7 @@
   "python": "3.11.15",
   "schema_version": "1.0",
   "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script_sha256": "86e4d3e4396f5344d37512fd384afbe1368ca6ea0612d3dbd59f331e0d2061ad",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -2117,6 +2117,99 @@
  },
  "governed_by": null,
  "governs": null,
+ "keyed_notes": [
+  {
+   "bbox": [
+    801.54,
+    204.66,
+    1071.41,
+    371.03
+   ],
+   "count_check": "entry count 5 matches the highest marker read",
+   "entries": [
+    {
+     "basis": "read",
+     "bbox": [
+      801.54,
+      219.66,
+      1071.26,
+      242.87
+     ],
+     "method": "text-layer",
+     "number": 1,
+     "number_level": "Verified",
+     "read_number": "1",
+     "text": "1 LEVEL TRANSDUCER: WIKA SUBMERSIBLE PRESSURE TRANSMITTER, 316SS BODY, 0-15 PSI RANGE / WITH LEVELGUARD, POLYURETHANE CABLE, 4-20 mA LOOP POWERED, TERMINATION ENCLOSURE, FOR / USE WITH VENTED PRESSURE TRANSMITTER, DESSICANT, NEMA 4X, INTEGRALLY MOUNTED MOISTURE / PROTECTION. MOUNT ENCLOSURE TO HANDRAIL WITH SS HARDWARE."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      801.54,
+      249.9,
+      1071.41,
+      274.19
+     ],
+     "method": "text-layer",
+     "number": 2,
+     "number_level": "Verified",
+     "read_number": "2",
+     "text": "2 FLOW METERS: SIZE PER CIVIL DRAWINGS. MAGNETIC FLOW METER, ENDRESS-HAUSER PROMAG / W400, CLASS I DIV 2, CARBON STEEL FLANGE, 120-240VAC OR 24VAC/DC, ETHERNET/IP, POLYURETHANE / LINER, 316L ELECTRODES, REMOTE HOUSING, NPT 1 SENSOR IP68 TYPE 6, POTTED CORROSION / PROTECTION AND SUBMERSIBLE. PROVIDE (2) 316L GROUNDING RINGS FOR EACH FLOW TUBE."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      801.54,
+      281.22,
+      1071.41,
+      310.37
+     ],
+     "method": "text-layer",
+     "number": 3,
+     "number_level": "Verified",
+     "read_number": "3",
+     "text": "3 INSTALL LOCAL UV CONTROL PANELS AND POWER DISTRIBUTION FOR UV SYSTEMS. CONTRACTOR / SHALL PROVIDE WIRING GUTTER, JUNCTION BOXES AND (3) DUPLEX GFCI RECEPTACLES (PDR'S) WITH / IN-USE WET LOCATION COVERS FOR EACH UV UNIT. MOUNT TO BASIN WALL WITH STAINLESS STEEL / UNITSTRUT AND HARDWARE. CONDUIT, FITTINGS AND JUNCTION BOXES SHALL BE STAINLESS STEEL. / PROVIDE ALL WIRING AND CONNECTIONS PER MANUFACTURER REQUIREMENTS."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      801.54,
+      317.4,
+      1071.16,
+      334.67
+     ],
+     "method": "text-layer",
+     "number": 4,
+     "number_level": "Verified",
+     "read_number": "4",
+     "text": "4 PROVIDE LOCAL CONTROL PANEL TO MOUNT EFFLUENT FLOW METER TRANSMITTER, AND TERMINALS / FOR LOCAL INSTRUMENTATION SIGNALS. ROUTE BACK TO PLC CONTROL PANEL. ENCLOSURE SHALL / BE STAINLESS STEEL, MOUNT TO HANDRAIL OR RACK WITH SS HARDWARE."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      801.54,
+      341.7,
+      1071.35,
+      371.03
+     ],
+     "method": "text-layer",
+     "number": 5,
+     "number_level": "Verified",
+     "read_number": "5",
+     "text": "5 CONTRACTOR SHALL PROVIDE POLE LIGHT TO ILLUMINATE UV AREA. PROVIDE CONCRETE POLE BASE / AND SECURE TO SIDE OF BASIN WITH STAINLESS STEEL HARDWARE; FIELD COORDINATE WITH CIVIL. / PROVIDE 4\" SQUARE ALUMINUM POLE 12' TALL WITH PHOTOCELL AND LOCAL ON/OFF SWITCH. / LITHONIA LIGHTING #DXS0-LED-P3-30K-T3M-MVOLT-SPA-DNAXD WITH PHOTOCELL, OR APPROVED / EQUAL."
+    }
+   ],
+   "heading": "KEY NOTES:",
+   "heading_bbox": [
+    810.54,
+    204.66,
+    864.86,
+    213.71
+   ],
+   "heading_method": "text-layer",
+   "highest_marker_read": 5,
+   "line_spacing_p25": 6.12
+  }
+ ],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -2129,6 +2222,210 @@
   "width": 1224.0
  },
  "page_key": "073",
+ "quantities": [
+  {
+   "bbox": [
+    359.9,
+    712.32,
+    363.65,
+    717.35
+   ],
+   "callouts_nearby": [
+    [
+     "0",
+     [
+      345.42,
+      722.52,
+      348.12,
+      729.36
+     ],
+     12.86
+    ],
+    [
+     "4",
+     [
+      381.24,
+      722.52,
+      384.3,
+      729.36
+     ],
+     18.33
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "SCALE: 1\" = 4' AT FULL SCALE",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    381.6,
+    479.4,
+    388.15,
+    484.43
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "12'",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "12'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "12"
+  },
+  {
+   "bbox": [
+    485.3,
+    556.62,
+    495.63,
+    559.62
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "EL",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "elevation",
+   "line_text": "EL 21.3",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "EL 21.3",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "21.3"
+  },
+  {
+   "bbox": [
+    485.82,
+    519.66,
+    496.44,
+    521.82
+   ],
+   "callouts_nearby": [],
+   "conf": 94.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "EL",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "elevation",
+   "line_text": "~~ EL 25.3",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "EL 25.3",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "25.3"
+  },
+  {
+   "bbox": [
+    917.64,
+    353.76,
+    924.19,
+    358.79
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [
+    [
+     507.1,
+     331.48,
+     509.6,
+     336.48
+    ],
+    [
+     378.54,
+     416.58,
+     381.34,
+     421.61
+    ]
+   ],
+   "keyed_note": "5 (read; Verified)",
+   "kind": "length",
+   "line_text": "PROVIDE 4\" SQUARE ALUMINUM POLE 12' TALL WITH PHOTOCELL AND LOCAL ON/OFF SWITCH.",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "12'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "12"
+  },
+  {
+   "bbox": [
+    995.76,
+    581.46,
+    1002.31,
+    586.49
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "10' CORD - 2 PER PDR",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "10'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "10"
+  },
+  {
+   "bbox": [
+    1004.45,
+    449.88,
+    1011.0,
+    454.91
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "PANEL (LOCATE WITHIN 10' OF",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "10'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "10"
+  }
+ ],
  "schema_version": "1.0",
  "set_page": 73,
  "sheet_01": "E5.1",
@@ -2137,6 +2434,536 @@
   "page": 25,
   "sha256": "ffe9e975ceb153cab60328a2459d826f96f96e0edaa77e0279a1d27e2e6de5fa"
  },
+ "tags": [
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    103.96,
+    333.42,
+    115.41,
+    338.45
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "MCC"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    117.72,
+    377.7,
+    133.92,
+    382.73
+   ],
+   "candidate_rows": [
+    296
+   ],
+   "conf": null,
+   "form": "LT",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "S-LT-D"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    118.44,
+    356.1,
+    133.25,
+    361.13
+   ],
+   "candidate_rows": [
+    342
+   ],
+   "conf": null,
+   "form": "UV1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    342
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "P-UV1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    118.44,
+    363.3,
+    133.25,
+    368.33
+   ],
+   "candidate_rows": [
+    343
+   ],
+   "conf": null,
+   "form": "UV2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    343
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "P-UV2"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    120.42,
+    384.9,
+    131.32,
+    389.93
+   ],
+   "candidate_rows": [
+    296
+   ],
+   "conf": null,
+   "form": "LT",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "P-LT"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    129.06,
+    524.94,
+    143.87,
+    529.97
+   ],
+   "candidate_rows": [
+    342
+   ],
+   "conf": null,
+   "form": "UV1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    342
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "P-UV1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    129.06,
+    532.14,
+    143.87,
+    537.17
+   ],
+   "candidate_rows": [
+    343
+   ],
+   "conf": null,
+   "form": "UV2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    343
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "P-UV2"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    149.94,
+    532.14,
+    166.14,
+    537.17
+   ],
+   "candidate_rows": [
+    296
+   ],
+   "conf": null,
+   "form": "LT",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "S-LT-D"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    152.64,
+    524.94,
+    163.54,
+    529.97
+   ],
+   "candidate_rows": [
+    296
+   ],
+   "conf": null,
+   "form": "LT",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "P-LT"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    252.36,
+    507.06,
+    252.72,
+    507.42
+   ],
+   "candidate_rows": [
+    242
+   ],
+   "conf": 0.0,
+   "form": "TS",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "TS,"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    297.72,
+    260.34,
+    307.5,
+    265.37
+   ],
+   "candidate_rows": [
+    342
+   ],
+   "conf": null,
+   "form": "UV1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    342
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "UV1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    298.08,
+    286.62,
+    307.86,
+    291.65
+   ],
+   "candidate_rows": [
+    343
+   ],
+   "conf": null,
+   "form": "UV2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    343
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "UV2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    298.08,
+    560.22,
+    307.86,
+    565.25
+   ],
+   "candidate_rows": [
+    343
+   ],
+   "conf": null,
+   "form": "UV2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    343
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "UV2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    345.96,
+    324.96,
+    360.77,
+    329.99
+   ],
+   "candidate_rows": [
+    342
+   ],
+   "conf": null,
+   "form": "UV1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    342
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "P-UV1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    345.96,
+    332.16,
+    360.77,
+    337.19
+   ],
+   "candidate_rows": [
+    343
+   ],
+   "conf": null,
+   "form": "UV2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    343
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "P-UV2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    345.96,
+    528.0,
+    360.77,
+    533.03
+   ],
+   "candidate_rows": [
+    342
+   ],
+   "conf": null,
+   "form": "UV1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    342
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "P-UV1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    345.96,
+    535.2,
+    360.77,
+    540.23
+   ],
+   "candidate_rows": [
+    343
+   ],
+   "conf": null,
+   "form": "UV2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    343
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "P-UV2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    346.86,
+    267.54,
+    361.67,
+    272.57
+   ],
+   "candidate_rows": [
+    342
+   ],
+   "conf": null,
+   "form": "UV1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    342
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "P-UV1"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    428.04,
+    539.34,
+    444.24,
+    544.37
+   ],
+   "candidate_rows": [
+    296
+   ],
+   "conf": null,
+   "form": "LT",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "S-LT-D"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    428.4,
+    339.18,
+    439.3,
+    344.21
+   ],
+   "candidate_rows": [
+    296
+   ],
+   "conf": null,
+   "form": "LT",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "P-LT"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    454.68,
+    360.24,
+    470.88,
+    365.27
+   ],
+   "candidate_rows": [
+    296
+   ],
+   "conf": null,
+   "form": "LT",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "S-LT-D"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    506.9,
+    335.78,
+    512.6,
+    346.8
+   ],
+   "candidate_rows": [
+    298
+   ],
+   "conf": null,
+   "form": "T3",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "t3"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    799.8,
+    578.58,
+    811.24,
+    583.61
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "MCC"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    1028.98,
+    478.68,
+    1040.43,
+    483.71
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "MCC"
+  }
+ ],
  "title_01": "UV DISINFECTION CHAMBER & DIGESTER ELECTRICAL PLAN AND ELEVATION",
  "title_block": {
   "date": {

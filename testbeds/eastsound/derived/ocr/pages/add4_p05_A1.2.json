@@ -48,7 +48,7 @@
   "python": "3.11.15",
   "schema_version": "1.0",
   "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script_sha256": "86e4d3e4396f5344d37512fd384afbe1368ca6ea0612d3dbd59f331e0d2061ad",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -72,6 +72,7 @@
   "set_page": 54
  },
  "governs_status": null,
+ "keyed_notes": [],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -84,6 +85,283 @@
   "width": 1224.0
  },
  "page_key": "add4_p05",
+ "quantities": [
+  {
+   "bbox": [
+    517.17,
+    414.45,
+    542.81,
+    430.94
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "7.00'",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "7.00'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "7.00"
+  },
+  {
+   "bbox": [
+    676.85,
+    379.82,
+    709.17,
+    396.31
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "44.00'",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "44.00'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "44.00"
+  },
+  {
+   "bbox": [
+    677.67,
+    109.33,
+    709.99,
+    125.82
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "44.00'",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "44.00'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "44.00"
+  },
+  {
+   "bbox": [
+    909.05,
+    488.59,
+    941.37,
+    505.08
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "10.25'",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "10.25'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "10.25"
+  },
+  {
+   "bbox": [
+    949.68,
+    491.04,
+    954.36,
+    503.82
+   ],
+   "callouts_nearby": [],
+   "conf": 63.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "9780’ MIN HAUNCH",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "9780'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "9780"
+  },
+  {
+   "bbox": [
+    969.66,
+    196.2,
+    974.34,
+    208.98
+   ],
+   "callouts_nearby": [],
+   "conf": 92.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "7.00’",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "7.00'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "7.00"
+  },
+  {
+   "bbox": [
+    975.86,
+    480.85,
+    1001.51,
+    497.34
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "8.00'",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "8.00'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "8.00"
+  },
+  {
+   "bbox": [
+    1004.79,
+    109.92,
+    1030.43,
+    126.41
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "9.25'",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "9.25'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "9.25"
+  },
+  {
+   "bbox": [
+    1006.82,
+    378.71,
+    1032.47,
+    395.2
+   ],
+   "callouts_nearby": [
+    [
+     "12",
+     [
+      1016.28,
+      406.98,
+      1021.86,
+      410.94
+     ],
+     11.78
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "9.25'",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "9.25'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "9.25"
+  },
+  {
+   "bbox": [
+    1020.27,
+    480.55,
+    1045.91,
+    497.04
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "1.25'",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "1.25'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "1.25"
+  },
+  {
+   "bbox": [
+    1037.78,
+    186.91,
+    1063.43,
+    203.4
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "0.75'",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "0.75'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "0.75"
+  }
+ ],
  "schema_version": "1.0",
  "set_page": null,
  "sheet_01": "A1.2",
@@ -92,6 +370,7 @@
   "page": 5,
   "sha256": "cf065e9d2897727a39c452ea4b59e8acf6bb8c4d91a314ff648025e91dcdecd6"
  },
+ "tags": [],
  "title_01": "BLOWER BUILDING EXTERIOR ELEVATIONS 1",
  "title_block": {
   "date": {

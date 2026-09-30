@@ -1144,7 +1144,7 @@
   "python": "3.11.15",
   "schema_version": "1.0",
   "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script_sha256": "86e4d3e4396f5344d37512fd384afbe1368ca6ea0612d3dbd59f331e0d2061ad",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -1163,6 +1163,7 @@
  },
  "governed_by": null,
  "governs": null,
+ "keyed_notes": [],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -1175,6 +1176,7 @@
   "width": 1224.0
  },
  "page_key": "084",
+ "quantities": [],
  "schema_version": "1.0",
  "set_page": 84,
  "sheet_01": "E7.7",
@@ -1183,6 +1185,7 @@
   "page": 36,
   "sha256": "ffe9e975ceb153cab60328a2459d826f96f96e0edaa77e0279a1d27e2e6de5fa"
  },
+ "tags": [],
  "title_01": "MAIN PLC CONTROL PANEL - ANALOG OUTPUTS",
  "title_block": {
   "date": {

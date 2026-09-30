@@ -2530,7 +2530,7 @@
   "python": "3.11.15",
   "schema_version": "1.0",
   "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script_sha256": "86e4d3e4396f5344d37512fd384afbe1368ca6ea0612d3dbd59f331e0d2061ad",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -2549,6 +2549,7 @@
  },
  "governed_by": null,
  "governs": null,
+ "keyed_notes": [],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -2561,6 +2562,7 @@
   "width": 1224.0
  },
  "page_key": "088",
+ "quantities": [],
  "schema_version": "1.0",
  "set_page": 88,
  "sheet_01": "E8.4",
@@ -2569,6 +2571,7 @@
   "page": 40,
   "sha256": "ffe9e975ceb153cab60328a2459d826f96f96e0edaa77e0279a1d27e2e6de5fa"
  },
+ "tags": [],
  "title_01": "INFLUENT PUMP STATION CONTROL PANEL - DIGITAL OUTPUTS",
  "title_block": {
   "date": {

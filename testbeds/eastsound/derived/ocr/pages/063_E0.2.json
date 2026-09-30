@@ -1684,7 +1684,7 @@
   "python": "3.11.15",
   "schema_version": "1.0",
   "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script_sha256": "86e4d3e4396f5344d37512fd384afbe1368ca6ea0612d3dbd59f331e0d2061ad",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -1703,6 +1703,7 @@
  },
  "governed_by": null,
  "governs": null,
+ "keyed_notes": [],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -1715,6 +1716,53 @@
   "width": 1224.0
  },
  "page_key": "063",
+ "quantities": [
+  {
+   "bbox": [
+    384.56,
+    438.72,
+    391.11,
+    443.75
+   ],
+   "callouts_nearby": [
+    [
+     "9",
+     [
+      371.52,
+      449.1,
+      374.22,
+      455.94
+     ],
+     11.64
+    ],
+    [
+     "10",
+     [
+      406.08,
+      449.1,
+      411.66,
+      455.94
+     ],
+     15.9
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "SCALE: 1\" = 10' AT FULL SCALE",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "10'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "10"
+  }
+ ],
  "schema_version": "1.0",
  "set_page": 63,
  "sheet_01": "E0.2",
@@ -1723,6 +1771,161 @@
   "page": 15,
   "sha256": "ffe9e975ceb153cab60328a2459d826f96f96e0edaa77e0279a1d27e2e6de5fa"
  },
+ "tags": [
+  {
+   "assignment": "assigned",
+   "bbox": [
+    232.33,
+    247.74,
+    242.11,
+    252.77
+   ],
+   "candidate_rows": [
+    250
+   ],
+   "conf": null,
+   "form": "ATS",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    250
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "ATS"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    370.98,
+    629.16,
+    381.88,
+    634.19
+   ],
+   "candidate_rows": [
+    243
+   ],
+   "conf": null,
+   "form": "GEN",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "GEN"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    385.92,
+    680.64,
+    396.82,
+    685.67
+   ],
+   "candidate_rows": [
+    243
+   ],
+   "conf": null,
+   "form": "GEN",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "GEN"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    413.46,
+    548.34,
+    423.24,
+    553.37
+   ],
+   "candidate_rows": [
+    240
+   ],
+   "conf": null,
+   "form": "ATS",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "ATS"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    469.62,
+    130.02,
+    481.32,
+    135.05
+   ],
+   "candidate_rows": [
+    254
+   ],
+   "conf": null,
+   "form": "TPS",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    254
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "'TPS'"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    517.93,
+    639.96,
+    527.71,
+    644.99
+   ],
+   "candidate_rows": [
+    254
+   ],
+   "conf": null,
+   "form": "TPS",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    254
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "TPS"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    1117.26,
+    90.54,
+    1126.08,
+    95.76
+   ],
+   "candidate_rows": [
+    191
+   ],
+   "conf": 0.0,
+   "form": "S2",
+   "fuzzy": true,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "52"
+  }
+ ],
  "title_01": "ELECTRICAL DEMOLITION SITE PLAN AND ONE LINE DIAGRAM",
  "title_block": {
   "date": {

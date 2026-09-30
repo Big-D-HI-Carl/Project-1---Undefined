@@ -16930,7 +16930,7 @@
   "python": "3.11.15",
   "schema_version": "1.0",
   "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script_sha256": "86e4d3e4396f5344d37512fd384afbe1368ca6ea0612d3dbd59f331e0d2061ad",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -16949,6 +16949,561 @@
  },
  "governed_by": null,
  "governs": null,
+ "keyed_notes": [
+  {
+   "bbox": [
+    834.84,
+    47.7,
+    1058.94,
+    753.66
+   ],
+   "count_check": "entry count 38 does not match the highest marker read (37); by-order numbers Unresolved",
+   "entries": [
+    {
+     "basis": "read",
+     "bbox": [
+      835.56,
+      53.1,
+      1058.94,
+      70.44
+     ],
+     "method": "bluebeam-ocr",
+     "number": 1,
+     "number_level": "Inferred",
+     "read_number": "1",
+     "text": "(1) CONNECT NEW 10” EFFLUENT PIPE TO (38) DIGESTER = BLOWER / = / EXISTING 10” PVC PVC"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      835.56,
+      78.66,
+      962.88,
+      89.1
+     ],
+     "method": "bluebeam-ocr",
+     "number": 2,
+     "number_level": "Inferred",
+     "read_number": "2",
+     "text": "(2) = / PROPOSED ROTARY FAN PRESS PRESS"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      835.56,
+      96.3,
+      922.68,
+      106.56
+     ],
+     "method": "ocr",
+     "number": 3,
+     "number_level": "Inferred",
+     "read_number": "3",
+     "text": "(3) EXISTING SCREW PRESS"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      835.56,
+      113.94,
+      943.74,
+      124.2
+     ],
+     "method": "ocr",
+     "number": 4,
+     "number_level": "Inferred",
+     "read_number": "4",
+     "text": "(4) / = BORING #3 (MONITORING WELL)"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      834.84,
+      130.86,
+      914.58,
+      142.56
+     ],
+     "method": "bluebeam-ocr",
+     "number": 5,
+     "number_level": "Inferred",
+     "read_number": "5",
+     "text": "(5) / PROPOSED DIGESTER DIGESTER"
+    },
+    {
+     "basis": "by order",
+     "bbox": [
+      835.56,
+      148.5,
+      956.7,
+      164.54
+     ],
+     "method": "bluebeam-ocr",
+     "number": 6,
+     "number_level": "Unresolved",
+     "read_number": null,
+     "text": "C) = PROPOSED WAS WAS PUMP FOR PLANTS / & 3 3"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      834.84,
+      166.14,
+      959.04,
+      177.84
+     ],
+     "method": "ocr",
+     "number": 7,
+     "number_level": "Inferred",
+     "read_number": "7",
+     "text": "(7) PROPOSED SLUDGE PUMP AREA SEE"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      835.56,
+      184.5,
+      972.72,
+      194.76
+     ],
+     "method": "bluebeam-ocr",
+     "number": 8,
+     "number_level": "Inferred",
+     "read_number": "8",
+     "text": "(8) / PROPOSED INFLUENT FLOW METER VAULT VAULT"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      834.84,
+      201.42,
+      954.18,
+      212.94
+     ],
+     "method": "ocr",
+     "number": 9,
+     "number_level": "Inferred",
+     "read_number": "9",
+     "text": "(9) PROPOSED UV DISINFECTION BASIN"
+    },
+    {
+     "basis": "by order",
+     "bbox": [
+      836.28,
+      220.32,
+      916.56,
+      229.14
+     ],
+     "method": "ocr",
+     "number": 10,
+     "number_level": "Unresolved",
+     "read_number": "3",
+     "text": "(3) 2W WATERMAIN HDPE / ="
+    },
+    {
+     "basis": "by order",
+     "bbox": [
+      835.56,
+      237.24,
+      966.96,
+      247.5
+     ],
+     "method": "ocr",
+     "number": 11,
+     "number_level": "Unresolved",
+     "read_number": null,
+     "text": "(i) / PROPOSED HEADWORKS FLOW SPLITTER"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      835.56,
+      254.88,
+      921.06,
+      265.14
+     ],
+     "method": "ocr",
+     "number": 12,
+     "number_level": "Inferred",
+     "read_number": "12",
+     "text": "(12) PROPOSED GENERATOR"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      835.56,
+      272.52,
+      914.94,
+      282.78
+     ],
+     "method": "ocr",
+     "number": 13,
+     "number_level": "Inferred",
+     "read_number": "13",
+     "text": "(13) = PROPOSED TRAIN #3"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      835.56,
+      290.16,
+      953.1,
+      304.02
+     ],
+     "method": "bluebeam-ocr",
+     "number": 14,
+     "number_level": "Inferred",
+     "read_number": "14",
+     "text": "(14) = = PROPOSED EFFLUENT FLOW FLOW METER / VAULT"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      835.56,
+      307.8,
+      953.46,
+      323.45
+     ],
+     "method": "bluebeam-ocr",
+     "number": 15,
+     "number_level": "Inferred",
+     "read_number": "15",
+     "text": "(15) 2” / AIR VENT. PROVIDE DOWNWARD / = / = / FACING GOOSENECK 9-FT 9-FT ABOVE ABOVE FG"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      835.56,
+      325.26,
+      958.68,
+      342.36
+     ],
+     "method": "bluebeam-ocr",
+     "number": 16,
+     "number_level": "Inferred",
+     "read_number": "16",
+     "text": "(16) / = PROPOSED PLANT 2&3 2&3 FLOW FLOW METER METER / VAULTS"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      835.56,
+      342.9,
+      870.66,
+      353.34
+     ],
+     "method": "ocr",
+     "number": 17,
+     "number_level": "Inferred",
+     "read_number": "17",
+     "text": "(17) / = 3/4”"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      835.56,
+      360.54,
+      972.9,
+      393.84
+     ],
+     "method": "bluebeam-ocr",
+     "number": 18,
+     "number_level": "Inferred",
+     "read_number": "18",
+     "text": "(18) = PROPOSED 1000 1000 GALLON TRAFFIC—RATED / SEPTIC TANK. CONNECT TO TO EXISTING 4” / SEWER DRAIN PIPE. PROVIDE 4” ELBOW / AND FITTINGS AS AS NEEDED. MAINTAIN / POSITIVE DRAINAGE"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      835.56,
+      398.88,
+      880.92,
+      409.14
+     ],
+     "method": "ocr",
+     "number": 19,
+     "number_level": "Inferred",
+     "read_number": "19",
+     "text": "(19) 6” CPVC / ="
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      835.56,
+      416.52,
+      885.42,
+      426.78
+     ],
+     "method": "ocr",
+     "number": 20,
+     "number_level": "Inferred",
+     "read_number": "20",
+     "text": "(20) = NOT USED"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      835.56,
+      434.16,
+      957.96,
+      444.42
+     ],
+     "method": "ocr",
+     "number": 21,
+     "number_level": "Inferred",
+     "read_number": "21",
+     "text": "(21) PROPOSED INFLUENT PUMP STATION"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      834.84,
+      448.02,
+      885.42,
+      459.72
+     ],
+     "method": "ocr",
+     "number": 22,
+     "number_level": "Inferred",
+     "read_number": "22",
+     "text": "(22) NOT USED"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      835.56,
+      466.38,
+      962.82,
+      482.58
+     ],
+     "method": "ocr",
+     "number": 23,
+     "number_level": "Inferred",
+     "read_number": "23",
+     "text": "(23) NEW ALIGNMENT FOR EXISTING STORM / DRAIN / ]"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      835.56,
+      484.02,
+      937.98,
+      494.28
+     ],
+     "method": "bluebeam-ocr",
+     "number": 24,
+     "number_level": "Inferred",
+     "read_number": "24",
+     "text": "(24) = PROPOSED BLOWER BUILDING"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      834.84,
+      500.94,
+      934.2,
+      512.64
+     ],
+     "method": "ocr",
+     "number": 25,
+     "number_level": "Inferred",
+     "read_number": "25",
+     "text": "(25) PROPOSED RETAINING WALL"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      835.56,
+      519.3,
+      955.8,
+      533.16
+     ],
+     "method": "bluebeam-ocr",
+     "number": 26,
+     "number_level": "Inferred",
+     "read_number": "26",
+     "text": "(26) / = 3300 CFM WALL WALL EXHAUST FANS. FANS. 2 / TOTAL FOR NEW BLOWER BUILDING"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      835.56,
+      536.76,
+      967.86,
+      547.02
+     ],
+     "method": "ocr",
+     "number": 27,
+     "number_level": "Inferred",
+     "read_number": "27",
+     "text": "(27) / = PROPOSED 2W AIR GAP WATER SYSTEM"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      835.56,
+      554.4,
+      966.6,
+      568.98
+     ],
+     "method": "bluebeam-ocr",
+     "number": 28,
+     "number_level": "Inferred",
+     "read_number": "28",
+     "text": "(28) PROVIDE 5” CLEARANCE BETWEEN NEW / = = / BLDG. AND EXISTING BLDG."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      835.56,
+      572.76,
+      965.16,
+      583.02
+     ],
+     "method": "ocr",
+     "number": 29,
+     "number_level": "Inferred",
+     "read_number": "29",
+     "text": "(29) 300 GALLON TOTE FOR CARBON FEED. / ="
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      834.84,
+      589.5,
+      885.42,
+      601.38
+     ],
+     "method": "ocr",
+     "number": 30,
+     "number_level": "Inferred",
+     "read_number": "30",
+     "text": "(30) / = NOT USED"
+    },
+    {
+     "basis": "by order",
+     "bbox": [
+      835.56,
+      607.86,
+      936.72,
+      618.12
+     ],
+     "method": "bluebeam-ocr",
+     "number": 31,
+     "number_level": "Unresolved",
+     "read_number": null,
+     "text": "© / 1-INCH YARD HYDRANT PER PER"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      835.56,
+      625.5,
+      954.54,
+      635.76
+     ],
+     "method": "bluebeam-ocr",
+     "number": 32,
+     "number_level": "Inferred",
+     "read_number": "32",
+     "text": "(32) = = RELOCATE EXISTING FIRE HYDRANT"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      835.56,
+      643.14,
+      965.16,
+      657.94
+     ],
+     "method": "bluebeam-ocr",
+     "number": 33,
+     "number_level": "Inferred",
+     "read_number": "33",
+     "text": "(33) = ADDITIONAL ASPHALT ASPHALT PAVEMENT PAVEMENT FROM / FENCE LINE TO TO EXISTING"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      835.56,
+      660.78,
+      963.54,
+      674.64
+     ],
+     "method": "ocr",
+     "number": 34,
+     "number_level": "Inferred",
+     "read_number": "34",
+     "text": "(34) PROPOSED PLANT DRAIN FLOW METER / = / VAULT"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      835.56,
+      678.24,
+      955.8,
+      688.5
+     ],
+     "method": "ocr",
+     "number": 35,
+     "number_level": "Inferred",
+     "read_number": "35",
+     "text": "(35) PROPOSED DRY POLYMER MIX UNIT / ="
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      835.38,
+      692.28,
+      911.52,
+      702.54
+     ],
+     "method": "ocr",
+     "number": 36,
+     "number_level": "Inferred",
+     "read_number": "36",
+     "text": "(36) = EFFLUENT SAMPLER"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      835.38,
+      706.14,
+      910.26,
+      716.4
+     ],
+     "method": "ocr",
+     "number": 37,
+     "number_level": "Inferred",
+     "read_number": "37",
+     "text": "(37) INFLUENT SAMPLER"
+    },
+    {
+     "basis": "by order",
+     "bbox": [
+      836.64,
+      735.84,
+      966.6,
+      753.66
+     ],
+     "method": "ocr",
+     "number": 38,
+     "number_level": "Unresolved",
+     "read_number": null,
+     "text": "SHEET / NOTES / SEE SHEET CO.1 FOR EXISTING CONDITIONS."
+    }
+   ],
+   "heading": "KEYED NOTES",
+   "heading_bbox": [
+    849.42,
+    47.7,
+    888.84,
+    55.98
+   ],
+   "heading_method": "ocr",
+   "highest_marker_read": 37,
+   "line_spacing_p25": 6.84
+  }
+ ],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -16961,6 +17516,1378 @@
   "width": 1224.0
  },
  "page_key": "015",
+ "quantities": [
+  {
+   "bbox": [
+    190.59,
+    397.92,
+    195.62,
+    414.32
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "144.00’",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "144.00'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "144.00"
+  },
+  {
+   "bbox": [
+    225.68,
+    106.44,
+    229.58,
+    111.44
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "3’",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "3'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "3"
+  },
+  {
+   "bbox": [
+    299.04,
+    629.0,
+    305.72,
+    634.01
+   ],
+   "callouts_nearby": [
+    [
+     "23",
+     [
+      299.16,
+      628.74,
+      305.64,
+      633.06
+     ],
+     0.0
+    ],
+    [
+     "2",
+     [
+      311.76,
+      638.28,
+      318.06,
+      643.5
+     ],
+     7.4
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "23’",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "23'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "23"
+  },
+  {
+   "bbox": [
+    437.84,
+    96.91,
+    454.25,
+    101.93
+   ],
+   "callouts_nearby": [
+    [
+     "8",
+     [
+      438.12,
+      112.5,
+      441.18,
+      116.46
+     ],
+     10.57
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "148.00’",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "148.00'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "148.00"
+  },
+  {
+   "bbox": [
+    438.07,
+    111.45,
+    443.53,
+    118.46
+   ],
+   "callouts_nearby": [
+    [
+     "8",
+     [
+      438.12,
+      112.5,
+      441.18,
+      116.46
+     ],
+     0.0
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "5’ EASEMENT TO PORT——",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "5'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "5"
+  },
+  {
+   "bbox": [
+    474.34,
+    95.91,
+    511.22,
+    102.96
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "W",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "N 8824'34\" W",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "34\" W",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "34"
+  },
+  {
+   "bbox": [
+    701.72,
+    642.88,
+    709.39,
+    648.89
+   ],
+   "callouts_nearby": [
+    [
+     "24",
+     [
+      701.82,
+      642.78,
+      708.48,
+      647.1
+     ],
+     0.0
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "24'",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "24'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "24"
+  },
+  {
+   "bbox": [
+    743.75,
+    323.92,
+    761.17,
+    328.94
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "IE",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "elevation",
+   "line_text": "IE=19.4",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "IE=19.4",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "19.4"
+  },
+  {
+   "bbox": [
+    743.79,
+    299.92,
+    759.9,
+    304.94
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "PVC",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "8” PVC",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "8\" PVC",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "8"
+  },
+  {
+   "bbox": [
+    745.92,
+    147.77,
+    752.6,
+    152.78
+   ],
+   "callouts_nearby": [
+    [
+     "49",
+     [
+      763.56,
+      161.46,
+      778.86,
+      173.7
+     ],
+     13.98
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "20’ EASEMENT",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "20'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "20"
+  },
+  {
+   "bbox": [
+    746.1,
+    146.52,
+    753.84,
+    151.02
+   ],
+   "callouts_nearby": [
+    [
+     "49",
+     [
+      763.56,
+      161.46,
+      778.86,
+      173.7
+     ],
+     14.26
+    ]
+   ],
+   "conf": 84.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "20’ EASEMENT",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "20'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "20"
+  },
+  {
+   "bbox": [
+    850.49,
+    312.33,
+    937.2,
+    317.46
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "AIR VENT. PROVIDE DOWNWARD",
+   "keyed_callouts": [
+    [
+     633.42,
+     221.22,
+     639.18,
+     225.54
+    ]
+   ],
+   "keyed_note": "15 (read; Inferred)",
+   "kind": "size",
+   "line_text": "(15) = 2” AIR VENT. PROVIDE DOWNWARD",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "2\" AIR VENT. PROVIDE DOWNWARD",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "2"
+  },
+  {
+   "bbox": [
+    857.77,
+    611.64,
+    930.28,
+    616.75
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [
+    [
+     "1/C7.1",
+     [
+      942.0,
+      607.9,
+      954.45,
+      621.3
+     ],
+     11.72
+    ]
+   ],
+   "distance": null,
+   "item": "YARD HYDRANT PER",
+   "keyed_callouts": [
+    [
+     565.6,
+     353.93,
+     571.61,
+     359.94
+    ],
+    [
+     511.38,
+     580.86,
+     516.42,
+     585.18
+    ]
+   ],
+   "keyed_note": "31 (by order; Unresolved)",
+   "kind": "size",
+   "line_text": "0 = 1—INCH YARD HYDRANT PER",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "1-INCH YARD HYDRANT PER",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "1"
+  },
+  {
+   "bbox": [
+    857.82,
+    576.59,
+    887.87,
+    581.64
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": "29 (read; Inferred)",
+   "kind": "volume",
+   "line_text": "0 = 300 GALLON TOTE FOR CARBON FEED.",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "300 GALLON",
+   "tag_level": "Inferred",
+   "unit": "GAL",
+   "value": "300"
+  },
+  {
+   "bbox": [
+    857.88,
+    311.4,
+    953.46,
+    316.26
+   ],
+   "callouts_nearby": [],
+   "conf": 94.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "AIR VENT. PROVIDE DOWNWARD",
+   "keyed_callouts": [
+    [
+     633.42,
+     221.22,
+     639.18,
+     225.54
+    ]
+   ],
+   "keyed_note": "15 (read; Inferred)",
+   "kind": "size",
+   "line_text": "= 2” AIR VENT. PROVIDE DOWNWARD",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "2\" AIR VENT. PROVIDE DOWNWARD",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "2"
+  },
+  {
+   "bbox": [
+    857.88,
+    402.48,
+    880.92,
+    407.52
+   ],
+   "callouts_nearby": [],
+   "conf": 86.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "CPVC",
+   "keyed_callouts": [],
+   "keyed_note": "19 (read; Inferred)",
+   "kind": "size",
+   "line_text": "(19) 6” CPVC",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "6\" CPVC",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "6"
+  },
+  {
+   "bbox": [
+    857.88,
+    403.54,
+    877.65,
+    408.57
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "CPVC",
+   "keyed_callouts": [],
+   "keyed_note": "19 (read; Inferred)",
+   "kind": "size",
+   "line_text": "6” CPVC",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "6\" CPVC",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "6"
+  },
+  {
+   "bbox": [
+    857.88,
+    576.36,
+    891.54,
+    580.68
+   ],
+   "callouts_nearby": [],
+   "conf": 93.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": "29 (read; Inferred)",
+   "kind": "volume",
+   "line_text": "(29) 300 GALLON TOTE FOR CARBON FEED.",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "300 GALLON",
+   "tag_level": "Inferred",
+   "unit": "GAL",
+   "value": "300"
+  },
+  {
+   "bbox": [
+    857.88,
+    611.46,
+    936.72,
+    615.78
+   ],
+   "callouts_nearby": [],
+   "conf": 87.0,
+   "detail_refs_nearby": [
+    [
+     "1/C7.1",
+     [
+      942.0,
+      607.9,
+      954.45,
+      621.3
+     ],
+     5.28
+    ]
+   ],
+   "distance": null,
+   "item": "YARD HYDRANT PER",
+   "keyed_callouts": [
+    [
+     565.6,
+     353.93,
+     571.61,
+     359.94
+    ],
+    [
+     511.38,
+     580.86,
+     516.42,
+     585.18
+    ]
+   ],
+   "keyed_note": "31 (by order; Unresolved)",
+   "kind": "size",
+   "line_text": "© 1-INCH YARD HYDRANT PER",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "1-INCH YARD HYDRANT PER",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "1"
+  },
+  {
+   "bbox": [
+    874.94,
+    65.42,
+    893.89,
+    70.44
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "PVC",
+   "keyed_callouts": [
+    [
+     623.7,
+     369.54,
+     625.32,
+     373.86
+    ],
+    [
+     697.37,
+     207.27,
+     703.38,
+     219.28
+    ],
+    [
+     514.08,
+     313.2,
+     515.34,
+     314.82
+    ],
+    [
+     229.11,
+     510.06,
+     234.69,
+     520.07
+    ],
+    [
+     109.84,
+     525.91,
+     113.75,
+     532.91
+    ],
+    [
+     658.53,
+     622.35,
+     668.57,
+     640.37
+    ],
+    [
+     213.29,
+     665.12,
+     216.07,
+     670.12
+    ]
+   ],
+   "keyed_note": "1 (read; Inferred)",
+   "kind": "size",
+   "line_text": "EXISTING 10” PVC",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "10\" PVC",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "10"
+  },
+  {
+   "bbox": [
+    876.78,
+    64.26,
+    899.1,
+    69.3
+   ],
+   "callouts_nearby": [],
+   "conf": 92.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "PVC",
+   "keyed_callouts": [
+    [
+     623.7,
+     369.54,
+     625.32,
+     373.86
+    ],
+    [
+     697.37,
+     207.27,
+     703.38,
+     219.28
+    ],
+    [
+     514.08,
+     313.2,
+     515.34,
+     314.82
+    ],
+    [
+     229.11,
+     510.06,
+     234.69,
+     520.07
+    ],
+    [
+     109.84,
+     525.91,
+     113.75,
+     532.91
+    ],
+    [
+     658.53,
+     622.35,
+     668.57,
+     640.37
+    ],
+    [
+     213.29,
+     665.12,
+     216.07,
+     670.12
+    ]
+   ],
+   "keyed_note": "1 (read; Inferred)",
+   "kind": "size",
+   "line_text": "EXISTING 10” PVC",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "10\" PVC",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "10"
+  },
+  {
+   "bbox": [
+    880.16,
+    364.47,
+    912.99,
+    369.52
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": "18 (read; Inferred)",
+   "kind": "volume",
+   "line_text": "(18) = PROPOSED 1000 GALLON TRAFFIC-RATED",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "1000 GALLON",
+   "tag_level": "Inferred",
+   "unit": "GAL",
+   "value": "1000"
+  },
+  {
+   "bbox": [
+    889.74,
+    364.14,
+    926.1,
+    368.46
+   ],
+   "callouts_nearby": [],
+   "conf": 93.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": "18 (read; Inferred)",
+   "kind": "volume",
+   "line_text": "(18) PROPOSED 1000 GALLON TRAFFIC—RATED",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "1000 GALLON",
+   "tag_level": "Inferred",
+   "unit": "GAL",
+   "value": "1000"
+  },
+  {
+   "bbox": [
+    897.09,
+    58.7,
+    952.81,
+    63.78
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "EFFLUENT PIPE TO",
+   "keyed_callouts": [
+    [
+     623.7,
+     369.54,
+     625.32,
+     373.86
+    ],
+    [
+     697.37,
+     207.27,
+     703.38,
+     219.28
+    ],
+    [
+     514.08,
+     313.2,
+     515.34,
+     314.82
+    ],
+    [
+     229.11,
+     510.06,
+     234.69,
+     520.07
+    ],
+    [
+     109.84,
+     525.91,
+     113.75,
+     532.91
+    ],
+    [
+     658.53,
+     622.35,
+     668.57,
+     640.37
+    ],
+    [
+     213.29,
+     665.12,
+     216.07,
+     670.12
+    ]
+   ],
+   "keyed_note": "1 (read; Inferred)",
+   "kind": "size",
+   "line_text": "CONNECT NEW 10\" EFFLUENT PIPE TO",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "10\" EFFLUENT PIPE TO",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "10"
+  },
+  {
+   "bbox": [
+    900.36,
+    54.36,
+    999.0,
+    64.62
+   ],
+   "callouts_nearby": [],
+   "conf": 79.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "EFFLUENT PIPE TO 38",
+   "keyed_callouts": [
+    [
+     623.7,
+     369.54,
+     625.32,
+     373.86
+    ],
+    [
+     697.37,
+     207.27,
+     703.38,
+     219.28
+    ],
+    [
+     514.08,
+     313.2,
+     515.34,
+     314.82
+    ],
+    [
+     229.11,
+     510.06,
+     234.69,
+     520.07
+    ],
+    [
+     109.84,
+     525.91,
+     113.75,
+     532.91
+    ],
+    [
+     658.53,
+     622.35,
+     668.57,
+     640.37
+    ],
+    [
+     213.29,
+     665.12,
+     216.07,
+     670.12
+    ]
+   ],
+   "keyed_note": "1 (read; Inferred)",
+   "kind": "size",
+   "line_text": "(1) CONNECT NEW 10” EFFLUENT PIPE TO (38) DIGESTER BLOWER",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "10\" EFFLUENT PIPE TO (38)",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "10"
+  },
+  {
+   "bbox": [
+    903.96,
+    318.41,
+    914.51,
+    323.43
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [
+    [
+     633.42,
+     221.22,
+     639.18,
+     225.54
+    ]
+   ],
+   "keyed_note": "15 (read; Inferred)",
+   "kind": "length",
+   "line_text": "FACING GOOSENECK 9-FT ABOVE FG",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "9-FT",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "9"
+  },
+  {
+   "bbox": [
+    907.92,
+    318.06,
+    921.96,
+    322.38
+   ],
+   "callouts_nearby": [],
+   "conf": 91.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [
+    [
+     633.42,
+     221.22,
+     639.18,
+     225.54
+    ]
+   ],
+   "keyed_note": "15 (read; Inferred)",
+   "kind": "length",
+   "line_text": "FACING GOOSENECK 9-FT ABOVE FG",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "9-FT",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "9"
+  },
+  {
+   "bbox": [
+    1009.78,
+    73.07,
+    1096.57,
+    78.2
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 8.93,
+   "item": "AIR VENT. PROVIDE DOWNWARD",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "2\" AIR VENT. PROVIDE DOWNWARD",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "HOT BOX#1",
+   "nearest_tag_rows": [
+    58
+   ],
+   "raw": "2\" AIR VENT. PROVIDE DOWNWARD",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "2"
+  },
+  {
+   "bbox": [
+    1013.38,
+    380.98,
+    1092.42,
+    386.1
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "SECONDARY EFFLUENT PIPE.",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "(51) - NEW 8\" SECONDARY EFFLUENT PIPE.",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "8\" SECONDARY EFFLUENT PIPE.",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "8"
+  },
+  {
+   "bbox": [
+    1022.75,
+    122.29,
+    1090.95,
+    127.39
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 11.54,
+   "item": "INFLUENT PIPE. CUT AND",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "NEW 8\" INFLUENT PIPE. CUT AND",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "HOT BOX#2",
+   "nearest_tag_rows": [
+    59
+   ],
+   "raw": "8\" INFLUENT PIPE. CUT AND",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "8"
+  },
+  {
+   "bbox": [
+    1024.2,
+    121.14,
+    1102.86,
+    126.18
+   ],
+   "callouts_nearby": [],
+   "conf": 95.0,
+   "detail_refs_nearby": [],
+   "distance": 10.39,
+   "item": "INFLUENT PIPE. CUT AND",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "= NEW 8” INFLUENT PIPE. CUT AND",
+   "method": "ocr",
+   "nearest_tag": "HOT BOX#2",
+   "nearest_tag_rows": [
+    59
+   ],
+   "raw": "8\" INFLUENT PIPE. CUT AND",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "8"
+  },
+  {
+   "bbox": [
+    1024.2,
+    380.16,
+    1111.14,
+    385.2
+   ],
+   "callouts_nearby": [],
+   "conf": 95.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "SECONDARY EFFLUENT PIPE.",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "1) NEW 8” SECONDARY EFFLUENT PIPE.",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "8\" SECONDARY EFFLUENT PIPE.",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "8"
+  },
+  {
+   "bbox": [
+    1050.21,
+    153.73,
+    1060.57,
+    158.75
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "(43) = REMOVE EXISTING 4’x4’ WALL LOUVER",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    1056.02,
+    79.14,
+    1066.57,
+    84.16
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 2.97,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "FACING GOOSENECK 3-FT ABOVE FG",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "HOT BOX#1",
+   "nearest_tag_rows": [
+    58
+   ],
+   "raw": "3-FT",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "3"
+  },
+  {
+   "bbox": [
+    1059.84,
+    78.66,
+    1073.88,
+    82.98
+   ],
+   "callouts_nearby": [],
+   "conf": 87.0,
+   "detail_refs_nearby": [],
+   "distance": 4.15,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "FACING GOOSENECK 3-FT ABOVE FG",
+   "method": "ocr",
+   "nearest_tag": "HOT BOX#1",
+   "nearest_tag_rows": [
+    58
+   ],
+   "raw": "3-FT",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "3"
+  },
+  {
+   "bbox": [
+    1061.1,
+    152.64,
+    1073.34,
+    157.68
+   ],
+   "callouts_nearby": [],
+   "conf": 74.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "REMOVE EXISTING 4’x4’ WALL LOUVER",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    1061.1,
+    185.04,
+    1073.34,
+    189.9
+   ],
+   "callouts_nearby": [],
+   "conf": 83.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "= REMOVE EXISTING 2’x3’ WALL LOUVER",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "2'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "2"
+  },
+  {
+   "bbox": [
+    1061.21,
+    129.05,
+    1093.02,
+    134.1
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 18.3,
+   "item": "INFLUENT",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "CONNECT TO EXISTING 8\" INFLUENT,",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "HOT BOX#2",
+   "nearest_tag_rows": [
+    59
+   ],
+   "raw": "8\" INFLUENT",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "8"
+  },
+  {
+   "bbox": [
+    1066.86,
+    127.98,
+    1102.14,
+    133.56
+   ],
+   "callouts_nearby": [],
+   "conf": 95.0,
+   "detail_refs_nearby": [],
+   "distance": 18.02,
+   "item": "INFLUENT",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "CONNECT TO EXISTING 8” INFLUENT,",
+   "method": "ocr",
+   "nearest_tag": "HOT BOX#2",
+   "nearest_tag_rows": [
+    59
+   ],
+   "raw": "8\" INFLUENT",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "8"
+  },
+  {
+   "bbox": [
+    1071.73,
+    308.81,
+    1075.69,
+    313.82
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "UNIT TO WALL AND LOCATE 4’ ABOVE",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    1075.13,
+    284.82,
+    1079.08,
+    289.82
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "UNIT TO WALL AND LOCATED 4’ ABOVE",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    1082.34,
+    307.8,
+    1087.02,
+    312.84
+   ],
+   "callouts_nearby": [],
+   "conf": 91.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "4’",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    1085.94,
+    283.86,
+    1090.62,
+    288.72
+   ],
+   "callouts_nearby": [],
+   "conf": 96.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "4’",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "4"
+  }
+ ],
  "schema_version": "1.0",
  "set_page": 15,
  "sheet_01": "C1.1",
@@ -16969,6 +18896,287 @@
   "page": 15,
   "sha256": "9ca45d82bf86d16d3e2ce57eb76dccf597c497a7dc7f062fc7a171c4bc2c8d57"
  },
+ "tags": [
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    218.34,
+    669.96,
+    248.04,
+    670.86
+   ],
+   "candidate_rows": [
+    242
+   ],
+   "conf": 26.0,
+   "form": "TS",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "Ts"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    289.57,
+    705.33,
+    300.41,
+    710.35
+   ],
+   "candidate_rows": [
+    243
+   ],
+   "conf": null,
+   "form": "GEN",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "GEN"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    301.68,
+    387.54,
+    305.46,
+    398.16
+   ],
+   "candidate_rows": [
+    277
+   ],
+   "conf": 5.0,
+   "form": "L1",
+   "fuzzy": true,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "Li"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    369.17,
+    607.02,
+    383.07,
+    617.04
+   ],
+   "candidate_rows": [
+    191
+   ],
+   "conf": null,
+   "form": "S1",
+   "fuzzy": true,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "si«"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    371.99,
+    611.97,
+    386.46,
+    631.99
+   ],
+   "candidate_rows": [
+    191
+   ],
+   "conf": null,
+   "form": "S1",
+   "fuzzy": true,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "si"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    532.31,
+    462.27,
+    538.9,
+    485.54
+   ],
+   "candidate_rows": [
+    277
+   ],
+   "conf": null,
+   "form": "L1",
+   "fuzzy": true,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "LI"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    592.28,
+    503.44,
+    597.85,
+    508.45
+   ],
+   "candidate_rows": [
+    191
+   ],
+   "conf": null,
+   "form": "S1",
+   "fuzzy": true,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "51"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    592.38,
+    503.1,
+    597.42,
+    507.42
+   ],
+   "candidate_rows": [
+    191
+   ],
+   "conf": 93.0,
+   "form": "S1",
+   "fuzzy": true,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "51"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    987.02,
+    380.94,
+    995.91,
+    385.95
+   ],
+   "candidate_rows": [
+    191
+   ],
+   "conf": null,
+   "form": "S1",
+   "fuzzy": true,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "(51)"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    1020.27,
+    103.68,
+    1061.57,
+    110.75
+   ],
+   "candidate_rows": [
+    59
+   ],
+   "conf": null,
+   "form": "HOT BOX#2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    59
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "HOT BOX #2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    1020.6,
+    104.76,
+    1054.8,
+    110.34
+   ],
+   "candidate_rows": [
+    59
+   ],
+   "conf": 96.0,
+   "form": "HOT BOX#2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    59
+   ],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "HOT BOX #2"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    1021.24,
+    87.13,
+    1062.54,
+    94.2
+   ],
+   "candidate_rows": [
+    58
+   ],
+   "conf": null,
+   "form": "HOT BOX#1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    58
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "HOT BOX #1"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    1125.54,
+    425.88,
+    1134.54,
+    432.18
+   ],
+   "candidate_rows": [
+    277
+   ],
+   "conf": 68.0,
+   "form": "L1",
+   "fuzzy": true,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "Li"
+  }
+ ],
  "title_01": "SITE PIPING PLAN WITH GENERAL NOTES (cover index)",
  "title_block": {
   "date": {

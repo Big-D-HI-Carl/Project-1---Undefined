@@ -7858,7 +7858,7 @@
   "python": "3.11.15",
   "schema_version": "1.0",
   "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script_sha256": "86e4d3e4396f5344d37512fd384afbe1368ca6ea0612d3dbd59f331e0d2061ad",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -7882,6 +7882,57 @@
   "page_key": "add4_p07"
  },
  "governs": null,
+ "keyed_notes": [
+  {
+   "bbox": [
+    852.3,
+    467.82,
+    977.4,
+    520.38
+   ],
+   "count_check": "entry count 2 matches the highest marker read",
+   "entries": [
+    {
+     "basis": "by order",
+     "bbox": [
+      865.98,
+      480.42,
+      977.4,
+      492.12
+     ],
+     "method": "ocr",
+     "number": 1,
+     "number_level": "Inferred",
+     "read_number": null,
+     "text": "CUT EXISTING 8” PIPE AND CONNECT / NEW 8” INFLUENT PIPE TO TRAIN 2"
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      852.3,
+      502.2,
+      968.22,
+      520.38
+     ],
+     "method": "bluebeam-ocr",
+     "number": 2,
+     "number_level": "Inferred",
+     "read_number": "2",
+     "text": "(2) EXTEND NEW 8” PIPE TO 1. TRAIN / - ABANDON AND PLUG EXISTING TRAIN / INFLUENT PIPE"
+    }
+   ],
+   "heading": "KEYED NOTES",
+   "heading_bbox": [
+    865.26,
+    467.82,
+    904.86,
+    478.62
+   ],
+   "heading_method": "ocr",
+   "highest_marker_read": 2,
+   "line_spacing_p25": 5.94
+  }
+ ],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -7894,6 +7945,1936 @@
   "width": 1224.0
  },
  "page_key": "017",
+ "quantities": [
+  {
+   "bbox": [
+    436.1,
+    488.15,
+    456.43,
+    494.15
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "IE",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "elevation",
+   "line_text": "IE: 19.8",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "IE: 19.8",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "19.8"
+  },
+  {
+   "bbox": [
+    438.0,
+    112.32,
+    443.0,
+    118.32
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "5’ EASEMENT TO PORL",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "5'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "5"
+  },
+  {
+   "bbox": [
+    440.64,
+    96.48,
+    456.84,
+    100.98
+   ],
+   "callouts_nearby": [],
+   "conf": 71.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "48.00’",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "48.00'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "48.00"
+  },
+  {
+   "bbox": [
+    745.9,
+    147.82,
+    752.57,
+    152.82
+   ],
+   "callouts_nearby": [
+    [
+     "1",
+     [
+      730.1,
+      108.01,
+      749.0,
+      142.01
+     ],
+     5.81
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "20’ EASEMENT",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "20'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "20"
+  },
+  {
+   "bbox": [
+    771.82,
+    616.13,
+    776.82,
+    622.8
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "10’ EASEMENT",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "10'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "10"
+  },
+  {
+   "bbox": [
+    878.94,
+    488.12,
+    948.15,
+    493.12
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "INFLUENT PIPE TO TRAIN",
+   "keyed_callouts": [
+    [
+     404.64,
+     738.54,
+     405.18,
+     740.88
+    ],
+    [
+     618.84,
+     404.82,
+     620.46,
+     409.14
+    ],
+    [
+     730.1,
+     108.01,
+     749.0,
+     142.01
+    ],
+    [
+     456.5,
+     188.12,
+     459.5,
+     194.12
+    ],
+    [
+     465.1,
+     401.47,
+     467.88,
+     406.47
+    ],
+    [
+     682.55,
+     543.59,
+     686.25,
+     550.24
+    ],
+    [
+     608.94,
+     698.58,
+     609.48,
+     700.92
+    ]
+   ],
+   "keyed_note": "1 (by order; Inferred)",
+   "kind": "size",
+   "line_text": "NEW 8” INFLUENT PIPE TO TRAIN 2",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "8\" INFLUENT PIPE TO TRAIN",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "8"
+  },
+  {
+   "bbox": [
+    880.38,
+    487.08,
+    957.96,
+    492.12
+   ],
+   "callouts_nearby": [],
+   "conf": 95.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "INFLUENT PIPE TO TRAIN",
+   "keyed_callouts": [
+    [
+     404.64,
+     738.54,
+     405.18,
+     740.88
+    ],
+    [
+     618.84,
+     404.82,
+     620.46,
+     409.14
+    ],
+    [
+     730.1,
+     108.01,
+     749.0,
+     142.01
+    ],
+    [
+     456.5,
+     188.12,
+     459.5,
+     194.12
+    ],
+    [
+     465.1,
+     401.47,
+     467.88,
+     406.47
+    ],
+    [
+     682.55,
+     543.59,
+     686.25,
+     550.24
+    ],
+    [
+     608.94,
+     698.58,
+     609.48,
+     700.92
+    ]
+   ],
+   "keyed_note": "1 (by order; Inferred)",
+   "kind": "size",
+   "line_text": "NEW 8” INFLUENT PIPE TO TRAIN 2",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "8\" INFLUENT PIPE TO TRAIN",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "8"
+  },
+  {
+   "bbox": [
+    894.96,
+    212.82,
+    983.08,
+    217.85
+   ],
+   "callouts_nearby": [
+    [
+     "5",
+     [
+      878.04,
+      213.3,
+      880.84,
+      218.33
+     ],
+     14.12
+    ],
+    [
+     "6",
+     [
+      878.16,
+      226.26,
+      880.96,
+      231.29
+     ],
+     16.33
+    ],
+    [
+     "4",
+     [
+      878.16,
+      193.74,
+      880.96,
+      198.77
+     ],
+     19.83
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 0.0,
+   "item": "UV DISINFECTION EFFLUENT DI",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "10\" UV DISINFECTION EFFLUENT (DI GRAV.) SLOPE = 0.28% MIN.",
+   "method": "text-layer",
+   "nearest_tag": "Pipe ID 5",
+   "nearest_tag_rows": [
+    35
+   ],
+   "raw": "10\" UV DISINFECTION EFFLUENT (DI",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "10"
+  },
+  {
+   "bbox": [
+    894.96,
+    263.82,
+    959.89,
+    268.85
+   ],
+   "callouts_nearby": [
+    [
+     "9",
+     [
+      878.04,
+      269.94,
+      880.84,
+      274.97
+     ],
+     14.16
+    ],
+    [
+     "8",
+     [
+      878.16,
+      253.38,
+      880.96,
+      258.41
+     ],
+     15.01
+    ],
+    [
+     "10",
+     [
+      876.6,
+      286.5,
+      882.19,
+      291.53
+     ],
+     21.79
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 0.0,
+   "item": "2W WATER SYSTEM AIR",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "1\" 2W WATER SYSTEM AIR VENT (SS) OUTLET 3' ABOVE GRADE WITH",
+   "method": "text-layer",
+   "nearest_tag": "Pipe ID 9",
+   "nearest_tag_rows": [
+    39
+   ],
+   "raw": "1\" 2W WATER SYSTEM AIR",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "1"
+  },
+  {
+   "bbox": [
+    895.32,
+    146.46,
+    978.97,
+    151.49
+   ],
+   "callouts_nearby": [
+    [
+     "2",
+     [
+      878.16,
+      160.62,
+      880.96,
+      165.65
+     ],
+     17.02
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 0.0,
+   "item": "EXISTING EFFLUENT DI GRAV.",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "8\" EXISTING EFFLUENT (DI GRAV.)",
+   "method": "text-layer",
+   "nearest_tag": "Pipe ID 1",
+   "nearest_tag_rows": [
+    31
+   ],
+   "raw": "8\" EXISTING EFFLUENT (DI GRAV.)",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "8"
+  },
+  {
+   "bbox": [
+    895.32,
+    173.7,
+    970.87,
+    178.73
+   ],
+   "callouts_nearby": [
+    [
+     "3",
+     [
+      878.16,
+      174.18,
+      880.96,
+      179.21
+     ],
+     14.36
+    ],
+    [
+     "2",
+     [
+      878.16,
+      160.62,
+      880.96,
+      165.65
+     ],
+     16.46
+    ],
+    [
+     "4",
+     [
+      878.16,
+      193.74,
+      880.96,
+      198.77
+     ],
+     20.77
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 0.0,
+   "item": "INFLUENT DI GRAV. SLOPE",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "8\" INFLUENT (DI GRAV.) SLOPE = 0.4% MIN.",
+   "method": "text-layer",
+   "nearest_tag": "Pipe ID 3",
+   "nearest_tag_rows": [
+    33
+   ],
+   "raw": "8\" INFLUENT (DI GRAV.) SLOPE",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "8"
+  },
+  {
+   "bbox": [
+    895.32,
+    184.62,
+    974.78,
+    189.65
+   ],
+   "callouts_nearby": [
+    [
+     "4",
+     [
+      878.16,
+      193.74,
+      880.96,
+      198.77
+     ],
+     14.93
+    ],
+    [
+     "3",
+     [
+      878.16,
+      174.18,
+      880.96,
+      179.21
+     ],
+     15.35
+    ],
+    [
+     "2",
+     [
+      878.16,
+      160.62,
+      880.96,
+      165.65
+     ],
+     23.79
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 0.0,
+   "item": "INFLUENT PUMP STATION AIR",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "3\" INFLUENT PUMP STATION AIR VENT (SS) OUTLET 8' ABOVE FINISH",
+   "method": "text-layer",
+   "nearest_tag": "Pipe ID 4",
+   "nearest_tag_rows": [
+    34
+   ],
+   "raw": "3\" INFLUENT PUMP STATION AIR",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "3"
+  },
+  {
+   "bbox": [
+    895.32,
+    236.82,
+    971.15,
+    241.85
+   ],
+   "callouts_nearby": [
+    [
+     "7",
+     [
+      878.04,
+      239.82,
+      880.84,
+      244.85
+     ],
+     14.48
+    ],
+    [
+     "6",
+     [
+      878.16,
+      226.26,
+      880.96,
+      231.29
+     ],
+     15.39
+    ],
+    [
+     "8",
+     [
+      878.16,
+      253.38,
+      880.96,
+      258.41
+     ],
+     18.42
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 0.0,
+   "item": "DIGESTED SLUDGE SCH. 80",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "2\" DIGESTED SLUDGE (SCH. 80 PVC FM) SLOPE = POSITIVE",
+   "method": "text-layer",
+   "nearest_tag": "Pipe ID 7",
+   "nearest_tag_rows": [
+    37
+   ],
+   "raw": "2\" DIGESTED SLUDGE (SCH. 80",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "2"
+  },
+  {
+   "bbox": [
+    895.32,
+    286.02,
+    956.06,
+    291.05
+   ],
+   "callouts_nearby": [
+    [
+     "10",
+     [
+      876.6,
+      286.5,
+      882.19,
+      291.53
+     ],
+     13.13
+    ],
+    [
+     "11",
+     [
+      876.84,
+      299.46,
+      882.43,
+      304.49
+     ],
+     15.39
+    ],
+    [
+     "9",
+     [
+      878.04,
+      269.94,
+      880.84,
+      274.97
+     ],
+     18.21
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 0.0,
+   "item": "2W WATER LINE SCH.",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "2\" 2W WATER LINE (SCH. 80 PVC FM)",
+   "method": "text-layer",
+   "nearest_tag": "Pipe ID 10",
+   "nearest_tag_rows": [
+    40
+   ],
+   "raw": "2\" 2W WATER LINE (SCH.",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "2"
+  },
+  {
+   "bbox": [
+    895.32,
+    298.98,
+    954.66,
+    304.01
+   ],
+   "callouts_nearby": [
+    [
+     "11",
+     [
+      876.84,
+      299.46,
+      882.43,
+      304.49
+     ],
+     12.89
+    ],
+    [
+     "10",
+     [
+      876.6,
+      286.5,
+      882.19,
+      291.53
+     ],
+     15.1
+    ],
+    [
+     "12",
+     [
+      876.6,
+      312.42,
+      882.19,
+      317.45
+     ],
+     15.59
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 0.0,
+   "item": "TRAIN 3 INFLUENT DI",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "8\" TRAIN 3 INFLUENT (DI GRAV.) SLOPE = 0.4% MIN.",
+   "method": "text-layer",
+   "nearest_tag": "Pipe ID 11",
+   "nearest_tag_rows": [
+    41
+   ],
+   "raw": "8\" TRAIN 3 INFLUENT (DI",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "8"
+  },
+  {
+   "bbox": [
+    895.32,
+    311.94,
+    954.39,
+    316.97
+   ],
+   "callouts_nearby": [
+    [
+     "12",
+     [
+      876.6,
+      312.42,
+      882.19,
+      317.45
+     ],
+     13.13
+    ],
+    [
+     "11",
+     [
+      876.84,
+      299.46,
+      882.43,
+      304.49
+     ],
+     14.89
+    ],
+    [
+     "13",
+     [
+      876.48,
+      325.38,
+      882.07,
+      330.41
+     ],
+     15.69
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 0.0,
+   "item": "WATER PIPE SCH. 80",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "2\" WATER PIPE (SCH. 80 PVC FM)",
+   "method": "text-layer",
+   "nearest_tag": "Pipe ID 12",
+   "nearest_tag_rows": [
+    42
+   ],
+   "raw": "2\" WATER PIPE (SCH. 80",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "2"
+  },
+  {
+   "bbox": [
+    895.32,
+    324.9,
+    954.66,
+    329.93
+   ],
+   "callouts_nearby": [
+    [
+     "13",
+     [
+      876.48,
+      325.38,
+      882.07,
+      330.41
+     ],
+     13.25
+    ],
+    [
+     "12",
+     [
+      876.6,
+      312.42,
+      882.19,
+      317.45
+     ],
+     15.1
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 0.0,
+   "item": "TRAIN 2 INFLUENT DI",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "8\" TRAIN 2 INFLUENT (DI GRAV.) SLOPE = 0.4% MIN.",
+   "method": "text-layer",
+   "nearest_tag": "Pipe ID 13",
+   "nearest_tag_rows": [
+    43
+   ],
+   "raw": "8\" TRAIN 2 INFLUENT (DI",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "8"
+  },
+  {
+   "bbox": [
+    895.32,
+    337.86,
+    954.66,
+    342.89
+   ],
+   "callouts_nearby": [
+    [
+     "13",
+     [
+      876.48,
+      325.38,
+      882.07,
+      330.41
+     ],
+     15.2
+    ],
+    [
+     "15",
+     [
+      876.48,
+      351.78,
+      882.07,
+      356.81
+     ],
+     15.96
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 0.0,
+   "item": "TRAIN 1 INFLUENT DI",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "8\" TRAIN 1 INFLUENT (DI GRAV.) SLOPE = 0.4% MIN.",
+   "method": "text-layer",
+   "nearest_tag": "Pipe ID 14",
+   "nearest_tag_rows": [
+    44
+   ],
+   "raw": "8\" TRAIN 1 INFLUENT (DI",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "8"
+  },
+  {
+   "bbox": [
+    895.32,
+    348.78,
+    949.91,
+    353.81
+   ],
+   "callouts_nearby": [
+    [
+     "15",
+     [
+      876.48,
+      351.78,
+      882.07,
+      356.81
+     ],
+     13.25
+    ],
+    [
+     "13",
+     [
+      876.48,
+      325.38,
+      882.07,
+      330.41
+     ],
+     22.65
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 0.0,
+   "item": "TRAIN 3 WAS SCH.",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "2\" TRAIN 3 WAS (SCH. 80 PVC GRAV.) SLOPE = POSITIVE DRAINAGE",
+   "method": "text-layer",
+   "nearest_tag": "Pipe ID 15",
+   "nearest_tag_rows": [
+    45
+   ],
+   "raw": "2\" TRAIN 3 WAS (SCH.",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "2"
+  },
+  {
+   "bbox": [
+    895.32,
+    364.86,
+    956.06,
+    369.89
+   ],
+   "callouts_nearby": [
+    [
+     "15",
+     [
+      876.48,
+      351.78,
+      882.07,
+      356.81
+     ],
+     15.5
+    ],
+    [
+     "17",
+     [
+      876.48,
+      378.3,
+      882.07,
+      383.33
+     ],
+     15.69
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 0.0,
+   "item": "TRAIN 2 EFFLUENT DI",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "8\" TRAIN 2 EFFLUENT (DI GRAV.) SLOPE = 0.4% MIN.",
+   "method": "text-layer",
+   "nearest_tag": "Pipe ID 16",
+   "nearest_tag_rows": [
+    46
+   ],
+   "raw": "8\" TRAIN 2 EFFLUENT (DI",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "8"
+  },
+  {
+   "bbox": [
+    895.32,
+    377.82,
+    956.06,
+    382.85
+   ],
+   "callouts_nearby": [
+    [
+     "17",
+     [
+      876.48,
+      378.3,
+      882.07,
+      383.33
+     ],
+     13.25
+    ],
+    [
+     "18",
+     [
+      876.48,
+      391.86,
+      882.07,
+      396.89
+     ],
+     16.02
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 0.0,
+   "item": "TRAIN 3 EFFLUENT DI",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "8\" TRAIN 3 EFFLUENT (DI GRAV.) SLOPE = 0.4% MIN.",
+   "method": "text-layer",
+   "nearest_tag": "Pipe ID 17",
+   "nearest_tag_rows": [
+    47
+   ],
+   "raw": "8\" TRAIN 3 EFFLUENT (DI",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "8"
+  },
+  {
+   "bbox": [
+    895.32,
+    388.86,
+    975.62,
+    393.89
+   ],
+   "callouts_nearby": [
+    [
+     "18",
+     [
+      876.48,
+      391.86,
+      882.07,
+      396.89
+     ],
+     13.25
+    ],
+    [
+     "17",
+     [
+      876.48,
+      378.3,
+      882.07,
+      383.33
+     ],
+     14.36
+    ],
+    [
+     "19",
+     [
+      876.48,
+      405.42,
+      882.07,
+      410.45
+     ],
+     17.56
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 0.0,
+   "item": "INFLUENT TO FLOW SPLITTER",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "6\" INFLUENT TO FLOW SPLITTER (DI FM) SLOPE = POSITIVE",
+   "method": "text-layer",
+   "nearest_tag": "Pipe ID 18",
+   "nearest_tag_rows": [
+    48
+   ],
+   "raw": "6\" INFLUENT TO FLOW SPLITTER",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "6"
+  },
+  {
+   "bbox": [
+    895.32,
+    404.94,
+    980.92,
+    409.97
+   ],
+   "callouts_nearby": [
+    [
+     "19",
+     [
+      876.48,
+      405.42,
+      882.07,
+      410.45
+     ],
+     13.25
+    ],
+    [
+     "20",
+     [
+      876.72,
+      418.38,
+      882.31,
+      423.41
+     ],
+     15.49
+    ],
+    [
+     "18",
+     [
+      876.48,
+      391.86,
+      882.07,
+      396.89
+     ],
+     15.5
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 0.0,
+   "item": "DIGESTER WAS INFLUENT SCH.",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "2\" DIGESTER WAS INFLUENT (SCH. 80 PVC GRAV.)",
+   "method": "text-layer",
+   "nearest_tag": "Pipe ID 19",
+   "nearest_tag_rows": [
+    49
+   ],
+   "raw": "2\" DIGESTER WAS INFLUENT (SCH.",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "2"
+  },
+  {
+   "bbox": [
+    895.32,
+    417.9,
+    939.3,
+    422.93
+   ],
+   "callouts_nearby": [
+    [
+     "20",
+     [
+      876.72,
+      418.38,
+      882.31,
+      423.41
+     ],
+     13.01
+    ],
+    [
+     "21",
+     [
+      877.08,
+      431.34,
+      882.67,
+      436.37
+     ],
+     15.19
+    ],
+    [
+     "19",
+     [
+      876.48,
+      405.42,
+      882.07,
+      410.45
+     ],
+     15.2
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 0.0,
+   "item": "CELL 3 AIR SS",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "6\" CELL 3 AIR (SS)",
+   "method": "text-layer",
+   "nearest_tag": "Pipe ID 20",
+   "nearest_tag_rows": [
+    50
+   ],
+   "raw": "6\" CELL 3 AIR (SS)",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "6"
+  },
+  {
+   "bbox": [
+    895.44,
+    157.5,
+    974.33,
+    162.53
+   ],
+   "callouts_nearby": [
+    [
+     "2",
+     [
+      878.16,
+      160.62,
+      880.96,
+      165.65
+     ],
+     14.48
+    ],
+    [
+     "3",
+     [
+      878.16,
+      174.18,
+      880.96,
+      179.21
+     ],
+     18.58
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 0.0,
+   "item": "UV DISINFECTION DRAIN AND",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "4\" UV DISINFECTION DRAIN AND DIGESTER SUPERNATANT (DI GRAV.)",
+   "method": "text-layer",
+   "nearest_tag": "Pipe ID 2",
+   "nearest_tag_rows": [
+    32
+   ],
+   "raw": "4\" UV DISINFECTION DRAIN AND",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    895.44,
+    225.78,
+    966.8,
+    230.81
+   ],
+   "callouts_nearby": [
+    [
+     "6",
+     [
+      878.16,
+      226.26,
+      880.96,
+      231.29
+     ],
+     14.48
+    ],
+    [
+     "5",
+     [
+      878.04,
+      213.3,
+      880.84,
+      218.33
+     ],
+     16.39
+    ],
+    [
+     "7",
+     [
+      878.04,
+      239.82,
+      880.84,
+      244.85
+     ],
+     17.16
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 0.0,
+   "item": "BUILDING SEPTIC SCH. 80",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "4\" BUILDING SEPTIC (SCH. 80 PVC GRAV.) CLOPE = 2% MIN.",
+   "method": "text-layer",
+   "nearest_tag": "Pipe ID 6",
+   "nearest_tag_rows": [
+    36
+   ],
+   "raw": "4\" BUILDING SEPTIC (SCH. 80",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    895.44,
+    252.9,
+    956.74,
+    257.93
+   ],
+   "callouts_nearby": [
+    [
+     "8",
+     [
+      878.16,
+      253.38,
+      880.96,
+      258.41
+     ],
+     14.48
+    ],
+    [
+     "7",
+     [
+      878.04,
+      239.82,
+      880.84,
+      244.85
+     ],
+     16.67
+    ],
+    [
+     "9",
+     [
+      878.04,
+      269.94,
+      880.84,
+      274.97
+     ],
+     18.91
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 0.0,
+   "item": "VAULT DRAIN SCH. 80",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "4\" VAULT DRAIN (SCH. 80 PVC GRAV.) SLOPE = 2.0%",
+   "method": "text-layer",
+   "nearest_tag": "Pipe ID 8",
+   "nearest_tag_rows": [
+    38
+   ],
+   "raw": "4\" VAULT DRAIN (SCH. 80",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    895.44,
+    430.86,
+    948.36,
+    435.89
+   ],
+   "callouts_nearby": [
+    [
+     "21",
+     [
+      877.08,
+      431.34,
+      882.67,
+      436.37
+     ],
+     12.77
+    ],
+    [
+     "20",
+     [
+      876.72,
+      418.38,
+      882.31,
+      423.41
+     ],
+     15.1
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 0.0,
+   "item": "DIGESTER AIR SS",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "4\" DIGESTER AIR (SS)",
+   "method": "text-layer",
+   "nearest_tag": "Pipe ID 21",
+   "nearest_tag_rows": [
+    51
+   ],
+   "raw": "4\" DIGESTER AIR (SS)",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    899.23,
+    504.42,
+    947.77,
+    509.42
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "PIPE TO TRAIN 1.",
+   "keyed_callouts": [
+    [
+     878.16,
+     160.62,
+     880.96,
+     165.65
+    ],
+    [
+     545.22,
+     189.18,
+     548.28,
+     193.5
+    ],
+    [
+     657.54,
+     335.16,
+     660.42,
+     339.3
+    ],
+    [
+     301.68,
+     394.38,
+     305.28,
+     394.92
+    ],
+    [
+     144.18,
+     504.9,
+     150.48,
+     511.02
+    ]
+   ],
+   "keyed_note": "2 (read; Inferred)",
+   "kind": "size",
+   "line_text": "(2) = EXTEND NEW 8\" PIPE TO TRAIN 1.",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "8\" PIPE TO TRAIN 1.",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "8"
+  },
+  {
+   "bbox": [
+    900.9,
+    481.42,
+    957.3,
+    486.42
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "PIPE AND CONNECT",
+   "keyed_callouts": [
+    [
+     404.64,
+     738.54,
+     405.18,
+     740.88
+    ],
+    [
+     618.84,
+     404.82,
+     620.46,
+     409.14
+    ],
+    [
+     730.1,
+     108.01,
+     749.0,
+     142.01
+    ],
+    [
+     456.5,
+     188.12,
+     459.5,
+     194.12
+    ],
+    [
+     465.1,
+     401.47,
+     467.88,
+     406.47
+    ],
+    [
+     682.55,
+     543.59,
+     686.25,
+     550.24
+    ],
+    [
+     608.94,
+     698.58,
+     609.48,
+     700.92
+    ]
+   ],
+   "keyed_note": "1 (by order; Inferred)",
+   "kind": "size",
+   "line_text": "(1) = CUT EXISTING 8” PIPE AND CONNECT",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "8\" PIPE AND CONNECT",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "8"
+  },
+  {
+   "bbox": [
+    911.7,
+    503.46,
+    961.02,
+    508.5
+   ],
+   "callouts_nearby": [],
+   "conf": 96.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "PIPE TO TRAIN",
+   "keyed_callouts": [
+    [
+     878.16,
+     160.62,
+     880.96,
+     165.65
+    ],
+    [
+     545.22,
+     189.18,
+     548.28,
+     193.5
+    ],
+    [
+     657.54,
+     335.16,
+     660.42,
+     339.3
+    ],
+    [
+     301.68,
+     394.38,
+     305.28,
+     394.92
+    ],
+    [
+     144.18,
+     504.9,
+     150.48,
+     511.02
+    ]
+   ],
+   "keyed_note": "2 (read; Inferred)",
+   "kind": "size",
+   "line_text": "(2) EXTEND NEW 8” PIPE TO TRAIN",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "8\" PIPE TO TRAIN",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "8"
+  },
+  {
+   "bbox": [
+    913.86,
+    480.42,
+    977.4,
+    485.46
+   ],
+   "callouts_nearby": [],
+   "conf": 95.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "PIPE AND CONNECT",
+   "keyed_callouts": [
+    [
+     404.64,
+     738.54,
+     405.18,
+     740.88
+    ],
+    [
+     618.84,
+     404.82,
+     620.46,
+     409.14
+    ],
+    [
+     730.1,
+     108.01,
+     749.0,
+     142.01
+    ],
+    [
+     456.5,
+     188.12,
+     459.5,
+     194.12
+    ],
+    [
+     465.1,
+     401.47,
+     467.88,
+     406.47
+    ],
+    [
+     682.55,
+     543.59,
+     686.25,
+     550.24
+    ],
+    [
+     608.94,
+     698.58,
+     609.48,
+     700.92
+    ]
+   ],
+   "keyed_note": "1 (by order; Inferred)",
+   "kind": "size",
+   "line_text": "CUT EXISTING 8” PIPE AND CONNECT",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "8\" PIPE AND CONNECT",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "8"
+  },
+  {
+   "bbox": [
+    917.82,
+    163.62,
+    925.09,
+    168.65
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 0.0,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "slope",
+   "line_text": "SLOPE = 2% MIN.",
+   "method": "text-layer",
+   "nearest_tag": "Pipe ID 2",
+   "nearest_tag_rows": [
+    32
+   ],
+   "raw": "2%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "2"
+  },
+  {
+   "bbox": [
+    976.6,
+    173.7,
+    988.06,
+    178.73
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 0.0,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "slope",
+   "line_text": "8\" INFLUENT (DI GRAV.) SLOPE = 0.4% MIN.",
+   "method": "text-layer",
+   "nearest_tag": "Pipe ID 3",
+   "nearest_tag_rows": [
+    33
+   ],
+   "raw": "0.4%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "0.4"
+  },
+  {
+   "bbox": [
+    997.28,
+    298.98,
+    1008.74,
+    304.01
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 0.0,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "slope",
+   "line_text": "8\" TRAIN 3 INFLUENT (DI GRAV.) SLOPE = 0.4% MIN.",
+   "method": "text-layer",
+   "nearest_tag": "Pipe ID 11",
+   "nearest_tag_rows": [
+    41
+   ],
+   "raw": "0.4%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "0.4"
+  },
+  {
+   "bbox": [
+    997.28,
+    324.9,
+    1008.74,
+    329.93
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 0.0,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "slope",
+   "line_text": "8\" TRAIN 2 INFLUENT (DI GRAV.) SLOPE = 0.4% MIN.",
+   "method": "text-layer",
+   "nearest_tag": "Pipe ID 13",
+   "nearest_tag_rows": [
+    43
+   ],
+   "raw": "0.4%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "0.4"
+  },
+  {
+   "bbox": [
+    997.28,
+    337.86,
+    1008.74,
+    342.89
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 0.0,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "slope",
+   "line_text": "8\" TRAIN 1 INFLUENT (DI GRAV.) SLOPE = 0.4% MIN.",
+   "method": "text-layer",
+   "nearest_tag": "Pipe ID 14",
+   "nearest_tag_rows": [
+    44
+   ],
+   "raw": "0.4%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "0.4"
+  },
+  {
+   "bbox": [
+    998.68,
+    364.86,
+    1010.14,
+    369.89
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 0.0,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "slope",
+   "line_text": "8\" TRAIN 2 EFFLUENT (DI GRAV.) SLOPE = 0.4% MIN.",
+   "method": "text-layer",
+   "nearest_tag": "Pipe ID 16",
+   "nearest_tag_rows": [
+    46
+   ],
+   "raw": "0.4%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "0.4"
+  },
+  {
+   "bbox": [
+    998.68,
+    377.82,
+    1010.14,
+    382.85
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 0.0,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "slope",
+   "line_text": "8\" TRAIN 3 EFFLUENT (DI GRAV.) SLOPE = 0.4% MIN.",
+   "method": "text-layer",
+   "nearest_tag": "Pipe ID 17",
+   "nearest_tag_rows": [
+    47
+   ],
+   "raw": "0.4%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "0.4"
+  },
+  {
+   "bbox": [
+    1008.79,
+    263.82,
+    1012.54,
+    268.85
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 0.0,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "1\" 2W WATER SYSTEM AIR VENT (SS) OUTLET 3' ABOVE GRADE WITH",
+   "method": "text-layer",
+   "nearest_tag": "Pipe ID 9",
+   "nearest_tag_rows": [
+    39
+   ],
+   "raw": "3'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "3"
+  },
+  {
+   "bbox": [
+    1011.1,
+    252.9,
+    1022.56,
+    257.93
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 0.0,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "slope",
+   "line_text": "4\" VAULT DRAIN (SCH. 80 PVC GRAV.) SLOPE = 2.0%",
+   "method": "text-layer",
+   "nearest_tag": "Pipe ID 8",
+   "nearest_tag_rows": [
+    38
+   ],
+   "raw": "2.0%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "2.0"
+  },
+  {
+   "bbox": [
+    1021.44,
+    225.78,
+    1028.7,
+    230.81
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 0.0,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "percent",
+   "line_text": "4\" BUILDING SEPTIC (SCH. 80 PVC GRAV.) CLOPE = 2% MIN.",
+   "method": "text-layer",
+   "nearest_tag": "Pipe ID 6",
+   "nearest_tag_rows": [
+    36
+   ],
+   "raw": "2%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "2"
+  },
+  {
+   "bbox": [
+    1023.67,
+    184.62,
+    1027.43,
+    189.65
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 0.0,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "3\" INFLUENT PUMP STATION AIR VENT (SS) OUTLET 8' ABOVE FINISH",
+   "method": "text-layer",
+   "nearest_tag": "Pipe ID 4",
+   "nearest_tag_rows": [
+    34
+   ],
+   "raw": "8'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "8"
+  },
+  {
+   "bbox": [
+    1025.7,
+    212.82,
+    1039.95,
+    217.85
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": 0.0,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "slope",
+   "line_text": "10\" UV DISINFECTION EFFLUENT (DI GRAV.) SLOPE = 0.28% MIN.",
+   "method": "text-layer",
+   "nearest_tag": "Pipe ID 5",
+   "nearest_tag_rows": [
+    35
+   ],
+   "raw": "0.28%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "0.28"
+  }
+ ],
  "schema_version": "1.0",
  "set_page": 17,
  "sheet_01": "C1.3",
@@ -7902,6 +9883,514 @@
   "page": 17,
   "sha256": "9ca45d82bf86d16d3e2ce57eb76dccf597c497a7dc7f062fc7a171c4bc2c8d57"
  },
+ "tags": [
+  {
+   "assignment": "assigned",
+   "bbox": [
+    139.7,
+    580.77,
+    160.03,
+    585.77
+   ],
+   "candidate_rows": [
+    117
+   ],
+   "conf": null,
+   "form": "SDCB#1",
+   "fuzzy": true,
+   "kind": "tag",
+   "ledger_rows": [
+    117
+   ],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "5DCB #1"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    876.48,
+    324.9,
+    1020.75,
+    330.41
+   ],
+   "candidate_rows": [
+    43
+   ],
+   "conf": null,
+   "form": "Pipe ID 13",
+   "fuzzy": false,
+   "kind": "legend",
+   "ledger_rows": [
+    43
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "13: 8\" TRAIN 2 INFLUENT (DI GRAV.) SLOPE 0.4% MIN."
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    876.48,
+    348.78,
+    1062.12,
+    359.93
+   ],
+   "candidate_rows": [
+    45
+   ],
+   "conf": null,
+   "form": "Pipe ID 15",
+   "fuzzy": false,
+   "kind": "legend",
+   "ledger_rows": [
+    45
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "15: 2\" TRAIN 3 WAS (SCH. 80 PVC GRAV.) SLOPE POSITIVE DRAINAGE THROUGHOUT"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    876.48,
+    364.86,
+    1022.15,
+    370.37
+   ],
+   "candidate_rows": [
+    46
+   ],
+   "conf": null,
+   "form": "Pipe ID 16",
+   "fuzzy": false,
+   "kind": "legend",
+   "ledger_rows": [
+    46
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "16: 8\" TRAIN 2 EFFLUENT (DI GRAV.) SLOPE 0.4% MIN."
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    876.48,
+    377.82,
+    1022.15,
+    383.33
+   ],
+   "candidate_rows": [
+    47
+   ],
+   "conf": null,
+   "form": "Pipe ID 17",
+   "fuzzy": false,
+   "kind": "legend",
+   "ledger_rows": [
+    47
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "17: 8\" TRAIN 3 EFFLUENT (DI GRAV.) SLOPE 0.4% MIN."
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    876.48,
+    388.86,
+    1041.15,
+    399.89
+   ],
+   "candidate_rows": [
+    48
+   ],
+   "conf": null,
+   "form": "Pipe ID 18",
+   "fuzzy": false,
+   "kind": "legend",
+   "ledger_rows": [
+    48
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "18: 6\" INFLUENT TO FLOW SPLITTER (DI FM) SLOPE POSITIVE THROUGHOUT"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    876.48,
+    404.94,
+    1018.37,
+    410.45
+   ],
+   "candidate_rows": [
+    49
+   ],
+   "conf": null,
+   "form": "Pipe ID 19",
+   "fuzzy": false,
+   "kind": "legend",
+   "ledger_rows": [
+    49
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "19: 2\" DIGESTER WAS INFLUENT (SCH. 80 PVC GRAV.)"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    876.6,
+    286.02,
+    985.12,
+    291.53
+   ],
+   "candidate_rows": [
+    40
+   ],
+   "conf": null,
+   "form": "Pipe ID 10",
+   "fuzzy": false,
+   "kind": "legend",
+   "ledger_rows": [
+    40
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "10: 2\" 2W WATER LINE (SCH. 80 PVC FM)"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    876.6,
+    311.94,
+    976.46,
+    317.45
+   ],
+   "candidate_rows": [
+    42
+   ],
+   "conf": null,
+   "form": "Pipe ID 12",
+   "fuzzy": false,
+   "kind": "legend",
+   "ledger_rows": [
+    42
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "12: 2\" WATER PIPE (SCH. 80 PVC FM)"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    876.6,
+    337.86,
+    1020.75,
+    343.37
+   ],
+   "candidate_rows": [
+    44
+   ],
+   "conf": null,
+   "form": "Pipe ID 14",
+   "fuzzy": false,
+   "kind": "legend",
+   "ledger_rows": [
+    44
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "14: 8\" TRAIN 1 INFLUENT (DI GRAV.) SLOPE 0.4% MIN."
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    876.72,
+    417.9,
+    939.3,
+    423.41
+   ],
+   "candidate_rows": [
+    50
+   ],
+   "conf": null,
+   "form": "Pipe ID 20",
+   "fuzzy": false,
+   "kind": "legend",
+   "ledger_rows": [
+    50
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "20: 6\" CELL 3 AIR (SS)"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    876.84,
+    298.98,
+    1020.75,
+    304.49
+   ],
+   "candidate_rows": [
+    41
+   ],
+   "conf": null,
+   "form": "Pipe ID 11",
+   "fuzzy": false,
+   "kind": "legend",
+   "ledger_rows": [
+    41
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "11: 8\" TRAIN 3 INFLUENT (DI GRAV.) SLOPE 0.4% MIN."
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    877.08,
+    430.86,
+    948.36,
+    436.37
+   ],
+   "candidate_rows": [
+    51
+   ],
+   "conf": null,
+   "form": "Pipe ID 21",
+   "fuzzy": false,
+   "kind": "legend",
+   "ledger_rows": [
+    51
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "21: 4\" DIGESTER AIR (SS)"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    878.04,
+    212.82,
+    1051.97,
+    218.33
+   ],
+   "candidate_rows": [
+    35
+   ],
+   "conf": null,
+   "form": "Pipe ID 5",
+   "fuzzy": false,
+   "kind": "legend",
+   "ledger_rows": [
+    35
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "5: 10\" UV DISINFECTION EFFLUENT (DI GRAV.) SLOPE 0.28% MIN."
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    878.04,
+    236.82,
+    1040.32,
+    247.85
+   ],
+   "candidate_rows": [
+    37
+   ],
+   "conf": null,
+   "form": "Pipe ID 7",
+   "fuzzy": false,
+   "kind": "legend",
+   "ledger_rows": [
+    37
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "7: 2\" DIGESTED SLUDGE (SCH. 80 PVC FM) SLOPE POSITIVE THROUGHOUT"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    878.04,
+    263.82,
+    1064.79,
+    280.97
+   ],
+   "candidate_rows": [
+    39
+   ],
+   "conf": null,
+   "form": "Pipe ID 9",
+   "fuzzy": false,
+   "kind": "legend",
+   "ledger_rows": [
+    39
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "9: 1\" 2W WATER SYSTEM AIR VENT (SS) OUTLET 3' ABOVE GRADE WITH GOOSENECK POINTING DOWN SLOPE POSITIVE DRAINAGE THROUGHOUT"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    878.16,
+    157.5,
+    1067.09,
+    168.65
+   ],
+   "candidate_rows": [
+    32
+   ],
+   "conf": null,
+   "form": "Pipe ID 2",
+   "fuzzy": false,
+   "kind": "legend",
+   "ledger_rows": [
+    32
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "2: 4\" UV DISINFECTION DRAIN AND DIGESTER SUPERNATANT (DI GRAV.) SLOPE 2% MIN."
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    878.16,
+    173.7,
+    1000.08,
+    179.21
+   ],
+   "candidate_rows": [
+    33
+   ],
+   "conf": null,
+   "form": "Pipe ID 3",
+   "fuzzy": false,
+   "kind": "legend",
+   "ledger_rows": [
+    33
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "3: 8\" INFLUENT (DI GRAV.) SLOPE 0.4% MIN."
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    878.16,
+    184.62,
+    1068.43,
+    207.89
+   ],
+   "candidate_rows": [
+    34
+   ],
+   "conf": null,
+   "form": "Pipe ID 4",
+   "fuzzy": false,
+   "kind": "legend",
+   "ledger_rows": [
+    34
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "4: 3\" INFLUENT PUMP STATION AIR VENT (SS) OUTLET 8' ABOVE FINISH GRADE WITH GOOSENECK POINTING DOWN. ATTACH PIPE SECURELY TO EXTERIOR BUILDING WALL SLOPE POSITIVE DRAINAGE THROUGHOUT"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    878.16,
+    225.78,
+    1040.71,
+    231.29
+   ],
+   "candidate_rows": [
+    36
+   ],
+   "conf": null,
+   "form": "Pipe ID 6",
+   "fuzzy": false,
+   "kind": "legend",
+   "ledger_rows": [
+    36
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "6: 4\" BUILDING SEPTIC (SCH. 80 PVC GRAV.) CLOPE 2% MIN."
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    878.16,
+    252.9,
+    1022.56,
+    258.41
+   ],
+   "candidate_rows": [
+    38
+   ],
+   "conf": null,
+   "form": "Pipe ID 8",
+   "fuzzy": false,
+   "kind": "legend",
+   "ledger_rows": [
+    38
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "8: 4\" VAULT DRAIN (SCH. 80 PVC GRAV.) SLOPE 2.0%"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    878.28,
+    146.46,
+    978.97,
+    152.09
+   ],
+   "candidate_rows": [
+    31
+   ],
+   "conf": null,
+   "form": "Pipe ID 1",
+   "fuzzy": false,
+   "kind": "legend",
+   "ledger_rows": [
+    31
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "1: 8\" EXISTING EFFLUENT (DI GRAV.)"
+  }
+ ],
  "title_01": "SITE PIPING PLAN WITH PIPING ID",
  "title_block": {
   "date": {

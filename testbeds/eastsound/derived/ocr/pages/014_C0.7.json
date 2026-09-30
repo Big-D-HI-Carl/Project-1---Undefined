@@ -14014,7 +14014,7 @@
   "python": "3.11.15",
   "schema_version": "1.0",
   "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script_sha256": "86e4d3e4396f5344d37512fd384afbe1368ca6ea0612d3dbd59f331e0d2061ad",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -14033,6 +14033,43 @@
  },
  "governed_by": null,
  "governs": null,
+ "keyed_notes": [
+  {
+   "bbox": [
+    834.84,
+    47.7,
+    1071.0,
+    110.34
+   ],
+   "count_check": "entry count 1 matches the highest marker read",
+   "entries": [
+    {
+     "basis": "read",
+     "bbox": [
+      834.84,
+      53.64,
+      1071.0,
+      110.34
+     ],
+     "method": "bluebeam-ocr",
+     "number": 1,
+     "number_level": "Inferred",
+     "read_number": "1",
+     "text": "(1) = PROVIDE TEMPORARY 8” PIPING FROM THE EXISTING CHLORINE DISINFECTION / OUTLET (PIPE DIAMETER = 10”) TO THE EXISTING 8” GRAVITY (JUST SEWER (JUST / UPSTREAM OF SSMH 1288). TEMPORARY PIPE IS TO BE FLEXIBLE PIPE HDPE PIPE / WITH RESTRAINED BAUER END END CONNECTIONS OR APPROVED EQUAL. / · ENSURE POSITIVE DRAINAGE FOR FOR TEMPORARY 8” PIPE. MIN SLOPE / POT HOLE EXISTING PIPE PIPE AND AND PROVIDE PLANNED PLANNED ALIGNMENT ALIGNMENT INFORMATION INFORMATION / FOR REVIEW AND APPROVAL, PRIOR PRIOR TO CONSTRUCTION. / · ENSURE WATER TIGHT RESTRAINED CONNECTIONS ARE ARE PROVIDED AT / UPSTREAM AND DOWNSTREAM CONNECTIONS."
+    }
+   ],
+   "heading": "KEYED NOTES",
+   "heading_bbox": [
+    849.42,
+    47.7,
+    888.84,
+    55.98
+   ],
+   "heading_method": "ocr",
+   "highest_marker_read": 1,
+   "line_spacing_p25": 5.94
+  }
+ ],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -14045,6 +14082,658 @@
   "width": 1224.0
  },
  "page_key": "014",
+ "quantities": [
+  {
+   "bbox": [
+    189.9,
+    395.28,
+    194.58,
+    414.18
+   ],
+   "callouts_nearby": [],
+   "conf": 94.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "144.00’",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "144.00'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "144.00"
+  },
+  {
+   "bbox": [
+    190.58,
+    398.12,
+    195.61,
+    414.37
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "144.00'",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "144.00'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "144.00"
+  },
+  {
+   "bbox": [
+    438.2,
+    111.32,
+    443.44,
+    118.33
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "5' EASEMENT TO PORT_______",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "5'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "5"
+  },
+  {
+   "bbox": [
+    472.23,
+    98.09,
+    498.91,
+    103.14
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "W",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "N 88'24’34\" W",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "34\" W",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "34"
+  },
+  {
+   "bbox": [
+    474.48,
+    97.2,
+    507.6,
+    102.24
+   ],
+   "callouts_nearby": [],
+   "conf": 41.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "W",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "88'24’34\" w",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "34\" W",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "34"
+  },
+  {
+   "bbox": [
+    733.32,
+    365.22,
+    738.0,
+    384.12
+   ],
+   "callouts_nearby": [],
+   "conf": 94.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "144.00’ N 1°38°48” E",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "144.00'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "144.00"
+  },
+  {
+   "bbox": [
+    745.79,
+    147.59,
+    752.47,
+    152.6
+   ],
+   "callouts_nearby": [
+    [
+     "3",
+     [
+      725.15,
+      138.44,
+      727.94,
+      143.45
+     ],
+     18.32
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "20’ EASEMENT",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "20'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "20"
+  },
+  {
+   "bbox": [
+    880.91,
+    463.71,
+    911.77,
+    468.77
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "FACILITIES",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "(= PLACE STAGE 3 FACILITIES ON-LINE.",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "3 FACILITIES",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "3"
+  },
+  {
+   "bbox": [
+    881.7,
+    359.31,
+    912.56,
+    364.37
+   ],
+   "callouts_nearby": [
+    [
+     "1",
+     [
+      894.06,
+      359.1,
+      895.5,
+      363.42
+     ],
+     0.0
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "FACILITIES",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "@= WHEN STAGE 1 FACILITIES ARE COMPLETE, TESTED, ACCEPTED AND READY TO BE",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "1 FACILITIES",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "1"
+  },
+  {
+   "bbox": [
+    896.22,
+    449.64,
+    929.88,
+    453.96
+   ],
+   "callouts_nearby": [],
+   "conf": 96.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "FACILITIES",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "@)= PLACE STAGE 2 FACILITIES ON-LINE.",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "2 FACILITIES",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "2"
+  },
+  {
+   "bbox": [
+    896.4,
+    463.5,
+    929.88,
+    467.82
+   ],
+   "callouts_nearby": [],
+   "conf": 95.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "FACILITIES",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "@= PLACE STAGE 3 FACILITIES ON-LINE.",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "3 FACILITIES",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "3"
+  },
+  {
+   "bbox": [
+    925.3,
+    365.85,
+    1002.84,
+    371.0
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "INFLUENT TO NEW INFLUENT",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "PLACED ON-UNE, CONNECT 8” INFLUENT TO NEW INFLUENT PUMP STATION AND",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "8\" INFLUENT TO NEW INFLUENT",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "8"
+  },
+  {
+   "bbox": [
+    935.82,
+    365.22,
+    1022.76,
+    370.08
+   ],
+   "callouts_nearby": [],
+   "conf": 96.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "INFLUENT TO NEW INFLUENT",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "PLACED ON-LINE, CONNECT 8” INFLUENT TO NEW INFLUENT PUMP STATION AND",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "8\" INFLUENT TO NEW INFLUENT",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "8"
+  },
+  {
+   "bbox": [
+    969.01,
+    429.33,
+    1043.59,
+    434.48
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "PIPE IDENTIFIED AS KEYED",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "SYSTEM, PLUG & ABANDON THE TEMPORARY 8\" PIPE (IDENTIFIED AS KEYED NOTE",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "8\" PIPE (IDENTIFIED AS KEYED",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "8"
+  },
+  {
+   "bbox": [
+    972.05,
+    63.09,
+    1035.26,
+    68.21
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "GRAVITY SEWER JUST",
+   "keyed_callouts": [
+    [
+     637.02,
+     323.1,
+     638.28,
+     327.06
+    ],
+    [
+     837.36,
+     758.16,
+     841.86,
+     764.28
+    ],
+    [
+     894.06,
+     359.1,
+     895.5,
+     363.42
+    ],
+    [
+     288.3,
+     283.82,
+     293.32,
+     293.83
+    ],
+    [
+     392.66,
+     308.68,
+     395.67,
+     314.69
+    ],
+    [
+     562.34,
+     544.92,
+     565.13,
+     549.93
+    ]
+   ],
+   "keyed_note": "1 (read; Inferred)",
+   "kind": "size",
+   "line_text": "OUTLET (PIPE DIAMETER = 10\") TO THE EXISTING 8\" GRAVITY SEWER (JUST",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "8\" GRAVITY SEWER (JUST",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "8"
+  },
+  {
+   "bbox": [
+    984.06,
+    428.58,
+    1069.02,
+    434.52
+   ],
+   "callouts_nearby": [],
+   "conf": 95.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "PIPE IDENTIFIED AS KEYED",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "SYSTEM, PLUG & ABANDON THE TEMPORARY 8” PIPE (IDENTIFIED AS KEYED NOTE",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "8\" PIPE (IDENTIFIED AS KEYED",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "8"
+  },
+  {
+   "bbox": [
+    992.34,
+    62.1,
+    1063.44,
+    68.04
+   ],
+   "callouts_nearby": [],
+   "conf": 95.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "GRAVITY SEWER JUST",
+   "keyed_callouts": [
+    [
+     637.02,
+     323.1,
+     638.28,
+     327.06
+    ],
+    [
+     837.36,
+     758.16,
+     841.86,
+     764.28
+    ],
+    [
+     894.06,
+     359.1,
+     895.5,
+     363.42
+    ],
+    [
+     288.3,
+     283.82,
+     293.32,
+     293.83
+    ],
+    [
+     392.66,
+     308.68,
+     395.67,
+     314.69
+    ],
+    [
+     562.34,
+     544.92,
+     565.13,
+     549.93
+    ]
+   ],
+   "keyed_note": "1 (read; Inferred)",
+   "kind": "size",
+   "line_text": "OUTLET (PIPE DIAMETER = 10”) TO THE EXISTING 8” GRAVITY SEWER (JUST",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "8\" GRAVITY SEWER (JUST",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "8"
+  },
+  {
+   "bbox": [
+    1033.1,
+    82.41,
+    1048.72,
+    87.44
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [
+    [
+     637.02,
+     323.1,
+     638.28,
+     327.06
+    ],
+    [
+     837.36,
+     758.16,
+     841.86,
+     764.28
+    ],
+    [
+     894.06,
+     359.1,
+     895.5,
+     363.42
+    ],
+    [
+     288.3,
+     283.82,
+     293.32,
+     293.83
+    ],
+    [
+     392.66,
+     308.68,
+     395.67,
+     314.69
+    ],
+    [
+     562.34,
+     544.92,
+     565.13,
+     549.93
+    ]
+   ],
+   "keyed_note": "1 (read; Inferred)",
+   "kind": "slope",
+   "line_text": "ENSURE POSITIVE DRAINAGE FOR TEMPORARY 8\" PIPE. MIN SLOPE = 0.04%.",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "0.04%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "0.04"
+  },
+  {
+   "bbox": [
+    1057.5,
+    82.08,
+    1074.24,
+    86.4
+   ],
+   "callouts_nearby": [],
+   "conf": 83.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [
+    [
+     637.02,
+     323.1,
+     638.28,
+     327.06
+    ],
+    [
+     837.36,
+     758.16,
+     841.86,
+     764.28
+    ],
+    [
+     894.06,
+     359.1,
+     895.5,
+     363.42
+    ],
+    [
+     288.3,
+     283.82,
+     293.32,
+     293.83
+    ],
+    [
+     392.66,
+     308.68,
+     395.67,
+     314.69
+    ],
+    [
+     562.34,
+     544.92,
+     565.13,
+     549.93
+    ]
+   ],
+   "keyed_note": "1 (read; Inferred)",
+   "kind": "percent",
+   "line_text": "0.04%.",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "0.04%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "0.04"
+  },
+  {
+   "bbox": [
+    1140.14,
+    249.65,
+    1149.16,
+    256.67
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "3‘",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "3'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "3"
+  }
+ ],
  "schema_version": "1.0",
  "set_page": 14,
  "sheet_01": "C0.7",
@@ -14053,6 +14742,29 @@
   "page": 14,
   "sha256": "9ca45d82bf86d16d3e2ce57eb76dccf597c497a7dc7f062fc7a171c4bc2c8d57"
  },
+ "tags": [
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    289.62,
+    705.18,
+    300.46,
+    710.2
+   ],
+   "candidate_rows": [
+    243
+   ],
+   "conf": null,
+   "form": "GEN",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "GEN"
+  }
+ ],
  "title_01": "WWTP INTERIM PLAN OF OPERATION (cover index)",
  "title_block": {
   "date": {

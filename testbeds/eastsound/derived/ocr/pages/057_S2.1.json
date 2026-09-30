@@ -8956,7 +8956,7 @@
   "python": "3.11.15",
   "schema_version": "1.0",
   "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script_sha256": "86e4d3e4396f5344d37512fd384afbe1368ca6ea0612d3dbd59f331e0d2061ad",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -8975,6 +8975,7 @@
  },
  "governed_by": null,
  "governs": null,
+ "keyed_notes": [],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -8987,6 +8988,80 @@
   "width": 1224.0
  },
  "page_key": "057",
+ "quantities": [
+  {
+   "bbox": [
+    934.74,
+    179.82,
+    955.26,
+    183.78
+   ],
+   "callouts_nearby": [],
+   "conf": 96.0,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "BARS",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "GRADE 75 BARS,",
+   "method": "ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "75 BARS",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "75"
+  },
+  {
+   "bbox": [
+    935.3,
+    179.47,
+    957.23,
+    184.47
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "BARS",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "GRADE 75 BARS,",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "75 BARS",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "75"
+  },
+  {
+   "bbox": [
+    1180.44,
+    496.65,
+    1186.44,
+    521.31
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "PLANS",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "TRAIN 3 PLANS & SECTION",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "3 PLANS",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "3"
+  }
+ ],
  "schema_version": "1.0",
  "set_page": 57,
  "sheet_01": "S2.1",
@@ -8995,18 +9070,230 @@
   "page": 9,
   "sha256": "ffe9e975ceb153cab60328a2459d826f96f96e0edaa77e0279a1d27e2e6de5fa"
  },
+ "tags": [
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    160.78,
+    717.32,
+    175.27,
+    722.32
+   ],
+   "candidate_rows": [
+    191
+   ],
+   "conf": null,
+   "form": "S2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "1/S2.1"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    161.1,
+    717.48,
+    174.78,
+    721.08
+   ],
+   "candidate_rows": [
+    191
+   ],
+   "conf": 58.0,
+   "form": "S2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "1/S2.1"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    367.67,
+    376.52,
+    382.11,
+    381.52
+   ],
+   "candidate_rows": [
+    191
+   ],
+   "conf": null,
+   "form": "S2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "2/S2.1"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    458.67,
+    411.82,
+    473.11,
+    416.82
+   ],
+   "candidate_rows": [
+    191
+   ],
+   "conf": null,
+   "form": "S2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "1/S2.1"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    541.9,
+    536.12,
+    552.18,
+    541.12
+   ],
+   "candidate_rows": [
+    191
+   ],
+   "conf": null,
+   "form": "S2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "S2.1"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    794.77,
+    228.92,
+    809.21,
+    233.92
+   ],
+   "candidate_rows": [
+    191
+   ],
+   "conf": null,
+   "form": "S2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "2/S2.1"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    795.35,
+    705.07,
+    805.63,
+    710.07
+   ],
+   "candidate_rows": [
+    191
+   ],
+   "conf": null,
+   "form": "S2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "S2.1"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    936.45,
+    462.67,
+    950.89,
+    467.67
+   ],
+   "candidate_rows": [
+    191
+   ],
+   "conf": null,
+   "form": "S2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "2/S2.1"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    967.77,
+    184.77,
+    982.21,
+    189.77
+   ],
+   "candidate_rows": [
+    191
+   ],
+   "conf": null,
+   "form": "S2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "5/S2.1"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    1132.23,
+    730.13,
+    1146.23,
+    758.9
+   ],
+   "candidate_rows": [
+    191
+   ],
+   "conf": null,
+   "form": "S2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "bluebeam-ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "S2.1"
+  }
+ ],
  "title_01": "TRAIN 3 PLANS & SECTION",
  "title_block": {
   "date": {
    "bbox": [
-    1132.2,
+    1132.08,
     680.4,
-    1135.8,
-    707.76
+    1135.92,
+    708.0
    ],
-   "conf": 95.0,
+   "conf": 96.0,
    "method": "ocr",
-   "strip_dpi": 200,
+   "strip_dpi": 300,
    "value": "10-15-2021"
   },
   "page_of": {

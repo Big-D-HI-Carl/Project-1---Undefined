@@ -1360,7 +1360,7 @@
   "python": "3.11.15",
   "schema_version": "1.0",
   "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script_sha256": "86e4d3e4396f5344d37512fd384afbe1368ca6ea0612d3dbd59f331e0d2061ad",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -1379,6 +1379,71 @@
  },
  "governed_by": null,
  "governs": null,
+ "keyed_notes": [
+  {
+   "bbox": [
+    842.58,
+    45.99,
+    1126.08,
+    132.35
+   ],
+   "count_check": "entry count 3 matches the highest marker read",
+   "entries": [
+    {
+     "basis": "read",
+     "bbox": [
+      842.58,
+      59.22,
+      1102.14,
+      77.81
+     ],
+     "method": "ocr",
+     "number": 1,
+     "number_level": "Verified",
+     "read_number": "1",
+     "text": "1 PROVIDE 120V BLOWER FAN CIRCUIT FROM EACH MCC FOR EACH BLOWER. BASIS M2 / OF DESIGN: FAN RATING 0.21HP AND 1.51 AMP PER FAN. CONFIRM WITH / MANUFACTURER DURING SUBMITTALS."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      842.58,
+      84.84,
+      1126.08,
+      114.17
+     ],
+     "method": "ocr",
+     "number": 2,
+     "number_level": "Verified",
+     "read_number": "2",
+     "text": "2 OPERATIONAL REQUIREMENTS: IN HAND, SPEED CONTROL SHALL BE SELECTED / FROM SPEED POTENTIOMETER ON MCC DOOR OR FIELD PANEL. IN AUTO, SPEED Na 5m / COMMAND AND SPEED FEEDBACK SHALL BE DIRECT TO THE PLC VIA THE ETHERNET / COMMUNICATIONS PORT. HARDWIRING NOT REQUIRED FOR ANALOG SPEED / COMMAND OR FEEDBACK."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      842.58,
+      120.48,
+      1068.27,
+      132.35
+     ],
+     "method": "text-layer",
+     "number": 3,
+     "number_level": "Verified",
+     "read_number": "3",
+     "text": "3 / WIRE MOTOR THERMAL CONTACT TO EACH VFD WHERE AVAILABLE. JUMPER / TERMINALS WHEN NOT PROVIDED WITH MOTOR."
+    }
+   ],
+   "heading": "KEY NOTES:",
+   "heading_bbox": [
+    855.0,
+    45.99,
+    900.27,
+    53.53
+   ],
+   "heading_method": "text-layer",
+   "highest_marker_read": 3,
+   "line_spacing_p25": 6.12
+  }
+ ],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -1391,6 +1456,91 @@
   "width": 1224.0
  },
  "page_key": "092",
+ "quantities": [
+  {
+   "bbox": [
+    297.9,
+    195.18,
+    305.17,
+    200.21
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "percent",
+   "line_text": "3% LINE",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "3%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "3"
+  },
+  {
+   "bbox": [
+    297.9,
+    474.18,
+    320.68,
+    479.21
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": ">50 FEET",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "50 FEET",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "50"
+  },
+  {
+   "bbox": [
+    679.17,
+    339.54,
+    707.4,
+    344.57
+   ],
+   "callouts_nearby": [
+    [
+     "3",
+     [
+      703.44,
+      322.08,
+      706.24,
+      327.11
+     ],
+     12.43
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "SERIES",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "count",
+   "line_text": "POWERFLEX 753 SERIES VFD",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "753 SERIES",
+   "tag_level": "Inferred",
+   "unit": "EA",
+   "value": "753"
+  }
+ ],
  "schema_version": "1.0",
  "set_page": 92,
  "sheet_01": "E9.2",
@@ -1399,6 +1549,270 @@
   "page": 44,
   "sha256": "ffe9e975ceb153cab60328a2459d826f96f96e0edaa77e0279a1d27e2e6de5fa"
  },
+ "tags": [
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    159.3,
+    105.0,
+    164.89,
+    110.03
+   ],
+   "candidate_rows": [
+    277
+   ],
+   "conf": null,
+   "form": "L1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "L1"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    159.3,
+    122.82,
+    164.89,
+    127.85
+   ],
+   "candidate_rows": [
+    278,
+    330
+   ],
+   "conf": null,
+   "form": "L2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "L2"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    244.44,
+    271.02,
+    249.94,
+    275.97
+   ],
+   "candidate_rows": [
+    277
+   ],
+   "conf": null,
+   "form": "L1",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "L1"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    261.9,
+    414.3,
+    267.68,
+    419.25
+   ],
+   "candidate_rows": [
+    350
+   ],
+   "conf": null,
+   "form": "T2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "T2"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    262.08,
+    271.02,
+    267.58,
+    275.97
+   ],
+   "candidate_rows": [
+    278,
+    330
+   ],
+   "conf": null,
+   "form": "L2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "L2"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    266.04,
+    555.36,
+    271.91,
+    560.39
+   ],
+   "candidate_rows": [
+    350
+   ],
+   "conf": null,
+   "form": "T2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "T2"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    279.72,
+    414.3,
+    285.5,
+    419.25
+   ],
+   "candidate_rows": [
+    298
+   ],
+   "conf": null,
+   "form": "T3",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "T3"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    283.68,
+    555.36,
+    289.55,
+    560.39
+   ],
+   "candidate_rows": [
+    298
+   ],
+   "conf": null,
+   "form": "T3",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "T3"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    341.46,
+    286.08,
+    352.91,
+    291.11
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    736.38,
+    166.74,
+    747.83,
+    171.77
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    946.8,
+    90.96,
+    958.25,
+    95.99
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    984.42,
+    60.72,
+    995.87,
+    65.75
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "MCC"
+  }
+ ],
  "title_01": "BLOWER BUILDING MOTOR CONTROL CENTER - VFD WIRING DIAGRAMS",
  "title_block": {
   "date": {

@@ -2530,7 +2530,7 @@
   "python": "3.11.15",
   "schema_version": "1.0",
   "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script_sha256": "86e4d3e4396f5344d37512fd384afbe1368ca6ea0612d3dbd59f331e0d2061ad",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -2549,6 +2549,85 @@
  },
  "governed_by": null,
  "governs": null,
+ "keyed_notes": [
+  {
+   "bbox": [
+    826.38,
+    109.17,
+    1065.44,
+    219.83
+   ],
+   "count_check": "entry count 4 matches the highest marker read",
+   "entries": [
+    {
+     "basis": "read",
+     "bbox": [
+      826.38,
+      124.08,
+      1065.23,
+      153.23
+     ],
+     "method": "text-layer",
+     "number": 1,
+     "number_level": "Verified",
+     "read_number": "1",
+     "text": "PROVIDE INFLUENT PUMP STATION CONTROL PANEL FOR LOCAL CONTROL OF INFLUENT / 1 / PUMPS, SEAL FAIL AND OVERTEMP WIRING, AND INSTRUMENTATION. MOUNT CONTROLS / AND INDICATORS ON INTERNAL SWING OUT DOOR, LOCKABLE OUTSIDE DOOR. SYSTEM / INTEGRATOR SHALL SIZE CONTROL PANEL TO ACCOMMODATE ALL CONTROLS AND / EQUIPMENT REQUIRED."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      826.38,
+      160.08,
+      1065.26,
+      177.53
+     ],
+     "method": "text-layer",
+     "number": 2,
+     "number_level": "Verified",
+     "read_number": "2",
+     "text": "2 PROVIDE FLOW METER TRANSMITTERS FOR THE FOLLOWING LOCATIONS: INFLUENT, CELL / 1 (FUTURE SPACE), CELL 2, CELL 3, PLANT DRAIN. SYSTEM INTEGRATOR SHALL SIZE / CONTROL PANEL TO ACCOMMODATE ALL CONTROLS AND EQUIPMENT REQUIRED."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      826.38,
+      184.38,
+      1065.44,
+      201.65
+     ],
+     "method": "text-layer",
+     "number": 3,
+     "number_level": "Verified",
+     "read_number": "3",
+     "text": "3 INSTALL SEAL FAIL AND OVERTEMP RELAYS AS PROVIDED BY PUMP MANUFACTURER; / MINI-CAS OR EQUAL. SYSTEM INTEGRATOR SHALL COORDINATE WITH PUMP SUPPLIER / FOR RELAYS."
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      826.38,
+      208.68,
+      1064.52,
+      219.83
+     ],
+     "method": "text-layer",
+     "number": 4,
+     "number_level": "Verified",
+     "read_number": "4",
+     "text": "4 ALL FIELD CONDUITS NOT SHOWN. CONTRACTOR SHALL ROUTE ALL RACEWAY SHOWN ON / THE PLANS TO THE INFLUENT CONTROL PANEL."
+    }
+   ],
+   "heading": "KEY NOTES:",
+   "heading_bbox": [
+    835.56,
+    109.17,
+    880.83,
+    116.71
+   ],
+   "heading_method": "text-layer",
+   "highest_marker_read": 4,
+   "line_spacing_p25": 6.12
+  }
+ ],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -2561,6 +2640,7 @@
   "width": 1224.0
  },
  "page_key": "085",
+ "quantities": [],
  "schema_version": "1.0",
  "set_page": 85,
  "sheet_01": "E8.1",
@@ -2569,6 +2649,52 @@
   "page": 37,
   "sha256": "ffe9e975ceb153cab60328a2459d826f96f96e0edaa77e0279a1d27e2e6de5fa"
  },
+ "tags": [
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    750.24,
+    725.46,
+    761.69,
+    730.49
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "MCC"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    887.17,
+    488.4,
+    896.12,
+    493.43
+   ],
+   "candidate_rows": [
+    299
+   ],
+   "conf": null,
+   "form": "LP2",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    299
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "LP2"
+  }
+ ],
  "title_01": "INFLUENT PUMP STATION CONTROL PANEL ELEVATIONS",
  "title_block": {
   "date": {

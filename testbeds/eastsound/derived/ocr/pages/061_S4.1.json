@@ -20062,7 +20062,7 @@
   "python": "3.11.15",
   "schema_version": "1.0",
   "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script_sha256": "86e4d3e4396f5344d37512fd384afbe1368ca6ea0612d3dbd59f331e0d2061ad",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -20086,6 +20086,7 @@
   "page_key": "add4_p10"
  },
  "governs": null,
+ "keyed_notes": [],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -20098,6 +20099,77 @@
   "width": 1224.0
  },
  "page_key": "061",
+ "quantities": [
+  {
+   "bbox": [
+    511.7,
+    319.21,
+    530.49,
+    332.21
+   ],
+   "callouts_nearby": [
+    [
+     "6",
+     [
+      507.6,
+      312.3,
+      510.66,
+      315.36
+     ],
+     3.99
+    ],
+    [
+     "7",
+     [
+      490.32,
+      343.98,
+      497.52,
+      354.06
+     ],
+     18.43
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "percent",
+   "line_text": "Sto, 4%",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4%",
+   "tag_level": "Inferred",
+   "unit": "%",
+   "value": "4"
+  },
+  {
+   "bbox": [
+    858.7,
+    590.37,
+    862.59,
+    595.37
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "4‘",
+   "method": "bluebeam-ocr",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "4'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "4"
+  }
+ ],
  "schema_version": "1.0",
  "set_page": 61,
  "sheet_01": "S4.1",
@@ -20106,18 +20178,19 @@
   "page": 13,
   "sha256": "ffe9e975ceb153cab60328a2459d826f96f96e0edaa77e0279a1d27e2e6de5fa"
  },
+ "tags": [],
  "title_01": "TYP STRUCTURAL DETAILS",
  "title_block": {
   "date": {
    "bbox": [
-    1132.2,
+    1132.08,
     680.4,
-    1135.8,
-    707.76
+    1135.92,
+    708.0
    ],
-   "conf": 95.0,
+   "conf": 96.0,
    "method": "ocr",
-   "strip_dpi": 200,
+   "strip_dpi": 300,
    "value": "10-15-2021"
   },
   "page_of": {

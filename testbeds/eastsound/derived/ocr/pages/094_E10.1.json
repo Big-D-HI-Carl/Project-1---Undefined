@@ -1108,7 +1108,7 @@
   "python": "3.11.15",
   "schema_version": "1.0",
   "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script_sha256": "86e4d3e4396f5344d37512fd384afbe1368ca6ea0612d3dbd59f331e0d2061ad",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -1127,6 +1127,7 @@
  },
  "governed_by": null,
  "governs": null,
+ "keyed_notes": [],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -1139,6 +1140,235 @@
   "width": 1224.0
  },
  "page_key": "094",
+ "quantities": [
+  {
+   "bbox": [
+    159.7,
+    661.38,
+    258.72,
+    666.41
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "MIN. SEPARATION BETWEEN WATER",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "MAINTAIN 12\" MIN. SEPARATION BETWEEN WATER UTILITIES.",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "12\" MIN. SEPARATION BETWEEN WATER",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "12"
+  },
+  {
+   "bbox": [
+    361.98,
+    280.32,
+    421.87,
+    285.35
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "DIA. GROUND ROD",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "(2)-1\" DIA. GROUND ROD",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "1\" DIA. GROUND ROD",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "1"
+  },
+  {
+   "bbox": [
+    362.34,
+    125.88,
+    418.05,
+    130.91
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "DIA SUMP. PROVIDE",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "6\" DIA SUMP. PROVIDE",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "6\" DIA SUMP. PROVIDE",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "6"
+  },
+  {
+   "bbox": [
+    509.58,
+    278.34,
+    513.34,
+    283.37
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "3'",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "3'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "3"
+  },
+  {
+   "bbox": [
+    592.2,
+    219.12,
+    595.96,
+    224.15
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "2'",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "2'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "2"
+  },
+  {
+   "bbox": [
+    752.4,
+    165.48,
+    780.17,
+    170.51
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "DIA.",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "(4)-3/4\" DIA.",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "3/4\" DIA.",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "3/4"
+  },
+  {
+   "bbox": [
+    810.36,
+    271.14,
+    866.07,
+    276.17
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "DIA SUMP. PROVIDE",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "size",
+   "line_text": "6\" DIA SUMP. PROVIDE",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "6\" DIA SUMP. PROVIDE",
+   "tag_level": "Inferred",
+   "unit": "IN",
+   "value": "6"
+  },
+  {
+   "bbox": [
+    849.42,
+    182.22,
+    853.18,
+    187.25
+   ],
+   "callouts_nearby": [
+    [
+     "7",
+     [
+      869.09,
+      175.23,
+      881.09,
+      181.9
+     ],
+     15.91
+    ]
+   ],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "3'",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "3'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "3"
+  },
+  {
+   "bbox": [
+    982.26,
+    194.64,
+    986.02,
+    199.67
+   ],
+   "callouts_nearby": [],
+   "conf": null,
+   "detail_refs_nearby": [],
+   "distance": null,
+   "item": "",
+   "keyed_callouts": [],
+   "keyed_note": null,
+   "kind": "length",
+   "line_text": "8' LONG MINIMUM",
+   "method": "text-layer",
+   "nearest_tag": "none",
+   "nearest_tag_rows": [],
+   "raw": "8'",
+   "tag_level": "Inferred",
+   "unit": "FT",
+   "value": "8"
+  }
+ ],
  "schema_version": "1.0",
  "set_page": 94,
  "sheet_01": "E10.1",
@@ -1147,6 +1377,7 @@
   "page": 46,
   "sha256": "ffe9e975ceb153cab60328a2459d826f96f96e0edaa77e0279a1d27e2e6de5fa"
  },
+ "tags": [],
  "title_01": "ELECTRICAL DETAILS - SHEET 1",
  "title_block": {
   "date": {

@@ -7696,7 +7696,7 @@
   "python": "3.11.15",
   "schema_version": "1.0",
   "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script_sha256": "86e4d3e4396f5344d37512fd384afbe1368ca6ea0612d3dbd59f331e0d2061ad",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -7715,6 +7715,57 @@
  },
  "governed_by": null,
  "governs": null,
+ "keyed_notes": [
+  {
+   "bbox": [
+    997.74,
+    207.82,
+    1095.3,
+    238.14
+   ],
+   "count_check": "entry count 2 matches the highest marker read",
+   "entries": [
+    {
+     "basis": "read",
+     "bbox": [
+      997.74,
+      213.48,
+      1042.74,
+      223.92
+     ],
+     "method": "ocr",
+     "number": 1,
+     "number_level": "Inferred",
+     "read_number": "1",
+     "text": "(1) STAGING / ="
+    },
+    {
+     "basis": "read",
+     "bbox": [
+      997.74,
+      227.88,
+      1095.3,
+      238.14
+     ],
+     "method": "ocr",
+     "number": 2,
+     "number_level": "Inferred",
+     "read_number": "2",
+     "text": "(2) = EXISTING VEGETATED DITCH"
+    }
+   ],
+   "heading": "KEYED NOTES",
+   "heading_bbox": [
+    1012.55,
+    207.82,
+    1048.35,
+    212.82
+   ],
+   "heading_method": "bluebeam-ocr",
+   "highest_marker_read": 2,
+   "line_spacing_p25": 14.31
+  }
+ ],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -7727,6 +7778,7 @@
   "width": 1224.0
  },
  "page_key": "013",
+ "quantities": [],
  "schema_version": "1.0",
  "set_page": 13,
  "sheet_01": "C0.6",
@@ -7735,6 +7787,29 @@
   "page": 13,
   "sha256": "9ca45d82bf86d16d3e2ce57eb76dccf597c497a7dc7f062fc7a171c4bc2c8d57"
  },
+ "tags": [
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    211.86,
+    55.26,
+    222.66,
+    68.22
+   ],
+   "candidate_rows": [
+    191
+   ],
+   "conf": 28.0,
+   "form": "S1",
+   "fuzzy": true,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "SI"
+  }
+ ],
  "title_01": "STAGING PLAN",
  "title_block": {
   "date": {

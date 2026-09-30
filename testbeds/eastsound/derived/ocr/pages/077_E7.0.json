@@ -3052,7 +3052,7 @@
   "python": "3.11.15",
   "schema_version": "1.0",
   "script": "tools/extract_drawing_text.py",
-  "script_sha256": "db0d72c27a8f080e9191c0ec05538a4a80288ea7bc11b286eb897bc46f7be671",
+  "script_sha256": "86e4d3e4396f5344d37512fd384afbe1368ca6ea0612d3dbd59f331e0d2061ad",
   "sub_pt_drop": 1.0,
   "tesseract": [
    "tesseract 5.3.4",
@@ -3071,6 +3071,7 @@
  },
  "governed_by": null,
  "governs": null,
+ "keyed_notes": [],
  "page": {
   "height": 792.0,
   "mediabox": [
@@ -3083,6 +3084,7 @@
   "width": 1224.0
  },
  "page_key": "077",
+ "quantities": [],
  "schema_version": "1.0",
  "set_page": 77,
  "sheet_01": "E7.0",
@@ -3091,6 +3093,123 @@
   "page": 29,
   "sha256": "ffe9e975ceb153cab60328a2459d826f96f96e0edaa77e0279a1d27e2e6de5fa"
  },
+ "tags": [
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    106.74,
+    261.54,
+    112.68,
+    277.74
+   ],
+   "candidate_rows": [
+    167,
+    174,
+    292
+   ],
+   "conf": 15.0,
+   "form": "F1",
+   "fuzzy": true,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "fi"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    107.1,
+    281.58,
+    118.55,
+    286.61
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "MCC"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    234.54,
+    639.72,
+    239.76,
+    649.62
+   ],
+   "candidate_rows": [
+    167,
+    174,
+    292
+   ],
+   "conf": 61.0,
+   "form": "F1",
+   "fuzzy": true,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "fi}"
+  },
+  {
+   "assignment": "assigned",
+   "bbox": [
+    477.54,
+    383.1,
+    488.99,
+    388.13
+   ],
+   "candidate_rows": [
+    263
+   ],
+   "conf": null,
+   "form": "MCC",
+   "fuzzy": false,
+   "kind": "tag",
+   "ledger_rows": [
+    263
+   ],
+   "method": "text-layer",
+   "rollup_rows": [],
+   "tag_level": "Verified",
+   "text": "MCC"
+  },
+  {
+   "assignment": "off-citation, short form",
+   "bbox": [
+    641.16,
+    199.26,
+    646.38,
+    209.16
+   ],
+   "candidate_rows": [
+    167,
+    174,
+    292
+   ],
+   "conf": 47.0,
+   "form": "F1",
+   "fuzzy": true,
+   "kind": "tag",
+   "ledger_rows": [],
+   "method": "ocr",
+   "rollup_rows": [],
+   "tag_level": "Inferred",
+   "text": "fi"
+  }
+ ],
  "title_01": "CONTROL SYSTEM OVERVIEW",
  "title_block": {
   "date": {
