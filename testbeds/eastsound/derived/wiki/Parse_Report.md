@@ -64,7 +64,7 @@ python testbeds/eastsound/tools/parse_wiki.py
 
 ## Equipment tags and the Ledger
 
-- Equipment tag links: 1593 (tag line 1309, body text 239).
+- Equipment tag links: 1593 (tag line 1309, related documents 45, body text 239).
 - With a Ledger ID: 735 links, 217 distinct Ledger IDs (134 of 135 printed-tag rows; 83 PROPOSED rows).
 - 114 matched links point to a Ledger row whose Wiki Note(s) does not name this note. They are listed in Wiki_Links.csv (Basis column) for Merge to check; no Ledger change is made here.
 - Printed-tag Ledger rows not found in any note: 1.

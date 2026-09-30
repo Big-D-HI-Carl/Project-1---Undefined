@@ -837,8 +837,8 @@ def make_report(lines, index, notes, note_fail, links, b, ledger, aligned, id_ro
     amb = [r for r in matched if "; " in r["Ledger ID"]]
     ids = {x for r in matched for x in r["Ledger ID"].split("; ")}
     printed_ids = {r["Ledger ID"] for r in id_rows if not r["Tag"].startswith("PROPOSED-")}
-    w(f"- Equipment tag links: {len(eq)} (tag line {sum(1 for r in eq if r['Source'] == 'tag line')}, body text "
-      f"{sum(1 for r in eq if r['Source'] == 'body text')}).")
+    w(f"- Equipment tag links: {len(eq)} (" + ", ".join(f"{s} {sum(1 for r in eq if r['Source'] == s)}"
+                                                      for s in SOURCES) + ").")
     w(f"- With a Ledger ID: {len(matched)} links, {len(ids)} distinct Ledger IDs "
       f"({len(ids & printed_ids)} of {len(printed_ids)} printed-tag rows; {len(ids - printed_ids)} PROPOSED rows).")
     nc = sum(1 for r in matched if "does not cite this note" in r["Basis"])
