@@ -156,11 +156,13 @@ Rebuild from the repo root (stdlib only): `python testbeds/eastsound/tools/build
 | Issues_Log.csv #85: Structural & Building: 23 open document issues await Engineer or Owner rulings; highest… | 1 | roll-up; each Part B row names this entry |
 | Issues_Log.csv #86: Contract & General: 31 open document issues await Engineer or Owner rulings; highest… | 1 | roll-up; each Part B row names this entry |
 | Issues_Log.csv #87: Merge rev2 (2026-09-29): re-merged with the updated Electrical & Controls and Contract &… | 1 | not open (Logged) |
+| ISSUES_LOG.md (Open): AGENTS.md Layout doesn't list derived/issues/ | 1 | repo housekeeping (repo layout) |
 | ISSUES_LOG.md (Open): Add. 4 S-sheet reissues carry a revision entry; 01 item 12 says they don't | 1 | folded into OI-0006 |
 | ISSUES_LOG.md (Open): Index and library notes call the 9 no-text-layer sheets "image-only" | 1 | repo housekeeping (index wording) |
 | ISSUES_LOG.md (Open): Ledger Tag uniqueness (checks.py, ledger_to_graph.py) conflicts with decision A | 1 | repo housekeeping (tools and schema) |
 | ISSUES_LOG.md (Open): Ledger Tag uniqueness: graph part corrected after PR #9 | 1 | repo housekeeping (tools and schema) |
 | ISSUES_LOG.md (Open): Ledger Wiki Note "CQA Plan" has no Project Wiki note | 1 | repo housekeeping (Wiki link) |
+| ISSUES_LOG.md (Open): Merge Issues Log still lists the 10 native-only sheets as missing | 1 | repo housekeeping (Merge log upkeep; Issues_Log.csv #8 is left out, #56 and #57 carry the note) |
 | ISSUES_LOG.md (Open): Native library files don't match Library_Fingerprint.csv (expected) | 1 | repo housekeeping (library fingerprints) |
 | ISSUES_LOG.md (Open): Project_Ledger.csv repeats two Tags | 1 | folded into OI-0112, OI-0122 |
 | ISSUES_LOG.md (Open): Prompt 3 as written doesn't match the repo after the reorg | 1 | repo housekeeping (prompt) |
@@ -197,4 +199,4 @@ Project_Known_Issues.md Part A (method themes), Part C (settled) and Part D (car
 | testbeds/eastsound/project/03_Exceptions_and_Issues/Project_Known_Issues.md | b6fe27eefcbea07749724635e01d8c760aef3230f7c94e75b82f614e05a593e5 |
 | testbeds/eastsound/project/03_Exceptions_and_Issues/Issues_Log.csv | 4f819a23d5e9e7cf3778564f619d96543d320f1e12265e39bf3ed4a31f7798e3 |
 | testbeds/eastsound/project/02_Project_Ledger/Project_Ledger.csv | 0ed3af5640881f6fe2551b982d44653ddd92629cbcb5d47d68280a3ae6683e31 |
-| ISSUES_LOG.md | 4b7330296f9d2db91ab89a77090e1e6e05e3169fd8c2cefe8c30b85be8a92af9 |
+| ISSUES_LOG.md | ad020d0091dee05c9063cfd7be81f01ec22e81d875740b8035214b41ca57f9f6 |

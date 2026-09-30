@@ -293,6 +293,9 @@ ISS_EXCLUDE = {
     "Read Method for the 10 native-only sheets is provisional": "index read method",
     "Ledger Tag uniqueness (checks.py, ledger_to_graph.py) conflicts with decision A": "tools and schema",
     "Ledger Tag uniqueness: graph part corrected after PR #9": "tools and schema",
+    "Merge Issues Log still lists the 10 native-only sheets as missing": "Merge log upkeep; Issues_Log.csv #8 is "
+                                                                         "left out, #56 and #57 carry the note",
+    "AGENTS.md Layout doesn't list derived/issues/": "repo layout",
 }
 
 
