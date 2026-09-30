@@ -333,3 +333,14 @@ Append-only. Repo and program issues, in the format in AGENTS.md. The test bed's
   - **Earthwork.** C0.2 states cut 3382 CY and fill 1598 CY; the Ledger has no earthwork row.
   - **Panel schedules.** The E6.2 and E2.2 schedules are embedded images, so any Ledger fact from them is at best Verified-Visual.
 - Fix or next action: Carl decides the fence and the RFI. Merge carries all five into the test bed's Issues Log and resolves them in the next Ledger revision.
+
+## 2026-09-30 — Ledger Tag uniqueness: graph part corrected after PR #9 — Open
+- Workstream: Repo setup
+- Type: design gap
+- Finding: Corrects the 2026-09-30 Open entry "Ledger Tag uniqueness (checks.py, ledger_to_graph.py) conflicts with decision A".
+  - That entry said `ledger_to_graph.py` "uses the Tag as the node ID, so the two SD-1 rows become one graph node". This was true at the branch base (b8e1313).
+  - It is no longer true after PR #9 (ce488d5). A Tag on more than one row is now keyed `<Tag> [L<line>]`, so `SD-1 [L74]` and `SD-1 [L316]` are separate nodes with no link between them (`NO_SAME_TAG`).
+  - The checks.py part of that entry stands.
+- Fix or next action: Still open, as proposed in `testbeds/eastsound/derived/reconciliation/Ledger_Schema_rev1_Proposal.md` (impact row updated in 599a869):
+  - checks.py checks a unique Ledger ID instead of a unique Tag.
+  - ledger_to_graph.py keys every node on Ledger ID and drops `NO_SAME_TAG`.

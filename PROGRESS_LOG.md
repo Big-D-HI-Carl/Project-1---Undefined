@@ -369,3 +369,19 @@ Append-only. One entry per session, in the format in AGENTS.md. Never edit or de
   - Logged in ISSUES_LOG.
 - Next:
   - Carl reviews the draft PR. He marks Needs_Check.csv, decides the fence conflict, the GEN RFI, the Hot Box duplicates and schema rev1 (with the checks.py and ledger_to_graph.py changes it implies), then approves the Ledger update step.
+
+## 2026-09-30 — Prompt 9 follow-up before PR #10 merge
+- Runtime: Claude Code
+- Commits: ea27a87..HEAD on `claude/vigilant-albattani-h4lspn` (PR #10)
+- Done:
+  - Merged main (PR #9, ce488d5) into the branch (ea27a87). In the three logs, main's entries come first and this branch's follow, byte for byte. PR #9 did not change AGENTS.md.
+  - `testbeds/eastsound/derived/reconciliation/Ledger_Schema_rev1_Proposal.md`: the ledger_to_graph.py impact row now says the two SD-1 rows are separate nodes (`<Tag> [L<line>]`, from PR #9). The switch to Ledger ID is still pending (599a869).
+  - ISSUES_LOG: a correction entry for the stale graph line in "Ledger Tag uniqueness (checks.py, ledger_to_graph.py) conflicts with decision A".
+- Tests:
+  - A script compared each merged log with origin/main and with this branch's additions → 3 of 3 exact, and AGENTS.md unchanged.
+  - `python3 testbeds/eastsound/tools/build_reconciliation.py` → 25 of 25 tie-outs pass. A second run to a temp folder → 6 of 6 generated files identical to the committed ones (`cmp`). PR #9 changed none of this step's inputs.
+  - `python3 tools/checks.py --all` → 0 FAIL, 3 WARN.
+  - The hook's `--staged` → 0 FAIL on each commit.
+  - `--range origin/main..HEAD` → result in the PR #10 description.
+- Failures and fixes: none
+- Next: Carl merges PR #10.
