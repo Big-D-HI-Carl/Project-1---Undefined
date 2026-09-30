@@ -11,8 +11,9 @@ Rules:
                      notes; a new source needs its Library_Manifest.csv row in
                      the same commit
   append-only-logs   PROGRESS_LOG.md, DECISIONS.md, ISSUES_LOG.md: additions only
-  ledger             *Ledger*.csv: UTF-8 without BOM, the Ledger_Schema.csv
-                     header, full rows, unique non-empty Tag, a valid tag word
+  ledger             *Ledger*.csv under a test bed's project/ or lanes/ folder:
+                     UTF-8 without BOM, the Ledger_Schema.csv header, full rows,
+                     unique non-empty Tag, a valid tag word
   unsafe-file        over 50 MB, secret-like names, anything under _inbox/ or
                      .datagate/
   data-gate          text files against the local .datagate/blocklist.txt
@@ -293,7 +294,13 @@ def check_append_only_logs(git: Git, unit: Unit) -> list[Finding]:
 
 
 def is_ledger(path: str) -> bool:
-    name = path.rsplit("/", 1)[-1].lower()
+    """A Project or lane Ledger: *ledger*.csv under testbeds/<bed>/project/ or lanes/.
+    Other files that carry "Ledger" in their name (a crosswalk keyed on Ledger rows,
+    for example) are not Ledgers."""
+    parts = path.lower().split("/")
+    if len(parts) < 4 or parts[0] != "testbeds" or parts[2] not in ("project", "lanes"):
+        return False
+    name = parts[-1]
     return fnmatch.fnmatchcase(name, "*ledger*.csv") and name != "ledger_schema.csv"
 
 
