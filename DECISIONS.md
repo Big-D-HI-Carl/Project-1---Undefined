@@ -230,3 +230,13 @@ Append-only. Decisions made by a person, in the format in AGENTS.md. Never edit 
 - Decided by: Carl
 - Why: Stated in this session: "Put the script at testbeds/eastsound/tools/build_reconciliation.py (DECISIONS: test bed tools live there). This is my request; outputs stay in derived/reconciliation/."
 - Replaces: none
+
+## 2026-09-30 — The open-items list lives in derived/issues/, built by testbeds/eastsound/tools/build_open_items.py
+- Decided by: Carl
+- Why: Stated in this session: "Your folder: testbeds/eastsound/derived/issues/. Script: testbeds/eastsound/tools/build_open_items.py (my request)."
+- Replaces: none
+
+## 2026-09-30 — Open-items rules approved: RFI typing, PROPOSED approvals left out, weakest-tag confidence
+- Decided by: Carl
+- Why: Stated in this session: "Your three judgment calls are approved as-is (RFI typing, leaving out the 312 PROPOSED approvals, weakest-tag confidence)."
+- Replaces: none
