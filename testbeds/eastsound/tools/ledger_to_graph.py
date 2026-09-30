@@ -215,7 +215,8 @@ ITEM_FIELDS = {"Area/Building": "area", "Discipline": "discipline", "Status": "s
                "Testing/Startup Req (Y/N)": "testing_startup_req"}
 DOC_TYPES = {"sheet": "sheet", "spec": "spec", "addendum": "addendum", "note": "note"}
 # Fields a repeated link adds to (rule 8); the rest keep the first link's value.
-MERGE_FIELDS = ("value", "note", "wiki_source", "wiki_confidence", "source_location")
+MERGE_FIELDS = ("value", "note", "wiki_source", "wiki_confidence", "source_location",
+                "wiki_line", "written_as", "basis")
 
 
 def norm(header: str) -> str:
@@ -432,6 +433,8 @@ def add_wiki_notes(g: Graph, notes: Input, wiki_ids: set[str]) -> None:
             attrs.pop(key, None)
         if "type" in attrs:
             attrs["note_type"] = attrs.pop("type")
+        for key in [k for k in attrs if k.startswith("summary_")]:  # "Summary (first 600 …)"
+            attrs.setdefault("summary", attrs.pop(key))
         node.update({k: v for k, v in attrs.items() if k not in node})
         node.update({"source_file": notes.rel, "source_location": f"L{line}",
                      "wiki_note_found": True})
@@ -465,9 +468,13 @@ def add_wiki_links(g: Graph, links: Input, items: dict, ids_by_tag: dict,
             continue
         level = input_level(g, raw_conf, where)
         g.doc(f"note:{note_id}", f"Wiki note {note_id}", links.rel)
-        attrs = {"citation": f"Wiki note {note_id} ({source or 'source not stated'})",
+        wiki_line = links.get(rec, "wiki_line")
+        attrs = {"citation": f"Wiki note {note_id}, {source or 'source not stated'}"
+                             + (f" (Project Wiki line {wiki_line})" if wiki_line else ""),
                  "source_file": links.rel, "source_location": f"L{line}",
-                 "wiki_source": source, "wiki_confidence": raw_conf, "value": target}
+                 "wiki_source": source, "wiki_confidence": raw_conf, "value": target,
+                 "wiki_line": wiki_line, "written_as": links.get(rec, "written_as"),
+                 "basis": links.get(rec, "basis")}
         targets: list[tuple[str, str, str, str]] = []  # (nid, label, relation, level)
         if "equip" in ttype or ttype == "tag":
             ids, _ = ledger_ids(links.get(rec, "ledger_id"))
@@ -498,7 +505,7 @@ def add_wiki_links(g: Graph, links: Input, items: dict, ids_by_tag: dict,
             targets += [(n, lb, "references", level) for n, lb, _ in found]
         elif "addend" in ttype:
             found, left = parse_addenda(target)
-            ids = [(n, lb) for n, lb, _, _ in found]
+            ids = [(n, lb) for n, lb, _, _ in found if not re.search(r" p\.0\b", lb)]
             if not ids:
                 # "Add. 4 Clarification 5": link only when the Ledger graph has
                 # exactly one node for that clarification.
@@ -575,6 +582,15 @@ def add_mto(g: Graph, mto: Input, items: dict) -> list[str]:
     return problems
 
 
+def short_title(title: str, limit: int = 60) -> str:
+    """The lead clause of a title, for the label: up to the first colon, else `limit` chars.
+    The full title stays on the node."""
+    head = title.split(":", 1)[0].strip()
+    if head and len(head) <= 80 and head != title:
+        return head
+    return title if len(title) <= limit else title[:limit].rstrip() + "…"
+
+
 def add_open_items(g: Graph, oi: Input, items: dict) -> list[str]:
     """Open items -> nodes linked to their Ledger IDs, sheets and spec sections."""
     problems = []
@@ -588,7 +604,8 @@ def add_open_items(g: Graph, oi: Input, items: dict) -> list[str]:
         level = input_level(g, oi.get(rec, "confidence"), where)
         title = oi.get(rec, "title")
         attrs = oi.record(rec)
-        node = {"id": nid, "label": f"{item_id} {title}".strip(), "node_type": "open_item",
+        node = {"id": nid, "label": f"{item_id} {short_title(title)}".strip(),
+                "node_type": "open_item",
                 "file_type": "rationale", "source_file": oi.rel, "source_location": f"L{line}",
                 **{f"open_{k}" if k in ("id", "label", "type") else k: v
                    for k, v in attrs.items()}}
@@ -626,7 +643,9 @@ NEEDED = {
     "wiki_notes": {"id": ("Note ID", "Document ID")},
     "wiki_links": {"id": ("Note ID", "Document ID"), "type": ("Target Type",),
                    "target": ("Target",), "source": ("Source",),
-                   "confidence": ("Confidence",), "ledger_id": ("Ledger ID", "Ledger IDs")},
+                   "confidence": ("Confidence",), "ledger_id": ("Ledger ID", "Ledger IDs"),
+                   "wiki_line": ("Wiki Line",), "written_as": ("Written As",),
+                   "basis": ("Basis",)},
     "mto": {"line": ("MTO Line",), "ledger_id": ("Ledger ID", "Ledger IDs"),
             "quantity": ("Quantity",), "unit": ("Unit",), "sheet": ("Sheet", "Sheets"),
             "confidence": ("Confidence",), "citation": ("Source Citation",),
@@ -637,7 +656,8 @@ NEEDED = {
                    "citation": ("Source Citation",), "confidence": ("Confidence",)},
 }
 # Columns a file may lack without being skipped.
-OPTIONAL = {"wiki_links": {"ledger_id"}, "mto": {"keyed_note", "tie"}}
+OPTIONAL = {"wiki_links": {"ledger_id", "wiki_line", "written_as", "basis"},
+            "mto": {"keyed_note", "tie"}}
 
 
 def main() -> int:
