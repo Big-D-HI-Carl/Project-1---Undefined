@@ -136,6 +136,9 @@ graphify path "Add. 4 p.8" "PROPOSED-Blower-Pad" --undirected --graph testbeds/e
 - **`explain` lists at most 20 connections.** The full set is in graph.json.
 - **Item-to-item paths need `--undirected`.**
 - **Treat hub-based paths with care.** Add. 4 p.3 (the drawing-changes page, 43 items) can make short paths that don't reflect how the work connects.
+- **Open items are hubs too.** OI-0474 (Ledger Drawing Sheets) concerns 80 items, and six open items concern 10 or more.
+  - A duplicate or collision item joins the rows it names. For example, `graphify path "SD-1 [L-0073]" "SD-1 [L-0315]" --undirected` runs storm drain ← OI-0112 (Tag collision — SD-1) → sludge pump.
+  - That is the kind of trace the dropped `same_tag` link made. The links are AMBIGUOUS, and ISSUES_LOG ("Open items bridge the two SD-1 items in graph paths") asks Carl how to handle them.
 
 ## Example trace: generator → RFI → spec 26 32 13 → sheets
 
