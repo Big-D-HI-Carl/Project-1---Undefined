@@ -273,10 +273,25 @@ MERGE_EXCLUDE_REASON = {
 }
 
 # ISSUES_LOG.md open entries by title. Anything open and not named here is listed in the summary for review.
+# An included entry may carry its own title (the drawing or spec part of a mixed entry), Ledger IDs (checked
+# against Ledger_ID_Map.csv), sheets and sections, and an anchor that must be in the entry's text.
 ISS_INCLUDE = {
-    "Ledger Drawing Sheets: 80 rows cite no sheet number (78 PROPOSED, 2 printed)": ("gap", "Open — Merge"),
+    "Ledger Drawing Sheets: 80 rows cite no sheet number (78 PROPOSED, 2 printed)": {
+        "type": "gap", "status": "Open — Merge", "ledger": "no_sheet"},
+    "Wiki parse findings for Merge": {
+        "type": "gap", "status": "Open — Merge",
+        "title": "Printed tags with no Ledger row: floats F1 and F4 on the 2W pump station notes (the Ledger has "
+                 "F1 and F4 only at the Influent Pump Station, L-0291 and L-0294); 26 51 19 prints fixture types "
+                 "L1, L2 and X1 with no building named.",
+        "ledger": {"L-0291": "F1 (Influent Pump Station)", "L-0294": "F4 (Influent Pump Station)"},
+        "sheets": ["C4.2", "E4.3", "E7.3"], "specs": ["26 51 19"],
+        "cite": "the \"Qualified tags with no row\" part; the 2W notes are on C4.2, E4.3 and E7.3 per the Closed "
+                "entry \"Wiki parse: three matching defects caught in review before commit\"; "
+                "derived/wiki/Parse_Report.md (Wiki notes; Inferred)",
+        "anchor": "**Qualified tags with no row.**"},
 }
 ISS_FOLD = {
+    "Wiki parse findings for Merge": ["EXC:4", "EXC:13", "EXC:15"],   # its same-name PROPOSED rows
     "Add. 4 S-sheet reissues carry a revision entry; 01 item 12 says they don't": ["CUR:s-sheets"],
     "Prompt 9 test-bed findings for the Merge Issues Log": ["CUR:gen-rfi", "CUR:fence", "CUR:hotbox",
                                                             "CUR:earthwork", "CUR:panels"],
@@ -296,6 +311,7 @@ ISS_EXCLUDE = {
     "Merge Issues Log still lists the 10 native-only sheets as missing": "Merge log upkeep; Issues_Log.csv #8 is "
                                                                          "left out, #56 and #57 carry the note",
     "AGENTS.md Layout doesn't list derived/issues/": "repo layout",
+    "AGENTS.md Layout doesn't list derived/wiki/": "repo layout",
 }
 
 
@@ -741,11 +757,20 @@ def build():
     for title in sorted(ISS_INCLUDE):
         if title not in iss_open:
             raise TieOutError(f"ISSUES_LOG.md entry not open: {title}")
-        typ, status = ISS_INCLUDE[title]
+        spec = ISS_INCLUDE[title]
         status_, block, date = iss_open[title]
-        ledger = no_sheet if title.startswith("Ledger Drawing Sheets") else set()
-        cite = f"ISSUES_LOG.md {date} \"{title}\" (Open)"
-        items.append(Item(f"ISS:{title}", title, typ, ledger, (), (), cite, weakest_tag(block), status))
+        if spec.get("anchor") and spec["anchor"] not in block:
+            raise TieOutError(f"ISSUES_LOG.md entry \"{title}\" no longer holds: {spec['anchor']}")
+        ledger = spec.get("ledger", {})
+        if ledger == "no_sheet":
+            ledger = no_sheet
+        else:
+            bad = {k: v for k, v in ledger.items() if tags.get(k) != v}
+            if bad:
+                raise TieOutError(f"ISSUES_LOG.md entry \"{title}\": Ledger ID Tags differ: {bad}")
+        cite = f"ISSUES_LOG.md {date} \"{title}\" (Open)" + (f", {spec['cite']}" if spec.get("cite") else "")
+        items.append(Item(f"ISS:{title}", spec.get("title", title), spec["type"], ledger, spec.get("sheets", ()),
+                          spec.get("specs", ()), cite, weakest_tag(block), spec["status"]))
 
     # Folds
     index = {it.key: it for it in items}
@@ -912,10 +937,12 @@ def write_summary(items, checks, stats):
             why = f"method, schema or workflow ({r['Area']}), not a drawing or spec item"
         rows.append([f"Issues_Log.csv #{n}: {trunc(r['Issue'], 90)}", 1, why])
     for title in sorted(stats["iss_open"]):
-        if title in ISS_INCLUDE:
+        if title in ISS_INCLUDE and title not in ISS_FOLD:
             continue
         if title in ISS_FOLD:
             why = "folded into " + ", ".join(ids[t] for t in ISS_FOLD[title])
+            if title in ISS_INCLUDE:
+                why = f"drawing and spec part is {ids['ISS:' + title]}; the rest is " + why
         elif title in ISS_EXCLUDE:
             why = f"repo housekeeping ({ISS_EXCLUDE[title]})"
         else:

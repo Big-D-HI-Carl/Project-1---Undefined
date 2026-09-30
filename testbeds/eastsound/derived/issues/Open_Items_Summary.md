@@ -10,10 +10,10 @@ Rebuild from the repo root (stdlib only): `python testbeds/eastsound/tools/build
 |---|---|
 | RFI | 30 |
 | conflict | 95 |
-| gap | 88 |
+| gap | 89 |
 | duplicate | 92 |
 | check | 169 |
-| **all** | **474** |
+| **all** | **475** |
 
 ## Counts by source and type
 
@@ -24,20 +24,20 @@ Rebuild from the repo root (stdlib only): `python testbeds/eastsound/tools/build
 | Exception_Report.md | 0 | 17 | 47 | 90 | 64 | 218 |
 | Project_Known_Issues.md Part B | 28 | 73 | 35 | 0 | 0 | 136 |
 | Issues_Log.csv (Merge) | 1 | 2 | 4 | 1 | 2 | 10 |
-| ISSUES_LOG.md | 0 | 0 | 1 | 0 | 0 | 1 |
+| ISSUES_LOG.md | 0 | 0 | 2 | 0 | 0 | 2 |
 
 ## Counts by confidence and by who acts next
 
 | Confidence | Items |
 |---|---|
 | Unresolved | 60 |
-| Inferred | 369 |
+| Inferred | 370 |
 | Verified-Visual | 10 |
 | Verified | 35 |
 
 | Status | Items |
 |---|---|
-| Open — Merge | 210 |
+| Open — Merge | 211 |
 | Open — person check | 99 |
 | Open — Engineer | 58 |
 | Open — Owner | 32 |
@@ -157,6 +157,7 @@ Rebuild from the repo root (stdlib only): `python testbeds/eastsound/tools/build
 | Issues_Log.csv #86: Contract & General: 31 open document issues await Engineer or Owner rulings; highest… | 1 | roll-up; each Part B row names this entry |
 | Issues_Log.csv #87: Merge rev2 (2026-09-29): re-merged with the updated Electrical & Controls and Contract &… | 1 | not open (Logged) |
 | ISSUES_LOG.md (Open): AGENTS.md Layout doesn't list derived/issues/ | 1 | repo housekeeping (repo layout) |
+| ISSUES_LOG.md (Open): AGENTS.md Layout doesn't list derived/wiki/ | 1 | repo housekeeping (repo layout) |
 | ISSUES_LOG.md (Open): Add. 4 S-sheet reissues carry a revision entry; 01 item 12 says they don't | 1 | folded into OI-0006 |
 | ISSUES_LOG.md (Open): Index and library notes call the 9 no-text-layer sheets "image-only" | 1 | repo housekeeping (index wording) |
 | ISSUES_LOG.md (Open): Ledger Tag uniqueness (checks.py, ledger_to_graph.py) conflicts with decision A | 1 | repo housekeeping (tools and schema) |
@@ -170,6 +171,7 @@ Rebuild from the repo root (stdlib only): `python testbeds/eastsound/tools/build
 | ISSUES_LOG.md (Open): Read Method for the 10 native-only sheets is provisional | 1 | repo housekeeping (index read method) |
 | ISSUES_LOG.md (Open): Twelve Project Ledger rows are tagged stronger than their Bid Item fact | 1 | repo housekeeping (Ledger tag level, not a document item) |
 | ISSUES_LOG.md (Open): Two sessions ran the same reorg step | 1 | repo housekeeping (workflow) |
+| ISSUES_LOG.md (Open): Wiki parse findings for Merge | 1 | drawing and spec part is OI-0475; the rest is folded into OI-0113, OI-0122, OI-0124 |
 
 Project_Known_Issues.md Part A (method themes), Part C (settled) and Part D (carries with no conflict) are not open document items and are left out.
 
@@ -186,7 +188,7 @@ Project_Known_Issues.md Part A (method themes), Part C (settled) and Part D (car
 | Every open Merge Issues Log row about content is named here | pass | 87 rows |
 | Every Ledger_Update_Proposal row is in exactly one item | pass | 243 proposals, 243 placed |
 | Exception rows of types 1–7 = items + folded + settled | pass | 259 rows: 218 items, 3 in curated items, 35 folded into Part B items, 3 settled (Part C); type 8 left out: 312 |
-| Every item has a title, type, Ledger IDs from the map, citation, confidence and Open status | pass | 474 items |
+| Every item has a title, type, Ledger IDs from the map, citation, confidence and Open status | pass | 475 items |
 
 ## Inputs (SHA-256)
 
@@ -199,4 +201,4 @@ Project_Known_Issues.md Part A (method themes), Part C (settled) and Part D (car
 | testbeds/eastsound/project/03_Exceptions_and_Issues/Project_Known_Issues.md | b6fe27eefcbea07749724635e01d8c760aef3230f7c94e75b82f614e05a593e5 |
 | testbeds/eastsound/project/03_Exceptions_and_Issues/Issues_Log.csv | 4f819a23d5e9e7cf3778564f619d96543d320f1e12265e39bf3ed4a31f7798e3 |
 | testbeds/eastsound/project/02_Project_Ledger/Project_Ledger.csv | 0ed3af5640881f6fe2551b982d44653ddd92629cbcb5d47d68280a3ae6683e31 |
-| ISSUES_LOG.md | ad020d0091dee05c9063cfd7be81f01ec22e81d875740b8035214b41ca57f9f6 |
+| ISSUES_LOG.md | 6c0b2da9a7acba2882beda70c271ba579c00b6130de9b22726b52aa6ee18c5fc |
