@@ -14,7 +14,7 @@ Rules marked (checked) are enforced by `tools/checks.py` in the pre-commit hook 
 2. **Sources are read-only (checked).** Never rename, move, edit or delete a source file under any `library/` folder. A person adds source files. Notes go beside their source as `.md` files; agents may add and edit those notes, and nothing else, inside `library/`.
 3. **Logs are append-only (checked).** `PROGRESS_LOG.md`, `DECISIONS.md`, `ISSUES_LOG.md`: add entries at the end only. Correct or close something by appending a new entry that names the old one.
 4. **The baseline is frozen.** Files in the transfer-baseline release are never edited in place. Fixes land afterward as new revisions, so the history shows each one.
-5. **Plain, runtime-neutral files.** `.md`, `.csv` (UTF-8, no BOM), `.xlsx`, `.json`, `.py`. Python is stdlib-only except packages pinned in `requirements.txt`. Nothing may depend on one AI tool's features.
+5. **Plain, runtime-neutral files.** `.md`, `.csv` (UTF-8, no BOM), `.xlsx`, `.json`, `.py`. `.docx` only as a reading copy in `testbeds/eastsound/process/`. Python is stdlib-only except packages pinned in `requirements.txt`. Nothing may depend on one AI tool's features.
 6. **One writer per file.** `index/` belongs to the Setup role. A lane writes only in its own `lanes/<lane>/` folder. Merge writes only in `project/`. The build session, meaning the Transfer thread or one Claude Code session and never both at once, owns `transfer/`, `tools/` and `graph/` under `testbeds/eastsound/`, plus the notes beside library files.
 7. **Retrieval goes through the Wiki, the Ledger and the graph built from them,** not bulk reads of `library/`. If a task can't be answered without reading the library, stop that task and log a design gap.
 8. **Never bypass or rewrite.** No `--no-verify`, no disabling hooks, no force-push or rewriting pushed history. Changes to `tools/checks.py` go in their own commit, only when a person asked for them.
@@ -48,7 +48,7 @@ prompts/                   task prompts, plain markdown, any runtime
 tools/                     repo-wide scripts (Prompt 1 adds checks.py)
 testbeds/eastsound/
   library/                 original source files (read-only) plus .md notes beside them
-  derived/                 person-made derived copies of library files (bluebeam-ocr/); not sources
+  derived/                 derived copies of library files; not sources. Each subfolder is owned by the lane that writes it; bluebeam-ocr/ is owned by Carl
   index/                   00–04 rev1, Ledger_Schema.csv, Requirements_Schema.csv (Setup)
   lanes/<lane>/            Wiki, Ledger, Issues, Known Issues per lane
     as-delivered/          lane packages as delivered (component wikis, page notes, build-script zips)
@@ -57,7 +57,7 @@ testbeds/eastsound/
   transfer/                Transfer step reports
   tools/                   test bed build scripts
   graph/                   graph build outputs
-  _unsorted/               files a sort couldn't place; README.md gives each one's reason
+  _unsorted/               files a sort couldn't place; README.md gives each one's reason. Owned by Carl
 _inbox/                    drop zone for a person's files; never committed
 ```
 Lane folders: `civil-and-site`, `process-and-mechanical`, `electrical-and-controls`, `structural-and-building`, `contract-and-general`.

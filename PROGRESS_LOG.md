@@ -85,3 +85,32 @@ Append-only. One entry per session, in the format in AGENTS.md. Never edit or de
 - Next:
   - On a person's OK, restore the three lane package READMEs found in history (ISSUES_LOG, "Three lane package READMEs were overwritten …").
   - Then the missing-inputs list and Prompt 1.
+
+## 2026-09-30 — Repo cleanup (prompt 05): READMEs, library manifest and crosswalk, rulebook fixes
+- Runtime: Claude Code
+- Commits: 39ef888..28d710e, plus this log commit (branch `claude/charming-lamport-it1dac`, fast-forwarded to 9fec0a2 first)
+- Done:
+  - **Steps 0–1:** visibility check (public; Carl: "public repo is fine"); content-based mapping of all 792 files at 92585e6, checked by script and six verifier/skeptic agent pairs; layout conflicts listed. `git fetch` then showed the `claude/sharp-thompson-5q5d1f` session had already applied the moves (PRs #1, #2), so this session made none (ISSUES_LOG, "Two sessions ran the same reorg step").
+  - **Lane READMEs:** restored byte for byte from 7fba2f5, 0b488b9 and 5f76965 into the Electrical & Controls, Civil & Site and Process & Mechanical `as-delivered/` packages.
+  - **Prompts and READMEs:** `prompts/05_repo_cleanup.md` added; root README.md gets one pointer line to `testbeds/eastsound/`; `testbeds/eastsound/README.md` keeps the kit text and gains a Folders section.
+  - **Library:** `testbeds/eastsound/index/Library_Manifest.csv` (6 native PDFs: path, bytes, SHA-256, page count, source URL "Not stated", Register row, upload commit); `testbeds/eastsound/index/Plan_Set_Crosswalk.csv` (99 rows, plans_N page → set page → native part page); pointer added to `library/Plan_Set_Parts.md`.
+  - **Report:** `testbeds/eastsound/process/Repo_Reorg_Report_2026-09-30.md` (final mapping, missing files, `_unsorted/`, layout conflicts, library findings).
+  - **Step 6:** AGENTS.md rule 5 (`.docx` only as a reading copy in process/) and Layout owners for `derived/` and `_unsorted/`; Prompt 1 expects an organized kit, drops the private-repo stop, records "The repo stays public." and adds the library-manifest check (acceptance test 2 updated to match).
+- Tests:
+  - Blob map 92585e6 → HEAD → 792 of 792 files present with unchanged blobs.
+  - Relative .md link check, whole repo → 4,022 resolve, 0 broken.
+  - Crosswalk vs native title blocks (pypdf 5.1.0 text layer for 90 rows; PyMuPDF 1.28.2 render for the 9 image-only pages, read visually) → 99 rows, 0 mismatches; vs `Plan_Set_Parts.md` → 0 differences.
+  - Page counts, pypdf vs PyMuPDF → agree on 6 of 6; main spec 645, Add. 4 13, CQA plan 23 match the 00 Register.
+  - Restored READMEs → blob IDs equal the history blobs, 3 of 3.
+  - `python tools/checks.py --all` / `--staged` → not run: `tools/checks.py` doesn't exist (Prompt 1 not run).
+- Failures and fixes:
+  - `git fetch` found the other session's merged reorg. Fix: stopped and reported; Carl confirmed that session closed; work continued on top of 9fec0a2.
+  - `git log --follow --diff-filter=A` named the wrong upload commits for the library PDFs (rename pairing). Fix: matched each file's blob against the four upload commits.
+  - The title-block regex missed the C0.2 set page (no line break before "9OF"). Fix: allowed a letter before the number and reran.
+  - Nine native pages are image-only, so the text layer can't confirm them. Fix: rendered each title block with PyMuPDF in a scratch venv (not committed) and read it; tagged Verified-Visual.
+- Next:
+  - Carl: decide the proposed AGENTS.md line "one session per step; check open sessions before starting one".
+  - Setup: 00 Register rev2 (rows for the three parts; plans_N rows via the crosswalk; row 2 closed) and 01 rev2 (10 sheets now available; S-sheet "OF 96").
+  - Revise Graph_Transfer_Ultraplan §6 Step 4's fingerprint check for the native files.
+  - Upload the 20 lane files, the Composer prompts and Prompt_Workflow_Receipt_rev1.md, and Addenda 1–3.
+  - Run Prompt 1 (`prompts/01_bootstrap_guardrails.md`).
