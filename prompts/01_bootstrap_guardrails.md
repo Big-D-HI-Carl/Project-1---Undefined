@@ -5,8 +5,8 @@ Run from the repo root. Claude Code: put /plan in front of this prompt, review t
 Read AGENTS.md in full before planning. Goal: stand up the repo so every rule marked (checked) in AGENTS.md is enforced by code. No project content this session.
 
 ## 1. Confirm state — stop on any surprise
-- Run `git status`, `git remote -v`, `git log --oneline -5`. Expect branch `main`, remote `origin` pointing at Big-D-HI-Carl/Project-1---Undefined, and the baseline already committed (by Prompt 0 or a web upload).
-- Check visibility with an unauthenticated GET to `https://api.github.com/repos/Big-D-HI-Carl/Project-1---Undefined` (Python urllib, no token). 404 means private: continue. 200 means public: stop and tell me. 403 means rate-limited: ask me to confirm the repo shows Private in its settings. Commit nothing while it's public.
+- Run `git status`, `git remote -v`, `git log --oneline -5`. Expect branch `main`, remote `origin` pointing at Big-D-HI-Carl/Project-1---Undefined, and the kit already committed and organized in the AGENTS.md layout (by `prompts/05_repo_cleanup.md`).
+- The repo is public by decision (DECISIONS.md, 2026-09-30: "The repo stays public."). Don't stop on visibility.
 
 ## 2. Layout and logs
 - The baseline already has the layout, the three logs, `.gitignore`, `.gitattributes` and both READMEs. Create only what's missing from the AGENTS.md layout, and don't change any baseline file.
@@ -16,7 +16,7 @@ Read AGENTS.md in full before planning. Goal: stand up the repo so every rule ma
 Modes: `--staged` (hook; read staged content with `git show :<path>`, not the working copy), `--range BASE..HEAD` (CI), `--all` (whole tree, file-level checks only). One output line per violation: rule, path, reason. Exit 1 on any violation.
 
 Checks:
-- **Read-only sources:** any modified, deleted, renamed, copied or type-changed path under a `library/` folder fails, except `.md` notes. Added files pass.
+- **Read-only sources:** any modified, deleted, renamed, copied or type-changed path under a `library/` folder fails, except `.md` notes. Added `.md` notes pass. An added non-`.md` file fails unless the same commit adds a row for it to `testbeds/eastsound/index/Library_Manifest.csv` (Path column = the file's repo-relative path).
 - **Append-only logs:** any removed or changed line in the three log files fails. Pure additions pass.
 - **Ledgers** (`*Ledger*.csv`, except `Ledger_Schema.csv`): UTF-8 with no BOM; header identical to `testbeds/eastsound/index/Ledger_Schema.csv`; every row has the header's field count; `Tag` non-empty and unique within the file; the `Verified/Verified-Visual/Inferred/Unresolved` column starts with one of those four words. If the schema file isn't in the repo yet, skip ledger checks with one warning.
 - **Unsafe files:** over 50 MB; names matching `.env`, `.env.*`, `*.pem`, `*.key`, `id_rsa*`, `*credential*`; anything under `_inbox/`.
@@ -33,7 +33,7 @@ README.md is in the baseline. Leave it, unless the lines about running checks or
 ## 6. Acceptance tests
 Run in a throwaway clone under the system temp folder, never in this repo. Report a table: test | expected | actual.
 1. Edit a file under `testbeds/eastsound/library/` → blocked
-2. Delete a file there → blocked; add a new file there → passes; add, then edit, a `.md` note beside a source → passes
+2. Delete a file there → blocked; add a new PDF there without a manifest row → blocked; add one with its `Library_Manifest.csv` row in the same commit → passes; add, then edit, a `.md` note beside a source → passes
 3. Change an old line in PROGRESS_LOG.md → blocked; append a line → passes
 4. Ledger with a BOM → blocked; wrong header → blocked; duplicate Tag → blocked; tag column "Maybe" → blocked; "Unresolved: external reference, not staged" → passes; valid 2-row ledger → passes
 5. 60 MB file → blocked; `.env` → blocked; file under `_inbox/` staged with `git add -f` → blocked
@@ -46,7 +46,7 @@ Any failure: append the failure mode and fix to ISSUES_LOG.md, fix, rerun all te
 
 ## 7. Record, then stop before the push
 - Append to DECISIONS.md, decided by Carl:
-  - Repo is private. Public-source material and repo-work notes only until Big-D approves this host.
+  - The repo stays public. Public-source material and repo-work notes only until Big-D approves this host.
   - AGENTS.md is the canonical rulebook; CLAUDE.md imports it; Claude Code auto memory is off for this repo.
   - Enforcement lives in tools/checks.py (hook and CI), not in instruction files.
   - The graph backbone is built from the Ledger by script with no LLM; graphify's LLM pass is an optional, labeled overlay.
