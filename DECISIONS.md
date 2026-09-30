@@ -171,6 +171,36 @@ Append-only. Decisions made by a person, in the format in AGENTS.md. Never edit 
 - Why: Stated in this session: "Create Audit_Ledger_Schema.csv and Spot_Check_Schema.csv in index/ as header-only files, matching Ledger_Schema.csv's encoding and line endings." Carl gave both column lists in the same message.
 - Replaces: the upload step of "Only the Audit_Ledger and Spot_Check schemas are missing; Carl uploads them" (2026-09-30)
 
+## 2026-09-30 — Ledger graph: Prompt 3 parsing rules approved; Lane and Bid Item are item attributes, not linked nodes
+- Decided by: Carl
+- Why: Carl, answering the Prompt 3 step 2 proposal: "Lane and Bid Item: keep them as item attributes, not linked nodes." and "Go ahead." The rules are listed in `testbeds/eastsound/graph/README.md`.
+- Replaces: none
+
+## 2026-09-30 — Graph build writes: outputs in graph/graphify-out/, the script edited in place, and testbeds/eastsound/.graphifyignore
+- Decided by: Carl
+- Why: Carl: "Writes approved (my request): outputs to testbeds/eastsound/graph/graphify-out/, edit testbeds/eastsound/tools/ledger_to_graph.py in place, and add testbeds/eastsound/.graphifyignore."
+- Replaces: none
+
+## 2026-09-30 — .graphifyignore lists library/ and derived/bluebeam-ocr/
+- Decided by: Carl
+- Why: Carl: ".graphifyignore: library/ and derived/bluebeam-ocr/."
+- Replaces: none
+
+## 2026-09-30 — Repeated Ledger Tags are keyed <Tag> [L<line>] until the Ledger ID column lands
+- Decided by: Carl
+- Why: Carl: "Repeated tags: key them as <Tag> [L<line>] for now. A permanent Ledger ID column is coming from Prompt 9; note in the README that the key switches to the ID when it lands."
+- Replaces: none
+
+## 2026-09-30 — Graph commands run under env -i; the twelve over-tagged Ledger rows are logged, not edited
+- Decided by: Carl
+- Why: Carl: "Running under env -i: yes. Log the 12 over-tagged rows in ISSUES_LOG; don't touch the Ledger."
+- Replaces: none
+
+## 2026-09-30 — No same_tag link between the two SD-1 rows in the Ledger graph
+- Decided by: Carl
+- Why: Carl: "Drop the 'same tag' link between the two SD-1 rows. It creates false path traces, and the Ledger ID from Prompt 9 will replace it."
+- Replaces: the same_tag part of "Repeated Ledger Tags are keyed <Tag> [L<line>] until the Ledger ID column lands" (2026-09-30), for SD-1 only
+
 ## 2026-09-30 — Every Ledger row gets a permanent Ledger ID; everything links by ID
 - Decided by: Carl
 - Why: Stated in this session (Prompt 9, decision A): "Every Ledger row gets a permanent Ledger ID (L-0001 onward, in current row order). Tags stay exactly as printed. Everything links by ID. SD-1 stays two rows with two IDs."
