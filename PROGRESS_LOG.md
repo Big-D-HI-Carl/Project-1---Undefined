@@ -70,3 +70,18 @@ Append-only. One entry per session, in the format in AGENTS.md. Never edit or de
     - **Library:** div-26-electrical-specs.pdf and the plans_N extracts (or Register rows for the three parts); Addenda 1–3.
     - **Test-bed README:** `testbeds/eastsound/README.md`, whose kit text survives only in history (`8039650:README.md`).
   - Then run Prompt 1.
+
+## 2026-09-30 — Layout rule and test-bed README
+- Runtime: Claude Code
+- Commits: 226024e..e0830b2, plus this log commit
+- Done:
+  - `AGENTS.md` Layout now lists `lanes/<lane>/as-delivered/` and `testbeds/eastsound/_unsorted/`.
+  - Restored `testbeds/eastsound/README.md` from `8039650:README.md`, the kit's test-bed README, which had been overwritten at the root in 92585e6. This removes it from the missing list in the "Inbox sort and root layout" entry.
+- Tests:
+  - `git diff AGENTS.md` → 2 added lines, 0 removed.
+  - Restored README blob → e894b11d, matching `8039650:README.md`.
+  - `python tools/checks.py` → not run: the file doesn't exist (Prompt 1 not run).
+- Failures and fixes: none
+- Next:
+  - On a person's OK, restore the three lane package READMEs found in history (ISSUES_LOG, "Three lane package READMEs were overwritten …").
+  - Then the missing-inputs list and Prompt 1.

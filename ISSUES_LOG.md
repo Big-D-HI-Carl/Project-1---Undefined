@@ -39,3 +39,13 @@ Append-only. Repo and program issues, in the format in AGENTS.md. The test bed's
   - The library holds the same 96 set pages as three native parts under other names (Part 1 = set pp.1–27, Part 2 = 28–48, Part 3 = 49–96). The Register has no rows for them.
   - `div-26-electrical-specs.pdf` (Register row 2) isn't uploaded either.
 - Fix or next action: `testbeds/eastsound/library/Plan_Set_Parts.md` maps every plans_N page to a Part page for now. The Setup role, which owns `index/`, adds Register rows for the three parts, or a person uploads the plans_N extracts.
+
+## 2026-09-30 — Three lane package READMEs were overwritten at the repo root during upload — Open
+- Workstream: Repo setup
+- Type: workflow failure
+- Finding: Each browser upload wrote its package README to the root README.md, and the next upload overwrote it. Three lane package READMEs now exist only in history, and each package's README slot is empty in the tree:
+  - `7fba2f5:README.md` (blob acd2cc0d): "Electrical & Controls — Wiki by Page and by Component". Its package is now `testbeds/eastsound/lanes/electrical-and-controls/as-delivered/`.
+  - `0b488b9:README.md` (blob 98886d2d): "Civil & Site — Component Wiki". Its package is now `testbeds/eastsound/lanes/civil-and-site/as-delivered/Civil_and_Site_Components/`.
+  - `5f76965:README.md` (blob 63fd81cc): "Process & Mechanical — Component Wiki". Its package is now `testbeds/eastsound/lanes/process-and-mechanical/as-delivered/`.
+  - The test-bed README had the same fate (`8039650:README.md`). It was restored to `testbeds/eastsound/README.md` in e0830b2.
+- Fix or next action: On a person's OK, restore each one byte for byte as README.md in its package folder, one commit each.

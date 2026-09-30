@@ -21,3 +21,8 @@ Append-only. Decisions made by a person, in the format in AGENTS.md. Never edit 
 - Decided by: Carl
 - Why: Stated in this session: "Lane packages → testbeds/eastsound/lanes/<lane>/as-delivered/, keeping the dry-run structure where all 3,612 links resolve."
 - Replaces: none
+
+## 2026-09-30 — Add as-delivered/ and _unsorted/ to the AGENTS.md Layout; restore the test-bed README
+- Decided by: Carl
+- Why: Stated in this session: "Yes to the AGENTS.md Layout edit, as its own commit. Also restore testbeds/eastsound/README.md from 8039650:README.md in a separate commit, if that blob is the test-bed README."
+- Replaces: none
