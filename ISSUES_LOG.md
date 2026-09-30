@@ -197,6 +197,50 @@ Append-only. Repo and program issues, in the format in AGENTS.md. The test bed's
   - The harness expectation was out of date; checks.py behaved as intended.
 - Fix or next action: The harness now expects the WARN line; it is a scratchpad script and is not committed. All tests were rerun.
 
+## 2026-09-30 — Index files cite plans_N extracts that aren't in the library — Closed
+- Workstream: Eastsound test bed
+- Type: input gap
+- Finding: Closes the 2026-09-30 Open entry of the same title. `testbeds/eastsound/index/00_Document_Register_rev2.md` does three things:
+  - Rows 31–33 register the three native parts.
+  - Rows 5–30 are marked resolved through `index/Plan_Set_Crosswalk.csv`, each with its Part pages.
+  - Rows 34–36 register the other native files.
+  `div-26-electrical-specs.pdf` (row 2) is settled by decision (DECISIONS.md, "Division 26 extract not uploaded; main spec governs"). `01_Sheet_Index_rev1.md` still cites plans_N pages, which resolve through the same crosswalk.
+- Fix or next action: Done. 01 rev2 is tracked in "Index follow-ups after 00 Register rev2".
+
+## 2026-09-30 — 00 Register rev2 needs rows for the three native plan-set parts — Closed
+- Workstream: Eastsound test bed
+- Type: input gap
+- Finding: Closes the 2026-09-30 Open entry of the same title. `testbeds/eastsound/index/00_Document_Register_rev2.md` issued:
+  - **Rows 31–33:** Part 1, Part 2 and Part 3.
+  - **Rows 34–36:** the native main spec, Add. 4 and QA plan. Bytes, SHA-256 and page counts for all six were recomputed and match `Library_Manifest.csv`.
+  - **Rows 5–30:** plans_N rows resolved through `Plan_Set_Crosswalk.csv`.
+  - **Row 2:** closed by decision.
+  - **S-sheet "OF 96":** recorded.
+  rev2 cites both files as its sources; neither was edited. 01 rev2 was not in this session's task.
+- Fix or next action: Done for 00. 01 rev2 and the remaining index items are in "Index follow-ups after 00 Register rev2".
+
+## 2026-09-30 — Audit_Ledger and Spot_Check schema CSVs need uploading to index/ — Closed
+- Workstream: Eastsound test bed
+- Type: input gap
+- Finding: Closes the 2026-09-30 Open entry of the same title. At Carl's direction in this session (DECISIONS.md, "The Setup role creates the Audit_Ledger and Spot_Check schema CSVs"), the Setup role created two header-only files in `testbeds/eastsound/index/`, in the column order Carl gave:
+  - `Audit_Ledger_Schema.csv` (21 columns).
+  - `Spot_Check_Schema.csv` (12 columns).
+  Both are ASCII with no BOM and one LF-terminated header line, the same as `Ledger_Schema.csv`. `Spot_Check_Schema.csv` matches the first 12 columns of `derived/ocr/Spot_Check.csv`.
+- Fix or next action: Done.
+
+## 2026-09-30 — Index follow-ups after 00 Register rev2 — Open
+- Workstream: Eastsound test bed
+- Type: content conflict
+- Finding: 00 rev2 changed only what its task named, so these index items still disagree with it:
+  - `01_Sheet_Index_rev1.md` still logs S1.1–S4.1 as "OF 98" (open item 10; rows 56–61). The native Part 3 reads "OF 96" (00 rev2, "S-sheet page total"). The Add. 4 pp.9–10 reissues were not rechecked.
+  - 01 rev1 still lists 10 sheets as not in library. All ten are in Part 1 and Part 3 (00 rev2 rows 31 and 33).
+  - 00 rev2 still carries these rev1 lines:
+    - The Referenced-documents row "10 drawing sheets … Assigned — unavailable".
+    - The Stored-copy line "Native PDF metadata was not available".
+    - "image-only" in rows 18, 19 and 24 (see "Index and library notes call the 9 no-text-layer sheets 'image-only'").
+  - `Library_Manifest.csv` "00 Register Row" still reads "none" for the three parts. They are now rows 31–33; the other natives are rows 34–36.
+- Fix or next action: Setup issues 01 rev2 and, on Carl's OK, 00 rev3 and a manifest update. Before that, a person or the Setup role checks the native Add. 4 pp.9–10 title blocks.
+
 ## 2026-09-30 — Graph build inside the repo stamps the git commit, so rebuilds differ by commit — Open
 - Workstream: Eastsound test bed, graph build (Prompt 3)
 - Type: workflow failure
