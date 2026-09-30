@@ -1,0 +1,30 @@
+# 26 05 00 — General Electrical
+
+- **Source:** `eswd-wwtp-upgrade-phase-i-specs.pdf`, main spec pp.269–281
+- **Revision/Date:** Project manual cover dated Dec. 30, 2022 (p.1); Division 26 TOC dated 09/12/2022 (p.268) — per 00 register; section pages 1–13 of 13 = main spec pp.269–281 (Verified)
+- **Wiki note:** `Electrical_and_Controls_Wiki.md` → 26 05 00
+- **Section requires submittals:** Y — ¶1.012 p.274 (electronic submittal format, index, section/paragraph reference)
+- **Section requires testing/startup:** Y — ¶3.04 p.280 (feeder, motor and equipment tests; functional checkout of each control circuit)
+- **Components governed by this section:** 12 (6 Demolished, 4 New, 2 Temporary); 1 Unresolved
+- Tag level: Verified = read in the text layer · Verified-Visual = read from the page image · Inferred = derived, basis in the Ledger row · Unresolved = conflict or gap, see Issues.
+
+| Tag | Component | Status | Submittal | Testing | Tag level | Where in this section | Drawing sheets |
+|---|---|---|---|---|---|---|---|
+| ATS (E) | Existing automatic transfer switch, 4-wire, 3-pole | Demolished | Not stated | Not stated | Verified-Visual | 26 05 00 ¶3.03 E.4 (main spec p.279): contractor demolishes the existing 208V service — secondary raceway and conductors, CT enclosure, meter base, generator and ATS | E0.2 |
+| GEN (E) | Existing standby diesel generator, 208Y/120V 3-ph, 30 kW / 37.5 kVA | Demolished | Not stated | Not stated | Verified-Visual | 26 05 00 ¶3.03 E.4 (main spec p.279): contractor demolishes the existing 208V service — secondary raceway and conductors, CT enclosure, meter base, generator and ATS | E0.2 |
+| P-SEC | Utility secondary conduit and conductors, new utility transformer to service equipment (by contractor) | New | N | Y | Verified-Visual | 26 05 00 ¶3.03 E.1 (p.279): contractor provides the new underground secondary, conduit and conductors, from the existing transformer pad to the CT enclosure, service-rated ATS and 400 A distribution panel | E1.1; E6.1; E6.3 |
+| SES (E) | Existing 300 A service entrance breaker, SUSE rated, NEMA 3R | Demolished | Not stated | Not stated | Verified-Visual | 26 05 00 ¶3.03 E.4 (main spec p.279): contractor demolishes the existing 208V service — secondary raceway and conductors, CT enclosure, meter base, generator and ATS | E0.2 |
+| PROPOSED-Construction-Power-Service | Dedicated construction power service (contractor-provided, contractor-paid energy) | Temporary | N | N | Verified | 26 05 00 ¶1.015 A–C (main spec p.276) | Not shown |
+| PROPOSED-CT-Enclosure-and-Meter-Base | CT enclosure, landing pads and meter base (new; meter and CTs by utility) | New | Not stated | Not stated | Verified | 26 05 00 ¶3.03 E.3 (p.279): contractor provides the 480V CT enclosure, landing pads, mounting rack and meter bases per Utility requirements | E0.2; E1.1; E6.1; E6.3 |
+| PROPOSED-Electrical-Equipment-Housekeeping-Pads | Concrete housekeeping pads under floor-mounted electrical equipment (MCC, main PLC panel, IPS panel) | New | N | N | Inferred | 26 05 00 ¶2.04 (main spec p.278): pad under each floor-mounted MCC and electrical equipment, 3 in wider than the base on both ends, 3 in minimum height | E7.1; E8.1; E9.1 |
+| PROPOSED-Existing-CT-Enclosure-and-Meter | Existing current transformer enclosure and OPALCO utility meter | Demolished | Not stated | Not stated | Verified | 26 05 00 ¶3.03 E.4 (main spec p.279): contractor demolishes the existing 208V service — secondary raceway and conductors, CT enclosure, meter base, generator and ATS | E0.2 |
+| PROPOSED-Existing-Meter-Base-and-Wall-Raceway | Existing obsolete meter base and raceway on building wall | Demolished | Not stated | Not stated | Verified | 26 05 00 ¶3.03 E.4 (main spec p.279): contractor demolishes the existing 208V service — secondary raceway and conductors, CT enclosure, meter base, generator and ATS | E0.2 |
+| PROPOSED-Existing-Utility-Transformer-208V | Existing OPALCO pad-mount utility transformer, 208Y/120V 3-ph, 45 kVA | Demolished | Not stated | Not stated | Verified | 26 05 00 ¶3.03 F.1.a (main spec p.279): the Utility removes the existing 208V transformer from the existing concrete pad | E0.2; E1.1 |
+| PROPOSED-Temporary-Backup-Generator | Temporary back-up generator (rental), connected to the permanent ATS until the permanent generator arrives; example cut sheet MQ Power 120 kW prime diesel | Temporary | Y | Y | Unresolved | 26 05 00 ¶1.016 C (p.276) and ¶3.03 E.5 (p.279) | None (Add. 4 and 26 05 00 only) |
+| PROPOSED-Utility-Transformer-480V | Utility transformer, 480Y/277V, 225 kVA (new; furnished and installed by OPALCO) | New | Not stated | Not stated | Verified-Visual | 26 05 00 ¶3.03 F.1.b–c and F.2 (pp.279–280): the Utility installs the new 480V transformer on the existing concrete pad, re-uses the primary conductors, makes the primary terminations, provides meter and CTs and terminates the contractor secondary at the transformer | E0.2; E1.1; E6.1 |
+
+## Issues that cite this section
+
+- #16 Who removes the existing 208Y/120V utility transformer — resolved: the Utility (26 05 00 ¶3.03 F.1.a) (Verified)
+- #34 Concrete pads under the main PLC panel and the Influent Pump Station panel (Verified)
+- cited flag Bid Item #18 (temporary back-up generator vs Train 3 stainless alternate) (Unresolved)
