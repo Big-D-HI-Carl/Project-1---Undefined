@@ -12,7 +12,7 @@ The graph of the Project Ledger and the files derived from it, built by script w
   - A derived input that is missing, or lacks a needed column, is skipped and marked in `Build_Inputs.csv`. Nothing is guessed in its place.
 - **Script:** `tools/ledger_to_graph.py`, on graphifyy 0.9.72 (pinned in `requirements.txt`).
 - **Outputs:** `graphify-out/graph.json`, `GRAPH_REPORT.md` and `graph.html`, plus `Build_Inputs.csv` and `Build_Counts.csv` here. Don't commit `cache/` or `.graphify_*`; they are gitignored.
-- **Size:** 1,385 nodes and 7,678 links in the committed build (`Build_Counts.csv`).
+- **Size:** 1,386 nodes and 7,284 links in the committed build (`Build_Counts.csv`), built from main's files only.
 
   | Node type | Count | | Link | Count |
   |---|---|---|---|---|
@@ -22,13 +22,14 @@ The graph of the Project Ledger and the files derived from it, built by script w
   | addendum | 23 | | `described_in` | 1,437 |
   | note | 203 | | `describes` | 200 |
   | mto | 22 | | `mentions` | 523 |
-  | open_item | 474 | | `references` | 1,480 |
+  | open_item | 475 | | `references` | 1,480 |
   | | | | `quantity_of` | 21 |
   | | | | `measured_on` | 22 |
-  | | | | `concerns` | 790 |
-  | | | | `cites` | 1,530 |
+  | | | | `concerns` | 392 |
+  | | | | `cites` | 1,534 |
 
-- **Merge order:** the committed build used `derived/wiki/` from commit 331c923 (branch `claude/magical-euler-lnev7r`) and `derived/issues/Open_Items.csv` from commit ddb818e (branch `claude/jolly-rubin-dm4ese`). Those files reach main with their own PRs. Merge them first. If either file changes before it merges, rebuild and check the SHA-256 values in `Build_Inputs.csv`.
+  - Note text: 114 notes whole, 88 cut at a sentence (rule 11).
+  - Open items: 96 list their Ledger IDs without item links, 92 duplicate items and 4 naming more than 15 IDs (rule 14).
 
 ## Rebuild
 
@@ -157,6 +158,7 @@ graphify path "Add. 4 p.8" "PROPOSED-Blower-Pad" --undirected --graph testbeds/e
 - **Open items still link the rows they name.** Rule 14 takes duplicate items and the largest items out. The largest linked item is now OI-0319 (13 items).
   - One short SD-1 path remains. `graphify path "SD-1 [L-0073]" "SD-1 [L-0315]" --undirected` runs storm drain ← OI-0289 (Cross-lane, a conflict item) → sludge pump in two INFERRED hops.
   - OI-0289 concerns Electrical & Controls process equipment on E4.1, E4.2 and E6.1. Its L-0073 (the C2.2 storm drain) looks like a Tag match to the wrong SD-1 row (ISSUES_LOG, "Open item OI-0289 names the storm drain SD-1 row").
+  - It is the only 2-hop path. OI-0112 (Tag collision — SD-1) no longer joins them.
   - Without open items, the shortest SD-1 path is 4 hops: storm drain — Wiki note 33 41 00 — Add. 4 p.2 — Wiki note E4.1 — sludge pump.
 
 ## Example trace: generator → RFI → spec 26 32 13 → sheets
@@ -177,4 +179,6 @@ graphify path "OI-0001 Generator rating RFI" "Sheet E10.3" --undirected --graph 
 | GEN → Sheet E1.1, E6.1, E6.3, E7.3, E10.3 | `shown_on` | AMBIGUOUS (row Unresolved) | Project_Ledger.csv L243 |
 
 - The RFI is the one question on this chain: E1.1 and E6.1 show 125 kW / 156 kVA, and 26 32 13 ¶2.03 C.1 (main spec p.326) requires not less than 150.0 kW (OI-0001, from `derived/reconciliation/Summary.md`). The graph only points to those sources. Cite them, not the graph.
-- The generator carries three more open items: OI-0325 (permanent generator bid item), OI-0172 (the same item on L-0242, L-0387 and L-0423) and OI-0063 (tag not read on E7.3 and E10.3).
+- The generator carries three more open items:
+  - OI-0325 (permanent generator bid item) and OI-0063 (tag not read on E7.3 and E10.3) link to it.
+  - OI-0172 (the same item on L-0242, L-0387 and L-0423) is a duplicate item, so it lists those IDs without links (rule 14).
