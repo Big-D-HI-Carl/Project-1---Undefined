@@ -1,6 +1,6 @@
 # Bluebeam OCR copies — 11x17 plan set
 
-Derived copies, not sources. A person ran Bluebeam OCR over page extracts of the 11x17 bid plan set and added the results here. Prompt 6 uses them for the comparison column and nothing else.
+Derived copies, not sources. A person ran Bluebeam OCR over page extracts of the 11x17 bid plan set and added the results here. Prompt 6 uses them for its comparison column; the Prompt 7 OCR lane (`testbeds/eastsound/derived/ocr/`) also takes tag and quantity leads from them, as method bluebeam-ocr, Inferred.
 
 Short names used below: **OCR Part 1** = `Pages from eswd-wwtp-upgrade-ph1-11x17-plans - OCR - Part 1.pdf` · **OCR Part 2** = `Pages from eswd-wwtp-upgrade-ph1-11x17-plans - OCR - Part 2.pdf` · Sheet Index = `01_Sheet_Index_rev1.md`. For the plans_N short names, see `00_Document_Register_rev1.md`.
 
@@ -8,7 +8,7 @@ Short names used below: **OCR Part 1** = `Pages from eswd-wwtp-upgrade-ph1-11x17
 
 - Text read from these files counts as OCR and is tagged **Inferred**. It is never a text layer, and it never earns Verified.
 - Text-layer reads come only from the native files in `testbeds/eastsound/library/`.
-- In Prompt 6 these copies fill the comparison column only.
+- OCR copies are Inferred only. They may feed tag and quantity leads (method bluebeam-ocr), never a text layer or a Verified read. This replaces "comparison column only" (DECISIONS.md, 2026-09-30, Bluebeam OCR hits go into Tag_Hits and Quantity_Hits; AGENTS.md Output standards).
 
 ## Source file
 
