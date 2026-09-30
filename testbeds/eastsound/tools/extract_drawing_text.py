@@ -56,6 +56,8 @@ ADD4_FILE = LIB / "addendum-no4-eswd.pdf"
 BB_DIR = TB / "derived" / "bluebeam-ocr"
 SHEET_INDEX = TB / "index" / "01_Sheet_Index_rev1.md"
 LEDGER = TB / "project" / "02_Project_Ledger" / "Project_Ledger.csv"
+CROSSWALK = TB / "index" / "Plan_Set_Crosswalk.csv"      # cited_as (plans_N copy) per set page
+MANIFEST = TB / "index" / "Library_Manifest.csv"         # SHA-256 of every native library file
 OUT_DEFAULT = TB / "derived" / "ocr"
 
 # Bluebeam OCR copies: set pages covered by each file (derived/bluebeam-ocr/README.md, Parts table).
@@ -255,9 +257,68 @@ def load_sheet_index():
     return base, add4, addendum_only
 
 
+def load_crosswalk(parts, base):
+    """Set page -> cited_as from index/Plan_Set_Crosswalk.csv: the plans_N copy 01 indexes, with
+    any duplicate extract listed beside it. Stops if the crosswalk's native part and page, or its
+    sheet, disagree with Plan_Set_Parts.md and 01."""
+    with open(CROSSWALK, encoding="utf-8", newline="") as f:
+        rows = list(csv.DictReader(f))
+    by_sp = defaultdict(list)
+    for r in rows:
+        by_sp[int(r["Set Page"])].append(r)
+    out, problems = {}, []
+    for sp in range(1, 97):
+        rs = by_sp.get(sp, [])
+        if not rs:
+            problems.append(f"set p.{sp}: no row")
+            continue
+        f, fp = parts[sp]
+        for r in rs:
+            if r["Native Part File"] != f.name or r["Native Part Page"] != str(fp):
+                problems.append(f"set p.{sp}: native {r['Native Part File']} p.{r['Native Part Page']}, "
+                                f"Plan_Set_Parts.md has {f.name} p.{fp}")
+            if r["Sheet"] != base[sp]["sheet"]:
+                problems.append(f"set p.{sp}: sheet {r['Sheet']}, 01 has {base[sp]['sheet']}")
+        primary = [r for r in rs if r["Indexed in 01"] == "Yes"] or rs
+        if len(primary) != 1:
+            problems.append(f"set p.{sp}: {len(primary)} rows indexed in 01")
+            continue
+        pr = primary[0]
+
+        def page_of(r):
+            return int(r["plans_N PDF Page"]) if r["plans_N PDF Page"].isdigit() else None
+        out[sp] = {"file": pr["plans_N File"], "page": page_of(pr), "short_name": pr["plans_N Short Name"],
+                   "indexed_in_01": pr["Indexed in 01"],
+                   "duplicates": [{"file": r["plans_N File"], "page": page_of(r), "indexed_in_01": r["Indexed in 01"]}
+                                  for r in rs if r is not pr],
+                   "basis": rel(CROSSWALK)}
+    if problems:
+        raise SystemExit("Stopped: Plan_Set_Crosswalk.csv disagrees with Plan_Set_Parts.md or 01:\n  "
+                         + "\n  ".join(problems))
+    return out
+
+
+def verify_sources():
+    """Every native library file this script reads must match its SHA-256 row in
+    index/Library_Manifest.csv; stop on a mismatch or a missing row."""
+    with open(MANIFEST, encoding="utf-8", newline="") as f:
+        manifest = {r["Path"]: r["SHA-256"] for r in csv.DictReader(f)}
+    files = sorted({f for f, _ in load_parts().values()} | {ADD4_FILE})
+    bad = []
+    for f in files:
+        want, got = manifest.get(rel(f)), sha256_file(f)
+        if want is None:
+            bad.append(f"{rel(f)}: no row in Library_Manifest.csv")
+        elif want != got:
+            bad.append(f"{rel(f)}: SHA-256 {got}, Library_Manifest.csv has {want}")
+    if bad:
+        raise SystemExit("Stopped: source files do not match index/Library_Manifest.csv:\n  " + "\n  ".join(bad))
+
+
 def page_tasks(only=None):
     parts = load_parts()
     base, add4, addendum_only = load_sheet_index()
+    cited = load_crosswalk(parts, base)
     titles = {v["sheet"]: v for v in base.values()}
     tasks = []
     for sp in range(1, 97):
@@ -272,13 +333,11 @@ def page_tasks(only=None):
         for name, lo, hi in BB_PARTS:
             if lo <= sp <= hi:
                 bb = (str(BB_DIR / name), sp - lo + 1)
-        cited_page = int(s["cited_page"]) if s["cited_page"].isdigit() else None
         tasks.append({
             "page_key": f"{sp:03d}", "set_page": sp, "sheet_01": s["sheet"],
             "title_01": s["title"], "discipline_01": s["discipline"],
             "native_file": str(f), "native_page": fp, "bluebeam": bb,
-            "cited_as": {"file": s["cited_file"], "page": cited_page,
-                         "basis": "01_Sheet_Index_rev1.md File and PDF p. columns"},
+            "cited_as": cited[sp],
             "governed_by": gov, "governs": None,
         })
     for n in ADD4_PAGES:
@@ -299,8 +358,9 @@ def page_tasks(only=None):
             "title_01": info.get("title") or extra.get("Title (title block)", ""),
             "discipline_01": info.get("discipline") or extra.get("Discipline", ""),
             "native_file": str(ADD4_FILE), "native_page": n, "bluebeam": None,
-            "cited_as": {"file": ADD4_FILE.name, "page": n,
-                         "basis": "01_Sheet_Index_rev1.md page-level log"},
+            "cited_as": {"file": ADD4_FILE.name, "page": n, "short_name": "Add. 4", "duplicates": [],
+                         "indexed_in_01": "Yes (page-level log)",
+                         "basis": rel(SHEET_INDEX) + " page-level log (Plan_Set_Crosswalk.csv covers set pages only)"},
             "governed_by": None, "governs": governs, "governs_status": status,
         })
     if only:
@@ -893,7 +953,8 @@ def stage_pages(out, jobs, only, cache):
             "schema_version": SCHEMA_VERSION,
             "page_key": t["page_key"], "set_page": t["set_page"],
             "sheet_01": t["sheet_01"], "title_01": t["title_01"], "discipline_01": t["discipline_01"],
-            "source": {"file": rel(f), "sha256": sha256_file(f), "page": t["native_page"]},
+            "source": {"file": rel(f), "sha256": sha256_file(f), "page": t["native_page"],
+                       "sha256_checked_against": rel(MANIFEST)},
             "cited_as": t["cited_as"], "governed_by": t["governed_by"], "governs": t["governs"],
             "page": r["page"], "counts": r["counts"], "title_block": tb,
             "words": r["words"], "bluebeam": r["bluebeam"],
@@ -1199,7 +1260,9 @@ def build_forms():
             reasons.insert(0, "PROPOSED tag is not printed; each Drawing Sheets anchor is checked for the row's "
                               "quantity (value and unit) when the Ledger Name has one, otherwise for a "
                               "specific noun from the Name (generic nouns excluded); Verified in the text "
-                              "layer, Inferred by OCR or Bluebeam, Unresolved if not found or not matching")
+                              "layer, Inferred by OCR or Bluebeam, Unresolved if not found or not matching; "
+                              "a sheet-only anchor is Verified only for the quantity in the text layer, and a "
+                              "noun on the sheet is Inferred (on sheet, location not pinned)")
         r["reason"] = "; ".join(reasons)
     return rows
 
@@ -1813,9 +1876,13 @@ def anchor_check(r, sheet, anchor, pages_by_key, sheet_keys, facts):
             return "tag", f"{sheet} ({anchor}): found ({h['method']}, {h['page_key']} {fmt_box(h['bbox'])}); line does not hold the row's quantity or specific noun", "Unresolved"
         return "tag", f"{sheet} ({anchor}): {what} ({lv}) on the tag's line; {h['page_key']} {fmt_box(h['bbox'])}", weakest([lv, method_level(h["method"])])
     if anchor == "sheet only":
+        # Owner's rule: only the row's quantity read in the text layer makes a sheet-only anchor
+        # Verified; a noun anywhere on the sheet is Inferred (location not pinned).
         best = None
         for k in keys:
             what, lv = content_match(page_line_groups(pages_by_key[k]), r)
+            if what and what.startswith("matched: noun"):
+                what, lv = what + " (on sheet, location not pinned)", "Inferred"
             if what and (best is None or LEVELS.index(lv) < LEVELS.index(best[1])):
                 best = (what, lv, k)
         if not best:
@@ -1848,7 +1915,7 @@ def crosswalk(rows, pages, facts, tag_hits, qty):
     for q in qty:
         if q["keyed_note"]:
             kn_q[(q["sheet"], q["keyed_note"]["number"])].append(q)
-    out, anchor_stats = [], Counter()
+    out, anchor_stats, anchor_terms = [], Counter(), Counter()
     for r in rows:
         found = defaultdict(set)
         for h, how in counted[r["row"]]:
@@ -1864,6 +1931,8 @@ def crosswalk(rows, pages, facts, tag_hits, qty):
                     anchors_txt.append(txt)
                     levels.append(lv)
                     anchor_stats[(kind, lv)] += 1
+                    m = re.search(r"matched: (quantity|noun)", txt)
+                    anchor_terms[(kind, m.group(1) if m else "no match", lv)] += 1
                     if a.startswith("KN"):
                         for n in re.findall(r"\d+", a):
                             qs += kn_q.get((s, int(n)), [])
@@ -1916,7 +1985,7 @@ def crosswalk(rows, pages, facts, tag_hits, qty):
                     "cited_nf": cited_nf, "found_nc": found_nc, "not_counted": nc_txt, "anchors": anchors_txt,
                     "qty": qtxt, "sheet_level": sheet_level, "row_level": row_level, "status": status,
                     "notes": notes})
-    return out, anchor_stats
+    return out, (anchor_stats, anchor_terms)
 
 
 def sheet_sort_key(s):
@@ -2076,7 +2145,7 @@ def stage_hits(out):
          "; ".join(f"{c[1]} ({c[0]:.1f} pt)" for c in q["near_callouts"]),
          "; ".join(f"{d[1]} ({d[0]:.1f} pt)" for d in q["near_detail_refs"]), "Inferred"]
         for q in sorted(all_qty, key=lambda q: (q["page_key"], q["bbox"], q["value"], q["unit"], q["method"]))])
-    xw, anchor_stats = crosswalk(rows, pages, facts, all_tags, all_qty)
+    xw, (anchor_stats, anchor_terms) = crosswalk(rows, pages, facts, all_tags, all_qty)
     write_csv(out / "Ledger_Crosswalk.csv", XWALK_HEADER, [
         [x["row"], x["tag"], x["family"], x["searchable"], x["sheets_field"], "; ".join(x["cited"]),
          x["found"], "; ".join(x["cited_nf"]), "; ".join(x["found_nc"]), x["not_counted"],
@@ -2085,7 +2154,7 @@ def stage_hits(out):
         for x in xw])
     write_csv(out / "Unmatched_Tags.csv", UNMATCHED_HEADER, unmatched_tags(pages, comp))
     return {"rows": rows, "pages": pages, "facts": facts, "tags": all_tags, "qty": all_qty, "xwalk": xw,
-            "anchor_stats": anchor_stats}
+            "anchor_stats": anchor_stats, "anchor_terms": anchor_terms}
 
 
 # ---------------------------------------------------------------- reports: Findings, Spot_Check, README
@@ -2300,13 +2369,20 @@ def findings(out, pages, res):
           "unit), or, for a row whose Ledger Name has no quantity, a specific noun from the Name. Inferred: the same "
           "match read by OCR or Bluebeam. Unresolved: the anchor was not found, or its text does not match. A keyed "
           "note numbered by order is at best Inferred, and Unresolved where its block's entry count and highest "
-          "marker read disagree.", ""]
+          "marker read disagree. A sheet-only anchor (a cited sheet with no KN, Det. or Add. anchor) is Verified only "
+          "when the row's quantity (value and unit) is read on that sheet in the text layer; a noun match anywhere on "
+          "the sheet is Inferred (\"on sheet, location not pinned\").", ""]
     L += md_table(["Anchor type", "Verified", "Inferred", "Unresolved", "Total"],
                   [[k, st[(k, "Verified")], st[(k, "Inferred")], st[(k, "Unresolved")],
                     sum(st[(k, lv)] for lv in LEVELS)] for k in kinds]
                   + [["all", sum(v for (k, lv), v in st.items() if lv == "Verified"),
                       sum(v for (k, lv), v in st.items() if lv == "Inferred"),
                       sum(v for (k, lv), v in st.items() if lv == "Unresolved"), sum(st.values())]]) + [""]
+    tm = res["anchor_terms"]
+    L += ["Anchors by match term:", ""]
+    L += md_table(["Anchor type", "Match term", "Verified", "Inferred", "Unresolved"],
+                  [[k, t, tm[(k, t, "Verified")], tm[(k, t, "Inferred")], tm[(k, t, "Unresolved")]]
+                   for k, t in sorted({(k, t) for k, t, _ in tm})]) + [""]
     pp = [x for x in xw if x["Family"] == "PROPOSED"]
     L.append("PROPOSED rows by weakest anchor (the row's sheet evidence level): "
              + ", ".join(f"{v} {k}" for k, v in sorted(Counter(x["Sheet Evidence Level"] for x in pp).items()))
@@ -2362,7 +2438,7 @@ def readme(out, pages, res):
          "## Files", ""]
     L += md_table(["File", "What it holds"], [
         ["pages/NNN_<sheet>.json, pages/add4_pNN_<sheet>.json",
-         "One per page: source file, SHA-256 and page, set page, 01 sheet and title, cited_as (01 File and PDF p.), "
+         "One per page: source file, SHA-256 and page, set page, 01 sheet and title, cited_as (plans_N copy from index/Plan_Set_Crosswalk.csv), "
          "governed_by / governs (Addendum 4), page size and rotation, counts, title block, words, bluebeam block, tags, "
          "quantities, keyed notes, extractor versions"],
         ["Sheet_Map.csv", "One row per page: 01 sheet vs title-block sheet read, titles, page N OF M, split-part file and "
@@ -2383,8 +2459,12 @@ def readme(out, pages, res):
           "Ledger schema rev1.",
           "- Boxes are PDF points on the page as displayed: origin top left, page rotation applied (set pp.62–96 are "
           "/Rotate 270), rounded to 0.01 pt.",
-          "- Set page to native part comes from `library/Plan_Set_Parts.md`. The 01 sheet, title, cited_as and "
-          "Addendum 4 supersession come from `index/01_Sheet_Index_rev1.md`.", "",
+          "- Set page to native part comes from `library/Plan_Set_Parts.md`. cited_as (the plans_N copy the index files "
+          "cite, with duplicate extracts listed) comes from `index/Plan_Set_Crosswalk.csv`; the run stops if the "
+          "crosswalk's native part, page or sheet disagrees. The 01 sheet, title and Addendum 4 supersession come from "
+          "`index/01_Sheet_Index_rev1.md`; Add. 4 pages cite the 01 page-level log.",
+          "- Every native source's SHA-256 is checked against `index/Library_Manifest.csv` before any stage runs, "
+          "and the run stops on a mismatch or a missing row.", "",
           "## How a page is read", "",
           "- Text layer: PyMuPDF `get_text(\"words\")`. The render mode comes from the character flags (neither filled "
           "nor stroked means mode 3, AutoCAD's overlay for text drawn as geometry). Mode-3 words count as text layer. "
@@ -2442,6 +2522,9 @@ def readme(out, pages, res):
           "- Verified: the anchor was found in the native text layer and its text holds the row's quantity, or a key "
           "noun from the Ledger Name. Inferred: the same match read by OCR or Bluebeam. Unresolved: the anchor was "
           "not found, or its text doesn't match. A row's level is its weakest anchor.",
+          "- Sheet-only anchors (owner, 2026-09-30): a cited sheet with no KN, Det. or Add. anchor is Verified only "
+          "when the row's quantity (value and unit) is read on that sheet in the text layer. A noun match anywhere on "
+          "the sheet is Inferred, marked \"on sheet, location not pinned\".",
           "- Match term: when the Ledger Name has a quantity (value and unit, e.g. 149 LF, 7 ft), the anchor must "
           "hold that quantity; a noun is not enough. Only rows with no quantity use a noun, and only a specific one. "
           "The matched term is recorded in the crosswalk's Anchor Check column.",
@@ -2492,6 +2575,7 @@ def main():
     args = ap.parse_args()
     out = Path(args.out).resolve()
     only = [k.strip() for k in args.only.split(",") if k.strip()]
+    verify_sources()
     if args.stage in ("pages", "all"):
         stage_pages(out, args.jobs, only, args.cache or None)
     if args.stage in ("forms", "all"):
