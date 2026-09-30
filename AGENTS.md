@@ -22,6 +22,7 @@ Rules marked (checked) are enforced by `tools/checks.py` in the pre-commit hook 
 ## Output standards (all project content)
 - Cite every factual claim: sheet number, spec section and paragraph, or addendum number and item. Page cites use the file short names defined in `testbeds/eastsound/index/00_Document_Register_rev1.md`.
 - Tag every claim: Verified (read in the text layer), Verified-Visual (read from the page image), Inferred (derived; state the reasoning), Unresolved (conflict or missing; state what's needed).
+- Text from OCR copies under `testbeds/eastsound/derived/` counts as OCR and is tagged Inferred, never Verified or a text layer. Verified text-layer reads come only from the native files in `library/`. OCR copies are a comparison column only.
 - Addenda supersede base documents. On a conflict, cite both and state which governs.
 - The body section number governs over running headers and the TOC. A claim that defers to WSDOT is tagged "Unresolved: external reference, not staged."
 - Ledger CSVs use the exact 16-column header in `testbeds/eastsound/index/Ledger_Schema.csv`. A row's tag is the weakest tag of the facts in it.
@@ -47,6 +48,7 @@ prompts/                   task prompts, plain markdown, any runtime
 tools/                     repo-wide scripts (Prompt 1 adds checks.py)
 testbeds/eastsound/
   library/                 original source files (read-only) plus .md notes beside them
+  derived/                 person-made derived copies of library files (bluebeam-ocr/); not sources
   index/                   00–04 rev1, Ledger_Schema.csv, Requirements_Schema.csv (Setup)
   lanes/<lane>/            Wiki, Ledger, Issues, Known Issues per lane
   project/                 Merge outputs, including the test bed's Issues Log
