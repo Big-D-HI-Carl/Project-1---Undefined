@@ -49,6 +49,7 @@ tools/                     repo-wide scripts (Prompt 1 adds checks.py)
 testbeds/eastsound/
   library/                 original source files (read-only) plus .md notes beside them
   derived/                 derived copies of library files; not sources. Each subfolder is owned by the lane that writes it; bluebeam-ocr/ is owned by Carl
+    reconciliation/        proposed Ledger updates, starter MTO and new-row candidates built from derived/ocr/ (proposals only; nothing applied)
   index/                   00–04 rev1, Ledger_Schema.csv, Requirements_Schema.csv (Setup)
   lanes/<lane>/            Wiki, Ledger, Issues, Known Issues per lane
     as-delivered/          lane packages as delivered (component wikis, page notes, build-script zips)

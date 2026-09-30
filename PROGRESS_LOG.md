@@ -332,3 +332,56 @@ Append-only. One entry per session, in the format in AGENTS.md. Never edit or de
   - `python3 tools/checks.py --all` → 0 FAIL, 3 WARN (data gate not run; the 2 listed Ledger exceptions). `--range origin/main..HEAD` (before this log commit) → 0 FAIL, 1 WARN. `--staged` → 0 FAIL on every commit.
 - Failures and fixes: none.
 - Next: Carl merges PR #9. Merge fixes the two repeated Tags and the 12 over-tagged rows; Prompt 9 adds the Ledger ID.
+
+## 2026-09-30 — Prompt 9: OCR evidence reconciled into proposed Ledger updates and a starter civil MTO (proposal mode)
+- Runtime: Claude Code
+- Commits: 7efb30b..HEAD on `claude/vigilant-albattani-h4lspn` (draft PR)
+- Done:
+  - Set `git config core.hooksPath .githooks` in this clone; it was unset. Main was pulled at the start and again after PR #8 merged mid-session (fast-forward to b8e1313; #8 touched none of this step's inputs).
+  - `AGENTS.md` Layout: one line for `derived/reconciliation/`, in its own commit (Carl's rule-8 request).
+  - `testbeds/eastsound/tools/build_reconciliation.py` (location per Carl): reads `derived/ocr/` and the Ledger, and imports `extract_drawing_text.py` for its search-form, Name-quantity and unmatched-tag rules. It re-reads each Division 26 evidence line from the native text layer and stops, writing nothing, if any of its 25 tie-outs fails. Outputs go to `derived/reconciliation/` only.
+  - `derived/reconciliation/`: README.md, Ledger_ID_Map.csv (447 IDs; L-0001 = Ledger Row 2), Ledger_Schema_rev1_Proposal.md (19 columns; one total Quantity per row), Ledger_Update_Proposal.csv, Starter_MTO.csv, Needs_Check.csv, New_Row_Candidates.csv, Summary.md.
+  - Ledger_Update_Proposal.csv, 243 rows, 14 of them Verified changes:
+    - Found, not cited: 18 rows (6 Verified sheet adds: Hot Box #1 E4.3, E7.4, E10.2; Hot Box #2 E4.3; EF-1 E0.1; DW-1 E2.1).
+    - Cited, not found: 215 rows, all needs check (5 with a variant printed form, e.g. SDCB#1076).
+    - PROPOSED printed tag found: 4 rows (L-0337 and L-0338 take "Hot Box #1" and "Hot Box #2", Verified; the same tags as L-0057 and L-0058, left for Merge).
+    - Owner's Division 26 review: 6 rows (TS, T3, T2 to Verified; ATS to Inferred plus the bid split; GEN Notes RFI). Each carries its native text-layer box.
+  - Starter_MTO.csv (C0–C2, C7): 83 leads, 48 callouts, 22 lines. 1 line is Ready (3 EA yard hydrants, L-0051, C1.3 Add. 4 p.7, text layer). The earthwork cut 3382 CY and fill 1598 CY have no Ledger ID, carry Bid Item 1 (Inferred) and "new row needed". 26 callouts are held and listed in Summary.md, including the C2.1 fence notes.
+  - Needs_Check.csv: 25 checks (21 MTO lines; 4 panel schedules: MDP, LP1 and LP2 on E6.2, LP1 on E2.2). The schedules are embedded images; the text layer holds only their titles.
+  - New_Row_Candidates.csv: 2 proposed earthwork rows, plus 721 tag-and-sheet rows for the 401 unmatched tags (1131 reads).
+  - Summary.md: the chain link fence conflict (L-0018, L-0088 vs C2.1 keyed notes 6 and 8) and the generator RFI (125 kW on E1.1 and E6.1 vs "not less than 150.0kW" in 26 32 13 ¶2.03 C.1, main spec p.326), both left for Carl. Also held leads, segment sums (C2.3: 28 + 20 = SD-2's 48 LF; 39 + 44 = SD-3's 83 LF, Inferred) and open decisions.
+  - My own choices, listed in README.md:
+    - One OCR and one Bluebeam read of the same callout make one MTO line.
+    - A count from "N <noun>" is kept only when the tied Ledger Name names the noun.
+    - A cited-not-found sheet is never proposed for removal.
+    - TS, T3 and T2 proposals note that their Notes still hold "Status New inferred" (weakest-tag rule).
+- Tests:
+  - `python3 tools/checks.py --all` at the start → 0 FAIL, 3 WARN.
+  - `python3 testbeds/eastsound/tools/build_reconciliation.py` → 25 of 25 tie-outs pass. These include: found-not-cited 18 = crosswalk pairs; cited-not-found 215 = crosswalk pairs; Tag_Hits found sheets = crosswalk for 447 of 447 rows; unmatched reads per page and method = Unmatched_Tags for 401 tags and 1131 reads; every proposal cites evidence; no change on Inferred evidence; 9 Division 26 evidence reads and 4 panel boxes found in the native files.
+  - Determinism: three runs (repo, two temp folders) → 6 of 6 generated files byte-identical (`cmp`). All 8 files are UTF-8 without a BOM and LF.
+  - `python3 -m pyflakes testbeds/eastsound/tools/build_reconciliation.py` → clean.
+  - `--crops` into the scratchpad → 25 PNGs; checks 1, 9 and 25 viewed (C0.2 cut, C0.5 keyed note 16, E6.2 LP2 schedule) and boxed as intended.
+  - Hook `tools/checks.py --staged` on each commit → 0 FAIL, 1 WARN (data gate not run: no terms set).
+  - Close-session checks are in the PR description.
+- Failures and fixes:
+  - Summary.md's RFI line first picked a cited-not-found row for GEN instead of the Division 26 row. Fixed before commit.
+  - Segment sums first allowed three-callout sums, which gave a spurious SD-3 match (21 + 23 + 39). Limited to pairs before commit.
+  - Logged in ISSUES_LOG.
+- Next:
+  - Carl reviews the draft PR. He marks Needs_Check.csv, decides the fence conflict, the GEN RFI, the Hot Box duplicates and schema rev1 (with the checks.py and ledger_to_graph.py changes it implies), then approves the Ledger update step.
+
+## 2026-09-30 — Prompt 9 follow-up before PR #10 merge
+- Runtime: Claude Code
+- Commits: ea27a87..HEAD on `claude/vigilant-albattani-h4lspn` (PR #10)
+- Done:
+  - Merged main (PR #9, ce488d5) into the branch (ea27a87). In the three logs, main's entries come first and this branch's follow, byte for byte. PR #9 did not change AGENTS.md.
+  - `testbeds/eastsound/derived/reconciliation/Ledger_Schema_rev1_Proposal.md`: the ledger_to_graph.py impact row now says the two SD-1 rows are separate nodes (`<Tag> [L<line>]`, from PR #9). The switch to Ledger ID is still pending (599a869).
+  - ISSUES_LOG: a correction entry for the stale graph line in "Ledger Tag uniqueness (checks.py, ledger_to_graph.py) conflicts with decision A".
+- Tests:
+  - A script compared each merged log with origin/main and with this branch's additions → 3 of 3 exact, and AGENTS.md unchanged.
+  - `python3 testbeds/eastsound/tools/build_reconciliation.py` → 25 of 25 tie-outs pass. A second run to a temp folder → 6 of 6 generated files identical to the committed ones (`cmp`). PR #9 changed none of this step's inputs.
+  - `python3 tools/checks.py --all` → 0 FAIL, 3 WARN.
+  - The hook's `--staged` → 0 FAIL on each commit.
+  - `--range origin/main..HEAD` → result in the PR #10 description.
+- Failures and fixes: none
+- Next: Carl merges PR #10.

@@ -1,0 +1,448 @@
+Ledger ID,Ledger Row,Tag,Name,Lane
+L-0001,2,PROPOSED-Temporary bypass pumping system,"Temporary bypass pumping, piping, holding tanks and storage",Civil & Site
+L-0002,3,PROPOSED-Temporary power generator,Temporary back-up power generator,Civil & Site
+L-0003,4,PROPOSED-Plastic covering for slopes and stockpiles,Plastic covering for slopes and stockpiles (TESC),Civil & Site
+L-0004,5,PROPOSED-Catch basin inserts,"Catch basin inserts (inlet protection, TESC)",Civil & Site
+L-0005,6,PROPOSED-Filter fabric fence,Filter fabric (silt) fence (TESC),Civil & Site
+L-0006,7,PROPOSED-Stabilized construction entrance,Stabilized construction entrance (quarry spalls on geotextile),Civil & Site
+L-0007,8,PROPOSED-Geotextile encased check dams,Geotextile encased check dams (BMP C208),Civil & Site
+L-0008,9,PROPOSED-Existing 8in effluent outfall pipe,"Existing 8-inch effluent (outfall) pipe, 40 LF — abandon and remove",Civil & Site
+L-0009,10,PROPOSED-Interim 8in HDPE effluent pipe,Interim 8-inch HDPE effluent pipe,Civil & Site
+L-0010,11,PROPOSED-Existing 4in roof drain pipe,"Existing 4-inch roof drain pipe, 40 LF — abandon and remove",Civil & Site
+L-0011,12,SSMH 1286,Existing sump pump station (sewage pump) — remove,Civil & Site
+L-0012,13,SSMH 1285,Existing septic tank — remove,Civil & Site
+L-0013,14,PROPOSED-Existing 10in effluent outfall pipe,"Existing 10-inch effluent (outfall) pipe, 60 LF — abandon and remove",Civil & Site
+L-0014,15,PROPOSED-Existing storm drain and catch basin 87 LF,"Existing storm drain, 87 LF, and catch basin — remove",Civil & Site
+L-0015,16,PROPOSED-Existing 6in drain pipe to sump station,"Existing 6-inch drain pipe to sump pump station, 20 LF — abandon and remove",Civil & Site
+L-0016,17,PROPOSED-Existing 1.5in sump force main,"Existing 1-1/2-inch sump pump force main, 60 LF — abandon and remove",Civil & Site
+L-0017,18,PROPOSED-Existing holding tanks,Existing holding tanks — remove and relocate on site per Owner,Civil & Site
+L-0018,19,PROPOSED-Existing chain link fence 149 LF,"Existing chain link fence, 149 LF — remove",Civil & Site
+L-0019,20,PROPOSED-Existing storm drain at roof drain 7 ft,"Existing storm drain connected to roof drain, 7 ft — remove",Civil & Site
+L-0020,21,PROPOSED-Existing retaining wall 61 LF,"Existing retaining wall, 61 LF — remove",Civil & Site
+L-0021,22,PROPOSED-Existing generator fuel tank and spill basin,"Existing generator fuel tank and concrete fuel spill basin — remove, restore as asphalt pavement",Civil & Site
+L-0022,23,PROPOSED-Existing chain link fence 119 LF,"Existing chain link fence, 119 LF — remove",Civil & Site
+L-0023,24,PROPOSED-Existing 4in storm drain 8 LF,"Existing 4-inch storm drain, 8 LF — remove",Civil & Site
+L-0024,25,PROPOSED-Water line relocation at storm drain,Existing water line — relocate 1 ft clear below bottom of storm drain,Civil & Site
+L-0025,26,PROPOSED-Existing 8in influent pipe,Existing 8-inch influent pipe — abandon and remove,Civil & Site
+L-0026,27,PROPOSED-Asphalt pavement sawcut and removal,Existing asphalt pavement — sawcut and remove (new surfacing on C2.6),Civil & Site
+L-0027,28,PROPOSED-Existing 8in slab over pre-aeration basin,"Existing 8-inch slab over original pre-aeration basin — saw cut, remove and dispose",Civil & Site
+L-0028,29,PROPOSED-Existing basin internal piping,"Existing internal piping in existing basin — support during fill removal, then remove",Civil & Site
+L-0029,30,PROPOSED-Off-site staging area,"Contractor staging area off Mt Baker Road, with vehicle path to the project site",Civil & Site
+L-0030,31,Pipe ID 1,8-inch existing effluent (DI gravity),Civil & Site
+L-0031,32,Pipe ID 2,"4-inch UV disinfection drain and digester supernatant (DI gravity), 2% min",Civil & Site
+L-0032,33,Pipe ID 3,"8-inch influent (DI gravity), 0.4% min",Civil & Site
+L-0033,34,Pipe ID 4,"3-inch influent pump station air vent (SS), outlet 8 ft above finish grade, gooseneck down, fastened to exterior building wall",Civil & Site
+L-0034,35,Pipe ID 5,"10-inch UV disinfection effluent (DI gravity), 0.28% min",Civil & Site
+L-0035,36,Pipe ID 6,"4-inch building septic (Sch. 80 PVC gravity), 2% min",Civil & Site
+L-0036,37,Pipe ID 7,"2-inch digested sludge (Sch. 80 PVC force main), positive slope throughout",Civil & Site
+L-0037,38,Pipe ID 8,"4-inch vault drain (Sch. 80 PVC gravity), 2.0%",Civil & Site
+L-0038,39,Pipe ID 9,"1-inch 2W water system air vent (SS), outlet 3 ft above grade, gooseneck down",Civil & Site
+L-0039,40,Pipe ID 10,"3-inch 2W water line, HDPE (Add. 4; base: 2-inch Sch. 80 PVC force main)",Civil & Site
+L-0040,41,Pipe ID 11,"8-inch Train 3 influent (DI gravity), 0.4% min",Civil & Site
+L-0041,42,Pipe ID 12,2-inch water pipe (Sch. 80 PVC force main),Civil & Site
+L-0042,43,Pipe ID 13,"8-inch Train 2 influent (DI gravity), 0.4% min",Civil & Site
+L-0043,44,Pipe ID 14,"8-inch Train 1 influent (DI gravity), 0.4% min",Civil & Site
+L-0044,45,Pipe ID 15,"2-inch Train 3 WAS (Sch. 80 PVC gravity), positive drainage throughout",Civil & Site
+L-0045,46,Pipe ID 16,"8-inch Train 2 effluent (DI gravity), 0.4% min",Civil & Site
+L-0046,47,Pipe ID 17,"8-inch Train 3 effluent (DI gravity), 0.4% min",Civil & Site
+L-0047,48,Pipe ID 18,"6-inch influent to flow splitter (DI force main), positive slope throughout",Civil & Site
+L-0048,49,Pipe ID 19,2-inch digester WAS influent (Sch. 80 PVC gravity),Civil & Site
+L-0049,50,Pipe ID 20,6-inch Cell 3 air (SS),Civil & Site
+L-0050,51,Pipe ID 21,4-inch digester air (SS),Civil & Site
+L-0051,52,Pipe ID 22,"1-inch yard hydrants, 3 locations (Add. 4)",Civil & Site
+L-0052,53,Pipe ID 23,"1-inch 2W water line, HDPE (Add. 4)",Civil & Site
+L-0053,54,Pipe ID 24,"8-inch Train 1 effluent (DI gravity), 0.4% min (Add. 4)",Civil & Site
+L-0054,55,Pipe ID 25,"4-inch pressate drain (DI gravity), 2% min (Add. 4)",Civil & Site
+L-0055,56,Pipe ID 26,"4-inch building floor drain (DI gravity), 2% min (Add. 4)",Civil & Site
+L-0056,57,PROPOSED-Existing Train 1 influent pipe,Existing Train 1 influent pipe — abandon and plug,Civil & Site
+L-0057,58,Hot Box #1,2W water hot box #1 — flow meter and isolation valve (relocated per Add. 4),Civil & Site
+L-0058,59,Hot Box #2,2W water hot box #2 — air gap piping (relocated per Add. 4),Civil & Site
+L-0059,60,Buried Valve ID 1,6-inch gate valve — influent flow meter isolation,Civil & Site
+L-0060,61,Buried Valve ID 2,8-inch gate valve — Train 2 flow meter isolation,Civil & Site
+L-0061,62,Buried Valve ID 3,8-inch gate valve — Train 3 flow meter isolation,Civil & Site
+L-0062,63,Buried Valve ID 4,4-inch gate valve — drain flow meter isolation,Civil & Site
+L-0063,64,Buried Valve ID 5,4-inch gate valve — drain flow meter isolation,Civil & Site
+L-0064,65,Buried Valve ID 6,4-inch gate valve — treated effluent outlet box drain,Civil & Site
+L-0065,66,Buried Valve ID 7,4-inch gate valve — treated effluent outlet box drain,Civil & Site
+L-0066,67,Buried Valve ID 8,4-inch gate valve — UV disinfection drain,Civil & Site
+L-0067,68,Buried Valve ID 9,4-inch gate valve — sample sump drain,Civil & Site
+L-0068,69,Buried Valve ID 10,4-inch gate valve — pump station clean-out drain,Civil & Site
+L-0069,70,Buried Valve ID 11,4-inch gate valve — pump station clean-out drain,Civil & Site
+L-0070,71,Buried Valve ID 12,8-inch plug valve — effluent flow meter isolation,Civil & Site
+L-0071,72,Buried Valve ID 13,4-inch gate valve — drain flow meter isolation,Civil & Site
+L-0072,73,PROPOSED-Existing slab coring and repair,"Existing building slab — core or saw cut for under-slab piping, then repair",Civil & Site
+L-0073,74,SD-1,"Storm drain alignment SD-1, 12-inch, 42 + 19 + 42 LF at 0.5%",Civil & Site
+L-0074,75,PROPOSED-4in roof drain at SD-1,4-inch roof drain connection from SDCB #9 (8 LF and 17 LF at 2.00%),Civil & Site
+L-0075,76,SDCB #5,"Storm drain catch basin #5, Type 1, rim 22.94 (STA 0+47.05)",Civil & Site
+L-0076,77,SDCB #8,"Storm drain catch basin #8, Type 1, rim 22.78 (STA 0+67.46)",Civil & Site
+L-0077,78,SDCB #9,"Storm drain catch basin #9, Type 1, rim 22.75 (STA 1+09.93)",Civil & Site
+L-0078,79,SDCB #7,"Storm drain catch basin #7, Type 1, rim 23.00 (west trench drain)",Civil & Site
+L-0079,80,SDCB #10,"Storm drain catch basin #10, Type 1, rim 23.10 (STA 0+77.60, east trench drain)",Civil & Site
+L-0080,81,SDCB #2,"Storm drain catch basin #2, rim 22.65",Civil & Site
+L-0081,82,SDCB #3,"Storm drain catch basin #3, rim 22.70",Civil & Site
+L-0082,83,SDCB #4,"Storm drain catch basin #4, rim 23.15",Civil & Site
+L-0083,84,SDCB #6,"Storm drain catch basin #6, rim 23.00",Civil & Site
+L-0084,85,SDCB 1076,Existing storm drain catch basin 1076 (Type 1) — new 12-inch connection on east side at IE 20.35,Civil & Site
+L-0085,86,PROPOSED-East trench drains,"East trench drains, north and south of SDCB #10, rim 23.10",Civil & Site
+L-0086,87,PROPOSED-West trench drain,"West trench drain, about 51 ft, north side of SDCB #7",Civil & Site
+L-0087,88,PROPOSED-Block retaining wall,"Block (gravity) retaining wall, STA 0+05.00 to 1+31.00",Civil & Site
+L-0088,89,PROPOSED-Chain link fence 126 LF,"Chain link fence along retaining wall, 126 LF, 6-ft fabric with 3-strand barbed wire (7 ft total), connected to existing fence",Civil & Site
+L-0089,90,PROPOSED-New septic tank,New septic tank (replaces SSMH 1285),Civil & Site
+L-0090,91,PROPOSED-Floor drains,"Floor drains, 4-inch stainless steel with 2-inch trap",Civil & Site
+L-0091,92,PROPOSED-Parking stall striping,"Parking stall striping, including van-accessible stall and signs",Civil & Site
+L-0092,93,PROPOSED-Gravity sewer cleanouts,Gravity sewer cleanouts (6-in or 8-in) with cast iron ring and cover in concrete block,Civil & Site
+L-0093,94,PROPOSED-Tracer wire and locater boxes,"Tracer wire (#10 AWG insulated), locater boxes, and detectable warning tape on new utilities",Civil & Site
+L-0094,95,PROPOSED-Concrete walkway,"Concrete walkway / pavement, 6-inch minimum, #3 at 12 in each way",Civil & Site
+L-0095,96,PROPOSED-WWTP tank and building signs,"WWTP tank and building signs, 9 (UV Disinfection Chamber, Blower Building, Dewatering Facility, Influent Pump Station, Aerobic Digester, Train 1–3, 2W Water System Pump Station)",Civil & Site
+L-0096,97,PROPOSED-Buried valve label markers,Bronze buried valve label markers (Berntsen #C35FB) with cast iron valve boxes and concrete pads,Civil & Site
+L-0097,98,PROPOSED-HMA pavement,"Asphalt concrete pavement, 4-in HMA Class 1/2-in PG 58H-22 over 4-in CSBC and 12-in gravel base, thickened edge",Civil & Site
+L-0098,99,PROPOSED-Gravel surfacing,"Gravel surfacing, 4-in compacted base course over subgrade at 95%",Civil & Site
+L-0099,100,PROPOSED-Post hydrant,Post hydrant on 2-inch HDPE supply with buried 2-inch gate valve,Civil & Site
+L-0100,101,"PROPOSED-Composite manholes, double manhole condition",Lightweight composite manholes (Morrison Bros. 418LC-3800 AM or equal) in cast-in-place traffic ring,Civil & Site
+L-0101,102,PROPOSED-Influent sample sump,"Influent sample sump, 24-in x 6-ft precast well curb (H2 Precast WC-24 or equal) with traffic-rated riser and lid",Civil & Site
+L-0102,103,PROPOSED-Hot Box #1 flow meter,"1-inch flow meter in Hot Box #1, 'per electrical design requirements'",Civil & Site
+L-0103,104,PROPOSED-Hot Box #1 solenoid valve,"Solenoid valve, ASCO Redhat 8221, 3/4-inch, slow-closing, normally closed, 120 VAC, NEMA 4X",Civil & Site
+L-0104,105,PROPOSED-Train 2 flow meter vault,"Train 2 flow meter vault, precast 4'-2"" x 4'-2"" x 5'-0"" (Utility Vault 506-LA or equal), H-20 hatch Halliday H1R3636, Bilco LadderUp",Civil & Site
+L-0105,106,PROPOSED-Train 3 flow meter vault,"Train 3 flow meter vault, precast 4'-2"" x 4'-2"" x 5'-0"" (Utility Vault 506-LA or equal), H-20 hatch Halliday H1R3636, Bilco LadderUp",Civil & Site
+L-0106,107,PROPOSED-Train 2 flow meter,"Train 2 flow meter, 8-inch, in Train 2 flow meter vault",Civil & Site
+L-0107,108,PROPOSED-Train 3 flow meter,"Train 3 flow meter, 8-inch, in Train 3 flow meter vault",Civil & Site
+L-0108,109,PROPOSED-Hydroseeded restoration areas,"Hydroseeded grass restoration of disturbed areas (topsoil, seed, fertilizer, mulch)",Civil & Site
+L-0109,110,PROPOSED-Temporary construction sign,"Temporary construction sign, 4 x 8 ft plywood, Ecology and CDBG Commerce requirements",Civil & Site
+L-0110,111,PROPOSED-Dewatering system,"Contractor dewatering system: pumps, backup pumps, standby generator, wells or well points, discharge treatment",Civil & Site
+L-0111,112,PROPOSED-Compost berm,Compost berm (TESC),Civil & Site
+L-0112,113,PROPOSED-Orange barrier fence,Orange high-visibility barrier fence (TESC / clearing limits),Civil & Site
+L-0113,114,PROPOSED-Temporary shoring and trench safety systems,"Temporary shoring, bracing and trench excavation safety systems (PE-designed where required)",Civil & Site
+L-0114,115,PROPOSED-Temporary cold-mix patches,"Temporary cold-mix (MC-2) asphalt patches at trench crossings, 2 in minimum",Civil & Site
+L-0115,116,PROPOSED-Retaining wall footing drain,Retaining wall footing drain with drain rock and drainage geotextile,Civil & Site
+L-0116,117,SDCB #1,"Storm drain catch basin #1, Type 1L, rim 22.3; 12-in (SE) invert 19.3",Civil & Site
+L-0117,118,SD-2,Storm drain alignment SD-2: SDCB #5 → #6 → #7 → #10; 48 LF of 12-in and 23 LF of 6-in at 0.5%; 4-in roof drain 21 LF at 2.00%,Civil & Site
+L-0118,119,SD-3,Storm drain alignment SD-3: SDCB #1 → #2 → #3 → #4 → trench drain; 83 LF of 12-in and 28 LF of 6-in at 0.5%,Civil & Site
+L-0119,120,PROPOSED-Asphalt wedge curb,Asphalt wedge curb per 4/C7.7,Civil & Site
+L-0120,121,PROPOSED-Emergency access areas,"Emergency access areas (west side) — no parking, blocking, stockpiling or staging; vehicle turnaround allowed",Civil & Site
+L-0121,122,"PROPOSED-4in roof drain connections (SD-2, SD-3)",4-in roof drain connections: SD-2 STA 0+47.16 (21 LF at 2.00%); SD-3 STA 0+26.94 and 0+70.26,Civil & Site
+L-0122,123,INF1,"Train 1 influent line, flow splitter to existing Train 1, 8-inch",Process & Mechanical
+L-0123,124,INF2,"Train 2 influent line, flow splitter to existing Train 2, 8-inch DI",Process & Mechanical
+L-0124,125,INF3,"Train 3 influent line, flow splitter to Train 3, 8-inch",Process & Mechanical
+L-0125,126,SE1,Train 1 secondary effluent line to effluent flow meter and UV,Process & Mechanical
+L-0126,127,SE2,Train 2 secondary effluent line to effluent flow meter and UV,Process & Mechanical
+L-0127,128,SE3,"Train 3 secondary effluent line, 8-inch",Process & Mechanical
+L-0128,129,WAS1,Train 1 waste activated sludge line to WAS pump,Process & Mechanical
+L-0129,130,WAS2,Train 2 waste activated sludge line to WAS pump,Process & Mechanical
+L-0130,131,WAS3,"Train 3 WAS / clarifier drain line to WAS pump manifold, 2-inch",Process & Mechanical
+L-0131,132,PROPOSED-IPS-DISCHARGE-TO-SPLITTER,"Influent Pump Station discharge to flow splitter, 6-inch DI restrained rising to 12-inch DI at the box",Process & Mechanical
+L-0132,133,PROPOSED-EXISTING-INFLUENT-PIPING-REMOVAL,"Existing influent piping conflicts at the splitter: dewater, abandon, remove",Process & Mechanical
+L-0133,134,PROPOSED-INFLUENT-FLOW-METER,"Influent flow meter, 6-inch electromagnetic, 0-880 gpm",Process & Mechanical
+L-0134,135,PROPOSED-TRAIN-2-FLOW-METER,"Train 2 influent flow meter, 8-inch electromagnetic, 0-470 gpm",Process & Mechanical
+L-0135,136,PROPOSED-TRAIN-3-FLOW-METER,"Train 3 influent flow meter, 8-inch electromagnetic, 0-470 gpm",Process & Mechanical
+L-0136,137,PROPOSED-EFFLUENT-FLOW-METER,"Plant effluent flow meter, 8-inch electromagnetic, 0-940 gpm",Process & Mechanical
+L-0137,138,PROPOSED-PLANT-DRAIN-FLOW-METER | PROPOSED-Plant-Drain-Flow-Meter,"Plant drain flow meter, 4-inch electromagnetic, 0-200 gpm | Plant drain magnetic flow meter, Promag W400, remote transmitter at the IPS panel",Process & Mechanical; Electrical & Controls
+L-0138,139,PROPOSED-2W-FLOW-METER,"Plant water (2W) flow meter, 1-inch electromagnetic, 0-25 gpm, in a fiberglass enclosure (43 22 10 flow meter system)",Process & Mechanical
+L-0139,140,PROPOSED-DIGESTED-SLUDGE-FLOW-METER,"Rotary press sludge flowmeter, 3-inch electromagnetic (E+H 10W), 24-800 gpm, at the flocculator inlet (G0.5 digested sludge FM)",Process & Mechanical
+L-0140,141,DO #1 | DO-1,"Dissolved oxygen / pH sensor, Train 3 Aeration Zone #1 | Dissolved oxygen sensor and transmitter, Zone 1 (Hach LDO probe, SC200 transmitter, 24 VDC)",Process & Mechanical; Electrical & Controls
+L-0141,142,DO #2 | DO-2,"Dissolved oxygen / pH sensor, Train 3 Aeration Zone #2 | Dissolved oxygen sensor and transmitter, second monitor (Hach LDO/SC200)",Process & Mechanical; Electrical & Controls
+L-0142,143,PROPOSED-FLOW-SPLITTER-BOX,"Influent flow splitter box, prefabricated 316 SS, 4 equal chambers with adjustable weirs, removable cover",Process & Mechanical
+L-0143,144,PROPOSED-FLOW-SPLITTER-SUPPORT,"Concrete support pad for flow splitter box, about 6.5 x 4.0 x 1.3 ft tall, top elev 26.00",Process & Mechanical
+L-0144,145,PROPOSED-INFLUENT-FLOW-METER-VAULT,Flow meter vault on the splitter inlet line (north),Process & Mechanical
+L-0145,146,PROPOSED-TRAIN-2-FLOW-METER-VAULT,Train 2 flow meter vault,Process & Mechanical
+L-0146,147,PROPOSED-TRAIN-3-FLOW-METER-VAULT,Train 3 flow meter vault,Process & Mechanical
+L-0147,148,PROPOSED-TRAIN-3-TANK,"Train 3 tank, reinforced concrete bullseye tank, 32-ft ID, 34-ft OD, 12-inch walls",Process & Mechanical
+L-0148,149,PROPOSED-INFLUENT-SAMPLE-SUMP,Influent sampling sump,Process & Mechanical
+L-0149,150,PROPOSED-EFFLUENT-SAMPLE-SUMP,Effluent sample sump (effluent sample chamber),Process & Mechanical
+L-0150,151,PROPOSED-TRAIN-3-TREATMENT-SYSTEM,"Train 3 biological treatment system package, Smith & Loveless Model R Oxigest (basis of design) or approved equal",Process & Mechanical
+L-0151,152,PROPOSED-TRAIN-3-INNER-WALLS,"Train 3 steel inner walls and zone partition walls, structural steel plate 1/4-inch minimum",Process & Mechanical
+L-0152,153,PROPOSED-TRAIN-3-CLARIFIER-MECHANISM,"Train 3 clarifier mechanism, 18-ft dia.: center drive, feed well, rake arms, skimmer, scum baffle, effluent trough and weirs, scum airlift",Process & Mechanical
+L-0153,154,PROPOSED-TRAIN-3-WALKWAYS-AND-LADDER,"Train 3 access walkway (3-ft clarifier bridge), 2-ft peripheral service walkway, aluminum grating and handrail, aluminum ladder with concrete pad",Process & Mechanical
+L-0154,155,PROPOSED-TRAIN-3-AERATION-DIFFUSERS,"Train 3 aeration system: air header, drop pipes with unions and air control valves, medium bubble (plenum) diffusers, 8 in Aeration Zone 1 and 2 in Aeration Zone 2",Process & Mechanical
+L-0155,156,PROPOSED-TRAIN-3-ANOXIC-MIXERS,"Train 3 submersible mixers (2), 5 HP, 460 V 3-phase, one per anoxic zone",Process & Mechanical
+L-0156,157,PROPOSED-TRAIN-3-DAVIT-CRANES,"Portable lifting davits (2) for the Train 3 mixers, stainless, manual brake winch, on top mast brackets",Process & Mechanical
+L-0157,158,PROPOSED-TRAIN-3-RAS-AIRLIFT,"RAS airlift pump, 3-inch steel riser with flow division (weir) box, 51 gpm at 15 cfm max",Process & Mechanical
+L-0158,159,PROPOSED-TRAIN-3-MLR-AIRLIFT,"Nitrate (mixed liquor) recycle airlift pump(s), 6-inch steel riser, Liqui-Lift weir box, 6-inch MLR pipe",Process & Mechanical
+L-0159,160,PROPOSED-CARBON-FEED-PUMPS,"Carbon feed peristaltic metering pumps (2: 1 duty, 1 standby), Stenner Model S3V02AA302N",Process & Mechanical
+L-0160,161,PROPOSED-TRAIN-3-CONTROL-PANEL,"Treatment system control panel, NEMA 4X 316 SS, 460 V 3-phase input, UL listed",Process & Mechanical
+L-0161,162,PROPOSED-TRAIN-3-FRP-LAUNDER-COVER,"FRP launder cover, Train 3 clarifier effluent trough",Process & Mechanical
+L-0162,163,PROPOSED-INFLUENT-PUMP-STATION-WET-WELL,"Influent Pump Station wet well, 96-inch precast on 12-inch precast base, bottom elev 9.0, top 23.30, with vent and clean outs",Process & Mechanical
+L-0163,164,PROPOSED-INFLUENT-PUMPS-SMALL,"Influent pumps, small, submersible, duplex (2), 120-220 gpm each",Process & Mechanical
+L-0164,165,PROPOSED-INFLUENT-PUMPS-LARGE,"Influent pumps, large, submersible, duplex (2), 320-500 gpm each",Process & Mechanical
+L-0165,166,PROPOSED-IPS-LEVEL-TRANSDUCER,"Influent Pump Station wet well level transducer, set 6 in. above floor (set points T1-T7)",Process & Mechanical
+L-0166,167,F1–F4 [Influent Pump Station],"Influent Pump Station backup float switches F1-F4, timer control",Process & Mechanical
+L-0167,168,PROPOSED-IPS-VALVE-VAULTS,"Influent Pump Station valve vaults (2), precast 4 ft 2 in x 4 ft 2 in x 5 ft 6 in min. inside, Utility Vault Co. 506-LA or equal",Process & Mechanical
+L-0168,169,PROPOSED-IPS-HATCHES,Influent Pump Station access hatches: 36x36-in. single leaf H-20 (Halliday H1R3636) and 30x48-in. single leaf H-20 over pumps (Halliday H1R3048),Process & Mechanical
+L-0169,170,PROPOSED-PLANT-DRAIN-LINE,"Filtrate, pressate and digester supernatant drain line to Influent Pump Station, 4-inch (IE 13.40 at wet well)",Process & Mechanical
+L-0170,171,PROPOSED-STEP-INFLUENT-CONNECTION,"8-inch STEP influent connection to the new Influent Pump Station, IE 19.50",Process & Mechanical
+L-0171,172,PROPOSED-2W-PUMP-STATION-WET-WELL | PROPOSED-2W-Pump-Station-Wet-Well,"2W plant water pump station wet well, 96-inch precast, floor 10.00, top 21.50, with 30-inch fiberglass access structure, insulated gasketed lid and 38-inch traffic-rated lid and ring | 2W water system pump station wet well",Process & Mechanical; Contract & General
+L-0172,173,PROPOSED-2W-PUMPS,"2W plant water pumps (2), submersible well pumps, 1 duty and 1 standby, 20-80 gpm",Process & Mechanical
+L-0173,174,F1–F4 [2W Pump Station],2W pump station float switches F1-F4,Process & Mechanical
+L-0174,175,PROPOSED-2W-DIAPHRAGM-TANKS,"2W air diaphragm (bladder) tanks (2), Amtrol Well-X-Trol WX-350D, 119 gal (26 x 62 in.), with manifold, gauge and relief valves",Process & Mechanical
+L-0175,176,PIT-620,"2W system pressure transducer, 0-150 psi (operating 55-75 psi)",Process & Mechanical
+L-0176,177,PROPOSED-2W-DISCHARGE-LINE,"2W plant water discharge, 2-inch SCH 80 PVC to 3-inch HDPE",Process & Mechanical
+L-0177,178,PROPOSED-2W-FILL-LINE,"2W water fill from air gap to 2W wet well, 4-inch SCH 80 PVC at 2% slope, inlet IE 19.50",Process & Mechanical
+L-0178,179,PROPOSED-UV-DIGESTER-STRUCTURE,"UV Disinfection Chamber & Digester structure, concrete, about 45 x 13 ft: UV chamber, effluent sample chamber, aerobic digester",Process & Mechanical
+L-0179,180,PROPOSED-UV-SYSTEM,"UV disinfection system, Trojan UV3000 PTP or equal: 2 open-channel systems (UV Channels #1 and #2), 6 modules per bank, 4 lamps per module, 48 lamps, stainless channels with level control weirs",Process & Mechanical
+L-0180,181,PROPOSED-UV-CONTROL-PANELS,"UV control panels on chamber walls (2 on C5.1): splitter panel, power distribution receptacles and wall-mounted system monitor per UV unit (C5.4)",Process & Mechanical
+L-0181,182,PROPOSED-EFFLUENT-HEADER-TO-UV,"Secondary effluent header through 8-inch effluent flow meter to UV Channels #1 and #2, 8-inch, with 8-inch gate valves (hand wheel) at channel inlets",Process & Mechanical
+L-0182,183,PROPOSED-UV-CHAMBER-DRAIN,"UV chamber drain, 4-inch, with 4-inch gate valves",Process & Mechanical
+L-0183,184,PROPOSED-UV-DIGESTER-GRATING-GUARDRAIL,"UV/digester guardrail with removable guard chains, removable grating over digester, aluminum access ladders (nominal 2 ft wide)",Process & Mechanical
+L-0184,185,PROPOSED-DIGESTER-TELESCOPING-VALVE,"Aerobic digester telescoping valve, 4-inch rising stem, 48-inch min travel, Waterman TS-2 or equal",Process & Mechanical
+L-0185,186,PROPOSED-DIGESTER-DIFFUSERS,"Aerobic digester coarse bubble diffusers, 24-in. 316 SS, open bottom with rubber inlet check valve (G0.7: 6 at 20 cfm)",Process & Mechanical
+L-0186,187,PROPOSED-DIGESTER-AIR-LINES,"Aerobic digester air supply lines, 3-inch and 4-inch",Process & Mechanical
+L-0187,188,PROPOSED-DIGESTED-SLUDGE-LINE,"Digested sludge line, 2-inch SCH 80 PVC, digester to digested sludge pumps",Process & Mechanical
+L-0188,189,PROPOSED-WAS-PUMP-DISCHARGE-TO-DIGESTER,"WAS pump discharge to aerobic digester, 3-inch",Process & Mechanical
+L-0189,190,PROPOSED-FINAL-EFFLUENT-LINE,"Final effluent, UV chamber to existing SSMH *1288 and 12-inch outfall, 10-inch",Process & Mechanical
+L-0190,191,S1–S2 [Aerobic Digester],"Aerobic digester transducer level sensor(s): S1 high alarm 25.55, S2 low alarm 15.30",Process & Mechanical
+L-0191,192,PROPOSED-ROTARY-FAN-PRESS,"Rotary fan press (rotary press model), steel, 1 unit",Process & Mechanical
+L-0192,193,PROPOSED-RFP-FLOCCULATOR,"Rotary fan press flocculator, steel, 1",Process & Mechanical
+L-0193,194,PROPOSED-RFP-SLUDGE-MANIFOLD,"Rotary fan press sludge manifold and piping, 316 SS, 1",Process & Mechanical
+L-0194,195,PROPOSED-RFP-CAKE-CHUTE,"Rotary fan press cake chute, LLDPE, 1",Process & Mechanical
+L-0195,196,PROPOSED-RFP-AIR-COMPRESSOR,"Rotary fan press air compressor, material not listed, 1",Process & Mechanical
+L-0196,197,PROPOSED-RFP-CONTROL-PANEL,"Rotary fan press control panel with operator interface, 1",Process & Mechanical
+L-0197,198,PROPOSED-POLYMER-SYSTEM,"Emulsion (liquid) polymer make-up system, Fournier frame with Watson-Marlow peristaltic dosing pump; C6.1 plan labels a dry polymer mix unit",Process & Mechanical
+L-0198,199,PROPOSED-SCREW-CONVEYOR,"Screw conveyor system, stainless steel, dewatered cake to mobile dumpster/bin (system row; components below)",Process & Mechanical
+L-0199,200,PROPOSED-DIGESTED-SLUDGE-FEED-TO-PRESS,"Digested sludge feed to rotary fan press, 3-inch",Process & Mechanical
+L-0200,201,PROPOSED-2W-SUPPLY-TO-PRESS,"2W water supply to rotary fan press, 2-inch",Process & Mechanical
+L-0201,202,PROPOSED-WAS-PUMP,"WAS pump, packaged sludge pump, 3 HP",Process & Mechanical
+L-0202,203,PROPOSED-SWING-SLUDGE-PUMP,"Swing pump, packaged sludge pump, 3 HP, standby for either the WAS or digested sludge pump",Process & Mechanical
+L-0203,204,PROPOSED-DIGESTED-SLUDGE-PUMP,"Digested sludge pump, packaged sludge pump, 3 HP",Process & Mechanical
+L-0204,205,PROPOSED-WAS-SOLENOID-VALVES,"WAS inlet solenoid valves (3, on WAS #1-#3), ASCO Redhat 8221G013, 2-inch, normally closed, 120 V coil, NEMA 4X",Process & Mechanical
+L-0205,206,PROPOSED-SLUDGE-MANIFOLD-PIPING,Sludge pump and valving area manifold: 2-inch SCH 80 PVC with 2-inch PVC ball valves and unions; 4-inch SCH 80 PVC digested sludge header; 4x2 reducer; 2x3 expansion to press,Process & Mechanical
+L-0206,207,ESWD WWTP – Aerobic Digester Blower,"Aerobic digester blower (1), Kaeser Com-paK BB 52 C, 5 HP 460 V, VFD, 120 scfm at 4.0 psig, on 3.25 x 2.25 ft pad",Process & Mechanical
+L-0207,208,ESWD WWTP – Biological Treatment System Blowers (Trains 1 – 3),"Biological treatment blowers (4), Kaeser Com-paK DB 166 C, 20 HP 460 V, VFD, 315 scfm at 8.9 psig each",Process & Mechanical
+L-0208,209,PROPOSED-AERATION-AIR-HEADER,Blower Building aeration air piping: 3-inch SS header (IE 24.26) with 3-inch butterfly valves; 6-inch SS outlets with 6-inch butterfly valves,Process & Mechanical
+L-0209,210,PROPOSED-AIR-TO-TRAIN-3,"6-inch SS aeration air line, Blower Building to Train 3 (buried, IE 15.90 at drop)",Process & Mechanical
+L-0210,211,PROPOSED-AIR-TO-TRAIN-1-STUB,"6-inch air piping to Train #1, terminated with blind flange inside existing metal building",Process & Mechanical
+L-0211,212,PROPOSED-AIR-TO-TRAIN-2-STUB,"6-inch air piping to Train #2, terminated with blind flange inside existing metal building",Process & Mechanical
+L-0212,213,PROPOSED-2W-BLADDER-TANK-SUPPLY,"1-inch 2W supply piping to the bladder tanks, routed below existing concrete floor, slab penetration at tank connection",Process & Mechanical
+L-0213,214,PROPOSED-BLOWER-BUILDING | PROPOSED-Blower-Building,"Blower Building, prefabricated metal building housing the biological treatment blowers | Blower Building — pre-engineered metal building, one room (Blower Room 101) | Blower Building",Process & Mechanical; Structural & Building; Contract & General
+L-0214,215,PROPOSED-IPS-MOTOR-SAVER-RELAYS,"Flygt MiniCAS-120 motor saver relays for the influent pumps, supplied by Contractor to the Control Systems Integrator",Process & Mechanical
+L-0215,216,PROPOSED-SLUDGE-PUMP-LOCAL-PANELS,"Sludge pump local electrical control panels (3), by pump manufacturer",Process & Mechanical
+L-0216,217,PROPOSED-YARD-HYDRANTS,1-inch frost-proof yard hydrants with vacuum breakers (quantity not stated),Process & Mechanical
+L-0217,218,PROPOSED-POST-HYDRANTS,2-inch post hydrants with 2-inch atmospheric vacuum breakers (quantity not stated),Process & Mechanical
+L-0218,219,PROPOSED-EXTERIOR-SANITARY-DRAINS,"Exterior sanitary drain piping, ABS DWV, with unions and cleanouts",Process & Mechanical
+L-0219,220,PROPOSED-BLOWER-BLDG-WALL-FANS,"Blower Building wall fans (2), Acme FQ18G6, 3,300 CFM, 1/2 HP, 120 V, each on its own Schaffer TH109 thermostat, with EBE445 gravity combination louver",Process & Mechanical
+L-0220,221,PROPOSED-BLOWER-BLDG-MOTORIZED-LOUVER,"Blower Building motorized louvered vent, 36 x 84 in., Pottoroff EXD-645 with AF120 120 V spring-return actuator",Process & Mechanical
+L-0221,222,PROPOSED-BLOWER-BLDG-MANUAL-LOUVER,"Blower Building manual louvered vent, 24 x 24 in., Pottoroff EXD-645",Process & Mechanical
+L-0222,223,PROPOSED-EXISTING-BLDG-WALL-FANS,"Existing Dewatering/Train 1&2 Building wall fans (3), Acme FQ18G6, 3,300 CFM, each on a manual on/off switch, with gravity combination louvers",Process & Mechanical
+L-0223,224,PROPOSED-EXISTING-BLDG-LOUVERS,"Existing Dewatering/Train 1&2 Building manual louvered vents (2), 36 x 84 in., Pottoroff EXD-645",Process & Mechanical
+L-0224,225,Receiving Conveyor,"Receiving conveyor, horizontal shaftless, 9-in. flight, 6 ft 9 in., 304 SS U-trough, two inlets from rotary press cake chutes, 1 HP",Process & Mechanical
+L-0225,226,Inclined Conveyor,"Inclined conveyor, shafted, 9-in. flight at 5-in. pitch, 17 ft 4 in. at 35 degrees, 304 SS tubular trough, outlet to bin, 5 HP",Process & Mechanical
+L-0226,227,PROPOSED-2W-AIR-GAP-ENCLOSURE,"2W air gap system in a fiberglass enclosure (""2W (Air Gap) Water Hot Box"")",Process & Mechanical
+L-0227,228,PROPOSED-EYE-WASH-STATIONS,Wall-mount eye wash stations (quantity and locations not stated),Process & Mechanical
+L-0228,229,PROPOSED-IPS-CHECK-VALVES,"Influent Pump Station discharge check valves, 4-inch and 6-inch FxF, swing check with external lever, spring and limit switch (MH 259-02ALS)",Process & Mechanical
+L-0229,230,PROPOSED-IPS-GATE-VALVES,Influent Pump Station gate valves: 4-inch and 6-inch FxF in the valve vaults; 4-inch and 6-inch buried gate valves FLxMJ with valve boxes,Process & Mechanical
+L-0230,231,PROPOSED-AIR-BUTTERFLY-VALVES,"Aeration air butterfly valves: 3-inch and 6-inch at the biological blowers, 4-inch at the digester blower; Bray Series 31 lug or Dezurik or equal",Process & Mechanical
+L-0231,232,PROPOSED-UV-INTENSITY-SENSORS,"UV intensity sensors (2, one per bank), submersible, with low-UV alarm contact",Process & Mechanical
+L-0232,233,PROPOSED-UV-TRANSMISSIVITY-ANALYZER,"UV transmissivity analyzer, Hach DR 1900 (1)",Process & Mechanical
+L-0233,234,PROPOSED-WAS-FLOW-METER,"WAS flow meter, 2-inch, on the WAS line to the digester, per electrical design requirements",Process & Mechanical
+L-0234,235,PROPOSED-RFP-POLYMER-FLOWMETER,"Rotary press polymer (dilution) flowmeter, 1-inch electromagnetic (E+H 10P), 5-80 gpm, at the flocculator inlet",Process & Mechanical
+L-0235,236,PROPOSED-RFP-INLET-PRESSURE-TRANSMITTER,"Flocculator inlet pressure transmitter, E+H PMC71, 0-30 psi, HART",Process & Mechanical
+L-0236,237,PROPOSED-Utility-Transformer-480V,"Utility transformer, 480Y/277V, 225 kVA (new; furnished and installed by OPALCO)",Electrical & Controls
+L-0237,238,P-SEC,"Utility secondary conduit and conductors, new utility transformer to service equipment (by contractor)",Electrical & Controls
+L-0238,239,PROPOSED-CT-Enclosure-and-Meter-Base,"CT enclosure, landing pads and meter base (new; meter and CTs by utility)",Electrical & Controls
+L-0239,240,ATS,"Automatic transfer switch, service-entrance rated, 480Y/277V, 400 A (permanent)",Electrical & Controls
+L-0240,241,MDP,"Main distribution panel MDP, 480Y/277V 3-ph 4-W, 400 A bus, main lugs only, 42,000 AIC, surface mounted, with SPD",Electrical & Controls
+L-0241,242,TS,"Transformer TS, 75 kVA, 480–208Y/120V",Electrical & Controls
+L-0242,243,GEN,"Standby diesel generator, 480Y/277V, 125 kW / 156 kVA, sound-attenuated outdoor enclosure with sub-base diesel fuel tank (permanent)",Electrical & Controls
+L-0243,244,P-TPS,"Replacement 200 A 208Y/120V feeder, existing switchgear to Panel TPS",Electrical & Controls
+L-0244,245,PROPOSED-Service-Area-Grounding-Electrode-System,"Grounding electrode systems at the new service: utility transformer grounding, generator pad rebar bond, separately derived system grounding",Electrical & Controls
+L-0245,246,PROPOSED-Existing-Utility-Transformer-208V,"Existing OPALCO pad-mount utility transformer, 208Y/120V 3-ph, 45 kVA",Electrical & Controls
+L-0246,247,GEN (E),"Existing standby diesel generator, 208Y/120V 3-ph, 30 kW / 37.5 kVA",Electrical & Controls
+L-0247,248,PROPOSED-Existing-Generator-Fuel-Tank-Exhaust-Louvers,"Existing diesel fuel tank, generator exhaust system and louvers",Electrical & Controls
+L-0248,249,SES (E),"Existing 300 A service entrance breaker, SUSE rated, NEMA 3R",Electrical & Controls
+L-0249,250,ATS (E),"Existing automatic transfer switch, 4-wire, 3-pole",Electrical & Controls
+L-0250,251,PROPOSED-Existing-CT-Enclosure-and-Meter,Existing current transformer enclosure and OPALCO utility meter,Electrical & Controls
+L-0251,252,PROPOSED-Existing-Meter-Base-and-Wall-Raceway,Existing obsolete meter base and raceway on building wall,Electrical & Controls
+L-0252,253,PROPOSED-Existing-200A-Feeder-to-Panel-TPS,Existing 200 A 208Y/120V power feeder to Panel TPS,Electrical & Controls
+L-0253,254,TPS,"Panel TPS, 208Y/120V 3-ph 4-W, 200 A (kept; re-fed)",Electrical & Controls
+L-0254,255,PROPOSED-Existing-208V-400A-Distribution-Panel,"Existing 208Y/120V 400 A distribution panel (Square-D I-Line), Office Building, re-fed from transformer TS",Electrical & Controls
+L-0255,256,PROPOSED-Existing-Grounding-Electrode-System,Existing grounding electrode system (kept; new equipment and electrodes bonded to it),Electrical & Controls
+L-0256,257,BL-1,"Aeration Blower No.1 — cell aeration blower, Cell 1, 20 HP, VFD in MCC",Electrical & Controls
+L-0257,258,BL-2,"Aeration Blower No.2 — cell aeration blower, Cell 2, 20 HP, VFD in MCC",Electrical & Controls
+L-0258,259,BL-3,"Aeration Blower No.3 — cell aeration blower, Cell 3, 20 HP, VFD in MCC",Electrical & Controls
+L-0259,260,BL-4,"Aeration Blower No.4 — backup, 20 HP, VFD in MCC",Electrical & Controls
+L-0260,261,DB,"Digester blower, 5 HP, VFD in MCC",Electrical & Controls
+L-0261,262,PROPOSED-DB-Local-Disconnect,"Local disconnect for digester blower DB, NEMA 4X stainless steel",Electrical & Controls
+L-0262,263,MCC,"Motor control center, 480 V 3-ph 4-W, Blower Building, Allen-Bradley Centerline 2100 IntelliCENTER | Blower Building motor control center — 8 sections at 20 in, 160 in total per Add. 4",Electrical & Controls; Structural & Building
+L-0263,264,MCP,"Main Control Panel (PLC), Blower Building | Main control panel (MCP) — relocated per Add. 4",Electrical & Controls; Structural & Building
+L-0264,265,LP-1,"Lighting panel LP1, 120/240 V 1-ph 3-W, 100 A bus, 100 A main breaker, 10,000 AIC, surface mounted",Electrical & Controls
+L-0265,266,PROPOSED-Blower-Building-Power-Handholes,Electric power handholes at the Blower Building (2 shown),Electrical & Controls
+L-0266,267,PROPOSED-Blower-Building-Control-Signal-Handholes,Electric control and signal handholes at the Blower Building (2 shown),Electrical & Controls
+L-0267,268,PROPOSED-Blower-Building-Smoke-Heat-Detector,"Ceiling smoke/heat detector, System Sensor 4WTAR-B, Form C relay, sounder, 4-wire",Electrical & Controls
+L-0268,269,PROPOSED-Blower-Building-Door-Intrusion-Switch,"Door intrusion switch, magnetic reed SPDT, Interlogix Sentrol 2807T or equal",Electrical & Controls
+L-0269,270,PROPOSED-2W-Pressure-Transducer,"2W system pressure transducer, 0–150 psi, 4–20 mA, Blower Building",Electrical & Controls
+L-0270,271,PROPOSED-Blower-High-Temperature-Switches,High-temperature switches at the aeration blowers (typ.),Electrical & Controls
+L-0271,272,PROPOSED-Blower-Building-Grounding-Electrode-System,"Blower Building grounding electrode system (ground rods, concrete-encased electrode, structural steel, metal water pipe)",Electrical & Controls
+L-0272,273,EF-1,"Exhaust Fan 1, Blower Building (motor marked 1/2), circuit LP1-5",Electrical & Controls
+L-0273,274,EF-2,"Exhaust Fan 2, Blower Building (motor marked 1/2), circuit LP1-7",Electrical & Controls
+L-0274,275,ML-1,"Motorized louver ML-1, Blower Building (motor marked 1/6), louver and HVAC control circuit LP1-3",Electrical & Controls
+L-0275,276,PROPOSED-Blower-Building-Manual-Louver,"Manual louver, Blower Building",Electrical & Controls
+L-0276,277,L1 (Blower Building),"Light fixture type L1: narrow LED 4-ft, vapor tight, 120 V, 42 VA (Acuity CSVT-L48…)",Electrical & Controls
+L-0277,278,L2 (Blower Building),"Light fixture type L2: LED wall pack, wet location, photocell, 120 V, 17 VA (Acuity ARC1 LED…)",Electrical & Controls
+L-0278,279,X1 (Blower Building),"Light fixture type X1: LED emergency combo with battery pack, 120 V, 6 VA (Lithonia ECC)",Electrical & Controls
+L-0279,280,PROPOSED-Blower-Building-Ventilation-Control-Panel,"Ventilation control panel: relay controls, one thermostat per exhaust fan, louver interlock",Electrical & Controls
+L-0280,281,TCP-3,"Train No.3 control panel TCP-3 (by treatment system provider), 480 V 3-ph input, NEMA 4X Type 316 SS",Electrical & Controls
+L-0281,282,PROPOSED-Train-3-Clarifier-Drive-Motor,Train No.3 clarifier drive motor,Electrical & Controls
+L-0282,283,PROPOSED-Train-3-Submersible-Mixer-A,Train No.3 submersible mixer A,Electrical & Controls
+L-0283,284,PROPOSED-Train-3-Submersible-Mixer-B,Train No.3 submersible mixer B,Electrical & Controls
+L-0284,285,PROPOSED-Train-3-Local-Disconnects,"Local motor disconnects, NEMA 4X Type 316 SS, for the clarifier drive and two mixers (3)",Electrical & Controls
+L-0285,286,PROPOSED-Train-3-Pole-Light,"Platform pole light: 4-in square aluminum pole, 12 ft, receptacle, photocell, local switch; Lithonia ""#DXS0-LED-P3-30K-T3M-MVOLT-SPA-DNAXD"" (as printed) or equal",Electrical & Controls
+L-0286,287,PROPOSED-SCADA-Computer-System,"SCADA computer system with Cat 6 network junction box, combo network/telephone outlet and SCADA alarm dialer connection",Electrical & Controls
+L-0287,288,IP-1,"Influent Pump No.1, 3 HP, explosion-proof (XP), 4.8 FLA",Electrical & Controls
+L-0288,289,IP-2,"Influent Pump No.2, 3 HP, explosion-proof (XP), 4.8 FLA",Electrical & Controls
+L-0289,290,IP-3,"Influent Pump No.3, 5 HP, explosion-proof (XP), 7.6 FLA",Electrical & Controls
+L-0290,291,IP-4,"Influent Pump No.4, 5 HP, explosion-proof (XP), 7.6 FLA",Electrical & Controls
+L-0291,292,F1 (Influent Pump Station),"Float switch F1, Eco-Float GP60NONC, non-mercury NO/NC — redundant large lag on at 19.00 (with timer)",Electrical & Controls
+L-0292,293,F2 (Influent Pump Station),"Float switch F2, Eco-Float GP60NONC, non-mercury NO/NC — redundant large lead on at 18.50",Electrical & Controls
+L-0293,294,F3 (Influent Pump Station),"Float switch F3, Eco-Float GP60NONC, non-mercury NO/NC — redundant small lag on at 18.00",Electrical & Controls
+L-0294,295,F4 (Influent Pump Station),"Float switch F4, Eco-Float GP60NONC, non-mercury NO/NC — redundant small lead on at 17.50",Electrical & Controls
+L-0295,296,LT (Influent Pump Station),"Submersible level transducer: WIKA pressure transmitter, 316 SS, 0–15 psi, LevelGuard, 4–20 mA loop powered, vented, NEMA 4X termination enclosure",Electrical & Controls
+L-0296,297,IPS,"Influent Pump Station control panel, 480 V 3-ph 3-W, NEMA 4X SS: 60 A main, starters for IP-1 to IP-4, T3 and LP2, Allen-Bradley CompactLogix PLC (1768-ENBT), network switch, flow-meter transmitters",Electrical & Controls
+L-0297,298,T3,"Transformer T3, 10 kVA, 480–120/240V (inside IPS panel; feeds LP2)",Electrical & Controls
+L-0298,299,LP2,"Panel LP2 (Influent Pump Station panel), 120/240 V 1-ph 3-W, 100 A bus, 60 A main breaker, 10,000 AIC, surface mounted",Electrical & Controls
+L-0299,300,PROPOSED-Influent-Pump-Local-Disconnects,Influent pump motor local disconnects (4) on the building wall within sight of the wet well; outdoor enclosures lockable Type 316 SS with drip shields,Electrical & Controls
+L-0300,301,PROPOSED-Influent-Wet-Well-Power-Handhole,"Influent wet well pump power handhole, precast, traffic rated, solid bottom with sump and drain",Electrical & Controls
+L-0301,302,PROPOSED-Influent-Wet-Well-Instrument-Handhole,"Influent wet well instrumentation handhole, precast, traffic rated, solid bottom with sump and drain",Electrical & Controls
+L-0302,303,PROPOSED-Treatment-Building-Power-Handhole,Electric power handhole at the Treatment Building / IPS panel location,Electrical & Controls
+L-0303,304,PROPOSED-Treatment-Building-Control-Signal-Handhole,Electric control and signal handhole at the Treatment Building / IPS panel location,Electrical & Controls
+L-0304,305,PROPOSED-Influent-Flow-Meter,"Influent magnetic flow meter, Endress+Hauser Promag W400, Class I Div 2, EtherNet/IP, remote transmitter at the IPS panel, two 316L grounding rings",Electrical & Controls
+L-0305,306,PROPOSED-Plant-2-Flow-Meter,"Plant 2 magnetic flow meter (""Train #2 flow meter"" on E7.0), Promag W400, remote transmitter at the IPS panel",Electrical & Controls
+L-0306,307,PROPOSED-Plant-3-Flow-Meter,"Plant 3 magnetic flow meter (""Train #3 flow meter"" on E7.0), Promag W400, remote transmitter at the IPS panel",Electrical & Controls
+L-0307,308,PROPOSED-WAS-Dewatering-Flow-Meter,"Dewatering flow meter (""WAS flow meter"" on E7.0), Promag W400 with local display, Cat 6 to the IPS panel",Electrical & Controls
+L-0308,309,PROPOSED-Effluent-Flow-Meter,"Effluent magnetic flow meter in vault, Promag W400, remote housing, IP68 Type 6 potted submersible sensor, two 316L grounding rings",Electrical & Controls
+L-0309,310,PROPOSED-Effluent-Flow-Meter-Transmitter-Panel,"Effluent flow meter transmitter panel: stainless local control panel with the transmitter and instrument terminals, on handrail or rack with SS hardware",Electrical & Controls
+L-0310,311,PROPOSED-2W-Flow-Meter,"2W flow meter, 1-in Promag W400, 24 VAC/DC, EtherNet/IP, local display, NEMA 4X, in Hot Box #1",Electrical & Controls
+L-0311,312,PROPOSED-Train-1-Flow-Meter,"Train #1 flow meter, 8 in — future project, not in this project; Phase I provides transmitter space in the IPS panel only",Electrical & Controls
+L-0312,313,DW-1,"Dewatering skid with skid control panel DW-1: pre-wired and factory tested, UL/ETL labeled per WA L&I, 15 HP, 480 V 3-ph; skid PLC, operator interface and network switch",Electrical & Controls
+L-0313,314,WP-1,"WAS Pump No.1, 3 HP, VFD in MCC",Electrical & Controls
+L-0314,315,WP-2,"WAS Pump No.2 / swing pump, 3 HP, VFD in MCC",Electrical & Controls
+L-0315,316,SD-1,"Sludge pump, 3 HP, VFD in MCC",Electrical & Controls
+L-0316,317,PROPOSED-WAS-and-Sludge-Pump-Local-Disconnects,"Local motor disconnects for WP-1, WP-2 and SD-1 (3)",Electrical & Controls
+L-0317,318,PROPOSED-WAS-Solenoid-Valves,"WAS solenoid valves (3), WAS #1 to #3, 120 V from the IPS panel",Electrical & Controls
+L-0318,319,PROPOSED-Polymer-Feed-Pump,Polymer feed pump at the dewatering skid; 120 V GFCI receptacle LP2-6 and 4–20 mA flow pace,Electrical & Controls
+L-0319,320,PROPOSED-Hypochlorite-Feed-Pump,Hypochlorite feed pump; 120 V GFCI receptacle on LP1-16 and 4–20 mA flow pace,Electrical & Controls
+L-0320,321,PROPOSED-Influent-Sampler,"Influent sampler (Owner-furnished, contractor-installed); 120 V GFCI receptacle LP2-8 and 4–20 mA flow pace",Electrical & Controls
+L-0321,322,PROPOSED-Effluent-Sampler,"Effluent sampler (Owner-furnished, contractor-installed); 120 V GFCI receptacle on LP1-14 and 4–20 mA flow pace",Electrical & Controls
+L-0322,323,EF-3,"Exhaust Fan EF-3, Treatment Building, motor marked 1/2, circuit LP2-7 (1,127 VA)",Electrical & Controls
+L-0323,324,EF-4,"Exhaust Fan EF-4, Treatment Building, motor marked 1/2, circuit LP2-9 (1,127 VA)",Electrical & Controls
+L-0324,325,EF-5,"Exhaust Fan EF-5, Treatment Building, motor marked 1/2, circuit LP2-11 (1,127 VA)",Electrical & Controls
+L-0325,326,PROPOSED-Treatment-Building-Ventilation-Control-Panel,"Ventilation control panel, Treatment Building, NEMA 4X stainless steel",Electrical & Controls
+L-0326,327,PROPOSED-Methane-Sensor,"Methane gas sensor, Treatment Building, circuit LP2-4 (500 VA)",Electrical & Controls
+L-0327,328,PROPOSED-H2S-Sensor,"Hydrogen sulfide (H2S) sensor, Treatment Building, circuit LP2-2 (500 VA)",Electrical & Controls
+L-0328,329,PROPOSED-Gas-Alarm-Light-and-Horn,"Local alarm light and horn for ventilation and gas monitoring, Treatment Building",Electrical & Controls
+L-0329,330,L2 (Treatment Building),"Light fixture type L2 wall packs on circuit LP2-3 (""wall pack lighting"", 500 VA)",Electrical & Controls
+L-0330,331,2W-P1,"2W Water Pump No.1, 5 HP, VFD in MCC (E4.3 tags it P-2W-1)",Electrical & Controls
+L-0331,332,2W-P2,"2W Water Pump No.2, 5 HP, VFD in MCC (E4.3 tags it P-2W-2)",Electrical & Controls
+L-0332,333,LSH-111,2W float F1: high level alarm and redundant valve close at 22.00 (factory float tree),Electrical & Controls
+L-0333,334,F2 (2W Pump Station),2W float F2: valve close at 20.00 (factory float tree),Electrical & Controls
+L-0334,335,F3 (2W Pump Station),2W float F3: valve open at 19.00 (factory float tree),Electrical & Controls
+L-0335,336,LSL-111,2W float F4: low level alarm and pumps off at 15.00 (factory float tree),Electrical & Controls
+L-0336,337,PROPOSED-2W-Pump-Local-Disconnects,Local motor disconnects for the two 2W pumps (2),Electrical & Controls
+L-0337,338,PROPOSED-Hot-Box-1,"Hot Box #1 (2W): houses the 1-in 2W flow meter, isolation valve solenoid, heat trace, GFEP and J-box",Electrical & Controls
+L-0338,339,PROPOSED-Hot-Box-2,Hot Box #2 (2W): heat trace on exposed piping,Electrical & Controls
+L-0339,340,PROPOSED-Hot-Box-Heat-Trace,"Heat trace on all exposed 2W piping in Hot Boxes #1 and #2: Raychem BTV self-regulating or equal, dedicated 120 V 20 A GFEP circuits (LP1-10, LP1-12), NEMA 4X thermostat, end-of-line kit with indicator light",Electrical & Controls
+L-0340,341,PROPOSED-2W-Isolation-Valve-Solenoid,Isolation valve solenoid in Hot Box #1 (2W line),Electrical & Controls
+L-0341,342,UV1,"UV disinfection unit No.1 (UV modules on 10-ft cords, 2 per PDR)",Electrical & Controls
+L-0342,343,UV2,"UV disinfection unit No.2 (UV modules on 10-ft cords, 2 per PDR)",Electrical & Controls
+L-0343,344,PROPOSED-UV-Control-Panel-1,"UV control panel 1 (UV system controller), furnished with the UV system, installed by the contractor",Electrical & Controls
+L-0344,345,PROPOSED-UV-Control-Panel-2,"UV control panel 2 (UV system controller), furnished with the UV system, installed by the contractor",Electrical & Controls
+L-0345,346,PROPOSED-UV-Power-Distribution-1,"UV power distribution 1: stainless splitter panel within 10 ft of the module power end, wiring gutter, J-boxes and (3) duplex GFCI power distribution receptacles (PDRs) with in-use wet-location covers on SS Unistrut; SS conduit and fittings",Electrical & Controls
+L-0346,347,PROPOSED-UV-Power-Distribution-2,"UV power distribution 2: stainless splitter panel within 10 ft of the module power end, wiring gutter, J-boxes and (3) duplex GFCI power distribution receptacles (PDRs) with in-use wet-location covers on SS Unistrut; SS conduit and fittings",Electrical & Controls
+L-0347,348,PROPOSED-Digester-Level-Transducer,"Digester level transducer: WIKA submersible, 316 SS, 0–15 psi, LevelGuard, 4–20 mA, vented, desiccant, NEMA 4X; J-box with terminals and desiccant on the handrail",Electrical & Controls
+L-0348,349,PROPOSED-UV-Area-Pole-Light,"UV-area pole light: 4-in square aluminum pole 12 ft on a concrete base secured to the basin side, photocell, local on/off switch, WP/GFCI receptacle; Lithonia ""#DXS0-LED-P3-30K-T3M-MVOLT-SPA-DNAXD"" (as printed) or equal",Electrical & Controls
+L-0349,350,T2,"Transformer T2, 20 kVA, 480–120/240V (MCC; feeds load center LP1)",Electrical & Controls
+L-0350,351,PROPOSED-VFDs-in-MCC,"Variable frequency drives in the MCC (10), Allen-Bradley PowerFlex 753 with Ethernet module, each with a 3% line-side reactor; dV/dt filters on motor runs over 50 ft",Electrical & Controls
+L-0351,352,TCP-1,Train No.1 control panel (FUTURE); MCC 30/3 unit and feeder P-TCP1,Electrical & Controls
+L-0352,353,TCP-2,Train No.2 control panel (FUTURE); MCC 30/3 unit and feeder P-TCP2,Electrical & Controls
+L-0353,354,PROPOSED-Conduit-and-Conductor-Runs,"Conduit and conductor runs per the E6.3 schedules: 40 named power runs (+2 unnamed UV controller circuits, AC spare) and 38 named 24 VDC control/signal runs (+DC spare)",Electrical & Controls
+L-0354,355,PROPOSED-Blower-PTC-Relay-Modules,"Blower motor PTC relay modules (5), furnished by the blower supplier, installed in the main PLC control panel",Electrical & Controls
+L-0355,356,PROPOSED-Influent-Pump-Seal-Fail-Overtemp-Relays,"Influent pump seal-fail and overtemperature relays (4), Mini-CAS or equal, furnished by the pump manufacturer, installed in the IPS panel",Electrical & Controls
+L-0356,357,PROPOSED-Temporary-Backup-Generator,"Temporary back-up generator (rental), connected to the permanent ATS until the permanent generator arrives; example cut sheet MQ Power 120 kW prime diesel",Electrical & Controls
+L-0357,358,PROPOSED-Construction-Power-Service,"Dedicated construction power service (contractor-provided, contractor-paid energy)",Electrical & Controls
+L-0358,359,PROPOSED-Electrical-Equipment-Housekeeping-Pads,"Concrete housekeeping pads under floor-mounted electrical equipment (MCC, main PLC panel, IPS panel)",Electrical & Controls
+L-0359,360,PROPOSED-Blower-Building-Slab-and-Grade-Beams,Blower Building concrete slab-on-grade and grade beams,Structural & Building
+L-0360,361,PROPOSED-Blower-Pad,Concrete blower equipment pad carrying 4 blowers,Structural & Building
+L-0361,362,PROPOSED-Blowers-Blower-Building,Blowers (4) on the blower pad,Structural & Building
+L-0362,363,PROPOSED-2W-Bladder-Tank-Assembly,"2W bladder tank assembly — 2 tanks, 24 in diameter",Structural & Building
+L-0363,364,PROPOSED-Louver-36x84-Motorized,"Louver, 36 in x 84 in, motorized — Blower Building west wall",Structural & Building
+L-0364,365,PROPOSED-Louver-24x24-Manual,"Louver, 24 in x 24 in, manual — Blower Building west wall",Structural & Building
+L-0365,366,PROPOSED-Exhaust-Fans-Blower-Building,Exhaust fans (2) with 24 in x 24 in wall vents — Blower Building east wall,Structural & Building
+L-0366,367,PROPOSED-Fire-Extinguishers-Blower-Building,"Fire extinguisher assemblies (2), wall-mounted — Blower Building",Structural & Building
+L-0367,368,101A,"Door pair, 10 ft-0 in x 8 ft-0 in x 1-3/4 in, insulated hollow metal, painted, Type B — 2 openings tagged 101A",Structural & Building
+L-0368,369,101B,"Door, 3 ft-0 in wide, insulated hollow metal, painted, Type A",Structural & Building
+L-0369,370,101C,"Door, 5 ft-0 in x 8 ft-0 in x 1-3/4 in, insulated hollow metal, painted, Type A",Structural & Building
+L-0370,371,PROPOSED-Existing-Office-Louver-4x4,"Existing louvered vent, 4 ft x 4 ft — existing office building south wall; remove, re-side floor to eave",Structural & Building
+L-0371,372,PROPOSED-Existing-Office-Louver-2x3,"Existing louvered vent, 2 ft x 3 ft — existing office building east wall; remove, re-side floor to eave",Structural & Building
+L-0372,373,PROPOSED-Existing-Generator-Exhaust-Assembly,Existing generator exhaust assembly — existing office building east wall; remove,Structural & Building
+L-0373,374,PROPOSED-WWTP-Building-Louver-3x7,"Louvered vent, 3 ft x 7 ft — existing WWTP building, 3 locations",Structural & Building
+L-0374,375,PROPOSED-WWTP-Building-Exhaust-Fan-24x24,"Exhaust fan, 24 in x 24 in — existing WWTP building, 3 locations, 6 ft above slab",Structural & Building
+L-0375,376,PROPOSED-Train-3-Concrete-Tank,Train 3 cast-in-place concrete tank — 12 in circular wall on 12 in mat slab with raised center pedestal,Structural & Building
+L-0376,377,PROPOSED-Train-3-Guardrail-and-Ladders,"Train 3 guardrail and ladders — shown ""per civil""",Structural & Building
+L-0377,378,PROPOSED-Blower-Building-Foundation-Drains,"Perimeter foundation drains, 4 in rigid ABS perforated pipe or drain tile in drain rock — Blower Building slab edge",Structural & Building
+L-0378,379,PROPOSED-UV-Disinfection-Chamber-Basin,"UV Disinfection Chamber basin — 8 in CIP concrete walls on 12 in mat slab, with 8 in equipment support walls (4)",Structural & Building
+L-0379,380,PROPOSED-Digester-Concrete-Tank,Digester — 12 in CIP concrete walls on 12 in mat slab with sloped unreinforced topping,Structural & Building
+L-0380,381,PROPOSED-Digester-Grating-Beam,"Steel beam, HDG W8x18, spanning the digester for grating support",Structural & Building
+L-0381,382,PROPOSED-UV-Digester-Grating,Aluminum solid plank grating with continuous HDG edge angles — UV basin and digester,Structural & Building
+L-0382,383,PROPOSED-UV-Digester-Guardrail-and-Ladders,"Guardrail and ladders at the UV basin and digester — shown ""per civil""",Structural & Building
+L-0383,384,PROPOSED-Drain-Pump-Station-Lid,"Drain pump station lid — 16 in CIP concrete, H-20 loading, two hatch openings and center beam",Structural & Building
+L-0384,385,PROPOSED-Drain-Pump-Station-Precast-Wet-Well,"Precast concrete wet well, 8 ft min., 96 in I.D. — per civil",Structural & Building
+L-0385,386,PROPOSED-Drain-Pump-Station-Hatches,"Access hatches (2), 2 ft-6 in x 4 ft-0 in rough openings, in the drain pump station lid — per civil",Structural & Building
+L-0386,387,PROPOSED-Generator-Slab,"Generator slab-on-grade, 6 in with thickened edge (about 1 ft-6 in min. deep)",Structural & Building
+L-0387,388,PROPOSED-Generator-on-S2.4,"Generator shown on the generator slab — ""per civil, attachment by others""",Structural & Building
+L-0388,389,PROPOSED-Flow-Splitter-Pad,"Concrete equipment pad for the flow splitter, on the existing equipment slab-on-grade",Structural & Building
+L-0389,390,PROPOSED-Flow-Splitter,"Flow splitter — per civil, attachment by others",Structural & Building
+L-0390,391,PROPOSED-Existing-Slab-Trench-Infill,Trench cut and concrete infill in existing slab for sub-floor sludge piping (Detail 8),Structural & Building
+L-0391,392,PROPOSED-2W-Pump-Station-Precast-Wet-Well,"Precast wet well, 8 ft ID (Oldcastle Infrastructure 96 in diameter), with 48 in x 30 in H-20 aluminum hatch and safety grate (LW Products HD-3C) — 2W Plant Water Pump Station",Structural & Building
+L-0392,393,PROPOSED-Influent-Pump-Station-Precast-Wet-Well,"Precast wet well, 8 ft ID (Oldcastle Infrastructure 96 in diameter), with 48 in x 30 in H-20 aluminum hatch and safety grate (LW Products HD-3C) — Influent Pump Station",Structural & Building
+L-0393,394,PROPOSED-Influent-Pump-Station-Top-Slab,"Influent Pump Station top slab per Contract Plan details, with new aluminum access hatch and safety grates",Structural & Building
+L-0394,395,PROPOSED-Influent-Flow-Meter-Valve-Vault,"Precast vault, 4 ft x 4 ft (Oldcastle Infrastructure 4686-LA), with 36 in x 36 in H-20 single-leaf hatch (Halliday H1R3636) — Influent Flow Meter Valve Vault",Structural & Building
+L-0395,396,PROPOSED-Effluent-Flow-Meter-Valve-Vault,"Precast vault, 4 ft x 4 ft (Oldcastle Infrastructure 4686-LA), with 36 in x 36 in H-20 single-leaf hatch (Halliday H1R3636) — Effluent Flow Meter Valve Vault",Structural & Building
+L-0396,397,PROPOSED-Plants-2-and-3-Flow-Meter-Vault,"Precast vault, 4 ft x 4 ft (Oldcastle Infrastructure 4686-LA), with 36 in x 36 in H-20 single-leaf hatch (Halliday H1R3636) — Plants 2 & 3 Flow Meter Vault",Structural & Building
+L-0397,398,PROPOSED-Influent-Pump-Station-Meter-Vaults,"Precast vaults, 4 ft x 4 ft (Oldcastle Infrastructure 4686-LA), with 36 in x 36 in H-20 single-leaf hatches (Halliday H1R3636) — Influent Pump Station Meter Vaults, quantity not stated",Structural & Building
+L-0398,399,PROPOSED-Steel-Stairs-Ladders-Platforms,"Steel stairs, ladders and grating platforms — galvanized, Contractor-designed, where shown on the plans",Structural & Building
+L-0399,400,PROPOSED-Boot-Brush-and-Pad,Boot and shoe brush with scraper (Gempler's #2900) on a concrete pad next to the Blower Building exterior door,Structural & Building
+L-0400,401,PROPOSED-Influent-Pump-Station-Interior-Coating,"Epoxy protective lining, spray-applied 100% solids (Raven 405 or Tnemec G436), on all interior concrete surfaces — Influent Pump Station",Structural & Building
+L-0401,402,PROPOSED-Bollards,Bollards,Contract & General
+L-0402,403,PROPOSED-Trench-Safety-System,Trench safety system,Contract & General
+L-0403,404,PROPOSED-Erosion-and-Sediment-Control-Measures,Erosion and sediment control measures (SWPPP),Contract & General
+L-0404,405,PROPOSED-Temporary-Bypass-Pipe,Temporary bypass pipe (chlorine contact tank outlet to 8-inch plant outlet),Contract & General
+L-0405,406,PROPOSED-Temporary-8in-Effluent-Piping,Temporary 8-inch effluent piping,Contract & General
+L-0406,407,PROPOSED-8in-Effluent-Piping,8-inch effluent piping (new),Contract & General
+L-0407,408,PROPOSED-8in-Effluent-Flow-Meter,8-inch effluent flow meter,Contract & General
+L-0408,409,PROPOSED-Aerobic-Digester,Aerobic digester,Contract & General
+L-0409,410,PROPOSED-UV-Disinfection-Chamber,UV disinfection chamber (UV channels #1 and #2),Contract & General
+L-0410,411,PROPOSED-UV-Disinfection-System,UV disinfection system equipment,Contract & General
+L-0411,412,PROPOSED-Sludge-Pumps,Sludge pumps (peristaltic; WAS and digested sludge),Contract & General
+L-0412,413,PROPOSED-Yard-Piping,Yard piping,Contract & General
+L-0413,414,PROPOSED-Yard-Piping-Vaults,Vaults associated with yard piping,Contract & General
+L-0414,415,PROPOSED-2W-Air-Gap-Water-System,2W air gap water system,Contract & General
+L-0415,416,PROPOSED-Influent-Pump-Station,Influent pump station,Contract & General
+L-0416,417,PROPOSED-Submersible-Pump-Equipment,Submersible pump equipment,Contract & General
+L-0417,418,PROPOSED-Influent-Flow-Splitter,Influent flow splitter,Contract & General
+L-0418,419,PROPOSED-Influent-Sampler,Influent sampler,Contract & General
+L-0419,420,PROPOSED-Train-3,Train 3 (third treatment train),Contract & General
+L-0420,421,PROPOSED-Train-3-Biological-Treatment-Equipment,Train 3 biological treatment system equipment,Contract & General
+L-0421,422,PROPOSED-Temporary-Back-Up-Generator,"Temporary back-up generator (rental, 480V)",Contract & General
+L-0422,423,PROPOSED-Automatic-Transfer-Switch,Automatic transfer switch (permanent),Contract & General
+L-0423,424,PROPOSED-Permanent-Standby-Generator,Permanent 480V standby generator,Contract & General
+L-0424,425,PROPOSED-480V-Electrical-Service,480V electrical service (new),Contract & General
+L-0425,426,PROPOSED-Motor-Control-Center,Motor control center (MCC),Contract & General
+L-0426,427,PROPOSED-PLC-Control-Panel,PLC control panel (new),Contract & General
+L-0427,428,PROPOSED-Dewatering-System,Sludge dewatering system (rotary fan press),Contract & General
+L-0428,429,PROPOSED-Site-Final-Surfacing-and-Pavement,Final surfacing and pavement (entire site),Contract & General
+L-0429,430,PROPOSED-Funding-Recognition-Sign,Funding recognition sign (Ecology financial assistance),Contract & General
+L-0430,431,PROPOSED-Temporary-Barriers,"Temporary barriers at openings and hazards (fencing, railing, barricades, steel plates, with warning signs or lights)",Contract & General
+L-0431,432,PROPOSED-Temporary-Pump-and-Process-Equipment,Temporary pump and process equipment (removed at Final Completion),Contract & General
+L-0432,433,PROPOSED-Bypass-Pumping-System,Bypass pumping systems (influent and effluent) for WWTP shutdowns,Contract & General
+L-0433,434,PROPOSED-Temporary-Construction-Dewatering,Temporary construction dewatering (excavations),Contract & General
+L-0434,435,PROPOSED-Temporary-Excavation-Support,"Temporary excavation support (shoring, bracing, sheeting, cribbing)",Contract & General
+L-0435,436,PROPOSED-Contractor-Field-Office,Contractor's field office (optional),Contract & General
+L-0436,437,PROPOSED-Temporary-Construction-Power,"Temporary construction power and lighting (poles, transformer if required, cords, outlets, lamps)",Contract & General
+L-0437,438,PROPOSED-Temporary-Construction-Water-Connection,Temporary metered construction water connection with backflow preventer (if agreed),Contract & General
+L-0438,439,PROPOSED-Temporary-Sanitary-Facilities,Temporary restrooms (contract service allowed),Contract & General
+L-0439,440,PROPOSED-Temporary-Bypass-Alarm-Monitoring,Temporary bypass alarm and status monitoring (cellular notification; wired to the existing WWTP control system),Contract & General
+L-0440,441,PROPOSED-Aeration-Basins,Aeration basins (Train 3),Contract & General
+L-0441,442,PROPOSED-Anoxic-Basins,Anoxic basins (Train 3),Contract & General
+L-0442,443,PROPOSED-Clarifier,Clarifier (Train 3),Contract & General
+L-0443,444,PROPOSED-Blowers,Blower equipment (blowers and drives),Contract & General
+L-0444,445,PROPOSED-Train-3-Dissolved-Oxygen-Sensors,"Dissolved oxygen (DO) sensors, Train 3",Contract & General
+L-0445,446,PROPOSED-Train-3-pH-Sensors,"pH sensors, Train 3",Contract & General
+L-0446,447,PROPOSED-Magnetic-Flow-Meters,Magnetic flow meters (all units; count and locations not stated),Contract & General
+L-0447,448,PROPOSED-Handrails,Handrails,Contract & General
