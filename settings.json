@@ -1,0 +1,14 @@
+{
+  "autoMemoryEnabled": false,
+  "permissions": {
+    "deny": [
+      "Edit(./**/library/**/*.pdf)",
+      "Edit(./**/library/**/*.png)",
+      "Edit(./**/library/**/*.jpg)",
+      "Edit(./**/library/**/*.jpeg)",
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./.datagate/**)"
+    ]
+  }
+}
