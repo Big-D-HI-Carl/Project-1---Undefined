@@ -1,3 +1,2 @@
 Path,Rule,Issues Log Entry
 testbeds/eastsound/project/02_Project_Ledger/Project_Ledger.csv,ledger,Project_Ledger.csv repeats two Tags
-testbeds/eastsound/project/02_Project_Ledger/Project_Ledger_by_CWP.csv,ledger,Project_Ledger_by_CWP.csv doesn't follow the Ledger schema

@@ -97,3 +97,9 @@ Append-only. Repo and program issues, in the format in AGENTS.md. The test bed's
   - It repeats the two duplicate Tags: `SD-1` at lines 107 and 304, and `PROPOSED-Influent-Sampler` at lines 432 and 439 (see "Project_Ledger.csv repeats two Tags").
   - The file was not edited. It is listed in `tools/check_exceptions.csv` for the ledger rule.
 - Fix or next action: Carl decides whether the CWP view counts as a Ledger. If not, issue its next revision under a name without "Ledger", or ask for a checks.py change that narrows the file pattern. If it does, it needs its own schema. The duplicate Tags clear with the Project Ledger fix.
+
+## 2026-09-30 — Project_Ledger_by_CWP.csv doesn't follow the Ledger schema — Closed
+- Workstream: Eastsound test bed
+- Type: schema gap
+- Finding: Closes the 2026-09-30 Open entry of the same title. Carl: "the ledger check excluding *_by_CWP files". `tools/checks.py` now leaves `*_by_CWP*` files out of the ledger rule, so the CWP view is no longer checked as a Ledger. Its row is removed from `tools/check_exceptions.csv`. The two duplicate Tags it repeats stay tracked under "Project_Ledger.csv repeats two Tags".
+- Fix or next action: Done.
