@@ -23,9 +23,14 @@ Public bid set, test bed only. Built 2026-09-29 by the Merge thread from the fiv
 
 ### 02_Project_Ledger
 
-- **Project_Ledger.xlsx** — 447 rows in the exact Ledger_Schema.csv columns (123 Unresolved). Every row an exception touches ends its Notes with "[Merge] Exceptions: #n".
-- **Project_Ledger.csv** — Same rows, machine copy (UTF-8, no BOM — open in Excel through Data > From Text/CSV).
-- **Project_Ledger_by_CWP.xlsx** — The Ledger divided into 19 CWPs by construction division, color-coded, one tab per CWP, index with live counts.
+The current Ledger is **Project_Ledger_rev2** (Prompt 11). rev0 and rev1 are history, kept unchanged. The folder's README.md gives the full list.
+
+- **Project_Ledger_rev2.xlsx** — Current. 529 rows: the 449 rev1 rows plus 80 conduit and feeder runs from the E6.3 schedules. Columns in bands A–I. Tabs: Ledger, MTO Lines, Totals, Coverage, Candidates, Column Guide, Links. Verified-only total 150 EA (headline), with "Total incl. reads to verify" beside it.
+- **Project_Ledger_rev2.csv** — Current, machine copy in Ledger_Schema_rev1.csv columns (UTF-8, no BOM). MTO_Lines_rev2.csv and Ledger_rev2_Summary.md go with it.
+- **Project_Ledger_rev1.xlsx / .csv** — History (Prompt 10): the expanded MTO, 449 rows.
+- **Project_Ledger.xlsx** — History (rev0): 447 rows in the exact Ledger_Schema.csv columns (123 Unresolved). Every row an exception touches ends its Notes with "[Merge] Exceptions: #n".
+- **Project_Ledger.csv** — History (rev0): same rows, machine copy (UTF-8, no BOM — open in Excel through Data > From Text/CSV).
+- **Project_Ledger_by_CWP.xlsx** — rev0 divided into 19 CWPs by construction division, color-coded, one tab per CWP, index with live counts. rev1 and rev2 carry a CWP column of their own.
 - **Project_Ledger_by_CWP.csv** — Same view with CWP, CWP name and CWP basis columns added.
 
 ### 03_Exceptions_and_Issues
