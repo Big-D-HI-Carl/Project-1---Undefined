@@ -367,9 +367,14 @@ def load_ledger(g: Graph, ledger: Path, id_map: Input) -> tuple[dict, dict, list
                 errors.append(f"Ledger line {row_no}: Ledger ID {lid} repeats line {seen_ids[lid]}")
             seen_ids.setdefault(lid, row_no)
             mapped = id_by_row.get(row_no)
-            if mapped and mapped != (lid, row["Tag"].strip()):
+            if mapped and mapped[0] != lid:
                 errors.append(f"Ledger line {row_no}: {lid} {row['Tag'].strip()!r} but {id_map.rel} has "
                               f"{mapped[0]} {mapped[1]!r}; the map is stale")
+            elif mapped and mapped[1] != row["Tag"].strip():
+                # The ID agrees and the Tag was changed since the map (Ledger rev2 applies the printed Tags of
+                # P-0234/P-0235). IDs are permanent and Tags may change, so this is reported, not an error.
+                g.warnings.append(f"Ledger line {row_no}: {lid} is {row['Tag'].strip()!r} in the Ledger and "
+                                  f"{mapped[1]!r} in {id_map.rel} (Tag changed since the map; the ID agrees)")
             if not mapped and lid in {m[0] for m in id_by_row.values()}:
                 errors.append(f"Ledger line {row_no}: {lid} is mapped to another row in {id_map.rel}")
             id_by_row[row_no] = (lid, row["Tag"].strip())
