@@ -265,3 +265,33 @@ Append-only. Decisions made by a person, in the format in AGENTS.md. Never edit 
 - Decided by: Carl
 - Why: Stated in this session (Prompt 10): "Your folders: new files in testbeds/eastsound/project/02_Project_Ledger/ (rev0 files untouched) and the script testbeds/eastsound/tools/build_ledger_rev1.py. Also authorized, each in its own commit (my request under rule 8): add index/Ledger_Schema_rev1.csv; update checks.py so the ledger rule accepts schema rev1 and checks unique Ledger ID instead of unique Tag; rebuild the graph from rev1."
 - Replaces: none
+
+## 2026-10-01 — Ledger rev2 applies the 14 Verified Prompt 9 proposals; "needs check" proposals stay as they are
+- Decided by: Carl
+- Why: Stated in this session (Prompt 11): "Apply the 14 Verified changes in derived/reconciliation/Ledger_Update_Proposal.csv: the 6 sheet additions; TS, T3 and T2 to Verified; ATS to Inferred with the Add. 4 bid split; GEN stays Unresolved with the RFI. Leave every "needs check" proposal as is."
+- Replaces: none
+
+## 2026-10-01 — The Hot Box duplicates L-0337 and L-0338 keep their IDs, hand their links to L-0057 and L-0058, and count in no MTO total
+- Decided by: Carl
+- Why: Stated in this session (Prompt 11): "Hot Box duplicates: keep all four IDs (IDs are permanent). Set L-0337 and L-0338 to Status "Duplicate of L-0057 / L-0058", move their links onto L-0057/L-0058, and exclude the duplicates from MTO totals."
+- Replaces: none
+
+## 2026-10-01 — The C0.2 earthwork rows L-0448 and L-0449 are reference only and count in no total
+- Decided by: Carl
+- Why: Stated in this session (Prompt 11): "Earthwork L-0448/L-0449: keep the rows; set Quantity Confidence to "Reference only (C0.2: not for bidding or take-off)"; exclude them from all totals."
+- Replaces: none
+
+## 2026-10-01 — Conduit and feeder runs are Ledger components, taken from the E6.3 schedule
+- Decided by: Carl
+- Why: Stated in this session (Prompt 11): "Conduit and feeder runs are components. Add every run in the E6.3 conduit/feeder schedule as its own row: tag as printed, from/to, size, conductors, and length if shown. CWP 26, confidence Inferred. Apply the same three-part test; C-2W and P-2W come in with this group." Asked how to treat the details, Carl chose: "Yes, 1 EA per run" (the rev1 tag-count rule applies to runs), and "Add all four as PROPOSED rows" (the two spare conduits and the two unnamed UV controller circuits).
+- Replaces: none
+
+## 2026-10-01 — Totals: Verified-only stays the headline, with "Total incl. reads to verify" beside it
+- Decided by: Carl
+- Why: Stated in this session (Prompt 11): "Totals: add "Total incl. reads to verify" beside the Verified-only total, on the Totals and Ledger tabs. Verified-only stays the headline." Asked where these go, since rev1 had no Totals tab and the Ledger CSV keeps the schema rev1 header, Carl chose "Add a Totals tab" and "xlsx column + CSV text".
+- Replaces: none
+
+## 2026-10-01 — Project Ledger rev2 is the current Ledger; the graph is rebuilt from it
+- Decided by: Carl
+- Why: Stated in this session (Prompt 11): "Make rev2 the current Ledger: the 02_Project_Ledger README and the project README name Project_Ledger_rev2 as current, rev0 and rev1 as history. Rebuild the graph from rev2." Write scope: "new files in testbeds/eastsound/project/02_Project_Ledger/ (rev0 and rev1 untouched), tools/build_ledger_rev1.py (extend it, or add build_ledger_rev2.py), the graph rebuild, and the 02_Project_Ledger and project README files. Also authorized (my request under rule 8): remove the now-unused Project_Ledger.csv row from tools/check_exceptions.csv, with its ISSUES_LOG entry in the same commit."
+- Replaces: none

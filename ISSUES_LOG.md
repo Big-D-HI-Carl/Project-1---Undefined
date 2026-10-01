@@ -551,3 +551,61 @@ Append-only. Repo and program issues, in the format in AGENTS.md. The test bed's
   - An ITP line citing "Add. 4 Generator Exhibit" fell back to sheet links on 30-odd rows. A line that names any spec section, appendix or exhibit no longer links by sheet.
   - Same-name twins: rev1 gave a note naming L-0101/L-0148 (and two other pairs) a tag basis on both rows, which cost the graph 7 `mentions` links. Graph rule 12's tie-break (the twin whose rev0 row cites the note) now applies in rev1 too.
 - Fix or next action: Done.
+
+## 2026-10-01 — The check_exceptions.csv row for Project_Ledger.csv no longer matches a finding — Closed
+- Workstream: Repo setup
+- Type: workflow failure
+- Finding: Closes the Open entry of the same title. At Carl's request under rule 8 (Prompt 11, 2026-10-01: "remove the now-unused Project_Ledger.csv row from tools/check_exceptions.csv, with its ISSUES_LOG entry in the same commit"), this commit removes the row. The file keeps its header with no rows. `checks.py --all` gives 0 FAIL and 1 WARN (data gate not run) before and after. The two repeated Tags in rev0 remain a Merge item; that entry ("Project_Ledger.csv repeats two Tags") is unchanged.
+- Fix or next action: Done.
+
+## 2026-10-01 — Conduit and feeder runs C-2W and P-2W pass the new-row test; are cable runs Ledger components? — Closed
+- Workstream: Eastsound test bed (Ledger rev2)
+- Type: design gap
+- Finding: Closes the Open entry of the same title. Carl decided (Prompt 11, decision 4): "Conduit and feeder runs are components. Add every run in the E6.3 conduit/feeder schedule as its own row." Ledger rev2 (`testbeds/eastsound/project/02_Project_Ledger/Project_Ledger_rev2.csv`, e06b8fd) adds 80 rows, L-0450 to L-0529, taken from the E6.3 schedules as one group and not from the unmatched-tag list:
+  - 76 tagged runs. P-SEC (L-0237) and P-TPS (L-0243) were already rows. C-2W is L-0452 and P-2W is L-0494.
+  - The two unnamed UV controller circuits.
+  - The DC and AC spare conduits.
+  The counts match Wiki note E6.3 (40 named power runs plus 2 unnamed circuits and an AC spare; 38 named control/signal runs plus a DC spare). The roll-up row L-0353 stays.
+- Fix or next action: Done.
+
+## 2026-10-01 — Earthwork fill: take-off settled (reference only); the fill read is still open — Open
+- Workstream: Eastsound test bed (Ledger rev2)
+- Type: content conflict
+- Finding: Follows the Open entry "Earthwork fill: the Bluebeam read and the Wiki note differ, and C0.2 says the totals are not for take-off". Carl decided (Prompt 11, decision 3): keep L-0448 and L-0449, set Quantity Confidence to "Reference only (C0.2: not for bidding or take-off)", and exclude them from all totals. Ledger rev2 does so; MTO-0113 and MTO-0114 count in neither total. The fill value is still read two ways: 1598 CY (Bluebeam, Inferred) and 1,596 CY (Wiki note C0.2, Verified-Visual). L-0449 stays Unresolved.
+- Fix or next action: A person reads the C0.2 page image (set p.9) for the fill value. The take-off part of the earlier entry needs no further action.
+
+## 2026-10-01 — The schedule, tracker and open-items list still carry the Hot Box duplicate rows L-0337 and L-0338 — Open
+- Workstream: Eastsound test bed (Ledger rev2)
+- Type: workflow failure
+- Finding: Ledger rev2 marks L-0337 and L-0338 as duplicates of L-0057 and L-0058 (Carl, Prompt 11, decision 2) and moves their links. Three places still treat them as separate items:
+  - `project/05_Schedule_and_Tracker/` lists them under 43-C01 (2W air gap water system), while L-0057 and L-0058 sit in 43-C05.
+  - `derived/issues/Open_Items.csv` still has OI-0005, the Hot Box duplicate item, open.
+  - `derived/reconciliation/Ledger_ID_Map.csv` keeps their old Tags, PROPOSED-Hot-Box-1 and -2. The graph build reports this as a WARNING (f35acd5).
+  These files were outside Prompt 11's write scope.
+- Fix or next action:
+  - Merge drops L-0337 and L-0338 from the schedule and tracker, or points them at L-0057 and L-0058.
+  - The open-items session closes OI-0005 by decision 2.
+  - The map stays as Prompt 9 wrote it, unless a person asks for it to be updated.
+
+## 2026-10-01 — E6.3 runs: seven rows are Unresolved and need a page-image check — Open
+- Workstream: Eastsound test bed (Ledger rev2)
+- Type: content conflict
+- Finding: Of the 80 E6.3 run rows in Ledger rev2, 73 are Inferred (OCR reads) and 7 are Unresolved:
+  - L-0478 S-FMIN: the conduit reads 1" in Tesseract and "T" in Bluebeam (E6.3, set p.76).
+  - L-0507 to L-0510 P-IP1 to P-IP4: E6.3 runs them "from MCC", while E6.1 feeds the influent pumps from the IPS panel (Wiki note E6.3, Verified-Visual).
+  - L-0494 P-2W: one 2-in conduit to both 2W pumps on E6.3, while E6.1 shows P-2W-P1 and P-2W-P2 (Wiki note E6.3).
+  - L-0519 P-LT: the run comes from an unnamed "lighting panel" (Wiki note E6.3).
+  E6.3 shows no run lengths, so no run has an LF line.
+- Fix or next action: A person checks S-FMIN's conduit on the E6.3 page image. The Engineer resolves the P-IP and P-2W feeds. Lengths need a take-off from the plan sheets if the owner wants LF.
+
+## 2026-10-01 — Prompt 11: five build defects caught in review before commit — Closed
+- Workstream: Eastsound test bed (Ledger rev2)
+- Type: workflow failure
+- Finding: Scratchpad runs of `testbeds/eastsound/tools/build_ledger_rev2.py` and the graph build showed five defects. Each was fixed before its commit:
+  - **Incl. total, duplicate pairs:** the first rule ignored units. OI-0112, a "duplicate" item that is really a Tag collision, pairs the SD-1 storm drain (LF reads) with the SD-1 sludge pump (Verified EA), so the storm drain's 103 LF dropped out of the incl. total. Pairs now count once per unit.
+  - **Notes text:** "[rev2]" notes were appended after "[Merge] Exceptions: #16, #95.", so rev1's Exception Refs parse picked up "#1" and "#2" from "Hot Box #1" and moved them to L-0057/L-0058. rev2 notes now follow the " || " separator, where that parse stops.
+  - **Regression tie-out:** the new check that untouched rows equal rev1 compared integer counts with CSV text, and failed on every row. It now compares text.
+  - **Graph build, ID map:** the build stopped on rev2 because Ledger_ID_Map.csv holds the pre-rev2 Tags of L-0337 and L-0338. For a Ledger with its own IDs, only the ID must agree; a changed Tag is now a WARNING (f35acd5).
+  - **Graph build, null values:** the duplicates' "Not linked (…)" Wiki Note(s) cell became two phantom note nodes. "Not linked" now counts as no link (62074b6).
+  - The rev0 and rev1 graphs, and the rev1 Ledger, still rebuild byte for byte.
+- Fix or next action: Done.
