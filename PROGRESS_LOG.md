@@ -595,3 +595,61 @@ Append-only. One entry per session, in the format in AGENTS.md. Never edit or de
   - A person checks the 42 lines that don't count (mostly OCR or Bluebeam reads) on the page images; Verified-Visual lines would then total.
   - Remove the Project_Ledger.csv row from `tools/check_exceptions.csv` when a person asks.
   - Graph: the rev1 Submittal, ITP and schedule columns could become graph links in a later step.
+
+## 2026-10-01 — Prompt 11: Project Ledger rev2
+- Runtime: Claude Code
+- Commits: e12445a..HEAD on `claude/stoic-hamilton-mnm2hc` (draft PR)
+- Done:
+  - Set `git config core.hooksPath .githooks`; it was unset. Started from main at c7b1924 (PR #15), which was unchanged when the PR went up. The plan was approved in plan mode, with Carl's answers on the Totals tab, the Ledger-tab column, EA per run, and the spares and unnamed circuits.
+  - `tools/check_exceptions.csv` (e12445a, own commit, Carl's rule-8 request): the Project_Ledger.csv row is removed. ISSUES_LOG closes its entry in the same commit.
+  - `testbeds/eastsound/tools/build_ledger_rev2.py` (14ca633):
+    - Imports `build_ledger_rev1.py`, so rev1 stays byte-reproducible.
+    - Applies the 14 Verified proposals; the 229 needs-check proposals are untouched.
+    - Marks L-0337 and L-0338 as duplicates and moves their links to L-0057 and L-0058.
+    - Marks the earthwork rows reference only.
+    - Reads the E6.3 schedules from `derived/ocr/pages/076_E6.3.json`: Tesseract words, checked against the Bluebeam words, with the column cuts at whitespace gaps.
+    - Adds the total incl. reads to verify.
+    - 28 tie-outs. No library reads.
+  - `testbeds/eastsound/project/02_Project_Ledger/` (e06b8fd, new files; rev0 and rev1 untouched):
+    - Project_Ledger_rev2.csv and .xlsx: 529 rows, the 449 rev1 rows plus 80 E6.3 runs (L-0450 to L-0529). The 80 are 76 tagged runs, 2 unnamed UV controller circuits and 2 spare conduits; P-SEC and P-TPS were already rows. CWP 26 throughout; 73 Inferred, 7 Unresolved.
+    - xlsx tabs: the six rev1 tabs plus Totals. The Ledger tab has "Total incl. reads to verify" after Quantity. The CSV keeps the schema rev1 header and states the same figure in Quantity Confidence.
+    - MTO_Lines_rev2.csv: 190 lines. MTO-0001 to MTO-0114 keep their rev1 IDs; a new column, Counts Incl. Reads to Verify.
+    - Ledger_rev2_Summary.md.
+  - Totals: Verified-only (headline) 150 EA on 148 lines (rev1: 74 EA; the 78 E6.3 runs add 76 and the rest match). Incl. reads to verify: 168 EA and 949 LF, from 36 more lines held back only for their read level. The earthwork and duplicate rows count in neither total.
+  - Fill rate, all bands: rev0 36.7% (447 rows) → rev1 80.3% (449) → rev2 80.3% (529); the 447 base rows are at 80.4%. By band, rev1 → rev2 (all rows):
+    - Up: B Where 83.7% → 86.2%; C How much 21.9% → 32.9%; D Specs & notes 87.4% → 89.1%.
+    - Down (the run rows have fewer issues and tracker entries): A Identity 98.1% → 96.2%; G Changes & issues 57.7% → 53.5%; H Schedule & status 99.2% → 96.3%.
+  - READMEs (3cf2972): a new `02_Project_Ledger/README.md`. It and the 02 section of `project/README.md` name rev2 as current, with rev0 and rev1 as history.
+  - `testbeds/eastsound/tools/ledger_to_graph.py` (f35acd5, 62074b6, two small commits needed for the rebuild):
+    - For a Ledger with its own IDs, a Tag changed since Ledger_ID_Map.csv is a WARNING, not a stop. The ID must still agree.
+    - "Not linked (…)" counts as no link.
+  - `testbeds/eastsound/graph/` (7a76add): rebuilt from rev2 with `--mto MTO_Lines_rev2.csv`. 1,636 nodes and 8,582 links (items 529, MTO lines 190; shown_on 1,183, specified_in 696, described_in 2,021, quantity_of 191). The README is updated. The OI-0001 trace and the SD-1 path are unchanged.
+  - DECISIONS.md records Carl's six Prompt 11 decisions and his four answers.
+  - ISSUES_LOG:
+    - closes the cable-runs entry;
+    - follows the earthwork entry (take-off settled; the fill read still open);
+    - opens two entries: the Hot Box duplicates still in the schedule, tracker and open items, and the seven Unresolved runs;
+    - adds one Closed entry for the build defects.
+- Tests:
+  - `python testbeds/eastsound/tools/build_ledger_rev2.py` → 28 of 28 tie-outs pass. These include:
+    - all 449 rev1 rows present in rev1 order;
+    - the 435 rows no decision touches identical to rev1 (Quantity Confidence only gains the incl. total);
+    - 14 Verified proposals applied, each Current Value as in rev0;
+    - E6.3 counts equal Wiki note E6.3's;
+    - every new row passes the three-part test;
+    - no blank cell or link cell;
+    - both totals tie to their lines, per row and per unit;
+    - duplicate and earthwork rows count in no total.
+  - Determinism: two runs (repo folder, and /tmp with PYTHONHASHSEED=123) → all 4 files byte-identical (`cmp`). UTF-8 without a BOM, LF only. The xlsx opens in openpyxl 3.1.5 (scratch venv): 7 tabs, freeze panes at C3, the new column after Quantity, 4,811 Ledger-tab hyperlinks, all 15 XML parts well-formed.
+  - Regressions:
+    - `build_ledger_rev1.py --out <scratch>` reproduces the committed rev1 files byte for byte.
+    - With the changed graph script, rev1 + MTO_Lines_rev1 reproduces the committed rev1 graph, and rev0 + Starter_MTO reproduces d1651a7's graph files.
+  - Graph: three rev2 builds (repo and two scratch `graph` folders) under `env -i` with `GIT_DIR=no-git` → graph.json, graph.html, GRAPH_REPORT.md, Build_Inputs.csv and Build_Counts.csv byte-identical. `graphify explain "OI-0001"`, `graphify explain "P-GEN"` and `graphify path "SD-1 [L-0073]" "SD-1 [L-0315]" --undirected` → as in the README.
+  - `python -m pyflakes` on build_ledger_rev2.py and ledger_to_graph.py → clean.
+  - `python3 tools/checks.py --all` → 0 FAIL, 1 WARN (data gate not run). `--range origin/main..HEAD` → 0 FAIL, 1 WARN. The hook's `--staged` → 0 FAIL on each commit.
+- Failures and fixes: five defects caught in scratchpad runs before commit; logged in ISSUES_LOG ("Prompt 11: five build defects caught in review before commit").
+- Next:
+  - Carl reviews the draft PR.
+  - Merge takes L-0337/L-0338 out of the schedule and tracker, and the open-items session closes OI-0005 (ISSUES_LOG).
+  - A person checks S-FMIN's conduit and the C0.2 fill on the page images. The Engineer resolves the P-IP and P-2W feeds.
+  - Run lengths (LF) need a plan take-off if the owner wants them; E6.3 shows none.
