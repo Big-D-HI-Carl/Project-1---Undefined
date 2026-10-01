@@ -5,7 +5,8 @@ Output is graphify-compatible: query it with `graphify explain` and
 `graphify path --undirected` (pass --graph <out>/graphify-out/graph.json),
 and render the report and viewer with `graphify cluster-only <out> --no-label`.
 
-Every Ledger row becomes an item node keyed on its Ledger ID (Ledger_ID_Map.csv),
+Every Ledger row becomes an item node keyed on its Ledger ID (the rev1 Ledger's own
+Ledger ID column, checked against Ledger_ID_Map.csv; a rev0 Ledger takes the map's ID),
 labeled with its Tag. Drawing Sheets, Spec Sections, Addenda and Wiki Note(s)
 become links; Lane and Bid Item stay on the item node as attributes, so they
 don't act as hubs. Parsing rules were approved in Prompt 3 step 2 (2026-09-30);
@@ -13,7 +14,8 @@ testbeds/eastsound/graph/README.md lists them, with the rules for the four
 derived inputs:
   - Wiki_Notes.csv: note content as attributes on the note nodes;
   - Wiki_Links.csv: links from each note to items, sheets, specs, addenda, notes;
-  - Starter_MTO.csv: one node per MTO line, linked to its Ledger ID(s) and sheet;
+  - MTO_Lines_rev1.csv (or Starter_MTO.csv): one node per MTO line, linked to its Ledger ID(s)
+    and sheet;
   - Open_Items.csv: one node per open item, linked to its Ledger IDs, sheets, specs.
 A derived input that is missing or lacks a needed column is skipped, never
 guessed; <out>/Build_Inputs.csv records what each build used.
@@ -34,6 +36,8 @@ import sys
 from pathlib import Path
 
 TAG_COL = "Verified/Verified-Visual/Inferred/Unresolved"
+TAG_COL_REV1 = "Confidence"   # Ledger rev1 names the tag column Confidence
+BASIS_SUFFIX = re.compile(r"^(.*?)\s*\((tag|spec|sheet)\)$")   # rev1 Wiki Note(s): "C2.2 (tag)"
 LEVELS = ("Verified-Visual", "Verified", "Inferred", "Unresolved")  # longest match first
 # Ledger tag level -> graphify confidence. The original level rides on every edge.
 CONFIDENCE = {"Verified-Visual": "EXTRACTED", "Verified": "EXTRACTED",
@@ -62,7 +66,7 @@ DEFAULT_INPUTS = {
     "id_map": DERIVED / "reconciliation" / "Ledger_ID_Map.csv",
     "wiki_notes": DERIVED / "wiki" / "Wiki_Notes.csv",
     "wiki_links": DERIVED / "wiki" / "Wiki_Links.csv",
-    "mto": DERIVED / "reconciliation" / "Starter_MTO.csv",
+    "mto": HERE.parent / "project" / "02_Project_Ledger" / "MTO_Lines_rev1.csv",
     "open_items": DERIVED / "issues" / "Open_Items.csv",
 }
 
@@ -135,6 +139,9 @@ def parse_spec(value: str):
 
 
 def parse_note(value: str):
+    m = BASIS_SUFFIX.match(value)
+    if m:  # rev1: the link basis rides on the link as its note
+        return [(f"note:{m.group(1)}", f"Wiki note {m.group(1)}", f"basis: {m.group(2)}")], None
     return [(f"note:{value}", f"Wiki note {value}", "")], None
 
 
@@ -213,7 +220,10 @@ LINKS = {
 ADDENDA = ("Addenda", "changed_by")
 ITEM_FIELDS = {"Area/Building": "area", "Discipline": "discipline", "Status": "status",
                "Submittal Req (Y/N)": "submittal_req",
-               "Testing/Startup Req (Y/N)": "testing_startup_req"}
+               "Testing/Startup Req (Y/N)": "testing_startup_req",
+               # Ledger rev1 only; a rev0 Ledger leaves these out
+               "CWP": "cwp", "Quantity": "quantity", "Unit": "unit",
+               "Quantity Confidence": "quantity_confidence"}
 DOC_TYPES = {"sheet": "sheet", "spec": "spec", "addendum": "addendum", "note": "note"}
 NOTE_TEXT_MAX = 2000  # note text: the body up to the last full sentence within this
 HEADING = re.compile(r"^#{1,3} ")  # a note body ends at the next level 1-3 heading
@@ -344,6 +354,27 @@ def load_ledger(g: Graph, ledger: Path, id_map: Input) -> tuple[dict, dict, list
     if len({lid for lid, _ in id_by_row.values()}) != len(id_by_row):
         errors.append(f"{id_map.rel}: a Ledger ID is used twice")
 
+    # Ledger rev1 carries its own Ledger ID. Rows the map covers must agree with it;
+    # rows added after the map (L-0448 on) take the row's ID.
+    own_id = bool(rows) and "Ledger ID" in rows[0][1]
+    if own_id:
+        seen_ids: dict[str, int] = {}
+        for row_no, row in rows:
+            lid = row["Ledger ID"].strip()
+            if not LEDGER_ID.fullmatch(lid):
+                errors.append(f"Ledger line {row_no}: bad Ledger ID {lid!r}")
+            elif lid in seen_ids:
+                errors.append(f"Ledger line {row_no}: Ledger ID {lid} repeats line {seen_ids[lid]}")
+            seen_ids.setdefault(lid, row_no)
+            mapped = id_by_row.get(row_no)
+            if mapped and mapped != (lid, row["Tag"].strip()):
+                errors.append(f"Ledger line {row_no}: {lid} {row['Tag'].strip()!r} but {id_map.rel} has "
+                              f"{mapped[0]} {mapped[1]!r}; the map is stale")
+            if not mapped and lid in {m[0] for m in id_by_row.values()}:
+                errors.append(f"Ledger line {row_no}: {lid} is mapped to another row in {id_map.rel}")
+            id_by_row[row_no] = (lid, row["Tag"].strip())
+    tag_col = TAG_COL_REV1 if rows and TAG_COL not in rows[0][1] else TAG_COL
+
     # graphify merges nodes that share a source file and a label, so a Tag on two
     # rows (SD-1) is labeled "<Tag> [<Ledger ID>]"; every other item is labeled by its Tag.
     tag_count: dict[str, int] = {}
@@ -362,7 +393,7 @@ def load_ledger(g: Graph, ledger: Path, id_map: Input) -> tuple[dict, dict, list
                           f"{map_tag!r} for {lid}; the map is stale")
             continue
         ids_by_tag.setdefault(tag, []).append(lid)
-        raw_level = row[TAG_COL].strip()
+        raw_level = row[tag_col].strip()
         level = level_of(raw_level)
         if level is None:  # never guess: weakest confidence, and report it
             g.warnings.append(f"unknown tag level, treated as Unresolved: Ledger line "
@@ -404,7 +435,7 @@ def load_ledger(g: Graph, ledger: Path, id_map: Input) -> tuple[dict, dict, list
             "lane": split_values(row["Lane"]), "bid_items": bids,
             "bid_item": row["Bid Item"].strip(),
         }
-        node.update({attr: row[col].strip() for col, attr in ITEM_FIELDS.items()})
+        node.update({attr: row[col].strip() for col, attr in ITEM_FIELDS.items() if col in row})
         node["unlinked"] = unlinked
         items[lid] = node
     return items, ids_by_tag, errors
@@ -628,7 +659,8 @@ def add_mto(g: Graph, mto: Input, items: dict) -> list[str]:
         level = input_level(g, mto.get(rec, "confidence"), where)
         qty, unit = mto.get(rec, "quantity"), mto.get(rec, "unit")
         attrs = mto.record(rec)
-        node = {"id": nid, "label": f"MTO line {no}: {qty} {unit}".strip(),
+        label = f"MTO line {no}" if no.isdigit() else no      # rev1 IDs read "MTO-0013"
+        node = {"id": nid, "label": f"{label}: {qty} {unit}".strip(),
                 "node_type": "mto", "file_type": "concept",
                 "source_file": mto.rel, "source_location": f"L{line}",
                 **{f"mto_{k}" if k in ("id", "label") else k: v for k, v in attrs.items()}}
@@ -734,7 +766,7 @@ NEEDED = {
                    "confidence": ("Confidence",), "ledger_id": ("Ledger ID", "Ledger IDs"),
                    "wiki_line": ("Wiki Line",), "written_as": ("Written As",),
                    "basis": ("Basis",)},
-    "mto": {"line": ("MTO Line",), "ledger_id": ("Ledger ID", "Ledger IDs"),
+    "mto": {"line": ("MTO Line", "MTO Line ID"), "ledger_id": ("Ledger ID", "Ledger IDs"),
             "quantity": ("Quantity",), "unit": ("Unit",), "sheet": ("Sheet", "Sheets"),
             "confidence": ("Confidence",), "citation": ("Source Citation",),
             "keyed_note": ("Keyed Note",), "tie": ("Tie Basis",)},
