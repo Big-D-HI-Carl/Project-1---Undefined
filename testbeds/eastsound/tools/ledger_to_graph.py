@@ -45,9 +45,9 @@ CONFIDENCE = {"Verified-Visual": "EXTRACTED", "Verified": "EXTRACTED",
 RANK = {"Verified-Visual": 0, "Verified": 0, "Inferred": 1, "Unresolved": 2}
 LEVEL_WORD = re.compile(r"\b(Verified-Visual|Verified|Inferred|Unresolved)\b")
 
-# Values that mean "no link" (rule 2). Anything else that doesn't parse is also
-# kept on the node under `unlinked`, never guessed.
-NULL_VALUE = re.compile(r"^(?:[—–-]+|not stated|not shown|none\b.*)$", re.IGNORECASE)
+# Values that mean "no link" (rule 2), including the Ledger's "Not linked (…)" (rev2 duplicate rows).
+# Anything else that doesn't parse is also kept on the node under `unlinked`, never guessed.
+NULL_VALUE = re.compile(r"^(?:[—–-]+|not stated|not shown|none\b.*|not linked\b.*)$", re.IGNORECASE)
 SHEET = re.compile(r"^([A-Za-z]{1,2})\s*(\d+\.\d+)([A-Za-z]?)(?=$|[\s(])\s*(.*)$")
 SPEC = re.compile(r"^(\d{2})[\s-]?(\d{2})[\s-]?(\d{2})(?=$|[\s(])\s*(.*)$")
 APPENDIX = re.compile(r"^(Appendix [A-Z])\b\s*(.*)$")
