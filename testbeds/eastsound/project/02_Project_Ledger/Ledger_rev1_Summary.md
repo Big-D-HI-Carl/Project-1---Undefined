@@ -137,6 +137,8 @@ Open duplicate items that name three or more rows, where two or more of those ro
 - **CWP.** Base rows keep their by-CWP assignment. A new row takes the first by-CWP rule that applies (1 spec section, 2 same-item group, 3 temporary, 4 keyword, 5 discipline). Rule 6 (parked in CWP 01) does not count as an assignment for the test. Rule 4 keeps the by-CWP keywords and adds "earthwork" from the name of CWP 31.
 - **Connected document (test c).** A Wiki note or a Submittal/ITP line that names the candidate. Spec sections are reached through their Wiki notes (AGENTS.md rule 7; no library reads).
 - **Never added:** I/O points (read only on E7.0–E9.3), areas, standards and ratings, drawing references; and variants of a Ledger tag (the same component).
+- **Range members.** A member of a range tag (F1–F4) with no row of its own would be a candidate. A row in the same Area/Building whose Name names the member counts as its row: LSH-111 (L-0332) is 2W float F1 and LSL-111 (L-0335) is 2W float F4 (OI-0153), so the 2W floats need no new rows, and OI-0475's float part does not hold.
+- **Earthwork rows (L-0448, L-0449).** Added on the owner's earlier decision; both pass the test through Wiki note C0.2. Neither quantity is totaled: both are Bluebeam reads, and the C0.2 note records that the drawing gives the cut and fill for the TESC narrative only, not for bidding or take-off. The fill is Unresolved: Bluebeam reads 1598 CY, the Wiki note (Verified-Visual) 1,596 CY.
 - **Register links.** A Submittal or ITP line links to every row citing its spec section (the section's requirements apply to all its items); to the rows whose printed tag its text names (tag); and, only when it names no spec section, to the rows citing its sheet. The register's own Tag(s) column is Merge's computed linkage, so it is not used as a direct link.
 - **Open items.** An item that names Ledger IDs links only to them (tag). One that names none links by spec section, else by sheet.
 - **Found On** uses only assigned tag reads (Gate A). For PROPOSED rows it shows the boxed Drawing Sheets anchors from the crosswalk, with the match term and level as the OCR lane wrote them.
@@ -153,7 +155,7 @@ Open duplicate items that name three or more rows, where two or more of those ro
 | All 447 base rows present, in rev0 order, with rev0 Tag and Name | pass | 447 base rows, 449 rows in all |
 | Ledger IDs unique and in the L-NNNN form | pass | 449 IDs |
 | Every new row passes the three-part test | pass | 2 new rows; each has a sheet, set page and box, a CWP by rules 1-5 and a connected document |
-| No new row is an I/O point, area, standard or drawing reference | pass | 2 new rows: the owner's earthwork rows and range members of Ledger tags only |
+| No new row is an I/O point, area, standard or drawing reference | pass | 2 new rows: L-0448 PROPOSED-Earthwork cut (Prompt 9 proposed row (owner's decision)), L-0449 PROPOSED-Earthwork fill (Prompt 9 proposed row (owner's decision)) |
 | No blank cell | pass | 0 blank cells |
 | Every link carries its basis (tag, spec or sheet) | pass | 0 links without a basis |
 | Direct links first in every link cell | pass | 0 cells out of order |

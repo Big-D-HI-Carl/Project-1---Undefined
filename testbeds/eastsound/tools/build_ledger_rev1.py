@@ -1660,7 +1660,7 @@ def main():
         f"{len(new)} new rows; each has a sheet, set page and box, a CWP by rules 1-5 and a connected document")
     tie("No new row is an I/O point, area, standard or drawing reference",
         all(not c["cat"] and c["src"] != "Prompt 9 unmatched tag" for c in newc),
-        f"{len(newc)} new rows: the owner's earthwork rows and range members of Ledger tags only")
+        f"{len(newc)} new rows: " + ", ".join(f"{c['lid']} {c['tag']} ({c['src']})" for c in newc))
     blanks = [(b["Ledger ID"], c) for b in built for c in HEADER if str(b[c]).strip() == ""]
     tie("No blank cell", not blanks, f"{len(blanks)} blank cells" + (f", first {blanks[:3]}" if blanks else ""))
     nobasis = []
@@ -1880,6 +1880,14 @@ def summary_md(built, new, cands, mto, held, stats, bands, ft, totals, nbase, na
           "sections are reached through their Wiki notes (AGENTS.md rule 7; no library reads).",
           "- **Never added:** I/O points (read only on E7.0–E9.3), areas, standards and ratings, drawing references; "
           "and variants of a Ledger tag (the same component).",
+          "- **Range members.** A member of a range tag (F1–F4) with no row of its own would be a candidate. A row in "
+          "the same Area/Building whose Name names the member counts as its row: LSH-111 (L-0332) is 2W float F1 and "
+          "LSL-111 (L-0335) is 2W float F4 (OI-0153), so the 2W floats need no new rows, and OI-0475's float part does "
+          "not hold.",
+          "- **Earthwork rows (L-0448, L-0449).** Added on the owner's earlier decision; both pass the test through Wiki "
+          "note C0.2. Neither quantity is totaled: both are Bluebeam reads, and the C0.2 note records that the drawing "
+          "gives the cut and fill for the TESC narrative only, not for bidding or take-off. The fill is Unresolved: "
+          "Bluebeam reads 1598 CY, the Wiki note (Verified-Visual) 1,596 CY.",
           "- **Register links.** A Submittal or ITP line links to every row citing its spec section (the section's "
           "requirements apply to all its items); to the rows whose printed tag its text names (tag); and, only when "
           "it names no spec section, to the rows citing its sheet. The register's own Tag(s) column is Merge's "
