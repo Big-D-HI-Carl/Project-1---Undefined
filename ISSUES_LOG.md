@@ -498,3 +498,56 @@ Append-only. Repo and program issues, in the format in AGENTS.md. The test bed's
 - Type: design gap
 - Finding: Closes the Open entry of the same title. At Carl's request under rule 8, commit 69ca8ad adds the Layout line `issues/  open-items list built from reconciliation/, project/03_Exceptions_and_Issues/ and ISSUES_LOG.md (list only; nothing applied)` under `derived/`.
 - Fix or next action: Done.
+
+## 2026-10-01 — Ledger Tag uniqueness (checks.py, ledger_to_graph.py) conflicts with decision A — Closed
+- Workstream: Repo setup
+- Type: design gap
+- Finding: Closes the Open entry of the same title. At Carl's request under rule 8 (Prompt 10, 2026-10-01), commit 590f9b2 changes the `tools/checks.py` ledger rule: a Ledger may carry the rev0 or the rev1 header (`testbeds/eastsound/index/Ledger_Schema_rev1.csv`, 9001332); with rev1 the Ledger ID must be unique and in the L-NNNN form; unique Tag is no longer checked. The graph part was done earlier (Ledger ID keys), and commit 6bd7e80 reads the Ledger ID from the rev1 Ledger itself.
+- Fix or next action: Done.
+
+## 2026-10-01 — Ledger Tag uniqueness: graph part corrected after PR #9 — Closed
+- Workstream: Repo setup
+- Type: design gap
+- Finding: Closes the Open entry of the same title. Its checks.py part is done in 590f9b2 (see the Closed entry "Ledger Tag uniqueness (checks.py, ledger_to_graph.py) conflicts with decision A").
+- Fix or next action: Done.
+
+## 2026-10-01 — Ledger Tag uniqueness: the graph now keys on Ledger ID; the checks.py part is still open — Closed
+- Workstream: Repo setup
+- Type: design gap
+- Finding: Closes the Open entry of the same title. The checks.py part is done in 590f9b2.
+- Fix or next action: Done.
+
+## 2026-10-01 — The check_exceptions.csv row for Project_Ledger.csv no longer matches a finding — Open
+- Workstream: Repo setup
+- Type: workflow failure
+- Finding: `tools/check_exceptions.csv` lists `testbeds/eastsound/project/02_Project_Ledger/Project_Ledger.csv` for the ledger rule (entry "Project_Ledger.csv repeats two Tags"). Since 590f9b2 the rule no longer checks unique Tags, so the row turns nothing into a warning: `checks.py --all` now gives 1 WARN (data gate not run) instead of 3. The row still covers any future ledger finding in that file. The two repeated Tags remain a Merge item; that entry stays Open.
+- Fix or next action: Remove the row in its own commit, when a person asks. `tools/check_exceptions.csv` was outside Prompt 10's write scope.
+
+## 2026-10-01 — Earthwork fill: the Bluebeam read and the Wiki note differ, and C0.2 says the totals are not for take-off — Open
+- Workstream: Eastsound test bed (Ledger rev1)
+- Type: content conflict
+- Finding: Ledger rev1 adds the owner's earthwork rows L-0448 (cut) and L-0449 (fill) from Prompt 9. For the fill, the Bluebeam read on C0.2 (set p.9, box 761.97,634.52,782.85,639.52) is "FILL = 1598 CY" (Inferred). The Project Wiki note C0.2 reads "fill 1,596 CY" (Verified-Visual). The cut agrees (3,382 CY). The same note records that the drawing gives both totals "for the TESC narrative only and not for bidding or take-off (Item 15; plans_2Part-1 p.1, C0.2 — Verified-Visual)". Neither MTO line (MTO-0113, MTO-0114) counts toward a total; L-0449 is Unresolved.
+- Fix or next action: A person reads the C0.2 page image for the fill value. The owner decides whether take-off quantities should come from these totals at all, given Item 15.
+
+## 2026-10-01 — Open item OI-0475's float part does not hold: the 2W floats F1 and F4 are LSH-111 and LSL-111 — Open
+- Workstream: Eastsound test bed
+- Type: content conflict
+- Finding: OI-0475 (from ISSUES_LOG "Wiki parse findings for Merge") says the Ledger has floats F1 and F4 only at the Influent Pump Station. The Ledger also has them at the 2W pump station under printed tags: L-0332 LSH-111 "2W float F1: high level alarm and redundant valve close at 22.00" and L-0335 LSL-111 "2W float F4: low level alarm and pumps off at 15.00" (Area/Building 2W Pump Station). OI-0153 already says so ("E&C prints LSH-111 (F1) and LSL-111 (F4)"). The first Ledger rev1 build added "F1 (2W Pump Station)" and "F4 (2W Pump Station)" as new rows; review caught the double count before commit (entry "Prompt 10: five build defects caught in review before commit").
+- Fix or next action: The open-items session narrows OI-0475 to the fixture types L1, L2 and X1 in 26 51 19. The Wiki parse could resolve a bare F1 on the 2W notes to L-0332.
+
+## 2026-10-01 — Conduit and feeder runs C-2W and P-2W pass the new-row test; are cable runs Ledger components? — Open
+- Workstream: Eastsound test bed (Ledger rev1)
+- Type: design gap
+- Finding: Of the 401 unmatched tags, only C-2W and P-2W pass all three parts of the Prompt 10 test without falling in a never-add category: text-layer reads on E4.3 and E6.3, CWP 26 or 43 by the by-CWP rules, and Wiki notes E4.3 and E6.3 naming them as home runs. The Ledger carries two feeders as rows (P-SEC, P-TPS) but not the other runs on the E6.3 schedule (C-ATS, C-GEN, C-TCP3 and others), which the unmatched-tag shapes don't catch. Adding these two alone would make the Ledger's cable coverage depend on a regex. Both are held in the Candidates tab of `testbeds/eastsound/project/02_Project_Ledger/Project_Ledger_rev1.xlsx`.
+- Fix or next action: The owner decides whether conduit and cable runs are Ledger components. If yes, take them from the E6.3 schedule as one group, not from the unmatched-tag list.
+
+## 2026-10-01 — Prompt 10: five build defects caught in review before commit — Closed
+- Workstream: Eastsound test bed (Ledger rev1)
+- Type: workflow failure
+- Finding: Scratchpad runs of `testbeds/eastsound/tools/build_ledger_rev1.py` showed five defects, each fixed before its commit:
+  - Range members: F1 and F4 at the 2W pump station were added as new rows, but L-0332 and L-0335 already carry them (entry "Open item OI-0475's float part does not hold…"). A row in the same Area/Building whose Name names the member now counts as the member's row.
+  - Duplicate pairs: every Ledger ID on a duplicate open item was paired with the first, so Hot Box #2 (OI-0005) and DO #2 (OI-0142) lost their counts. Only duplicate items naming exactly two IDs now pair rows; larger groups are listed in the Summary for a person.
+  - Tag text in register lines: the pattern let "SD-1" match "SD1" (a seismic value), linking SUB 13 12 20-01 to the storm drain. The "-" or "#" must now be printed.
+  - An ITP line citing "Add. 4 Generator Exhibit" fell back to sheet links on 30-odd rows. A line that names any spec section, appendix or exhibit no longer links by sheet.
+  - Same-name twins: rev1 gave a note naming L-0101/L-0148 (and two other pairs) a tag basis on both rows, which cost the graph 7 `mentions` links. Graph rule 12's tie-break (the twin whose rev0 row cites the note) now applies in rev1 too.
+- Fix or next action: Done.

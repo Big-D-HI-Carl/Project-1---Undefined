@@ -255,3 +255,13 @@ Append-only. Decisions made by a person, in the format in AGENTS.md. Never edit 
 - Decided by: Carl
 - Why: Stated in this session: "Add AGENTS.md Layout lines for derived/wiki/ and derived/issues/ in their own commit (my request under rule 8)."
 - Replaces: none
+
+## 2026-10-01 — Project Ledger rev1 is the expanded MTO: one row per component, columns in bands A–I
+- Decided by: Carl
+- Why: Stated in this session (Prompt 10): "Project Ledger rev1, the expanded MTO. One row per component; scroll left to right from "what and where" to everything connected to it." Rules: "keep all 447. Add a new component only if it has (a) a page: read on a sheet, with set page and box; (b) a CWP, assigned by the same rule the by-CWP Ledger uses; (c) at least one connected document: spec section, register entry, or a Wiki note naming it. Everything else goes to a Candidates tab with the reason. Never add I/O points, areas, standards or drawing references." "No unexplained blanks: "None found" when searched and empty, "Not linked" when the source doesn't cover it; counts show 0." "Every link carries its basis: tag (direct), spec (applies to the section) or sheet (same sheet). Direct links first." "Quantities only from evidence-backed MTO lines … EA for each tagged component found on one of its cited sheets. No dimensions, elevations, slopes or sizes. No double counting; Add. 4 governs. Totals use Verified lines only." "Each row keeps the weakest confidence of its key facts, as today."
+- Replaces: none
+
+## 2026-10-01 — Ledger schema rev1, the checks.py Ledger ID rule and the graph rebuild are authorized
+- Decided by: Carl
+- Why: Stated in this session (Prompt 10): "Your folders: new files in testbeds/eastsound/project/02_Project_Ledger/ (rev0 files untouched) and the script testbeds/eastsound/tools/build_ledger_rev1.py. Also authorized, each in its own commit (my request under rule 8): add index/Ledger_Schema_rev1.csv; update checks.py so the ledger rule accepts schema rev1 and checks unique Ledger ID instead of unique Tag; rebuild the graph from rev1."
+- Replaces: none

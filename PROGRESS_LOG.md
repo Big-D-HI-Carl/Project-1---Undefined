@@ -564,3 +564,34 @@ Append-only. One entry per session, in the format in AGENTS.md. Never edit or de
   - Carl reviews PR #14.
   - The open-items session checks OI-0289's L-0073 (ISSUES_LOG).
   - The checks.py Ledger ID rule, when a person asks.
+
+## 2026-10-01 — Prompt 10: Project Ledger rev1, the expanded MTO
+- Runtime: Claude Code
+- Commits: 9001332..HEAD on `claude/adoring-sagan-b91hfa` (draft PR)
+- Done:
+  - Set `git config core.hooksPath .githooks`; it was unset. Main was pulled at the start (d1651a7) and again before the PR (unchanged).
+  - `testbeds/eastsound/index/Ledger_Schema_rev1.csv` (9001332, own commit, Carl's rule-8 request): 39 columns in bands A–I. These are the 35 columns asked for, plus Status (band A) and the two rev0 Y/N flags (bands E and F), so no rev0 fact is lost. The tag column is named Confidence.
+  - `tools/checks.py` (590f9b2, own commit, Carl's rule-8 request): the ledger rule accepts the rev0 or rev1 header. With rev1, the Ledger ID must be unique and in the L-NNNN form. Unique Tag is no longer checked.
+  - `testbeds/eastsound/tools/build_ledger_rev1.py` (31006de, 9f1a02c, 15243d2): stdlib CSV and xlsx writers. It imports `build_reconciliation.py` and runs the Prompt 9 tie rules on every sheet. 16 tie-outs; it stops without writing if one fails. No library reads.
+  - `testbeds/eastsound/project/02_Project_Ledger/` (new files; rev0 untouched):
+    - Project_Ledger_rev1.csv and .xlsx: 449 rows, the 447 rev0 rows in rev0 order plus L-0448 and L-0449, the owner's earthwork cut and fill rows. Tabs: Ledger (ID and Tag frozen, columns grouped by band), MTO Lines, Coverage, Candidates, Column Guide, and Links (7,954 links, each clickable; a Ledger cell with several links opens its block there).
+    - MTO_Lines_rev1.csv: 114 lines (22 callout, 92 tag count). 72 count toward totals, all EA: 74 EA on 72 rows. No LF or CY total, because no LF or CY line is Verified.
+    - Ledger_rev1_Summary.md: fill rate per band, new rows, candidates, MTO totals, rules, tie-outs, input SHA-256 values.
+  - Fill rate per band, rev0 → rev1 (447 base rows): A Identity 83.8% → 98.1%; B Where 36.4% → 83.7%; C How much 0% → 21.6%; D Specs & notes 87.6% → 87.6%; E Submittals 21.1% → 87.6%; F Inspections & tests 21.1% → 83.4%; G Changes & issues 4.0% → 57.8%; H Schedule & status 0% → 99.6%; I Confidence & source 99.7% → 99.7%. All bands 36.7% → 80.4%.
+  - Candidates: 403. 2 added (the earthwork rows). 401 not added: 134 drawing references or short labels, 119 I/O points, 63 fail the test, 49 standards, ratings or models, 25 areas, 9 variants of a Ledger tag. C-2W and P-2W are held for a person (ISSUES_LOG).
+  - `testbeds/eastsound/tools/ledger_to_graph.py` and `testbeds/eastsound/graph/` (6bd7e80, own commit, Carl's request): rebuilt from Ledger rev1 and MTO_Lines_rev1.csv. 1,480 nodes and 7,674 links (items 449, MTO lines 114; described_in 1,639, quantity_of 115, measured_on 114). The README is updated. The OI-0001 trace and the SD-1 path are unchanged.
+  - DECISIONS.md records Carl's two Prompt 10 statements. ISSUES_LOG closes the three Ledger Tag uniqueness entries and opens four (exceptions row, earthwork fill, OI-0475 floats, cable runs), plus one Closed entry for the build defects.
+- Tests:
+  - `python testbeds/eastsound/tools/build_ledger_rev1.py` → 16 of 16 tie-outs pass. These include: all 447 base rows present in rev0 order; unique L-NNNN IDs; every new row passes the three-part test; no blank cell; every link carries a basis, direct links first; counts = linked IDs; MTO totals tie to their lines per row and per unit; totals use Verified lines only; callouts = lines + held; every unmatched tag is a candidate.
+  - Determinism: five runs (repo, scratch folders, one from /tmp with PYTHONHASHSEED=123) → all 4 files byte-identical (`cmp`). UTF-8 without a BOM, LF only. The xlsx opens in openpyxl 3.1.5 (scratch venv): freeze panes at C3, band outline levels, 4,027 Ledger-tab hyperlinks, all XML parts well-formed.
+  - Graph: three builds (repo and two scratch folders) under `env -i` with `GIT_DIR=no-git` → graph.json, graph.html, GRAPH_REPORT.md, Build_Inputs.csv and Build_Counts.csv byte-identical. A rev0 build with Starter_MTO.csv reproduces d1651a7's graph.json, graph.html and both CSVs byte for byte (regression check of the script change).
+  - `checks.py` rule: the rev1 file passes; a duplicate ID, a bad ID, a bad tag word and a wrong header each fail as intended (direct calls).
+  - `python -m pyflakes` on build_ledger_rev1.py, ledger_to_graph.py and checks.py → clean.
+  - `python3 tools/checks.py --all` → 0 FAIL, 1 WARN (data gate not run). The hook's `--staged` → 0 FAIL on each commit. `--range origin/main..HEAD` → in the PR description.
+- Failures and fixes: five build defects caught in scratchpad runs before commit; logged in ISSUES_LOG ("Prompt 10: five build defects caught in review before commit").
+- Next:
+  - Carl reviews the draft PR.
+  - Carl decides the earthwork rows given C0.2 Item 15, and whether cable runs are Ledger components (ISSUES_LOG).
+  - A person checks the 42 lines that don't count (mostly OCR or Bluebeam reads) on the page images; Verified-Visual lines would then total.
+  - Remove the Project_Ledger.csv row from `tools/check_exceptions.csv` when a person asks.
+  - Graph: the rev1 Submittal, ITP and schedule columns could become graph links in a later step.
