@@ -3,28 +3,28 @@
 The graph of the Project Ledger and the files derived from it, built by script with no LLM calls. It is a map, not a source: answers cite the Wiki note, Ledger row or document page, never the graph.
 
 - **Inputs** (read-only; `Build_Inputs.csv` gives each one's path, status, row count and SHA-256 for the committed build):
-  - `project/02_Project_Ledger/Project_Ledger.csv` (447 rows).
-  - `derived/reconciliation/Ledger_ID_Map.csv` (447 Ledger IDs). Required.
+  - `project/02_Project_Ledger/Project_Ledger_rev1.csv` (449 rows: the 447 rev0 rows and the two earthwork rows, L-0448 and L-0449; Prompt 10). The script also reads a rev0 Ledger.
+  - `derived/reconciliation/Ledger_ID_Map.csv` (447 Ledger IDs). Required. rev1 carries its own Ledger ID column; the build stops if a row the map covers disagrees with it.
   - `derived/wiki/Wiki_Notes.csv` and `derived/wiki/Wiki_Links.csv`.
   - `project/01_Project_Wiki/Project_Wiki.md`, for each note's text (`wiki_text` in `Build_Inputs.csv`).
-  - `derived/reconciliation/Starter_MTO.csv`.
+  - `project/02_Project_Ledger/MTO_Lines_rev1.csv` (114 lines; it replaces the 22-line Starter_MTO.csv, whose lines it re-derives).
   - `derived/issues/Open_Items.csv`.
   - A derived input that is missing, or lacks a needed column, is skipped and marked in `Build_Inputs.csv`. Nothing is guessed in its place.
 - **Script:** `tools/ledger_to_graph.py`, on graphifyy 0.9.72 (pinned in `requirements.txt`).
 - **Outputs:** `graphify-out/graph.json`, `GRAPH_REPORT.md` and `graph.html`, plus `Build_Inputs.csv` and `Build_Counts.csv` here. Don't commit `cache/` or `.graphify_*`; they are gitignored.
-- **Size:** 1,386 nodes and 7,284 links in the committed build (`Build_Counts.csv`), built from main's files only.
+- **Size:** 1,480 nodes and 7,674 links in the committed build (`Build_Counts.csv`), built from Ledger rev1.
 
   | Node type | Count | | Link | Count |
   |---|---|---|---|---|
-  | item | 447 | | `shown_on` | 986 |
+  | item | 449 | | `shown_on` | 988 |
   | sheet | 99 | | `specified_in` | 536 |
   | spec | 117 | | `changed_by` | 153 |
-  | addendum | 23 | | `described_in` | 1,437 |
+  | addendum | 23 | | `described_in` | 1,639 |
   | note | 203 | | `describes` | 200 |
-  | mto | 22 | | `mentions` | 523 |
+  | mto | 114 | | `mentions` | 523 |
   | open_item | 475 | | `references` | 1,480 |
-  | | | | `quantity_of` | 21 |
-  | | | | `measured_on` | 22 |
+  | | | | `quantity_of` | 115 |
+  | | | | `measured_on` | 114 |
   | | | | `concerns` | 392 |
   | | | | `cites` | 1,534 |
 
@@ -37,7 +37,7 @@ Run from the repo root, with the pinned packages installed in `.venv`. `env -i` 
 
 ```
 env -i PATH="$PWD/.venv/bin:/usr/bin:/bin" HOME="$HOME" LANG=C.UTF-8 GIT_DIR=no-git \
-  python testbeds/eastsound/tools/ledger_to_graph.py testbeds/eastsound/project/02_Project_Ledger/Project_Ledger.csv --out testbeds/eastsound/graph
+  python testbeds/eastsound/tools/ledger_to_graph.py testbeds/eastsound/project/02_Project_Ledger/Project_Ledger_rev1.csv --out testbeds/eastsound/graph
 env -i PATH="$PWD/.venv/bin:/usr/bin:/bin" HOME="$HOME" LANG=C.UTF-8 GIT_DIR=no-git \
   graphify cluster-only testbeds/eastsound/graph --no-label
 ```
@@ -59,19 +59,19 @@ Two builds of the same inputs give byte-identical `graph.json`, `graph.html`, `G
 | spec | `spec:26 32 13` | Spec 26 32 13 | Ledger, Wiki, open items |
 | addendum | `addendum:Add. 4 p.7` | Add. 4 p.7 | Ledger, Wiki |
 | note | `note:26 32 13` | Wiki note 26 32 13 | Ledger Wiki Note(s), Wiki_Notes.csv |
-| mto | `mto:13` | MTO line 13: 3 EA | Starter_MTO.csv |
+| mto | `mto:MTO-0012` | MTO-0012: 3 EA | MTO_Lines_rev1.csv (a Starter_MTO.csv line reads "MTO line 13: 3 EA") |
 | open_item | `open:OI-0001` | Item ID and the title's lead clause, e.g. `OI-0001 Generator rating RFI` | Open_Items.csv |
 
 Every node carries `node_type`. `unlinked` on a node lists the values that made no link.
 
-- **Items** carry `ledger_id`, `tag`, `item_name`, `ledger_line`, `ledger_level` (the tag as written), `citation` (Source Citation), `lane`, `bid_items`, `bid_item` (the raw cell), area, discipline, status and the two Y/N columns.
+- **Items** carry `ledger_id`, `tag`, `item_name`, `ledger_line`, `ledger_level` (the tag as written), `citation` (Source Citation), `lane`, `bid_items`, `bid_item` (the raw cell), area, discipline, status and the two Y/N columns. From Ledger rev1 they also carry `cwp`, `quantity`, `unit` and `quantity_confidence`.
 - **Notes** carry the Wiki_Notes.csv columns `title`, `lane`, `note_type`, `discipline`, `revision_date`, `where_it_lives` and `heading_line`. They also carry:
   - `note_text`: the note's body from Project_Wiki.md (rule 11);
   - `note_text_chars`: the full body's length;
   - `note_text_cut`: Y when the text was cut;
   - `note_text_source`: the file and heading line.
   - `wiki_note_found` is false for a Ledger note name with no Wiki note (CQA Plan).
-- **MTO lines** carry every Starter_MTO.csv column (quantity, unit, sheet, set page, box, keyed note, method, confidence, ready, citation, bid item, tie basis).
+- **MTO lines** carry every MTO_Lines_rev1.csv column (row status, line type, item, quantity, unit, sheet, set page, box, keyed note, method, confidence, counts to total, why not totaled, link basis, tie basis, bid item, citation).
 - **Open items** carry every Open_Items.csv column; `open_type` is its Type, and `title` is the full title. They also carry:
   - `ledger_id_list`: the Ledger IDs the item names;
   - `item_links`: "linked", or "none: duplicate item" or "none: N Ledger IDs (over 15)" (rule 14).
@@ -83,12 +83,12 @@ Every node carries `node_type`. `unlinked` on a node lists the values that made 
 | `shown_on` | item → sheet | Ledger Drawing Sheets |
 | `specified_in` | item → spec | Ledger Spec Sections |
 | `changed_by` | item → addendum | Ledger Addenda |
-| `described_in` | item → note | Ledger Wiki Note(s) |
+| `described_in` | item → note | Ledger Wiki Note(s); rev1 writes each note's basis (tag, spec or sheet), which becomes the link's `note` |
 | `describes` | note → its own sheet or spec | Wiki_Notes.csv Note ID |
 | `mentions` | note → item | Wiki_Links.csv, equipment tag |
 | `references` | note → sheet, spec, addendum or note | Wiki_Links.csv |
-| `quantity_of` | MTO line → item | Starter_MTO.csv Ledger ID |
-| `measured_on` | MTO line → sheet | Starter_MTO.csv Sheet |
+| `quantity_of` | MTO line → item | MTO_Lines_rev1.csv Ledger ID |
+| `measured_on` | MTO line → sheet | MTO_Lines_rev1.csv Sheet |
 | `concerns` | open item → item | Open_Items.csv Ledger IDs (not for duplicate items or over 15 IDs) |
 | `cites` | open item → sheet or spec | Open_Items.csv Sheets, Spec Sections |
 
@@ -114,7 +114,7 @@ Rules 1–10 were approved in Prompt 3 (2026-09-30). Rule 9 changed when the Led
 6. **Bid items (attribute):** remove text in parentheses, a leading "Unresolved —", and any lead-in text before a colon. What's left is `N`, `N or M`, or `Equipment Alternate X`.
 7. **Link level:** each link takes the weaker of its source's tag and any tag level written in that value.
 8. **One link per source and target.** Ledger, MTO and open-item repeats merge their values and notes and keep the weakest level.
-9. **Item key = Ledger ID** (DECISIONS.md 2026-09-30, "Every Ledger row gets a permanent Ledger ID; everything links by ID").
+9. **Item key = Ledger ID** (DECISIONS.md 2026-09-30, "Every Ledger row gets a permanent Ledger ID; everything links by ID"). Ledger rev1 carries the ID in its own column; a rev0 Ledger takes it from Ledger_ID_Map.csv. The tag level is read from rev1's Confidence column (rev0: Verified/Verified-Visual/Inferred/Unresolved).
    - The script checks every Ledger row against Ledger_ID_Map.csv (Ledger Row and Tag) and stops if the map is stale.
    - The label is the Tag. A Tag on two rows is labeled `<Tag> [<Ledger ID>]`, because graphify merges nodes that share a label and a source file. Today that covers SD-1 (L-0073 storm drain, L-0315 sludge pump) and PROPOSED-Influent-Sampler (L-0320, L-0418).
    - No link joins rows that share a Tag. `NO_SAME_TAG` and the `same_tag` link are gone. The Influent-Sampler pair is a duplicate for Merge (ISSUES_LOG, "Project_Ledger.csv repeats two Tags"); it shows in the graph only if an open item names both IDs.
@@ -136,7 +136,7 @@ Rules 1–10 were approved in Prompt 3 (2026-09-30). Rule 9 changed when the Led
     - These make no link and stay on the note under `unlinked`: an equipment name with no Ledger ID (858 rows, e.g. "temporary bypass pumping"); a whole-addendum cite with no page ("Add. 4", "Add. 3") and "Add. 4 p.0" (67); a 5-digit legacy spec number such as "09900" (8); and "Appendix A", which has no Wiki note (2).
     - A note target links only to a Wiki note or a Ledger Wiki Note(s) name.
     - One link per note and target. When two sources give the same link, it keeps the stronger level and lists both sources in `wiki_source`, because each source supports it on its own.
-13. **MTO lines:** each Ledger ID in the cell gets a `quantity_of` link and the sheet a `measured_on` link, both at the line's Confidence. A blank Ledger ID (the C0.2 earthwork lines) makes no item link. Its Tie Basis stays on the node.
+13. **MTO lines:** each Ledger ID in the cell gets a `quantity_of` link and the sheet a `measured_on` link, both at the line's Confidence. A blank Ledger ID makes no item link; in rev1 every line has one (the C0.2 earthwork lines tie to L-0448 and L-0449). Tie Basis stays on the node. The rev1 Ledger's Submittal, ITP, RFI and schedule columns are not graph links yet; open items come from Open_Items.csv as before.
 14. **Open items:** Ledger IDs are read as `L-NNNN`. Sheets and Spec Sections split on `;` and `,` outside parentheses and parse by rules 3–4. The level is the item's Confidence.
     - Duplicate-type items, and items naming more than 15 Ledger IDs, keep their node and their sheet and spec links. They get no `concerns` links; their IDs are listed in `ledger_id_list` (Carl, 2026-09-30). This stops them joining the rows they compare, and stops the largest items acting as hubs.
     - Other open items keep their `concerns` links.
@@ -175,8 +175,8 @@ graphify path "OI-0001 Generator rating RFI" "Sheet E10.3" --undirected --graph 
 | OI-0001 → Sheet E1.1, Sheet E6.1 | `cites` | EXTRACTED (Verified) | Open_Items.csv L2 |
 | Spec 26 32 13 ← Wiki note 26 32 13 | `describes` | EXTRACTED (Verified) | Wiki_Notes.csv L164 |
 | Wiki note 26 32 13 → Sheet E1.1, E6.1, E10.3 | `references` | EXTRACTED (Verified) | Wiki_Links.csv L3445–L3464 |
-| GEN → Spec 26 32 13 | `specified_in` | AMBIGUOUS (row Unresolved) | Project_Ledger.csv L243 |
-| GEN → Sheet E1.1, E6.1, E6.3, E7.3, E10.3 | `shown_on` | AMBIGUOUS (row Unresolved) | Project_Ledger.csv L243 |
+| GEN → Spec 26 32 13 | `specified_in` | AMBIGUOUS (row Unresolved) | Project_Ledger_rev1.csv L243 |
+| GEN → Sheet E1.1, E6.1, E6.3, E7.3, E10.3 | `shown_on` | AMBIGUOUS (row Unresolved) | Project_Ledger_rev1.csv L243 |
 
 - The RFI is the one question on this chain: E1.1 and E6.1 show 125 kW / 156 kVA, and 26 32 13 ¶2.03 C.1 (main spec p.326) requires not less than 150.0 kW (OI-0001, from `derived/reconciliation/Summary.md`). The graph only points to those sources. Cite them, not the graph.
 - The generator carries three more open items:
