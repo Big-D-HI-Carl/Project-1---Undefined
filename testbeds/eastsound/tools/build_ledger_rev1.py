@@ -945,12 +945,19 @@ def open_item_links(rows, types):
 
 
 def wiki_links(rows):
-    """Wiki notes per row: notes that name the row (tag, Wiki_Links equipment links), notes for its spec
-    sections (spec) and its sheets (sheet), plus the notes rev0 cited (spec or sheet by note type)."""
+    """Wiki notes per row: notes that name the row (tag, Wiki_Links equipment links; a link naming same-name
+    twins goes to the twin whose rev0 row cites the note), notes for its spec sections (spec) and its sheets
+    (sheet), plus the notes rev0 cited (spec or sheet by note type)."""
+    cited0 = {r["_lid"]: {re.sub(r"\s*\(.*\)$", "", n).strip() for n in split_outside(r["Wiki Note(s)"], ";")}
+              for r in rows}
     named = defaultdict(set)
     for w in WLINKS:
         if w["Target Type"].startswith("equip"):
-            for lid in LID_RE.findall(w["Ledger ID"]):
+            ids = LID_RE.findall(w["Ledger ID"])
+            if len(ids) > 1:   # same-name twins: the row that cites the note, as graph rule 12 does
+                citing = [i for i in ids if w["Note ID"] in cited0.get(i, set())]
+                ids = citing if len(citing) == 1 else ids
+            for lid in ids:
                 named[lid].add(w["Note ID"])
     out = {}
     for r in rows:

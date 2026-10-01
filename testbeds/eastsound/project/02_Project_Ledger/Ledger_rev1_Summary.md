@@ -164,7 +164,7 @@ Open duplicate items that name three or more rows, where two or more of those ro
 | MTO callouts = lines + held | pass | 119 callouts, 22 lines, 97 held |
 | Every unmatched tag is a candidate | pass | 401 unmatched tags |
 
-Links written: 7961 (Links tab).
+Links written: 7954 (Links tab).
 
 ## Inputs (SHA-256)
 
