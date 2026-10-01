@@ -13,8 +13,10 @@ Rules:
   append-only-logs   PROGRESS_LOG.md, DECISIONS.md, ISSUES_LOG.md: additions only
   ledger             *Ledger*.csv under a test bed's project/ or lanes/ folder,
                      except Ledger_Schema.csv and *_by_CWP* views:
-                     UTF-8 without BOM, the Ledger_Schema.csv header, full rows,
-                     unique non-empty Tag, a valid tag word
+                     UTF-8 without BOM, the Ledger_Schema.csv (rev0) or
+                     Ledger_Schema_rev1.csv header, full rows, non-empty Tag,
+                     a valid tag word; with the rev1 header also a unique
+                     Ledger ID in the L-NNNN form (Tags may repeat)
   unsafe-file        over 50 MB, secret-like names, anything under _inbox/ or
                      .datagate/
   data-gate          text files against the |-separated terms in DATAGATE_TERMS,
@@ -52,6 +54,7 @@ LOGS = ("PROGRESS_LOG.md", "DECISIONS.md", "ISSUES_LOG.md")
 ISSUES_LOG = "ISSUES_LOG.md"
 MANIFEST = "testbeds/eastsound/index/Library_Manifest.csv"
 SCHEMA = "testbeds/eastsound/index/Ledger_Schema.csv"
+SCHEMA_REV1 = "testbeds/eastsound/index/Ledger_Schema_rev1.csv"
 EXCEPTIONS = "tools/check_exceptions.csv"
 EXCEPTIONS_HEADER = ["Path", "Rule", "Issues Log Entry"]
 BLOCKLIST = ".datagate/blocklist.txt"
@@ -62,6 +65,9 @@ UNSAFE_DIRS = ("_inbox", ".datagate")
 TEXT_EXTS = (".md", ".csv", ".txt", ".json", ".py", ".yml", ".yaml")
 LEDGER_SKIP = ("ledger_schema.csv", "*_by_cwp*.csv")  # the schema, and CWP views of a Ledger
 TAG_COLUMN = "Verified/Verified-Visual/Inferred/Unresolved"
+TAG_COLUMN_REV1 = "Confidence"
+ID_COLUMN = "Ledger ID"
+LEDGER_ID = re.compile(r"L-\d{4}")
 TAG_WORD = re.compile(r"(Verified-Visual|Verified|Inferred|Unresolved)\b")
 ISSUE_HEADING = re.compile(r"## \d{4}-\d{2}-\d{2} — (.+) — (?:Open|Closed)\s*")
 RULES = ("read-only-sources", "append-only-logs", "ledger", "unsafe-file", "data-gate", "exceptions")
@@ -314,14 +320,16 @@ def schema_header(data: bytes | None) -> list[str] | None:
     return next(csv.reader(io.StringIO(data.decode("utf-8-sig", "replace"), newline="")), [])
 
 
-def header_difference(header: list[str], schema: list[str]) -> str:
+def header_difference(header: list[str], schema: list[str], name: str = "Ledger_Schema.csv") -> str:
     column = next((i for i, (a, b) in enumerate(zip(header, schema)) if a != b), min(len(header), len(schema)))
     expected = f"'{schema[column]}'" if column < len(schema) else "no column"
     counts = f"{len(header)} columns vs {len(schema)}, " if len(header) != len(schema) else ""
-    return f"header differs from Ledger_Schema.csv: {counts}first difference at column {column + 1} (schema has {expected})"
+    return f"header differs from {name}: {counts}first difference at column {column + 1} (schema has {expected})"
 
 
-def check_ledger(path: str, data: bytes, schema: list[str]) -> list[Finding]:
+def check_ledger(path: str, data: bytes, schema: list[str], schema_rev1: list[str] | None = None) -> list[Finding]:
+    """rev0 header: non-empty Tag. rev1 header: unique Ledger ID (L-NNNN) and non-empty Tag; Tags may repeat
+    (decision A: everything links by Ledger ID)."""
     rule = "ledger"
     out: list[Finding] = []
     if data.startswith(b"\xef\xbb\xbf"):
@@ -336,11 +344,17 @@ def check_ledger(path: str, data: bytes, schema: list[str]) -> list[Finding]:
         header = next(reader, None)
         if header is None:
             return out + [(rule, path, "empty; needs the Ledger_Schema.csv header")]
-        if header != schema:
-            out.append((rule, path, header_difference(header, schema)))
+        rev1 = schema_rev1 is not None and header == schema_rev1
+        if header != schema and not rev1:
+            if schema_rev1 is not None and header[:1] == [ID_COLUMN]:
+                out.append((rule, path, header_difference(header, schema_rev1, "Ledger_Schema_rev1.csv")))
+            else:
+                out.append((rule, path, header_difference(header, schema)))
         width = len(header)
         tag_i = header.index("Tag") if "Tag" in header else None
-        word_i = header.index(TAG_COLUMN) if TAG_COLUMN in header else None
+        word_col = TAG_COLUMN_REV1 if rev1 else TAG_COLUMN
+        word_i = header.index(word_col) if word_col in header else None
+        id_i = header.index(ID_COLUMN) if rev1 else None
         seen: dict[str, int] = {}
         start = reader.line_num + 1
         for row in reader:
@@ -348,14 +362,16 @@ def check_ledger(path: str, data: bytes, schema: list[str]) -> list[Finding]:
             if len(row) != width:
                 rows.append((rule, path, f"line {line}: {len(row)} fields, header has {width}"))
                 continue
-            if tag_i is not None:
-                tag = row[tag_i].strip()
-                if not tag:
-                    rows.append((rule, path, f"line {line}: Tag is empty"))
-                elif tag in seen:
-                    rows.append((rule, path, f"line {line}: Tag duplicates line {seen[tag]}"))
+            if tag_i is not None and not row[tag_i].strip():
+                rows.append((rule, path, f"line {line}: Tag is empty"))
+            if id_i is not None:
+                lid = row[id_i].strip()
+                if not LEDGER_ID.fullmatch(lid):
+                    rows.append((rule, path, f"line {line}: Ledger ID must be L- and four digits"))
+                elif lid in seen:
+                    rows.append((rule, path, f"line {line}: Ledger ID duplicates line {seen[lid]}"))
                 else:
-                    seen[tag] = line
+                    seen[lid] = line
             if word_i is not None and not TAG_WORD.match(row[word_i].strip()):
                 rows.append((rule, path, f"line {line}: tag column must start with Verified, Verified-Visual, Inferred or Unresolved"))
     except csv.Error:
@@ -502,6 +518,7 @@ def check_unit(git: Git, unit: Unit, terms: list[tuple[str, str]], report: Repor
     touched = [c for c in unit.changes if c.status not in "DU" and c.new_mode != "160000"]
     sizes = git.sizes([c.new_oid for c in touched if c.new_oid != ZERO_OID])
     schema: list[str] | None = None
+    schema_rev1: list[str] | None = None
     schema_read = False
     for c in touched:
         findings += check_unsafe_file(c.path, sizes.get(c.new_oid))
@@ -510,10 +527,11 @@ def check_unit(git: Git, unit: Unit, terms: list[tuple[str, str]], report: Repor
         if is_ledger(c.path):
             if not schema_read:
                 schema, schema_read = schema_header(read_at(git, unit.new_rev, SCHEMA)), True
+                schema_rev1 = schema_header(read_at(git, unit.new_rev, SCHEMA_REV1))
                 if schema is None:
                     report.warn("ledger", SCHEMA, "schema not in the repo; ledger checks skipped")
             if schema is not None:
-                findings += check_ledger(c.path, new_content(git, unit, c), schema)
+                findings += check_ledger(c.path, new_content(git, unit, c), schema, schema_rev1)
         if terms and is_text(c.path):
             findings += check_data_gate(c.path, new_content(git, unit, c), terms)
     findings += check_exceptions_added(git, unit)
@@ -549,6 +567,11 @@ def check_all(git: Git, terms: list[tuple[str, str]], report: Report) -> None:
     except FileNotFoundError:
         schema = None
         report.warn("ledger", SCHEMA, "schema not in the repo; ledger checks skipped")
+    try:
+        with open(SCHEMA_REV1, "rb") as f:
+            schema_rev1 = schema_header(f.read())
+    except FileNotFoundError:
+        schema_rev1 = None
     for path in paths:
         try:
             st = os.lstat(path)
@@ -562,7 +585,7 @@ def check_all(git: Git, terms: list[tuple[str, str]], report: Report) -> None:
         with open(path, "rb") as f:
             data = f.read()
         if want_ledger:
-            findings += check_ledger(path, data, schema)  # type: ignore[arg-type]
+            findings += check_ledger(path, data, schema, schema_rev1)  # type: ignore[arg-type]
         if want_gate:
             findings += check_data_gate(path, data, terms)
     try:
