@@ -551,3 +551,9 @@ Append-only. Repo and program issues, in the format in AGENTS.md. The test bed's
   - An ITP line citing "Add. 4 Generator Exhibit" fell back to sheet links on 30-odd rows. A line that names any spec section, appendix or exhibit no longer links by sheet.
   - Same-name twins: rev1 gave a note naming L-0101/L-0148 (and two other pairs) a tag basis on both rows, which cost the graph 7 `mentions` links. Graph rule 12's tie-break (the twin whose rev0 row cites the note) now applies in rev1 too.
 - Fix or next action: Done.
+
+## 2026-10-01 — The check_exceptions.csv row for Project_Ledger.csv no longer matches a finding — Closed
+- Workstream: Repo setup
+- Type: workflow failure
+- Finding: Closes the Open entry of the same title. At Carl's request under rule 8 (Prompt 11, 2026-10-01: "remove the now-unused Project_Ledger.csv row from tools/check_exceptions.csv, with its ISSUES_LOG entry in the same commit"), this commit removes the row. The file keeps its header with no rows. `checks.py --all` gives 0 FAIL and 1 WARN (data gate not run) before and after. The two repeated Tags in rev0 remain a Merge item; that entry ("Project_Ledger.csv repeats two Tags") is unchanged.
+- Fix or next action: Done.
