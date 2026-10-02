@@ -609,3 +609,47 @@ Append-only. Repo and program issues, in the format in AGENTS.md. The test bed's
   - **Graph build, null values:** the duplicates' "Not linked (…)" Wiki Note(s) cell became two phantom note nodes. "Not linked" now counts as no link (62074b6).
   - The rev0 and rev1 graphs, and the rev1 Ledger, still rebuild byte for byte.
 - Fix or next action: Done.
+
+## 2026-10-02 — Graph lane tests: page check too strict, and graphify writes a cache beside graph.json — Open
+- Workstream: Eastsound test bed (Graph lane, `testbeds/eastsound/derived/graph/`)
+- Type: workflow failure
+- Finding: The first run of `derived/graph/build/test_graph.py` failed tests 3, 4 and 5:
+  - **Tests 3 and 5, page check:** every Open Link was marked "wrong page", E7.4 included. The pages were right. PyMuPDF returns the title block as separate lines ("81", "OF", … "96"), so the exact string "81 OF 96" never appeared. pdftotext in layout mode gives "81 OF 96" on Part 3 p.33, the E7.4 page (Plan_Set_Parts.md, Part 3 row 33).
+  - **Test 4, rebuild:** the two rebuilds matched each other, but not the committed folder. `graphify explain` in test 8 had written `cache/last_query_stamp` beside `derived/graph/graph.json`.
+- Fix or next action: The test prefers pdftotext in layout mode. With PyMuPDF it accepts the set page and "OF 96" separated by whitespace. graphify now runs on a temporary copy of graph.json, and the stray `cache/` folder is removed. Then the tests are rerun.
+
+## 2026-10-02 — Graph lane tests: page check too strict, and graphify writes a cache beside graph.json — Closed
+- Workstream: Eastsound test bed (Graph lane, `testbeds/eastsound/derived/graph/`)
+- Type: workflow failure
+- Finding: Closes "Graph lane tests: page check too strict, and graphify writes a cache beside graph.json" (2026-10-02). On the second run, G0.7's link (Part 1 p.7) still failed. Its title block puts "96" on its own text line, away from "7 OF" (pdftotext, Part 1 p.7).
+- Fix or next action: Done. A page is right when its text holds the sheet number, "<set page> OF" and "96". That is how Plan_Set_Parts.md reads the set page: the number before "OF". graphify runs on a temporary copy of graph.json. All 8 tests pass (`derived/graph/Test_Report.md`).
+
+## 2026-10-02 — Graph lane Findings: Ledger gaps for Merge — Open
+- Workstream: Eastsound test bed (Graph lane)
+- Type: input gap
+- Finding: The graph build logs 329 Ledger gaps in 17 kinds in `testbeds/eastsound/derived/graph/Findings.md`. The Ledger was not changed. The main ones:
+  - **No sheet cited:** 74 rows have Drawing Sheets blank, and 6 more hold text that is not a sheet ("—", "Not shown", "TESC plans …").
+  - **No spec cited:** 111 rows have Spec Sections blank.
+  - **Spec not in 02:** "46 12 13" (L-0198, as printed on C6.1).
+  - **CQA Plan:** 12 rows cite Wiki note "CQA Plan"; the Wiki's note is "QA plan" (same as the 2026-09-30 entry).
+  - **Paragraphs:** 18 ¶ cites have no section number beside them, and 6 are in an unusual form (e.g. 33 05 00 ¶3.025 B, 26 05 00 ¶1.012).
+  - **Addenda:** L-0359 cites only "Add. 4 p.3", which lists five drawing items, so it gets no edge.
+  - **Area/Building:** 16 name pairs may be the same place (e.g. Train 3 / Train No.3); they were not merged.
+  - **Wiki notes:** 6 sheet notes (C0.7, C1.1, C1.2, C7.7, C7.8, C7.9) still say "unavailable", while 01 rev2 finds those sheets in the native parts.
+- Fix or next action: Merge and Setup review Findings.md. Fixes go in a new Ledger or Wiki revision, and the graph is then rebuilt with `derived/graph/build/build_graph.py`.
+
+## 2026-10-02 — derived/graph/ isn't in AGENTS.md, and Graph_Transfer_Ultraplan.md differs from the Graph lane build — Open
+- Workstream: Repo setup / Eastsound test bed (Graph lane)
+- Type: design gap
+- Finding: The Graph lane prompt (2026-10-02) put the graph, its build script and its tests under `testbeds/eastsound/derived/graph/`. AGENTS.md's Layout doesn't list that folder. Its Graph tooling section and rule 6 put graph outputs in `testbeds/eastsound/graph/` and build scripts in `tools/`. The prompt governs where it conflicts with Graph_Transfer_Ultraplan.md, and the conflicts are listed in the pull request. The main ones:
+  - Ledger key: 447 rows by Ledger ID, not 441 by lane + tag + row.
+  - Node types: no Wiki note or requirement nodes.
+  - Hubs: bid items and areas are nodes, not attributes.
+  - Specs: 77 cited sections plus 280 paragraphs, not all 98 sections.
+  - Bid items: 19 + 5, not 18 + 5.
+  - Edge names and links: "modified by" and "described by"; no "possible same item" or "changes" links.
+  - Viewer: own viewer instead of graphify clustering and community names.
+  - Two graphify 0.9.72 limits:
+    - `export html` loads vis-network from unpkg.com, so it fails with the network off;
+    - `export wiki` refuses to run without `cluster-only`.
+- Fix or next action: Carl decides whether AGENTS.md gets a Layout line for `derived/graph/` (owner: Graph lane) and whether Graph_Transfer_Ultraplan.md is revised. Neither file was edited here; both are outside the lane's write scope.

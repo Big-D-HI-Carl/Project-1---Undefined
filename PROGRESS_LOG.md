@@ -653,3 +653,43 @@ Append-only. One entry per session, in the format in AGENTS.md. Never edit or de
   - Merge takes L-0337/L-0338 out of the schedule and tracker, and the open-items session closes OI-0005 (ISSUES_LOG).
   - A person checks S-FMIN's conduit and the C0.2 fill on the page images. The Engineer resolves the P-IP and P-2W feeds.
   - Run lengths (LF) need a plan take-off if the owner wants them; E6.3 shows none.
+
+## 2026-10-02 — Graph lane: Project Wiki graph built from the Ledger
+- Runtime: Claude Code
+- Commits: 5ca5e5e..7ea3aa3, plus this log commit, on `graph-lane-ledger-build` (PR to main, not merged)
+- Done:
+  - Step 0: inputs found and counted. Carl answered "OK, all A (Recommended)" to the five options:
+    - build from Project_Ledger.csv (447 rows) keyed on Ledger ID;
+    - draw described-by only where it adds a link;
+    - paragraph nodes from Source Citation;
+    - append these two logs;
+    - sheet Status from 01 rev2.
+  - Set `git config core.hooksPath .githooks`; it was unset.
+  - `testbeds/eastsound/derived/graph/build/build_graph.py` and `viewer_template.py` (5ca5e5e), standard library only:
+    - read the Ledger, 01 rev2 (rev1 titles checked), 02, 03, 04, Plan_Set_Parts.md, Wiki_Notes.csv, Wiki_Links.csv and Project_Wiki.md, through tools/parse_wiki.py;
+    - no library reads and no LLM calls.
+  - Tables (5ca5e5e):
+    - `nodes.csv`, 972 nodes: 447 components, 97 sheets, 77 spec sections, 280 spec paragraphs, 15 Addendum 4 items, 24 bid items, 32 areas;
+    - `edges.csv`, 4,146 edges: shown on 986, specified by 1,252, modified by 114, paid under 571, located in 437, described by 15, related to 491, part of 280;
+    - `Findings.md` (329 gaps) and `README.md`.
+  - `Project_Graph.html` (9a7bdcf): one self-contained file with D3 7.9.0 inlined. The npm tarball is sha512-checked; offline rebuilds reuse the D3 block. The page opens with the network off.
+  - `vault/`, 972 notes, and `graph.json` in the graphify-out field names (6adf724).
+  - `build/test_graph.py`, `Test_Report.md` and `Spot_Check.csv` (7ea3aa3): 20 picks, seed 20261002, Human Result blank.
+  - `testbeds/eastsound/graph/graphify-out/` is left as is and marked superseded in `derived/graph/README.md`.
+- Tests:
+  - `python testbeds/eastsound/derived/graph/build/build_graph.py` → 972 nodes, 4,146 edges, 329 findings.
+  - `python testbeds/eastsound/derived/graph/build/test_graph.py` → 8 of 8 PASS:
+    - node counts;
+    - endpoints and duplicates: 0 missing, 0 duplicate;
+    - E7.4 card: 11 of 11 components, and its link lands on Part 3 p.33 = set p.81;
+    - two rebuilds byte-identical: 979 files;
+    - headless Chromium with the network off: 972 nodes drawn, 0 requests, 0 errors, and 5 of 5 sheet links on the right page;
+    - spot-check file;
+    - hygiene, vault and graph.json;
+    - `graphify explain` degree 23 = edges.csv.
+  - `python tools/checks.py --all` → 0 FAIL, 1 WARN (no data-gate terms locally).
+- Failures and fixes: the first test run failed tests 3, 4 and 5. The PDF page check was too strict, and `graphify explain` wrote `cache/` beside graph.json. Both were logged in ISSUES_LOG before the rerun, then fixed and closed.
+- Next:
+  - Carl reviews the PR, the plan conflicts and Findings.md, and fills Human Result in Spot_Check.csv.
+  - Decide the AGENTS.md Layout line for `derived/graph/`.
+  - When the OCR lane delivers Tag_Hits, add "I/O point" edges.
